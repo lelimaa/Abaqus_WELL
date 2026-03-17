@@ -2,6 +2,7 @@ from abaqus import *
 from abaqusConstants import *
 
 # import os
+import json
 import sys 
 
 # path_project = r'C:\Users\juani\Documents\Github\Abaqus_WELL_' 
@@ -20,21 +21,45 @@ mdb.models.changeKey(fromName='Model-1', toName='MyFirstModel')
 if 'MyFirstModel' not in mdb.models:
     mdb.Model(name='MyFirstModel')
 
+# Reading the json file and filling the input data for the analysis ####################
+
+with open(r'C:\Users\hidalgo\Documents\GitHub\Abaqus_WELL_\wellClosure_axi.json') as f:
+    data = json.load(f)
+
 # variables that have to be changed ####################################################
 
-inner_radius_pipe = 0.36829999999999996  # Updated by script
-thickness_pipe = 0.0127  # Updated by script
+name_phase = '136fdd5d-6082-4c4f-8f77-7ed08da1932c'
+name_tubular = 'VAM_16in_#97_P110'
+outer_diamenter_pipe = data["Tubulars"][name_tubular]['OD']
+thickness_pipe = data["Tubulars"][name_tubular]['Thickness']
+thickness_pipe = thickness_pipe * 0.0254  # Convert from inches to meters
+inner_radius_pipe = outer_diamenter_pipe / 2 - thickness_pipe 
+inner_radius_pipe = inner_radius_pipe * 0.0254  # Convert from inches to meters
 inner_radius_annular = inner_radius_pipe + thickness_pipe
-# thickness_annular = 0.02
-# inner_radius_wellbore = inner_radius_annular + thickness_annular
-inner_radius_wellbore = 0.4572  # Updated by script
+diameter_wellbore = data["Phases"][name_phase]['HoleDiameter']
+diameter_wellbore = diameter_wellbore * 0.0254  # Convert from inches to meters
+inner_radius_wellbore = diameter_wellbore / 2
 thickness_annular = inner_radius_wellbore - inner_radius_annular
-thickness_wellbore = 12.0
+thickness_wellbore = 12.0   # Verificar o valor máximo com testes
 
-base_depth = 4250.0  # Updated by script
+base_depth = data["AnalysisData"]["Bottom"] 
 base_depth = int(base_depth)
-top_depth = 3200.0  # Updated by script
+top_depth = data["AnalysisData"]["Top"] 
 top_depth = int(top_depth)
+
+# inner_radius_pipe = 0.36829999999999996  # Updated by script
+# thickness_pipe = 0.0127  # Updated by script
+# inner_radius_annular = inner_radius_pipe + thickness_pipe
+# # thickness_annular = 0.02
+# # inner_radius_wellbore = inner_radius_annular + thickness_annular
+# inner_radius_wellbore = 0.4572  # Updated by script
+# thickness_annular = inner_radius_wellbore - inner_radius_annular
+# thickness_wellbore = 12.0
+
+# base_depth = 4250.0  # Updated by script
+# base_depth = int(base_depth)
+# top_depth = 3200.0  # Updated by script
+# top_depth = int(top_depth)
 
 ########################################################################################
 
