@@ -229,45 +229,59 @@ if __name__ == "__main__":
     lythology_examples = [
         {
             "set_name": 'SHALE',
+            "set_index": 'L1-I',
             "top_depth": 3200.0,
-            "base_depth": 3550.0,
+            "base_depth": 3600.0,
             "partName": 'ROCK',
             "sectionName": 'SHALE_Section',
         },
         {
             "set_name": 'SANDSTONE',
-            "top_depth": 3550.0,
-            "base_depth": 3900.0,
+            "set_index": 'L2-I',
+            "top_depth": 3600.0,
+            "base_depth": 4000.0,
             "partName": 'ROCK',
             "sectionName": 'SANDSTONE_Section',
         },
         {
             "set_name": 'HALITE',
-            "top_depth": 3900.0,
-            "base_depth": 4250.0,
+            "set_index": 'L3-I',
+            "top_depth": 4000.0,
+            "base_depth": 4150.0,
             "partName": 'ROCK',
             "sectionName": 'HALITE_Section',
+        },
+        {
+            "set_name": 'SANDSTONE',
+            "set_index": 'L4-I',
+            "top_depth": 4150.0,
+            "base_depth": 4250.0,
+            "partName": 'ROCK',
+            "sectionName": 'SANDSTONE_Section',
         }
     ]
 
     for mat_name, mat_data in examples.items():
         CreateMaterial('MyFirstModel', mat_name, mat_data, sectionLength=1.)
-    for section_name in material_examples.values():
-        Assign_Section('MyFirstModel',
-                       partName=section_name["partName"],
-                       sectionName=section_name["sectionName"],
-                       isSolid=section_name["isSolid"])
+
+CreateSetsPipe('MyFirstModel')
+CreateSetsFluid('MyFirstModel')
+CreateSetsRock('MyFirstModel')
+
+
+for section_name in material_examples.values():
+    Assign_Section('MyFirstModel',
+                    partName=section_name["partName"],
+                    sectionName=section_name["sectionName"],
+                    isSolid=section_name["isSolid"])
  
-    # Assign rock materials by depth layers
-    AssignRockByDepth('MyFirstModel', 'ROCK', lythology_examples)
+# Assign rock materials by depth layers
+AssignRockByDepth('MyFirstModel', 'ROCK', lythology_examples)
 
-    # Create assembly
-    Assembly('MyFirstModel', partsNames=['FLUID', 'PIPE', 'ROCK'],
-             top_depth=example["top_depth"], base_depth=example["base_depth"])  
+# Create assembly
+Assembly('MyFirstModel', partsNames=['FLUID', 'PIPE', 'ROCK'],
+            top_depth=example["top_depth"], base_depth=example["base_depth"])  
     
-    # Defining sets for boundary conditions and interactions
+# Defining sets for boundary conditions and interactions
+CreateSetsAssembly('MyFirstModel')
 
-    CreateSetsPipe('MyFirstModel')
-    CreateSetsFluid('MyFirstModel')
-    CreateSetsRock('MyFirstModel')
-    CreateSetsAssembly('MyFirstModel')

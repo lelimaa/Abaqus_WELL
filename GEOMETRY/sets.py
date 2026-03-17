@@ -292,7 +292,6 @@ def CreateSetsRock(name_model):
 
 def CreateSetsAssembly(name_model):  
 
-
     m = mdb.models[name_model]  
     a = m.rootAssembly
     
@@ -584,5 +583,3 @@ def CreateSetsAssembly(name_model):
         print(f"Set 'YSYM_TOP' criado com sucesso na altura Y = {y_topo}")
     else:
         print("Erro: Nenhuma aresta encontrada no topo (Y =", y_topo, ")")
-
-   

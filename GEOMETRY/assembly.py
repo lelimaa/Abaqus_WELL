@@ -42,12 +42,12 @@ def Assembly(modelName, partsNames, top_depth=3200, base_depth=3600):
         inst = a.instances[instName]
         instances[name] = inst
 
-    if inst.cells:
-        a.Set(cells=inst.cells[:], name=inst.name + '_Set')
-    elif inst.faces:
-        a.Set(faces=inst.faces[:], name=inst.name + '_Set')
-    elif inst.edges:
-        a.Set(edges=inst.edges[:], name=inst.name + '_Set')
+    # if inst.cells:
+    #     a.Set(cells=inst.cells[:], name=inst.name + '_Set')
+    # elif inst.faces:
+    #     a.Set(faces=inst.faces[:], name=inst.name + '_Set')
+    # elif inst.edges:
+    #     a.Set(edges=inst.edges[:], name=inst.name + '_Set')
     
 
     # if 'MyFirstModel' not in mdb.models:

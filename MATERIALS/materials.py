@@ -114,14 +114,17 @@ def Assign_Section(modelName, partName, sectionName, setName=None, isSolid=True)
     if partName not in model.parts:
         raise ValueError("Part '%s' not found in model '%s'." %
                          (partName, modelName))
+
     part = model.parts[partName]
 
-    if sectionName not in model.sections:
-        raise ValueError("Section '%s' not found in model '%s'. Available sections are: %s" % (
-            sectionName, modelName, list(model.sections.keys())))
+    default_sets = {
+        "FLUID": "FASEI_FLUIDO",
+        "PIPE": "FASEI_REV"
+    }
 
     if setName is None:
-        setName = partName + '_Set'
+        setName = default_sets.get(partName, partName)
+
     if setName in part.sets:
         region = part.sets[setName]
     else:
@@ -141,37 +144,21 @@ def Assign_Section(modelName, partName, sectionName, setName=None, isSolid=True)
                            offsetType=MIDDLE_SURFACE,
                            offsetField='',
                            thicknessAssignment=FROM_SECTION)
-    
+
 
 def AssignRockByDepth(modelName, partName, rock_layers):
     model = mdb.models[modelName]
     part = model.parts[partName]
- 
-    for layer in rock_layers:
-        top = -layer["top_depth"]
-        bottom = -layer["base_depth"]
+
+
+    for i, layer in enumerate(rock_layers, start=1):
         sec_name = layer["sectionName"]
-        set_name = layer["set_name"]
 
-        y_min = min(top, bottom)
-        y_max = max(top, bottom)
+        auto_set_name = "L%d-I" % i 
+        set_name = layer.get("set_index", auto_set_name)
 
-        faces_to_assign = []
-
-        for face in part.faces:
-            y_coord = face.pointOn[0][1]  # Get the y-coordinate of a point on the face
-            if y_min <= y_coord <= y_max:
-                faces_to_assign.append(face)
-
-        if faces_to_assign:
-
-            # if set_name in part.sets.keys():  # Check if the set already exists
-            #     del part.sets[set_name]
-            
-            # region = part.Set(name=set_name, faces=part.faces.sequenceFromLabels([f.index for f in faces_to_assign])) # Worked home
-
-            face_indices = [f.index for f in faces_to_assign]
-            region = part.Set(name=set_name, faces=part.faces[face_indices[0]:face_indices[0]+1])
+        if set_name in part.sets:
+            region = part.sets[set_name]
 
             part.SectionAssignment(
                 region=region,
@@ -181,6 +168,10 @@ def AssignRockByDepth(modelName, partName, rock_layers):
                 offsetField='',
                 thicknessAssignment=FROM_SECTION
             )
-            print("Assigned section '%s' to faces in layer '%s' (depth range: %s to %s)" % (sec_name, set_name, layer["base_depth"], layer["top_depth"]))
-        else: 
-            print("Warning: No faces found in layer '%s' (depth range: %s to %s)" % (set_name, layer["base_depth"], layer["top_depth"]))
+
+            print("Assigned section '%s' to existing set '%s'." % (sec_name, set_name))
+
+        else:
+
+            print("Warning: Set '%s' not found in part '%s'. Skipping assignment." % (set_name, partName))
+
