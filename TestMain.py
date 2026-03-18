@@ -5,8 +5,8 @@ from abaqusConstants import *
 import json
 import sys 
 
-# path_project = r'C:\Users\juani\Documents\Github\Abaqus_WELL_' 
-path_project = r'C:\Users\hidalgo\Documents\GitHub\Abaqus_WELL_'
+path_project = r'C:\Users\juani\Documents\Github\Abaqus_WELL_' 
+# path_project = r'C:\Users\hidalgo\Documents\GitHub\Abaqus_WELL_'
 
 if path_project not in sys.path:
     sys.path.append(path_project)
@@ -14,7 +14,8 @@ if path_project not in sys.path:
 from GEOMETRY.geometries import * 
 from GEOMETRY.assembly import *
 from GEOMETRY.sets import *
-from MATERIALS.materials import *             
+from MATERIALS.materials import *
+from JSONS.ImportTools import process_lithology             
 
 mdb.models.changeKey(fromName='Model-1', toName='MyFirstModel')
 
@@ -23,13 +24,15 @@ if 'MyFirstModel' not in mdb.models:
 
 # Reading the json file and filling the input data for the analysis ####################
 
-with open(r'C:\Users\hidalgo\Documents\GitHub\Abaqus_WELL_\wellClosure_axi.json') as f:
+with open(r'C:\Users\juani\Documents\Github\Abaqus_WELL_\wellClosure_axi.json') as f:
+# with open(r'C:\Users\hidalgo\Documents\GitHub\Abaqus_WELL_\wellClosure_axi.json') as f:
     data = json.load(f)
 
-# variables that have to be changed ####################################################
+# variables read from json (geometry) ####################################################
 
 name_phase = '136fdd5d-6082-4c4f-8f77-7ed08da1932c'
 name_tubular = 'VAM_16in_#97_P110'
+
 outer_diamenter_pipe = data["Tubulars"][name_tubular]['OD']
 thickness_pipe = data["Tubulars"][name_tubular]['Thickness']
 thickness_pipe = thickness_pipe * 0.0254  # Convert from inches to meters
@@ -63,45 +66,42 @@ top_depth = int(top_depth)
 
 ########################################################################################
 
-# Pipe('MyFirstModel', 'PIPE', inner_radius_pipe, base_depth, top_depth, thickness_pipe)
-# Fluid('MyFirstModel', 'FLUID', inner_radius_annular, base_depth, top_depth, thickness_annular)
-# Rock('MyFirstModel', 'ROCK', inner_radius_wellbore, base_depth, top_depth, thickness_wellbore)
-
-########################################################################################
-
 if __name__ == "__main__":
-    example = {
-        "pipe_inner_radius": inner_radius_pipe,
-        "annular_radius": inner_radius_annular,
-        "rock_radius": inner_radius_wellbore,
-        "base_depth": base_depth,
-        "top_depth": top_depth,
-        "pipe_wt": thickness_pipe,
-        "fluid_wt": thickness_annular,
-        "rock_wt": thickness_wellbore
-    }
+    # example = {
+    #     "pipe_inner_radius": inner_radius_pipe,
+    #     "annular_radius": inner_radius_annular,
+    #     "rock_radius": inner_radius_wellbore,
+    #     "base_depth": base_depth,
+    #     "top_depth": top_depth,
+    #     "pipe_wt": thickness_pipe,
+    #     "fluid_wt": thickness_annular,
+    #     "rock_wt": thickness_wellbore
+    # }
+
+    # filtered_layers, t_depths, filtered_rocks = process_lithology(data) 
+    # layers_depths = sorted(t_depths)
 
     # layers_depths = [3550, 3900]
     layers_depths = [3600.0, 4000, 4150.0]
 
     data = {
-        "ROCK": {"inner_radius": example["rock_radius"],
-                 "top_depth": example["top_depth"],
-                 "base_depth": example["base_depth"],
-                 "thickness": example["rock_wt"],
+        "ROCK": {"inner_radius": inner_radius_wellbore,
+                 "top_depth": top_depth,
+                 "base_depth": base_depth,
+                 "thickness": thickness_wellbore,
                  "layer_depths": layers_depths
                  },
 
-        "FLUID": {"inner_radius": example["annular_radius"],
-                  "top_depth": example["top_depth"],
-                  "base_depth": example["base_depth"],
-                  "thickness": example["fluid_wt"],
+        "FLUID": {"inner_radius": inner_radius_annular,
+                  "top_depth": top_depth,
+                  "base_depth": base_depth,
+                  "thickness": thickness_annular,
                   "layer_depths": layers_depths
                   },
-        "PIPE": {"inner_radius": example["pipe_inner_radius"],
-                 "top_depth": example["top_depth"],
-                 "base_depth": example["base_depth"],
-                 "thickness": example["pipe_wt"],
+        "PIPE": {"inner_radius": inner_radius_pipe,
+                 "top_depth": top_depth,
+                 "base_depth": base_depth,
+                 "thickness": thickness_pipe,
                  "layer_depths": layers_depths
                  },
     }
