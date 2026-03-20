@@ -5,8 +5,8 @@ from abaqusConstants import *
 import json
 import sys 
 
-path_project = r'C:\Users\juani\Documents\Github\Abaqus_WELL_' 
-# path_project = r'C:\Users\hidalgo\Documents\GitHub\Abaqus_WELL_'
+# path_project = r'C:\Users\juani\Documents\Github\Abaqus_WELL_' 
+path_project = r'C:\Users\hidalgo\Documents\GitHub\Abaqus_WELL_'
 
 if path_project not in sys.path:
     sys.path.append(path_project)
@@ -24,8 +24,8 @@ if 'MyFirstModel' not in mdb.models:
 
 # Reading the json file and filling the input data for the analysis ####################
 
-with open(r'C:\Users\juani\Documents\Github\Abaqus_WELL_\wellClosure_axi.json') as f:
-# with open(r'C:\Users\hidalgo\Documents\GitHub\Abaqus_WELL_\wellClosure_axi.json') as f:
+# with open(r'C:\Users\juani\Documents\Github\Abaqus_WELL_\wellClosure_axi.json') as f:
+with open(r'C:\Users\hidalgo\Documents\GitHub\Abaqus_WELL_\wellClosure_axi.json') as f:
     data = json.load(f)
 
 # variables read from json (geometry) ####################################################
@@ -50,60 +50,39 @@ base_depth = int(base_depth)
 top_depth = data["AnalysisData"]["Top"] 
 top_depth = int(top_depth)
 
-# inner_radius_pipe = 0.36829999999999996  # Updated by script
-# thickness_pipe = 0.0127  # Updated by script
-# inner_radius_annular = inner_radius_pipe + thickness_pipe
-# # thickness_annular = 0.02
-# # inner_radius_wellbore = inner_radius_annular + thickness_annular
-# inner_radius_wellbore = 0.4572  # Updated by script
-# thickness_annular = inner_radius_wellbore - inner_radius_annular
-# thickness_wellbore = 12.0
-
-# base_depth = 4250.0  # Updated by script
-# base_depth = int(base_depth)
-# top_depth = 3200.0  # Updated by script
-# top_depth = int(top_depth)
+print(f"The bottom of the wellbore is at: {-base_depth} meters")
+print(f"The top of the wellbore is at: {-top_depth} meters")
 
 ########################################################################################
 
 if __name__ == "__main__":
-    # example = {
-    #     "pipe_inner_radius": inner_radius_pipe,
-    #     "annular_radius": inner_radius_annular,
-    #     "rock_radius": inner_radius_wellbore,
-    #     "base_depth": base_depth,
-    #     "top_depth": top_depth,
-    #     "pipe_wt": thickness_pipe,
-    #     "fluid_wt": thickness_annular,
-    #     "rock_wt": thickness_wellbore
-    # }
 
-    # filtered_layers, t_depths, filtered_rocks = process_lithology(data) 
-    # layers_depths = sorted(t_depths)
+    filtered_layers, t_depths, filtered_rocks = process_lithology(data) 
+    layers_depths = sorted(t_depths)
+    print(layers_depths)
 
     # layers_depths = [3550, 3900]
-    layers_depths = [3600.0, 4000, 4150.0]
+    # layers_depths = [3600.0, 4000, 4150.0]
 
     data = {
-        "ROCK": {"inner_radius": inner_radius_wellbore,
-                 "top_depth": top_depth,
-                 "base_depth": base_depth,
-                 "thickness": thickness_wellbore,
-                 "layer_depths": layers_depths
-                 },
-
-        "FLUID": {"inner_radius": inner_radius_annular,
-                  "top_depth": top_depth,
-                  "base_depth": base_depth,
-                  "thickness": thickness_annular,
-                  "layer_depths": layers_depths
-                  },
         "PIPE": {"inner_radius": inner_radius_pipe,
                  "top_depth": top_depth,
                  "base_depth": base_depth,
                  "thickness": thickness_pipe,
                  "layer_depths": layers_depths
                  },
+        "FLUID": {"inner_radius": inner_radius_annular,
+                  "top_depth": top_depth,
+                  "base_depth": base_depth,
+                  "thickness": thickness_annular,
+                  "layer_depths": layers_depths
+                  },
+        "ROCK": {"inner_radius": inner_radius_wellbore,
+                 "top_depth": top_depth,
+                 "base_depth": base_depth,
+                 "thickness": thickness_wellbore,
+                 "layer_depths": layers_depths
+                 }
     }
 
 for part_name, part_data in data.items():
@@ -173,70 +152,25 @@ if __name__ == "__main__":
                 "reference_stress": 100.0
             },
             "type": "Rock"
+        },
+        "CARNALLITE": {
+            "behavior": "DoublePowerCreep",
+            'density': 1600.0,
+            'elastic': (4020040000, 0.36),
+            'conductivity': 0.75,
+            'specific_heat': 0.209946,
+            'expansion': 1.0e-5,
+            "creep_parameters": {
+                "A1": 1.0,
+                "A2": 2.0,
+                "B1": 3.0,
+                "B2": 4.0,
+                "C1": 5.0,
+                "C2": 6.0,
+                "reference_stress": 100.0
+            },
+            "type": "Rock"
         }
-        # "ELASTIC_MAT": {
-        #     "behavior": "Elastic",
-        #     'density': 7800,
-        #     'elastic': (210000, 0.3),
-        #     'conductivity': 45,
-        #     'specific_heat': 500,
-        #     'expansion': 1.2e-5
-        # },
-        # "VONMISES_MAT": {
-        #     "behavior": "vonMises",
-        #     'density': 7800,
-        #     'elastic': (210000, 0.3),
-        #     'conductivity': 45,
-        #     'specific_heat': 500,
-        #     'expansion': 1.2e-5,
-        #     'stress_strain_curve': ((250, 0.0), (300, 0.02), (350, 0.05), (400, 0.1))
-        # },
-        # "MOHRCOULOMB_MAT": {
-        #     "behavior": "MohrCoulomb",
-        #     'density': 2000,
-        #     'elastic': (15400e6, 0.14),
-        #     'conductivity': 1.1,
-        #     'specific_heat': 2100,
-        #     'expansion': 0.0,
-        #     'friction_angle': 30.0,
-        #     'dilatancy_angle': 10.0,
-        #     'cohesion': 5e6,
-        #     'lab_data': ((10e6, 0.0), (20e6, 0.01), (30e6, 0.03), (40e6, 0.06))
-        # },
-        # "DOUBLE_POWER_CREEP_MAT": {
-        #     "behavior": "DoublePowerCreep",
-        #     "density": 2170.23,
-        #     "elastic": (20403e6, 0.36),
-        #     "conductivity": 5.685,
-        #     "specific_heat": 880.25,
-        #     "expansion": 0.0,
-        #     "creep_parameters": {
-        #         "A1": 1.0,
-        #         "A2": 2.0,
-        #         "B1": 3.0,
-        #         "B2": 4.0,
-        #         "C1": 5.0,
-        #         "C2": 6.0,
-        #         "reference_stress": 100.0
-        #     }
-        # },
-        # "DOUBLE_MECHANISM_CREEP_MAT": {
-        #     "behavior": "DoubleMechanismCreep",
-        #     "density": 2170.23,
-        #     "elastic": (20403e6, 0.36),
-        #     "conductivity": 5.685,
-        #     "specific_heat": 880.25,
-        #     "expansion": 0.0,
-        #     "creep_parameters": {
-        #         "reference_strain": 1.0,
-        #         "reference_stress": 100.0,
-        #         "reference_temperature": 293.0,
-        #         "N1": 2.0,
-        #         "N2": 4.0,
-        #         "Q": 3.0,
-        #         "R": 5.0,
-        #     },
-        # }
     }
     material_examples = {
         "PIPE": {
@@ -264,25 +198,25 @@ if __name__ == "__main__":
             "set_name": 'SANDSTONE',
             "set_index": 'L2-I',
             "top_depth": 3600.0,
-            "base_depth": 4000.0,
+            "base_depth": 4150.0,
             "partName": 'ROCK',
             "sectionName": 'SANDSTONE_Section',
         },
+        # {
+        #     "set_name": 'HALITE',
+        #     "set_index": 'L3-I',
+        #     "top_depth": 4000.0,
+        #     "base_depth": 4150.0,
+        #     "partName": 'ROCK',
+        #     "sectionName": 'HALITE_Section',
+        # },
         {
             "set_name": 'HALITE',
             "set_index": 'L3-I',
-            "top_depth": 4000.0,
-            "base_depth": 4150.0,
-            "partName": 'ROCK',
-            "sectionName": 'HALITE_Section',
-        },
-        {
-            "set_name": 'SANDSTONE',
-            "set_index": 'L4-I',
             "top_depth": 4150.0,
             "base_depth": 4250.0,
             "partName": 'ROCK',
-            "sectionName": 'SANDSTONE_Section',
+            "sectionName": 'HALITE_Section',
         }
     ]
 
@@ -305,7 +239,7 @@ AssignRockByDepth('MyFirstModel', 'ROCK', lythology_examples)
 
 # Create assembly
 Assembly('MyFirstModel', partsNames=['FLUID', 'PIPE', 'ROCK'],
-            top_depth=example["top_depth"], base_depth=example["base_depth"])  
+            top_depth=top_depth, base_depth=base_depth)  
     
 # Defining sets for boundary conditions and interactions
 CreateSetsAssembly('MyFirstModel')

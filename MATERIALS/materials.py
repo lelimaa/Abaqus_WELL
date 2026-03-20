@@ -174,4 +174,3 @@ def AssignRockByDepth(modelName, partName, rock_layers):
         else:
 
             print("Warning: Set '%s' not found in part '%s'. Skipping assignment." % (set_name, partName))
-
