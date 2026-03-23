@@ -64,14 +64,15 @@ def DoublePowerCreepMaterial(modelName, name, data, sectionLength=1.):
     mat, sect, subroutine = ElasticMaterial(
         modelName, name, data, sectionLength)
     try:
-        dp_data = data.get("creep_parameters", {})
-        A1 = dp_data["A1"]
-        A2 = dp_data["A2"]
-        B1 = dp_data["B1"]
-        B2 = dp_data["B2"]
-        C1 = dp_data["C1"]
-        C2 = dp_data["C2"]
-        ref_stress = dp_data["reference_stress"]
+        dp_data = data["Rocks"][]["DoublePowerParameters"]
+        # dp_data = data.get("creep_parameters", {})
+        A1 = dp_data["a1"]
+        A2 = dp_data["a2"]
+        B1 = dp_data["b1"]
+        B2 = dp_data["b2"]
+        C1 = dp_data["c1"]
+        C2 = dp_data["c2"]
+        ref_stress = dp_data["s0"]
         mat.Creep(law=DOUBLE_POWER,
                   table=((A1, B1, C1, A2, B2, C2, ref_stress),))
     except:
@@ -91,12 +92,19 @@ def DoubleMechanismCreepMaterial(modelName, name, data, sectionLength=1.):
 def CreateMaterial(modelName, name, data, sectionLength=1.):
     behavior = data.get("behavior")
     mapping = {
-        "Elastic": ElasticMaterial,
-        "vonMises": vonMisesMaterial,
-        "MohrCoulomb": MohrCoulombMaterial,
-        "DoublePowerCreep": DoublePowerCreepMaterial,
-        "DoubleMechanismCreep": DoubleMechanismCreepMaterial,
+        "ELASTIC": ElasticMaterial,
+        "VON_MISES_PLASTIC": vonMisesMaterial,
+        "MOHR_COULOMB": MohrCoulombMaterial,
+        "DOUBLE_POWER_CREEP": DoublePowerCreepMaterial,
+        "DOUBLE_MECHANISM_CREEP": DoubleMechanismCreepMaterial,
     }
+    # mapping = {
+    #     "Elastic": ElasticMaterial,
+    #     "vonMises": vonMisesMaterial,
+    #     "MohrCoulomb": MohrCoulombMaterial,
+    #     "DoublePowerCreep": DoublePowerCreepMaterial,
+    #     "DoubleMechanismCreep": DoubleMechanismCreepMaterial,
+    # }
     create_func = mapping.get(behavior)
     if create_func is not None:
         return create_func(modelName, name, data, sectionLength)
