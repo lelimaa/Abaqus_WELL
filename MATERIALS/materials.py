@@ -63,8 +63,11 @@ def MohrCoulombMaterial(modelName, name, data, sectionLength=1.):
 def DoublePowerCreepMaterial(modelName, name, data, sectionLength=1.):
     mat, sect, subroutine = ElasticMaterial(
         modelName, name, data, sectionLength)
+    
+    print(f"O nome que chegou na função foi: {name}")
     try:
-        dp_data = data["Rocks"][]["DoublePowerParameters"]
+        # dp_data = data["Rocks"][name]["DoublePowerParameters"]        
+        dp_data = data.get("DoublePowerParameters", {})
         # dp_data = data.get("creep_parameters", {})
         A1 = dp_data["a1"]
         A2 = dp_data["a2"]

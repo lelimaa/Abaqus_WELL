@@ -94,6 +94,18 @@ for part_name, part_data in data_code.items():
 # Definition of materials ###############################################################
 
 if __name__ == "__main__":
+
+    lithology = data["Lithology"]
+
+    inicio_busca = top_depth
+    fim_busca = base_depth
+
+    rochas_na_regiao = set(
+    item["Rock"] for item in data["Lithology"] 
+    if item["Top"] < fim_busca and item["Bottom"] > inicio_busca
+    )
+
+
     examples = {}
 
     casing_type = "L80"
@@ -108,28 +120,45 @@ if __name__ == "__main__":
         "type": "Casing"
     }
 
-    for rock_name, properties in data["Rocks"].items():
-        examples[rock_name] = {
-            "behavior": properties["Law"],
-            'density': properties["ElasticParameters"]["Density"],
-            'elastic': (properties["ElasticParameters"]["Young"]*1e9,
-                        properties["ElasticParameters"]["Poisson"]),
-            'conductivity': properties["ThermalParameters"]["Conductivity"],
-            'specific_heat': properties["ThermalParameters"]["SpecificHeat"],
-            'expansion': properties["ThermalParameters"]["ThermalExpansion"],
-            "type": "Rock"
-        }
+    examples["FLUID"] = {
+        "behavior": "ELASTIC",
+        'density': 1.0,
+        'elastic': (10000, 0),
+        'conductivity': 0.702,
+        'specific_heat': 2060.0,
+        "type": "Fluid"
+    }    
 
-        if "MohrCoulombParameters" in properties:
-            mc = properties["MohrCoulombParameters"]
-            examples[rock_name].update({
-                'friction_angle': mc["FrictionAngle"],
-                'dilatancy_angle': mc["DilatancyAngle"],
-                'cohesion': mc["Cohesion"],
-                "lab_data": ((20001698.76, 0.0), )
-                })
-            # examples[rock_name]['lab_data'] = ((10e6, 0.0), (20e6, 0.01), (30e6, 0.03), (40e6, 0.06))
-    # examples = {
+    for rock_name, properties in data["Rocks"].items():
+
+        if rock_name in rochas_na_regiao:
+
+            examples[rock_name] = {
+                "behavior": properties["Law"],
+                'density': properties["ElasticParameters"]["Density"],
+                'elastic': (properties["ElasticParameters"]["Young"]*1e9,
+                            properties["ElasticParameters"]["Poisson"]),
+                'conductivity': properties["ThermalParameters"]["Conductivity"],
+                'specific_heat': properties["ThermalParameters"]["SpecificHeat"],
+                'expansion': properties["ThermalParameters"]["ThermalExpansion"],
+                "type": "Rock"
+            }
+
+            if "MohrCoulombParameters" in properties:
+                mc = properties["MohrCoulombParameters"]
+                examples[rock_name].update({
+                    'friction_angle': mc["FrictionAngle"],
+                    'dilatancy_angle': mc["DilatancyAngle"],
+                    'cohesion': mc["Cohesion"],
+                    "lab_data": ((20001698.76, 0.0), )
+                    })
+                # examples[rock_name]['lab_data'] = ((10e6, 0.0), (20e6, 0.01), (30e6, 0.03), (40e6, 0.06))
+
+            if "DoublePowerParameters" in properties:
+                examples[rock_name]["DoublePowerParameters"] = properties["DoublePowerParameters"]
+
+    print(examples)
+
     #     "STEEL": {
     #         "behavior": data["SteelGrades"]["L80"]["Law"],
     #         'density': data["SteelGrades"]["L80"]["ElasticParameters"]["Density"],
