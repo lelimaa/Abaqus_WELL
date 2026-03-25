@@ -71,7 +71,6 @@ def CreateSetsPipe(name_model):
         for i in range(1, len(horizontal_edges)):
             all_horizontals += horizontal_edges[i]
         p.Set(edges=all_horizontals, name='FASEI_REV_TT')
-
     
 def CreateSetsFluid(name_model):
     m = mdb.models[name_model]
@@ -583,3 +582,26 @@ def CreateSetsAssembly(name_model):
         print(f"Set 'YSYM_TOP' criado com sucesso na altura Y = {y_topo}")
     else:
         print("Erro: Nenhuma aresta encontrada no topo (Y =", y_topo, ")")
+
+def CreateSurfaces(name_model):
+    
+    m = mdb.models[name_model]
+    a = m.rootAssembly
+
+    # SUPERFICIE DE INTERFACE
+    tol = 0.001
+
+    inst_f = a.instances['FLUID_INST']
+    x_interface = max([v.pointOn[0][0] for v in inst_f.vertices])
+
+    y_min = min([v.pointOn[0][1] for v in inst_f.vertices])
+    y_max = max([v.pointOn[0][1] for v in inst_f.vertices])
+
+    faces_f = inst_f.faces.getByBoundingBox(
+        xMin=x_interface - tol, yMin=y_min - tol, zMin=-tol,
+        xMax=x_interface + tol, yMax=y_max + tol, zMax=tol
+    )
+
+    if faces_f:
+        a.Surface(side1Faces=faces_f, name='INTERFACE_FLUID_ROCK')
+        print(f"Superfície 'INTERFACE_FLUID_ROCK' criada na interface X = {x_interface}")

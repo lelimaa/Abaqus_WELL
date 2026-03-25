@@ -59,7 +59,7 @@ print(f"The top of the wellbore is at: {-top_depth} meters")
 
 if __name__ == "__main__":
 
-    filtered_layers, t_depths, filtered_rocks = process_lithology(data) 
+    filtered_layers, t_depths, filtered_rocks = process_lithology(data, top_depth, base_depth) 
     layers_depths = sorted(t_depths)
 
     data_code = {
@@ -96,14 +96,16 @@ if __name__ == "__main__":
     init_search = top_depth
     end_search = base_depth
 
-    rock_in_region = set(
-    item["Rock"] for item in data["Lithology"] 
-    if item["Top"] < end_search and item["Bottom"] > init_search
-    )
+    filtered_data = [
+        item for item in lithology 
+        if item["Top"] < end_search and item["Bottom"] > init_search
+        ]
+
+    rock_in_region = {item["Rock"] for item in filtered_data}
 
     examples = {}
 
-    casing_type = "L80"
+    casing_type = "P110"
     examples["STEEL"] = {
         "behavior": data["SteelGrades"][casing_type]["Law"],
         'density': data["SteelGrades"][casing_type]["ElasticParameters"]["Density"],
@@ -124,33 +126,32 @@ if __name__ == "__main__":
         "type": "Fluid"
     }    
 
-    for rock_name, properties in data["Rocks"].items():
+    for mat_name, properties in filtered_rocks.items():
 
-        if rock_name in rock_in_region:
+        examples[mat_name] = {
+            "behavior": properties["Law"],
+            'density': properties["ElasticParameters"]["Density"],
+            'elastic': (properties["ElasticParameters"]["Young"]*1e9,
+                        properties["ElasticParameters"]["Poisson"]),
+            'conductivity': properties["ThermalParameters"]["Conductivity"],
+            'specific_heat': properties["ThermalParameters"]["SpecificHeat"],
+            'expansion': properties["ThermalParameters"]["ThermalExpansion"],
+            "type": "Rock"
+        }
 
-            examples[rock_name] = {
-                "behavior": properties["Law"],
-                'density': properties["ElasticParameters"]["Density"],
-                'elastic': (properties["ElasticParameters"]["Young"]*1e9,
-                            properties["ElasticParameters"]["Poisson"]),
-                'conductivity': properties["ThermalParameters"]["Conductivity"],
-                'specific_heat': properties["ThermalParameters"]["SpecificHeat"],
-                'expansion': properties["ThermalParameters"]["ThermalExpansion"],
-                "type": "Rock"
-            }
+        if "MohrCoulombParameters" in properties:
+            mc = properties["MohrCoulombParameters"]
+            examples[mat_name].update({
+                'friction_angle': mc["FrictionAngle"],
+                'dilatancy_angle': mc["DilatancyAngle"],
+                'cohesion': mc["Cohesion"],
+                "lab_data": ((20001698.76, 0.0), )
+                })
+            # examples[rock_name]['lab_data'] = ((10e6, 0.0), (20e6, 0.01), (30e6, 0.03), (40e6, 0.06))
 
-            if "MohrCoulombParameters" in properties:
-                mc = properties["MohrCoulombParameters"]
-                examples[rock_name].update({
-                    'friction_angle': mc["FrictionAngle"],
-                    'dilatancy_angle': mc["DilatancyAngle"],
-                    'cohesion': mc["Cohesion"],
-                    "lab_data": ((20001698.76, 0.0), )
-                    })
-                # examples[rock_name]['lab_data'] = ((10e6, 0.0), (20e6, 0.01), (30e6, 0.03), (40e6, 0.06))
+        if "DoublePowerParameters" in properties:
+            examples[mat_name]["DoublePowerParameters"] = properties["DoublePowerParameters"]
 
-            if "DoublePowerParameters" in properties:
-                examples[rock_name]["DoublePowerParameters"] = properties["DoublePowerParameters"]
 
     material_examples = {
         "PIPE": {
@@ -165,20 +166,22 @@ if __name__ == "__main__":
         }
     }
 
-    filtered_data = [item for item in lithology if item["Top"] < end_search and item["Bottom"] > init_search]
 
     lythology_examples = []
 
-    for i, item in enumerate(filtered_data, start=1):
-        name_rock = item["Rock"]
+    import pprint 
+    pprint.pprint(filtered_layers)
+
+
+    for i, layer in enumerate(filtered_layers, start=1):
 
         new_block = {
-            "set_name": name_rock,
+            "set_name": layer["Rock"],
             "set_index": f"L{i}-I",
-            "top_depth": item["Top"],
-            "base_depth": item["Bottom"],
+            "top_depth": layer["Top"],
+            "base_depth": layer["Bottom"],
             "partName": "ROCK",
-            "sectionName": f"{name_rock}_Section"
+            "sectionName": f"{layer['Material']}_Section"
         }
 
         lythology_examples.append(new_block)
@@ -206,4 +209,4 @@ if __name__ == "__main__":
                 top_depth=top_depth, base_depth=base_depth)  
         
     # Defining sets for boundary conditions and interactions
-    CreateSetsAssembly('MyFirstModel')
+    CreateSetsAssembly('MyFirstModel')   

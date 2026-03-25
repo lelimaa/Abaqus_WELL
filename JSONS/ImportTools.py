@@ -3,10 +3,10 @@ import json
 with open(r'C:\Users\hidalgo\Documents\GitHub\Abaqus_WELL_\wellClosure_axi.json') as f:
     data = json.load(f)
 
-def process_lithology(data):
+def process_lithology(data, global_top, global_bottom):
     # 1. Pega os limites globais do modelo (Ex: 3200 e 4250)
-    global_top = data["AnalysisData"]["Top"]
-    global_bottom = data["AnalysisData"]["Bottom"]
+    # global_top = data["AnalysisData"]["Top"]
+    # global_bottom = data["AnalysisData"]["Bottom"]
     
     # 2. Inicia o set de profundidades já com os limites globais
     # t_depths = set([global_top, global_bottom])
@@ -29,7 +29,6 @@ def process_lithology(data):
         if l_bottom <= global_top or l_top >= global_bottom:
             continue
             
-        # A MÁGICA ACONTECE AQUI (Clipping):
         # Se o topo da rocha for menor que o topo do poço, ele corta no topo do poço.
         # Se a base da rocha for maior que a base do poço, ele corta na base do poço.
         clipped_top = max(l_top, global_top)
@@ -42,8 +41,10 @@ def process_lithology(data):
         # Prepara o material da rocha
         rock_name = layer["Rock"]
         rock_mat = json_rocks[rock_name].copy()
-        mat_name = lname + "_Material"
+        mat_name = lname + "_" + rock_name # Ex: LAYER_01_SANDSTONE
+        print(rock_mat.keys())
         rock_mat["Name"] = mat_name
+        rock_mat["ElasticParameters"]["Density"] = getFromOverburden(data["overburden"])
         filtered_rocks[mat_name] = rock_mat
         
         # Cria a nova camada com os valores CORTADOS e substitui/adiciona as chaves necessárias
