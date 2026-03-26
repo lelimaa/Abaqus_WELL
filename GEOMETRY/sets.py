@@ -583,25 +583,59 @@ def CreateSetsAssembly(name_model):
     else:
         print("Erro: Nenhuma aresta encontrada no topo (Y =", y_topo, ")")
 
-def CreateSurfaces(name_model):
-    
-    m = mdb.models[name_model]
+def CreateAnnularSurface(modelName, instanceName, inner_radius, outer_radius, top_depth, base_depth):
+
+    m = mdb.models[modelName]
     a = m.rootAssembly
+    inst = a.instances[instanceName]
 
     # SUPERFICIE DE INTERFACE
     tol = 0.001
 
-    inst_f = a.instances['FLUID_INST']
-    x_interface = max([v.pointOn[0][0] for v in inst_f.vertices])
+    y_min = min(top_depth, base_depth)
+    y_max = max(top_depth, base_depth)
 
-    y_min = min([v.pointOn[0][1] for v in inst_f.vertices])
-    y_max = max([v.pointOn[0][1] for v in inst_f.vertices])
-
-    faces_f = inst_f.faces.getByBoundingBox(
-        xMin=x_interface - tol, yMin=y_min - tol, zMin=-tol,
-        xMax=x_interface + tol, yMax=y_max + tol, zMax=tol
+    arestas_internas = inst.edges.getByBoundingBox(
+        xMin = inner_radius-tol, xMax = inner_radius+tol,
+        yMin = y_min-tol, yMax = y_max + tol, zMin = -tol, zMax = tol
     )
 
-    if faces_f:
-        a.Surface(side1Faces=faces_f, name='INTERFACE_FLUID_ROCK')
-        print(f"Superfície 'INTERFACE_FLUID_ROCK' criada na interface X = {x_interface}")
+    arestas_externas = inst.edges.getByBoundingBox(
+        xMin = outer_radius-tol, xMax = outer_radius+tol,
+        yMin = y_min-tol, yMax = y_max + tol, zMin = -tol, zMax = tol
+    )
+
+    arestas_topo = inst.edges.getByBoundingBox(
+        xMin = inner_radius-tol, xMax = outer_radius+tol,
+        yMin = y_max-tol, yMax = y_max+tol, zMin = -tol, zMax = tol
+    )
+
+
+    arestas_base = inst.edges.getByBoundingBox(
+        xMin = inner_radius-tol, xMax = outer_radius+tol,
+        yMin = y_min-tol, yMax = y_min+tol, zMin = -tol, zMax = tol
+    )
+
+    todas_arestas = arestas_internas + arestas_externas + arestas_topo + arestas_base
+
+    nome_da_superficie = 'FASEI_ANNULAR'
+    a.Surface(side1Edges= todas_arestas, name=nome_da_superficie)
+
+    print("Superfície '%s' criada com sucesso contendo %d arestas." % (nome_da_superficie, len(todas_arestas)))
+
+    return a.surfaces[nome_da_superficie]
+
+    # inst_f = a.instances['FLUID_INST']
+    # x_interface = max([v.pointOn[0][0] for v in inst_f.vertices])
+
+    # y_min = min([v.pointOn[0][1] for v in inst_f.vertices])
+    # y_max = max([v.pointOn[0][1] for v in inst_f.vertices])
+
+    # faces_f = inst_f.faces.getByBoundingBox(
+    #     xMin=x_interface - tol, yMin=y_min - tol, zMin=-tol,
+    #     xMax=x_interface + tol, yMax=y_max + tol, zMax=tol
+    # )
+
+    # if faces_f:
+    #     a.Surface(side1Faces=faces_f, name='INTERFACE_FLUID_ROCK')
+    #     print(f"Superfície 'INTERFACE_FLUID_ROCK' criada na interface X = {x_interface}")

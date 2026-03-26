@@ -44,7 +44,7 @@ def process_lithology(data, global_top, global_bottom):
         mat_name = lname + "_" + rock_name # Ex: LAYER_01_SANDSTONE
         print(rock_mat.keys())
         rock_mat["Name"] = mat_name
-        rock_mat["ElasticParameters"]["Density"] = getFromOverburden(data["overburden"])
+        # rock_mat["ElasticParameters"]["Density"] = getFromOverburden(data["overburden"])
         filtered_rocks[mat_name] = rock_mat
         
         # Cria a nova camada com os valores CORTADOS e substitui/adiciona as chaves necessárias
