@@ -212,3 +212,5 @@ if __name__ == "__main__":
     CreateSetsAssembly('MyFirstModel')   
 
     CreateAnnularSurface('MyFirstModel', 'FLUID_INST', inner_radius_annular, inner_radius_wellbore, -top_depth, -base_depth)
+
+    CreateInnerWellboreSurface('MyFirstModel', 'PIPE_INST', inner_radius_pipe, -top_depth, -base_depth)

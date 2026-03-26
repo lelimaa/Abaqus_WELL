@@ -625,17 +625,29 @@ def CreateAnnularSurface(modelName, instanceName, inner_radius, outer_radius, to
 
     return a.surfaces[nome_da_superficie]
 
-    # inst_f = a.instances['FLUID_INST']
-    # x_interface = max([v.pointOn[0][0] for v in inst_f.vertices])
+def CreateInnerWellboreSurface(modelName, instanceName, inner_radius, top_depth, base_depth):
 
-    # y_min = min([v.pointOn[0][1] for v in inst_f.vertices])
-    # y_max = max([v.pointOn[0][1] for v in inst_f.vertices])
+    m = mdb.models[modelName]
+    a = m.rootAssembly
+    inst = a.instances[instanceName]
 
-    # faces_f = inst_f.faces.getByBoundingBox(
-    #     xMin=x_interface - tol, yMin=y_min - tol, zMin=-tol,
-    #     xMax=x_interface + tol, yMax=y_max + tol, zMax=tol
-    # )
+    tol = 0.001
 
-    # if faces_f:
-    #     a.Surface(side1Faces=faces_f, name='INTERFACE_FLUID_ROCK')
-    #     print(f"Superfície 'INTERFACE_FLUID_ROCK' criada na interface X = {x_interface}")
+    y_min = min(top_depth, base_depth)
+    y_max = max(top_depth, base_depth)
+
+    arestas_internas = inst.edges.getByBoundingBox(
+        xMin = inner_radius-tol,
+        xMax = inner_radius+tol,
+        yMin = y_min-tol, 
+        yMax = y_max + tol, 
+        zMin = -tol, 
+        zMax = tol
+    )
+
+    surfaceName = 'FASEI_COMPLETED_WELL'
+    a.Surface(side1Edges= arestas_internas, name=surfaceName)
+
+    print("Superfície '%s' criada com sucesso contendo %d arestas." % (surfaceName, len(arestas_internas)))
+
+    return a.surfaces[surfaceName]
