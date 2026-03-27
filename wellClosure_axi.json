@@ -2,8 +2,8 @@
   "AnalysisData": {
     "Name": "6973cbf82b7b30ef12f98ae6",
     "Depth": 0.0,
-    "Top": 3200.0,
-    "Bottom": 4250.0,
+    "Top": 2600.0,
+    "Bottom": 4800.0,
     "CreepTime": 0.0,
     "Coupling": "M",
     "HoleDiameter": 0.0,
@@ -246,7 +246,7 @@
       "Bottom": 4250.0
     },
     {
-      "Rock": "HALITE_DM",
+      "Rock": "HALITE",
       "Top": 4250.0,
       "Bottom": 4400.0
     },
@@ -888,6 +888,11 @@
         {
           "Tubular": "TEN_30_#161.33_X56",
           "Top": 2000.0,
+          "Bottom": 2100.0
+        },
+        {
+          "Tubular": "22_0IN_251_0NW_X70",
+          "Top": 2100.0,
           "Bottom": 2200.0
         }
       ],

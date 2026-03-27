@@ -1,0 +1,9 @@
+# Abaqus
+*.cae
+*.jnl
+*.rec
+*.rpy
+*.log
+*.sta
+*.odb
+*.lck
