@@ -583,11 +583,19 @@ def CreateSetsAssembly(name_model):
     else:
         print("Erro: Nenhuma aresta encontrada no topo (Y =", y_topo, ")")
 
-def CreateAnnularSurface(modelName, instanceName, inner_radius, outer_radius, top_depth, base_depth):
+def CreateSurfacesAssembly(modelName, data):
 
     m = mdb.models[modelName]
     a = m.rootAssembly
-    inst = a.instances[instanceName]
+
+    top_depth = -data["FLUID"]["top_depth"]
+    base_depth = -data["FLUID"]["base_depth"]
+    inner_radius_fluid = data["FLUID"]["inner_radius"]
+    outer_radius_fluid = data["FLUID"]["inner_radius"] + data["FLUID"]["thickness"]
+    inner_radius_pipe = data["PIPE"]["inner_radius"]
+    outer_radius_pipe = data["PIPE"]["inner_radius"] + data["PIPE"]["thickness"]
+    inner_radius_rock = data["ROCK"]["inner_radius"]
+    outer_radius_rock = data["ROCK"]["inner_radius"] + data["ROCK"]["thickness"]
 
     # SUPERFICIE DE INTERFACE
     tol = 0.001
@@ -595,59 +603,128 @@ def CreateAnnularSurface(modelName, instanceName, inner_radius, outer_radius, to
     y_min = min(top_depth, base_depth)
     y_max = max(top_depth, base_depth)
 
-    arestas_internas = inst.edges.getByBoundingBox(
-        xMin = inner_radius-tol, xMax = inner_radius+tol,
+    # Creating the annular surface using edges from the fluid and rock instances at the interface
+    # FASEI_ANNULAR
+    instanceName = 'FLUID_INST'
+    inst = a.instances[instanceName]
+
+    inner_edges_fluid = inst.edges.getByBoundingBox(
+        xMin = inner_radius_fluid-tol, xMax = inner_radius_fluid+tol,
         yMin = y_min-tol, yMax = y_max + tol, zMin = -tol, zMax = tol
     )
 
-    arestas_externas = inst.edges.getByBoundingBox(
-        xMin = outer_radius-tol, xMax = outer_radius+tol,
+    outer_edges_fluid = inst.edges.getByBoundingBox(
+        xMin = outer_radius_fluid-tol, xMax = outer_radius_fluid+tol,
         yMin = y_min-tol, yMax = y_max + tol, zMin = -tol, zMax = tol
     )
 
-    arestas_topo = inst.edges.getByBoundingBox(
-        xMin = inner_radius-tol, xMax = outer_radius+tol,
+    top_edges_fluid = inst.edges.getByBoundingBox(
+        xMin = inner_radius_fluid-tol, xMax = outer_radius_fluid+tol,
         yMin = y_max-tol, yMax = y_max+tol, zMin = -tol, zMax = tol
     )
 
 
-    arestas_base = inst.edges.getByBoundingBox(
-        xMin = inner_radius-tol, xMax = outer_radius+tol,
+    bottom_edges_fluid = inst.edges.getByBoundingBox(
+        xMin = inner_radius_fluid-tol, xMax = outer_radius_fluid+tol,
         yMin = y_min-tol, yMax = y_min+tol, zMin = -tol, zMax = tol
     )
 
-    todas_arestas = arestas_internas + arestas_externas + arestas_topo + arestas_base
+    all_edges_fluid = inner_edges_fluid + outer_edges_fluid + top_edges_fluid + bottom_edges_fluid
 
-    nome_da_superficie = 'FASEI_ANNULAR'
-    a.Surface(side1Edges= todas_arestas, name=nome_da_superficie)
+    surface_name_fluid = 'FASEI_ANNULAR'
+    a.Surface(side1Edges= all_edges_fluid, name=surface_name_fluid)
 
-    print("Superfície '%s' criada com sucesso contendo %d arestas." % (nome_da_superficie, len(todas_arestas)))
+    print("Surface '%s' created successfully containing %d edges." % (surface_name_fluid, len(all_edges_fluid)))
+    
+    # Creation of inner and outer surfaces in the fluid 
+    # FASEI_FLUIDO
 
-    return a.surfaces[nome_da_superficie]
+    edges_fluid_phasei = inner_edges_fluid + outer_edges_fluid 
 
-def CreateInnerWellboreSurface(modelName, instanceName, inner_radius, top_depth, base_depth):
+    surface_name_fluid_phasei = 'FASEI_FLUIDO'
+    a.Surface(side1Edges= edges_fluid_phasei, name=surface_name_fluid_phasei)
 
-    m = mdb.models[modelName]
-    a = m.rootAssembly
+    print("Surface '%s' created successfully containing %d edges." % (surface_name_fluid_phasei, len(edges_fluid_phasei)))
+
+    # Creating the casing surface using edges from the pipe instance
+    # FASEI_COMPLETED_WELL
+    instanceName = 'PIPE_INST'
     inst = a.instances[instanceName]
 
-    tol = 0.001
-
-    y_min = min(top_depth, base_depth)
-    y_max = max(top_depth, base_depth)
-
-    arestas_internas = inst.edges.getByBoundingBox(
-        xMin = inner_radius-tol,
-        xMax = inner_radius+tol,
+    inner_edges_pipe = inst.edges.getByBoundingBox(
+        xMin = inner_radius_pipe-tol,
+        xMax = inner_radius_pipe+tol,
         yMin = y_min-tol, 
         yMax = y_max + tol, 
         zMin = -tol, 
         zMax = tol
     )
 
-    surfaceName = 'FASEI_COMPLETED_WELL'
-    a.Surface(side1Edges= arestas_internas, name=surfaceName)
+    surfaceName_pipe = 'FASEI_COMPLETED_WELL'
+    a.Surface(side1Edges= inner_edges_pipe, name=surfaceName_pipe)
 
-    print("Superfície '%s' criada com sucesso contendo %d arestas." % (surfaceName, len(arestas_internas)))
+    print("Surface '%s' succesfully created with success containing %d edges." % (surfaceName_pipe, len(inner_edges_pipe)))
+    
+    # Creating the casing outer surface using edges from the pipe instance
+    # FASEI_MASTER
 
-    return a.surfaces[surfaceName]
+    outer_edges_pipe = inst.edges.getByBoundingBox(
+        xMin = outer_radius_pipe-tol,
+        xMax = outer_radius_pipe+tol,
+        yMin = y_min-tol, 
+        yMax = y_max + tol, 
+        zMin = -tol, 
+        zMax = tol
+    )
+
+    surfaceName_pipe_outer = 'FASEI_MASTER'
+    a.Surface(side1Edges= outer_edges_pipe, name=surfaceName_pipe_outer)
+
+    print("Surface '%s' succesfully created with success containing %d edges." % (surfaceName_pipe_outer, len(outer_edges_pipe)))
+
+    # Creating the casing external surfaces using edges from the pipe instance
+    # FASEI_REV
+
+    top_edges_pipe = inst.edges.getByBoundingBox(
+        xMin = inner_radius_pipe-tol, xMax = outer_radius_pipe+tol,
+        yMin = y_max-tol, yMax = y_max+tol, zMin = -tol, zMax = tol
+    )
+
+
+    bottom_edges_pipe = inst.edges.getByBoundingBox(
+        xMin = inner_radius_pipe-tol, xMax = outer_radius_pipe+tol,
+        yMin = y_min-tol, yMax = y_min+tol, zMin = -tol, zMax = tol
+    )
+
+    all_edges_pipe = inner_edges_pipe + outer_edges_pipe + top_edges_pipe + bottom_edges_pipe
+
+    surfaceName_pipe = 'FASEI_REV'
+    a.Surface(side1Edges= all_edges_pipe, name=surfaceName_pipe)
+
+    # Creating the rock internal surfaces using edges from the rock instance
+    # FASEI_OPEN_WELL
+
+    instanceName = 'ROCK_INST'
+    inst = a.instances[instanceName]
+
+    inner_edges_rock = inst.edges.getByBoundingBox(
+        xMin = inner_radius_rock-tol,
+        xMax = inner_radius_rock+tol,
+        yMin = y_min-tol, 
+        yMax = y_max + tol, 
+        zMin = -tol, 
+        zMax = tol
+    )
+
+    surfaceName_rock_open = 'FASEI_OPEN_WELL'
+    a.Surface(side1Edges= inner_edges_rock, name=surfaceName_rock_open)
+
+    print("Surface '%s' succesfully created with success containing %d edges." % (surfaceName_rock_open, len(inner_edges_rock)))
+
+    surfaceName_rock = 'FASEI_WELL'
+    a.Surface(side1Edges= inner_edges_rock, name=surfaceName_rock)
+
+    print("Surface '%s' succesfully created with success containing %d edges." % (surfaceName_rock, len(inner_edges_rock)))
+
+    # return a.surfaces[surface_name_fluid], a.surfaces[surface_name_fluid_phasei], a.surfaces[surfaceName_pipe], a.surfaces[surfaceName_pipe_outer], a.surfaces[surfaceName_pipe], a.surfaces[surfaceName_rock], a.surfaces[surfaceName_rock_open]
+

@@ -101,13 +101,6 @@ def CreateMaterial(modelName, name, data, sectionLength=1.):
         "DOUBLE_POWER_CREEP": DoublePowerCreepMaterial,
         "DOUBLE_MECHANISM_CREEP": DoubleMechanismCreepMaterial,
     }
-    # mapping = {
-    #     "Elastic": ElasticMaterial,
-    #     "vonMises": vonMisesMaterial,
-    #     "MohrCoulomb": MohrCoulombMaterial,
-    #     "DoublePowerCreep": DoublePowerCreepMaterial,
-    #     "DoubleMechanismCreep": DoubleMechanismCreepMaterial,
-    # }
     create_func = mapping.get(behavior)
     if create_func is not None:
         return create_func(modelName, name, data, sectionLength)
