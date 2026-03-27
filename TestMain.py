@@ -15,7 +15,8 @@ from GEOMETRY.geometries import *
 from GEOMETRY.assembly import *
 from GEOMETRY.sets import *
 from MATERIALS.materials import *
-from JSONS.ImportTools import process_lithology             
+from JSONS.ImportTools import process_lithology   
+from BCONDITIONS.conditions import CreateSteps          
 
 mdb.models.changeKey(fromName='Model-1', toName='MyFirstModel')
 
@@ -212,3 +213,5 @@ if __name__ == "__main__":
     CreateSetsAssembly('MyFirstModel')   
 
     CreateSurfacesAssembly('MyFirstModel', data_code)
+
+    CreateSteps('MyFirstModel')

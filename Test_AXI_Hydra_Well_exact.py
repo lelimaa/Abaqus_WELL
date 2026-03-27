@@ -497,14 +497,15 @@ p = mdb.models['Model-1'].parts['Analise-1']
 # Creation of the instance
 
 a = mdb.models['Model-1'].rootAssembly
-a = mdb.models['Model-1'].rootAssembly
 a.DatumCsysByThreePoints(coordSysType=CYLINDRICAL, origin=(0.0, 0.0, 0.0), 
     point1=(1.0, 0.0, 0.0), point2=(0.0, 0.0, -1.0))
 p = mdb.models['Model-1'].parts['Analise-1']
 a.Instance(name='Analise-1-1', part=p, dependent=ON)
 
 
+
 # Creation of steps and application of boundary conditions
+
 a = mdb.models['Model-1'].rootAssembly
 region = a.instances['Analise-1-1'].sets['FASEI_WELL_CIMENTO_BASE']
 mdb.models['Model-1'].XsymmBC(name='FIX_FASEI_WELL', createStepName='Initial', 
