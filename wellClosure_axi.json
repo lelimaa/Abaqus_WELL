@@ -1000,9 +1000,11 @@
       "Data": []
     },
     "drilling_14in (60 deg)": {
-      "Density": 10.5,
+      "Density": null,
       "ThermalGradient": "temp. drilling 14in - 60 degC",
-      "Data": []
+      "Data": [[2000, 10.5],
+               [3000, 10.5], 
+               [5000, 11.0]]
     },
     "drilling_14in (9.5ppg)": {
       "Density": 9.5,

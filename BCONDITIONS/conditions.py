@@ -1,6 +1,25 @@
 from abaqus import mdb
 from abaqusConstants import *
 
+# def interpolate_stress(depth_aim, list_stresses, key):
+
+#     depth_aim_actual = abs(depth_aim)
+
+#     x = [item["Depth"] for item in list_stresses]
+#     y = [item[key] for item in list_stresses]
+
+#     if depth_aim_actual <= x[0]: return y[0]
+
+#     if depth_aim_actual >= x[-1]: return y[-1]
+
+#     for i in range(len(x) - 1):
+#         if x[i] <= depth_aim_actual <= x[i+1]:
+#             x0, x1 = x[i], x[i+1]
+#             y0, y1 = y[i], y[i+1]
+
+#             return y0 + (depth_aim_actual - x0) * ((y1 - y0) / (x1 - x0))
+        
+
 def CreateSteps(name_model):
     m = mdb.models[name_model]
     a = m.rootAssembly
@@ -29,22 +48,24 @@ def CreateSteps(name_model):
         stressMag1=133997000.0, vCoord1=-2000.0, stressMag2=-21981800.0, 
         vCoord2=-4000.0, lateralCoeff1=0.0, lateralCoeff2=0.0)
     
-    # Verificar como automatizar para as diferentes camadas de rocha
+    # Verificar como automatizar para as diferentes camadas de rocha #############################
     
-    region = a.instances['ROCK_INST'].sets['L1-I']
-    m.GeostaticStress(name='S_L1-I', region=region, 
-        stressMag1=-31412800.0, vCoord1=-2500.0, stressMag2=-40566400.0, 
-        vCoord2=-2900.0, lateralCoeff1=1.0, lateralCoeff2=None)
+    # region = a.instances['ROCK_INST'].sets['L1-I']
+    # m.GeostaticStress(name='S_L1-I', region=region, 
+    #     stressMag1=-31412800.0, vCoord1=-2500.0, stressMag2=-40566400.0, 
+    #     vCoord2=-2900.0, lateralCoeff1=1.0, lateralCoeff2=None)
     
-    region = a.instances['ROCK_INST'].sets['L2-I']
-    m.GeostaticStress(name='S_L2-I', region=region, 
-        stressMag1=-40566400.0, vCoord1=-2900.0, stressMag2=-45805200.0, 
-        vCoord2=-3200.0, lateralCoeff1=1.0, lateralCoeff2=None)
+    # region = a.instances['ROCK_INST'].sets['L2-I']
+    # m.GeostaticStress(name='S_L2-I', region=region, 
+    #     stressMag1=-40566400.0, vCoord1=-2900.0, stressMag2=-45805200.0, 
+    #     vCoord2=-3200.0, lateralCoeff1=1.0, lateralCoeff2=None)
     
-    region = a.instances['ROCK_INST'].sets['L3-I']
-    m.GeostaticStress(name='S_L3-I', region=region, 
-        stressMag1=-45805200.0, vCoord1=-3200.0, stressMag2=-51044000.0, 
-        vCoord2=-3500.0, lateralCoeff1=1.0, lateralCoeff2=None)
+    # region = a.instances['ROCK_INST'].sets['L3-I']
+    # m.GeostaticStress(name='S_L3-I', region=region, 
+    #     stressMag1=-45805200.0, vCoord1=-3200.0, stressMag2=-51044000.0, 
+    #     vCoord2=-3500.0, lateralCoeff1=1.0, lateralCoeff2=None)
+
+    
     
     #######################################################################
     
@@ -92,3 +113,37 @@ def CreateSteps(name_model):
         stepName='Transition', timePoint='timePoint')
     m.StaticStep(name='TempDefine', previous='Transition', 
         timePeriod=3.0, initialInc=1.0, minInc=3e-05, maxInc=3.0)
+    
+    # Perguntar sobre essa definição para poder atualizar para n camadas de rocha #############################
+    
+    # delta_T = 3.2e-4
+    # v1 = 1.06404
+
+    # # Create dict with keys from -2500 to -3500 with -2.5 intervals
+    # gridPointData1 = {}
+    # for index, depth in enumerate(np.arange(-2500, -3502.5, -2.5)):
+    #     val = v1+(index)*delta_T
+    #     gridPointData1[str(depth)] = (
+    #         (1.79769313486232e+308, 0.0, 100.0),
+    #         (0.0, val, val),
+    #         (100.0, val, val)
+    #     )
+    # m.MappedField(name='Geotermico', description='', 
+    #     regionType=POINT, partLevelData=False, localCsys=None, 
+    #     pointDataFormat=GRID, fieldDataType=SCALAR, gridPointPlane=PLANE13, 
+    #     gridPointData=gridPointData1)
+    
+    ##########################################################################################################
+
+    # region = a.instances['Analise-1-1'].sets['FASEI']
+    # m.Temperature(name='NT_FASEI', createStepName='TempDefine', 
+    #     region=region, distributionType=FIELD, 
+    #     crossSectionDistribution=CONSTANT_THROUGH_THICKNESS, 
+    #     field='Geotermico', magnitudes=(277.15, ))
+
+    # region = a.instances['Analise-1-1'].sets['FASEI_COMPLETED_WELL']
+    # m.Temperature(name='NT_FASEI_ID', 
+    #     createStepName='TempDefine', region=region, distributionType=FIELD, 
+    #     crossSectionDistribution=CONSTANT_THROUGH_THICKNESS, 
+    #     field='Geotermico', magnitudes=(277.15, ))
+    
