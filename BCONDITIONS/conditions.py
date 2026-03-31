@@ -1,24 +1,115 @@
 from abaqus import mdb
 from abaqusConstants import *
+import numpy as np
 
-# def interpolate_stress(depth_aim, list_stresses, key):
+def ConvertStressesJSON(in_situ_stresses):
 
-#     depth_aim_actual = abs(depth_aim)
+    convertion_factor = 119.826 * 9.81
 
-#     x = [item["Depth"] for item in list_stresses]
-#     y = [item[key] for item in list_stresses]
+    table_sv_pa = {}
 
-#     if depth_aim_actual <= x[0]: return y[0]
+    # print(f"{'TVD (m)':<10} | {'Sv (ppg)':<12} | {'Sv (Pa) Calculated':<20}")
+    # print("-" * 47)
 
-#     if depth_aim_actual >= x[-1]: return y[-1]
+    for item in in_situ_stresses:
+        depth = item["Depth"]
+        emw_ppg = item["Overburden"]
 
-#     for i in range(len(x) - 1):
-#         if x[i] <= depth_aim_actual <= x[i+1]:
-#             x0, x1 = x[i], x[i+1]
-#             y0, y1 = y[i], y[i+1]
+        sv_pa = - (emw_ppg * convertion_factor * depth)
 
-#             return y0 + (depth_aim_actual - x0) * ((y1 - y0) / (x1 - x0))
+        table_sv_pa[depth] = sv_pa
+
+        # print(f"{depth:<10.2f} | {emw_ppg:<12.5f} | {abs(sv_pa)/1e6:<20.5f}")
+
+    return table_sv_pa
+
+
+def ApplyGeostaticStresses(name_model, filtered_layers, stresses_table):
+    m = mdb.models[name_model]
+    a = m.rootAssembly
+    inst_rock = a.instances['ROCK_INST']
+
+    def get_stresses_exact(z, table):
+        depths = sorted(table.keys())
+
+        if z <= depths[0]: return table[depths[0]]
+        if z >= depths[-1]: return table[depths[-1]]
+
+        for i in range(len(depths)-1):
+            z0, z1 = depths[i], depths[i+1]
+            if z0 <= z <= z1:
+                s0, s1 = table[z0], table[z1]
+
+                return s0 + (z-z0) * ((s1 - s0) / (z1 - z0))
+            
+    for i, layer in enumerate(filtered_layers):
+
+        z_top = layer['Top']
+        z_bottom = layer['Bottom']
+
+        layer_num = i + 1
+        set_name = f'L{layer_num}-I'  
+        # set_name = layer['Name']  
+
+        stress_top = get_stresses_exact(z_top, stresses_table)
+        stress_bottom = get_stresses_exact(z_bottom, stresses_table)
+
+        region = inst_rock.sets[set_name]
         
+        m.GeostaticStress(
+            name = f'S_{set_name}',
+            region=region,
+            stressMag1=stress_top,
+            vCoord1=-z_top,
+            stressMag2=stress_bottom,
+            vCoord2=-z_bottom,
+            lateralCoeff1=1.0,
+            lateralCoeff2=None
+        )
+
+        name_material = layer['Rock']
+
+        print(f"[{set_name}-{name_material}] Stresses: Top ({z_top}m) = {stress_top/1e6:.2f} MPa | Bottom ({z_bottom}m) = {stress_bottom/1e6:.2f} MPa")
+    
+    print("\n>>> Todas as tensões geostáticas foram aplicadas com sucesso!")
+
+
+def CreateNormalizedGeothermalGrid(name_model, top_depth, top_temp_C, bottom_depth, bottom_temp_C, start_mesh_depth, end_mesh_depth):
+    
+    
+    m = mdb.models[name_model]
+
+    T_ref = top_temp_C + 273.15
+
+    gradient = (bottom_temp_C -top_temp_C) / (bottom_depth - top_depth)
+
+    gridPointData1 = {}
+
+    step = 2.5
+
+    for depth in np.arange(start_mesh_depth, end_mesh_depth + (step/2), step):
+
+        temp_celsius = top_temp_C + (depth - top_depth) * gradient
+        temp_norm = (temp_celsius + 273.15) / T_ref
+
+        gridPointData1[str(-depth)] = (
+            (1.79769313486232e+308, 0.0, 100.0),
+            (0.0, temp_norm, temp_norm),
+            (100.0, temp_norm, temp_norm)
+        )
+
+    if 'Geotermico' in m.analyticalFields.keys():
+        del m.analyticalFields['Geotermico']
+
+
+    m.MappedField(
+        name='Geotermico', description='Thermical Profile Normalized',
+        regionType=POINT, partLevelData=False, localCsys=None,
+        pointDataFormat=GRID, fieldDataType=SCALAR, gridPointPlane=PLANE13,
+        gridPointData=gridPointData1
+    )
+    print(f">>> Mappedfield 'Geotermico' successfully created! (T_ref = {T_ref} K)")
+
 
 def CreateSteps(name_model):
     m = mdb.models[name_model]
@@ -48,24 +139,9 @@ def CreateSteps(name_model):
         stressMag1=133997000.0, vCoord1=-2000.0, stressMag2=-21981800.0, 
         vCoord2=-4000.0, lateralCoeff1=0.0, lateralCoeff2=0.0)
     
-    # Verificar como automatizar para as diferentes camadas de rocha #############################
+    #######################################################################
     
-    # region = a.instances['ROCK_INST'].sets['L1-I']
-    # m.GeostaticStress(name='S_L1-I', region=region, 
-    #     stressMag1=-31412800.0, vCoord1=-2500.0, stressMag2=-40566400.0, 
-    #     vCoord2=-2900.0, lateralCoeff1=1.0, lateralCoeff2=None)
-    
-    # region = a.instances['ROCK_INST'].sets['L2-I']
-    # m.GeostaticStress(name='S_L2-I', region=region, 
-    #     stressMag1=-40566400.0, vCoord1=-2900.0, stressMag2=-45805200.0, 
-    #     vCoord2=-3200.0, lateralCoeff1=1.0, lateralCoeff2=None)
-    
-    # region = a.instances['ROCK_INST'].sets['L3-I']
-    # m.GeostaticStress(name='S_L3-I', region=region, 
-    #     stressMag1=-45805200.0, vCoord1=-3200.0, stressMag2=-51044000.0, 
-    #     vCoord2=-3500.0, lateralCoeff1=1.0, lateralCoeff2=None)
-
-    
+    ### FUNÇÃO ApplyGeostaticStresses #####################################    
     
     #######################################################################
     
@@ -114,24 +190,9 @@ def CreateSteps(name_model):
     m.StaticStep(name='TempDefine', previous='Transition', 
         timePeriod=3.0, initialInc=1.0, minInc=3e-05, maxInc=3.0)
     
-    # Perguntar sobre essa definição para poder atualizar para n camadas de rocha #############################
+    ##########################################################################################################
     
-    # delta_T = 3.2e-4
-    # v1 = 1.06404
-
-    # # Create dict with keys from -2500 to -3500 with -2.5 intervals
-    # gridPointData1 = {}
-    # for index, depth in enumerate(np.arange(-2500, -3502.5, -2.5)):
-    #     val = v1+(index)*delta_T
-    #     gridPointData1[str(depth)] = (
-    #         (1.79769313486232e+308, 0.0, 100.0),
-    #         (0.0, val, val),
-    #         (100.0, val, val)
-    #     )
-    # m.MappedField(name='Geotermico', description='', 
-    #     regionType=POINT, partLevelData=False, localCsys=None, 
-    #     pointDataFormat=GRID, fieldDataType=SCALAR, gridPointPlane=PLANE13, 
-    #     gridPointData=gridPointData1)
+    ### FUNÇÃO CreateNormalizedGeothermalGrid #####################################
     
     ##########################################################################################################
 
@@ -146,4 +207,5 @@ def CreateSteps(name_model):
     #     createStepName='TempDefine', region=region, distributionType=FIELD, 
     #     crossSectionDistribution=CONSTANT_THROUGH_THICKNESS, 
     #     field='Geotermico', magnitudes=(277.15, ))
-    
+
+

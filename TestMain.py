@@ -16,7 +16,7 @@ from GEOMETRY.assembly import *
 from GEOMETRY.sets import *
 from MATERIALS.materials import *
 from JSONS.ImportTools import process_lithology   
-from BCONDITIONS.conditions import CreateSteps          
+from BCONDITIONS.conditions import *         
 
 mdb.models.changeKey(fromName='Model-1', toName='MyFirstModel')
 
@@ -215,3 +215,16 @@ if __name__ == "__main__":
     CreateSurfacesAssembly('MyFirstModel', data_code)
 
     CreateSteps('MyFirstModel')
+
+    stresses_table = ConvertStressesJSON(data["InSituStresses"])
+
+    ApplyGeostaticStresses('MyFirstModel', filtered_layers, stresses_table)
+
+    CreateNormalizedGeothermalGrid(
+        name_model='MyFirstModel',
+        top_depth=data["ThermalGradient"]["Geothermal_cold"][0]["Depth"], top_temp_C=data["ThermalGradient"]["Geothermal_cold"][0]["Temperature"],
+        bottom_depth=data["ThermalGradient"]["Geothermal_cold"][-1]["Depth"], bottom_temp_C=data["ThermalGradient"]["Geothermal_cold"][-1]["Temperature"],
+        start_mesh_depth=top_depth,
+        end_mesh_depth=base_depth 
+    )
+
