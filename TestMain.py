@@ -228,3 +228,18 @@ if __name__ == "__main__":
         end_mesh_depth=base_depth 
     )
 
+    CreateStepsPartTwo('MyFirstModel')
+
+    ApplyExpressionFieldsGeothermal(
+        name_model='MyFirstModel', filtered_layers=filtered_layers,
+        top_depth=data["ThermalGradient"]["Geothermal_cold"][0]["Depth"], top_temp_C=data["ThermalGradient"]["Geothermal_cold"][0]["Temperature"],
+        bottom_depth=data["ThermalGradient"]["Geothermal_cold"][-1]["Depth"], bottom_temp_C=data["ThermalGradient"]["Geothermal_cold"][-1]["Temperature"]
+        )
+
+    CreateFluidExpressionFields(name_model='MyFirstModel', mud_weight_ppg=8.5)
+
+    ApplyInitialTemperatures(
+        name_model='MyFirstModel', filtered_layers=filtered_layers,
+        top_depth=data["ThermalGradient"]["Geothermal_cold"][0]["Depth"], top_temp_C=data["ThermalGradient"]["Geothermal_cold"][0]["Temperature"],
+        base_depth=data["ThermalGradient"]["Geothermal_cold"][-1]["Depth"], base_temp_C=data["ThermalGradient"]["Geothermal_cold"][-1]["Temperature"] 
+    )

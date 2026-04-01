@@ -196,16 +196,141 @@ def CreateSteps(name_model):
     
     ##########################################################################################################
 
-    # region = a.instances['Analise-1-1'].sets['FASEI']
-    # m.Temperature(name='NT_FASEI', createStepName='TempDefine', 
-    #     region=region, distributionType=FIELD, 
-    #     crossSectionDistribution=CONSTANT_THROUGH_THICKNESS, 
-    #     field='Geotermico', magnitudes=(277.15, ))
+def CreateStepsPartTwo(name_model):
+    m = mdb.models[name_model]
+    a = m.rootAssembly
 
-    # region = a.instances['Analise-1-1'].sets['FASEI_COMPLETED_WELL']
-    # m.Temperature(name='NT_FASEI_ID', 
-    #     createStepName='TempDefine', region=region, distributionType=FIELD, 
-    #     crossSectionDistribution=CONSTANT_THROUGH_THICKNESS, 
-    #     field='Geotermico', magnitudes=(277.15, ))
+    region = a.sets['FASEI']
+    m.Temperature(name='NT_FASEI', createStepName='TempDefine', 
+        region=region, distributionType=FIELD, 
+        crossSectionDistribution=CONSTANT_THROUGH_THICKNESS, 
+        field='Geotermico', magnitudes=(277.15, ))
+
+    region = a.sets['FASEI_COMPLETED_WELL']
+    m.Temperature(name='NT_FASEI_ID', 
+        createStepName='TempDefine', region=region, distributionType=FIELD, 
+        crossSectionDistribution=CONSTANT_THROUGH_THICKNESS, 
+        field='Geotermico', magnitudes=(277.15, ))
+    
+
+    
+def ApplyExpressionFieldsGeothermal(name_model, filtered_layers, top_depth=2000.0, top_temp_C=4.0, bottom_depth=4000.0, bottom_temp_C=75.0):
+     
+    m = mdb.models[name_model]
+
+    gradient = (bottom_temp_C - top_temp_C) / (bottom_depth - top_depth)
+
+    t_surface_C = top_temp_C - (gradient * top_depth)
+    intercept_K = t_surface_C + 273.15
+
+    for i, layer in enumerate(filtered_layers):
+        layer_num = i+1
+        set_name = f'L{layer_num}-I'
+        z_top = layer['Top']
+
+        t_top_K = (gradient * z_top) + intercept_K
+
+        expressionf = f"({gradient:.16f}*pow(-Y,1))/{t_top_K:.1f} + ({intercept_K:.15f}*pow(-Y,0))/{t_top_K:.1f}"
+
+        name_field = f'NT_{set_name}'
+
+        if name_field in m.analyticalFields.keys():
+            del m.analyticalFields[name_field]
+
+        m.ExpressionField(
+            name=name_field,
+            localCsys=None,
+            description=f'Normalized Temperature for the layer base {set_name}',
+            expression=expressionf
+        )
+        print(f">>> ExpressionField '{name_field}' created with denominator {t_top_K:.1f} K")
+
+    print("\n>>> All the thermal Expressionfields of the rocks were created!")
+
+    
+def CreateFluidExpressionFields(name_model, mud_weight_ppg=8.5):
+    m = mdb.models[name_model]
+
+    factor_conversion = 119.826 * 9.81
+    gradient_fluid = mud_weight_ppg * factor_conversion 
+
+    expression_clean = f'{gradient_fluid} * pow(-Y,1)'
+
+    names_fields = [
+        'P_FASEI_COMPLETED_WELL',
+        'P_FASEI_FLUID',
+        'P_FASEI_OPEN_WELL'
+    ]
+
+    for name_field in names_fields:
+
+        if name_field in m.analyticalFields.keys():
+            del m.analyticalFields[name_field]
+
+        m.ExpressionField(
+            name=name_field, 
+            localCsys=None,
+            description=f'Pressure hydrostatic clean ({mud_weight_ppg} ppg)',
+            expression=expression_clean
+        )
+        print(f">>> ExpressionField '{name_field}' created with success!")
 
 
+def ApplyInitialTemperatures(name_model, filtered_layers, step_name='TempDefine', top_depth=2000.0, top_temp_C=4.0, base_depth=4000.0, base_temp_C=75.0):
+
+    m = mdb.models[name_model]
+    a = m.rootAssembly
+    inst_rock = a.instances['ROCK_INST']
+
+    gradient = (base_temp_C - top_temp_C) / (base_depth - top_depth)
+    t_surface_C = top_temp_C - (gradient * top_depth)
+    intercept_K = t_surface_C + 273.15
+
+    for i, layer in enumerate(filtered_layers):
+        layer_num = i+1
+        sulfix = f'L{layer_num}-I'
+
+        z_top = layer['Top']
+        t_top_K = (gradient * z_top) + intercept_K
+
+        name_field_analytical = f'NT_{sulfix}'
+
+        sets_aim = [sulfix, f'{sulfix}_OD']
+
+        for name_set in sets_aim:
+            region = inst_rock.sets[name_set]
+            name_condition = f'NT_{name_set}'
+
+            m.Temperature(
+                name=name_condition,
+                createStepName=step_name,
+                region=region, 
+                distributionType=FIELD, 
+                crossSectionDistribution=CONSTANT_THROUGH_THICKNESS,
+                field=name_field_analytical,
+                magnitudes=(t_top_K, )
+            )
+            print(f">>> Temperature '{name_condition}' applied in the region {name_set} (Magnitude: {t_top_K:.2f} K)")
+
+    print("\n>>> All the temperatures of the layers were started sucsessfully!")
+
+
+def CreateStepsPartThree(name_model):
+    
+    m = mdb.models[name_model]
+    a = m.rootAssembly
+
+    m.StaticStep(name='Perf_10_375', previous='TempDefine')
+    region = a.surfaces['FASEI_OPEN_WELL']
+    m.Pressure(name='P_FASEI_OPEN_WELL', 
+        createStepName='Perf_10_375', region=region, distributionType=UNIFORM, 
+        field='', magnitude=19983500.0, amplitude=UNSET)
+    m.loads['P_FASEI_OPEN_WELL'].setValues(
+            distributionType=FIELD, field='P_FASEI_OPEN_WELL')
+    m.boundaryConditions['FIX_FASEI_WELL'].deactivate(
+        'Perf_10_375')
+    m.ViscoStep(name='Perf_10_375_Creep', 
+        previous='Perf_10_375', timePeriod=172800.0, maxNumInc=1000000, 
+        initialInc=1.0, minInc=1e-15, maxInc=172800.0, cetol=0.01)
+    m.StaticStep(name='Rev_9_875', 
+        previous='Perf_10_375_Creep', minInc=1e-15)

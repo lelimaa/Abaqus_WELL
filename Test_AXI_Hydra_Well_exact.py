@@ -651,6 +651,8 @@ mdb.models['Model-1'].ExpressionField(name='P_FASEI_FLUIDO', localCsys=None,
 mdb.models['Model-1'].ExpressionField(name='P_FASEI_OPEN_WELL', localCsys=None, 
     description='', 
     expression='(9991.726615395*pow(-Y,1))/19983453.23079+(2.6341780319308768e-09*pow(-Y,0))/19983453.23079')
+
+
 a = mdb.models['Model-1'].rootAssembly
 region = a.instances['Analise-1-1'].sets['L1-I']
 mdb.models['Model-1'].Temperature(name='NT_L1-I', createStepName='TempDefine', 
@@ -705,6 +707,8 @@ mdb.models['Model-1'].ViscoStep(name='Perf_10_375_Creep',
     initialInc=1.0, minInc=1e-15, maxInc=172800.0, cetol=0.01)
 mdb.models['Model-1'].StaticStep(name='Rev_9_875', 
     previous='Perf_10_375_Creep', minInc=1e-15)
+
+
 mdb.models['Model-1'].ContactProperty('C_FASEI')
 mdb.models['Model-1'].interactionProperties['C_FASEI'].TangentialBehavior(
     formulation=PENALTY, directionality=ISOTROPIC, slipRateDependency=OFF, 
