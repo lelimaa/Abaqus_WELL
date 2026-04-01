@@ -1,0 +1,122 @@
+# -*- coding: mbcs -*-
+#
+# Abaqus/CAE Release 2024 replay file
+# Internal Version: 2023_09_21-09.55.25 RELr426 190762
+# Run by Leticia on Fri Mar 27 11:57:26 2026
+#
+
+# from driverUtils import executeOnCaeGraphicsStartup
+# executeOnCaeGraphicsStartup()
+#: Executing "onCaeGraphicsStartup()" in the site directory ...
+from abaqus import *
+from abaqusConstants import *
+session.Viewport(name='Viewport: 1', origin=(1.55859, 1.5463), width=229.425, 
+    height=153.393)
+session.viewports['Viewport: 1'].makeCurrent()
+from driverUtils import executeOnCaeStartup
+executeOnCaeStartup()
+execfile('TestMain.py', __main__.__dict__)
+#: Data keys: dict_keys(['AnalysisData', 'ThermalGradient', 'Tubulars', 'Lithology', 'InSituStresses', 'Rocks', 'Cements', 'SteelGrades', 'Phases', 'Events', 'Fluids'])
+#: The bottom of the wellbore is at: -4800 meters
+#: The top of the wellbore is at: -2600 meters
+#: dict_keys(['MohrCoulombParameters', 'Law', 'Elasticity', 'ElasticParameters', 'ThermalParameters'])
+#: dict_keys(['DoublePowerParameters', 'Law', 'Elasticity', 'ElasticParameters', 'ThermalParameters'])
+#: dict_keys(['DoublePowerParameters', 'Law', 'Elasticity', 'ElasticParameters', 'ThermalParameters'])
+#: dict_keys(['DoublePowerParameters', 'Law', 'Elasticity', 'ElasticParameters', 'ThermalParameters'])
+#: dict_keys(['DoublePowerParameters', 'Law', 'Elasticity', 'ElasticParameters', 'ThermalParameters'])
+#: dict_keys(['DoublePowerParameters', 'Law', 'Elasticity', 'ElasticParameters', 'ThermalParameters'])
+#: Creating Geometry:  PIPE
+#: Creating Geometry:  FLUID
+#: Creating Geometry:  ROCK
+#: [{'Bottom': 3600.0,
+#:   'Material': 'LAYER_01_SANDSTONE',
+#:   'Name': 'LAYER_01',
+#:   'Rock': 'SANDSTONE',
+#:   'Top': 2600},
+#:  {'Bottom': 4150.0,
+#:   'Material': 'LAYER_02_HALITE',
+#:   'Name': 'LAYER_02',
+#:   'Rock': 'HALITE',
+#:   'Top': 3600.0},
+#:  {'Bottom': 4250.0,
+#:   'Material': 'LAYER_03_CARNALLITE',
+#:   'Name': 'LAYER_03',
+#:   'Rock': 'CARNALLITE',
+#:   'Top': 4150.0},
+#:  {'Bottom': 4400.0,
+#:   'Material': 'LAYER_04_HALITE',
+#:   'Name': 'LAYER_04',
+#:   'Rock': 'HALITE',
+#:   'Top': 4250.0},
+#:  {'Bottom': 4500.0,
+#:   'Material': 'LAYER_05_TACHYHYDRITE',
+#:   'Name': 'LAYER_05',
+#:   'Rock': 'TACHYHYDRITE',
+#:   'Top': 4400.0},
+#:  {'Bottom': 4800,
+#:   'Material': 'LAYER_06_HALITE',
+#:   'Name': 'LAYER_06',
+#:   'Rock': 'HALITE',
+#:   'Top': 4500.0}]
+#: O nome que chegou na função foi: LAYER_02_HALITE
+#: O nome que chegou na função foi: LAYER_03_CARNALLITE
+#: O nome que chegou na função foi: LAYER_04_HALITE
+#: O nome que chegou na função foi: LAYER_05_TACHYHYDRITE
+#: O nome que chegou na função foi: LAYER_06_HALITE
+#: Set 'L1-I_BASE' gerado automaticamente em Y = -3600.0
+#: Set 'L2-I_BASE' gerado automaticamente em Y = -4150.0
+#: Set 'L3-I_BASE' gerado automaticamente em Y = -4250.0
+#: Set 'L4-I_BASE' gerado automaticamente em Y = -4400.0
+#: Set 'L5-I_BASE' gerado automaticamente em Y = -4500.0
+#: Set 'L6-I_BASE' gerado automaticamente em Y = -4800.0
+#: Set 'L1-I_ID' created with sucess in the medium point Y=-3100.0
+#: Set 'L2-I_ID' created with sucess in the medium point Y=-3875.0
+#: Set 'L3-I_ID' created with sucess in the medium point Y=-4200.0
+#: Set 'L4-I_ID' created with sucess in the medium point Y=-4325.0
+#: Set 'L5-I_ID' created with sucess in the medium point Y=-4450.0
+#: Set 'L6-I_ID' created with sucess in the medium point Y=-4650.0
+#: Set 'L1-I_OD' criado com sucesso em X=12.4572, Y=-3100.0
+#: Set 'L2-I_OD' criado com sucesso em X=12.4572, Y=-3875.0
+#: Set 'L3-I_OD' criado com sucesso em X=12.4572, Y=-4200.0
+#: Set 'L4-I_OD' criado com sucesso em X=12.4572, Y=-4325.0
+#: Set 'L5-I_OD' criado com sucesso em X=12.4572, Y=-4450.0
+#: Set 'L6-I_OD' criado com sucesso em X=12.4572, Y=-4650.0
+#: Set 'L1-I_TOP' criado na altura Y = -2600.0
+#: Set 'L2-I_TOP' criado na altura Y = -3600.0
+#: Set 'L3-I_TOP' criado na altura Y = -4150.0
+#: Set 'L4-I_TOP' criado na altura Y = -4250.0
+#: Set 'L5-I_TOP' criado na altura Y = -4400.0
+#: Set 'L6-I_TOP' criado na altura Y = -4500.0
+#: Set de Face 'L1-I' criado em X=6.4572, Y=-3100.0
+#: Set de Face 'L2-I' criado em X=6.4572, Y=-3875.0
+#: Set de Face 'L3-I' criado em X=6.4572, Y=-4200.0
+#: Set de Face 'L4-I' criado em X=6.4572, Y=-4325.0
+#: Set de Face 'L5-I' criado em X=6.4572, Y=-4450.0
+#: Set de Face 'L6-I' criado em X=6.4572, Y=-4650.0
+#: Assigned section 'LAYER_01_SANDSTONE_Section' to existing set 'L1-I'.
+#: Assigned section 'LAYER_02_HALITE_Section' to existing set 'L2-I'.
+#: Assigned section 'LAYER_03_CARNALLITE_Section' to existing set 'L3-I'.
+#: Assigned section 'LAYER_04_HALITE_Section' to existing set 'L4-I'.
+#: Assigned section 'LAYER_05_TACHYHYDRITE_Section' to existing set 'L5-I'.
+#: Assigned section 'LAYER_06_HALITE_Section' to existing set 'L6-I'.
+#: Assembly completed with active sets: []
+#: Set 'ALL' criado com todas as faces das 2 instancias.
+#: Set FASEI_OPEN_WELL criado na interface X = 0.4572
+#: Set FASEI_WELL criado na interface X = 0.4572
+#: Set 'FASEI_COMPLETED_WELL' criado na face interna do Pipe (X = 0.202829)
+#: Set 'MESH_TT_PIPES' criado com 7 arestas horizontais.
+#: Set 'MESH_TT_ANNULARS' criado com 7 arestas horizontais.
+#: Set 'MESH_TT_ROCK' criado com 7 arestas horizontais.
+#: Set 'MESH_VERTICAL' criado com sucesso (todas as verticais).
+#: Set 'ROCK_BC' criado com sucesso na borda X = 12.4572
+#: Set 'ROCK_OUTPUT' criado com todas as faces dessa instancia.
+#: Set 'YSYM_BASE' criado com sucesso unindo todas as instâncias.
+#: Set 'YSYM_TOP' criado com sucesso na altura Y = -2600.0
+#: Surface 'FASEI_ANNULAR' created successfully containing 14 edges.
+#: Surface 'FASEI_FLUIDO' created successfully containing 12 edges.
+#: Surface 'FASEI_COMPLETED_WELL' succesfully created with success containing 6 edges.
+#: Surface 'FASEI_MASTER' succesfully created with success containing 6 edges.
+#: Surface 'FASEI_OPEN_WELL' succesfully created with success containing 6 edges.
+#: Surface 'FASEI_WELL' succesfully created with success containing 6 edges.
+print('RT script done')
+#: RT script done
