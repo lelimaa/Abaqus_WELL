@@ -191,9 +191,10 @@ def CreateSetsRock(name_model):
     v = p.vertices
     tol = 0.001
 
-    # ALLROCK
+    # ALLROCK and FASEI_SLAVE (all faces of the rock part, to be used in the contact definition as slave surface)
     all_faces = f[0:len(f)]
     p.Set(faces=all_faces, name='ALLROCK')
+    p.Set(faces=all_faces, name='FASEI_SLAVE')
 
     # L1-I_BASE, L2-I_BASE, L3-I_BASE, ... , LN-I_BASE
     todas_as_alturas = sorted(list(set([vert.pointOn[0][1] for vert in v])))

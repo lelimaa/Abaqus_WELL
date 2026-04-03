@@ -5,8 +5,8 @@ from abaqusConstants import *
 import json
 import sys 
 
-# path_project = r'C:\Users\juani\Documents\Github\Abaqus_WELL_' 
-path_project = r'C:\Users\hidalgo\Documents\GitHub\Abaqus_WELL_'
+path_project = r'C:\Users\juani\Documents\Github\Abaqus_WELL_' 
+# path_project = r'C:\Users\hidalgo\Documents\GitHub\Abaqus_WELL_'
 
 if path_project not in sys.path:
     sys.path.append(path_project)
@@ -25,16 +25,16 @@ if 'MyFirstModel' not in mdb.models:
 
 # Reading the json file and filling the input data for the analysis ####################
 
-# with open(r'C:\Users\juani\Documents\Github\Abaqus_WELL_\wellClosure_axi.json') as f:
-with open(r'C:\Users\hidalgo\Documents\GitHub\Abaqus_WELL_\wellClosure_axi.json') as f:
+with open(r'C:\Users\juani\Documents\Github\Abaqus_WELL_\wellClosure_axi.json') as f:
+# with open(r'C:\Users\hidalgo\Documents\GitHub\Abaqus_WELL_\wellClosure_axi.json') as f:
     data = json.load(f)
 
 print(f"Data keys: {data.keys()}")
 
 # variables read from json (geometry) ####################################################
 
-name_phase = '136fdd5d-6082-4c4f-8f77-7ed08da1932c'
-name_tubular = 'VAM_16in_#97_P110'
+name_phase = '3dda7930-6dbf-4d05-87f2-d2809a3e9fc6'
+name_tubular = 'LIN_09_875'
 
 outer_diamenter_pipe = data["Tubulars"][name_tubular]['OD']
 thickness_pipe = data["Tubulars"][name_tubular]['Thickness']
@@ -106,7 +106,9 @@ if __name__ == "__main__":
 
     examples = {}
 
-    casing_type = "P110"
+    # casing_type = "VM110"
+    casing_type = "VM-95"
+
     examples["STEEL"] = {
         "behavior": data["SteelGrades"][casing_type]["Law"],
         'density': data["SteelGrades"][casing_type]["ElasticParameters"]["Density"],
@@ -243,3 +245,47 @@ if __name__ == "__main__":
         top_depth=data["ThermalGradient"]["Geothermal_cold"][0]["Depth"], top_temp_C=data["ThermalGradient"]["Geothermal_cold"][0]["Temperature"],
         base_depth=data["ThermalGradient"]["Geothermal_cold"][-1]["Depth"], base_temp_C=data["ThermalGradient"]["Geothermal_cold"][-1]["Temperature"] 
     )
+
+    CreateStepsPartThree('MyFirstModel')
+
+    CreateCreepStep(
+        name_model='MyFirstModel', 
+        step_name='Perf_10_375_Creep',
+        previous_step='Perf_10_375',
+        time_period_days=2.0, 
+        cetol_value=0.01
+    )
+
+    CreateStepsPartFour(
+        name_model='MyFirstModel'
+    )
+
+    CreateContactCondition(
+        name_model='MyFirstModel', 
+        contact_name='C_FASEI', 
+        step_name='Rev_9_875',
+        main_surface_name='FASEI_MASTER', 
+        secondary_set_name='FASEI_SLAVE', 
+        friction_coeff=0.5, 
+        secondary_instance='ROCK_INST'
+    )
+
+    ConfigurePhaseRev(
+        name_model='MyFirstModel',
+        step_name='Rev_9_875'
+    )
+
+    CreateCreepStep(
+        name_model='MyFirstModel', 
+        step_name='Rev_9_875_Creep',
+        previous_step='Rev_9_875',
+        time_period_days=10950.0, 
+        max_inc_days=180.0,
+        cetol_value=0.01
+    )
+
+    # Falta:
+    # enxugar as defs para os sets
+    # enxugar as defs para os steps
+    # adaptar para os diferentes nomes de rev que dependem dos diametros dos casings
+    

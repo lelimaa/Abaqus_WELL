@@ -320,17 +320,163 @@ def CreateStepsPartThree(name_model):
     m = mdb.models[name_model]
     a = m.rootAssembly
 
-    m.StaticStep(name='Perf_10_375', previous='TempDefine')
-    region = a.surfaces['FASEI_OPEN_WELL']
-    m.Pressure(name='P_FASEI_OPEN_WELL', 
-        createStepName='Perf_10_375', region=region, distributionType=UNIFORM, 
-        field='', magnitude=19983500.0, amplitude=UNSET)
-    m.loads['P_FASEI_OPEN_WELL'].setValues(
-            distributionType=FIELD, field='P_FASEI_OPEN_WELL')
+    name_step = 'Perf_10_375'
+
+    m.StaticStep(name=name_step, previous='TempDefine')
+    print(f">>> Step '{name_step}' created with success!")
+
+    if 'FASEI_OPEN_WELL' in a.surfaces.keys():
+        region = a.surfaces['FASEI_OPEN_WELL']
+    else:
+        region =a.sets['FASEI_OPEN_WELL']
+
+    m.Pressure(
+        name='P_FASEI_OPEN_WELL',
+        createStepName=name_step,
+        region=region,
+        distributionType=FIELD,
+        field='P_FASEI_OPEN_WELL',
+        magnitude=1.0,
+        amplitude=UNSET
+    )
+
+    print(">>> Hydrostatic pressure of the mud applied in the open well region.")
+    
     m.boundaryConditions['FIX_FASEI_WELL'].deactivate(
         'Perf_10_375')
-    m.ViscoStep(name='Perf_10_375_Creep', 
-        previous='Perf_10_375', timePeriod=172800.0, maxNumInc=1000000, 
-        initialInc=1.0, minInc=1e-15, maxInc=172800.0, cetol=0.01)
-    m.StaticStep(name='Rev_9_875', 
-        previous='Perf_10_375_Creep', minInc=1e-15)
+    
+def CreateCreepStep(name_model, step_name, previous_step, time_period_days, max_inc_days=None, cetol_value=0.01):
+
+    m = mdb.models[name_model]
+    
+    time_period_sec = time_period_days * 24.0 * 3600.0
+
+    if max_inc_days is None:
+        max_inc_sec = time_period_sec
+    else:
+        max_inc_sec = max_inc_days * 24.0 * 3600.0
+
+    max_inc_sec = min(max_inc_sec, time_period_sec)
+
+    m.ViscoStep(
+        name=step_name,
+        previous=previous_step,
+        timePeriod=time_period_sec,
+        maxNumInc=1000000,
+        initialInc=1.0,
+        minInc=1e-15,
+        maxInc=max_inc_sec,
+        cetol=cetol_value
+    )
+
+    print(f">>> ViscoStep '{step_name}' created: Total duration of {time_period_days} days.")
+
+    if max_inc_days:
+        print(f"    - Incremento travado em no máximo {max_inc_days} dias por passo.")
+
+    # m.ViscoStep(name='Perf_10_375_Creep', 
+    #     previous='Perf_10_375', timePeriod=172800.0, maxNumInc=1000000, 
+    #     initialInc=1.0, minInc=1e-15, maxInc=172800.0, cetol=0.01)
+
+def CreateStepsPartFour(name_model):
+    
+    m = mdb.models[name_model]
+
+    name_step = 'Rev_9_875'
+
+    m.StaticStep(name=name_step, previous='Perf_10_375_Creep', minInc=1e-15)
+    print(f">>> Step '{name_step}' created with success!") 
+
+def CreateContactCondition(name_model, contact_name, step_name, main_surface_name, secondary_set_name, friction_coeff=0.5, secondary_instance='ROCK_INST'):
+
+    m = mdb.models[name_model]
+    a = m.rootAssembly
+
+    if contact_name not in m.interactionProperties.keys():
+        m.ContactProperty(contact_name)
+
+        # Tangential behavior (friction/penalty)
+        m.interactionProperties[contact_name].TangentialBehavior(
+            formulation=PENALTY, directionality=ISOTROPIC, slipRateDependency=OFF,
+            pressureDependency=OFF, temperatureDependency=OFF, dependencies=0,
+            table=((friction_coeff, ), ), shearStressLimit=None, maximumElasticSlip=FRACTION,
+            fraction=0.005, elasticSlipStiffness=None
+        )
+
+        # Normal behavior (hard contact)
+        m.interactionProperties[contact_name].NormalBehavior(
+            pressureOverclosure=HARD, allowSeparation=ON, constraintEnforcementMethod=DEFAULT
+        )
+
+        print(f">>> Contact property '{contact_name}' created (Friction: {friction_coeff}).")
+    else:
+        print(f">>> Contact property '{contact_name}' already exists. Skipping creation.")
+
+    region_main = a.surfaces[main_surface_name]
+    region_secondary = a.instances[secondary_instance].sets[secondary_set_name]
+
+
+    if contact_name in m.interactions.keys():
+        del m.interactions[contact_name]
+
+    m.SurfaceToSurfaceContactStd(
+        name=contact_name,
+        createStepName=step_name,
+        main=region_main,
+        secondary=region_secondary,
+        sliding=FINITE,
+        thickness=ON,
+        interactionProperty=contact_name,
+        adjustMethod=NONE,
+        initialClearance=OMIT,
+        datumAxis=None,
+        clearanceRegion=None
+    )
+
+    print(f">>> Interaction '{contact_name}' activated in Step '{step_name}'.")
+
+def ConfigurePhaseRev(name_model, step_name='Rev_9_875'):
+    m = mdb.models[name_model]
+    a = m.rootAssembly
+
+    if 'FASEI_COMPLETED_WELL' in a.surfaces.keys():
+        region_completed = a.surfaces['FASEI_COMPLETED_WELL']
+        m.Pressure(
+            name='P_FASEI_COMPLETED_WELL',
+            createStepName=step_name,  
+            region=region_completed,
+            distributionType=FIELD,
+            field='P_FASEI_COMPLETED_WELL',
+            magnitude=1.0,
+            amplitude=UNSET
+        )
+        print("   - Pressure P_FASEI_COMPLETED_WELL activated.")
+
+    if 'FASEI_FLUIDO' in a.surfaces.keys():
+        region_fluid = a.surfaces['FASEI_FLUIDO']
+        m.Pressure(
+            name='P_FASEI_FLUIDO',
+            createStepName=step_name,  
+            region=region_fluid,
+            distributionType=FIELD,
+            field='P_FASEI_FLUIDO',
+            magnitude=1.0,
+            amplitude=UNSET
+        )
+        print("   - Pressure P_FASEI_FLUIDO activated.")
+
+    if 'MC_FASEI_REV' in m.interactions.keys():
+        m.interactions['MC_FASEI_REV'].setValuesInStep(
+            stepName=step_name, 
+            activeInStep=True)
+        print("   - Interaction of casing (Model Change) activated.")
+
+    if 'PIN_FASEI' in m.boundaryConditions.keys():
+        m.boundaryConditions['PIN_FASEI'].deactivate(step_name)
+        print("   - Boundary condition PIN_FASEI (temporary trava) deactivated.")
+
+    print(">>> Phase of casing successfully configured!")
+
+    # m.ViscoStep(name='Rev_9_875_Creep', previous='Rev_9_875', 
+    #     timePeriod=945907000.0, maxNumInc=1000000, initialInc=1.0, 
+    #     minInc=1e-15, maxInc=15552000.0, cetol=0.01)
