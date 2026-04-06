@@ -883,39 +883,27 @@
     }
   },
   "Phases": {
-    "136fdd5d-6082-4c4f-8f77-7ed08da1932c": {
-      "Casing": [
-        {
-          "Tubular": "TEN_30_#161.33_X56",
-          "Top": 2000.0,
-          "Bottom": 2100.0
-        },
-        {
-          "Tubular": "22_0IN_251_0NW_X70",
-          "Top": 2100.0,
-          "Bottom": 2200.0
-        }
-      ],
-      "CementSheath": [
-        {
-          "Cement": "CLASS_G",
-          "Top": 2000.0,
-          "Bottom": 2200.0
-        }
-      ],
-      "HoleDiameter": 36.0,
-      "Standoff": 100.0,
-      "RateOfPenetration": 10.0,
-      "TripSpeed": 400.0,
-      "Fluid": "sea_water",
-      "Name": "conductor"
-    },
     "812c492a-c945-4184-be51-841c5fb86b15": {
       "Casing": [
         {
           "Tubular": "VAM_20_#169_K55",
           "Top": 2000.0,
-          "Bottom": 3200.0
+          "Bottom": 2600.0
+        },
+        {
+          "Tubular": "VAM_22_#169_K55",
+          "Top": 2600.0,
+          "Bottom": 2800.0
+        },
+        {
+          "Tubular": "VAM_23_#169_K55",
+          "Top": 2800.0,
+          "Bottom": 4800.0
+        },
+        {
+          "Tubular": "VAM_24_#169_L80",
+          "Top": 4800.0,
+          "Bottom": 4900.0
         }
       ],
       "CementSheath": [
@@ -975,6 +963,33 @@
       "TripSpeed": 400.0,
       "Fluid": "derated_mud",
       "Name": "intermed_14"
+    },
+    "136fdd5d-6082-4c4f-8f77-7ed08da1932c": {
+      "Casing": [
+        {
+          "Tubular": "TEN_30_#161.33_X56",
+          "Top": 2000.0,
+          "Bottom": 2100.0
+        },
+        {
+          "Tubular": "22_0IN_251_0NW_X70",
+          "Top": 2100.0,
+          "Bottom": 2400.0
+        }
+      ],
+      "CementSheath": [
+        {
+          "Cement": "CLASS_G",
+          "Top": 2000.0,
+          "Bottom": 2200.0
+        }
+      ],
+      "HoleDiameter": 36.0,
+      "Standoff": 100.0,
+      "RateOfPenetration": 10.0,
+      "TripSpeed": 400.0,
+      "Fluid": "sea_water",
+      "Name": "conductor"
     }
   },
   "Events": {},
