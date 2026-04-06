@@ -217,6 +217,8 @@ if __name__ == "__main__":
 
     CreateSurfacesAssembly('MyFirstModel', data_code)
 
+    # Steps creation and boundary conditions application
+
     CreateSteps('MyFirstModel')
 
     stresses_table = ConvertStressesJSON(data["InSituStresses"])
@@ -284,6 +286,8 @@ if __name__ == "__main__":
         max_inc_days=180.0,
         cetol_value=0.01
     )
+
+    # Calling mesh
 
     CreateMeshBiasHorizontal(
         name_model='MyFirstModel',

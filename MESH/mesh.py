@@ -17,17 +17,38 @@ def CreateMeshBiasHorizontal(name_model, name_part, filtered_layers, radius_midd
     points_search = []
 
     for z in depths:
-        points_search.append( ((radius_middle, -z, 0.0), ) )
+        edge = p.edges.findAt(((radius_middle, -z, 0.0), ))
+        for ie, e in enumerate(edge):
+            verts = [p.vertices[x] for x in e.getVertices()]
+            if verts[0].pointOn[0][0] < verts[1].pointOn[0][0]:
+                p.seedEdgeByBias(
+                biasMethod=SINGLE, 
+                end1Edges=edge[ie:ie+1],
+                ratio=100.0,
+                number=100,
+                constraint=FINER
+                )
+            else:
+                p.seedEdgeByBias(
+                biasMethod=SINGLE, 
+                end2Edges=edge[ie:ie+1],
+                ratio=100.0,
+                number=100,
+                constraint=FINER
+                )
 
-    horizontal_lines = e.findAt(*points_search)
+     
+        # points_search.append( ((radius_middle, -z, 0.0), ) )
 
-    p.seedEdgeByBias(
-        biasMethod=SINGLE, 
-        end1Edges=horizontal_lines,
-        ratio=5.0,
-        number=100,
-        constraint=FINER
-    )
+    # horizontal_lines = p.edges.findAt(*points_search)
+
+    # p.seedEdgeByBias(
+    #     biasMethod=SINGLE, 
+    #     end1Edges=horizontal_lines,
+    #     ratio=5.0,
+    #     number=100,
+    #     constraint=FINER
+    # )
 
     print(f">>> Bias Mesh applyed in {len(depths)} horizontal lines!")
     

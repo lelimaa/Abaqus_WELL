@@ -134,10 +134,20 @@ def CreateSteps(name_model):
     m.YsymmBC(name='YSYM_TOP', createStepName='Initial', 
         region=region, localCsys=None)
     
+    # Corrigir para as profundidades inseridas
+
+# def ApplyCasingInitialStresses(name_model, bottom_depth, top_depth):
+#     m = mdb.models[name_model]
+#     a = m.rootAssembly
+
+
+
     region = a.instances['PIPE_INST'].sets['FASEI_REV']
     m.GeostaticStress(name='S_FASEI_REV', region=region, 
-        stressMag1=133997000.0, vCoord1=-2000.0, stressMag2=-21981800.0, 
-        vCoord2=-4000.0, lateralCoeff1=0.0, lateralCoeff2=0.0)
+        stressMag1=133997000.0, vCoord1=-2000, stressMag2=-21981800.0, 
+        vCoord2=-4000, lateralCoeff1=0.0, lateralCoeff2=0.0)
+    
+
     
     #######################################################################
     
