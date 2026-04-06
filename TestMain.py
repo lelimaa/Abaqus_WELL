@@ -5,8 +5,8 @@ from abaqusConstants import *
 import json
 import sys 
 
-path_project = r'C:\Users\juani\Documents\Github\Abaqus_WELL_' 
-# path_project = r'C:\Users\hidalgo\Documents\GitHub\Abaqus_WELL_'
+# path_project = r'C:\Users\juani\Documents\Github\Abaqus_WELL_' 
+path_project = r'C:\Users\hidalgo\Documents\GitHub\Abaqus_WELL_'
 
 if path_project not in sys.path:
     sys.path.append(path_project)
@@ -15,8 +15,9 @@ from GEOMETRY.geometries import *
 from GEOMETRY.assembly import *
 from GEOMETRY.sets import *
 from MATERIALS.materials import *
-from JSONS.ImportTools import process_lithology   
-from BCONDITIONS.conditions import *         
+from JSONS.ImportTools import *
+from BCONDITIONS.conditions import *     
+from MESH.mesh import *    
 
 mdb.models.changeKey(fromName='Model-1', toName='MyFirstModel')
 
@@ -25,8 +26,8 @@ if 'MyFirstModel' not in mdb.models:
 
 # Reading the json file and filling the input data for the analysis ####################
 
-with open(r'C:\Users\juani\Documents\Github\Abaqus_WELL_\wellClosure_axi.json') as f:
-# with open(r'C:\Users\hidalgo\Documents\GitHub\Abaqus_WELL_\wellClosure_axi.json') as f:
+# with open(r'C:\Users\juani\Documents\Github\Abaqus_WELL_\wellClosure_axi.json') as f:
+with open(r'C:\Users\hidalgo\Documents\GitHub\Abaqus_WELL_\wellClosure_axi.json') as f:
     data = json.load(f)
 
 print(f"Data keys: {data.keys()}")
@@ -282,6 +283,13 @@ if __name__ == "__main__":
         time_period_days=10950.0, 
         max_inc_days=180.0,
         cetol_value=0.01
+    )
+
+    CreateMeshBiasHorizontal(
+        name_model='MyFirstModel',
+        name_part='ROCK',
+        filtered_layers=filtered_layers,
+        radius_middle=inner_radius_wellbore + thickness_annular / 2
     )
 
     # Falta:
