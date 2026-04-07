@@ -111,6 +111,41 @@ def CreateNormalizedGeothermalGrid(name_model, top_depth, top_temp_C, bottom_dep
     print(f">>> Mappedfield 'Geotermico' successfully created! (T_ref = {T_ref} K)")
 
 
+def ApplyCasingInitialStresses(name_model, z_bottom, z_top):
+    m = mdb.models[name_model]
+    a = m.rootAssembly
+
+    specific_weight_steel = 77989.4  # Pa/m (steel density * gravity)
+    surface_stress = 289975800.0 # Pa 
+
+    coord_top = -abs(z_top)
+    coord_bottom = -abs(z_bottom)
+
+    stress_top = surface_stress + (specific_weight_steel * coord_top)
+    stress_bottom = surface_stress + (specific_weight_steel * coord_bottom)
+
+    region = a.instances['PIPE_INST'].sets['FASEI_REV']
+    name_condition = 'S_FASEI_REV'
+
+    m.GeostaticStress(
+        name=name_condition,
+        region=region,
+        stressMag1=stress_top,
+        vCoord1=coord_top,
+        stressMag2=stress_bottom,
+        vCoord2=coord_bottom,
+        lateralCoeff1=0.0,
+        lateralCoeff2=0.0
+    )
+
+    
+
+    # region = a.instances['PIPE_INST'].sets['FASEI_REV']
+    # m.GeostaticStress(name='S_FASEI_REV', region=region, 
+    #     stressMag1=133997000.0, vCoord1=-2000, stressMag2=-21981800.0, 
+    #     vCoord2=-4000, lateralCoeff1=0.0, lateralCoeff2=0.0)
+
+
 def CreateSteps(name_model):
     m = mdb.models[name_model]
     a = m.rootAssembly
@@ -132,28 +167,25 @@ def CreateSteps(name_model):
     
     region = a.sets['YSYM_TOP']
     m.YsymmBC(name='YSYM_TOP', createStepName='Initial', 
-        region=region, localCsys=None)
-    
-    # Corrigir para as profundidades inseridas
-
-# def ApplyCasingInitialStresses(name_model, bottom_depth, top_depth):
-#     m = mdb.models[name_model]
-#     a = m.rootAssembly
-
-
-
-    region = a.instances['PIPE_INST'].sets['FASEI_REV']
-    m.GeostaticStress(name='S_FASEI_REV', region=region, 
-        stressMag1=133997000.0, vCoord1=-2000, stressMag2=-21981800.0, 
-        vCoord2=-4000, lateralCoeff1=0.0, lateralCoeff2=0.0)
-    
+        region=region, localCsys=None)    
 
     
+    #######################################################################
+    
+    ### FUNÇÃO ApplyCasingInitialStresses #################################  
+    
+    #######################################################################
+
+
     #######################################################################
     
     ### FUNÇÃO ApplyGeostaticStresses #####################################    
     
     #######################################################################
+
+def CreateStepsPartOne(name_model):
+    m = mdb.models[name_model]
+    a = m.rootAssembly
     
     m.GeostaticStep(name='Geostatic', previous='Initial', 
     nlgeom=ON)

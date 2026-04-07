@@ -221,6 +221,10 @@ if __name__ == "__main__":
 
     CreateSteps('MyFirstModel')
 
+    ApplyCasingInitialStresses('MyFirstModel', z_bottom=base_depth, z_top=top_depth)
+
+    CreateStepsPartOne('MyFirstModel')
+
     stresses_table = ConvertStressesJSON(data["InSituStresses"])
 
     ApplyGeostaticStresses('MyFirstModel', filtered_layers, stresses_table)
