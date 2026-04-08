@@ -111,18 +111,18 @@ def CreateNormalizedGeothermalGrid(name_model, top_depth, top_temp_C, bottom_dep
     print(f">>> Mappedfield 'Geotermico' successfully created! (T_ref = {T_ref} K)")
 
 
-def ApplyCasingInitialStresses(name_model, z_bottom, z_top):
+def ApplyCasingInitialStresses(name_model, z_bottom, z_top, stress_top, stress_bottom):
     m = mdb.models[name_model]
     a = m.rootAssembly
 
-    specific_weight_steel = 77989.4  # Pa/m (steel density * gravity)
-    surface_stress = 289975800.0 # Pa 
+    # specific_weight_steel = 77989.4  # Pa/m (steel density * gravity)
+    # surface_stress = 289975800.0 # Pa 
 
     coord_top = -abs(z_top)
     coord_bottom = -abs(z_bottom)
 
-    stress_top = surface_stress + (specific_weight_steel * coord_top)
-    stress_bottom = surface_stress + (specific_weight_steel * coord_bottom)
+    # stress_top = surface_stress + (specific_weight_steel * coord_top)
+    # stress_bottom = surface_stress + (specific_weight_steel * coord_bottom)
 
     region = a.instances['PIPE_INST'].sets['FASEI_REV']
     name_condition = 'S_FASEI_REV'
@@ -138,7 +138,6 @@ def ApplyCasingInitialStresses(name_model, z_bottom, z_top):
         lateralCoeff2=0.0
     )
 
-    
 
     # region = a.instances['PIPE_INST'].sets['FASEI_REV']
     # m.GeostaticStress(name='S_FASEI_REV', region=region, 

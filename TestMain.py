@@ -221,7 +221,13 @@ if __name__ == "__main__":
 
     CreateSteps('MyFirstModel')
 
-    ApplyCasingInitialStresses('MyFirstModel', z_bottom=base_depth, z_top=top_depth)
+    # Calculation of axial stresses in the casing due to its own weight (initial stresses)
+   
+
+    stress_top = 
+    stress_bottom = 
+
+    ApplyCasingInitialStresses('MyFirstModel', z_bottom=base_depth, z_top=top_depth, stress_top, stress_bottom)
 
     CreateStepsPartOne('MyFirstModel')
 
