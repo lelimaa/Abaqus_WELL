@@ -17,6 +17,7 @@ from GEOMETRY.sets import *
 from MATERIALS.materials import *
 from JSONS.ImportTools import *
 from BCONDITIONS.conditions import *     
+from BCONDITIONS.casing import *     
 from MESH.mesh import *    
 
 mdb.models.changeKey(fromName='Model-1', toName='MyFirstModel')
@@ -173,8 +174,8 @@ if __name__ == "__main__":
 
     lythology_examples = []
 
-    import pprint 
-    pprint.pprint(filtered_layers)
+    # import pprint 
+    # pprint.pprint(filtered_layers)
 
 
     for i, layer in enumerate(filtered_layers, start=1):
@@ -221,13 +222,11 @@ if __name__ == "__main__":
 
     CreateSteps('MyFirstModel')
 
-    # Calculation of axial stresses in the casing due to its own weight (initial stresses)
-   
+    # Calculation of axial stresses in the casing due to its own weight (initial stresses)    
 
-    stress_top = 
-    stress_bottom = 
+    stress_top, stress_bottom = CasingStresses(data, name_phase, examples["STEEL"]["density"], top_depth, base_depth)
 
-    ApplyCasingInitialStresses('MyFirstModel', z_bottom=base_depth, z_top=top_depth, stress_top, stress_bottom)
+    ApplyCasingInitialStresses('MyFirstModel', top_depth, base_depth, stress_top, stress_bottom)
 
     CreateStepsPartOne('MyFirstModel')
 
