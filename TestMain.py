@@ -305,6 +305,8 @@ if __name__ == "__main__":
         radius_middle=inner_radius_wellbore + thickness_annular / 2
     )
 
+    
+
     # Falta:
     # enxugar as defs para os sets
     # enxugar as defs para os steps
