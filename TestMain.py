@@ -18,7 +18,7 @@ from MATERIALS.materials import *
 from JSONS.ImportTools import *
 from BCONDITIONS.conditions import *     
 from BCONDITIONS.casing import *     
-from MESH.mesh import *    
+from MESH.meshAlt import *    
 
 mdb.models.changeKey(fromName='Model-1', toName='MyFirstModel')
 
@@ -298,14 +298,37 @@ if __name__ == "__main__":
 
     # Calling mesh
 
+    radius_search_pipe = (inner_radius_pipe+inner_radius_annular) / 2.0
+    radius_search_fluid = (inner_radius_pipe + inner_radius_annular) / 2.0
+    radius_search_rock = (2 * inner_radius_wellbore + thickness_wellbore) / 2.0
+
+
+    CreateMeshSizeHorizontal(
+        name_model='MyFirstModel',
+        name_instance='FLUID_INST',
+        filtered_layers=filtered_layers,
+        radius_middle=radius_search_fluid,
+        elementSize=1.0,
+        deviationFactor=0.1
+    )
+    CreateMeshSizeHorizontal(
+        name_model='MyFirstModel',
+        name_instance='PIPE_INST',
+        filtered_layers=filtered_layers,
+        radius_middle=radius_search_pipe,
+        elementSize=0.5,
+        deviationFactor=0.1
+    )
     CreateMeshBiasHorizontal(
         name_model='MyFirstModel',
-        name_part='ROCK',
+        name_instance='ROCK_INST',
         filtered_layers=filtered_layers,
-        radius_middle=inner_radius_wellbore + thickness_annular / 2
+        radius_middle=radius_search_rock,
+        minSize=0.1,
+        maxSize=1.0
     )
 
-    
+
 
     # Falta:
     # enxugar as defs para os sets

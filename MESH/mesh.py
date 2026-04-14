@@ -4,7 +4,9 @@ from abaqusConstants import *
 def CreateMeshBiasHorizontal(name_model, name_part, filtered_layers, radius_middle):
     # Get the model and part
     m = mdb.models[name_model]
-    p = m.parts[name_part]
+    a = m.rootAssembly
+    # p = m.parts[name_part]
+    p = a.instances[name_part + '_INST']
     e = p.edges
 
     depths = []
@@ -21,7 +23,7 @@ def CreateMeshBiasHorizontal(name_model, name_part, filtered_layers, radius_midd
         for ie, e in enumerate(edge):
             verts = [p.vertices[x] for x in e.getVertices()]
             if verts[0].pointOn[0][0] < verts[1].pointOn[0][0]:
-                p.seedEdgeByBias(
+                a.seedEdgeByBias(
                 biasMethod=SINGLE, 
                 end1Edges=edge[ie:ie+1],
                 ratio=100.0,
@@ -29,7 +31,7 @@ def CreateMeshBiasHorizontal(name_model, name_part, filtered_layers, radius_midd
                 constraint=FINER
                 )
             else:
-                p.seedEdgeByBias(
+                a.seedEdgeByBias(
                 biasMethod=SINGLE, 
                 end2Edges=edge[ie:ie+1],
                 ratio=100.0,
