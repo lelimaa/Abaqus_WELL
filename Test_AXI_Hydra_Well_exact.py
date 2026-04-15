@@ -908,11 +908,11 @@ p.generateMesh()
 a = mdb.models['Model-1'].rootAssembly
 del a.features['Datum csys-1']
 
-# mdb.Job(name='Analise-1', model='Model-1', description='', type=ANALYSIS, 
-#     atTime=None, waitMinutes=0, waitHours=0, queue=None, memory=90, 
-#     memoryUnits=PERCENTAGE, getMemoryFromAnalysis=True, 
-#     explicitPrecision=SINGLE, nodalOutputPrecision=SINGLE, echoPrint=OFF, 
-#     modelPrint=OFF, contactPrint=OFF, historyPrint=OFF, userSubroutine='', 
-#     scratch='', resultsFormat=ODB, multiprocessingMode=DEFAULT, numCpus=14, 
-#     numDomains=14, numGPUs=0)
+mdb.Job(name='Analise-1', model='Model-1', description='', type=ANALYSIS, 
+    atTime=None, waitMinutes=0, waitHours=0, queue=None, memory=90, 
+    memoryUnits=PERCENTAGE, getMemoryFromAnalysis=True, 
+    explicitPrecision=SINGLE, nodalOutputPrecision=SINGLE, echoPrint=OFF, 
+    modelPrint=OFF, contactPrint=OFF, historyPrint=OFF, userSubroutine='', 
+    scratch='', resultsFormat=ODB, multiprocessingMode=DEFAULT, numCpus=14, 
+    numDomains=14, numGPUs=0)
 

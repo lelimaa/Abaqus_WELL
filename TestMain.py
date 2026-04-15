@@ -19,6 +19,7 @@ from JSONS.ImportTools import *
 from BCONDITIONS.conditions import *     
 from BCONDITIONS.casing import *     
 from MESH.meshAlt import *    
+from JOBS.job import *
 
 mdb.models.changeKey(fromName='Model-1', toName='MyFirstModel')
 
@@ -352,7 +353,12 @@ if __name__ == "__main__":
         name_instance='ROCK_INST'
     )
 
-
+    CreateJob(
+        name_model='MyFirstModel',
+        name_job='WellClosureJob',
+        num_cpus=1, 
+        run_now=True
+    )
 
     # Falta:
     # enxugar as defs para os sets
