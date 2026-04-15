@@ -890,6 +890,7 @@ faces = f.getSequenceFromMask(mask=('[#fff ]', ), )
 pickedRegions =(faces, )
 p.setElementType(regions=pickedRegions, elemTypes=(elemType1, elemType2))
 p = mdb.models['Model-1'].parts['Analise-1']
+
 p.generateMesh()
 
 # session.viewports['Viewport: 1'].enableMultipleColors()

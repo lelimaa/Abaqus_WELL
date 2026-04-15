@@ -1,5 +1,6 @@
 from abaqus import mdb
 from abaqusConstants import *
+import mesh
 
 def CreateMeshBiasHorizontal(name_model, name_part, filtered_layers, radius_middle):
     # Get the model and part
@@ -42,3 +43,13 @@ def CreateMeshBiasHorizontal(name_model, name_part, filtered_layers, radius_midd
 
     print(f">>> Bias Mesh applyed in {len(depths)} horizontal lines!")
     
+def AttributeTypeElement(name_model, name_set):
+    m = mdb.models[name_model]
+    a = m.rootAssembly
+    elemType1 = mesh.ElemType(elemCode=CAX4, elemLibrary=STANDARD)
+    elemType2 = mesh.ElemType(elemCode=CAX3, elemLibrary=STANDARD,
+                                secondOrderAccuracy=OFF, distortionControl=DEFAULT)
+    region_aim = a.sets[name_set]
+    a.setElementType(regions=region_aim, elemTypes=(elemType1, elemType2))
+
+    print(f">>> Element type CAX4 and CAX3 assigned to set '{name_set}'!")

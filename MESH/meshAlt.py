@@ -1,6 +1,8 @@
 from abaqus import mdb
 from abaqusConstants import *
 
+import mesh
+
 def CreateMeshBiasHorizontal(name_model, name_instance, filtered_layers, radius_middle, minSize, maxSize):
     # Get the model and part
     m = mdb.models[name_model]
@@ -93,3 +95,38 @@ def CreateMeshSizeHorizontal(name_model, name_instance, filtered_layers, radius_
 
     print(f">>> Uniform mesh (Size: {elementSize}) applyed in {found_lines} lines of '{name_instance}.'")    
     
+def CreateMeshVerticalBySet(name_model, name_set, element_size):
+    m = mdb.models[name_model]
+    a = m.rootAssembly
+
+    vertical_lines = a.sets[name_set].edges
+
+    a.seedEdgeBySize(
+        edges=vertical_lines,
+        size=element_size,
+        deviationFactor=0.1,
+        constraint=FINER
+    )
+
+    print(f">>> Uniform mesh (Size: {element_size}) applyed with success in set '{name_set}!'")
+
+def AttributeTypeElement(name_model, name_set):
+    m = mdb.models[name_model]
+    a = m.rootAssembly
+    elemType1 = mesh.ElemType(elemCode=CAX4, elemLibrary=STANDARD)
+    elemType2 = mesh.ElemType(elemCode=CAX3, elemLibrary=STANDARD,
+                                secondOrderAccuracy=OFF, distortionControl=DEFAULT)
+    region_aim = a.sets[name_set]
+    a.setElementType(regions=region_aim, elemTypes=(elemType1, elemType2))
+
+    print(f">>> Element type CAX4 and CAX3 assigned to set '{name_set}'!")
+
+def GenerateMesh(name_model, name_instance):
+    m = mdb.models[name_model]
+    a = m.rootAssembly
+
+    inst = a.instances[name_instance]
+
+    a.generateMesh(regions=(inst, ))
+
+    print(f">>> Mesh generated with success for instance '{name_instance}'!")

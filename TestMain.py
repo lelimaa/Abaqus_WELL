@@ -5,8 +5,8 @@ from abaqusConstants import *
 import json
 import sys 
 
-# path_project = r'C:\Users\juani\Documents\Github\Abaqus_WELL_' 
-path_project = r'C:\Users\hidalgo\Documents\GitHub\Abaqus_WELL_'
+path_project = r'C:\Users\juani\Documents\Github\Abaqus_WELL_' 
+# path_project = r'C:\Users\hidalgo\Documents\GitHub\Abaqus_WELL_'
 
 if path_project not in sys.path:
     sys.path.append(path_project)
@@ -27,8 +27,8 @@ if 'MyFirstModel' not in mdb.models:
 
 # Reading the json file and filling the input data for the analysis ####################
 
-# with open(r'C:\Users\juani\Documents\Github\Abaqus_WELL_\wellClosure_axi.json') as f:
-with open(r'C:\Users\hidalgo\Documents\GitHub\Abaqus_WELL_\wellClosure_axi.json') as f:
+with open(r'C:\Users\juani\Documents\Github\Abaqus_WELL_\wellClosure_axi.json') as f:
+# with open(r'C:\Users\hidalgo\Documents\GitHub\Abaqus_WELL_\wellClosure_axi.json') as f:
     data = json.load(f)
 
 print(f"Data keys: {data.keys()}")
@@ -299,7 +299,7 @@ if __name__ == "__main__":
     # Calling mesh
 
     radius_search_pipe = (inner_radius_pipe+inner_radius_annular) / 2.0
-    radius_search_fluid = (inner_radius_pipe + inner_radius_annular) / 2.0
+    radius_search_fluid = (inner_radius_annular + inner_radius_wellbore) / 2.0
     radius_search_rock = (2 * inner_radius_wellbore + thickness_wellbore) / 2.0
 
 
@@ -308,7 +308,7 @@ if __name__ == "__main__":
         name_instance='FLUID_INST',
         filtered_layers=filtered_layers,
         radius_middle=radius_search_fluid,
-        elementSize=1.0,
+        elementSize=5e-3,
         deviationFactor=0.1
     )
     CreateMeshSizeHorizontal(
@@ -316,7 +316,7 @@ if __name__ == "__main__":
         name_instance='PIPE_INST',
         filtered_layers=filtered_layers,
         radius_middle=radius_search_pipe,
-        elementSize=0.5,
+        elementSize=5e-3,
         deviationFactor=0.1
     )
     CreateMeshBiasHorizontal(
@@ -324,8 +324,32 @@ if __name__ == "__main__":
         name_instance='ROCK_INST',
         filtered_layers=filtered_layers,
         radius_middle=radius_search_rock,
-        minSize=0.1,
-        maxSize=1.0
+        minSize=4e-3,
+        maxSize=3.0
+    )
+
+    CreateMeshVerticalBySet(
+        name_model='MyFirstModel',
+        name_set='MESH_VERTICAL',
+        element_size=40.0
+    )
+
+    AttributeTypeElement(
+        name_model='MyFirstModel',
+        name_set='ALL'
+    )
+
+    GenerateMesh(
+        name_model='MyFirstModel',
+        name_instance='FLUID_INST'
+    )
+    GenerateMesh(
+        name_model='MyFirstModel',
+        name_instance='PIPE_INST'
+    )
+    GenerateMesh(
+        name_model='MyFirstModel',
+        name_instance='ROCK_INST'
     )
 
 
