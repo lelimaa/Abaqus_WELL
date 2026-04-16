@@ -490,15 +490,19 @@ def ConfigurePhaseRev(name_model, step_name='Rev_9_875'):
     if 'FASEI_FLUIDO' in a.surfaces.keys():
         region_fluid = a.surfaces['FASEI_FLUIDO']
         m.Pressure(
-            name='P_FASEI_FLUIDO',
+            name='P_FASEI_FLUID',
             createStepName=step_name,  
             region=region_fluid,
             distributionType=FIELD,
-            field='P_FASEI_FLUIDO',
-            magnitude=1.0,
+            field='P_FASEI_FLUID',
+            magnitude=-1.0,
             amplitude=UNSET
         )
-        print("   - Pressure P_FASEI_FLUIDO activated.")
+        print("   - Pressure P_FASEI_FLUID activated.")
+
+    if 'P_FASEI_OPEN_WELL' in m.loads.keys():
+        m.loads['P_FASEI_OPEN_WELL'].deactivate(step_name)
+        print("    - Load P_FASEI_OPEN_WELL deactivated.")
 
     if 'MC_FASEI_REV' in m.interactions.keys():
         m.interactions['MC_FASEI_REV'].setValuesInStep(

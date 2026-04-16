@@ -5,8 +5,8 @@ from abaqusConstants import *
 import json
 import sys 
 
-path_project = r'C:\Users\juani\Documents\Github\Abaqus_WELL_' 
-# path_project = r'C:\Users\hidalgo\Documents\GitHub\Abaqus_WELL_'
+# path_project = r'C:\Users\juani\Documents\Github\Abaqus_WELL_' 
+path_project = r'C:\Users\hidalgo\Documents\GitHub\Abaqus_WELL_'
 
 if path_project not in sys.path:
     sys.path.append(path_project)
@@ -25,11 +25,12 @@ mdb.models.changeKey(fromName='Model-1', toName='MyFirstModel')
 
 if 'MyFirstModel' not in mdb.models:
     mdb.Model(name='MyFirstModel')
+# mdb.Model(name='MyFirstModel')
 
 # Reading the json file and filling the input data for the analysis ####################
 
-with open(r'C:\Users\juani\Documents\Github\Abaqus_WELL_\wellClosure_axi.json') as f:
-# with open(r'C:\Users\hidalgo\Documents\GitHub\Abaqus_WELL_\wellClosure_axi.json') as f:
+# with open(r'C:\Users\juani\Documents\Github\Abaqus_WELL_\wellClosure_axi.json') as f:
+with open(r'C:\Users\hidalgo\Documents\GitHub\Abaqus_WELL_\wellClosure_axi.json') as f:
     data = json.load(f)
 
 print(f"Data keys: {data.keys()}")
@@ -87,13 +88,12 @@ if __name__ == "__main__":
                  }
     }
 
-for part_name, part_data in data_code.items():
-        CreateGeometry('MyFirstModel', part_name, part_data)
-        PartitionLayersByDepth("MyFirstModel", part_name=part_name, layer_depths=part_data["layer_depths"])
+    for part_name, part_data in data_code.items():
+            CreateGeometry('MyFirstModel', part_name, part_data)
+            PartitionLayersByDepth("MyFirstModel", part_name=part_name, layer_depths=part_data["layer_depths"])
 
-# Definition of materials ###############################################################
+    # Definition of materials ###############################################################
 
-if __name__ == "__main__":
 
     lithology = data["Lithology"]
 
@@ -196,6 +196,8 @@ if __name__ == "__main__":
     for mat_name, mat_data in examples.items():
         CreateMaterial('MyFirstModel', mat_name, mat_data, sectionLength=1.)
 
+    mdb.models['MyFirstModel'].setValues(absoluteZero=0.0, stefanBoltzmann=5.670374e-8)
+    
     CreateSetsPipe('MyFirstModel')
     CreateSetsFluid('MyFirstModel')
     CreateSetsRock('MyFirstModel')
@@ -353,12 +355,20 @@ if __name__ == "__main__":
         name_instance='ROCK_INST'
     )
 
+    # Creating a job and saving the model
+
     CreateJob(
         name_model='MyFirstModel',
         name_job='WellClosureJob',
-        num_cpus=1, 
+        num_cpus=14, 
         run_now=True
     )
+    
+
+    mdb.saveAs(pathName=r'C:\Users\hidalgo\Documents\GitHub\Abaqus_WELL_\WellClosureJob.cae')
+    print("Model saved as 'WellClosureJob.cae' in the project folder. You can open it with Abaqus/CAE to review the model and submit the job for analysis.")
+
+
 
     # Falta:
     # enxugar as defs para os sets

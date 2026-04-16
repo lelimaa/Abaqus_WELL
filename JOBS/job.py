@@ -5,7 +5,7 @@ def CreateJob(name_model, name_job, num_cpus, run_now=True):
     mdb.Job(
         name=name_job,
         model=name_model,
-        description='Well Geomechanical Simulation',
+        description='',
         type=ANALYSIS,
         atTime=None,
         waitMinutes=0,
@@ -28,18 +28,21 @@ def CreateJob(name_model, name_job, num_cpus, run_now=True):
         numDomains=num_cpus,
         numGPUs=0
     )
-
     print(f">>> Job '{name_job}' created for model '{name_model}' with {num_cpus} CPUs!")
 
     if run_now:
 
         print(f">>> Submiting job '{name_job}' for analysis... Wait for it to finish!")
 
-        mdb.jobs[name_job].submit(consistencyChecking=OFF)
+        mdb.jobs[name_job].writeInput(consistencyChecking=OFF)
 
-        mdb.jobs[name_job].waitForCompletion()
+        # mdb.jobs[name_job].submit(consistencyChecking=OFF)
 
-        print(f">>> Job '{name_job}' completed!")
+        # mdb.jobs[name_job].waitForCompletion()
+
+        # print(f">>> Job '{name_job}' completed!")
+
+        print(f">>> File .inp succssessfully created!")
 
     else: 
         print(f">>> Job was only created. To run, submitt manually!")

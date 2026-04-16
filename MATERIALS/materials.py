@@ -21,7 +21,10 @@ def ElasticMaterial(modelName, name, data, sectionLength=1.):
         mat.Conductivity(table=((data.get('conductivity'),),))
 
     if data.get('specific_heat') is not None:
-        mat.SpecificHeat(table=((data.get('specific_heat'),),))
+        raw_value = data.get('specific_heat')
+        corrected_spec_heat = raw_value * 4184.0 
+        # mat.SpecificHeat(table=((data.get('specific_heat'),),))
+        mat.SpecificHeat(table=((corrected_spec_heat,),))
 
     if data.get('expansion') is not None:
         mat.Expansion(table=((data.get('expansion'),),))
@@ -90,7 +93,6 @@ def DoubleMechanismCreepMaterial(modelName, name, data, sectionLength=1.):
     mat.Creep(law=USER, table=())
     subroutine = {"CREEP": " my fortran subroutine "}
     return mat, sect, subroutine
-
 
 def CreateMaterial(modelName, name, data, sectionLength=1.):
     behavior = data.get("behavior")

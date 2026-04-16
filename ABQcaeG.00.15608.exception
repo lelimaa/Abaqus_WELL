@@ -1,0 +1,39 @@
+<Description>
+   ABAQUS/ABQcaeG rank 0 received the ABORT signal
+
+</Description>
+
+<Context>
+   ABQcaeG
+</Context>
+
+<Callstack>
+  1)  ucrtbase.dll                abort                                   
+  2)  ucrtbase.dll                terminate                               
+  3)  VCRUNTIME140_1.dll        unknown                                 
+</Callstack>
+
+<Memory>
+   <Current>            0 GB </Current>
+   <Resident>           0 GB </Resident>
+   <Physical>          63 GB </Physical>
+   <Limit>              0 GB </Limit>
+   <Accessible>        63 GB </Accessible>
+   <Available>         36 GB </Available>
+   <Allocator>            DL </Allocator>
+</Memory>
+
+<Swap>
+       <Size>          67 GB </Size>
+       <Used>          43 GB </Used>
+       <Free>          24 GB </Free>
+</Swap>
+
+<Directories>
+  <current> C:\Users\hidalgo\Documents\GitHub\Abaqus_WELL_ </current> <free>   1372 GB </free>   <used>    488 GB </used> 
+     <temp> C:\Users\hidalgo\AppData\Local\Temp </temp>    <free>   1372 GB </free>
+</Directories>
+
+<Installation>
+</Installation>
+
