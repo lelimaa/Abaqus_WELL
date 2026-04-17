@@ -64,7 +64,8 @@ def ApplyGeostaticStresses(name_model, filtered_layers, stresses_table):
             stressMag2=stress_bottom,
             vCoord2=-z_bottom,
             lateralCoeff1=1.0,
-            lateralCoeff2=None
+            # lateralCoeff2=None
+            lateralCoeff2=1.0
         )
 
         name_material = layer['Rock']
@@ -380,7 +381,7 @@ def CreateStepsPartThree(name_model):
     m.boundaryConditions['FIX_FASEI_WELL'].deactivate(
         'Perf_10_375')
     
-def CreateCreepStep(name_model, step_name, previous_step, time_period_days, max_inc_days=None, cetol_value=0.01):
+def CreateCreepStep(name_model, step_name, previous_step, time_period_days, max_inc_days=None, cetol_value=1e-4, initial_inc_sec=1e-6):
 
     m = mdb.models[name_model]
     
@@ -398,7 +399,7 @@ def CreateCreepStep(name_model, step_name, previous_step, time_period_days, max_
         previous=previous_step,
         timePeriod=time_period_sec,
         maxNumInc=1000000,
-        initialInc=1.0,
+        initialInc=initial_inc_sec,
         minInc=1e-15,
         maxInc=max_inc_sec,
         cetol=cetol_value
@@ -495,7 +496,7 @@ def ConfigurePhaseRev(name_model, step_name='Rev_9_875'):
             region=region_fluid,
             distributionType=FIELD,
             field='P_FASEI_FLUID',
-            magnitude=-1.0,
+            magnitude=1.0,
             amplitude=UNSET
         )
         print("   - Pressure P_FASEI_FLUID activated.")

@@ -267,8 +267,9 @@ if __name__ == "__main__":
         name_model='MyFirstModel', 
         step_name='Perf_10_375_Creep',
         previous_step='Perf_10_375',
-        time_period_days=2.0, 
-        cetol_value=0.01
+        time_period_days=2.0 
+        # max_inc_days=None,
+        # cetol_value=0.01
     )
 
     CreateStepsPartFour(
@@ -295,8 +296,8 @@ if __name__ == "__main__":
         step_name='Rev_9_875_Creep',
         previous_step='Rev_9_875',
         time_period_days=10950.0, 
-        max_inc_days=180.0,
-        cetol_value=0.01
+        max_inc_days=180.0
+        # cetol_value=0.01
     )
 
     # Calling mesh
@@ -362,8 +363,7 @@ if __name__ == "__main__":
         name_job='WellClosureJob',
         num_cpus=14, 
         run_now=True
-    )
-    
+    )    
 
     mdb.saveAs(pathName=r'C:\Users\hidalgo\Documents\GitHub\Abaqus_WELL_\WellClosureJob.cae')
     print("Model saved as 'WellClosureJob.cae' in the project folder. You can open it with Abaqus/CAE to review the model and submit the job for analysis.")

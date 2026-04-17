@@ -2,7 +2,7 @@
 #
 # Abaqus/CAE Release 2024 replay file
 # Internal Version: 2023_09_21-09.55.25 RELr426 190762
-# Run by Hidalgo on Thu Apr 16 16:25:36 2026
+# Run by Hidalgo on Fri Apr 17 12:05:15 2026
 #
 
 # from driverUtils import executeOnCaeGraphicsStartup
@@ -17,18 +17,19 @@ from driverUtils import executeOnCaeStartup
 executeOnCaeStartup()
 execfile('TestMain.py', __main__.__dict__)
 #: Data keys: dict_keys(['AnalysisData', 'ThermalGradient', 'Tubulars', 'Lithology', 'InSituStresses', 'Rocks', 'Cements', 'SteelGrades', 'Phases', 'Events', 'Fluids'])
-#: The bottom of the wellbore is at: -3500 meters
-#: The top of the wellbore is at: -2600 meters
-#: dict_keys(['MohrCoulombParameters', 'Law', 'Elasticity', 'ElasticParameters', 'ThermalParameters'])
+#: The bottom of the wellbore is at: -4100 meters
+#: The top of the wellbore is at: -3700 meters
+#: dict_keys(['DoublePowerParameters', 'Law', 'Elasticity', 'ElasticParameters', 'ThermalParameters'])
 #: Creating Geometry:  PIPE
 #: Creating Geometry:  FLUID
 #: Creating Geometry:  ROCK
-#: Set 'L1-I_BASE' gerado automaticamente em Y = -3500.0
-#: Set 'L1-I_ID' created with sucess in the medium point Y=-3050.0
-#: Set 'L1-I_OD' criado com sucesso em X=12.155575, Y=-3050.0
-#: Set 'L1-I_TOP' criado na altura Y = -2600.0
-#: Set de Face 'L1-I' criado em X=6.155575, Y=-3050.0
-#: Assigned section 'LAYER_01_SANDSTONE_Section' to existing set 'L1-I'.
+#: O nome que chegou na função foi: LAYER_01_HALITE
+#: Set 'L1-I_BASE' gerado automaticamente em Y = -4100.0
+#: Set 'L1-I_ID' created with sucess in the medium point Y=-3900.0
+#: Set 'L1-I_OD' criado com sucesso em X=12.155575, Y=-3900.0
+#: Set 'L1-I_TOP' criado na altura Y = -3700.0
+#: Set de Face 'L1-I' criado em X=6.155575, Y=-3900.0
+#: Assigned section 'LAYER_01_HALITE_Section' to existing set 'L1-I'.
 #: Assembly completed with active sets: []
 #: Set 'ALL' criado com todas as faces das 2 instancias.
 #: Set FASEI_OPEN_WELL criado na interface X = 0.155575
@@ -41,27 +42,26 @@ execfile('TestMain.py', __main__.__dict__)
 #: Set 'ROCK_BC' criado com sucesso na borda X = 12.155575
 #: Set 'ROCK_OUTPUT' criado com todas as faces dessa instancia.
 #: Set 'YSYM_BASE' criado com sucesso unindo todas as instâncias.
-#: Set 'YSYM_TOP' criado com sucesso na altura Y = -2600.0
+#: Set 'YSYM_TOP' criado com sucesso na altura Y = -3700.0
 #: Surface 'FASEI_ANNULAR' created successfully containing 4 edges.
-#: Surface 'FASEI_FLUIDO' created successfully containing 2 edges.
 #: Surface 'FASEI_COMPLETED_WELL' succesfully created with success containing 1 edges.
 #: Surface 'FASEI_MASTER' succesfully created with success containing 1 edges.
 #: Surface 'FASEI_OPEN_WELL' succesfully created with success containing 1 edges.
 #: Surface 'FASEI_WELL' succesfully created with success containing 1 edges.
 #: The interaction "MC_FASEI_FLUIDO" has been created.
 #: The interaction "MC_FASEI_REV" has been created.
-#: [L1-I-SANDSTONE] Stresses: Top (2600m) = -33.52 MPa | Bottom (3500m) = -53.83 MPa
+#: [L1-I-HALITE] Stresses: Top (3700m) = -58.21 MPa | Bottom (4100m) = -66.72 MPa
 #: 
 #: >>> Todas as tensões geostáticas foram aplicadas com sucesso!
 #: >>> Mappedfield 'Geotermico' successfully created! (T_ref = 277.15 K)
-#: >>> ExpressionField 'NT_L1-I' created with denominator 289.9 K
+#: >>> ExpressionField 'NT_L1-I' created with denominator 313.4 K
 #: 
 #: >>> All the thermal Expressionfields of the rocks were created!
 #: >>> ExpressionField 'P_FASEI_COMPLETED_WELL' created with success!
 #: >>> ExpressionField 'P_FASEI_FLUID' created with success!
 #: >>> ExpressionField 'P_FASEI_OPEN_WELL' created with success!
-#: >>> Temperature 'NT_L1-I' applied in the region L1-I (Magnitude: 289.94 K)
-#: >>> Temperature 'NT_L1-I_OD' applied in the region L1-I_OD (Magnitude: 289.94 K)
+#: >>> Temperature 'NT_L1-I' applied in the region L1-I (Magnitude: 313.38 K)
+#: >>> Temperature 'NT_L1-I_OD' applied in the region L1-I_OD (Magnitude: 313.38 K)
 #: 
 #: >>> All the temperatures of the layers were started sucsessfully!
 #: >>> Step 'Perf_10_375' created with success!
@@ -74,6 +74,7 @@ execfile('TestMain.py', __main__.__dict__)
 #: >>> Interaction 'C_FASEI' activated in Step 'Rev_9_875'.
 #:    - Pressure P_FASEI_COMPLETED_WELL activated.
 #:    - Pressure P_FASEI_FLUID activated.
+#:     - Load P_FASEI_OPEN_WELL deactivated.
 #:    - Interaction of casing (Model Change) activated.
 #:    - Boundary condition PIN_FASEI (temporary trava) deactivated.
 #: >>> Phase of casing successfully configured!
