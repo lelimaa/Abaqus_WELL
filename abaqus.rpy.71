@@ -2,7 +2,7 @@
 #
 # Abaqus/CAE Release 2024 replay file
 # Internal Version: 2023_09_21-09.55.25 RELr426 190762
-# Run by Hidalgo on Fri Apr 17 11:49:50 2026
+# Run by Hidalgo on Fri Apr 17 12:05:23 2026
 #
 
 # from driverUtils import executeOnCaeGraphicsStartup
@@ -29,6 +29,11 @@ a = mdb.models['MyFirstModel'].rootAssembly
 session.viewports['Viewport: 1'].setValues(displayedObject=a)
 session.viewports['Viewport: 1'].assemblyDisplay.setValues(
     optimizationTasks=OFF, geometricRestrictions=OFF, stopConditions=OFF)
+cliCommand("""execfile(r'C:\\Users\\hidalgo\\Documents\\GitHub\\Abaqus_WELL_\\AbqView1.py')""")
+session.viewports['Viewport: 1'].view.setValues(nearPlane=2104.8, 
+    farPlane=2584.88, width=0.189779, height=0.131583, cameraPosition=(
+    0.180935, -6244.84, 0.118322), cameraTarget=(0.180935, -3724.57, 
+    -0.00776437))
 mdb.jobs['WellClosureJob'].submit(consistencyChecking=OFF)
 #: Warning: 
 #: Following warning detected while evaluating the temperature ""
@@ -56,5 +61,7 @@ mdb.jobs['WellClosureJob'].submit(consistencyChecking=OFF)
 #: Job WellClosureJob: Analysis Input File Processor completed successfully.
 #: Error in job WellClosureJob: Too many attempts made for this increment
 #: Job WellClosureJob: Abaqus/Standard aborted due to errors.
+a = mdb.models['MyFirstModel'].rootAssembly
+session.viewports['Viewport: 1'].setValues(displayedObject=a)
 #: Error in job WellClosureJob: Abaqus/Standard Analysis exited with an error - Please see the  message file for possible error messages if the file exists.
 #: Job WellClosureJob aborted due to errors.

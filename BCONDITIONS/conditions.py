@@ -133,7 +133,6 @@ def ApplyCasingInitialStresses(name_model, z_top, z_bottom, stress_top, stress_b
         lateralCoeff2=0.0
     )
 
-
     # region = a.instances['PIPE_INST'].sets['FASEI_REV']
     # m.GeostaticStress(name='S_FASEI_REV', region=region, 
     #     stressMag1=133997000.0, vCoord1=-2000, stressMag2=-21981800.0, 
@@ -237,14 +236,16 @@ def CreateStepsPartTwo(name_model):
     a = m.rootAssembly
 
     region = a.sets['FASEI']
-    m.Temperature(name='NT_FASEI', createStepName='TempDefine', 
+    # m.Temperature(name='NT_FASEI', createStepName='TempDefine', 
+    m.Temperature(name='NT_FASEI', createStepName='Initial', 
         region=region, distributionType=FIELD, 
         crossSectionDistribution=CONSTANT_THROUGH_THICKNESS, 
         field='Geotermico', magnitudes=(277.15, ))
 
     region = a.sets['FASEI_COMPLETED_WELL']
     m.Temperature(name='NT_FASEI_ID', 
-        createStepName='TempDefine', region=region, distributionType=FIELD, 
+        # createStepName='TempDefine', region=region, distributionType=FIELD, 
+        createStepName='Initial', region=region, distributionType=FIELD, 
         crossSectionDistribution=CONSTANT_THROUGH_THICKNESS, 
         field='Geotermico', magnitudes=(277.15, ))
     
@@ -312,7 +313,7 @@ def CreateFluidExpressionFields(name_model, mud_weight_ppg=8.5):
         print(f">>> ExpressionField '{name_field}' created with success!")
 
 
-def ApplyInitialTemperatures(name_model, filtered_layers, step_name='TempDefine', top_depth=2000.0, top_temp_C=4.0, base_depth=4000.0, base_temp_C=75.0):
+def ApplyInitialTemperatures(name_model, filtered_layers, step_name='Initial', top_depth=2000.0, top_temp_C=4.0, base_depth=4000.0, base_temp_C=75.0):
 
     m = mdb.models[name_model]
     a = m.rootAssembly

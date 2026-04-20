@@ -1,6 +1,6 @@
 1
 
-   Abaqus 2024                                  Date 17-abr-2026   Time 12:07:14
+   Abaqus 2024                                  Date 20-abr-2026   Time 15:23:00
    For use by PONTIFICIA UNIVERSIDADE CATOLICA DO RIO DE JANEIRO under license from Dassault Systemes or its subsidiary.
 
 
@@ -152,6 +152,10 @@
   *elastic
   *expansion
   *specificheat
+  *initialconditions, type=TEMPERATURE
+  *initialconditions, type=TEMPERATURE
+  *initialconditions, type=TEMPERATURE
+  *initialconditions, type=TEMPERATURE
   *initialconditions, type=STRESS, geostatic
   *initialconditions, type=STRESS, geostatic
   *solidsection, elset=ASSEMBLY_FLUID_INST_FASEI_FLUIDO, material=FLUID
@@ -186,6 +190,10 @@
   *surfaceinteraction, name=C_FASEI
   *friction, sliptolerance=0.005
   *surfacebehavior, pressure-overclosure=HARD
+  *initialconditions, type=TEMPERATURE
+  *initialconditions, type=TEMPERATURE
+  *initialconditions, type=TEMPERATURE
+  *initialconditions, type=TEMPERATURE
   *initialconditions, type=STRESS, geostatic
   *initialconditions, type=STRESS, geostatic
   *surfaceinteraction, name=C_FASEI
@@ -252,16 +260,12 @@
   *elementoutput, elset=ASSEMBLY_ROCK_OUTPUT, directions=YES
   *elementoutput, elset=ASSEMBLY_PIPE_INST_FASEI_REV, directions=YES
   *elementoutput, elset=ASSEMBLY_ROCK_OUTPUT, directions=YES
+  *initialconditions, type=TEMPERATURE
+  *initialconditions, type=TEMPERATURE
+  *initialconditions, type=TEMPERATURE
+  *initialconditions, type=TEMPERATURE
   *initialconditions, type=STRESS, geostatic
   *initialconditions, type=STRESS, geostatic
-
- ***WARNING: THE OPTION *TEMPERATURE IS USED BUT THE OPTION *INITIAL 
-             CONDITIONS,TYPE=TEMPERATURE IS NOT. THE INITIAL TEMPERATURE VALUES 
-             ARE ASSUMED TO BE ZERO.
-  *temperature
-  *temperature
-  *temperature
-  *temperature
   *output, field
   *output, history, frequency=0
   *output, field, timepoints=TIMEPOINT
@@ -290,8 +294,51 @@
   *elementoutput, elset=ASSEMBLY_ROCK_OUTPUT, directions=YES
   *elementoutput, elset=ASSEMBLY_PIPE_INST_FASEI_REV, directions=YES
   *elementoutput, elset=ASSEMBLY_ROCK_OUTPUT, directions=YES
+  *initialconditions, type=TEMPERATURE
+  *initialconditions, type=TEMPERATURE
+  *initialconditions, type=TEMPERATURE
+  *initialconditions, type=TEMPERATURE
   *initialconditions, type=STRESS, geostatic
   *initialconditions, type=STRESS, geostatic
+
+ ***WARNING: INITIAL CONDITIONS ARE NOT UNIQUELY DEFINED FOR NODE 4 INSTANCE 
+             PIPE_INST. THE LAST DEFINITION WILL BE USED.
+
+ ***WARNING: INITIAL CONDITIONS ARE NOT UNIQUELY DEFINED FOR NODE 8 INSTANCE 
+             PIPE_INST. THE LAST DEFINITION WILL BE USED.
+
+ ***WARNING: INITIAL CONDITIONS ARE NOT UNIQUELY DEFINED FOR NODE 12 INSTANCE 
+             PIPE_INST. THE LAST DEFINITION WILL BE USED.
+
+ ***WARNING: INITIAL CONDITIONS ARE NOT UNIQUELY DEFINED FOR NODE 16 INSTANCE 
+             PIPE_INST. THE LAST DEFINITION WILL BE USED.
+
+ ***WARNING: INITIAL CONDITIONS ARE NOT UNIQUELY DEFINED FOR NODE 20 INSTANCE 
+             PIPE_INST. THE LAST DEFINITION WILL BE USED.
+
+ ***WARNING: INITIAL CONDITIONS ARE NOT UNIQUELY DEFINED FOR NODE 24 INSTANCE 
+             PIPE_INST. THE LAST DEFINITION WILL BE USED.
+
+ ***WARNING: INITIAL CONDITIONS ARE NOT UNIQUELY DEFINED FOR NODE 28 INSTANCE 
+             PIPE_INST. THE LAST DEFINITION WILL BE USED.
+
+ ***WARNING: INITIAL CONDITIONS ARE NOT UNIQUELY DEFINED FOR NODE 32 INSTANCE 
+             PIPE_INST. THE LAST DEFINITION WILL BE USED.
+
+ ***WARNING: INITIAL CONDITIONS ARE NOT UNIQUELY DEFINED FOR NODE 36 INSTANCE 
+             PIPE_INST. THE LAST DEFINITION WILL BE USED.
+
+ ***WARNING: INITIAL CONDITIONS ARE NOT UNIQUELY DEFINED FOR NODE 40 INSTANCE 
+             PIPE_INST. THE LAST DEFINITION WILL BE USED.  THIS MESSAGE WILL 
+             NOT BE REPEATED FOR SUBSEQUENT NODES WITH DUPLICATE INITIAL 
+             CONDITIONS.
+
+ ***WARNING: The initial conditions defined on 22 nodes are not unique. The 
+             nodes have been identified in node set WarnNodeICDef.
+  *initialconditions, type=TEMPERATURE
+  *initialconditions, type=TEMPERATURE
+  *initialconditions, type=TEMPERATURE
+  *initialconditions, type=TEMPERATURE
   *initialconditions, type=STRESS, geostatic
 
  ***WARNING: BOTH LATERAL STRESS COEFFICIENTS ARE ZERO FOR THE *INITIAL 
@@ -369,76 +416,76 @@
   
        Element        Adjusted nodes 
  -------------------- -------------- 
-         PIPE_INST.21       NO       
-         FLUID_INST.6       NO       
-         FLUID_INST.1       NO       
-        FLUID_INST.11       NO       
-        FLUID_INST.16       NO       
-          PIPE_INST.1       NO       
-        FLUID_INST.21       NO       
-        FLUID_INST.26       NO       
           PIPE_INST.6       NO       
+        FLUID_INST.11       NO       
+        FLUID_INST.26       NO       
+         FLUID_INST.1       NO       
          PIPE_INST.11       NO       
-         PIPE_INST.26       NO       
-         PIPE_INST.16       NO       
-          ROCK_INST.9       NO       
+          PIPE_INST.1       NO       
          ROCK_INST.11       NO       
-         PIPE_INST.22       NO       
-         FLUID_INST.7       NO       
-         FLUID_INST.2       NO       
-        FLUID_INST.12       NO       
-        FLUID_INST.17       NO       
-          PIPE_INST.2       NO       
-        FLUID_INST.22       NO       
-        FLUID_INST.27       NO       
+         PIPE_INST.21       NO       
+         PIPE_INST.26       NO       
+        FLUID_INST.21       NO       
+        FLUID_INST.16       NO       
+         PIPE_INST.16       NO       
+         FLUID_INST.6       NO       
+          ROCK_INST.9       NO       
           PIPE_INST.7       NO       
+        FLUID_INST.12       NO       
+        FLUID_INST.27       NO       
+         FLUID_INST.2       NO       
          PIPE_INST.12       NO       
-         PIPE_INST.27       NO       
-         PIPE_INST.17       NO       
-         ROCK_INST.10       NO       
+          PIPE_INST.2       NO       
          ROCK_INST.12       NO       
-         PIPE_INST.23       NO       
-         FLUID_INST.8       NO       
-         FLUID_INST.3       NO       
-        FLUID_INST.13       NO       
-        FLUID_INST.18       NO       
-          PIPE_INST.3       NO       
-        FLUID_INST.23       NO       
-        FLUID_INST.28       NO       
+         PIPE_INST.22       NO       
+         PIPE_INST.27       NO       
+        FLUID_INST.22       NO       
+        FLUID_INST.17       NO       
+         PIPE_INST.17       NO       
+         FLUID_INST.7       NO       
+         ROCK_INST.10       NO       
           PIPE_INST.8       NO       
+        FLUID_INST.13       NO       
+        FLUID_INST.28       NO       
+         FLUID_INST.3       NO       
          PIPE_INST.13       NO       
-         PIPE_INST.28       NO       
-         PIPE_INST.18       NO       
-         ROCK_INST.16       NO       
+          PIPE_INST.3       NO       
          ROCK_INST.13       NO       
-         PIPE_INST.24       NO       
-         FLUID_INST.9       NO       
-         FLUID_INST.4       NO       
-        FLUID_INST.14       NO       
-        FLUID_INST.19       NO       
-          PIPE_INST.4       NO       
-        FLUID_INST.24       NO       
-        FLUID_INST.29       NO       
+         PIPE_INST.23       NO       
+         PIPE_INST.28       NO       
+        FLUID_INST.23       NO       
+        FLUID_INST.18       NO       
+         PIPE_INST.18       NO       
+         FLUID_INST.8       NO       
+         ROCK_INST.16       NO       
           PIPE_INST.9       NO       
+        FLUID_INST.14       NO       
+        FLUID_INST.29       NO       
+         FLUID_INST.4       NO       
          PIPE_INST.14       NO       
-         PIPE_INST.29       NO       
-         PIPE_INST.19       NO       
-         ROCK_INST.17       NO       
+          PIPE_INST.4       NO       
          ROCK_INST.14       NO       
-         PIPE_INST.25       NO       
-        FLUID_INST.10       NO       
-         FLUID_INST.5       NO       
-        FLUID_INST.15       NO       
-        FLUID_INST.20       NO       
-          PIPE_INST.5       NO       
-        FLUID_INST.25       NO       
-        FLUID_INST.30       NO       
+         PIPE_INST.24       NO       
+         PIPE_INST.29       NO       
+        FLUID_INST.24       NO       
+        FLUID_INST.19       NO       
+         PIPE_INST.19       NO       
+         FLUID_INST.9       NO       
+         ROCK_INST.17       NO       
          PIPE_INST.10       NO       
+        FLUID_INST.15       NO       
+        FLUID_INST.30       NO       
+         FLUID_INST.5       NO       
          PIPE_INST.15       NO       
-         PIPE_INST.30       NO       
-         PIPE_INST.20       NO       
-         ROCK_INST.18       NO       
+          PIPE_INST.5       NO       
          ROCK_INST.15       NO       
+         PIPE_INST.25       NO       
+         PIPE_INST.30       NO       
+        FLUID_INST.25       NO       
+        FLUID_INST.20       NO       
+         PIPE_INST.20       NO       
+        FLUID_INST.10       NO       
+         ROCK_INST.18       NO       
          ROCK_INST.21       NO       
          ROCK_INST.33       NO       
          ROCK_INST.36       NO       
@@ -451,8 +498,8 @@
          ROCK_INST.81       NO       
          ROCK_INST.86       NO       
          ROCK_INST.91       NO       
-         ROCK_INST.19       NO       
          ROCK_INST.96       NO       
+         ROCK_INST.19       NO       
          ROCK_INST.22       NO       
          ROCK_INST.34       NO       
          ROCK_INST.37       NO       
@@ -465,8 +512,8 @@
          ROCK_INST.82       NO       
          ROCK_INST.87       NO       
          ROCK_INST.92       NO       
-         ROCK_INST.20       NO       
         ROCK_INST.105       NO       
+         ROCK_INST.20       NO       
          ROCK_INST.23       NO       
          ROCK_INST.35       NO       
          ROCK_INST.38       NO       
@@ -547,47 +594,47 @@
         ROCK_INST.179       NO       
         ROCK_INST.201       NO       
         ROCK_INST.183       NO       
-        ROCK_INST.231       NO       
+        ROCK_INST.188       NO       
         ROCK_INST.206       NO       
         ROCK_INST.211       NO       
         ROCK_INST.216       NO       
         ROCK_INST.140       NO       
         ROCK_INST.225       NO       
         ROCK_INST.159       NO       
-        ROCK_INST.212       NO       
-        ROCK_INST.213       NO       
         ROCK_INST.164       NO       
         ROCK_INST.226       NO       
-        ROCK_INST.188       NO       
+        ROCK_INST.231       NO       
         ROCK_INST.236       NO       
         ROCK_INST.180       NO       
         ROCK_INST.202       NO       
         ROCK_INST.184       NO       
-        ROCK_INST.232       NO       
+        ROCK_INST.189       NO       
         ROCK_INST.207       NO       
+        ROCK_INST.212       NO       
         ROCK_INST.160       NO       
-        ROCK_INST.214       NO       
         ROCK_INST.165       NO       
         ROCK_INST.227       NO       
-        ROCK_INST.208       NO       
+        ROCK_INST.232       NO       
         ROCK_INST.237       NO       
         ROCK_INST.203       NO       
         ROCK_INST.185       NO       
-        ROCK_INST.233       NO       
-        ROCK_INST.189       NO       
-        ROCK_INST.215       NO       
+        ROCK_INST.190       NO       
+        ROCK_INST.208       NO       
+        ROCK_INST.213       NO       
         ROCK_INST.228       NO       
-        ROCK_INST.209       NO       
+        ROCK_INST.233       NO       
         ROCK_INST.238       NO       
         ROCK_INST.204       NO       
-        ROCK_INST.234       NO       
-        ROCK_INST.190       NO       
+        ROCK_INST.209       NO       
+        ROCK_INST.214       NO       
         ROCK_INST.229       NO       
-        ROCK_INST.210       NO       
+        ROCK_INST.234       NO       
         ROCK_INST.239       NO       
         ROCK_INST.205       NO       
-        ROCK_INST.235       NO       
+        ROCK_INST.210       NO       
+        ROCK_INST.215       NO       
         ROCK_INST.230       NO       
+        ROCK_INST.235       NO       
         ROCK_INST.240       NO       
   
   
@@ -691,10 +738,6 @@
 
  ***NOTE: ALL VALID ELEMENTS HAVE BEEN COLLECTED IN ELEMENT SET 
           _Whole_Model_GRAV_Elset FOR APPLICATION OF LOAD TYPE GRAV.
-  *temperature
-  *temperature
-  *temperature
-  *temperature
   *output, field, timepoints=TIMEPOINT
   *nodeoutput, nset=ASSEMBLY_PIPE_INST_FASEI_REV
   *elementoutput, elset=ASSEMBLY_PIPE_INST_FASEI_REV, directions=YES
@@ -864,10 +907,6 @@
   *endstep
   *Step, name=TempDefine, nlgeom=YES
   *static
-  *temperature
-  *temperature
-  *temperature
-  *temperature
   *endstep
   *Step, name=Perf_10_375, nlgeom=YES
   *static
@@ -913,13 +952,13 @@
 
 
      JOB TIME SUMMARY
-       USER TIME (SEC)      =     0.20    
-       SYSTEM TIME (SEC)    =     0.10    
-       TOTAL CPU TIME (SEC) =     0.30    
+       USER TIME (SEC)      =     0.40    
+       SYSTEM TIME (SEC)    =     0.20    
+       TOTAL CPU TIME (SEC) =     0.60    
        WALLCLOCK TIME (SEC) =            0
 1
 
-   Abaqus 2024                                  Date 17-abr-2026   Time 12:07:18
+   Abaqus 2024                                  Date 20-abr-2026   Time 15:23:04
    For use by PONTIFICIA UNIVERSIDADE CATOLICA DO RIO DE JANEIRO under license from Dassault Systemes or its subsidiary.
 
                                                                                                STEP    1  INCREMENT    1
@@ -1012,7 +1051,7 @@
       (6) USING "*RESTART, WRITE" CAN GENERATE A LARGE AMOUNT OF DATA WRITTEN IN THE WORK DIRECTORY.
 1
 
-   Abaqus 2024                                  Date 17-abr-2026   Time 12:07:18
+   Abaqus 2024                                  Date 20-abr-2026   Time 15:23:04
    For use by PONTIFICIA UNIVERSIDADE CATOLICA DO RIO DE JANEIRO under license from Dassault Systemes or its subsidiary.
 
                                                                                                STEP    2  INCREMENT    1
@@ -1115,7 +1154,7 @@
       (6) USING "*RESTART, WRITE" CAN GENERATE A LARGE AMOUNT OF DATA WRITTEN IN THE WORK DIRECTORY.
 1
 
-   Abaqus 2024                                  Date 17-abr-2026   Time 12:07:19
+   Abaqus 2024                                  Date 20-abr-2026   Time 15:23:04
    For use by PONTIFICIA UNIVERSIDADE CATOLICA DO RIO DE JANEIRO under license from Dassault Systemes or its subsidiary.
 
                                                                                                STEP    3  INCREMENT    1
@@ -1218,7 +1257,7 @@
       (6) USING "*RESTART, WRITE" CAN GENERATE A LARGE AMOUNT OF DATA WRITTEN IN THE WORK DIRECTORY.
 1
 
-   Abaqus 2024                                  Date 17-abr-2026   Time 12:07:19
+   Abaqus 2024                                  Date 20-abr-2026   Time 15:23:05
    For use by PONTIFICIA UNIVERSIDADE CATOLICA DO RIO DE JANEIRO under license from Dassault Systemes or its subsidiary.
 
                                                                                                STEP    4  INCREMENT    1
@@ -1256,13 +1295,13 @@
 
                     LOCATION OF THE CENTER OF MASS OF THE MODEL
 
-                       0.000000          -3899.994    
+                       0.000000          -3900.000    
 
 
                     MOMENTS OF INERTIA ABOUT THE ORIGIN
                            I(XX)               I(YY)               I(ZZ)
 
-                      6.1329095E+15      3.0152603E+10      6.1329095E+15
+                      6.1329283E+15      3.0152603E+10      6.1329283E+15
 
 
                     PRODUCTS OF INERTIA ABOUT THE ORIGIN
@@ -1321,7 +1360,7 @@
       (6) USING "*RESTART, WRITE" CAN GENERATE A LARGE AMOUNT OF DATA WRITTEN IN THE WORK DIRECTORY.
 1
 
-   Abaqus 2024                                  Date 17-abr-2026   Time 12:07:19
+   Abaqus 2024                                  Date 20-abr-2026   Time 15:23:05
    For use by PONTIFICIA UNIVERSIDADE CATOLICA DO RIO DE JANEIRO under license from Dassault Systemes or its subsidiary.
 
                                                                                                STEP    5  INCREMENT    1
@@ -1362,13 +1401,13 @@
 
                     LOCATION OF THE CENTER OF MASS OF THE MODEL
 
-                       0.000000          -3899.994    
+                       0.000000          -3900.000    
 
 
                     MOMENTS OF INERTIA ABOUT THE ORIGIN
                            I(XX)               I(YY)               I(ZZ)
 
-                      6.1329095E+15      3.0152444E+10      6.1329095E+15
+                      6.1329283E+15      3.0152588E+10      6.1329283E+15
 
 
                     PRODUCTS OF INERTIA ABOUT THE ORIGIN
@@ -1380,7 +1419,7 @@
                     MOMENTS OF INERTIA ABOUT THE CENTER OF MASS
                            I(XX)               I(YY)               I(ZZ)
 
-                      5.4939130E+12      3.0152444E+10      5.4939130E+12
+                      5.4939131E+12      3.0152588E+10      5.4939131E+12
 
 
                     PRODUCTS OF INERTIA ABOUT THE CENTER OF MASS
@@ -1396,13 +1435,13 @@
 
                               ANALYSIS IS ENDED
                               WITH      1 ERROR MESSAGES ON THE MSG FILE
-                              AND      23 WARNING MESSAGES ON THE DAT FILE
+                              AND      33 WARNING MESSAGES ON THE DAT FILE
                               AND       9 WARNING MESSAGES ON THE MSG FILE
 
 
 
      JOB TIME SUMMARY
-       USER TIME (SEC)      =      1.7    
-       SYSTEM TIME (SEC)    =      1.5    
-       TOTAL CPU TIME (SEC) =      3.2    
-       WALLCLOCK TIME (SEC) =            2
+       USER TIME (SEC)      =      1.2    
+       SYSTEM TIME (SEC)    =      1.4    
+       TOTAL CPU TIME (SEC) =      2.6    
+       WALLCLOCK TIME (SEC) =            1

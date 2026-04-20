@@ -1,6 +1,6 @@
 1
 
-   Abaqus 2024                                  Date 17-abr-2026   Time 12:07:18
+   Abaqus 2024                                  Date 20-abr-2026   Time 15:23:04
    For use by PONTIFICIA UNIVERSIDADE CATOLICA DO RIO DE JANEIRO under license from Dassault Systemes or its subsidiary.
 
                                                                                  
@@ -76,20 +76,20 @@
  
      INITIAL ELEMENT LOAD BALANCE
             DOMAIN    1     THREAD    NUMBER OF ELEMENTS
-                              1            35
-                              2            20
-                              3            240
-                              4            10
-                              5            15
-                              6            15
-                              7            55
-                              8            60
+                              1            15
+                              2            45
+                              3            20
+                              4            85
+                              5            65
+                              6            20
+                              7            15
+                              8            110
                               9            30
-                             10            15
-                             11            25
+                             10            55
+                             11            60
                              12            30
-                             13            15
-                             14            10
+                             13            10
+                             14            15
 
  ***WARNING: THERE ARE 37 UNCONNECTED REGIONS IN THE MODEL.
 
@@ -101,7 +101,7 @@
         NUMBER OF EQUATIONS:  646
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      8.935e+05
-        SOLVER ELAPSED TIME:  7ms
+        SOLVER ELAPSED TIME:  4ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -123,7 +123,7 @@
  STEP TIME COMPLETED        1.00    ,  TOTAL TIME COMPLETED         1.00    
 1
 
-   Abaqus 2024                                  Date 17-abr-2026   Time 12:07:18
+   Abaqus 2024                                  Date 20-abr-2026   Time 15:23:04
    For use by PONTIFICIA UNIVERSIDADE CATOLICA DO RIO DE JANEIRO under license from Dassault Systemes or its subsidiary.
 
                                                                                  
@@ -222,20 +222,20 @@
  
      INITIAL ELEMENT LOAD BALANCE
             DOMAIN    1     THREAD    NUMBER OF ELEMENTS
-                              1            40
-                              2            10
-                              3            20
-                              4            205
-                              5            30
-                              6            10
-                              7            55
-                              8            10
-                              9            25
+                              1            30
+                              2            25
+                              3            25
+                              4            45
+                              5            15
+                              6            15
+                              7            210
+                              8            55
+                              9            45
                              10            25
-                             11            55
-                             12            35
-                             13            35
-                             14            20
+                             11            15
+                             12            50
+                             13            10
+                             14            10
 
  ***WARNING: THERE ARE 37 UNCONNECTED REGIONS IN THE MODEL.
 
@@ -247,7 +247,7 @@
         NUMBER OF EQUATIONS:  646
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      8.935e+05
-        SOLVER ELAPSED TIME:  3ms
+        SOLVER ELAPSED TIME:  13ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -276,7 +276,7 @@
         NUMBER OF EQUATIONS:  646
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      8.935e+05
-        SOLVER ELAPSED TIME:  11ms
+        SOLVER ELAPSED TIME:  2ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -298,7 +298,7 @@
  STEP TIME COMPLETED        2.00    ,  TOTAL TIME COMPLETED         3.00    
 1
 
-   Abaqus 2024                                  Date 17-abr-2026   Time 12:07:19
+   Abaqus 2024                                  Date 20-abr-2026   Time 15:23:04
    For use by PONTIFICIA UNIVERSIDADE CATOLICA DO RIO DE JANEIRO under license from Dassault Systemes or its subsidiary.
 
                                                                                  
@@ -397,20 +397,20 @@
  
      INITIAL ELEMENT LOAD BALANCE
             DOMAIN    1     THREAD    NUMBER OF ELEMENTS
-                              1            5
-                              2            15
-                              3            80
-                              4            55
-                              5            10
-                              6            20
-                              7            65
-                              8            105
-                              9            10
-                             10            10
-                             11            20
-                             12            105
-                             13            25
-                             14            50
+                              1            100
+                              2            45
+                              3            55
+                              4            10
+                              5            15
+                              6            15
+                              7            80
+                              8            50
+                              9            15
+                             10            85
+                             11            10
+                             12            50
+                             13            15
+                             14            30
 
  ***WARNING: THERE ARE 37 UNCONNECTED REGIONS IN THE MODEL.
 
@@ -422,21 +422,20 @@
         NUMBER OF EQUATIONS:  646
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      8.935e+05
-        SOLVER ELAPSED TIME:  10ms
+        SOLVER ELAPSED TIME:  3ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
 
- AVERAGE FORCE                      1.629E+10   TIME AVG. FORCE       1.629E+10
- LARGEST SCALED RESIDUAL FORCE     -7.328E+04   AT NODE        227   DOF  2
+ AVERAGE FORCE                      7.691E+09   TIME AVG. FORCE       7.691E+09
+ LARGEST SCALED RESIDUAL FORCE     -4.578E-05   AT NODE        227   DOF  1
    INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE     -7.328E+04
- LARGEST INCREMENT OF DISP.         3.026E-03   AT NODE        126   DOF  2
+  CORRESPONDING RESIDUAL FORCE     -4.578E-05
+ LARGEST INCREMENT OF DISP.        -3.173E-17   AT NODE        175   DOF  2
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.        3.026E-03   AT NODE        126   DOF  2
+ LARGEST CORRECTION TO DISP.       -3.173E-17   AT NODE        175   DOF  2
    INSTANCE: ROCK_INST                                                                       
- ESTIMATE OF DISP.    CORRECTION   -6.897E-06
- FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND ESTIMATED CORRECTION
+          THE FORCE     EQUILIBRIUM RESPONSE WAS LINEAR IN THIS INCREMENT
 
  ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
    0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
@@ -452,20 +451,20 @@
         NUMBER OF EQUATIONS:  646
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      8.935e+05
-        SOLVER ELAPSED TIME:  12ms
+        SOLVER ELAPSED TIME:  13ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
 
- AVERAGE FORCE                      2.627E+10   TIME AVG. FORCE       2.128E+10
- LARGEST SCALED RESIDUAL FORCE       327.       AT NODE        227   DOF  2
+ AVERAGE FORCE                      7.691E+09   TIME AVG. FORCE       7.691E+09
+ LARGEST SCALED RESIDUAL FORCE     -4.578E-05   AT NODE         52   DOF  1
    INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE       327.    
- LARGEST INCREMENT OF DISP.         3.012E-03   AT NODE        149   DOF  2
+  CORRESPONDING RESIDUAL FORCE     -4.578E-05
+ LARGEST INCREMENT OF DISP.         2.477E-17   AT NODE        255   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.       -1.365E-05   AT NODE        126   DOF  2
+ LARGEST CORRECTION TO DISP.        4.496E-17   AT NODE        175   DOF  2
    INSTANCE: ROCK_INST                                                                       
-          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+          THE FORCE     EQUILIBRIUM RESPONSE WAS LINEAR IN THIS INCREMENT
 
  ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
    0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
@@ -481,18 +480,18 @@
         NUMBER OF EQUATIONS:  646
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      8.935e+05
-        SOLVER ELAPSED TIME:  2ms
+        SOLVER ELAPSED TIME:  12ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
 
- AVERAGE FORCE                      3.636E+10   TIME AVG. FORCE       2.631E+10
- LARGEST SCALED RESIDUAL FORCE      -170.       AT NODE        227   DOF  2
+ AVERAGE FORCE                      7.691E+09   TIME AVG. FORCE       7.691E+09
+ LARGEST SCALED RESIDUAL FORCE     -3.052E-05   AT NODE         52   DOF  1
    INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE      -170.    
- LARGEST INCREMENT OF DISP.         3.019E-03   AT NODE        128   DOF  2
+  CORRESPONDING RESIDUAL FORCE     -3.052E-05
+ LARGEST INCREMENT OF DISP.        -1.527E-17   AT NODE        225   DOF  2
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.        6.885E-06   AT NODE        126   DOF  2
+ LARGEST CORRECTION TO DISP.       -3.435E-17   AT NODE        255   DOF  1
    INSTANCE: ROCK_INST                                                                       
           THE FORCE     EQUILIBRIUM RESPONSE WAS LINEAR IN THIS INCREMENT
 
@@ -503,7 +502,7 @@
  STEP TIME COMPLETED        3.00    ,  TOTAL TIME COMPLETED         6.00    
 1
 
-   Abaqus 2024                                  Date 17-abr-2026   Time 12:07:19
+   Abaqus 2024                                  Date 20-abr-2026   Time 15:23:05
    For use by PONTIFICIA UNIVERSIDADE CATOLICA DO RIO DE JANEIRO under license from Dassault Systemes or its subsidiary.
 
                                                                                  
@@ -602,20 +601,20 @@
  
      INITIAL ELEMENT LOAD BALANCE
             DOMAIN    1     THREAD    NUMBER OF ELEMENTS
-                              1            25
-                              2            85
-                              3            35
-                              4            45
-                              5            10
-                              6            20
-                              7            45
-                              8            15
-                              9            75
-                             10            30
-                             11            30
-                             12            30
-                             13            80
-                             14            50
+                              1            0
+                              2            0
+                              3            0
+                              4            0
+                              5            0
+                              6            0
+                              7            150
+                              8            0
+                              9            170
+                             10            180
+                             11            0
+                             12            0
+                             13            0
+                             14            75
 
  ***WARNING: THERE ARE 37 UNCONNECTED REGIONS IN THE MODEL.
 
@@ -627,49 +626,30 @@
         NUMBER OF EQUATIONS:  646
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      8.935e+05
-        SOLVER ELAPSED TIME:  7ms
+        SOLVER ELAPSED TIME:  13ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
 
- AVERAGE FORCE                      3.538E+10   TIME AVG. FORCE       3.538E+10
- LARGEST SCALED RESIDUAL FORCE     -4.376E+08   AT NODE        250   DOF  1
+ AVERAGE FORCE                      7.451E+09   TIME AVG. FORCE       7.451E+09
+ LARGEST SCALED RESIDUAL FORCE     -4.397E+06   AT NODE        250   DOF  1
    INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE     -4.376E+08
- LARGEST INCREMENT OF DISP.        -2.633E-03   AT NODE        275   DOF  1
+  CORRESPONDING RESIDUAL FORCE     -4.397E+06
+ LARGEST INCREMENT OF DISP.        -2.659E-04   AT NODE        275   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.       -2.633E-03   AT NODE        275   DOF  1
+ LARGEST CORRECTION TO DISP.       -2.659E-04   AT NODE        275   DOF  1
    INSTANCE: ROCK_INST                                                                       
-          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
- 
-	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
- 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
-        NUMBER OF EQUATIONS:  646
-        NUMBER OF RHS:        1
-        NUMBER OF FLOPS:      8.935e+05
-        SOLVER ELAPSED TIME:  2ms
+ ESTIMATE OF DISP.    CORRECTION   -1.181E-06
+ FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND ESTIMATED CORRECTION
 
-               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
-
-
- AVERAGE FORCE                      3.536E+10   TIME AVG. FORCE       3.536E+10
- LARGEST SCALED RESIDUAL FORCE     -1.004E+05   AT NODE        250   DOF  1
-   INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE     -1.004E+05
- LARGEST INCREMENT OF DISP.        -2.633E-03   AT NODE        275   DOF  1
-   INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.        1.047E-05   AT NODE        267   DOF  1
-   INSTANCE: ROCK_INST                                                                       
-          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
-
- ITERATION SUMMARY FOR THE INCREMENT:   2 TOTAL ITERATIONS, OF WHICH
-   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  2 ARE EQUILIBRIUM ITERATIONS.
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
 
  TIME INCREMENT COMPLETED   1.00    ,  FRACTION OF STEP COMPLETED   1.00    
  STEP TIME COMPLETED        1.00    ,  TOTAL TIME COMPLETED         7.00    
 1
 
-   Abaqus 2024                                  Date 17-abr-2026   Time 12:07:19
+   Abaqus 2024                                  Date 20-abr-2026   Time 15:23:05
    For use by PONTIFICIA UNIVERSIDADE CATOLICA DO RIO DE JANEIRO under license from Dassault Systemes or its subsidiary.
 
                                                                                  
@@ -776,23 +756,23 @@
  
      INITIAL ELEMENT LOAD BALANCE
             DOMAIN    1     THREAD    NUMBER OF ELEMENTS
-                              1            20
-                              2            90
+                              1            10
+                              2            10
                               3            40
-                              4            30
-                              5            50
-                              6            25
-                              7            25
-                              8            30
-                              9            130
-                             10            25
-                             11            20
-                             12            35
-                             13            25
-                             14            30
+                              4            110
+                              5            135
+                              6            15
+                              7            20
+                              8            15
+                              9            50
+                             10            15
+                             11            5
+                             12            5
+                             13            15
+                             14            130
 
  ***WARNING: Creep properties are unrealistic at one or more integration points 
-             in 239 elements. Creep strain rate and/or strain energy rate 
+             in 180 elements. Creep strain rate and/or strain energy rate 
              density cannot be calculated. The elements have been identified in 
              element set WarnElemCreepPropStep5Inc1.
 
@@ -800,7 +780,7 @@
   INCREMENT     1 STARTS. ATTEMPT NUMBER  2, TIME INCREMENT  2.500E-07
 
  ***WARNING: Creep properties are unrealistic at one or more integration points 
-             in 237 elements. Creep strain rate and/or strain energy rate 
+             in 180 elements. Creep strain rate and/or strain energy rate 
              density cannot be calculated. The elements have been identified in 
              element set WarnElemCreepPropStep5Inc1.
 
@@ -808,7 +788,7 @@
   INCREMENT     1 STARTS. ATTEMPT NUMBER  3, TIME INCREMENT  6.250E-08
 
  ***WARNING: Creep properties are unrealistic at one or more integration points 
-             in 237 elements. Creep strain rate and/or strain energy rate 
+             in 176 elements. Creep strain rate and/or strain energy rate 
              density cannot be calculated. The elements have been identified in 
              element set WarnElemCreepPropStep5Inc1.
 
@@ -816,7 +796,7 @@
   INCREMENT     1 STARTS. ATTEMPT NUMBER  4, TIME INCREMENT  1.562E-08
 
  ***WARNING: Creep properties are unrealistic at one or more integration points 
-             in 236 elements. Creep strain rate and/or strain energy rate 
+             in 170 elements. Creep strain rate and/or strain energy rate 
              density cannot be calculated. The elements have been identified in 
              element set WarnElemCreepPropStep5Inc1.
 
@@ -824,7 +804,7 @@
   INCREMENT     1 STARTS. ATTEMPT NUMBER  5, TIME INCREMENT  3.906E-09
 
  ***WARNING: Creep properties are unrealistic at one or more integration points 
-             in 235 elements. Creep strain rate and/or strain energy rate 
+             in 170 elements. Creep strain rate and/or strain energy rate 
              density cannot be calculated. The elements have been identified in 
              element set WarnElemCreepPropStep5Inc1.
  
@@ -836,14 +816,14 @@
      ANALYSIS SUMMARY:
      TOTAL OF          8  INCREMENTS
                        5  CUTBACKS IN AUTOMATIC INCREMENTATION
-                       8  ITERATIONS INCLUDING CONTACT ITERATIONS IF PRESENT
-                       8  PASSES THROUGH THE EQUATION SOLVER OF WHICH 
-                       8  INVOLVE MATRIX DECOMPOSITION, INCLUDING
+                       7  ITERATIONS INCLUDING CONTACT ITERATIONS IF PRESENT
+                       7  PASSES THROUGH THE EQUATION SOLVER OF WHICH 
+                       7  INVOLVE MATRIX DECOMPOSITION, INCLUDING
                        0  DECOMPOSITION(S) OF THE MASS MATRIX
                        1  REORDERING OF EQUATIONS TO MINIMIZE WAVEFRONT
                        0  ADDITIONAL RESIDUAL EVALUATIONS FOR LINE SEARCHES
                        0  ADDITIONAL OPERATOR EVALUATIONS FOR LINE SEARCHES
-                      23  WARNING MESSAGES DURING USER INPUT PROCESSING
+                      33  WARNING MESSAGES DURING USER INPUT PROCESSING
                        9  WARNING MESSAGES DURING ANALYSIS
                        0  ANALYSIS WARNINGS ARE NUMERICAL PROBLEM MESSAGES
                        0  ANALYSIS WARNINGS ARE NEGATIVE EIGENVALUE MESSAGES
@@ -852,8 +832,8 @@
 
 
      JOB TIME SUMMARY
-       USER TIME (SEC)      =      1.7    
-       SYSTEM TIME (SEC)    =      1.5    
-       TOTAL CPU TIME (SEC) =      3.2    
-       WALLCLOCK TIME (SEC) =            2
+       USER TIME (SEC)      =      1.2    
+       SYSTEM TIME (SEC)    =      1.4    
+       TOTAL CPU TIME (SEC) =      2.6    
+       WALLCLOCK TIME (SEC) =            1
        MEMORY PEAK (GB)     =            0
