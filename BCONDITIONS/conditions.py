@@ -286,6 +286,7 @@ def ApplyExpressionFieldsGeothermal(name_model, filtered_layers, top_depth=2000.
 
     
 def CreateFluidExpressionFields(name_model, mud_weight_ppg=8.5):
+
     m = mdb.models[name_model]
 
     factor_conversion = 119.826 * 9.81

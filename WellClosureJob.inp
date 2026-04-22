@@ -974,12 +974,12 @@ ROCK_INST.FASEI_SLAVE, 1.
 *Elastic
 10000.,0.
 *Specific Heat
- 8.61904e+06,
+2060.,
 *Material, name=LAYER_01_HALITE
 *Conductivity
  5.55,
 *Creep, law=DOUBLE POWER
- 0.0077864,    6042.9,      2.94, 0.0076093,    6042.9,      8.15,      10.3
+ 0.0077864,    6042.9,      2.94, 0.0076093,    6042.9,      8.15,  1.03e+07
 *Density
 2170.,
 *Elastic
@@ -987,7 +987,7 @@ ROCK_INST.FASEI_SLAVE, 1.
 *Expansion
  1e-05,
 *Specific Heat
- 878.414,
+ 0.209946,
 *Material, name=STEEL
 *Conductivity
  45.3452,
@@ -998,7 +998,7 @@ ROCK_INST.FASEI_SLAVE, 1.
 *Expansion
  0.0001242,
 *Specific Heat
- 1.92841e+06,
+ 460.9,
 ** 
 ** INTERACTION PROPERTIES
 ** 

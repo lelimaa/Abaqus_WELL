@@ -21,10 +21,10 @@ def ElasticMaterial(modelName, name, data, sectionLength=1.):
         mat.Conductivity(table=((data.get('conductivity'),),))
 
     if data.get('specific_heat') is not None:
-        raw_value = data.get('specific_heat')
-        corrected_spec_heat = raw_value * 4184.0 
-        # mat.SpecificHeat(table=((data.get('specific_heat'),),))
-        mat.SpecificHeat(table=((corrected_spec_heat,),))
+        # raw_value = data.get('specific_heat')
+        # corrected_spec_heat = raw_value * 4184.0 
+        # mat.SpecificHeat(table=((corrected_spec_heat,),))
+        mat.SpecificHeat(table=((data.get('specific_heat'),),))
 
     if data.get('expansion') is not None:
         mat.Expansion(table=((data.get('expansion'),),))
@@ -72,13 +72,15 @@ def DoublePowerCreepMaterial(modelName, name, data, sectionLength=1.):
         # dp_data = data["Rocks"][name]["DoublePowerParameters"]        
         dp_data = data.get("DoublePowerParameters", {})
         # dp_data = data.get("creep_parameters", {})
-        A1 = dp_data["a1"]
-        A2 = dp_data["a2"]
+        A1 = dp_data["a1"] 
+        A2 = dp_data["a2"] 
+        # A1 = dp_data["a1"] / 86400.0  # Convert from per day to per second
+        # A2 = dp_data["a2"] / 86400.0  # Convert from per day to per second
         B1 = dp_data["b1"]
         B2 = dp_data["b2"]
         C1 = dp_data["c1"]
         C2 = dp_data["c2"]
-        ref_stress = dp_data["s0"]
+        ref_stress = dp_data["s0"]*1e6  # Converting from MPa to Pa
         mat.Creep(law=DOUBLE_POWER,
                   table=((A1, B1, C1, A2, B2, C2, ref_stress),))
     except:

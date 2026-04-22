@@ -2,7 +2,7 @@
 #
 # Abaqus/CAE Release 2024 replay file
 # Internal Version: 2023_09_21-09.55.25 RELr426 190762
-# Run by Hidalgo on Fri Apr 17 12:05:15 2026
+# Run by Hidalgo on Wed Apr 22 12:48:54 2026
 #
 
 # from driverUtils import executeOnCaeGraphicsStartup
@@ -10,12 +10,18 @@
 #: Executing "onCaeGraphicsStartup()" in the site directory ...
 from abaqus import *
 from abaqusConstants import *
-session.Viewport(name='Viewport: 1', origin=(1.25, 1.25), width=184, 
-    height=124)
+session.Viewport(name='Viewport: 1', origin=(0.0, 0.0), width=217.5, 
+    height=154.75)
 session.viewports['Viewport: 1'].makeCurrent()
+session.viewports['Viewport: 1'].maximize()
+from caeModules import *
 from driverUtils import executeOnCaeStartup
 executeOnCaeStartup()
-execfile('TestMain.py', __main__.__dict__)
+session.viewports['Viewport: 1'].partDisplay.geometryOptions.setValues(
+    referenceRepresentation=ON)
+cliCommand("""import os""")
+cliCommand("""os.chdir(r'C:\\Users\\hidalgo\\Documents\\GitHub\\Abaqus_WELL_')""")
+cliCommand("""execfile(r'C:\\Users\\hidalgo\\Documents\\GitHub\\Abaqus_WELL_\\TestMain.py')""")
 #: Data keys: dict_keys(['AnalysisData', 'ThermalGradient', 'Tubulars', 'Lithology', 'InSituStresses', 'Rocks', 'Cements', 'SteelGrades', 'Phases', 'Events', 'Fluids'])
 #: The bottom of the wellbore is at: -4100 meters
 #: The top of the wellbore is at: -3700 meters
@@ -110,5 +116,15 @@ execfile('TestMain.py', __main__.__dict__)
 #: >>> File .inp succssessfully created!
 #: The model database has been saved to "C:\Users\hidalgo\Documents\GitHub\Abaqus_WELL_\WellClosureJob.cae".
 #: Model saved as 'WellClosureJob.cae' in the project folder. You can open it with Abaqus/CAE to review the model and submit the job for analysis.
-print('RT script done')
-#: RT script done
+p = mdb.models['MyFirstModel'].parts['FLUID']
+session.viewports['Viewport: 1'].setValues(displayedObject=p)
+cliCommand("""execfile(r'C:\\Users\\hidalgo\\Documents\\GitHub\\Abaqus_WELL_\\AbqView1.py')""")
+session.viewports['Viewport: 1'].partDisplay.setValues(mesh=ON)
+session.viewports['Viewport: 1'].partDisplay.meshOptions.setValues(
+    meshTechnique=ON)
+session.viewports['Viewport: 1'].partDisplay.geometryOptions.setValues(
+    referenceRepresentation=OFF)
+session.viewports['Viewport: 1'].partDisplay.setValues(sectionAssignments=ON, 
+    engineeringFeatures=ON, mesh=OFF)
+session.viewports['Viewport: 1'].partDisplay.meshOptions.setValues(
+    meshTechnique=OFF)

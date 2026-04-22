@@ -1,6 +1,6 @@
 1
 
-   Abaqus 2024                                  Date 20-abr-2026   Time 15:23:04
+   Abaqus 2024                                  Date 22-abr-2026   Time 12:45:56
    For use by PONTIFICIA UNIVERSIDADE CATOLICA DO RIO DE JANEIRO under license from Dassault Systemes or its subsidiary.
 
                                                                                  
@@ -76,20 +76,20 @@
  
      INITIAL ELEMENT LOAD BALANCE
             DOMAIN    1     THREAD    NUMBER OF ELEMENTS
-                              1            15
+                              1            25
                               2            45
                               3            20
-                              4            85
-                              5            65
-                              6            20
-                              7            15
-                              8            110
-                              9            30
-                             10            55
-                             11            60
-                             12            30
-                             13            10
-                             14            15
+                              4            25
+                              5            15
+                              6            10
+                              7            180
+                              8            15
+                              9            40
+                             10            40
+                             11            10
+                             12            50
+                             13            20
+                             14            80
 
  ***WARNING: THERE ARE 37 UNCONNECTED REGIONS IN THE MODEL.
 
@@ -101,18 +101,18 @@
         NUMBER OF EQUATIONS:  646
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      8.935e+05
-        SOLVER ELAPSED TIME:  4ms
+        SOLVER ELAPSED TIME:  3ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
 
  AVERAGE FORCE                      7.691E+09   TIME AVG. FORCE       7.691E+09
- LARGEST SCALED RESIDUAL FORCE       8.80       AT NODE        227   DOF  2
+ LARGEST SCALED RESIDUAL FORCE      6.104E-05   AT NODE        102   DOF  1
    INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE       8.80    
- LARGEST INCREMENT OF DISP.        -4.091E-07   AT NODE        133   DOF  2
+  CORRESPONDING RESIDUAL FORCE      6.104E-05
+ LARGEST INCREMENT OF DISP.        -4.083E-16   AT NODE        149   DOF  2
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.       -4.091E-07   AT NODE        133   DOF  2
+ LARGEST CORRECTION TO DISP.       -4.083E-16   AT NODE        149   DOF  2
    INSTANCE: ROCK_INST                                                                       
           THE FORCE     EQUILIBRIUM RESPONSE WAS LINEAR IN THIS INCREMENT
 
@@ -123,7 +123,7 @@
  STEP TIME COMPLETED        1.00    ,  TOTAL TIME COMPLETED         1.00    
 1
 
-   Abaqus 2024                                  Date 20-abr-2026   Time 15:23:04
+   Abaqus 2024                                  Date 22-abr-2026   Time 12:45:57
    For use by PONTIFICIA UNIVERSIDADE CATOLICA DO RIO DE JANEIRO under license from Dassault Systemes or its subsidiary.
 
                                                                                  
@@ -222,20 +222,20 @@
  
      INITIAL ELEMENT LOAD BALANCE
             DOMAIN    1     THREAD    NUMBER OF ELEMENTS
-                              1            30
-                              2            25
-                              3            25
-                              4            45
-                              5            15
-                              6            15
-                              7            210
-                              8            55
-                              9            45
-                             10            25
-                             11            15
-                             12            50
-                             13            10
-                             14            10
+                              1            0
+                              2            0
+                              3            0
+                              4            0
+                              5            0
+                              6            0
+                              7            0
+                              8            0
+                              9            0
+                             10            0
+                             11            575
+                             12            0
+                             13            0
+                             14            0
 
  ***WARNING: THERE ARE 37 UNCONNECTED REGIONS IN THE MODEL.
 
@@ -247,18 +247,18 @@
         NUMBER OF EQUATIONS:  646
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      8.935e+05
-        SOLVER ELAPSED TIME:  13ms
+        SOLVER ELAPSED TIME:  3ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
 
  AVERAGE FORCE                      7.691E+09   TIME AVG. FORCE       7.691E+09
- LARGEST SCALED RESIDUAL FORCE     -6.104E-05   AT NODE        152   DOF  1
+ LARGEST SCALED RESIDUAL FORCE     -5.341E-05   AT NODE         78   DOF  1
    INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE     -6.104E-05
- LARGEST INCREMENT OF DISP.         7.453E-10   AT NODE        143   DOF  2
+  CORRESPONDING RESIDUAL FORCE     -5.341E-05
+ LARGEST INCREMENT OF DISP.         1.192E-26   AT NODE        104   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.        7.453E-10   AT NODE        143   DOF  2
+ LARGEST CORRECTION TO DISP.        1.192E-26   AT NODE        104   DOF  1
    INSTANCE: ROCK_INST                                                                       
           THE FORCE     EQUILIBRIUM RESPONSE WAS LINEAR IN THIS INCREMENT
 
@@ -276,18 +276,18 @@
         NUMBER OF EQUATIONS:  646
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      8.935e+05
-        SOLVER ELAPSED TIME:  2ms
+        SOLVER ELAPSED TIME:  13ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
 
  AVERAGE FORCE                      7.691E+09   TIME AVG. FORCE       7.691E+09
- LARGEST SCALED RESIDUAL FORCE     -4.578E-05   AT NODE         77   DOF  1
+ LARGEST SCALED RESIDUAL FORCE      3.052E-05   AT NODE         77   DOF  1
    INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE     -4.578E-05
- LARGEST INCREMENT OF DISP.         3.156E-17   AT NODE        175   DOF  2
+  CORRESPONDING RESIDUAL FORCE      3.052E-05
+ LARGEST INCREMENT OF DISP.         1.211E-26   AT NODE        150   DOF  2
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.       -7.453E-10   AT NODE        150   DOF  2
+ LARGEST CORRECTION TO DISP.       -1.423E-26   AT NODE        227   DOF  2
    INSTANCE: ROCK_INST                                                                       
           THE FORCE     EQUILIBRIUM RESPONSE WAS LINEAR IN THIS INCREMENT
 
@@ -298,7 +298,7 @@
  STEP TIME COMPLETED        2.00    ,  TOTAL TIME COMPLETED         3.00    
 1
 
-   Abaqus 2024                                  Date 20-abr-2026   Time 15:23:04
+   Abaqus 2024                                  Date 22-abr-2026   Time 12:45:57
    For use by PONTIFICIA UNIVERSIDADE CATOLICA DO RIO DE JANEIRO under license from Dassault Systemes or its subsidiary.
 
                                                                                  
@@ -397,20 +397,20 @@
  
      INITIAL ELEMENT LOAD BALANCE
             DOMAIN    1     THREAD    NUMBER OF ELEMENTS
-                              1            100
-                              2            45
-                              3            55
-                              4            10
-                              5            15
-                              6            15
-                              7            80
-                              8            50
-                              9            15
-                             10            85
-                             11            10
-                             12            50
-                             13            15
-                             14            30
+                              1            25
+                              2            55
+                              3            50
+                              4            65
+                              5            35
+                              6            45
+                              7            55
+                              8            40
+                              9            50
+                             10            15
+                             11            60
+                             12            20
+                             13            50
+                             14            10
 
  ***WARNING: THERE ARE 37 UNCONNECTED REGIONS IN THE MODEL.
 
@@ -422,18 +422,18 @@
         NUMBER OF EQUATIONS:  646
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      8.935e+05
-        SOLVER ELAPSED TIME:  3ms
+        SOLVER ELAPSED TIME:  12ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
 
  AVERAGE FORCE                      7.691E+09   TIME AVG. FORCE       7.691E+09
- LARGEST SCALED RESIDUAL FORCE     -4.578E-05   AT NODE        227   DOF  1
+ LARGEST SCALED RESIDUAL FORCE      3.052E-05   AT NODE        227   DOF  1
    INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE     -4.578E-05
- LARGEST INCREMENT OF DISP.        -3.173E-17   AT NODE        175   DOF  2
+  CORRESPONDING RESIDUAL FORCE      3.052E-05
+ LARGEST INCREMENT OF DISP.        -3.016E-26   AT NODE        182   DOF  2
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.       -3.173E-17   AT NODE        175   DOF  2
+ LARGEST CORRECTION TO DISP.       -3.016E-26   AT NODE        182   DOF  2
    INSTANCE: ROCK_INST                                                                       
           THE FORCE     EQUILIBRIUM RESPONSE WAS LINEAR IN THIS INCREMENT
 
@@ -451,18 +451,18 @@
         NUMBER OF EQUATIONS:  646
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      8.935e+05
-        SOLVER ELAPSED TIME:  13ms
+        SOLVER ELAPSED TIME:  2ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
 
  AVERAGE FORCE                      7.691E+09   TIME AVG. FORCE       7.691E+09
- LARGEST SCALED RESIDUAL FORCE     -4.578E-05   AT NODE         52   DOF  1
+ LARGEST SCALED RESIDUAL FORCE      4.578E-05   AT NODE        202   DOF  1
    INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE     -4.578E-05
- LARGEST INCREMENT OF DISP.         2.477E-17   AT NODE        255   DOF  1
+  CORRESPONDING RESIDUAL FORCE      4.578E-05
+ LARGEST INCREMENT OF DISP.         3.322E-26   AT NODE        200   DOF  2
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.        4.496E-17   AT NODE        175   DOF  2
+ LARGEST CORRECTION TO DISP.        6.327E-26   AT NODE        182   DOF  2
    INSTANCE: ROCK_INST                                                                       
           THE FORCE     EQUILIBRIUM RESPONSE WAS LINEAR IN THIS INCREMENT
 
@@ -480,18 +480,18 @@
         NUMBER OF EQUATIONS:  646
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      8.935e+05
-        SOLVER ELAPSED TIME:  12ms
+        SOLVER ELAPSED TIME:  2ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
 
  AVERAGE FORCE                      7.691E+09   TIME AVG. FORCE       7.691E+09
- LARGEST SCALED RESIDUAL FORCE     -3.052E-05   AT NODE         52   DOF  1
+ LARGEST SCALED RESIDUAL FORCE      3.815E-05   AT NODE        204   DOF  1
    INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE     -3.052E-05
- LARGEST INCREMENT OF DISP.        -1.527E-17   AT NODE        225   DOF  2
+  CORRESPONDING RESIDUAL FORCE      3.815E-05
+ LARGEST INCREMENT OF DISP.         1.610E-26   AT NODE         75   DOF  2
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.       -3.435E-17   AT NODE        255   DOF  1
+ LARGEST CORRECTION TO DISP.       -2.954E-26   AT NODE        180   DOF  2
    INSTANCE: ROCK_INST                                                                       
           THE FORCE     EQUILIBRIUM RESPONSE WAS LINEAR IN THIS INCREMENT
 
@@ -502,7 +502,7 @@
  STEP TIME COMPLETED        3.00    ,  TOTAL TIME COMPLETED         6.00    
 1
 
-   Abaqus 2024                                  Date 20-abr-2026   Time 15:23:05
+   Abaqus 2024                                  Date 22-abr-2026   Time 12:45:58
    For use by PONTIFICIA UNIVERSIDADE CATOLICA DO RIO DE JANEIRO under license from Dassault Systemes or its subsidiary.
 
                                                                                  
@@ -602,19 +602,19 @@
      INITIAL ELEMENT LOAD BALANCE
             DOMAIN    1     THREAD    NUMBER OF ELEMENTS
                               1            0
-                              2            0
+                              2            195
                               3            0
                               4            0
                               5            0
                               6            0
-                              7            150
-                              8            0
-                              9            170
-                             10            180
+                              7            255
+                              8            35
+                              9            85
+                             10            5
                              11            0
                              12            0
                              13            0
-                             14            75
+                             14            0
 
  ***WARNING: THERE ARE 37 UNCONNECTED REGIONS IN THE MODEL.
 
@@ -626,21 +626,20 @@
         NUMBER OF EQUATIONS:  646
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      8.935e+05
-        SOLVER ELAPSED TIME:  13ms
+        SOLVER ELAPSED TIME:  11ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
 
  AVERAGE FORCE                      7.451E+09   TIME AVG. FORCE       7.451E+09
- LARGEST SCALED RESIDUAL FORCE     -4.397E+06   AT NODE        250   DOF  1
+ LARGEST SCALED RESIDUAL FORCE     -4.417E-03   AT NODE        250   DOF  1
    INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE     -4.397E+06
- LARGEST INCREMENT OF DISP.        -2.659E-04   AT NODE        275   DOF  1
+  CORRESPONDING RESIDUAL FORCE     -4.417E-03
+ LARGEST INCREMENT OF DISP.        -2.663E-13   AT NODE        275   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.       -2.659E-04   AT NODE        275   DOF  1
+ LARGEST CORRECTION TO DISP.       -2.663E-13   AT NODE        275   DOF  1
    INSTANCE: ROCK_INST                                                                       
- ESTIMATE OF DISP.    CORRECTION   -1.181E-06
- FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND ESTIMATED CORRECTION
+          THE FORCE     EQUILIBRIUM RESPONSE WAS LINEAR IN THIS INCREMENT
 
  ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
    0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
@@ -649,7 +648,7 @@
  STEP TIME COMPLETED        1.00    ,  TOTAL TIME COMPLETED         7.00    
 1
 
-   Abaqus 2024                                  Date 20-abr-2026   Time 15:23:05
+   Abaqus 2024                                  Date 22-abr-2026   Time 12:45:58
    For use by PONTIFICIA UNIVERSIDADE CATOLICA DO RIO DE JANEIRO under license from Dassault Systemes or its subsidiary.
 
                                                                                  
@@ -756,84 +755,8955 @@
  
      INITIAL ELEMENT LOAD BALANCE
             DOMAIN    1     THREAD    NUMBER OF ELEMENTS
-                              1            10
-                              2            10
-                              3            40
-                              4            110
-                              5            135
-                              6            15
-                              7            20
-                              8            15
-                              9            50
-                             10            15
-                             11            5
+                              1            0
+                              2            175
+                              3            0
+                              4            25
+                              5            60
+                              6            0
+                              7            130
+                              8            0
+                              9            0
+                             10            55
+                             11            55
                              12            5
-                             13            15
-                             14            130
+                             13            70
+                             14            0
 
- ***WARNING: Creep properties are unrealistic at one or more integration points 
-             in 180 elements. Creep strain rate and/or strain energy rate 
-             density cannot be calculated. The elements have been identified in 
-             element set WarnElemCreepPropStep5Inc1.
+ ***WARNING: THERE ARE 37 UNCONNECTED REGIONS IN THE MODEL.
 
+ ***NOTE: SFM TYPE SURFACE ELEMENTS USED TO DEFINE CONTACT SURFACES NOT PART OF 
+          A RIGID BODY MAY INCREASE THE NUMBER OR UNCONNECTED REGIONS REPORTED.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      8.935e+05
+        SOLVER ELAPSED TIME:  16ms
 
-  INCREMENT     1 STARTS. ATTEMPT NUMBER  2, TIME INCREMENT  2.500E-07
-
- ***WARNING: Creep properties are unrealistic at one or more integration points 
-             in 180 elements. Creep strain rate and/or strain energy rate 
-             density cannot be calculated. The elements have been identified in 
-             element set WarnElemCreepPropStep5Inc1.
-
-
-  INCREMENT     1 STARTS. ATTEMPT NUMBER  3, TIME INCREMENT  6.250E-08
-
- ***WARNING: Creep properties are unrealistic at one or more integration points 
-             in 176 elements. Creep strain rate and/or strain energy rate 
-             density cannot be calculated. The elements have been identified in 
-             element set WarnElemCreepPropStep5Inc1.
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
 
-  INCREMENT     1 STARTS. ATTEMPT NUMBER  4, TIME INCREMENT  1.562E-08
+ AVERAGE FORCE                      7.451E+09   TIME AVG. FORCE       7.451E+09
+ LARGEST SCALED RESIDUAL FORCE       6.09       AT NODE        250   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE       6.09    
+ LARGEST INCREMENT OF DISP.        -1.486E-18   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -1.486E-18   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          THE FORCE     EQUILIBRIUM RESPONSE WAS LINEAR IN THIS INCREMENT
 
- ***WARNING: Creep properties are unrealistic at one or more integration points 
-             in 170 elements. Creep strain rate and/or strain energy rate 
-             density cannot be calculated. The elements have been identified in 
-             element set WarnElemCreepPropStep5Inc1.
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   1.407E-20
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-06,  FRACTION OF STEP COMPLETED  5.787E-12
+ STEP TIME COMPLETED       1.000E-06,  TOTAL TIME COMPLETED         7.00    
 
 
-  INCREMENT     1 STARTS. ATTEMPT NUMBER  5, TIME INCREMENT  3.906E-09
+  INCREMENT     2 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-06
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      8.935e+05
+        SOLVER ELAPSED TIME:  2ms
 
- ***WARNING: Creep properties are unrealistic at one or more integration points 
-             in 170 elements. Creep strain rate and/or strain energy rate 
-             density cannot be calculated. The elements have been identified in 
-             element set WarnElemCreepPropStep5Inc1.
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      7.451E+09   TIME AVG. FORCE       7.451E+09
+ LARGEST SCALED RESIDUAL FORCE       6.09       AT NODE        250   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE       6.09    
+ LARGEST INCREMENT OF DISP.        -1.485E-18   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        3.495E-22   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          THE FORCE     EQUILIBRIUM RESPONSE WAS LINEAR IN THIS INCREMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   1.406E-20
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-06,  FRACTION OF STEP COMPLETED  1.157E-11
+ STEP TIME COMPLETED       2.000E-06,  TOTAL TIME COMPLETED         7.00    
+
+
+  INCREMENT     3 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-06
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      8.935e+05
+        SOLVER ELAPSED TIME:  2ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      7.451E+09   TIME AVG. FORCE       7.451E+09
+ LARGEST SCALED RESIDUAL FORCE       6.08       AT NODE        250   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE       6.08    
+ LARGEST INCREMENT OF DISP.        -1.485E-18   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        1.747E-22   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          THE FORCE     EQUILIBRIUM RESPONSE WAS LINEAR IN THIS INCREMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   1.406E-20
+          TIME INCREMENT MAY NOW INCREASE TO    2.000E-06
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-06,  FRACTION OF STEP COMPLETED  1.736E-11
+ STEP TIME COMPLETED       3.000E-06,  TOTAL TIME COMPLETED         7.00    
+
+
+  INCREMENT     4 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  2.000E-06
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      8.935e+05
+        SOLVER ELAPSED TIME:  12ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      7.451E+09   TIME AVG. FORCE       7.451E+09
+ LARGEST SCALED RESIDUAL FORCE       24.3       AT NODE        250   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE       24.3    
+ LARGEST INCREMENT OF DISP.        -2.970E-18   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        1.745E-22   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          THE FORCE     EQUILIBRIUM RESPONSE WAS LINEAR IN THIS INCREMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   5.618E-20
+          TIME INCREMENT MAY NOW INCREASE TO    4.000E-06
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  2.000E-06,  FRACTION OF STEP COMPLETED  2.894E-11
+ STEP TIME COMPLETED       5.000E-06,  TOTAL TIME COMPLETED         7.00    
+
+
+  INCREMENT     5 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  4.000E-06
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      8.935e+05
+        SOLVER ELAPSED TIME:  9ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      7.451E+09   TIME AVG. FORCE       7.451E+09
+ LARGEST SCALED RESIDUAL FORCE       97.1       AT NODE        250   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE       97.1    
+ LARGEST INCREMENT OF DISP.        -5.938E-18   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        1.745E-21   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   2.244E-19
+          TIME INCREMENT MAY NOW INCREASE TO    8.000E-06
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  4.000E-06,  FRACTION OF STEP COMPLETED  5.208E-11
+ STEP TIME COMPLETED       9.000E-06,  TOTAL TIME COMPLETED         7.00    
+
+
+  INCREMENT     6 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  8.000E-06
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      8.935e+05
+        SOLVER ELAPSED TIME:  2ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      7.451E+09   TIME AVG. FORCE       7.451E+09
+ LARGEST SCALED RESIDUAL FORCE       387.       AT NODE        250   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE       387.    
+ LARGEST INCREMENT OF DISP.        -1.187E-17   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        6.971E-21   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   8.948E-19
+          TIME INCREMENT MAY NOW INCREASE TO    1.600E-05
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  8.000E-06,  FRACTION OF STEP COMPLETED  9.838E-11
+ STEP TIME COMPLETED       1.700E-05,  TOTAL TIME COMPLETED         7.00    
+
+
+  INCREMENT     7 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.600E-05
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      8.935e+05
+        SOLVER ELAPSED TIME:  10ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      7.451E+09   TIME AVG. FORCE       7.451E+09
+ LARGEST SCALED RESIDUAL FORCE      1.541E+03   AT NODE        250   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      1.541E+03
+ LARGEST INCREMENT OF DISP.        -2.371E-17   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        2.781E-20   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   3.558E-18
+          TIME INCREMENT MAY NOW INCREASE TO    3.200E-05
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.600E-05,  FRACTION OF STEP COMPLETED  1.910E-10
+ STEP TIME COMPLETED       3.300E-05,  TOTAL TIME COMPLETED         7.00    
+
+
+  INCREMENT     8 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  3.200E-05
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      8.935e+05
+        SOLVER ELAPSED TIME:  2ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      7.451E+09   TIME AVG. FORCE       7.451E+09
+ LARGEST SCALED RESIDUAL FORCE      6.097E+03   AT NODE        250   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      6.097E+03
+ LARGEST INCREMENT OF DISP.        -4.731E-17   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        1.106E-19   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   1.406E-17
+          TIME INCREMENT MAY NOW INCREASE TO    6.400E-05
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  3.200E-05,  FRACTION OF STEP COMPLETED  3.762E-10
+ STEP TIME COMPLETED       6.500E-05,  TOTAL TIME COMPLETED         7.00    
+
+
+  INCREMENT     9 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  6.400E-05
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      8.935e+05
+        SOLVER ELAPSED TIME:  8ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      7.451E+09   TIME AVG. FORCE       7.451E+09
+ LARGEST SCALED RESIDUAL FORCE      2.386E+04   AT NODE        250   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      2.386E+04
+ LARGEST INCREMENT OF DISP.        -9.419E-17   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        4.376E-19   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   5.494E-17
+          TIME INCREMENT MAY NOW INCREASE TO    1.280E-04
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  6.400E-05,  FRACTION OF STEP COMPLETED  7.465E-10
+ STEP TIME COMPLETED       1.290E-04,  TOTAL TIME COMPLETED         7.00    
+
+
+  INCREMENT    10 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.280E-04
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      8.935e+05
+        SOLVER ELAPSED TIME:  2ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      7.451E+09   TIME AVG. FORCE       7.451E+09
+ LARGEST SCALED RESIDUAL FORCE      9.143E+04   AT NODE        250   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      9.143E+04
+ LARGEST INCREMENT OF DISP.        -1.867E-16   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        1.713E-18   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   2.099E-16
+          TIME INCREMENT MAY NOW INCREASE TO    2.560E-04
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.280E-04,  FRACTION OF STEP COMPLETED  1.487E-09
+ STEP TIME COMPLETED       2.570E-04,  TOTAL TIME COMPLETED         7.00    
+
+
+  INCREMENT    11 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  2.560E-04
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      8.935e+05
+        SOLVER ELAPSED TIME:  11ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      7.451E+09   TIME AVG. FORCE       7.451E+09
+ LARGEST SCALED RESIDUAL FORCE      3.371E+05   AT NODE        250   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      3.371E+05
+ LARGEST INCREMENT OF DISP.        -3.668E-16   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        6.567E-18   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND SMALL MAGNITUDE
+           OF THE INCREMENT OF DISPLACEMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   7.694E-16
+          TIME INCREMENT MAY NOW INCREASE TO    5.120E-04
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  2.560E-04,  FRACTION OF STEP COMPLETED  2.969E-09
+ STEP TIME COMPLETED       5.130E-04,  TOTAL TIME COMPLETED         7.00    
+
+
+  INCREMENT    12 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  5.120E-04
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      8.935e+05
+        SOLVER ELAPSED TIME:  13ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      7.451E+09   TIME AVG. FORCE       7.451E+09
+ LARGEST SCALED RESIDUAL FORCE      1.161E+06   AT NODE        250   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      1.161E+06
+ LARGEST INCREMENT OF DISP.        -7.093E-16   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        2.424E-17   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND SMALL MAGNITUDE
+           OF THE INCREMENT OF DISPLACEMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   2.624E-15
+          TIME INCREMENT MAY NOW INCREASE TO    1.024E-03
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  5.120E-04,  FRACTION OF STEP COMPLETED  5.932E-09
+ STEP TIME COMPLETED       1.025E-03,  TOTAL TIME COMPLETED         7.00    
+
+
+  INCREMENT    13 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.024E-03
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      8.935e+05
+        SOLVER ELAPSED TIME:  2ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      7.447E+09   TIME AVG. FORCE       7.451E+09
+ LARGEST SCALED RESIDUAL FORCE      3.588E+06   AT NODE        250   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      3.588E+06
+ LARGEST INCREMENT OF DISP.        -1.335E-15   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        8.376E-17   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND SMALL MAGNITUDE
+           OF THE INCREMENT OF DISPLACEMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   7.990E-15
+          TIME INCREMENT MAY NOW INCREASE TO    2.048E-03
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.024E-03,  FRACTION OF STEP COMPLETED  1.186E-08
+ STEP TIME COMPLETED       2.049E-03,  TOTAL TIME COMPLETED         7.00    
+
+
+  INCREMENT    14 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  2.048E-03
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      8.935e+05
+        SOLVER ELAPSED TIME:  10ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      7.447E+09   TIME AVG. FORCE       7.451E+09
+ LARGEST SCALED RESIDUAL FORCE      9.539E+06   AT NODE        250   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      9.539E+06
+ LARGEST INCREMENT OF DISP.        -2.409E-15   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        2.611E-16   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND SMALL MAGNITUDE
+           OF THE INCREMENT OF DISPLACEMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   2.081E-14
+          TIME INCREMENT MAY NOW INCREASE TO    4.096E-03
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  2.048E-03,  FRACTION OF STEP COMPLETED  2.371E-08
+ STEP TIME COMPLETED       4.097E-03,  TOTAL TIME COMPLETED         7.00    
+
+
+  INCREMENT    15 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  4.096E-03
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      8.935e+05
+        SOLVER ELAPSED TIME:  12ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      7.446E+09   TIME AVG. FORCE       7.450E+09
+ LARGEST SCALED RESIDUAL FORCE      2.120E+07   AT NODE        250   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      2.120E+07
+ LARGEST INCREMENT OF DISP.        -4.110E-15   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        7.074E-16   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND SMALL MAGNITUDE
+           OF THE INCREMENT OF DISPLACEMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   4.512E-14
+          TIME INCREMENT MAY NOW INCREASE TO    8.192E-03
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  4.096E-03,  FRACTION OF STEP COMPLETED  4.741E-08
+ STEP TIME COMPLETED       8.193E-03,  TOTAL TIME COMPLETED         7.01    
+
+
+  INCREMENT    16 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  8.192E-03
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      8.935e+05
+        SOLVER ELAPSED TIME:  2ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      7.445E+09   TIME AVG. FORCE       7.450E+09
+ LARGEST SCALED RESIDUAL FORCE      3.923E+07   AT NODE        250   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      3.923E+07
+ LARGEST INCREMENT OF DISP.        -6.588E-15   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        1.632E-15   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      8.935e+05
+        SOLVER ELAPSED TIME:  13ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
+
+
+ AVERAGE FORCE                      7.446E+09   TIME AVG. FORCE       7.450E+09
+ LARGEST SCALED RESIDUAL FORCE     -2.419E+05   AT NODE        250   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -2.419E+05
+ LARGEST INCREMENT OF DISP.        -4.649E-15   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        1.939E-15   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND SMALL MAGNITUDE
+           OF THE INCREMENT OF DISPLACEMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   9.541E-14
+          TIME INCREMENT MAY NOW INCREASE TO    1.229E-02
+
+ ITERATION SUMMARY FOR THE INCREMENT:   2 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  2 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  8.192E-03,  FRACTION OF STEP COMPLETED  9.482E-08
+ STEP TIME COMPLETED       1.638E-02,  TOTAL TIME COMPLETED         7.02    
+
+
+  INCREMENT    17 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.229E-02
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      8.935e+05
+        SOLVER ELAPSED TIME:  2ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      7.448E+09   TIME AVG. FORCE       7.450E+09
+ LARGEST SCALED RESIDUAL FORCE      3.196E+07   AT NODE        250   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      3.196E+07
+ LARGEST INCREMENT OF DISP.        -8.126E-15   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -1.152E-15   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND SMALL MAGNITUDE
+           OF THE INCREMENT OF DISPLACEMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   6.433E-14
+          TIME INCREMENT MAY NOW INCREASE TO    2.458E-02
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.229E-02,  FRACTION OF STEP COMPLETED  1.659E-07
+ STEP TIME COMPLETED       2.867E-02,  TOTAL TIME COMPLETED         7.03    
+
+
+  INCREMENT    18 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  2.458E-02
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      8.935e+05
+        SOLVER ELAPSED TIME:  7ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      7.450E+09   TIME AVG. FORCE       7.450E+09
+ LARGEST SCALED RESIDUAL FORCE      5.850E+07   AT NODE        250   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      5.850E+07
+ LARGEST INCREMENT OF DISP.        -1.174E-14   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        4.510E-15   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      8.935e+05
+        SOLVER ELAPSED TIME:  3ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
+
+
+ AVERAGE FORCE                      7.452E+09   TIME AVG. FORCE       7.450E+09
+ LARGEST SCALED RESIDUAL FORCE     -7.206E+05   AT NODE        250   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -7.206E+05
+ LARGEST INCREMENT OF DISP.        -7.382E-15   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        4.360E-15   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND SMALL MAGNITUDE
+           OF THE INCREMENT OF DISPLACEMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   1.455E-13
+          TIME INCREMENT MAY NOW INCREASE TO    3.686E-02
+
+ ITERATION SUMMARY FOR THE INCREMENT:   2 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  2 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  2.458E-02,  FRACTION OF STEP COMPLETED  3.082E-07
+ STEP TIME COMPLETED       5.325E-02,  TOTAL TIME COMPLETED         7.05    
+
+
+  INCREMENT    19 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  3.686E-02
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      8.935e+05
+        SOLVER ELAPSED TIME:  12ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      7.449E+09   TIME AVG. FORCE       7.450E+09
+ LARGEST SCALED RESIDUAL FORCE      3.807E+07   AT NODE        250   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      3.807E+07
+ LARGEST INCREMENT OF DISP.        -1.344E-14   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -2.368E-15   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      8.935e+05
+        SOLVER ELAPSED TIME:  9ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
+
+
+ AVERAGE FORCE                      7.450E+09   TIME AVG. FORCE       7.450E+09
+ LARGEST SCALED RESIDUAL FORCE     -3.741E+05   AT NODE        250   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -3.741E+05
+ LARGEST INCREMENT OF DISP.        -9.931E-15   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        3.510E-15   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND SMALL MAGNITUDE
+           OF THE INCREMENT OF DISPLACEMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   9.517E-14
+          TIME INCREMENT MAY NOW INCREASE TO    5.530E-02
+
+ ITERATION SUMMARY FOR THE INCREMENT:   2 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  2 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  3.686E-02,  FRACTION OF STEP COMPLETED  5.215E-07
+ STEP TIME COMPLETED       9.011E-02,  TOTAL TIME COMPLETED         7.09    
+
+
+  INCREMENT    20 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  5.530E-02
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      8.935e+05
+        SOLVER ELAPSED TIME:  12ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      7.448E+09   TIME AVG. FORCE       7.450E+09
+ LARGEST SCALED RESIDUAL FORCE      3.423E+07   AT NODE        250   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      3.423E+07
+ LARGEST INCREMENT OF DISP.        -1.491E-14   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -1.198E-17   AT NODE        225   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   6.589E-14
+          TIME INCREMENT MAY NOW INCREASE TO    0.111    
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  5.530E-02,  FRACTION OF STEP COMPLETED  8.415E-07
+ STEP TIME COMPLETED       0.145    ,  TOTAL TIME COMPLETED         7.15    
+
+
+  INCREMENT    21 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  0.111    
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      8.935e+05
+        SOLVER ELAPSED TIME:  12ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      7.448E+09   TIME AVG. FORCE       7.450E+09
+ LARGEST SCALED RESIDUAL FORCE      6.525E+07   AT NODE        250   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      6.525E+07
+ LARGEST INCREMENT OF DISP.        -2.176E-14   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        8.048E-15   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      8.935e+05
+        SOLVER ELAPSED TIME:  8ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
+
+
+ AVERAGE FORCE                      7.447E+09   TIME AVG. FORCE       7.450E+09
+ LARGEST SCALED RESIDUAL FORCE     -1.522E+06   AT NODE        250   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -1.522E+06
+ LARGEST INCREMENT OF DISP.        -1.242E-14   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        9.344E-15   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND SMALL MAGNITUDE
+           OF THE INCREMENT OF DISPLACEMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   1.810E-13
+          TIME INCREMENT MAY NOW INCREASE TO    0.166    
+
+ ITERATION SUMMARY FOR THE INCREMENT:   2 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  2 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  0.111    ,  FRACTION OF STEP COMPLETED  1.481E-06
+ STEP TIME COMPLETED       0.256    ,  TOTAL TIME COMPLETED         7.26    
+
+
+  INCREMENT    22 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  0.166    
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      8.935e+05
+        SOLVER ELAPSED TIME:  10ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      7.454E+09   TIME AVG. FORCE       7.450E+09
+ LARGEST SCALED RESIDUAL FORCE      3.510E+07   AT NODE        250   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      3.510E+07
+ LARGEST INCREMENT OF DISP.        -2.308E-14   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -4.449E-15   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND SMALL MAGNITUDE
+           OF THE INCREMENT OF DISPLACEMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   6.626E-14
+          TIME INCREMENT MAY NOW INCREASE TO    0.332    
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  0.166    ,  FRACTION OF STEP COMPLETED  2.441E-06
+ STEP TIME COMPLETED       0.422    ,  TOTAL TIME COMPLETED         7.42    
+
+
+  INCREMENT    23 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  0.332    
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      8.935e+05
+        SOLVER ELAPSED TIME:  9ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      7.456E+09   TIME AVG. FORCE       7.450E+09
+ LARGEST SCALED RESIDUAL FORCE      7.243E+07   AT NODE        250   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      7.243E+07
+ LARGEST INCREMENT OF DISP.        -3.431E-14   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        1.185E-14   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      8.935e+05
+        SOLVER ELAPSED TIME:  12ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
+
+
+ AVERAGE FORCE                      7.458E+09   TIME AVG. FORCE       7.450E+09
+ LARGEST SCALED RESIDUAL FORCE     -2.679E+06   AT NODE        250   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -2.679E+06
+ LARGEST INCREMENT OF DISP.        -1.788E-14   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        1.643E-14   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND SMALL MAGNITUDE
+           OF THE INCREMENT OF DISPLACEMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   2.350E-13
+          TIME INCREMENT MAY NOW INCREASE TO    0.498    
+          TIME INCREMENT REDUCED TO   0.246     TO MEET NEXT OUTPUT TIME POINT
+
+ ITERATION SUMMARY FOR THE INCREMENT:   2 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  2 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  0.332    ,  FRACTION OF STEP COMPLETED  4.361E-06
+ STEP TIME COMPLETED       0.754    ,  TOTAL TIME COMPLETED         7.75    
+
+
+  INCREMENT    24 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  0.246    
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      8.935e+05
+        SOLVER ELAPSED TIME:  11ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      7.463E+09   TIME AVG. FORCE       7.451E+09
+ LARGEST SCALED RESIDUAL FORCE      1.184E+07   AT NODE        200   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      1.184E+07
+ LARGEST INCREMENT OF DISP.        -1.687E-14   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -3.600E-15   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND SMALL MAGNITUDE
+           OF THE INCREMENT OF DISPLACEMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   2.216E-14
+          TIME INCREMENT MAY NOW INCREASE TO    0.995    
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  0.246    ,  FRACTION OF STEP COMPLETED  5.787E-06
+ STEP TIME COMPLETED        1.00    ,  TOTAL TIME COMPLETED         8.00    
+
+
+  INCREMENT    25 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  0.995    
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      8.935e+05
+        SOLVER ELAPSED TIME:  12ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      7.465E+09   TIME AVG. FORCE       7.451E+09
+ LARGEST SCALED RESIDUAL FORCE      6.957E+07   AT NODE        250   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      6.957E+07
+ LARGEST INCREMENT OF DISP.        -5.764E-14   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        1.055E-14   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      8.935e+05
+        SOLVER ELAPSED TIME:  9ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
+
+
+ AVERAGE FORCE                      7.464E+09   TIME AVG. FORCE       7.451E+09
+ LARGEST SCALED RESIDUAL FORCE     -3.124E+06   AT NODE        250   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -3.124E+06
+ LARGEST INCREMENT OF DISP.        -3.280E-14   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        2.484E-14   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND SMALL MAGNITUDE
+           OF THE INCREMENT OF DISPLACEMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   2.857E-13
+          TIME INCREMENT MAY NOW INCREASE TO     1.49    
+
+ ITERATION SUMMARY FOR THE INCREMENT:   2 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  2 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  0.995    ,  FRACTION OF STEP COMPLETED  1.155E-05
+ STEP TIME COMPLETED        2.00    ,  TOTAL TIME COMPLETED         9.00    
+
+
+  INCREMENT    26 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT   1.49    
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      8.935e+05
+        SOLVER ELAPSED TIME:  10ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      7.464E+09   TIME AVG. FORCE       7.452E+09
+ LARGEST SCALED RESIDUAL FORCE      3.741E+07   AT NODE        125   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      3.741E+07
+ LARGEST INCREMENT OF DISP.        -5.361E-14   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -4.413E-15   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      8.935e+05
+        SOLVER ELAPSED TIME:  7ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
+
+
+ AVERAGE FORCE                      7.468E+09   TIME AVG. FORCE       7.452E+09
+ LARGEST SCALED RESIDUAL FORCE     -1.340E+06   AT NODE        250   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -1.340E+06
+ LARGEST INCREMENT OF DISP.        -3.753E-14   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        1.608E-14   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND SMALL MAGNITUDE
+           OF THE INCREMENT OF DISPLACEMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   1.645E-13
+          TIME INCREMENT MAY NOW INCREASE TO     2.24    
+
+ ITERATION SUMMARY FOR THE INCREMENT:   2 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  2 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED   1.49    ,  FRACTION OF STEP COMPLETED  2.019E-05
+ STEP TIME COMPLETED        3.49    ,  TOTAL TIME COMPLETED         10.5    
+
+
+  INCREMENT    27 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT   2.24    
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      8.935e+05
+        SOLVER ELAPSED TIME:  12ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      7.461E+09   TIME AVG. FORCE       7.452E+09
+ LARGEST SCALED RESIDUAL FORCE      3.236E+07   AT NODE        250   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      3.236E+07
+ LARGEST INCREMENT OF DISP.        -5.614E-14   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        1.639E-16   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   5.947E-14
+          TIME INCREMENT MAY NOW INCREASE TO     4.48    
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED   2.24    ,  FRACTION OF STEP COMPLETED  3.315E-05
+ STEP TIME COMPLETED        5.73    ,  TOTAL TIME COMPLETED         12.7    
+
+
+  INCREMENT    28 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT   4.48    
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      8.935e+05
+        SOLVER ELAPSED TIME:  10ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      7.450E+09   TIME AVG. FORCE       7.452E+09
+ LARGEST SCALED RESIDUAL FORCE      8.543E+07   AT NODE        250   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      8.543E+07
+ LARGEST INCREMENT OF DISP.        -9.236E-14   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        1.992E-14   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      8.935e+05
+        SOLVER ELAPSED TIME:  10ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
+
+
+ AVERAGE FORCE                      7.461E+09   TIME AVG. FORCE       7.453E+09
+ LARGEST SCALED RESIDUAL FORCE     -6.288E+06   AT NODE        250   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -6.288E+06
+ LARGEST INCREMENT OF DISP.        -4.185E-14   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        5.051E-14   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND SMALL MAGNITUDE
+           OF THE INCREMENT OF DISPLACEMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   4.867E-13
+          TIME INCREMENT MAY NOW INCREASE TO     6.72    
+
+ ITERATION SUMMARY FOR THE INCREMENT:   2 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  2 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED   4.48    ,  FRACTION OF STEP COMPLETED  5.907E-05
+ STEP TIME COMPLETED        10.2    ,  TOTAL TIME COMPLETED         17.2    
+
+
+  INCREMENT    29 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT   6.72    
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      8.935e+05
+        SOLVER ELAPSED TIME:  7ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      7.452E+09   TIME AVG. FORCE       7.453E+09
+ LARGEST SCALED RESIDUAL FORCE     -3.104E+07   AT NODE        216   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -3.104E+07
+ LARGEST INCREMENT OF DISP.        -7.736E-14   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -1.458E-14   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND SMALL MAGNITUDE
+           OF THE INCREMENT OF DISPLACEMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   4.471E-14
+          TIME INCREMENT MAY NOW INCREASE TO     13.4    
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED   6.72    ,  FRACTION OF STEP COMPLETED  9.795E-05
+ STEP TIME COMPLETED        16.9    ,  TOTAL TIME COMPLETED         23.9    
+
+
+  INCREMENT    30 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT   13.4    
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      8.935e+05
+        SOLVER ELAPSED TIME:  11ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      7.439E+09   TIME AVG. FORCE       7.452E+09
+ LARGEST SCALED RESIDUAL FORCE      7.209E+07   AT NODE        250   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      7.209E+07
+ LARGEST INCREMENT OF DISP.        -1.345E-13   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        2.021E-14   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      8.935e+05
+        SOLVER ELAPSED TIME:  10ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
+
+
+ AVERAGE FORCE                      7.451E+09   TIME AVG. FORCE       7.453E+09
+ LARGEST SCALED RESIDUAL FORCE     -5.890E+06   AT NODE        250   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -5.890E+06
+ LARGEST INCREMENT OF DISP.        -6.695E-14   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        6.755E-14   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND SMALL MAGNITUDE
+           OF THE INCREMENT OF DISPLACEMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   5.828E-13
+          TIME INCREMENT MAY NOW INCREASE TO     20.2    
+
+ ITERATION SUMMARY FOR THE INCREMENT:   2 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  2 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED   13.4    ,  FRACTION OF STEP COMPLETED  1.757E-04
+ STEP TIME COMPLETED        30.4    ,  TOTAL TIME COMPLETED         37.4    
+
+
+  INCREMENT    31 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT   20.2    
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      8.935e+05
+        SOLVER ELAPSED TIME:  13ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      7.442E+09   TIME AVG. FORCE       7.452E+09
+ LARGEST SCALED RESIDUAL FORCE     -3.875E+07   AT NODE        215   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -3.875E+07
+ LARGEST INCREMENT OF DISP.        -1.146E-13   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -1.420E-14   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      8.935e+05
+        SOLVER ELAPSED TIME:  12ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
+
+
+ AVERAGE FORCE                      7.445E+09   TIME AVG. FORCE       7.452E+09
+ LARGEST SCALED RESIDUAL FORCE     -7.727E+05   AT NODE        125   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -7.727E+05
+ LARGEST INCREMENT OF DISP.        -9.078E-14   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        2.384E-14   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND SMALL MAGNITUDE
+           OF THE INCREMENT OF DISPLACEMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   1.695E-13
+          TIME INCREMENT MAY NOW INCREASE TO     30.2    
+
+ ITERATION SUMMARY FOR THE INCREMENT:   2 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  2 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED   20.2    ,  FRACTION OF STEP COMPLETED  2.923E-04
+ STEP TIME COMPLETED        50.5    ,  TOTAL TIME COMPLETED         57.5    
+
+
+  INCREMENT    32 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT   30.2    
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      8.935e+05
+        SOLVER ELAPSED TIME:  12ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      7.435E+09   TIME AVG. FORCE       7.452E+09
+ LARGEST SCALED RESIDUAL FORCE     -3.254E+07   AT NODE        165   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -3.254E+07
+ LARGEST INCREMENT OF DISP.        -1.341E-13   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        2.078E-15   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND SMALL MAGNITUDE
+           OF THE INCREMENT OF DISPLACEMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   4.294E-14
+          TIME INCREMENT MAY NOW INCREASE TO     60.5    
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED   30.2    ,  FRACTION OF STEP COMPLETED  4.673E-04
+ STEP TIME COMPLETED        80.8    ,  TOTAL TIME COMPLETED         87.8    
+
+
+  INCREMENT    33 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT   60.5    
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      8.935e+05
+        SOLVER ELAPSED TIME:  7ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      7.419E+09   TIME AVG. FORCE       7.451E+09
+ LARGEST SCALED RESIDUAL FORCE      8.110E+07   AT NODE        250   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      8.110E+07
+ LARGEST INCREMENT OF DISP.        -2.459E-13   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        2.228E-14   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      8.935e+05
+        SOLVER ELAPSED TIME:  14ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
+
+
+ AVERAGE FORCE                      7.434E+09   TIME AVG. FORCE       7.451E+09
+ LARGEST SCALED RESIDUAL FORCE     -6.751E+06   AT NODE        250   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -6.751E+06
+ LARGEST INCREMENT OF DISP.        -1.225E-13   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        1.234E-13   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND SMALL MAGNITUDE
+           OF THE INCREMENT OF DISPLACEMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   1.004E-12
+          TIME INCREMENT MAY NOW INCREASE TO     90.7    
+
+ ITERATION SUMMARY FOR THE INCREMENT:   2 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  2 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED   60.5    ,  FRACTION OF STEP COMPLETED  8.172E-04
+ STEP TIME COMPLETED        141.    ,  TOTAL TIME COMPLETED         148.    
+
+
+  INCREMENT    34 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT   90.7    
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      8.935e+05
+        SOLVER ELAPSED TIME:  8ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      7.423E+09   TIME AVG. FORCE       7.450E+09
+ LARGEST SCALED RESIDUAL FORCE     -4.099E+07   AT NODE        164   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -4.099E+07
+ LARGEST INCREMENT OF DISP.        -2.039E-13   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -2.009E-14   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      8.935e+05
+        SOLVER ELAPSED TIME:  7ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
+
+
+ AVERAGE FORCE                      7.426E+09   TIME AVG. FORCE       7.451E+09
+ LARGEST SCALED RESIDUAL FORCE     -5.106E+05   AT NODE         50   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -5.106E+05
+ LARGEST INCREMENT OF DISP.        -1.758E-13   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        2.809E-14   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND SMALL MAGNITUDE
+           OF THE INCREMENT OF DISPLACEMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   1.643E-13
+          TIME INCREMENT MAY NOW INCREASE TO     136.    
+
+ ITERATION SUMMARY FOR THE INCREMENT:   2 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  2 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED   90.7    ,  FRACTION OF STEP COMPLETED  1.342E-03
+ STEP TIME COMPLETED        232.    ,  TOTAL TIME COMPLETED         239.    
+
+
+  INCREMENT    35 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT   136.    
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      8.935e+05
+        SOLVER ELAPSED TIME:  10ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      7.413E+09   TIME AVG. FORCE       7.450E+09
+ LARGEST SCALED RESIDUAL FORCE     -4.677E+07   AT NODE        238   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -4.677E+07
+ LARGEST INCREMENT OF DISP.        -2.600E-13   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        3.713E-15   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      8.935e+05
+        SOLVER ELAPSED TIME:  10ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
+
+
+ AVERAGE FORCE                      7.419E+09   TIME AVG. FORCE       7.450E+09
+ LARGEST SCALED RESIDUAL FORCE     -9.519E+05   AT NODE        250   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -9.519E+05
+ LARGEST INCREMENT OF DISP.        -2.058E-13   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        5.417E-14   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND SMALL MAGNITUDE
+           OF THE INCREMENT OF DISPLACEMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   4.094E-13
+          TIME INCREMENT MAY NOW INCREASE TO     204.    
+
+ ITERATION SUMMARY FOR THE INCREMENT:   2 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  2 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED   136.    ,  FRACTION OF STEP COMPLETED  2.129E-03
+ STEP TIME COMPLETED        368.    ,  TOTAL TIME COMPLETED         375.    
+
+
+  INCREMENT    36 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT   204.    
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      8.935e+05
+        SOLVER ELAPSED TIME:  10ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      7.406E+09   TIME AVG. FORCE       7.448E+09
+ LARGEST SCALED RESIDUAL FORCE     -3.911E+07   AT NODE        188   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -3.911E+07
+ LARGEST INCREMENT OF DISP.        -3.097E-13   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -9.485E-16   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      8.935e+05
+        SOLVER ELAPSED TIME:  8ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
+
+
+ AVERAGE FORCE                      7.411E+09   TIME AVG. FORCE       7.449E+09
+ LARGEST SCALED RESIDUAL FORCE     -7.137E+05   AT NODE         75   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -7.137E+05
+ LARGEST INCREMENT OF DISP.        -2.548E-13   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        5.484E-14   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND SMALL MAGNITUDE
+           OF THE INCREMENT OF DISPLACEMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   4.012E-13
+          TIME INCREMENT MAY NOW INCREASE TO     306.    
+
+ ITERATION SUMMARY FOR THE INCREMENT:   2 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  2 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED   204.    ,  FRACTION OF STEP COMPLETED  3.310E-03
+ STEP TIME COMPLETED        572.    ,  TOTAL TIME COMPLETED         579.    
+
+
+  INCREMENT    37 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT   306.    
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      8.935e+05
+        SOLVER ELAPSED TIME:  11ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      7.397E+09   TIME AVG. FORCE       7.447E+09
+ LARGEST SCALED RESIDUAL FORCE     -4.345E+07   AT NODE        237   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -4.345E+07
+ LARGEST INCREMENT OF DISP.        -3.825E-13   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -2.694E-16   AT NODE        225   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      8.935e+05
+        SOLVER ELAPSED TIME:  9ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
+
+
+ AVERAGE FORCE                      7.402E+09   TIME AVG. FORCE       7.447E+09
+ LARGEST SCALED RESIDUAL FORCE     -6.162E+05   AT NODE         50   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -6.162E+05
+ LARGEST INCREMENT OF DISP.        -3.210E-13   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        6.150E-14   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND SMALL MAGNITUDE
+           OF THE INCREMENT OF DISPLACEMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   4.478E-13
+          TIME INCREMENT MAY NOW INCREASE TO     459.    
+
+ ITERATION SUMMARY FOR THE INCREMENT:   2 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  2 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED   306.    ,  FRACTION OF STEP COMPLETED  5.082E-03
+ STEP TIME COMPLETED        878.    ,  TOTAL TIME COMPLETED         885.    
+
+
+  INCREMENT    38 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT   459.    
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      8.935e+05
+        SOLVER ELAPSED TIME:  7ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      7.388E+09   TIME AVG. FORCE       7.446E+09
+ LARGEST SCALED RESIDUAL FORCE     -3.896E+07   AT NODE        187   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -3.896E+07
+ LARGEST INCREMENT OF DISP.        -4.818E-13   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -3.235E-16   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      8.935e+05
+        SOLVER ELAPSED TIME:  8ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
+
+
+ AVERAGE FORCE                      7.393E+09   TIME AVG. FORCE       7.446E+09
+ LARGEST SCALED RESIDUAL FORCE     -5.210E+05   AT NODE         50   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -5.210E+05
+ LARGEST INCREMENT OF DISP.        -4.125E-13   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        6.928E-14   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND SMALL MAGNITUDE
+           OF THE INCREMENT OF DISPLACEMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   5.009E-13
+          TIME INCREMENT MAY NOW INCREASE TO     689.    
+
+ ITERATION SUMMARY FOR THE INCREMENT:   2 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  2 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED   459.    ,  FRACTION OF STEP COMPLETED  7.739E-03
+ STEP TIME COMPLETED       1.337E+03,  TOTAL TIME COMPLETED        1.344E+03
+
+
+  INCREMENT    39 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT   689.    
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      8.935e+05
+        SOLVER ELAPSED TIME:  7ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      7.377E+09   TIME AVG. FORCE       7.444E+09
+ LARGEST SCALED RESIDUAL FORCE     -4.336E+07   AT NODE        236   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -4.336E+07
+ LARGEST INCREMENT OF DISP.        -6.191E-13   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -2.698E-16   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      8.935e+05
+        SOLVER ELAPSED TIME:  10ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
+
+
+ AVERAGE FORCE                      7.382E+09   TIME AVG. FORCE       7.444E+09
+ LARGEST SCALED RESIDUAL FORCE     -4.363E+05   AT NODE         50   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -4.363E+05
+ LARGEST INCREMENT OF DISP.        -5.395E-13   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        7.954E-14   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND SMALL MAGNITUDE
+           OF THE INCREMENT OF DISPLACEMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   5.721E-13
+          TIME INCREMENT MAY NOW INCREASE TO    1.033E+03
+
+ ITERATION SUMMARY FOR THE INCREMENT:   2 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  2 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED   689.    ,  FRACTION OF STEP COMPLETED  1.172E-02
+ STEP TIME COMPLETED       2.026E+03,  TOTAL TIME COMPLETED        2.033E+03
+
+
+  INCREMENT    40 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.033E+03
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      8.935e+05
+        SOLVER ELAPSED TIME:  10ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      7.365E+09   TIME AVG. FORCE       7.442E+09
+ LARGEST SCALED RESIDUAL FORCE     -4.072E+07   AT NODE        235   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -4.072E+07
+ LARGEST INCREMENT OF DISP.        -8.095E-13   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -2.345E-16   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      8.935e+05
+        SOLVER ELAPSED TIME:  12ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
+
+
+ AVERAGE FORCE                      7.370E+09   TIME AVG. FORCE       7.442E+09
+ LARGEST SCALED RESIDUAL FORCE     -3.619E+05   AT NODE         50   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -3.619E+05
+ LARGEST INCREMENT OF DISP.        -7.167E-13   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        9.283E-14   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND SMALL MAGNITUDE
+           OF THE INCREMENT OF DISPLACEMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   6.647E-13
+          TIME INCREMENT MAY NOW INCREASE TO    1.550E+03
+          TIME INCREMENT REDUCED TO    541.     TO MEET NEXT OUTPUT TIME POINT
+
+ ITERATION SUMMARY FOR THE INCREMENT:   2 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  2 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.033E+03,  FRACTION OF STEP COMPLETED  1.770E-02
+ STEP TIME COMPLETED       3.059E+03,  TOTAL TIME COMPLETED        3.066E+03
+
+
+  INCREMENT    41 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT   541.    
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      8.935e+05
+        SOLVER ELAPSED TIME:  10ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      7.363E+09   TIME AVG. FORCE       7.440E+09
+ LARGEST SCALED RESIDUAL FORCE     -9.218E+06   AT NODE        235   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -9.218E+06
+ LARGEST INCREMENT OF DISP.        -3.754E-13   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -2.139E-16   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   4.975E-15
+          TIME INCREMENT MAY NOW INCREASE TO    3.600E+03
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED   541.    ,  FRACTION OF STEP COMPLETED  2.083E-02
+ STEP TIME COMPLETED       3.600E+03,  TOTAL TIME COMPLETED        3.607E+03
+
+
+  INCREMENT    42 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  3.600E+03
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      8.935e+05
+        SOLVER ELAPSED TIME:  12ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      7.321E+09   TIME AVG. FORCE       7.438E+09
+ LARGEST SCALED RESIDUAL FORCE     -1.221E+08   AT NODE        234   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -1.221E+08
+ LARGEST INCREMENT OF DISP.        -2.485E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        1.429E-14   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      8.935e+05
+        SOLVER ELAPSED TIME:  10ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
+
+
+ AVERAGE FORCE                      7.340E+09   TIME AVG. FORCE       7.438E+09
+ LARGEST SCALED RESIDUAL FORCE     -1.188E+06   AT NODE         50   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -1.188E+06
+ LARGEST INCREMENT OF DISP.        -2.002E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        4.827E-13   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND SMALL MAGNITUDE
+           OF THE INCREMENT OF DISPLACEMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   3.503E-12
+          TIME INCREMENT MAY NOW INCREASE TO    5.400E+03
+
+ ITERATION SUMMARY FOR THE INCREMENT:   2 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  2 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  3.600E+03,  FRACTION OF STEP COMPLETED  4.167E-02
+ STEP TIME COMPLETED       7.200E+03,  TOTAL TIME COMPLETED        7.207E+03
+
+
+  INCREMENT    43 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  5.400E+03
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      8.935e+05
+        SOLVER ELAPSED TIME:  9ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      7.304E+09   TIME AVG. FORCE       7.435E+09
+ LARGEST SCALED RESIDUAL FORCE     -1.004E+08   AT NODE        233   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -1.004E+08
+ LARGEST INCREMENT OF DISP.        -3.008E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -5.463E-15   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      8.935e+05
+        SOLVER ELAPSED TIME:  8ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
+
+
+ AVERAGE FORCE                      7.313E+09   TIME AVG. FORCE       7.435E+09
+ LARGEST SCALED RESIDUAL FORCE     -2.838E+05   AT NODE         50   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -2.838E+05
+ LARGEST INCREMENT OF DISP.        -2.713E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        2.954E-13   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND SMALL MAGNITUDE
+           OF THE INCREMENT OF DISPLACEMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   2.074E-12
+          TIME INCREMENT MAY NOW INCREASE TO    8.100E+03
+          TIME INCREMENT REDUCED TO   1.800E+03 TO MEET NEXT OUTPUT TIME POINT
+
+ ITERATION SUMMARY FOR THE INCREMENT:   2 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  2 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  5.400E+03,  FRACTION OF STEP COMPLETED  7.292E-02
+ STEP TIME COMPLETED       1.260E+04,  TOTAL TIME COMPLETED        1.261E+04
+
+
+  INCREMENT    44 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.800E+03
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      8.935e+05
+        SOLVER ELAPSED TIME:  12ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      7.304E+09   TIME AVG. FORCE       7.432E+09
+ LARGEST SCALED RESIDUAL FORCE     -8.679E+06   AT NODE        208   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -8.679E+06
+ LARGEST INCREMENT OF DISP.        -9.043E-13   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -3.042E-17   AT NODE         25   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   3.221E-15
+          TIME INCREMENT MAY NOW INCREASE TO    1.440E+04
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.800E+03,  FRACTION OF STEP COMPLETED  8.333E-02
+ STEP TIME COMPLETED       1.440E+04,  TOTAL TIME COMPLETED        1.441E+04
+
+
+  INCREMENT    45 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.440E+04
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      8.935e+05
+        SOLVER ELAPSED TIME:  14ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      7.238E+09   TIME AVG. FORCE       7.428E+09
+ LARGEST SCALED RESIDUAL FORCE     -1.649E+08   AT NODE        232   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -1.649E+08
+ LARGEST INCREMENT OF DISP.        -7.221E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        1.316E-14   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      8.935e+05
+        SOLVER ELAPSED TIME:  8ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
+
+
+ AVERAGE FORCE                      7.262E+09   TIME AVG. FORCE       7.428E+09
+ LARGEST SCALED RESIDUAL FORCE     -6.885E+05   AT NODE         50   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -6.885E+05
+ LARGEST INCREMENT OF DISP.        -6.165E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        1.056E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND SMALL MAGNITUDE
+           OF THE INCREMENT OF DISPLACEMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   7.544E-12
+          TIME INCREMENT MAY NOW INCREASE TO    2.160E+04
+
+ ITERATION SUMMARY FOR THE INCREMENT:   2 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  2 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.440E+04,  FRACTION OF STEP COMPLETED  0.167    
+ STEP TIME COMPLETED       2.880E+04,  TOTAL TIME COMPLETED        2.881E+04
+
+
+  INCREMENT    46 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  2.160E+04
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      8.935e+05
+        SOLVER ELAPSED TIME:  11ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      7.202E+09   TIME AVG. FORCE       7.423E+09
+ LARGEST SCALED RESIDUAL FORCE     -1.397E+08   AT NODE        230   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -1.397E+08
+ LARGEST INCREMENT OF DISP.        -9.252E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -4.007E-15   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      8.935e+05
+        SOLVER ELAPSED TIME:  10ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
+
+
+ AVERAGE FORCE                      7.215E+09   TIME AVG. FORCE       7.424E+09
+ LARGEST SCALED RESIDUAL FORCE      2.598E+05   AT NODE        206   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      2.598E+05
+ LARGEST INCREMENT OF DISP.        -8.456E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        7.957E-13   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND SMALL MAGNITUDE
+           OF THE INCREMENT OF DISPLACEMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   5.621E-12
+          TIME INCREMENT MAY NOW INCREASE TO    3.240E+04
+          TIME INCREMENT REDUCED TO   7.200E+03 TO MEET NEXT OUTPUT TIME POINT
+
+ ITERATION SUMMARY FOR THE INCREMENT:   2 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  2 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  2.160E+04,  FRACTION OF STEP COMPLETED  0.292    
+ STEP TIME COMPLETED       5.040E+04,  TOTAL TIME COMPLETED        5.041E+04
+
+
+  INCREMENT    47 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  7.200E+03
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      8.935e+05
+        SOLVER ELAPSED TIME:  10ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      7.200E+09   TIME AVG. FORCE       7.419E+09
+ LARGEST SCALED RESIDUAL FORCE     -1.303E+07   AT NODE        230   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -1.303E+07
+ LARGEST INCREMENT OF DISP.        -2.819E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -1.098E-16   AT NODE        125   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   2.923E-15
+          TIME INCREMENT MAY NOW INCREASE TO    6.480E+04
+          TIME INCREMENT REDUCED TO   2.880E+04 TO MEET NEXT OUTPUT TIME POINT
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  7.200E+03,  FRACTION OF STEP COMPLETED  0.333    
+ STEP TIME COMPLETED       5.760E+04,  TOTAL TIME COMPLETED        5.761E+04
+
+
+  INCREMENT    48 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  2.880E+04
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      8.935e+05
+        SOLVER ELAPSED TIME:  10ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      7.141E+09   TIME AVG. FORCE       7.413E+09
+ LARGEST SCALED RESIDUAL FORCE     -9.686E+07   AT NODE        229   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -9.686E+07
+ LARGEST INCREMENT OF DISP.        -1.127E-11   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -2.580E-14   AT NODE        151   DOF  2
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      8.935e+05
+        SOLVER ELAPSED TIME:  9ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
+
+
+ AVERAGE FORCE                      7.157E+09   TIME AVG. FORCE       7.414E+09
+ LARGEST SCALED RESIDUAL FORCE     -3.256E+05   AT NODE         50   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -3.256E+05
+ LARGEST INCREMENT OF DISP.        -1.019E-11   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        1.074E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND SMALL MAGNITUDE
+           OF THE INCREMENT OF DISPLACEMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   7.661E-12
+          TIME INCREMENT MAY NOW INCREASE TO    4.860E+04
+
+ ITERATION SUMMARY FOR THE INCREMENT:   2 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  2 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  2.880E+04,  FRACTION OF STEP COMPLETED  0.500    
+ STEP TIME COMPLETED       8.640E+04,  TOTAL TIME COMPLETED        8.641E+04
+
+
+  INCREMENT    49 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  4.860E+04
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      8.935e+05
+        SOLVER ELAPSED TIME:  9ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      7.084E+09   TIME AVG. FORCE       7.407E+09
+ LARGEST SCALED RESIDUAL FORCE     -1.191E+08   AT NODE        228   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -1.191E+08
+ LARGEST INCREMENT OF DISP.        -1.721E-11   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        8.652E-15   AT NODE        151   DOF  2
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      8.935e+05
+        SOLVER ELAPSED TIME:  9ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
+
+
+ AVERAGE FORCE                      7.097E+09   TIME AVG. FORCE       7.407E+09
+ LARGEST SCALED RESIDUAL FORCE     -2.508E+05   AT NODE         50   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -2.508E+05
+ LARGEST INCREMENT OF DISP.        -1.577E-11   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        1.439E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND SMALL MAGNITUDE
+           OF THE INCREMENT OF DISPLACEMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   1.016E-11
+
+ ITERATION SUMMARY FOR THE INCREMENT:   2 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  2 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  4.860E+04,  FRACTION OF STEP COMPLETED  0.781    
+ STEP TIME COMPLETED       1.350E+05,  TOTAL TIME COMPLETED        1.350E+05
+
+
+  INCREMENT    50 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  3.780E+04
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      8.935e+05
+        SOLVER ELAPSED TIME:  12ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      7.049E+09   TIME AVG. FORCE       7.400E+09
+ LARGEST SCALED RESIDUAL FORCE     -4.360E+07   AT NODE        227   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -4.360E+07
+ LARGEST INCREMENT OF DISP.        -1.226E-11   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -2.797E-16   AT NODE        100   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      8.935e+05
+        SOLVER ELAPSED TIME:  10ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
+
+
+ AVERAGE FORCE                      7.056E+09   TIME AVG. FORCE       7.400E+09
+ LARGEST SCALED RESIDUAL FORCE     -1.101E+05   AT NODE         50   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -1.101E+05
+ LARGEST INCREMENT OF DISP.        -1.156E-11   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        6.999E-13   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND SMALL MAGNITUDE
+           OF THE INCREMENT OF DISPLACEMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   4.936E-12
+
+ ITERATION SUMMARY FOR THE INCREMENT:   2 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  2 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  3.780E+04,  FRACTION OF STEP COMPLETED   1.00    
+ STEP TIME COMPLETED       1.728E+05,  TOTAL TIME COMPLETED        1.728E+05
+1
+
+   Abaqus 2024                                  Date 22-abr-2026   Time 12:46:04
+   For use by PONTIFICIA UNIVERSIDADE CATOLICA DO RIO DE JANEIRO under license from Dassault Systemes or its subsidiary.
+
+                                                                                 
+                                                                                 
+ STEP    6     INCREMENT     1     STEP TIME    0.00    
+
+
+                        S T E P       6     S T A T I C   A N A L Y S I S
+
+
+                                                                                          
+
+     AUTOMATIC TIME CONTROL WITH -
+          A SUGGESTED INITIAL TIME INCREMENT OF                 1.00    
+          AND A TOTAL TIME PERIOD OF                            1.00    
+          THE MINIMUM TIME INCREMENT ALLOWED IS                1.000E-15
+          THE MAXIMUM TIME INCREMENT ALLOWED IS                 1.00    
+
+     LINEAR EQUATION SOLVER TYPE         DIRECT SPARSE
+
+ CONVERGENCE TOLERANCE PARAMETERS FOR FORCE    
+     CRITERION FOR RESIDUAL FORCE     FOR A NONLINEAR PROBLEM          5.000E-03
+     CRITERION FOR DISP.    CORRECTION IN A NONLINEAR PROBLEM          1.000E-02
+     INIT. VALUE OF TIME AVG. FORCE     IS TIME AVG. FORCE     IN PREVIOUS STEP
+     AVERAGE FORCE     IS TIME AVERAGE FORCE    
+     ALTERNATE CRIT. FOR RESIDUAL FORCE     FOR A NONLINEAR PROBLEM    2.000E-02
+     CRITERION FOR ZERO FORCE     RELATIVE TO TIME AVRG. FORCE         1.000E-05
+     CRITERION FOR RESIDUAL FORCE     WHEN THERE IS ZERO FLUX          1.000E-05
+     CRITERION FOR DISP.    CORRECTION WHEN THERE IS ZERO FLUX         1.000E-03
+     CRITERION FOR RESIDUAL FORCE     FOR A LINEAR INCREMENT           1.000E-08
+     FIELD CONVERSION RATIO                                             1.00    
+     CRITERION FOR ZERO FORCE     REL. TO TIME AVRG. MAX. FORCE        1.000E-05
+     CRITERION FOR ZERO DISP.    RELATIVE TO CHARACTERISTIC LENGTH     1.000E-08
+
+     VOLUMETRIC STRAIN COMPATIBILITY TOLERANCE FOR HYBRID SOLIDS       1.000E-05
+     AXIAL STRAIN COMPATIBILITY TOLERANCE FOR HYBRID BEAMS             1.000E-05
+     TRANS. SHEAR STRAIN COMPATIBILITY TOLERANCE FOR HYBRID BEAMS      1.000E-05
+     SOFT CONTACT CONSTRAINT COMPATIBILITY TOLERANCE FOR P>P0          5.000E-03
+     SOFT CONTACT CONSTRAINT COMPATIBILITY TOLERANCE FOR P=0.0         0.100    
+     CONTACT FORCE ERROR TOLERANCE FOR CONVERT SDI=YES                 1.00    
+     DISPLACEMENT COMPATIBILITY TOLERANCE FOR DCOUP ELEMENTS           1.000E-05
+     ROTATION COMPATIBILITY TOLERANCE FOR DCOUP ELEMENTS               1.000E-05
+
+ EQUILIBRIUM WILL BE CHECKED FOR SEVERE DISCONTINUITY ITERATIONS
+
+ TIME INCREMENTATION CONTROL PARAMETERS:
+     FIRST EQUILIBRIUM ITERATION FOR CONSECUTIVE DIVERGENCE CHECK              4
+     EQUILIBRIUM ITERATION AT WHICH LOG. CONVERGENCE RATE CHECK BEGINS         8
+     EQUILIBRIUM ITERATION AFTER WHICH ALTERNATE RESIDUAL IS USED              9
+     MAXIMUM EQUILIBRIUM ITERATIONS ALLOWED                                   16
+     EQUILIBRIUM ITERATION COUNT FOR CUT-BACK IN NEXT INCREMENT               10
+     MAXIMUM EQUILIB. ITERS IN TWO INCREMENTS FOR TIME INCREMENT INCREASE      4
+     MAXIMUM ITERATIONS FOR SEVERE DISCONTINUITIES                            50
+     MAXIMUM ATTEMPTS ALLOWED IN AN INCREMENT                                  5
+     MAXIMUM DISCON. ITERS IN TWO INCREMENTS FOR TIME INCREMENT INCREASE      50
+     MAXIMUM CONTACT AUGMENTATIONS FOR *SURFACE BEHAVIOR,AUGMENTED LAGRANGE   50
+     CUT-BACK FACTOR AFTER DIVERGENCE                                 0.2500    
+     CUT-BACK FACTOR FOR TOO SLOW CONVERGENCE                         0.5000    
+     CUT-BACK FACTOR AFTER TOO MANY EQUILIBRIUM ITERATIONS            0.7500    
+     CUT-BACK FACTOR AFTER TOO MANY SEVERE DISCONTINUITY ITERATIONS   0.2500    
+     CUT-BACK FACTOR AFTER PROBLEMS IN ELEMENT ASSEMBLY               0.2500    
+     INCREASE FACTOR AFTER TWO INCREMENTS THAT CONVERGE QUICKLY        1.500    
+     MAX. TIME INCREMENT INCREASE FACTOR ALLOWED                       1.500    
+     MAX. TIME INCREMENT INCREASE FACTOR ALLOWED (DYNAMICS)            1.250    
+     MAX. TIME INCREMENT INCREASE FACTOR ALLOWED (DIFFUSION)           2.000    
+     MINIMUM TIME INCREMENT RATIO FOR EXTRAPOLATION TO OCCUR          0.1000    
+     MAX. RATIO OF TIME INCREMENT TO STABILITY LIMIT                   1.000    
+     FRACTION OF STABILITY LIMIT FOR NEW TIME INCREMENT               0.9500    
+     TIME INCREMENT INCREASE FACTOR BEFORE A TIME POINT                1.000    
+     GLOBAL STABILIZATION CONTROL IS NOT USED
+
+          PRINT OF INCREMENT NUMBER, TIME, ETC., EVERY    1  INCREMENTS
+
+     THE MAXIMUM NUMBER OF INCREMENTS IN THIS STEP IS                     100
+
+          LARGE DISPLACEMENT THEORY WILL BE USED
+
+          UNSYMMETRIC MATRIX STORAGE AND SOLUTION WILL BE USED
+
+     LINEAR EXTRAPOLATION WILL BE USED
+
+     CHARACTERISTIC ELEMENT LENGTH      20.2    
+
+     DETAILS REGARDING ACTUAL SOLUTION WAVEFRONT REQUESTED
+
+     DETAILED OUTPUT OF DIAGNOSTICS TO DATABASE REQUESTED
+
+     PRINT OF INCREMENT NUMBER, TIME, ETC., TO THE MESSAGE FILE EVERY     1  INCREMENTS
+
+     ELEMENT OPERATIONS WILL BE CARRIED OUT IN PARALLEL USING  14 THREADS ON 1 DOMAIN
+
+ ***WARNING: ELEMENT 1 INSTANCE PIPE_INST HAS AN ASPECT RATIO EXCEEDING 100 TO 
+             1.
+
+ ***WARNING: ELEMENT 2 INSTANCE PIPE_INST HAS AN ASPECT RATIO EXCEEDING 100 TO 
+             1.
+
+ ***WARNING: ELEMENT 3 INSTANCE PIPE_INST HAS AN ASPECT RATIO EXCEEDING 100 TO 
+             1.
+
+ ***WARNING: ELEMENT 4 INSTANCE PIPE_INST HAS AN ASPECT RATIO EXCEEDING 100 TO 
+             1.
+
+ ***WARNING: ELEMENT 5 INSTANCE PIPE_INST HAS AN ASPECT RATIO EXCEEDING 100 TO 
+             1.
+
+ ***WARNING: ELEMENT 6 INSTANCE PIPE_INST HAS AN ASPECT RATIO EXCEEDING 100 TO 
+             1.
+
+ ***WARNING: ELEMENT 7 INSTANCE PIPE_INST HAS AN ASPECT RATIO EXCEEDING 100 TO 
+             1.
+
+ ***WARNING: ELEMENT 8 INSTANCE PIPE_INST HAS AN ASPECT RATIO EXCEEDING 100 TO 
+             1.
+
+ ***WARNING: ELEMENT 9 INSTANCE PIPE_INST HAS AN ASPECT RATIO EXCEEDING 100 TO 
+             1.
+
+ ***WARNING: ELEMENT 10 INSTANCE PIPE_INST HAS AN ASPECT RATIO EXCEEDING 100 TO 
+             1.
+
+ ***WARNING: ELEMENT 11 INSTANCE PIPE_INST HAS AN ASPECT RATIO EXCEEDING 100 TO 
+             1.
+
+ ***WARNING: ELEMENT 12 INSTANCE PIPE_INST HAS AN ASPECT RATIO EXCEEDING 100 TO 
+             1.
+
+ ***WARNING: ELEMENT 13 INSTANCE PIPE_INST HAS AN ASPECT RATIO EXCEEDING 100 TO 
+             1.
+
+ ***WARNING: ELEMENT 14 INSTANCE PIPE_INST HAS AN ASPECT RATIO EXCEEDING 100 TO 
+             1.
+
+ ***WARNING: ELEMENT 15 INSTANCE PIPE_INST HAS AN ASPECT RATIO EXCEEDING 100 TO 
+             1.
+
+ ***WARNING: ELEMENT 16 INSTANCE PIPE_INST HAS AN ASPECT RATIO EXCEEDING 100 TO 
+             1.
+
+ ***WARNING: ELEMENT 17 INSTANCE PIPE_INST HAS AN ASPECT RATIO EXCEEDING 100 TO 
+             1.
+
+ ***WARNING: ELEMENT 18 INSTANCE PIPE_INST HAS AN ASPECT RATIO EXCEEDING 100 TO 
+             1.
+
+ ***WARNING: ELEMENT 19 INSTANCE PIPE_INST HAS AN ASPECT RATIO EXCEEDING 100 TO 
+             1.
+
+ ***WARNING: ELEMENT 20 INSTANCE PIPE_INST HAS AN ASPECT RATIO EXCEEDING 100 TO 
+             1.
+
+ ***WARNING: ELEMENT 21 INSTANCE PIPE_INST HAS AN ASPECT RATIO EXCEEDING 100 TO 
+             1.
+
+ ***WARNING: ELEMENT 22 INSTANCE PIPE_INST HAS AN ASPECT RATIO EXCEEDING 100 TO 
+             1.
+
+ ***WARNING: ELEMENT 23 INSTANCE PIPE_INST HAS AN ASPECT RATIO EXCEEDING 100 TO 
+             1.
+
+ ***WARNING: ELEMENT 24 INSTANCE PIPE_INST HAS AN ASPECT RATIO EXCEEDING 100 TO 
+             1.
+
+ ***WARNING: ELEMENT 25 INSTANCE PIPE_INST HAS AN ASPECT RATIO EXCEEDING 100 TO 
+             1.
+
+ ***WARNING: ELEMENT 26 INSTANCE PIPE_INST HAS AN ASPECT RATIO EXCEEDING 100 TO 
+             1.
+
+ ***WARNING: ELEMENT 27 INSTANCE PIPE_INST HAS AN ASPECT RATIO EXCEEDING 100 TO 
+             1.
+
+ ***WARNING: ELEMENT 28 INSTANCE PIPE_INST HAS AN ASPECT RATIO EXCEEDING 100 TO 
+             1.
+
+ ***WARNING: ELEMENT 29 INSTANCE PIPE_INST HAS AN ASPECT RATIO EXCEEDING 100 TO 
+             1.
+
+ ***WARNING: ELEMENT 30 INSTANCE PIPE_INST HAS AN ASPECT RATIO EXCEEDING 100 TO 
+             1.
+
+ ***WARNING: The aspect ratio for 30 elements exceeds 100 to 1. The elements 
+             have been identified in element set WarnElemAspectRatio.
+
+     COLLECTING STEP CONSTRAINT INFORMATION FOR OVERCONSTRAINT CHECKS
+
+
+  INCREMENT     1 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT   1.00    
+ 
+     INITIAL ELEMENT LOAD BALANCE
+            DOMAIN    1     THREAD    NUMBER OF ELEMENTS
+                              1            40
+                              2            75
+                              3            25
+                              4            35
+                              5            25
+                              6            25
+                              7            25
+                              8            85
+                              9            40
+                             10            40
+                             11            40
+                             12            20
+                             13            55
+                             14            45
+
+ ***WARNING: THERE ARE 8 UNCONNECTED REGIONS IN THE MODEL.
+
+ ***NOTE: SFM TYPE SURFACE ELEMENTS USED TO DEFINE CONTACT SURFACES NOT PART OF 
+          A RIGID BODY MAY INCREASE THE NUMBER OR UNCONNECTED REGIONS REPORTED.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  8ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      6.451E+09   TIME AVG. FORCE       6.451E+09
+ LARGEST SCALED RESIDUAL FORCE     -6.821E+04   AT NODE          5   DOF  1
+   INSTANCE: PIPE_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -6.821E+04
+ LARGEST INCREMENT OF DISP.         5.782E-04   AT NODE         24   DOF  2
+   INSTANCE: PIPE_INST                                                                       
+ LARGEST CORRECTION TO DISP.        5.782E-04   AT NODE         24   DOF  2
+   INSTANCE: PIPE_INST                                                                       
+ ESTIMATE OF DISP.    CORRECTION    2.746E-08
+ FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND ESTIMATED CORRECTION
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED   1.00    ,  FRACTION OF STEP COMPLETED   1.00    
+ STEP TIME COMPLETED        1.00    ,  TOTAL TIME COMPLETED        1.728E+05
+1
+
+   Abaqus 2024                                  Date 22-abr-2026   Time 12:46:05
+   For use by PONTIFICIA UNIVERSIDADE CATOLICA DO RIO DE JANEIRO under license from Dassault Systemes or its subsidiary.
+
+                                                                                 
+                                                                                 
+ STEP    7     INCREMENT     1     STEP TIME    0.00    
+
+
+                        S T E P       7     V I S C O   A N A L Y S I S
+
+
+                                                                                          
+
+     AUTOMATIC TIME CONTROL WITH -
+          A SUGGESTED INITIAL TIME INCREMENT OF                1.000E-06
+          AND A TOTAL TIME PERIOD OF                           9.461E+08
+          THE MINIMUM TIME INCREMENT ALLOWED IS                1.000E-15
+          THE MAXIMUM TIME INCREMENT ALLOWED IS                1.555E+07
+
+     THE SIZE OF THE TIME INCREMENT IS CONTROLLED BY -
+          THE PARAMETER  CETOL                                 1.000E-04
+
+                              IMPLICIT TIME INTEGRATION WILL BE USED
+
+ CONVERGENCE TOLERANCE PARAMETERS FOR FORCE    
+     CRITERION FOR RESIDUAL FORCE     FOR A NONLINEAR PROBLEM          5.000E-03
+     CRITERION FOR DISP.    CORRECTION IN A NONLINEAR PROBLEM          1.000E-02
+     INIT. VALUE OF TIME AVG. FORCE     IS TIME AVG. FORCE     IN PREVIOUS STEP
+     AVERAGE FORCE     IS TIME AVERAGE FORCE    
+     ALTERNATE CRIT. FOR RESIDUAL FORCE     FOR A NONLINEAR PROBLEM    2.000E-02
+     CRITERION FOR ZERO FORCE     RELATIVE TO TIME AVRG. FORCE         1.000E-05
+     CRITERION FOR RESIDUAL FORCE     WHEN THERE IS ZERO FLUX          1.000E-05
+     CRITERION FOR DISP.    CORRECTION WHEN THERE IS ZERO FLUX         1.000E-03
+     CRITERION FOR RESIDUAL FORCE     FOR A LINEAR INCREMENT           1.000E-08
+     FIELD CONVERSION RATIO                                             1.00    
+     CRITERION FOR ZERO FORCE     REL. TO TIME AVRG. MAX. FORCE        1.000E-05
+     CRITERION FOR ZERO DISP.    RELATIVE TO CHARACTERISTIC LENGTH     1.000E-08
+
+     VOLUMETRIC STRAIN COMPATIBILITY TOLERANCE FOR HYBRID SOLIDS       1.000E-05
+     AXIAL STRAIN COMPATIBILITY TOLERANCE FOR HYBRID BEAMS             1.000E-05
+     TRANS. SHEAR STRAIN COMPATIBILITY TOLERANCE FOR HYBRID BEAMS      1.000E-05
+     SOFT CONTACT CONSTRAINT COMPATIBILITY TOLERANCE FOR P>P0          5.000E-03
+     SOFT CONTACT CONSTRAINT COMPATIBILITY TOLERANCE FOR P=0.0         0.100    
+     CONTACT FORCE ERROR TOLERANCE FOR CONVERT SDI=YES                 1.00    
+     DISPLACEMENT COMPATIBILITY TOLERANCE FOR DCOUP ELEMENTS           1.000E-05
+     ROTATION COMPATIBILITY TOLERANCE FOR DCOUP ELEMENTS               1.000E-05
+
+ EQUILIBRIUM WILL BE CHECKED FOR SEVERE DISCONTINUITY ITERATIONS
+
+ TIME INCREMENTATION CONTROL PARAMETERS:
+     FIRST EQUILIBRIUM ITERATION FOR CONSECUTIVE DIVERGENCE CHECK              4
+     EQUILIBRIUM ITERATION AT WHICH LOG. CONVERGENCE RATE CHECK BEGINS         8
+     EQUILIBRIUM ITERATION AFTER WHICH ALTERNATE RESIDUAL IS USED              9
+     MAXIMUM EQUILIBRIUM ITERATIONS ALLOWED                                   16
+     EQUILIBRIUM ITERATION COUNT FOR CUT-BACK IN NEXT INCREMENT               10
+     MAXIMUM EQUILIB. ITERS IN TWO INCREMENTS FOR TIME INCREMENT INCREASE      4
+     MAXIMUM ITERATIONS FOR SEVERE DISCONTINUITIES                            50
+     MAXIMUM ATTEMPTS ALLOWED IN AN INCREMENT                                  5
+     MAXIMUM DISCON. ITERS IN TWO INCREMENTS FOR TIME INCREMENT INCREASE      50
+     MAXIMUM CONTACT AUGMENTATIONS FOR *SURFACE BEHAVIOR,AUGMENTED LAGRANGE   50
+     CONSECUTIVE INCS MEETING TIME INTEG. TOL. FOR TIME INC. INCREASE          3
+     CUT-BACK FACTOR AFTER DIVERGENCE                                 0.2500    
+     CUT-BACK FACTOR FOR TOO SLOW CONVERGENCE                         0.5000    
+     CUT-BACK FACTOR AFTER TOO MANY EQUILIBRIUM ITERATIONS            0.7500    
+     CUT-BACK FACTOR AFTER TOO MANY SEVERE DISCONTINUITY ITERATIONS   0.2500    
+     CUT-BACK FACTOR AFTER PROBLEMS IN ELEMENT ASSEMBLY               0.2500    
+     INCREASE FACTOR AFTER TWO INCREMENTS THAT CONVERGE QUICKLY        1.500    
+     MAX. TIME INCREMENT INCREASE FACTOR ALLOWED                       1.500    
+     MAX. TIME INCREMENT INCREASE FACTOR ALLOWED (DYNAMICS)            1.250    
+     MAX. TIME INCREMENT INCREASE FACTOR ALLOWED (DIFFUSION)           2.000    
+     MINIMUM TIME INCREMENT RATIO FOR EXTRAPOLATION TO OCCUR          0.1000    
+     CUT-BACK FACTOR WHEN TIME INTEGRATION ACCURACY TOL. EXCEEDED     0.8500    
+     MAX. RATIO OF TIME INTEG. MEASURE TO TOL. FOR TIME INC. INCREASE 0.7500    
+     INCREASE FACTOR FOR TIME INCREMENT WHEN POSSIBLE                 0.8000    
+     MIN. TIME INC. INCREASE FACTOR IN LINEAR TRANSIENT PROBLEMS      0.9500    
+     MAX. RATIO OF TIME INCREMENT TO STABILITY LIMIT                   1.000    
+     FRACTION OF STABILITY LIMIT FOR NEW TIME INCREMENT               0.9500    
+     TIME INCREMENT INCREASE FACTOR BEFORE A TIME POINT                1.000    
+     GLOBAL STABILIZATION CONTROL IS NOT USED
+
+          PRINT OF INCREMENT NUMBER, TIME, ETC., EVERY    1  INCREMENTS
+
+     THE MAXIMUM NUMBER OF INCREMENTS IN THIS STEP IS                 1000000
+
+          LARGE DISPLACEMENT THEORY WILL BE USED
+
+          UNSYMMETRIC MATRIX STORAGE AND SOLUTION WILL BE USED
+
+     LINEAR EXTRAPOLATION WILL BE USED
+
+     CHARACTERISTIC ELEMENT LENGTH      20.2    
+
+     DETAILS REGARDING ACTUAL SOLUTION WAVEFRONT REQUESTED
+
+     DETAILED OUTPUT OF DIAGNOSTICS TO DATABASE REQUESTED
+
+     PRINT OF INCREMENT NUMBER, TIME, ETC., TO THE MESSAGE FILE EVERY     1  INCREMENTS
+
+     ELEMENT OPERATIONS WILL BE CARRIED OUT IN PARALLEL USING  14 THREADS ON 1 DOMAIN
+
+     COLLECTING STEP CONSTRAINT INFORMATION FOR OVERCONSTRAINT CHECKS
+
+
+  INCREMENT     1 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-06
+ 
+     INITIAL ELEMENT LOAD BALANCE
+            DOMAIN    1     THREAD    NUMBER OF ELEMENTS
+                              1            20
+                              2            20
+                              3            20
+                              4            65
+                              5            35
+                              6            15
+                              7            65
+                              8            80
+                              9            10
+                             10            75
+                             11            30
+                             12            55
+                             13            45
+                             14            40
+
+ ***WARNING: THERE ARE 8 UNCONNECTED REGIONS IN THE MODEL.
+
+ ***NOTE: SFM TYPE SURFACE ELEMENTS USED TO DEFINE CONTACT SURFACES NOT PART OF 
+          A RIGID BODY MAY INCREASE THE NUMBER OR UNCONNECTED REGIONS REPORTED.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  6ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      6.451E+09   TIME AVG. FORCE       6.451E+09
+ LARGEST SCALED RESIDUAL FORCE     -2.189E-04   AT NODE         33   DOF  1
+   INSTANCE: PIPE_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -2.189E-04
+ LARGEST INCREMENT OF DISP.        -8.483E-08   AT NODE         21   DOF  2
+   INSTANCE: PIPE_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -8.483E-08   AT NODE         21   DOF  2
+   INSTANCE: PIPE_INST                                                                       
+          THE FORCE     EQUILIBRIUM RESPONSE WAS LINEAR IN THIS INCREMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   1.312E-31
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-06,  FRACTION OF STEP COMPLETED  1.057E-15
+ STEP TIME COMPLETED       1.000E-06,  TOTAL TIME COMPLETED        1.728E+05
+
+
+  INCREMENT     2 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-06
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  11ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      6.451E+09   TIME AVG. FORCE       6.451E+09
+ LARGEST SCALED RESIDUAL FORCE     -5.041E-04   AT NODE         37   DOF  1
+   INSTANCE: PIPE_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -5.041E-04
+ LARGEST INCREMENT OF DISP.         2.332E-15   AT NODE         21   DOF  2
+   INSTANCE: PIPE_INST                                                                       
+ LARGEST CORRECTION TO DISP.        8.483E-08   AT NODE         21   DOF  2
+   INSTANCE: PIPE_INST                                                                       
+          THE FORCE     EQUILIBRIUM RESPONSE WAS LINEAR IN THIS INCREMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   1.315E-31
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-06,  FRACTION OF STEP COMPLETED  2.114E-15
+ STEP TIME COMPLETED       2.000E-06,  TOTAL TIME COMPLETED        1.728E+05
+
+
+  INCREMENT     3 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-06
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  6ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      6.451E+09   TIME AVG. FORCE       6.451E+09
+ LARGEST SCALED RESIDUAL FORCE      4.578E-05   AT NODE         52   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      4.578E-05
+ LARGEST INCREMENT OF DISP.        -2.952E-14   AT NODE          8   DOF  1
+   INSTANCE: PIPE_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -3.075E-14   AT NODE          8   DOF  1
+   INSTANCE: PIPE_INST                                                                       
+          THE FORCE     EQUILIBRIUM RESPONSE WAS LINEAR IN THIS INCREMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   1.313E-31
+          TIME INCREMENT MAY NOW INCREASE TO    2.000E-06
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-06,  FRACTION OF STEP COMPLETED  3.171E-15
+ STEP TIME COMPLETED       3.000E-06,  TOTAL TIME COMPLETED        1.728E+05
+
+
+  INCREMENT     4 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  2.000E-06
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  7ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      6.451E+09   TIME AVG. FORCE       6.451E+09
+ LARGEST SCALED RESIDUAL FORCE      6.104E-05   AT NODE        202   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      6.104E-05
+ LARGEST INCREMENT OF DISP.        -5.368E-16   AT NODE         44   DOF  1
+   INSTANCE: PIPE_INST                                                                       
+ LARGEST CORRECTION TO DISP.        5.957E-14   AT NODE          8   DOF  1
+   INSTANCE: PIPE_INST                                                                       
+          THE FORCE     EQUILIBRIUM RESPONSE WAS LINEAR IN THIS INCREMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   5.255E-31
+          TIME INCREMENT MAY NOW INCREASE TO    4.000E-06
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  2.000E-06,  FRACTION OF STEP COMPLETED  5.285E-15
+ STEP TIME COMPLETED       5.000E-06,  TOTAL TIME COMPLETED        1.728E+05
+
+
+  INCREMENT     5 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  4.000E-06
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  10ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      6.451E+09   TIME AVG. FORCE       6.451E+09
+ LARGEST SCALED RESIDUAL FORCE      6.104E-05   AT NODE        177   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      6.104E-05
+ LARGEST INCREMENT OF DISP.         9.970E-16   AT NODE         44   DOF  1
+   INSTANCE: PIPE_INST                                                                       
+ LARGEST CORRECTION TO DISP.        2.071E-15   AT NODE         44   DOF  1
+   INSTANCE: PIPE_INST                                                                       
+          THE FORCE     EQUILIBRIUM RESPONSE WAS LINEAR IN THIS INCREMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   2.102E-30
+          TIME INCREMENT MAY NOW INCREASE TO    8.000E-06
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  4.000E-06,  FRACTION OF STEP COMPLETED  9.513E-15
+ STEP TIME COMPLETED       9.000E-06,  TOTAL TIME COMPLETED        1.728E+05
+
+
+  INCREMENT     6 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  8.000E-06
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  10ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      6.451E+09   TIME AVG. FORCE       6.451E+09
+ LARGEST SCALED RESIDUAL FORCE      5.341E-05   AT NODE        228   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      5.341E-05
+ LARGEST INCREMENT OF DISP.         9.438E-17   AT NODE         12   DOF  1
+   INSTANCE: PIPE_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -1.900E-15   AT NODE         44   DOF  1
+   INSTANCE: PIPE_INST                                                                       
+          THE FORCE     EQUILIBRIUM RESPONSE WAS LINEAR IN THIS INCREMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   8.410E-30
+          TIME INCREMENT MAY NOW INCREASE TO    1.600E-05
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  8.000E-06,  FRACTION OF STEP COMPLETED  1.797E-14
+ STEP TIME COMPLETED       1.700E-05,  TOTAL TIME COMPLETED        1.728E+05
+
+
+  INCREMENT     7 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.600E-05
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  8ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      6.451E+09   TIME AVG. FORCE       6.451E+09
+ LARGEST SCALED RESIDUAL FORCE     -3.815E-05   AT NODE         28   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -3.815E-05
+ LARGEST INCREMENT OF DISP.        -1.767E-15   AT NODE         44   DOF  1
+   INSTANCE: PIPE_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -1.954E-15   AT NODE         44   DOF  1
+   INSTANCE: PIPE_INST                                                                       
+          THE FORCE     EQUILIBRIUM RESPONSE WAS LINEAR IN THIS INCREMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   3.363E-29
+          TIME INCREMENT MAY NOW INCREASE TO    3.200E-05
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.600E-05,  FRACTION OF STEP COMPLETED  3.488E-14
+ STEP TIME COMPLETED       3.300E-05,  TOTAL TIME COMPLETED        1.728E+05
+
+
+  INCREMENT     8 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  3.200E-05
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  7ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      6.451E+09   TIME AVG. FORCE       6.451E+09
+ LARGEST SCALED RESIDUAL FORCE      6.104E-05   AT NODE        127   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      6.104E-05
+ LARGEST INCREMENT OF DISP.         1.918E-15   AT NODE         44   DOF  1
+   INSTANCE: PIPE_INST                                                                       
+ LARGEST CORRECTION TO DISP.        5.451E-15   AT NODE         44   DOF  1
+   INSTANCE: PIPE_INST                                                                       
+          THE FORCE     EQUILIBRIUM RESPONSE WAS LINEAR IN THIS INCREMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   1.345E-28
+          TIME INCREMENT MAY NOW INCREASE TO    6.400E-05
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  3.200E-05,  FRACTION OF STEP COMPLETED  6.870E-14
+ STEP TIME COMPLETED       6.500E-05,  TOTAL TIME COMPLETED        1.728E+05
+
+
+  INCREMENT     9 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  6.400E-05
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  8ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      6.451E+09   TIME AVG. FORCE       6.451E+09
+ LARGEST SCALED RESIDUAL FORCE      4.578E-05   AT NODE         27   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      4.578E-05
+ LARGEST INCREMENT OF DISP.        -1.936E-15   AT NODE         44   DOF  1
+   INSTANCE: PIPE_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -5.773E-15   AT NODE         44   DOF  1
+   INSTANCE: PIPE_INST                                                                       
+          THE FORCE     EQUILIBRIUM RESPONSE WAS LINEAR IN THIS INCREMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   5.381E-28
+          TIME INCREMENT MAY NOW INCREASE TO    1.280E-04
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  6.400E-05,  FRACTION OF STEP COMPLETED  1.364E-13
+ STEP TIME COMPLETED       1.290E-04,  TOTAL TIME COMPLETED        1.728E+05
+
+
+  INCREMENT    10 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.280E-04
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  14ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      6.451E+09   TIME AVG. FORCE       6.451E+09
+ LARGEST SCALED RESIDUAL FORCE      4.578E-05   AT NODE        127   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      4.578E-05
+ LARGEST INCREMENT OF DISP.        -5.703E-16   AT NODE          8   DOF  1
+   INSTANCE: PIPE_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -4.442E-15   AT NODE          8   DOF  1
+   INSTANCE: PIPE_INST                                                                       
+          THE FORCE     EQUILIBRIUM RESPONSE WAS LINEAR IN THIS INCREMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   2.153E-27
+          TIME INCREMENT MAY NOW INCREASE TO    2.560E-04
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.280E-04,  FRACTION OF STEP COMPLETED  2.716E-13
+ STEP TIME COMPLETED       2.570E-04,  TOTAL TIME COMPLETED        1.728E+05
+
+
+  INCREMENT    11 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  2.560E-04
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  10ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      6.451E+09   TIME AVG. FORCE       6.451E+09
+ LARGEST SCALED RESIDUAL FORCE      6.104E-05   AT NODE        202   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      6.104E-05
+ LARGEST INCREMENT OF DISP.         1.565E-15   AT NODE         44   DOF  1
+   INSTANCE: PIPE_INST                                                                       
+ LARGEST CORRECTION TO DISP.        4.272E-16   AT NODE         44   DOF  1
+   INSTANCE: PIPE_INST                                                                       
+          THE FORCE     EQUILIBRIUM RESPONSE WAS LINEAR IN THIS INCREMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   8.610E-27
+          TIME INCREMENT MAY NOW INCREASE TO    5.120E-04
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  2.560E-04,  FRACTION OF STEP COMPLETED  5.422E-13
+ STEP TIME COMPLETED       5.130E-04,  TOTAL TIME COMPLETED        1.728E+05
+
+
+  INCREMENT    12 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  5.120E-04
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  11ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      6.451E+09   TIME AVG. FORCE       6.451E+09
+ LARGEST SCALED RESIDUAL FORCE     -6.104E-05   AT NODE        152   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -6.104E-05
+ LARGEST INCREMENT OF DISP.        -9.191E-16   AT NODE         44   DOF  1
+   INSTANCE: PIPE_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -4.048E-15   AT NODE         44   DOF  1
+   INSTANCE: PIPE_INST                                                                       
+          THE FORCE     EQUILIBRIUM RESPONSE WAS LINEAR IN THIS INCREMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   3.444E-26
+          TIME INCREMENT MAY NOW INCREASE TO    1.024E-03
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  5.120E-04,  FRACTION OF STEP COMPLETED  1.083E-12
+ STEP TIME COMPLETED       1.025E-03,  TOTAL TIME COMPLETED        1.728E+05
+
+
+  INCREMENT    13 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.024E-03
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  10ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      6.451E+09   TIME AVG. FORCE       6.451E+09
+ LARGEST SCALED RESIDUAL FORCE      6.482E-05   AT NODE        250   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      6.482E-05
+ LARGEST INCREMENT OF DISP.        -2.531E-16   AT NODE          4   DOF  1
+   INSTANCE: PIPE_INST                                                                       
+ LARGEST CORRECTION TO DISP.        1.587E-15   AT NODE         44   DOF  1
+   INSTANCE: PIPE_INST                                                                       
+          THE FORCE     EQUILIBRIUM RESPONSE WAS LINEAR IN THIS INCREMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   1.378E-25
+          TIME INCREMENT MAY NOW INCREASE TO    2.048E-03
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.024E-03,  FRACTION OF STEP COMPLETED  2.166E-12
+ STEP TIME COMPLETED       2.049E-03,  TOTAL TIME COMPLETED        1.728E+05
+
+
+  INCREMENT    14 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  2.048E-03
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  10ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      6.451E+09   TIME AVG. FORCE       6.451E+09
+ LARGEST SCALED RESIDUAL FORCE      2.585E-04   AT NODE        250   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      2.585E-04
+ LARGEST INCREMENT OF DISP.         1.449E-15   AT NODE         44   DOF  1
+   INSTANCE: PIPE_INST                                                                       
+ LARGEST CORRECTION TO DISP.        1.953E-15   AT NODE         12   DOF  1
+   INSTANCE: PIPE_INST                                                                       
+          THE FORCE     EQUILIBRIUM RESPONSE WAS LINEAR IN THIS INCREMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   5.510E-25
+          TIME INCREMENT MAY NOW INCREASE TO    4.096E-03
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  2.048E-03,  FRACTION OF STEP COMPLETED  4.331E-12
+ STEP TIME COMPLETED       4.097E-03,  TOTAL TIME COMPLETED        1.728E+05
+
+
+  INCREMENT    15 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  4.096E-03
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  8ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      6.451E+09   TIME AVG. FORCE       6.451E+09
+ LARGEST SCALED RESIDUAL FORCE      1.033E-03   AT NODE        250   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      1.033E-03
+ LARGEST INCREMENT OF DISP.        -1.958E-15   AT NODE         44   DOF  1
+   INSTANCE: PIPE_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -4.855E-15   AT NODE         44   DOF  1
+   INSTANCE: PIPE_INST                                                                       
+          THE FORCE     EQUILIBRIUM RESPONSE WAS LINEAR IN THIS INCREMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   2.204E-24
+          TIME INCREMENT MAY NOW INCREASE TO    8.192E-03
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  4.096E-03,  FRACTION OF STEP COMPLETED  8.660E-12
+ STEP TIME COMPLETED       8.193E-03,  TOTAL TIME COMPLETED        1.728E+05
+
+
+  INCREMENT    16 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  8.192E-03
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  7ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      6.451E+09   TIME AVG. FORCE       6.451E+09
+ LARGEST SCALED RESIDUAL FORCE      4.132E-03   AT NODE        250   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      4.132E-03
+ LARGEST INCREMENT OF DISP.         8.125E-17   AT NODE         24   DOF  1
+   INSTANCE: PIPE_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -3.835E-15   AT NODE         40   DOF  1
+   INSTANCE: PIPE_INST                                                                       
+          THE FORCE     EQUILIBRIUM RESPONSE WAS LINEAR IN THIS INCREMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   8.814E-24
+          TIME INCREMENT MAY NOW INCREASE TO    1.638E-02
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  8.192E-03,  FRACTION OF STEP COMPLETED  1.732E-11
+ STEP TIME COMPLETED       1.638E-02,  TOTAL TIME COMPLETED        1.728E+05
+
+
+  INCREMENT    17 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.638E-02
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  12ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      6.451E+09   TIME AVG. FORCE       6.451E+09
+ LARGEST SCALED RESIDUAL FORCE      1.652E-02   AT NODE        250   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      1.652E-02
+ LARGEST INCREMENT OF DISP.        -8.982E-16   AT NODE         44   DOF  1
+   INSTANCE: PIPE_INST                                                                       
+ LARGEST CORRECTION TO DISP.        7.364E-16   AT NODE         40   DOF  1
+   INSTANCE: PIPE_INST                                                                       
+          THE FORCE     EQUILIBRIUM RESPONSE WAS LINEAR IN THIS INCREMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   3.524E-23
+          TIME INCREMENT MAY NOW INCREASE TO    3.277E-02
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.638E-02,  FRACTION OF STEP COMPLETED  3.464E-11
+ STEP TIME COMPLETED       3.277E-02,  TOTAL TIME COMPLETED        1.728E+05
+
+
+  INCREMENT    18 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  3.277E-02
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  9ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      6.451E+09   TIME AVG. FORCE       6.451E+09
+ LARGEST SCALED RESIDUAL FORCE      6.604E-02   AT NODE        250   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      6.604E-02
+ LARGEST INCREMENT OF DISP.        -2.973E-16   AT NODE          4   DOF  1
+   INSTANCE: PIPE_INST                                                                       
+ LARGEST CORRECTION TO DISP.        1.503E-15   AT NODE         44   DOF  1
+   INSTANCE: PIPE_INST                                                                       
+          THE FORCE     EQUILIBRIUM RESPONSE WAS LINEAR IN THIS INCREMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   1.409E-22
+          TIME INCREMENT MAY NOW INCREASE TO    6.554E-02
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  3.277E-02,  FRACTION OF STEP COMPLETED  6.927E-11
+ STEP TIME COMPLETED       6.554E-02,  TOTAL TIME COMPLETED        1.728E+05
+
+
+  INCREMENT    19 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  6.554E-02
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  10ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      6.451E+09   TIME AVG. FORCE       6.451E+09
+ LARGEST SCALED RESIDUAL FORCE      0.264       AT NODE        250   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      0.264    
+ LARGEST INCREMENT OF DISP.         1.447E-15   AT NODE          4   DOF  1
+   INSTANCE: PIPE_INST                                                                       
+ LARGEST CORRECTION TO DISP.        2.042E-15   AT NODE          4   DOF  1
+   INSTANCE: PIPE_INST                                                                       
+          THE FORCE     EQUILIBRIUM RESPONSE WAS LINEAR IN THIS INCREMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   5.628E-22
+          TIME INCREMENT MAY NOW INCREASE TO    0.131    
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  6.554E-02,  FRACTION OF STEP COMPLETED  1.385E-10
+ STEP TIME COMPLETED       0.131    ,  TOTAL TIME COMPLETED        1.728E+05
+
+
+  INCREMENT    20 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  0.131    
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  12ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      6.451E+09   TIME AVG. FORCE       6.451E+09
+ LARGEST SCALED RESIDUAL FORCE       1.05       AT NODE        250   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE       1.05    
+ LARGEST INCREMENT OF DISP.         1.225E-15   AT NODE         24   DOF  1
+   INSTANCE: PIPE_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -4.119E-15   AT NODE          4   DOF  1
+   INSTANCE: PIPE_INST                                                                       
+          THE FORCE     EQUILIBRIUM RESPONSE WAS LINEAR IN THIS INCREMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   2.245E-21
+          TIME INCREMENT MAY NOW INCREASE TO    0.262    
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  0.131    ,  FRACTION OF STEP COMPLETED  2.771E-10
+ STEP TIME COMPLETED       0.262    ,  TOTAL TIME COMPLETED        1.728E+05
+
+
+  INCREMENT    21 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  0.262    
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  8ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      6.451E+09   TIME AVG. FORCE       6.451E+09
+ LARGEST SCALED RESIDUAL FORCE       4.19       AT NODE        250   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE       4.19    
+ LARGEST INCREMENT OF DISP.        -1.936E-15   AT NODE         24   DOF  1
+   INSTANCE: PIPE_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -4.387E-15   AT NODE         24   DOF  1
+   INSTANCE: PIPE_INST                                                                       
+          THE FORCE     EQUILIBRIUM RESPONSE WAS LINEAR IN THIS INCREMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   8.934E-21
+          TIME INCREMENT MAY NOW INCREASE TO    0.476    
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  0.262    ,  FRACTION OF STEP COMPLETED  5.542E-10
+ STEP TIME COMPLETED       0.524    ,  TOTAL TIME COMPLETED        1.728E+05
+
+
+  INCREMENT    22 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  0.476    
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  9ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      6.451E+09   TIME AVG. FORCE       6.451E+09
+ LARGEST SCALED RESIDUAL FORCE       13.7       AT NODE        250   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE       13.7    
+ LARGEST INCREMENT OF DISP.         8.447E-16   AT NODE         32   DOF  1
+   INSTANCE: PIPE_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -4.358E-15   AT NODE         28   DOF  1
+   INSTANCE: PIPE_INST                                                                       
+          THE FORCE     EQUILIBRIUM RESPONSE WAS LINEAR IN THIS INCREMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   2.915E-20
+          TIME INCREMENT MAY NOW INCREASE TO    0.951    
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  0.476    ,  FRACTION OF STEP COMPLETED  1.057E-09
+ STEP TIME COMPLETED        1.00    ,  TOTAL TIME COMPLETED        1.728E+05
+
+
+  INCREMENT    23 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  0.951    
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  7ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      6.451E+09   TIME AVG. FORCE       6.451E+09
+ LARGEST SCALED RESIDUAL FORCE       53.7       AT NODE        250   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE       53.7    
+ LARGEST INCREMENT OF DISP.        -2.920E-16   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        1.615E-15   AT NODE         36   DOF  1
+   INSTANCE: PIPE_INST                                                                       
+          THE FORCE     EQUILIBRIUM RESPONSE WAS LINEAR IN THIS INCREMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   1.144E-19
+          TIME INCREMENT MAY NOW INCREASE TO     1.90    
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  0.951    ,  FRACTION OF STEP COMPLETED  2.063E-09
+ STEP TIME COMPLETED        1.95    ,  TOTAL TIME COMPLETED        1.728E+05
+
+
+  INCREMENT    24 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT   1.90    
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  8ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      6.451E+09   TIME AVG. FORCE       6.451E+09
+ LARGEST SCALED RESIDUAL FORCE       207.       AT NODE        250   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE       207.    
+ LARGEST INCREMENT OF DISP.        -5.840E-16   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -2.721E-16   AT NODE         36   DOF  1
+   INSTANCE: PIPE_INST                                                                       
+          FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND SMALL MAGNITUDE
+           OF THE INCREMENT OF DISPLACEMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   4.409E-19
+          TIME INCREMENT MAY NOW INCREASE TO     3.81    
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED   1.90    ,  FRACTION OF STEP COMPLETED  4.074E-09
+ STEP TIME COMPLETED        3.85    ,  TOTAL TIME COMPLETED        1.728E+05
+
+
+  INCREMENT    25 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT   3.81    
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  8ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      6.451E+09   TIME AVG. FORCE       6.451E+09
+ LARGEST SCALED RESIDUAL FORCE       774.       AT NODE        250   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE       774.    
+ LARGEST INCREMENT OF DISP.         2.287E-15   AT NODE          4   DOF  1
+   INSTANCE: PIPE_INST                                                                       
+ LARGEST CORRECTION TO DISP.        3.125E-15   AT NODE         36   DOF  1
+   INSTANCE: PIPE_INST                                                                       
+          FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND SMALL MAGNITUDE
+           OF THE INCREMENT OF DISPLACEMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   1.641E-18
+          TIME INCREMENT MAY NOW INCREASE TO     7.61    
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED   3.81    ,  FRACTION OF STEP COMPLETED  8.097E-09
+ STEP TIME COMPLETED        7.66    ,  TOTAL TIME COMPLETED        1.728E+05
+
+
+  INCREMENT    26 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT   7.61    
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  10ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      6.451E+09   TIME AVG. FORCE       6.451E+09
+ LARGEST SCALED RESIDUAL FORCE      2.713E+03   AT NODE        250   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      2.713E+03
+ LARGEST INCREMENT OF DISP.        -2.825E-15   AT NODE         12   DOF  1
+   INSTANCE: PIPE_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -7.399E-15   AT NODE          4   DOF  1
+   INSTANCE: PIPE_INST                                                                       
+          FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND SMALL MAGNITUDE
+           OF THE INCREMENT OF DISPLACEMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   5.725E-18
+          TIME INCREMENT MAY NOW INCREASE TO     15.2    
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED   7.61    ,  FRACTION OF STEP COMPLETED  1.614E-08
+ STEP TIME COMPLETED        15.3    ,  TOTAL TIME COMPLETED        1.728E+05
+
+
+  INCREMENT    27 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT   15.2    
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  7ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      6.451E+09   TIME AVG. FORCE       6.451E+09
+ LARGEST SCALED RESIDUAL FORCE      8.551E+03   AT NODE        250   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      8.551E+03
+ LARGEST INCREMENT OF DISP.        -4.671E-15   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -5.616E-15   AT NODE         24   DOF  1
+   INSTANCE: PIPE_INST                                                                       
+          FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND SMALL MAGNITUDE
+           OF THE INCREMENT OF DISPLACEMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   1.790E-17
+          TIME INCREMENT MAY NOW INCREASE TO     30.4    
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED   15.2    ,  FRACTION OF STEP COMPLETED  3.223E-08
+ STEP TIME COMPLETED        30.5    ,  TOTAL TIME COMPLETED        1.728E+05
+
+
+  INCREMENT    28 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT   30.4    
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  10ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      6.451E+09   TIME AVG. FORCE       6.451E+09
+ LARGEST SCALED RESIDUAL FORCE      2.289E+04   AT NODE        250   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      2.289E+04
+ LARGEST INCREMENT OF DISP.        -9.341E-15   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        2.396E-15   AT NODE         44   DOF  1
+   INSTANCE: PIPE_INST                                                                       
+          FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND SMALL MAGNITUDE
+           OF THE INCREMENT OF DISPLACEMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   4.731E-17
+          TIME INCREMENT MAY NOW INCREASE TO     60.9    
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED   30.4    ,  FRACTION OF STEP COMPLETED  6.441E-08
+ STEP TIME COMPLETED        60.9    ,  TOTAL TIME COMPLETED        1.729E+05
+
+
+  INCREMENT    29 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT   60.9    
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  12ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      6.451E+09   TIME AVG. FORCE       6.451E+09
+ LARGEST SCALED RESIDUAL FORCE      4.961E+04   AT NODE        250   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      4.961E+04
+ LARGEST INCREMENT OF DISP.        -1.868E-14   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -4.857E-15   AT NODE         44   DOF  1
+   INSTANCE: PIPE_INST                                                                       
+          FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND SMALL MAGNITUDE
+           OF THE INCREMENT OF DISPLACEMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   1.009E-16
+          TIME INCREMENT MAY NOW INCREASE TO     122.    
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED   60.9    ,  FRACTION OF STEP COMPLETED  1.288E-07
+ STEP TIME COMPLETED        122.    ,  TOTAL TIME COMPLETED        1.729E+05
+
+
+  INCREMENT    30 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT   122.    
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  8ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      6.450E+09   TIME AVG. FORCE       6.451E+09
+ LARGEST SCALED RESIDUAL FORCE      8.737E+04   AT NODE        250   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      8.737E+04
+ LARGEST INCREMENT OF DISP.        -3.734E-14   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        9.216E-16   AT NODE         44   DOF  1
+   INSTANCE: PIPE_INST                                                                       
+          FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND SMALL MAGNITUDE
+           OF THE INCREMENT OF DISPLACEMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   1.740E-16
+          TIME INCREMENT MAY NOW INCREASE TO     244.    
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED   122.    ,  FRACTION OF STEP COMPLETED  2.575E-07
+ STEP TIME COMPLETED        244.    ,  TOTAL TIME COMPLETED        1.731E+05
+
+
+  INCREMENT    31 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT   244.    
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  12ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      6.450E+09   TIME AVG. FORCE       6.451E+09
+ LARGEST SCALED RESIDUAL FORCE      1.369E+05   AT NODE        250   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      1.369E+05
+ LARGEST INCREMENT OF DISP.        -7.467E-14   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -2.336E-15   AT NODE         44   DOF  1
+   INSTANCE: PIPE_INST                                                                       
+          FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND SMALL MAGNITUDE
+           OF THE INCREMENT OF DISPLACEMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   2.663E-16
+          TIME INCREMENT MAY NOW INCREASE TO     487.    
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED   244.    ,  FRACTION OF STEP COMPLETED  5.149E-07
+ STEP TIME COMPLETED        487.    ,  TOTAL TIME COMPLETED        1.733E+05
+
+
+  INCREMENT    32 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT   487.    
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  8ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      6.450E+09   TIME AVG. FORCE       6.451E+09
+ LARGEST SCALED RESIDUAL FORCE      2.239E+05   AT NODE        250   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      2.239E+05
+ LARGEST INCREMENT OF DISP.        -1.493E-13   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        8.095E-16   AT NODE         44   DOF  1
+   INSTANCE: PIPE_INST                                                                       
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   4.303E-16
+          TIME INCREMENT MAY NOW INCREASE TO     974.    
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED   487.    ,  FRACTION OF STEP COMPLETED  1.030E-06
+ STEP TIME COMPLETED        974.    ,  TOTAL TIME COMPLETED        1.738E+05
+
+
+  INCREMENT    33 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT   974.    
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  7ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      6.449E+09   TIME AVG. FORCE       6.451E+09
+ LARGEST SCALED RESIDUAL FORCE      4.256E+05   AT NODE        250   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      4.256E+05
+ LARGEST INCREMENT OF DISP.        -2.985E-13   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -7.217E-15   AT NODE          8   DOF  1
+   INSTANCE: PIPE_INST                                                                       
+          FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND SMALL MAGNITUDE
+           OF THE INCREMENT OF DISPLACEMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   8.233E-16
+          TIME INCREMENT MAY NOW INCREASE TO    1.651E+03
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED   974.    ,  FRACTION OF STEP COMPLETED  2.060E-06
+ STEP TIME COMPLETED       1.949E+03,  TOTAL TIME COMPLETED        1.748E+05
+
+
+  INCREMENT    34 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.651E+03
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  6ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      6.447E+09   TIME AVG. FORCE       6.450E+09
+ LARGEST SCALED RESIDUAL FORCE      8.383E+05   AT NODE        250   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      8.383E+05
+ LARGEST INCREMENT OF DISP.        -5.057E-13   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -8.024E-15   AT NODE          4   DOF  1
+   INSTANCE: PIPE_INST                                                                       
+          FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND SMALL MAGNITUDE
+           OF THE INCREMENT OF DISPLACEMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   1.632E-15
+          TIME INCREMENT MAY NOW INCREASE TO    3.600E+03
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.651E+03,  FRACTION OF STEP COMPLETED  3.805E-06
+ STEP TIME COMPLETED       3.600E+03,  TOTAL TIME COMPLETED        1.764E+05
+
+
+  INCREMENT    35 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  3.600E+03
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  10ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      6.443E+09   TIME AVG. FORCE       6.450E+09
+ LARGEST SCALED RESIDUAL FORCE      1.862E+06   AT NODE        250   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      1.862E+06
+ LARGEST INCREMENT OF DISP.        -1.102E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -4.966E-15   AT NODE          8   DOF  1
+   INSTANCE: PIPE_INST                                                                       
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   3.617E-15
+          TIME INCREMENT MAY NOW INCREASE TO    7.200E+03
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  3.600E+03,  FRACTION OF STEP COMPLETED  7.610E-06
+ STEP TIME COMPLETED       7.200E+03,  TOTAL TIME COMPLETED        1.800E+05
+
+
+  INCREMENT    36 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  7.200E+03
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  13ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      6.436E+09   TIME AVG. FORCE       6.450E+09
+ LARGEST SCALED RESIDUAL FORCE      4.207E+06   AT NODE        250   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      4.207E+06
+ LARGEST INCREMENT OF DISP.        -2.202E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        1.146E-15   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   8.153E-15
+          TIME INCREMENT MAY NOW INCREASE TO    1.440E+04
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  7.200E+03,  FRACTION OF STEP COMPLETED  1.522E-05
+ STEP TIME COMPLETED       1.440E+04,  TOTAL TIME COMPLETED        1.872E+05
+
+
+  INCREMENT    37 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.440E+04
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  10ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      6.420E+09   TIME AVG. FORCE       6.449E+09
+ LARGEST SCALED RESIDUAL FORCE      9.273E+06   AT NODE        250   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      9.273E+06
+ LARGEST INCREMENT OF DISP.        -4.402E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        2.496E-15   AT NODE        200   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   1.788E-14
+          TIME INCREMENT MAY NOW INCREASE TO    2.880E+04
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.440E+04,  FRACTION OF STEP COMPLETED  3.044E-05
+ STEP TIME COMPLETED       2.880E+04,  TOTAL TIME COMPLETED        2.016E+05
+
+
+  INCREMENT    38 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  2.880E+04
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  10ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      6.390E+09   TIME AVG. FORCE       6.447E+09
+ LARGEST SCALED RESIDUAL FORCE      1.992E+07   AT NODE        150   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      1.992E+07
+ LARGEST INCREMENT OF DISP.        -8.800E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        5.324E-15   AT NODE        150   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   3.833E-14
+          TIME INCREMENT MAY NOW INCREASE TO    5.760E+04
+          TIME INCREMENT REDUCED TO   2.880E+04 TO MEET NEXT OUTPUT TIME POINT
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  2.880E+04,  FRACTION OF STEP COMPLETED  6.088E-05
+ STEP TIME COMPLETED       5.760E+04,  TOTAL TIME COMPLETED        2.304E+05
+
+
+  INCREMENT    39 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  2.880E+04
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  9ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      6.360E+09   TIME AVG. FORCE       6.445E+09
+ LARGEST SCALED RESIDUAL FORCE      3.078E+07   AT NODE        150   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      3.078E+07
+ LARGEST INCREMENT OF DISP.        -8.792E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        8.199E-15   AT NODE        125   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   5.915E-14
+          TIME INCREMENT MAY NOW INCREASE TO    8.640E+04
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  2.880E+04,  FRACTION OF STEP COMPLETED  9.132E-05
+ STEP TIME COMPLETED       8.640E+04,  TOTAL TIME COMPLETED        2.592E+05
+
+
+  INCREMENT    40 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  8.640E+04
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  7ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      6.270E+09   TIME AVG. FORCE       6.441E+09
+ LARGEST SCALED RESIDUAL FORCE      6.264E+07   AT NODE        125   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      6.264E+07
+ LARGEST INCREMENT OF DISP.        -2.636E-11   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        1.647E-14   AT NODE        125   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  8ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
+
+
+ AVERAGE FORCE                      6.310E+09   TIME AVG. FORCE       6.442E+09
+ LARGEST SCALED RESIDUAL FORCE     -1.870E+06   AT NODE         50   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -1.870E+06
+ LARGEST INCREMENT OF DISP.        -2.029E-11   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        6.073E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND SMALL MAGNITUDE
+           OF THE INCREMENT OF DISPLACEMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   4.283E-11
+          TIME INCREMENT MAY NOW INCREASE TO    1.296E+05
+
+ ITERATION SUMMARY FOR THE INCREMENT:   2 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  2 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  8.640E+04,  FRACTION OF STEP COMPLETED  1.826E-04
+ STEP TIME COMPLETED       1.728E+05,  TOTAL TIME COMPLETED        3.456E+05
+
+
+  INCREMENT    41 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.296E+05
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  11ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      6.223E+09   TIME AVG. FORCE       6.437E+09
+ LARGEST SCALED RESIDUAL FORCE     -3.935E+07   AT NODE        250   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -3.935E+07
+ LARGEST INCREMENT OF DISP.        -3.046E-11   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -3.154E-14   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  6ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
+
+
+ AVERAGE FORCE                      6.230E+09   TIME AVG. FORCE       6.437E+09
+ LARGEST SCALED RESIDUAL FORCE     -3.596E+05   AT NODE        230   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -3.596E+05
+ LARGEST INCREMENT OF DISP.        -2.721E-11   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        3.252E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND SMALL MAGNITUDE
+           OF THE INCREMENT OF DISPLACEMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   2.268E-11
+          TIME INCREMENT MAY NOW INCREASE TO    1.944E+05
+          TIME INCREMENT REDUCED TO   4.320E+04 TO MEET NEXT OUTPUT TIME POINT
+
+ ITERATION SUMMARY FOR THE INCREMENT:   2 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  2 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.296E+05,  FRACTION OF STEP COMPLETED  3.196E-04
+ STEP TIME COMPLETED       3.024E+05,  TOTAL TIME COMPLETED        4.752E+05
+
+
+  INCREMENT    42 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  4.320E+04
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  8ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      6.203E+09   TIME AVG. FORCE       6.431E+09
+ LARGEST SCALED RESIDUAL FORCE      3.861E+06   AT NODE        229   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      3.861E+06
+ LARGEST INCREMENT OF DISP.        -9.070E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        1.007E-15   AT NODE         44   DOF  1
+   INSTANCE: PIPE_INST                                                                       
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   4.576E-15
+          TIME INCREMENT MAY NOW INCREASE TO    3.456E+05
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  4.320E+04,  FRACTION OF STEP COMPLETED  3.653E-04
+ STEP TIME COMPLETED       3.456E+05,  TOTAL TIME COMPLETED        5.184E+05
+
+
+  INCREMENT    43 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  3.456E+05
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  12ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      5.968E+09   TIME AVG. FORCE       6.420E+09
+ LARGEST SCALED RESIDUAL FORCE      6.945E+07   AT NODE        250   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      6.945E+07
+ LARGEST INCREMENT OF DISP.        -7.253E-11   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        3.968E-14   AT NODE        126   DOF  2
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  6ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
+
+
+ AVERAGE FORCE                      6.060E+09   TIME AVG. FORCE       6.423E+09
+ LARGEST SCALED RESIDUAL FORCE     -3.326E+06   AT NODE         50   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -3.326E+06
+ LARGEST INCREMENT OF DISP.        -5.109E-11   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        2.145E-11   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND SMALL MAGNITUDE
+           OF THE INCREMENT OF DISPLACEMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   1.506E-10
+          TIME INCREMENT MAY NOW INCREASE TO    5.184E+05
+
+ ITERATION SUMMARY FOR THE INCREMENT:   2 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  2 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  3.456E+05,  FRACTION OF STEP COMPLETED  7.306E-04
+ STEP TIME COMPLETED       6.912E+05,  TOTAL TIME COMPLETED        8.640E+05
+
+
+  INCREMENT    44 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  5.184E+05
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  8ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      5.827E+09   TIME AVG. FORCE       6.409E+09
+ LARGEST SCALED RESIDUAL FORCE      5.543E+07   AT NODE        228   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      5.543E+07
+ LARGEST INCREMENT OF DISP.        -7.676E-11   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -1.253E-13   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  10ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
+
+
+ AVERAGE FORCE                      5.898E+09   TIME AVG. FORCE       6.411E+09
+ LARGEST SCALED RESIDUAL FORCE     -2.388E+06   AT NODE         50   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -2.388E+06
+ LARGEST INCREMENT OF DISP.        -5.739E-11   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        1.936E-11   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND SMALL MAGNITUDE
+           OF THE INCREMENT OF DISPLACEMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   1.357E-10
+          TIME INCREMENT MAY NOW INCREASE TO    7.776E+05
+          TIME INCREMENT REDUCED TO   1.728E+05 TO MEET NEXT OUTPUT TIME POINT
+
+ ITERATION SUMMARY FOR THE INCREMENT:   2 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  2 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  5.184E+05,  FRACTION OF STEP COMPLETED  1.279E-03
+ STEP TIME COMPLETED       1.210E+06,  TOTAL TIME COMPLETED        1.382E+06
+
+
+  INCREMENT    45 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.728E+05
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  7ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      5.841E+09   TIME AVG. FORCE       6.398E+09
+ LARGEST SCALED RESIDUAL FORCE      8.396E+06   AT NODE        228   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      8.396E+06
+ LARGEST INCREMENT OF DISP.        -1.915E-11   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -1.507E-14   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   1.551E-14
+          TIME INCREMENT MAY NOW INCREASE TO    1.382E+06
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.728E+05,  FRACTION OF STEP COMPLETED  1.461E-03
+ STEP TIME COMPLETED       1.382E+06,  TOTAL TIME COMPLETED        1.555E+06
+
+
+  INCREMENT    46 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.382E+06
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  12ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      5.386E+09   TIME AVG. FORCE       6.376E+09
+ LARGEST SCALED RESIDUAL FORCE      1.540E+08   AT NODE        150   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      1.540E+08
+ LARGEST INCREMENT OF DISP.        -1.531E-10   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        1.047E-13   AT NODE        126   DOF  2
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  6ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
+
+
+ AVERAGE FORCE                      5.638E+09   TIME AVG. FORCE       6.381E+09
+ LARGEST SCALED RESIDUAL FORCE     -1.082E+07   AT NODE         50   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -1.082E+07
+ LARGEST INCREMENT OF DISP.        -7.951E-11   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        7.361E-11   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND SMALL MAGNITUDE
+           OF THE INCREMENT OF DISPLACEMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   5.158E-10
+          TIME INCREMENT MAY NOW INCREASE TO    2.074E+06
+
+ ITERATION SUMMARY FOR THE INCREMENT:   2 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  2 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.382E+06,  FRACTION OF STEP COMPLETED  2.922E-03
+ STEP TIME COMPLETED       2.765E+06,  TOTAL TIME COMPLETED        2.938E+06
+
+
+  INCREMENT    47 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  2.074E+06
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  12ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      5.343E+09   TIME AVG. FORCE       6.359E+09
+ LARGEST SCALED RESIDUAL FORCE      1.126E+09   AT NODE        250   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      1.126E+09
+ LARGEST INCREMENT OF DISP.        -1.208E-10   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -1.542E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  8ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
+
+
+ AVERAGE FORCE                      5.431E+09   TIME AVG. FORCE       6.361E+09
+ LARGEST SCALED RESIDUAL FORCE     -3.672E+06   AT NODE         50   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -3.672E+06
+ LARGEST INCREMENT OF DISP.        -8.151E-11   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        3.930E-11   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND SMALL MAGNITUDE
+           OF THE INCREMENT OF DISPLACEMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   2.770E-10
+          TIME INCREMENT MAY NOW INCREASE TO    3.110E+06
+          TIME INCREMENT REDUCED TO   6.912E+05 TO MEET NEXT OUTPUT TIME POINT
+
+ ITERATION SUMMARY FOR THE INCREMENT:   2 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  2 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  2.074E+06,  FRACTION OF STEP COMPLETED  5.114E-03
+ STEP TIME COMPLETED       4.838E+06,  TOTAL TIME COMPLETED        5.011E+06
+
+
+  INCREMENT    48 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  6.912E+05
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  8ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      5.355E+09   TIME AVG. FORCE       6.340E+09
+ LARGEST SCALED RESIDUAL FORCE      5.866E+07   AT NODE        250   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      5.866E+07
+ LARGEST INCREMENT OF DISP.        -2.722E-11   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -4.481E-14   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  11ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
+
+
+ AVERAGE FORCE                      5.367E+09   TIME AVG. FORCE       6.340E+09
+ LARGEST SCALED RESIDUAL FORCE     -2.872E+05   AT NODE         50   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -2.872E+05
+ LARGEST INCREMENT OF DISP.        -2.452E-11   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        2.699E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND SMALL MAGNITUDE
+           OF THE INCREMENT OF DISPLACEMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   1.897E-11
+          TIME INCREMENT MAY NOW INCREASE TO    5.530E+06
+
+ ITERATION SUMMARY FOR THE INCREMENT:   2 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  2 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  6.912E+05,  FRACTION OF STEP COMPLETED  5.845E-03
+ STEP TIME COMPLETED       5.530E+06,  TOTAL TIME COMPLETED        5.702E+06
+
+
+  INCREMENT    49 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  5.530E+06
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  7ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.868E+09   TIME AVG. FORCE       6.310E+09
+ LARGEST SCALED RESIDUAL FORCE      1.003E+08   AT NODE         50   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      1.003E+08
+ LARGEST INCREMENT OF DISP.        -1.961E-10   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        1.705E-14   AT NODE         25   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  8ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
+
+
+ AVERAGE FORCE                      5.173E+09   TIME AVG. FORCE       6.317E+09
+ LARGEST SCALED RESIDUAL FORCE     -1.558E+07   AT NODE         28   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -1.558E+07
+ LARGEST INCREMENT OF DISP.        -9.477E-11   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        1.013E-10   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND SMALL MAGNITUDE
+           OF THE INCREMENT OF DISPLACEMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   7.070E-10
+          TIME INCREMENT MAY NOW INCREASE TO    8.294E+06
+
+ ITERATION SUMMARY FOR THE INCREMENT:   2 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  2 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  5.530E+06,  FRACTION OF STEP COMPLETED  1.169E-02
+ STEP TIME COMPLETED       1.106E+07,  TOTAL TIME COMPLETED        1.123E+07
+
+
+  INCREMENT    50 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  8.294E+06
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  12ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.861E+09   TIME AVG. FORCE       6.288E+09
+ LARGEST SCALED RESIDUAL FORCE      1.509E+09   AT NODE        250   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      1.509E+09
+ LARGEST INCREMENT OF DISP.        -1.438E-10   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -1.687E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  9ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
+
+
+ AVERAGE FORCE                      5.001E+09   TIME AVG. FORCE       6.290E+09
+ LARGEST SCALED RESIDUAL FORCE     -4.388E+06   AT NODE         77   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -4.388E+06
+ LARGEST INCREMENT OF DISP.        -8.719E-11   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        5.665E-11   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND SMALL MAGNITUDE
+           OF THE INCREMENT OF DISPLACEMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   3.957E-10
+          TIME INCREMENT MAY NOW INCREASE TO    1.244E+07
+          TIME INCREMENT REDUCED TO   2.765E+06 TO MEET NEXT OUTPUT TIME POINT
+
+ ITERATION SUMMARY FOR THE INCREMENT:   2 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  2 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  8.294E+06,  FRACTION OF STEP COMPLETED  2.046E-02
+ STEP TIME COMPLETED       1.935E+07,  TOTAL TIME COMPLETED        1.953E+07
+
+
+  INCREMENT    51 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  2.765E+06
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  12ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.939E+09   TIME AVG. FORCE       6.264E+09
+ LARGEST SCALED RESIDUAL FORCE      4.525E+07   AT NODE        250   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      4.525E+07
+ LARGEST INCREMENT OF DISP.        -2.913E-11   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -6.991E-14   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  8ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
+
+
+ AVERAGE FORCE                      4.949E+09   TIME AVG. FORCE       6.264E+09
+ LARGEST SCALED RESIDUAL FORCE     -2.787E+05   AT NODE         50   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -2.787E+05
+ LARGEST INCREMENT OF DISP.        -2.590E-11   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        3.234E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND SMALL MAGNITUDE
+           OF THE INCREMENT OF DISPLACEMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   2.240E-11
+          TIME INCREMENT MAY NOW INCREASE TO    1.555E+07
+          TIME INCREMENT REDUCED TO   9.418E+06 TO MEET NEXT OUTPUT TIME POINT
+
+ ITERATION SUMMARY FOR THE INCREMENT:   2 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  2 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  2.765E+06,  FRACTION OF STEP COMPLETED  2.338E-02
+ STEP TIME COMPLETED       2.212E+07,  TOTAL TIME COMPLETED        2.229E+07
+
+
+  INCREMENT    52 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  9.418E+06
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  10ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.771E+09   TIME AVG. FORCE       6.235E+09
+ LARGEST SCALED RESIDUAL FORCE      3.860E+07   AT NODE        125   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      3.860E+07
+ LARGEST INCREMENT OF DISP.        -8.821E-11   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        1.117E-14   AT NODE         71   DOF  2
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  7ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
+
+
+ AVERAGE FORCE                      4.854E+09   TIME AVG. FORCE       6.237E+09
+ LARGEST SCALED RESIDUAL FORCE     -5.292E+06   AT NODE         31   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -5.292E+06
+ LARGEST INCREMENT OF DISP.        -5.586E-11   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        3.236E-11   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND SMALL MAGNITUDE
+           OF THE INCREMENT OF DISPLACEMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   2.236E-10
+          TIME INCREMENT MAY NOW INCREASE TO    1.555E+07
+
+ ITERATION SUMMARY FOR THE INCREMENT:   2 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  2 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  9.418E+06,  FRACTION OF STEP COMPLETED  3.333E-02
+ STEP TIME COMPLETED       3.154E+07,  TOTAL TIME COMPLETED        3.171E+07
+
+
+  INCREMENT    53 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.555E+07
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  12ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.690E+09   TIME AVG. FORCE       6.208E+09
+ LARGEST SCALED RESIDUAL FORCE      4.590E+07   AT NODE        250   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      4.590E+07
+ LARGEST INCREMENT OF DISP.        -9.238E-11   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -2.268E-13   AT NODE         25   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  11ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
+
+
+ AVERAGE FORCE                      4.764E+09   TIME AVG. FORCE       6.209E+09
+ LARGEST SCALED RESIDUAL FORCE     -2.967E+06   AT NODE        103   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -2.967E+06
+ LARGEST INCREMENT OF DISP.        -5.976E-11   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        3.262E-11   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND SMALL MAGNITUDE
+           OF THE INCREMENT OF DISPLACEMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   2.233E-10
+
+ ITERATION SUMMARY FOR THE INCREMENT:   2 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  2 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.555E+07,  FRACTION OF STEP COMPLETED  4.977E-02
+ STEP TIME COMPLETED       4.709E+07,  TOTAL TIME COMPLETED        4.726E+07
+
+
+  INCREMENT    54 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.555E+07
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  9ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.667E+09   TIME AVG. FORCE       6.181E+09
+ LARGEST SCALED RESIDUAL FORCE      1.834E+07   AT NODE        102   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      1.834E+07
+ LARGEST INCREMENT OF DISP.        -5.983E-11   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -7.302E-14   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   3.586E-14
+          TIME INCREMENT REDUCED TO   4.320E+05 TO MEET NEXT OUTPUT TIME POINT
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.555E+07,  FRACTION OF STEP COMPLETED  6.621E-02
+ STEP TIME COMPLETED       6.264E+07,  TOTAL TIME COMPLETED        6.281E+07
+
+
+  INCREMENT    55 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  4.320E+05
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  7ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.661E+09   TIME AVG. FORCE       6.153E+09
+ LARGEST SCALED RESIDUAL FORCE      2.952E+07   AT NODE        250   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      2.952E+07
+ LARGEST INCREMENT OF DISP.        -1.653E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        3.299E-14   AT NODE        104   DOF  2
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND SMALL MAGNITUDE
+           OF THE INCREMENT OF DISPLACEMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   5.976E-14
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  4.320E+05,  FRACTION OF STEP COMPLETED  6.667E-02
+ STEP TIME COMPLETED       6.307E+07,  TOTAL TIME COMPLETED        6.324E+07
+
+
+  INCREMENT    56 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.555E+07
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  10ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.580E+09   TIME AVG. FORCE       6.125E+09
+ LARGEST SCALED RESIDUAL FORCE      1.836E+08   AT NODE        175   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      1.836E+08
+ LARGEST INCREMENT OF DISP.        -5.949E-11   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -1.039E-12   AT NODE        100   DOF  2
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  10ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
+
+
+ AVERAGE FORCE                      4.644E+09   TIME AVG. FORCE       6.126E+09
+ LARGEST SCALED RESIDUAL FORCE     -4.174E+07   AT NODE         75   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -4.174E+07
+ LARGEST INCREMENT OF DISP.        -2.531E-11   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        3.418E-11   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  10ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     3
+
+
+ AVERAGE FORCE                      4.621E+09   TIME AVG. FORCE       6.126E+09
+ LARGEST SCALED RESIDUAL FORCE     -1.478E+08   AT NODE         57   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -1.478E+08
+ LARGEST INCREMENT OF DISP.        -2.866E-11   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -5.484E-12   AT NODE         75   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  10ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     4
+
+
+ AVERAGE FORCE                      4.633E+09   TIME AVG. FORCE       6.126E+09
+ LARGEST SCALED RESIDUAL FORCE     -4.602E+07   AT NODE         75   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -4.602E+07
+ LARGEST INCREMENT OF DISP.        -2.968E-11   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        6.444E-12   AT NODE         75   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  6ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     5
+
+
+ AVERAGE FORCE                      4.613E+09   TIME AVG. FORCE       6.125E+09
+ LARGEST SCALED RESIDUAL FORCE     -1.248E+08   AT NODE         81   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -1.248E+08
+ LARGEST INCREMENT OF DISP.        -2.794E-11   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -9.103E-12   AT NODE         75   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  11ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     6
+
+
+ AVERAGE FORCE                      4.638E+09   TIME AVG. FORCE       6.126E+09
+ LARGEST SCALED RESIDUAL FORCE      7.148E+07   AT NODE         27   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      7.148E+07
+ LARGEST INCREMENT OF DISP.        -3.028E-11   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        1.280E-11   AT NODE         75   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  10ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     7
+
+
+ AVERAGE FORCE                      4.580E+09   TIME AVG. FORCE       6.125E+09
+ LARGEST SCALED RESIDUAL FORCE      1.897E+08   AT NODE         50   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      1.897E+08
+ LARGEST INCREMENT OF DISP.        -5.702E-11   AT NODE         25   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -6.556E-11   AT NODE         25   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
  
 
- ***ERROR: TOO MANY ATTEMPTS MADE FOR THIS INCREMENT
+ ***NOTE: THE SOLUTION APPEARS TO BE DIVERGING. CONVERGENCE IS JUDGED UNLIKELY.
+
+
+  INCREMENT    56 STARTS. ATTEMPT NUMBER  2, TIME INCREMENT  3.888E+06
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  11ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.641E+09   TIME AVG. FORCE       6.126E+09
+ LARGEST SCALED RESIDUAL FORCE      6.859E+07   AT NODE        200   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      6.859E+07
+ LARGEST INCREMENT OF DISP.        -1.487E-11   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -2.575E-13   AT NODE        100   DOF  2
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  10ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
+
+
+ AVERAGE FORCE                      4.654E+09   TIME AVG. FORCE       6.126E+09
+ LARGEST SCALED RESIDUAL FORCE     -3.358E+07   AT NODE         50   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -3.358E+07
+ LARGEST INCREMENT OF DISP.        -7.654E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        7.213E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  8ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     3
+
+
+ AVERAGE FORCE                      4.645E+09   TIME AVG. FORCE       6.126E+09
+ LARGEST SCALED RESIDUAL FORCE     -6.913E+07   AT NODE         10   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -6.913E+07
+ LARGEST INCREMENT OF DISP.        -8.587E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -9.331E-13   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  7ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     4
+
+
+ AVERAGE FORCE                      4.648E+09   TIME AVG. FORCE       6.126E+09
+ LARGEST SCALED RESIDUAL FORCE     -2.839E+07   AT NODE         50   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -2.839E+07
+ LARGEST INCREMENT OF DISP.        -8.591E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        6.469E-13   AT NODE         50   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND SMALL MAGNITUDE
+           OF THE INCREMENT OF DISPLACEMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   4.273E-11
+          TIME INCREMENT MAY NOW INCREASE TO    5.832E+06
+
+ ITERATION SUMMARY FOR THE INCREMENT:   4 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  4 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  3.888E+06,  FRACTION OF STEP COMPLETED  7.078E-02
+ STEP TIME COMPLETED       6.696E+07,  TOTAL TIME COMPLETED        6.713E+07
+
+
+  INCREMENT    57 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  5.832E+06
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  8ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.626E+09   TIME AVG. FORCE       6.100E+09
+ LARGEST SCALED RESIDUAL FORCE     -1.001E+08   AT NODE         50   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -1.001E+08
+ LARGEST INCREMENT OF DISP.        -1.294E-11   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -5.144E-14   AT NODE         25   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  10ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
+
+
+ AVERAGE FORCE                      4.631E+09   TIME AVG. FORCE       6.100E+09
+ LARGEST SCALED RESIDUAL FORCE     -1.456E+07   AT NODE          9   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -1.456E+07
+ LARGEST INCREMENT OF DISP.        -1.173E-11   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        1.206E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND SMALL MAGNITUDE
+           OF THE INCREMENT OF DISPLACEMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   8.048E-12
+          TIME INCREMENT MAY NOW INCREASE TO    8.748E+06
+
+ ITERATION SUMMARY FOR THE INCREMENT:   2 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  2 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  5.832E+06,  FRACTION OF STEP COMPLETED  7.694E-02
+ STEP TIME COMPLETED       7.279E+07,  TOTAL TIME COMPLETED        7.296E+07
+
+
+  INCREMENT    58 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  8.748E+06
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  10ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.603E+09   TIME AVG. FORCE       6.074E+09
+ LARGEST SCALED RESIDUAL FORCE      4.395E+07   AT NODE         50   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      4.395E+07
+ LARGEST INCREMENT OF DISP.        -1.760E-11   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        4.957E-14   AT NODE         50   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  12ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
+
+
+ AVERAGE FORCE                      4.613E+09   TIME AVG. FORCE       6.074E+09
+ LARGEST SCALED RESIDUAL FORCE     -2.067E+07   AT NODE         50   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -2.067E+07
+ LARGEST INCREMENT OF DISP.        -1.547E-11   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        2.124E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND SMALL MAGNITUDE
+           OF THE INCREMENT OF DISPLACEMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   1.434E-11
+          TIME INCREMENT MAY NOW INCREASE TO    1.312E+07
+
+ ITERATION SUMMARY FOR THE INCREMENT:   2 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  2 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  8.748E+06,  FRACTION OF STEP COMPLETED  8.619E-02
+ STEP TIME COMPLETED       8.154E+07,  TOTAL TIME COMPLETED        8.171E+07
+
+
+  INCREMENT    59 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.312E+07
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  8ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.580E+09   TIME AVG. FORCE       6.049E+09
+ LARGEST SCALED RESIDUAL FORCE     -6.762E+07   AT NODE         50   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -6.762E+07
+ LARGEST INCREMENT OF DISP.        -2.321E-11   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -7.996E-14   AT NODE         25   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  10ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
+
+
+ AVERAGE FORCE                      4.584E+09   TIME AVG. FORCE       6.049E+09
+ LARGEST SCALED RESIDUAL FORCE      1.366E+07   AT NODE         25   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      1.366E+07
+ LARGEST INCREMENT OF DISP.        -1.956E-11   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        3.654E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND SMALL MAGNITUDE
+           OF THE INCREMENT OF DISPLACEMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   2.465E-11
+          TIME INCREMENT MAY NOW INCREASE TO    1.555E+07
+
+ ITERATION SUMMARY FOR THE INCREMENT:   2 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  2 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.312E+07,  FRACTION OF STEP COMPLETED  0.100    
+ STEP TIME COMPLETED       9.466E+07,  TOTAL TIME COMPLETED        9.483E+07
+
+
+  INCREMENT    60 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.555E+07
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  7ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.553E+09   TIME AVG. FORCE       6.024E+09
+ LARGEST SCALED RESIDUAL FORCE      6.153E+07   AT NODE         25   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      6.153E+07
+ LARGEST INCREMENT OF DISP.        -2.318E-11   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        6.982E-14   AT NODE         25   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  7ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
+
+
+ AVERAGE FORCE                      4.557E+09   TIME AVG. FORCE       6.024E+09
+ LARGEST SCALED RESIDUAL FORCE     -2.154E+07   AT NODE         50   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -2.154E+07
+ LARGEST INCREMENT OF DISP.        -1.980E-11   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        6.778E-12   AT NODE         25   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND SMALL MAGNITUDE
+           OF THE INCREMENT OF DISPLACEMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   2.263E-11
+
+ ITERATION SUMMARY FOR THE INCREMENT:   2 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  2 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.555E+07,  FRACTION OF STEP COMPLETED  0.116    
+ STEP TIME COMPLETED       1.102E+08,  TOTAL TIME COMPLETED        1.104E+08
+
+
+  INCREMENT    61 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.555E+07
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  12ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.533E+09   TIME AVG. FORCE       6.000E+09
+ LARGEST SCALED RESIDUAL FORCE     -7.263E+07   AT NODE         50   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -7.263E+07
+ LARGEST INCREMENT OF DISP.        -1.980E-11   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -8.363E-14   AT NODE         25   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  7ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
+
+
+ AVERAGE FORCE                      4.531E+09   TIME AVG. FORCE       6.000E+09
+ LARGEST SCALED RESIDUAL FORCE      2.264E+07   AT NODE         25   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      2.264E+07
+ LARGEST INCREMENT OF DISP.        -1.693E-11   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -1.129E-11   AT NODE         25   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND SMALL MAGNITUDE
+           OF THE INCREMENT OF DISPLACEMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   1.920E-11
+          TIME INCREMENT REDUCED TO   3.780E+05 TO MEET NEXT OUTPUT TIME POINT
+
+ ITERATION SUMMARY FOR THE INCREMENT:   2 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  2 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.555E+07,  FRACTION OF STEP COMPLETED  0.133    
+ STEP TIME COMPLETED       1.258E+08,  TOTAL TIME COMPLETED        1.259E+08
+
+
+  INCREMENT    62 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  3.780E+05
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  8ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.532E+09   TIME AVG. FORCE       5.976E+09
+ LARGEST SCALED RESIDUAL FORCE      4.803E+07   AT NODE         25   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      4.803E+07
+ LARGEST INCREMENT OF DISP.        -4.099E-13   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        5.937E-14   AT NODE         25   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  10ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
+
+
+ AVERAGE FORCE                      4.538E+09   TIME AVG. FORCE       5.976E+09
+ LARGEST SCALED RESIDUAL FORCE     -2.094E+07   AT NODE         25   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -2.094E+07
+ LARGEST INCREMENT OF DISP.        -4.144E-13   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        5.045E-13   AT NODE         25   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND SMALL MAGNITUDE
+           OF THE INCREMENT OF DISPLACEMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   7.944E-13
+
+ ITERATION SUMMARY FOR THE INCREMENT:   2 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  2 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  3.780E+05,  FRACTION OF STEP COMPLETED  0.133    
+ STEP TIME COMPLETED       1.261E+08,  TOTAL TIME COMPLETED        1.263E+08
+
+
+  INCREMENT    63 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.555E+07
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  7ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.531E+09   TIME AVG. FORCE       5.953E+09
+ LARGEST SCALED RESIDUAL FORCE     -1.631E+09   AT NODE         25   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -1.631E+09
+ LARGEST INCREMENT OF DISP.        -1.713E-11   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -4.042E-12   AT NODE         25   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  9ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
+
+
+ AVERAGE FORCE                      4.486E+09   TIME AVG. FORCE       5.952E+09
+ LARGEST SCALED RESIDUAL FORCE      1.711E+09   AT NODE         34   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      1.711E+09
+ LARGEST INCREMENT OF DISP.        -4.104E-11   AT NODE         25   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -5.325E-11   AT NODE         25   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  10ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     3
+
+
+ AVERAGE FORCE                      4.709E+09   TIME AVG. FORCE       5.956E+09
+ LARGEST SCALED RESIDUAL FORCE     -2.220E+10   AT NODE         34   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -2.220E+10
+ LARGEST INCREMENT OF DISP.         6.139E-10   AT NODE         25   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        6.550E-10   AT NODE         25   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  7ms
+ 
+
+ ***WARNING: THE SYSTEM MATRIX HAS 1 NEGATIVE EIGENVALUES.
+
+     NEGATIVE EIGENVALUES MEAN THAT THE SYSTEM MATRIX IS NOT 
+     POSITIVE DEFINITE:
+     FOR EXAMPLE, A BIFURCATION (BUCKLING) LOAD MAY HAVE BEEN EXCEEDED.
+
+ ***WARNING: PROGRAM IS ASKED TO INVERT A SINGULAR MATRIX
+
+ ***WARNING: PROGRAM IS ASKED TO INVERT A SINGULAR MATRIX
+
+ ***WARNING: PROGRAM IS ASKED TO INVERT A SINGULAR MATRIX
+
+ ***WARNING: PROGRAM IS ASKED TO INVERT A SINGULAR MATRIX
+
+ ***WARNING: PROGRAM IS ASKED TO INVERT A SINGULAR MATRIX
+
+ ***WARNING: PROGRAM IS ASKED TO INVERT A SINGULAR MATRIX
+
+ ***WARNING: PROGRAM IS ASKED TO INVERT A SINGULAR MATRIX
+
+ ***WARNING: PROGRAM IS ASKED TO INVERT A SINGULAR MATRIX
+
+ ***WARNING: PROGRAM IS ASKED TO INVERT A SINGULAR MATRIX
+
+ ***WARNING: PROGRAM IS ASKED TO INVERT A SINGULAR MATRIX
+
+ ***WARNING: Creep properties are unrealistic at one or more integration points 
+             in 2 elements. Creep strain rate and/or strain energy rate density 
+             cannot be calculated. The elements have been identified in element 
+             set WarnElemCreepPropStep7Inc63.
+
+
+  INCREMENT    63 STARTS. ATTEMPT NUMBER  2, TIME INCREMENT  3.888E+06
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  7ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.535E+09   TIME AVG. FORCE       5.953E+09
+ LARGEST SCALED RESIDUAL FORCE     -4.338E+08   AT NODE         25   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -4.338E+08
+ LARGEST INCREMENT OF DISP.        -4.283E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -1.042E-12   AT NODE         25   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  7ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
+
+
+ AVERAGE FORCE                      4.524E+09   TIME AVG. FORCE       5.953E+09
+ LARGEST SCALED RESIDUAL FORCE      3.467E+08   AT NODE          9   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      3.467E+08
+ LARGEST INCREMENT OF DISP.        -6.417E-12   AT NODE         25   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -9.439E-12   AT NODE         25   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  11ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     3
+
+
+ AVERAGE FORCE                      4.504E+09   TIME AVG. FORCE       5.953E+09
+ LARGEST SCALED RESIDUAL FORCE     -2.039E+09   AT NODE          9   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -2.039E+09
+ LARGEST INCREMENT OF DISP.         3.242E-11   AT NODE         25   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        3.883E-11   AT NODE         25   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  10ms
+
+ ***WARNING: PROGRAM IS ASKED TO INVERT A SINGULAR MATRIX
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     4
+
+
+ AVERAGE FORCE                      4.339E+09   TIME AVG. FORCE       5.950E+09
+ LARGEST SCALED RESIDUAL FORCE      7.190E+10   AT NODE          9   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      7.190E+10
+ LARGEST INCREMENT OF DISP.        -1.393E-09   AT NODE         25   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -1.425E-09   AT NODE         25   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+
+ ***NOTE: THE SOLUTION APPEARS TO BE DIVERGING. CONVERGENCE IS JUDGED UNLIKELY.
+
+
+  INCREMENT    63 STARTS. ATTEMPT NUMBER  3, TIME INCREMENT  9.720E+05
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  6ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.535E+09   TIME AVG. FORCE       5.953E+09
+ LARGEST SCALED RESIDUAL FORCE     -1.344E+08   AT NODE         25   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -1.344E+08
+ LARGEST INCREMENT OF DISP.        -1.071E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -2.919E-13   AT NODE         25   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  6ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
+
+
+ AVERAGE FORCE                      4.530E+09   TIME AVG. FORCE       5.953E+09
+ LARGEST SCALED RESIDUAL FORCE     -4.291E+07   AT NODE          7   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -4.291E+07
+ LARGEST INCREMENT OF DISP.        -1.055E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -1.761E-12   AT NODE         25   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  12ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     3
+
+
+ AVERAGE FORCE                      4.535E+09   TIME AVG. FORCE       5.953E+09
+ LARGEST SCALED RESIDUAL FORCE     -1.250E+08   AT NODE          9   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -1.250E+08
+ LARGEST INCREMENT OF DISP.         2.260E-12   AT NODE         25   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        3.297E-12   AT NODE         25   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  8ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     4
+
+
+ AVERAGE FORCE                      4.524E+09   TIME AVG. FORCE       5.953E+09
+ LARGEST SCALED RESIDUAL FORCE      4.110E+08   AT NODE          9   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      4.110E+08
+ LARGEST INCREMENT OF DISP.        -7.530E-12   AT NODE         25   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -9.790E-12   AT NODE         25   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+
+ ***NOTE: THE SOLUTION APPEARS TO BE DIVERGING. CONVERGENCE IS JUDGED UNLIKELY.
+
+
+  INCREMENT    63 STARTS. ATTEMPT NUMBER  4, TIME INCREMENT  2.430E+05
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  11ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.534E+09   TIME AVG. FORCE       5.953E+09
+ LARGEST SCALED RESIDUAL FORCE     -5.864E+07   AT NODE         25   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -5.864E+07
+ LARGEST INCREMENT OF DISP.        -2.679E-13   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -1.044E-13   AT NODE         25   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  9ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
+
+
+ AVERAGE FORCE                      4.536E+09   TIME AVG. FORCE       5.953E+09
+ LARGEST SCALED RESIDUAL FORCE      3.112E+07   AT NODE         25   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      3.112E+07
+ LARGEST INCREMENT OF DISP.        -2.658E-13   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -3.886E-13   AT NODE         25   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  12ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     3
+
+
+ AVERAGE FORCE                      4.534E+09   TIME AVG. FORCE       5.953E+09
+ LARGEST SCALED RESIDUAL FORCE     -3.149E+07   AT NODE         25   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -3.149E+07
+ LARGEST INCREMENT OF DISP.        -2.664E-13   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        4.292E-13   AT NODE         25   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  9ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     4
+
+
+ AVERAGE FORCE                      4.534E+09   TIME AVG. FORCE       5.953E+09
+ LARGEST SCALED RESIDUAL FORCE      3.195E+07   AT NODE         25   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      3.195E+07
+ LARGEST INCREMENT OF DISP.        -2.868E-13   AT NODE         25   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -4.770E-13   AT NODE         25   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+
+ ***NOTE: THE SOLUTION APPEARS TO BE DIVERGING. CONVERGENCE IS JUDGED UNLIKELY.
+
+
+  INCREMENT    63 STARTS. ATTEMPT NUMBER  5, TIME INCREMENT  6.075E+04
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  12ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.532E+09   TIME AVG. FORCE       5.953E+09
+ LARGEST SCALED RESIDUAL FORCE     -3.601E+07   AT NODE         25   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -3.601E+07
+ LARGEST INCREMENT OF DISP.        -6.722E-14   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -5.754E-14   AT NODE         25   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  7ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
+
+
+ AVERAGE FORCE                      4.535E+09   TIME AVG. FORCE       5.953E+09
+ LARGEST SCALED RESIDUAL FORCE      2.359E+07   AT NODE         25   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      2.359E+07
+ LARGEST INCREMENT OF DISP.        -7.950E-14   AT NODE         25   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -8.546E-14   AT NODE         25   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND SMALL MAGNITUDE
+           OF THE INCREMENT OF DISPLACEMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   1.007E-13
+          TIME INCREMENT MAY NOW INCREASE TO    9.112E+04
+
+ ITERATION SUMMARY FOR THE INCREMENT:   2 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  2 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  6.075E+04,  FRACTION OF STEP COMPLETED  0.133    
+ STEP TIME COMPLETED       1.262E+08,  TOTAL TIME COMPLETED        1.264E+08
+
+
+  INCREMENT    64 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  9.112E+04
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  10ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.533E+09   TIME AVG. FORCE       5.931E+09
+ LARGEST SCALED RESIDUAL FORCE      3.757E+07   AT NODE         25   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      3.757E+07
+ LARGEST INCREMENT OF DISP.        -9.982E-14   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        1.205E-13   AT NODE         25   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  5ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
+
+
+ AVERAGE FORCE                      4.533E+09   TIME AVG. FORCE       5.931E+09
+ LARGEST SCALED RESIDUAL FORCE     -1.779E+07   AT NODE         25   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -1.779E+07
+ LARGEST INCREMENT OF DISP.        -9.993E-14   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        3.564E-14   AT NODE         25   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND SMALL MAGNITUDE
+           OF THE INCREMENT OF DISPLACEMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   1.760E-13
+          TIME INCREMENT MAY NOW INCREASE TO    1.367E+05
+
+ ITERATION SUMMARY FOR THE INCREMENT:   2 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  2 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  9.112E+04,  FRACTION OF STEP COMPLETED  0.133    
+ STEP TIME COMPLETED       1.263E+08,  TOTAL TIME COMPLETED        1.265E+08
+
+
+  INCREMENT    65 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.367E+05
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  10ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.533E+09   TIME AVG. FORCE       5.909E+09
+ LARGEST SCALED RESIDUAL FORCE     -1.439E+07   AT NODE         25   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -1.439E+07
+ LARGEST INCREMENT OF DISP.        -1.496E-13   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -5.814E-14   AT NODE         25   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND SMALL MAGNITUDE
+           OF THE INCREMENT OF DISPLACEMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   6.020E-14
+          TIME INCREMENT MAY NOW INCREASE TO    2.734E+05
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.367E+05,  FRACTION OF STEP COMPLETED  0.134    
+ STEP TIME COMPLETED       1.264E+08,  TOTAL TIME COMPLETED        1.266E+08
+
+
+  INCREMENT    66 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  2.734E+05
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  8ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.531E+09   TIME AVG. FORCE       5.889E+09
+ LARGEST SCALED RESIDUAL FORCE     -6.983E+06   AT NODE         25   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -6.983E+06
+ LARGEST INCREMENT OF DISP.        -2.992E-13   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        4.049E-15   AT NODE         23   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND SMALL MAGNITUDE
+           OF THE INCREMENT OF DISPLACEMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   2.843E-14
+          TIME INCREMENT MAY NOW INCREASE TO    5.468E+05
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  2.734E+05,  FRACTION OF STEP COMPLETED  0.134    
+ STEP TIME COMPLETED       1.267E+08,  TOTAL TIME COMPLETED        1.269E+08
+
+
+  INCREMENT    67 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  5.468E+05
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  10ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.528E+09   TIME AVG. FORCE       5.868E+09
+ LARGEST SCALED RESIDUAL FORCE     -1.587E+06   AT NODE         25   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -1.587E+06
+ LARGEST INCREMENT OF DISP.        -5.983E-13   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        3.334E-15   AT NODE         25   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   5.995E-15
+          TIME INCREMENT MAY NOW INCREASE TO    1.094E+06
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  5.468E+05,  FRACTION OF STEP COMPLETED  0.135    
+ STEP TIME COMPLETED       1.273E+08,  TOTAL TIME COMPLETED        1.274E+08
+
+
+  INCREMENT    68 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.094E+06
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  8ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.526E+09   TIME AVG. FORCE       5.849E+09
+ LARGEST SCALED RESIDUAL FORCE      1.233E+06   AT NODE        150   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      1.233E+06
+ LARGEST INCREMENT OF DISP.        -1.196E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        3.044E-15   AT NODE          4   DOF  1
+   INSTANCE: PIPE_INST                                                                       
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   3.285E-15
+          TIME INCREMENT MAY NOW INCREASE TO    2.187E+06
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.094E+06,  FRACTION OF STEP COMPLETED  0.136    
+ STEP TIME COMPLETED       1.283E+08,  TOTAL TIME COMPLETED        1.285E+08
+
+
+  INCREMENT    69 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  2.187E+06
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  13ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.523E+09   TIME AVG. FORCE       5.829E+09
+ LARGEST SCALED RESIDUAL FORCE      2.551E+06   AT NODE        200   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      2.551E+06
+ LARGEST INCREMENT OF DISP.        -2.392E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -6.055E-15   AT NODE          4   DOF  1
+   INSTANCE: PIPE_INST                                                                       
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   9.389E-15
+          TIME INCREMENT MAY NOW INCREASE TO    4.374E+06
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  2.187E+06,  FRACTION OF STEP COMPLETED  0.138    
+ STEP TIME COMPLETED       1.305E+08,  TOTAL TIME COMPLETED        1.307E+08
+
+
+  INCREMENT    70 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  4.374E+06
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  7ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.515E+09   TIME AVG. FORCE       5.811E+09
+ LARGEST SCALED RESIDUAL FORCE      5.297E+06   AT NODE        250   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      5.297E+06
+ LARGEST INCREMENT OF DISP.        -4.783E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        1.305E-15   AT NODE        271   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   1.337E-14
+          TIME INCREMENT MAY NOW INCREASE TO    8.748E+06
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  4.374E+06,  FRACTION OF STEP COMPLETED  0.143    
+ STEP TIME COMPLETED       1.349E+08,  TOTAL TIME COMPLETED        1.351E+08
+
+
+  INCREMENT    71 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  8.748E+06
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  8ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.506E+09   TIME AVG. FORCE       5.792E+09
+ LARGEST SCALED RESIDUAL FORCE      1.059E+07   AT NODE        250   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      1.059E+07
+ LARGEST INCREMENT OF DISP.        -9.564E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -4.545E-15   AT NODE         45   DOF  2
+   INSTANCE: ROCK_INST                                                                       
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   2.019E-14
+          TIME INCREMENT MAY NOW INCREASE TO    1.555E+07
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  8.748E+06,  FRACTION OF STEP COMPLETED  0.152    
+ STEP TIME COMPLETED       1.437E+08,  TOTAL TIME COMPLETED        1.438E+08
+
+
+  INCREMENT    72 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.555E+07
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  12ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.485E+09   TIME AVG. FORCE       5.774E+09
+ LARGEST SCALED RESIDUAL FORCE      1.950E+07   AT NODE        250   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      1.950E+07
+ LARGEST INCREMENT OF DISP.        -1.700E-11   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -1.324E-14   AT NODE         41   DOF  2
+   INSTANCE: ROCK_INST                                                                       
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   3.735E-14
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.555E+07,  FRACTION OF STEP COMPLETED  0.168    
+ STEP TIME COMPLETED       1.592E+08,  TOTAL TIME COMPLETED        1.594E+08
+
+
+  INCREMENT    73 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.555E+07
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  5ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.463E+09   TIME AVG. FORCE       5.756E+09
+ LARGEST SCALED RESIDUAL FORCE      2.769E+07   AT NODE        250   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      2.769E+07
+ LARGEST INCREMENT OF DISP.        -1.699E-11   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -1.452E-14   AT NODE         39   DOF  2
+   INSTANCE: ROCK_INST                                                                       
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   5.314E-14
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.555E+07,  FRACTION OF STEP COMPLETED  0.185    
+ STEP TIME COMPLETED       1.748E+08,  TOTAL TIME COMPLETED        1.749E+08
+
+
+  INCREMENT    74 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.555E+07
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  6ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.442E+09   TIME AVG. FORCE       5.738E+09
+ LARGEST SCALED RESIDUAL FORCE      3.512E+07   AT NODE        250   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      3.512E+07
+ LARGEST INCREMENT OF DISP.        -1.698E-11   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        8.977E-15   AT NODE        100   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  14ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
+
+
+ AVERAGE FORCE                      4.466E+09   TIME AVG. FORCE       5.739E+09
+ LARGEST SCALED RESIDUAL FORCE     -2.516E+07   AT NODE        150   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -2.516E+07
+ LARGEST INCREMENT OF DISP.        -8.249E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        8.734E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND SMALL MAGNITUDE
+           OF THE INCREMENT OF DISPLACEMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   5.828E-11
+
+ ITERATION SUMMARY FOR THE INCREMENT:   2 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  2 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.555E+07,  FRACTION OF STEP COMPLETED  0.201    
+ STEP TIME COMPLETED       1.903E+08,  TOTAL TIME COMPLETED        1.905E+08
+
+
+  INCREMENT    75 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.555E+07
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  7ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.460E+09   TIME AVG. FORCE       5.722E+09
+ LARGEST SCALED RESIDUAL FORCE     -1.248E+08   AT NODE        150   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -1.248E+08
+ LARGEST INCREMENT OF DISP.        -8.333E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -1.907E-13   AT NODE        175   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  9ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
+
+
+ AVERAGE FORCE                      4.448E+09   TIME AVG. FORCE       5.721E+09
+ LARGEST SCALED RESIDUAL FORCE     -2.321E+07   AT NODE        107   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -2.321E+07
+ LARGEST INCREMENT OF DISP.        -8.845E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -1.184E-12   AT NODE        125   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND SMALL MAGNITUDE
+           OF THE INCREMENT OF DISPLACEMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   4.476E-12
+
+ ITERATION SUMMARY FOR THE INCREMENT:   2 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  2 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.555E+07,  FRACTION OF STEP COMPLETED  0.218    
+ STEP TIME COMPLETED       2.059E+08,  TOTAL TIME COMPLETED        2.060E+08
+
+
+  INCREMENT    76 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.555E+07
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  5ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.439E+09   TIME AVG. FORCE       5.705E+09
+ LARGEST SCALED RESIDUAL FORCE      6.141E+07   AT NODE        100   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      6.141E+07
+ LARGEST INCREMENT OF DISP.        -8.847E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        3.978E-14   AT NODE        100   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  8ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
+
+
+ AVERAGE FORCE                      4.448E+09   TIME AVG. FORCE       5.705E+09
+ LARGEST SCALED RESIDUAL FORCE     -2.714E+07   AT NODE        125   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -2.714E+07
+ LARGEST INCREMENT OF DISP.        -8.335E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        1.999E-12   AT NODE        125   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND SMALL MAGNITUDE
+           OF THE INCREMENT OF DISPLACEMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   3.769E-12
+
+ ITERATION SUMMARY FOR THE INCREMENT:   2 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  2 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.555E+07,  FRACTION OF STEP COMPLETED  0.234    
+ STEP TIME COMPLETED       2.214E+08,  TOTAL TIME COMPLETED        2.216E+08
+
+
+  INCREMENT    77 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.555E+07
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  12ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.399E+09   TIME AVG. FORCE       5.688E+09
+ LARGEST SCALED RESIDUAL FORCE     -9.648E+07   AT NODE        125   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -9.648E+07
+ LARGEST INCREMENT OF DISP.        -8.336E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -6.996E-14   AT NODE        125   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  9ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
+
+
+ AVERAGE FORCE                      4.395E+09   TIME AVG. FORCE       5.688E+09
+ LARGEST SCALED RESIDUAL FORCE      2.368E+07   AT NODE        100   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      2.368E+07
+ LARGEST INCREMENT OF DISP.        -7.700E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -3.251E-12   AT NODE        125   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND SMALL MAGNITUDE
+           OF THE INCREMENT OF DISPLACEMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   6.381E-12
+          TIME INCREMENT REDUCED TO   1.532E+07 TO MEET NEXT OUTPUT TIME POINT
+
+ ITERATION SUMMARY FOR THE INCREMENT:   2 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  2 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.555E+07,  FRACTION OF STEP COMPLETED  0.250    
+ STEP TIME COMPLETED       2.370E+08,  TOTAL TIME COMPLETED        2.371E+08
+
+
+  INCREMENT    78 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.532E+07
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  9ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.388E+09   TIME AVG. FORCE       5.671E+09
+ LARGEST SCALED RESIDUAL FORCE      9.997E+07   AT NODE        100   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      9.997E+07
+ LARGEST INCREMENT OF DISP.        -7.571E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        5.940E-14   AT NODE        100   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  7ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
+
+
+ AVERAGE FORCE                      4.396E+09   TIME AVG. FORCE       5.671E+09
+ LARGEST SCALED RESIDUAL FORCE     -3.540E+07   AT NODE        125   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -3.540E+07
+ LARGEST INCREMENT OF DISP.        -7.261E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        5.172E-12   AT NODE        125   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  9ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     3
+
+
+ AVERAGE FORCE                      4.383E+09   TIME AVG. FORCE       5.671E+09
+ LARGEST SCALED RESIDUAL FORCE      3.807E+07   AT NODE        100   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      3.807E+07
+ LARGEST INCREMENT OF DISP.        -6.844E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -8.720E-12   AT NODE        125   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  12ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     4
+
+
+ AVERAGE FORCE                      4.410E+09   TIME AVG. FORCE       5.671E+09
+ LARGEST SCALED RESIDUAL FORCE     -7.184E+07   AT NODE        105   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -7.184E+07
+ LARGEST INCREMENT OF DISP.         1.152E-11   AT NODE        125   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        1.735E-11   AT NODE        125   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+
+ ***NOTE: THE SOLUTION APPEARS TO BE DIVERGING. CONVERGENCE IS JUDGED UNLIKELY.
+
+
+  INCREMENT    78 STARTS. ATTEMPT NUMBER  2, TIME INCREMENT  3.830E+06
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  10ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.394E+09   TIME AVG. FORCE       5.671E+09
+ LARGEST SCALED RESIDUAL FORCE      6.121E+07   AT NODE        100   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      6.121E+07
+ LARGEST INCREMENT OF DISP.        -1.890E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -2.818E-14   AT NODE        141   DOF  2
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  9ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
+
+
+ AVERAGE FORCE                      4.398E+09   TIME AVG. FORCE       5.671E+09
+ LARGEST SCALED RESIDUAL FORCE     -3.489E+07   AT NODE        125   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -3.489E+07
+ LARGEST INCREMENT OF DISP.        -1.876E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        1.306E-12   AT NODE        125   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  10ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     3
+
+
+ AVERAGE FORCE                      4.393E+09   TIME AVG. FORCE       5.671E+09
+ LARGEST SCALED RESIDUAL FORCE      3.815E+07   AT NODE        125   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      3.815E+07
+ LARGEST INCREMENT OF DISP.        -1.860E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -1.969E-12   AT NODE        125   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  8ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     4
+
+
+ AVERAGE FORCE                      4.402E+09   TIME AVG. FORCE       5.671E+09
+ LARGEST SCALED RESIDUAL FORCE     -5.130E+07   AT NODE        125   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -5.130E+07
+ LARGEST INCREMENT OF DISP.         2.044E-12   AT NODE        125   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        3.258E-12   AT NODE        125   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+
+ ***NOTE: THE SOLUTION APPEARS TO BE DIVERGING. CONVERGENCE IS JUDGED UNLIKELY.
+
+
+  INCREMENT    78 STARTS. ATTEMPT NUMBER  3, TIME INCREMENT  9.576E+05
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  9ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.394E+09   TIME AVG. FORCE       5.671E+09
+ LARGEST SCALED RESIDUAL FORCE      5.009E+07   AT NODE        100   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      5.009E+07
+ LARGEST INCREMENT OF DISP.        -4.703E-13   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -4.703E-13   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  8ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
+
+
+ AVERAGE FORCE                      4.395E+09   TIME AVG. FORCE       5.671E+09
+ LARGEST SCALED RESIDUAL FORCE     -3.294E+07   AT NODE        125   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -3.294E+07
+ LARGEST INCREMENT OF DISP.        -4.721E-13   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        3.306E-13   AT NODE        125   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  10ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     3
+
+
+ AVERAGE FORCE                      4.400E+09   TIME AVG. FORCE       5.671E+09
+ LARGEST SCALED RESIDUAL FORCE     -4.291E+07   AT NODE        108   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -4.291E+07
+ LARGEST INCREMENT OF DISP.        -4.727E-13   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -4.022E-13   AT NODE        125   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  8ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     4
+
+
+ AVERAGE FORCE                      4.400E+09   TIME AVG. FORCE       5.671E+09
+ LARGEST SCALED RESIDUAL FORCE     -3.867E+07   AT NODE        125   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -3.867E+07
+ LARGEST INCREMENT OF DISP.        -4.722E-13   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        5.095E-13   AT NODE        125   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  6ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     5
+
+
+ AVERAGE FORCE                      4.401E+09   TIME AVG. FORCE       5.671E+09
+ LARGEST SCALED RESIDUAL FORCE      4.724E+07   AT NODE        125   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      4.724E+07
+ LARGEST INCREMENT OF DISP.        -4.723E-13   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -7.046E-13   AT NODE        125   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+
+ ***NOTE: THE SOLUTION APPEARS TO BE DIVERGING. CONVERGENCE IS JUDGED UNLIKELY.
+
+
+  INCREMENT    78 STARTS. ATTEMPT NUMBER  4, TIME INCREMENT  2.394E+05
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  8ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.393E+09   TIME AVG. FORCE       5.671E+09
+ LARGEST SCALED RESIDUAL FORCE      4.198E+07   AT NODE        125   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      4.198E+07
+ LARGEST INCREMENT OF DISP.        -1.153E-13   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -1.153E-13   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  8ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
+
+
+ AVERAGE FORCE                      4.396E+09   TIME AVG. FORCE       5.671E+09
+ LARGEST SCALED RESIDUAL FORCE     -2.584E+07   AT NODE        125   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -2.584E+07
+ LARGEST INCREMENT OF DISP.        -1.164E-13   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        7.760E-14   AT NODE        125   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND SMALL MAGNITUDE
+           OF THE INCREMENT OF DISPLACEMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   5.494E-14
+          TIME INCREMENT MAY NOW INCREASE TO    3.591E+05
+
+ ITERATION SUMMARY FOR THE INCREMENT:   2 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  2 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  2.394E+05,  FRACTION OF STEP COMPLETED  0.251    
+ STEP TIME COMPLETED       2.372E+08,  TOTAL TIME COMPLETED        2.374E+08
+
+
+  INCREMENT    79 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  3.591E+05
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  7ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.395E+09   TIME AVG. FORCE       5.655E+09
+ LARGEST SCALED RESIDUAL FORCE     -6.454E+07   AT NODE        125   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -6.454E+07
+ LARGEST INCREMENT OF DISP.        -1.796E-13   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -7.579E-14   AT NODE        125   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  12ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
+
+
+ AVERAGE FORCE                      4.397E+09   TIME AVG. FORCE       5.655E+09
+ LARGEST SCALED RESIDUAL FORCE      2.758E+07   AT NODE        125   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      2.758E+07
+ LARGEST INCREMENT OF DISP.        -1.793E-13   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -6.824E-14   AT NODE        125   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND SMALL MAGNITUDE
+           OF THE INCREMENT OF DISPLACEMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   2.423E-13
+          TIME INCREMENT MAY NOW INCREASE TO    5.386E+05
+
+ ITERATION SUMMARY FOR THE INCREMENT:   2 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  2 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  3.591E+05,  FRACTION OF STEP COMPLETED  0.251    
+ STEP TIME COMPLETED       2.376E+08,  TOTAL TIME COMPLETED        2.377E+08
+
+
+  INCREMENT    80 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  5.386E+05
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  8ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.393E+09   TIME AVG. FORCE       5.639E+09
+ LARGEST SCALED RESIDUAL FORCE      4.544E+07   AT NODE        125   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      4.544E+07
+ LARGEST INCREMENT OF DISP.        -2.673E-13   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        5.577E-14   AT NODE        125   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  7ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
+
+
+ AVERAGE FORCE                      4.392E+09   TIME AVG. FORCE       5.639E+09
+ LARGEST SCALED RESIDUAL FORCE     -2.001E+07   AT NODE        125   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -2.001E+07
+ LARGEST INCREMENT OF DISP.        -2.667E-13   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        4.862E-14   AT NODE        125   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND SMALL MAGNITUDE
+           OF THE INCREMENT OF DISPLACEMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   9.430E-14
+          TIME INCREMENT MAY NOW INCREASE TO    8.079E+05
+
+ ITERATION SUMMARY FOR THE INCREMENT:   2 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  2 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  5.386E+05,  FRACTION OF STEP COMPLETED  0.252    
+ STEP TIME COMPLETED       2.381E+08,  TOTAL TIME COMPLETED        2.383E+08
+
+
+  INCREMENT    81 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  8.079E+05
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  7ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.390E+09   TIME AVG. FORCE       5.624E+09
+ LARGEST SCALED RESIDUAL FORCE     -3.511E+07   AT NODE        125   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -3.511E+07
+ LARGEST INCREMENT OF DISP.        -4.010E-13   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -4.387E-14   AT NODE        125   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  11ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
+
+
+ AVERAGE FORCE                      4.393E+09   TIME AVG. FORCE       5.624E+09
+ LARGEST SCALED RESIDUAL FORCE      1.395E+07   AT NODE        125   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      1.395E+07
+ LARGEST INCREMENT OF DISP.        -3.994E-13   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -3.223E-14   AT NODE        125   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND SMALL MAGNITUDE
+           OF THE INCREMENT OF DISPLACEMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   1.258E-13
+          TIME INCREMENT MAY NOW INCREASE TO    1.212E+06
+
+ ITERATION SUMMARY FOR THE INCREMENT:   2 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  2 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  8.079E+05,  FRACTION OF STEP COMPLETED  0.253    
+ STEP TIME COMPLETED       2.389E+08,  TOTAL TIME COMPLETED        2.391E+08
+
+
+  INCREMENT    82 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.212E+06
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  9ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.391E+09   TIME AVG. FORCE       5.609E+09
+ LARGEST SCALED RESIDUAL FORCE      1.863E+07   AT NODE        125   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      1.863E+07
+ LARGEST INCREMENT OF DISP.        -5.981E-13   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        2.849E-14   AT NODE        125   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND SMALL MAGNITUDE
+           OF THE INCREMENT OF DISPLACEMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   4.751E-14
+          TIME INCREMENT MAY NOW INCREASE TO    2.424E+06
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.212E+06,  FRACTION OF STEP COMPLETED  0.254    
+ STEP TIME COMPLETED       2.401E+08,  TOTAL TIME COMPLETED        2.403E+08
+
+
+  INCREMENT    83 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  2.424E+06
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  11ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.388E+09   TIME AVG. FORCE       5.594E+09
+ LARGEST SCALED RESIDUAL FORCE      1.485E+07   AT NODE        125   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      1.485E+07
+ LARGEST INCREMENT OF DISP.        -1.197E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -3.006E-15   AT NODE        100   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   3.075E-14
+          TIME INCREMENT MAY NOW INCREASE TO    4.848E+06
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  2.424E+06,  FRACTION OF STEP COMPLETED  0.256    
+ STEP TIME COMPLETED       2.425E+08,  TOTAL TIME COMPLETED        2.427E+08
+
+
+  INCREMENT    84 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  4.848E+06
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  7ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.384E+09   TIME AVG. FORCE       5.580E+09
+ LARGEST SCALED RESIDUAL FORCE      7.900E+06   AT NODE        125   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      7.900E+06
+ LARGEST INCREMENT OF DISP.        -2.394E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -2.469E-15   AT NODE        100   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   1.560E-14
+          TIME INCREMENT MAY NOW INCREASE TO    4.892E+06
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  4.848E+06,  FRACTION OF STEP COMPLETED  0.261    
+ STEP TIME COMPLETED       2.474E+08,  TOTAL TIME COMPLETED        2.476E+08
+
+
+  INCREMENT    85 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  4.892E+06
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  8ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.382E+09   TIME AVG. FORCE       5.566E+09
+ LARGEST SCALED RESIDUAL FORCE      3.885E+06   AT NODE        125   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      3.885E+06
+ LARGEST INCREMENT OF DISP.        -2.417E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -3.114E-15   AT NODE         44   DOF  1
+   INSTANCE: PIPE_INST                                                                       
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   1.124E-14
+          TIME INCREMENT MAY NOW INCREASE TO    9.785E+06
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  4.892E+06,  FRACTION OF STEP COMPLETED  0.267    
+ STEP TIME COMPLETED       2.523E+08,  TOTAL TIME COMPLETED        2.525E+08
+
+
+  INCREMENT    86 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  9.785E+06
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  9ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.376E+09   TIME AVG. FORCE       5.552E+09
+ LARGEST SCALED RESIDUAL FORCE      4.970E+06   AT NODE        175   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      4.970E+06
+ LARGEST INCREMENT OF DISP.        -4.834E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        2.050E-15   AT NODE        243   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   1.047E-14
+          TIME INCREMENT MAY NOW INCREASE TO    1.555E+07
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  9.785E+06,  FRACTION OF STEP COMPLETED  0.277    
+ STEP TIME COMPLETED       2.621E+08,  TOTAL TIME COMPLETED        2.622E+08
+
+
+  INCREMENT    87 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.555E+07
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  10ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.369E+09   TIME AVG. FORCE       5.538E+09
+ LARGEST SCALED RESIDUAL FORCE      7.847E+06   AT NODE        225   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      7.847E+06
+ LARGEST INCREMENT OF DISP.        -7.682E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        2.822E-15   AT NODE        245   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   1.514E-14
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.555E+07,  FRACTION OF STEP COMPLETED  0.293    
+ STEP TIME COMPLETED       2.776E+08,  TOTAL TIME COMPLETED        2.778E+08
+
+
+  INCREMENT    88 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.555E+07
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  10ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.362E+09   TIME AVG. FORCE       5.525E+09
+ LARGEST SCALED RESIDUAL FORCE      1.034E+07   AT NODE        225   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      1.034E+07
+ LARGEST INCREMENT OF DISP.        -7.680E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -3.869E-15   AT NODE        150   DOF  2
+   INSTANCE: ROCK_INST                                                                       
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   2.031E-14
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.555E+07,  FRACTION OF STEP COMPLETED  0.310    
+ STEP TIME COMPLETED       2.932E+08,  TOTAL TIME COMPLETED        2.933E+08
+
+
+  INCREMENT    89 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.555E+07
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  12ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.355E+09   TIME AVG. FORCE       5.512E+09
+ LARGEST SCALED RESIDUAL FORCE      1.259E+07   AT NODE        225   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      1.259E+07
+ LARGEST INCREMENT OF DISP.        -7.677E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        3.679E-15   AT NODE         50   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   2.468E-14
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.555E+07,  FRACTION OF STEP COMPLETED  0.326    
+ STEP TIME COMPLETED       3.087E+08,  TOTAL TIME COMPLETED        3.089E+08
+
+
+  INCREMENT    90 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.555E+07
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  10ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.347E+09   TIME AVG. FORCE       5.499E+09
+ LARGEST SCALED RESIDUAL FORCE      1.482E+07   AT NODE        225   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      1.482E+07
+ LARGEST INCREMENT OF DISP.        -7.674E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        4.414E-15   AT NODE         44   DOF  1
+   INSTANCE: PIPE_INST                                                                       
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   2.875E-14
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.555E+07,  FRACTION OF STEP COMPLETED  0.343    
+ STEP TIME COMPLETED       3.243E+08,  TOTAL TIME COMPLETED        3.245E+08
+
+
+  INCREMENT    91 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.555E+07
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  10ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.338E+09   TIME AVG. FORCE       5.486E+09
+ LARGEST SCALED RESIDUAL FORCE      1.716E+07   AT NODE        225   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      1.716E+07
+ LARGEST INCREMENT OF DISP.        -7.669E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        4.860E-15   AT NODE         50   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   3.345E-14
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.555E+07,  FRACTION OF STEP COMPLETED  0.359    
+ STEP TIME COMPLETED       3.398E+08,  TOTAL TIME COMPLETED        3.400E+08
+
+
+  INCREMENT    92 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.555E+07
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  7ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.331E+09   TIME AVG. FORCE       5.473E+09
+ LARGEST SCALED RESIDUAL FORCE      1.962E+07   AT NODE        225   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      1.962E+07
+ LARGEST INCREMENT OF DISP.        -7.664E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        5.324E-15   AT NODE         50   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   3.811E-14
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.555E+07,  FRACTION OF STEP COMPLETED  0.376    
+ STEP TIME COMPLETED       3.554E+08,  TOTAL TIME COMPLETED        3.556E+08
+
+
+  INCREMENT    93 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.555E+07
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  9ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.324E+09   TIME AVG. FORCE       5.461E+09
+ LARGEST SCALED RESIDUAL FORCE      2.215E+07   AT NODE        225   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      2.215E+07
+ LARGEST INCREMENT OF DISP.        -7.658E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        5.930E-15   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   4.274E-14
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.555E+07,  FRACTION OF STEP COMPLETED  0.392    
+ STEP TIME COMPLETED       3.709E+08,  TOTAL TIME COMPLETED        3.711E+08
+
+
+  INCREMENT    94 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.555E+07
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  9ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.317E+09   TIME AVG. FORCE       5.449E+09
+ LARGEST SCALED RESIDUAL FORCE      2.470E+07   AT NODE        225   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      2.470E+07
+ LARGEST INCREMENT OF DISP.        -7.652E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        6.544E-15   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   4.753E-14
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.555E+07,  FRACTION OF STEP COMPLETED  0.409    
+ STEP TIME COMPLETED       3.865E+08,  TOTAL TIME COMPLETED        3.867E+08
+
+
+  INCREMENT    95 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.555E+07
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  10ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.310E+09   TIME AVG. FORCE       5.437E+09
+ LARGEST SCALED RESIDUAL FORCE      2.723E+07   AT NODE        225   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      2.723E+07
+ LARGEST INCREMENT OF DISP.        -7.644E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        7.166E-15   AT NODE        225   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  11ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
+
+
+ AVERAGE FORCE                      4.323E+09   TIME AVG. FORCE       5.437E+09
+ LARGEST SCALED RESIDUAL FORCE     -2.255E+07   AT NODE        175   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -2.255E+07
+ LARGEST INCREMENT OF DISP.        -2.745E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        4.899E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND SMALL MAGNITUDE
+           OF THE INCREMENT OF DISPLACEMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   3.186E-11
+
+ ITERATION SUMMARY FOR THE INCREMENT:   2 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  2 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.555E+07,  FRACTION OF STEP COMPLETED  0.425    
+ STEP TIME COMPLETED       4.020E+08,  TOTAL TIME COMPLETED        4.022E+08
+
+
+  INCREMENT    96 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.555E+07
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  13ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.327E+09   TIME AVG. FORCE       5.425E+09
+ LARGEST SCALED RESIDUAL FORCE     -1.057E+08   AT NODE        200   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -1.057E+08
+ LARGEST INCREMENT OF DISP.        -2.882E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -2.089E-13   AT NODE        225   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  6ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
+
+
+ AVERAGE FORCE                      4.318E+09   TIME AVG. FORCE       5.425E+09
+ LARGEST SCALED RESIDUAL FORCE     -4.217E+07   AT NODE        156   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -4.217E+07
+ LARGEST INCREMENT OF DISP.        -3.497E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -1.383E-12   AT NODE        175   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  10ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     3
+
+
+ AVERAGE FORCE                      4.323E+09   TIME AVG. FORCE       5.425E+09
+ LARGEST SCALED RESIDUAL FORCE     -3.656E+07   AT NODE        157   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -3.656E+07
+ LARGEST INCREMENT OF DISP.        -3.682E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        2.598E-12   AT NODE        175   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  8ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     4
+
+
+ AVERAGE FORCE                      4.320E+09   TIME AVG. FORCE       5.425E+09
+ LARGEST SCALED RESIDUAL FORCE     -1.304E+08   AT NODE        155   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -1.304E+08
+ LARGEST INCREMENT OF DISP.        -6.863E-12   AT NODE        175   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -8.364E-12   AT NODE        175   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+
+ ***NOTE: THE SOLUTION APPEARS TO BE DIVERGING. CONVERGENCE IS JUDGED UNLIKELY.
+
+
+  INCREMENT    96 STARTS. ATTEMPT NUMBER  2, TIME INCREMENT  3.888E+06
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  7ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.324E+09   TIME AVG. FORCE       5.425E+09
+ LARGEST SCALED RESIDUAL FORCE     -5.440E+07   AT NODE        175   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -5.440E+07
+ LARGEST INCREMENT OF DISP.        -7.200E-13   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -5.126E-14   AT NODE        225   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  7ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
+
+
+ AVERAGE FORCE                      4.320E+09   TIME AVG. FORCE       5.425E+09
+ LARGEST SCALED RESIDUAL FORCE      1.222E+07   AT NODE        175   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      1.222E+07
+ LARGEST INCREMENT OF DISP.        -8.933E-13   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -3.309E-13   AT NODE        175   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND SMALL MAGNITUDE
+           OF THE INCREMENT OF DISPLACEMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   1.403E-12
+          TIME INCREMENT MAY NOW INCREASE TO    5.832E+06
+
+ ITERATION SUMMARY FOR THE INCREMENT:   2 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  2 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  3.888E+06,  FRACTION OF STEP COMPLETED  0.429    
+ STEP TIME COMPLETED       4.059E+08,  TOTAL TIME COMPLETED        4.061E+08
+
+
+  INCREMENT    97 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  5.832E+06
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  6ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.318E+09   TIME AVG. FORCE       5.414E+09
+ LARGEST SCALED RESIDUAL FORCE      7.361E+07   AT NODE        175   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      7.361E+07
+ LARGEST INCREMENT OF DISP.        -1.342E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        3.560E-14   AT NODE        175   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  8ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
+
+
+ AVERAGE FORCE                      4.324E+09   TIME AVG. FORCE       5.414E+09
+ LARGEST SCALED RESIDUAL FORCE     -2.488E+07   AT NODE        175   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -2.488E+07
+ LARGEST INCREMENT OF DISP.        -1.380E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        6.656E-13   AT NODE        175   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND SMALL MAGNITUDE
+           OF THE INCREMENT OF DISPLACEMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   1.509E-12
+          TIME INCREMENT MAY NOW INCREASE TO    8.748E+06
+
+ ITERATION SUMMARY FOR THE INCREMENT:   2 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  2 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  5.832E+06,  FRACTION OF STEP COMPLETED  0.435    
+ STEP TIME COMPLETED       4.118E+08,  TOTAL TIME COMPLETED        4.119E+08
+
+
+  INCREMENT    98 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  8.748E+06
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  9ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.321E+09   TIME AVG. FORCE       5.403E+09
+ LARGEST SCALED RESIDUAL FORCE     -8.909E+07   AT NODE        175   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -8.909E+07
+ LARGEST INCREMENT OF DISP.        -2.077E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -7.631E-14   AT NODE        175   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  6ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
+
+
+ AVERAGE FORCE                      4.323E+09   TIME AVG. FORCE       5.403E+09
+ LARGEST SCALED RESIDUAL FORCE      1.608E+07   AT NODE        175   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      1.608E+07
+ LARGEST INCREMENT OF DISP.        -2.145E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -1.235E-12   AT NODE        175   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND SMALL MAGNITUDE
+           OF THE INCREMENT OF DISPLACEMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   2.116E-12
+          TIME INCREMENT MAY NOW INCREASE TO    1.312E+07
+
+ ITERATION SUMMARY FOR THE INCREMENT:   2 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  2 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  8.748E+06,  FRACTION OF STEP COMPLETED  0.444    
+ STEP TIME COMPLETED       4.205E+08,  TOTAL TIME COMPLETED        4.207E+08
+
+
+  INCREMENT    99 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.312E+07
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  14ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.319E+09   TIME AVG. FORCE       5.392E+09
+ LARGEST SCALED RESIDUAL FORCE      6.624E+07   AT NODE        175   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      6.624E+07
+ LARGEST INCREMENT OF DISP.        -3.197E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        5.664E-14   AT NODE        175   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  8ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
+
+
+ AVERAGE FORCE                      4.321E+09   TIME AVG. FORCE       5.392E+09
+ LARGEST SCALED RESIDUAL FORCE     -2.727E+07   AT NODE        175   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -2.727E+07
+ LARGEST INCREMENT OF DISP.        -2.903E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        2.224E-12   AT NODE        175   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  11ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     3
+
+
+ AVERAGE FORCE                      4.321E+09   TIME AVG. FORCE       5.392E+09
+ LARGEST SCALED RESIDUAL FORCE     -2.272E+07   AT NODE        155   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -2.272E+07
+ LARGEST INCREMENT OF DISP.        -3.155E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -2.757E-12   AT NODE        175   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND SMALL MAGNITUDE
+           OF THE INCREMENT OF DISPLACEMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   3.388E-12
+          TIME INCREMENT MAY NOW INCREASE TO    1.555E+07
+
+ ITERATION SUMMARY FOR THE INCREMENT:   3 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  3 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.312E+07,  FRACTION OF STEP COMPLETED  0.458    
+ STEP TIME COMPLETED       4.336E+08,  TOTAL TIME COMPLETED        4.338E+08
+
+
+  INCREMENT   100 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.555E+07
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  13ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.316E+09   TIME AVG. FORCE       5.381E+09
+ LARGEST SCALED RESIDUAL FORCE      4.747E+07   AT NODE        175   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      4.747E+07
+ LARGEST INCREMENT OF DISP.        -3.716E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        6.662E-14   AT NODE        175   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  8ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
+
+
+ AVERAGE FORCE                      4.324E+09   TIME AVG. FORCE       5.381E+09
+ LARGEST SCALED RESIDUAL FORCE     -3.159E+07   AT NODE        175   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -3.159E+07
+ LARGEST INCREMENT OF DISP.        -3.294E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        3.793E-12   AT NODE        175   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  11ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     3
+
+
+ AVERAGE FORCE                      4.314E+09   TIME AVG. FORCE       5.381E+09
+ LARGEST SCALED RESIDUAL FORCE     -3.988E+07   AT NODE        154   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -3.988E+07
+ LARGEST INCREMENT OF DISP.        -3.548E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -5.027E-12   AT NODE        175   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  11ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     4
+
+
+ AVERAGE FORCE                      4.333E+09   TIME AVG. FORCE       5.381E+09
+ LARGEST SCALED RESIDUAL FORCE     -6.830E+07   AT NODE        130   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -6.830E+07
+ LARGEST INCREMENT OF DISP.         9.245E-12   AT NODE        150   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        1.246E-11   AT NODE        150   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+
+ ***NOTE: THE SOLUTION APPEARS TO BE DIVERGING. CONVERGENCE IS JUDGED UNLIKELY.
+
+
+  INCREMENT   100 STARTS. ATTEMPT NUMBER  2, TIME INCREMENT  3.888E+06
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  15ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.322E+09   TIME AVG. FORCE       5.381E+09
+ LARGEST SCALED RESIDUAL FORCE      3.993E+07   AT NODE        150   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      3.993E+07
+ LARGEST INCREMENT OF DISP.        -9.239E-13   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        3.266E-14   AT NODE        175   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  12ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
+
+
+ AVERAGE FORCE                      4.323E+09   TIME AVG. FORCE       5.381E+09
+ LARGEST SCALED RESIDUAL FORCE     -3.123E+07   AT NODE        175   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -3.123E+07
+ LARGEST INCREMENT OF DISP.        -8.222E-13   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        9.815E-13   AT NODE        175   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  9ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     3
+
+
+ AVERAGE FORCE                      4.319E+09   TIME AVG. FORCE       5.381E+09
+ LARGEST SCALED RESIDUAL FORCE     -4.988E+07   AT NODE        131   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -4.988E+07
+ LARGEST INCREMENT OF DISP.        -9.200E-13   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -1.175E-12   AT NODE        175   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  10ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     4
+
+
+ AVERAGE FORCE                      4.325E+09   TIME AVG. FORCE       5.381E+09
+ LARGEST SCALED RESIDUAL FORCE     -4.326E+07   AT NODE        150   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -4.326E+07
+ LARGEST INCREMENT OF DISP.         1.506E-12   AT NODE        150   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        2.135E-12   AT NODE        150   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  7ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     5
+
+
+ AVERAGE FORCE                      4.322E+09   TIME AVG. FORCE       5.381E+09
+ LARGEST SCALED RESIDUAL FORCE      9.882E+07   AT NODE        150   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      9.882E+07
+ LARGEST INCREMENT OF DISP.        -4.664E-12   AT NODE        150   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -6.171E-12   AT NODE        150   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+
+ ***NOTE: THE SOLUTION APPEARS TO BE DIVERGING. CONVERGENCE IS JUDGED UNLIKELY.
+
+
+  INCREMENT   100 STARTS. ATTEMPT NUMBER  3, TIME INCREMENT  9.720E+05
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  5ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.323E+09   TIME AVG. FORCE       5.381E+09
+ LARGEST SCALED RESIDUAL FORCE      4.129E+07   AT NODE        150   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      4.129E+07
+ LARGEST INCREMENT OF DISP.        -2.258E-13   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -2.258E-13   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  7ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
+
+
+ AVERAGE FORCE                      4.320E+09   TIME AVG. FORCE       5.381E+09
+ LARGEST SCALED RESIDUAL FORCE     -2.952E+07   AT NODE        175   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -2.952E+07
+ LARGEST INCREMENT OF DISP.        -2.039E-13   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        2.536E-13   AT NODE        175   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  10ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     3
+
+
+ AVERAGE FORCE                      4.323E+09   TIME AVG. FORCE       5.381E+09
+ LARGEST SCALED RESIDUAL FORCE     -3.932E+07   AT NODE        135   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -3.932E+07
+ LARGEST INCREMENT OF DISP.        -2.300E-13   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -2.539E-13   AT NODE        175   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  10ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     4
+
+
+ AVERAGE FORCE                      4.324E+09   TIME AVG. FORCE       5.381E+09
+ LARGEST SCALED RESIDUAL FORCE     -3.032E+07   AT NODE        175   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -3.032E+07
+ LARGEST INCREMENT OF DISP.        -2.074E-13   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        2.562E-13   AT NODE        175   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  7ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     5
+
+
+ AVERAGE FORCE                      4.322E+09   TIME AVG. FORCE       5.381E+09
+ LARGEST SCALED RESIDUAL FORCE      3.987E+07   AT NODE        150   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      3.987E+07
+ LARGEST INCREMENT OF DISP.        -2.295E-13   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -3.373E-13   AT NODE        150   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+
+ ***NOTE: THE SOLUTION APPEARS TO BE DIVERGING. CONVERGENCE IS JUDGED UNLIKELY.
+
+
+  INCREMENT   100 STARTS. ATTEMPT NUMBER  4, TIME INCREMENT  2.430E+05
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  7ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.319E+09   TIME AVG. FORCE       5.381E+09
+ LARGEST SCALED RESIDUAL FORCE      3.623E+07   AT NODE        150   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      3.623E+07
+ LARGEST INCREMENT OF DISP.        -5.125E-14   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -5.125E-14   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  8ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
+
+
+ AVERAGE FORCE                      4.319E+09   TIME AVG. FORCE       5.381E+09
+ LARGEST SCALED RESIDUAL FORCE     -2.220E+07   AT NODE        175   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -2.220E+07
+ LARGEST INCREMENT OF DISP.         4.943E-14   AT NODE        175   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        6.050E-14   AT NODE        175   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND SMALL MAGNITUDE
+           OF THE INCREMENT OF DISPLACEMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   6.522E-14
+          TIME INCREMENT MAY NOW INCREASE TO    3.645E+05
+
+ ITERATION SUMMARY FOR THE INCREMENT:   2 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  2 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  2.430E+05,  FRACTION OF STEP COMPLETED  0.459    
+ STEP TIME COMPLETED       4.339E+08,  TOTAL TIME COMPLETED        4.340E+08
+
+
+  INCREMENT   101 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  3.645E+05
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  8ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.315E+09   TIME AVG. FORCE       5.371E+09
+ LARGEST SCALED RESIDUAL FORCE     -4.624E+07   AT NODE        175   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -4.624E+07
+ LARGEST INCREMENT OF DISP.        -8.523E-14   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -5.936E-14   AT NODE        175   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  12ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
+
+
+ AVERAGE FORCE                      4.320E+09   TIME AVG. FORCE       5.371E+09
+ LARGEST SCALED RESIDUAL FORCE      2.153E+07   AT NODE        150   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      2.153E+07
+ LARGEST INCREMENT OF DISP.        -8.876E-14   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -4.168E-14   AT NODE        175   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND SMALL MAGNITUDE
+           OF THE INCREMENT OF DISPLACEMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   2.227E-13
+          TIME INCREMENT MAY NOW INCREASE TO    5.468E+05
+
+ ITERATION SUMMARY FOR THE INCREMENT:   2 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  2 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  3.645E+05,  FRACTION OF STEP COMPLETED  0.459    
+ STEP TIME COMPLETED       4.342E+08,  TOTAL TIME COMPLETED        4.344E+08
+
+
+  INCREMENT   102 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  5.468E+05
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  13ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.316E+09   TIME AVG. FORCE       5.360E+09
+ LARGEST SCALED RESIDUAL FORCE      2.612E+07   AT NODE        175   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      2.612E+07
+ LARGEST INCREMENT OF DISP.        -1.270E-13   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        3.222E-14   AT NODE        175   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND SMALL MAGNITUDE
+           OF THE INCREMENT OF DISPLACEMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   8.575E-14
+          TIME INCREMENT MAY NOW INCREASE TO    1.094E+06
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  5.468E+05,  FRACTION OF STEP COMPLETED  0.460    
+ STEP TIME COMPLETED       4.348E+08,  TOTAL TIME COMPLETED        4.350E+08
+
+
+  INCREMENT   103 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.094E+06
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  10ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.314E+09   TIME AVG. FORCE       5.350E+09
+ LARGEST SCALED RESIDUAL FORCE      2.171E+07   AT NODE        175   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      2.171E+07
+ LARGEST INCREMENT OF DISP.        -2.545E-13   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        5.256E-15   AT NODE        175   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND SMALL MAGNITUDE
+           OF THE INCREMENT OF DISPLACEMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   5.163E-14
+          TIME INCREMENT MAY NOW INCREASE TO    2.187E+06
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.094E+06,  FRACTION OF STEP COMPLETED  0.461    
+ STEP TIME COMPLETED       4.359E+08,  TOTAL TIME COMPLETED        4.361E+08
+
+
+  INCREMENT   104 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  2.187E+06
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  8ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.314E+09   TIME AVG. FORCE       5.340E+09
+ LARGEST SCALED RESIDUAL FORCE      1.298E+07   AT NODE        175   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      1.298E+07
+ LARGEST INCREMENT OF DISP.        -5.100E-13   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -6.156E-15   AT NODE         44   DOF  1
+   INSTANCE: PIPE_INST                                                                       
+          FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND SMALL MAGNITUDE
+           OF THE INCREMENT OF DISPLACEMENT
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   2.733E-14
+          TIME INCREMENT MAY NOW INCREASE TO    4.374E+06
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  2.187E+06,  FRACTION OF STEP COMPLETED  0.463    
+ STEP TIME COMPLETED       4.381E+08,  TOTAL TIME COMPLETED        4.382E+08
+
+
+  INCREMENT   105 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  4.374E+06
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  12ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.314E+09   TIME AVG. FORCE       5.330E+09
+ LARGEST SCALED RESIDUAL FORCE     -5.048E+06   AT NODE        125   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -5.048E+06
+ LARGEST INCREMENT OF DISP.        -1.021E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        3.851E-15   AT NODE         36   DOF  1
+   INSTANCE: PIPE_INST                                                                       
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   9.820E-15
+          TIME INCREMENT MAY NOW INCREASE TO    8.748E+06
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  4.374E+06,  FRACTION OF STEP COMPLETED  0.468    
+ STEP TIME COMPLETED       4.424E+08,  TOTAL TIME COMPLETED        4.426E+08
+
+
+  INCREMENT   106 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  8.748E+06
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  12ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.313E+09   TIME AVG. FORCE       5.321E+09
+ LARGEST SCALED RESIDUAL FORCE     -6.990E+06   AT NODE        150   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -6.990E+06
+ LARGEST INCREMENT OF DISP.        -2.042E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -4.344E-15   AT NODE         36   DOF  1
+   INSTANCE: PIPE_INST                                                                       
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   1.826E-14
+          TIME INCREMENT MAY NOW INCREASE TO    1.555E+07
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  8.748E+06,  FRACTION OF STEP COMPLETED  0.477    
+ STEP TIME COMPLETED       4.512E+08,  TOTAL TIME COMPLETED        4.514E+08
+
+
+  INCREMENT   107 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.555E+07
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  8ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.312E+09   TIME AVG. FORCE       5.311E+09
+ LARGEST SCALED RESIDUAL FORCE     -8.009E+06   AT NODE        150   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -8.009E+06
+ LARGEST INCREMENT OF DISP.        -3.630E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        4.149E-15   AT NODE        175   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   2.068E-14
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.555E+07,  FRACTION OF STEP COMPLETED  0.493    
+ STEP TIME COMPLETED       4.667E+08,  TOTAL TIME COMPLETED        4.669E+08
+
+
+  INCREMENT   108 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.555E+07
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  9ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.310E+09   TIME AVG. FORCE       5.302E+09
+ LARGEST SCALED RESIDUAL FORCE      6.023E+06   AT NODE        175   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      6.023E+06
+ LARGEST INCREMENT OF DISP.        -3.628E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        4.616E-15   AT NODE        175   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   1.639E-14
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.555E+07,  FRACTION OF STEP COMPLETED  0.510    
+ STEP TIME COMPLETED       4.823E+08,  TOTAL TIME COMPLETED        4.825E+08
+
+
+  INCREMENT   109 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.555E+07
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  13ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.309E+09   TIME AVG. FORCE       5.293E+09
+ LARGEST SCALED RESIDUAL FORCE      8.103E+06   AT NODE        175   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      8.103E+06
+ LARGEST INCREMENT OF DISP.        -3.625E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        4.546E-15   AT NODE        175   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   1.687E-14
+          TIME INCREMENT REDUCED TO   6.732E+06 TO MEET NEXT OUTPUT TIME POINT
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.555E+07,  FRACTION OF STEP COMPLETED  0.526    
+ STEP TIME COMPLETED       4.978E+08,  TOTAL TIME COMPLETED        4.980E+08
+
+
+  INCREMENT   110 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  6.732E+06
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  9ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.308E+09   TIME AVG. FORCE       5.284E+09
+ LARGEST SCALED RESIDUAL FORCE      7.719E+06   AT NODE        175   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      7.719E+06
+ LARGEST INCREMENT OF DISP.        -1.567E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        4.571E-15   AT NODE        175   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   1.584E-14
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  6.732E+06,  FRACTION OF STEP COMPLETED  0.533    
+ STEP TIME COMPLETED       5.046E+08,  TOTAL TIME COMPLETED        5.047E+08
+
+
+  INCREMENT   111 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.555E+07
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  13ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.307E+09   TIME AVG. FORCE       5.275E+09
+ LARGEST SCALED RESIDUAL FORCE      6.773E+06   AT NODE        175   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      6.773E+06
+ LARGEST INCREMENT OF DISP.        -3.618E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        3.347E-15   AT NODE        175   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   1.315E-14
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.555E+07,  FRACTION OF STEP COMPLETED  0.550    
+ STEP TIME COMPLETED       5.201E+08,  TOTAL TIME COMPLETED        5.203E+08
+
+
+  INCREMENT   112 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.555E+07
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  7ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.305E+09   TIME AVG. FORCE       5.267E+09
+ LARGEST SCALED RESIDUAL FORCE      6.519E+06   AT NODE        175   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      6.519E+06
+ LARGEST INCREMENT OF DISP.        -3.616E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        4.103E-15   AT NODE        175   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   1.324E-14
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.555E+07,  FRACTION OF STEP COMPLETED  0.566    
+ STEP TIME COMPLETED       5.357E+08,  TOTAL TIME COMPLETED        5.359E+08
+
+
+  INCREMENT   113 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.555E+07
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  10ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.304E+09   TIME AVG. FORCE       5.258E+09
+ LARGEST SCALED RESIDUAL FORCE      6.701E+06   AT NODE        175   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      6.701E+06
+ LARGEST INCREMENT OF DISP.        -3.614E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        3.930E-15   AT NODE        175   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   1.406E-14
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.555E+07,  FRACTION OF STEP COMPLETED  0.583    
+ STEP TIME COMPLETED       5.512E+08,  TOTAL TIME COMPLETED        5.514E+08
+
+
+  INCREMENT   114 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.555E+07
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  12ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.302E+09   TIME AVG. FORCE       5.250E+09
+ LARGEST SCALED RESIDUAL FORCE      7.025E+06   AT NODE        175   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      7.025E+06
+ LARGEST INCREMENT OF DISP.        -3.612E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        3.753E-15   AT NODE        175   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   1.486E-14
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.555E+07,  FRACTION OF STEP COMPLETED  0.599    
+ STEP TIME COMPLETED       5.668E+08,  TOTAL TIME COMPLETED        5.670E+08
+
+
+  INCREMENT   115 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.555E+07
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  8ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.301E+09   TIME AVG. FORCE       5.241E+09
+ LARGEST SCALED RESIDUAL FORCE      7.356E+06   AT NODE        175   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      7.356E+06
+ LARGEST INCREMENT OF DISP.        -3.610E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        3.626E-15   AT NODE        175   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   1.550E-14
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.555E+07,  FRACTION OF STEP COMPLETED  0.616    
+ STEP TIME COMPLETED       5.823E+08,  TOTAL TIME COMPLETED        5.825E+08
+
+
+  INCREMENT   116 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.555E+07
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  9ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.299E+09   TIME AVG. FORCE       5.233E+09
+ LARGEST SCALED RESIDUAL FORCE      7.672E+06   AT NODE        175   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      7.672E+06
+ LARGEST INCREMENT OF DISP.        -3.608E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        3.546E-15   AT NODE        175   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   1.600E-14
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.555E+07,  FRACTION OF STEP COMPLETED  0.632    
+ STEP TIME COMPLETED       5.979E+08,  TOTAL TIME COMPLETED        5.981E+08
+
+
+  INCREMENT   117 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.555E+07
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  8ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.258E+09   TIME AVG. FORCE       5.225E+09
+ LARGEST SCALED RESIDUAL FORCE      7.982E+06   AT NODE        175   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      7.982E+06
+ LARGEST INCREMENT OF DISP.        -3.605E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        3.490E-15   AT NODE        175   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   1.644E-14
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.555E+07,  FRACTION OF STEP COMPLETED  0.648    
+ STEP TIME COMPLETED       6.134E+08,  TOTAL TIME COMPLETED        6.136E+08
+
+
+  INCREMENT   118 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.555E+07
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  14ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.257E+09   TIME AVG. FORCE       5.217E+09
+ LARGEST SCALED RESIDUAL FORCE      8.282E+06   AT NODE        175   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      8.282E+06
+ LARGEST INCREMENT OF DISP.        -3.603E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        3.877E-15   AT NODE         44   DOF  1
+   INSTANCE: PIPE_INST                                                                       
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   1.685E-14
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.555E+07,  FRACTION OF STEP COMPLETED  0.665    
+ STEP TIME COMPLETED       6.290E+08,  TOTAL TIME COMPLETED        6.292E+08
+
+
+  INCREMENT   119 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.555E+07
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  11ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.255E+09   TIME AVG. FORCE       5.209E+09
+ LARGEST SCALED RESIDUAL FORCE      8.997E+06   AT NODE        225   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      8.997E+06
+ LARGEST INCREMENT OF DISP.        -3.600E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -3.849E-15   AT NODE         44   DOF  1
+   INSTANCE: PIPE_INST                                                                       
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   1.727E-14
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.555E+07,  FRACTION OF STEP COMPLETED  0.681    
+ STEP TIME COMPLETED       6.445E+08,  TOTAL TIME COMPLETED        6.447E+08
+
+
+  INCREMENT   120 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.555E+07
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  8ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.254E+09   TIME AVG. FORCE       5.201E+09
+ LARGEST SCALED RESIDUAL FORCE      9.705E+06   AT NODE        225   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      9.705E+06
+ LARGEST INCREMENT OF DISP.        -3.597E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        4.740E-15   AT NODE         44   DOF  1
+   INSTANCE: PIPE_INST                                                                       
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   1.835E-14
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.555E+07,  FRACTION OF STEP COMPLETED  0.698    
+ STEP TIME COMPLETED       6.601E+08,  TOTAL TIME COMPLETED        6.603E+08
+
+
+  INCREMENT   121 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.555E+07
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  8ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.252E+09   TIME AVG. FORCE       5.193E+09
+ LARGEST SCALED RESIDUAL FORCE      1.028E+07   AT NODE        225   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      1.028E+07
+ LARGEST INCREMENT OF DISP.        -3.595E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        3.330E-15   AT NODE        175   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   1.950E-14
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.555E+07,  FRACTION OF STEP COMPLETED  0.714    
+ STEP TIME COMPLETED       6.756E+08,  TOTAL TIME COMPLETED        6.758E+08
+
+
+  INCREMENT   122 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.555E+07
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  12ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.251E+09   TIME AVG. FORCE       5.185E+09
+ LARGEST SCALED RESIDUAL FORCE      1.072E+07   AT NODE        225   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      1.072E+07
+ LARGEST INCREMENT OF DISP.        -3.592E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        3.296E-15   AT NODE        175   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   2.035E-14
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.555E+07,  FRACTION OF STEP COMPLETED  0.731    
+ STEP TIME COMPLETED       6.912E+08,  TOTAL TIME COMPLETED        6.914E+08
+
+
+  INCREMENT   123 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.555E+07
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  12ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.250E+09   TIME AVG. FORCE       5.178E+09
+ LARGEST SCALED RESIDUAL FORCE      1.107E+07   AT NODE        225   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      1.107E+07
+ LARGEST INCREMENT OF DISP.        -3.589E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -3.625E-15   AT NODE         40   DOF  1
+   INSTANCE: PIPE_INST                                                                       
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   2.097E-14
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.555E+07,  FRACTION OF STEP COMPLETED  0.747    
+ STEP TIME COMPLETED       7.068E+08,  TOTAL TIME COMPLETED        7.069E+08
+
+
+  INCREMENT   124 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.555E+07
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  12ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.248E+09   TIME AVG. FORCE       5.170E+09
+ LARGEST SCALED RESIDUAL FORCE      1.136E+07   AT NODE        225   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      1.136E+07
+ LARGEST INCREMENT OF DISP.        -3.585E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        3.438E-15   AT NODE        225   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   2.148E-14
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.555E+07,  FRACTION OF STEP COMPLETED  0.763    
+ STEP TIME COMPLETED       7.223E+08,  TOTAL TIME COMPLETED        7.225E+08
+
+
+  INCREMENT   125 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.555E+07
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  9ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.247E+09   TIME AVG. FORCE       5.163E+09
+ LARGEST SCALED RESIDUAL FORCE      1.164E+07   AT NODE        225   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      1.164E+07
+ LARGEST INCREMENT OF DISP.        -3.582E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        3.541E-15   AT NODE        225   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   2.215E-14
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.555E+07,  FRACTION OF STEP COMPLETED  0.780    
+ STEP TIME COMPLETED       7.379E+08,  TOTAL TIME COMPLETED        7.380E+08
+
+
+  INCREMENT   126 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.555E+07
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  8ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.245E+09   TIME AVG. FORCE       5.155E+09
+ LARGEST SCALED RESIDUAL FORCE      1.194E+07   AT NODE        225   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      1.194E+07
+ LARGEST INCREMENT OF DISP.        -3.579E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -5.278E-15   AT NODE          4   DOF  1
+   INSTANCE: PIPE_INST                                                                       
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   2.284E-14
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.555E+07,  FRACTION OF STEP COMPLETED  0.796    
+ STEP TIME COMPLETED       7.534E+08,  TOTAL TIME COMPLETED        7.536E+08
+
+
+  INCREMENT   127 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.555E+07
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  11ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.244E+09   TIME AVG. FORCE       5.148E+09
+ LARGEST SCALED RESIDUAL FORCE      1.228E+07   AT NODE        225   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      1.228E+07
+ LARGEST INCREMENT OF DISP.        -3.575E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -4.316E-15   AT NODE          8   DOF  1
+   INSTANCE: PIPE_INST                                                                       
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   2.355E-14
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.555E+07,  FRACTION OF STEP COMPLETED  0.813    
+ STEP TIME COMPLETED       7.690E+08,  TOTAL TIME COMPLETED        7.691E+08
+
+
+  INCREMENT   128 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.555E+07
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  12ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.243E+09   TIME AVG. FORCE       5.141E+09
+ LARGEST SCALED RESIDUAL FORCE      1.267E+07   AT NODE        225   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      1.267E+07
+ LARGEST INCREMENT OF DISP.        -3.572E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        3.786E-15   AT NODE        225   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   2.430E-14
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.555E+07,  FRACTION OF STEP COMPLETED  0.829    
+ STEP TIME COMPLETED       7.845E+08,  TOTAL TIME COMPLETED        7.847E+08
+
+
+  INCREMENT   129 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.555E+07
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  11ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.241E+09   TIME AVG. FORCE       5.134E+09
+ LARGEST SCALED RESIDUAL FORCE      1.309E+07   AT NODE        225   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      1.309E+07
+ LARGEST INCREMENT OF DISP.        -3.568E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -4.487E-15   AT NODE          4   DOF  1
+   INSTANCE: PIPE_INST                                                                       
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   2.507E-14
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.555E+07,  FRACTION OF STEP COMPLETED  0.846    
+ STEP TIME COMPLETED       8.001E+08,  TOTAL TIME COMPLETED        8.002E+08
+
+
+  INCREMENT   130 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.555E+07
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  7ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.240E+09   TIME AVG. FORCE       5.127E+09
+ LARGEST SCALED RESIDUAL FORCE      1.355E+07   AT NODE        225   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      1.355E+07
+ LARGEST INCREMENT OF DISP.        -3.564E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        3.891E-15   AT NODE        225   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   2.586E-14
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.555E+07,  FRACTION OF STEP COMPLETED  0.862    
+ STEP TIME COMPLETED       8.156E+08,  TOTAL TIME COMPLETED        8.158E+08
+
+
+  INCREMENT   131 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.555E+07
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  6ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.239E+09   TIME AVG. FORCE       5.121E+09
+ LARGEST SCALED RESIDUAL FORCE      1.402E+07   AT NODE        225   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      1.402E+07
+ LARGEST INCREMENT OF DISP.        -3.560E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        3.929E-15   AT NODE        225   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   2.676E-14
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.555E+07,  FRACTION OF STEP COMPLETED  0.879    
+ STEP TIME COMPLETED       8.312E+08,  TOTAL TIME COMPLETED        8.313E+08
+
+
+  INCREMENT   132 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.555E+07
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  10ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.237E+09   TIME AVG. FORCE       5.114E+09
+ LARGEST SCALED RESIDUAL FORCE      1.448E+07   AT NODE        225   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      1.448E+07
+ LARGEST INCREMENT OF DISP.        -3.556E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        3.964E-15   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   2.779E-14
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.555E+07,  FRACTION OF STEP COMPLETED  0.895    
+ STEP TIME COMPLETED       8.467E+08,  TOTAL TIME COMPLETED        8.469E+08
+
+
+  INCREMENT   133 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.555E+07
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  8ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.236E+09   TIME AVG. FORCE       5.107E+09
+ LARGEST SCALED RESIDUAL FORCE      1.492E+07   AT NODE        225   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      1.492E+07
+ LARGEST INCREMENT OF DISP.        -3.552E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        4.030E-15   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   2.877E-14
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.555E+07,  FRACTION OF STEP COMPLETED  0.911    
+ STEP TIME COMPLETED       8.623E+08,  TOTAL TIME COMPLETED        8.624E+08
+
+
+  INCREMENT   134 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.555E+07
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  11ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.235E+09   TIME AVG. FORCE       5.101E+09
+ LARGEST SCALED RESIDUAL FORCE      1.532E+07   AT NODE        225   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      1.532E+07
+ LARGEST INCREMENT OF DISP.        -3.548E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        4.090E-15   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   2.969E-14
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.555E+07,  FRACTION OF STEP COMPLETED  0.928    
+ STEP TIME COMPLETED       8.778E+08,  TOTAL TIME COMPLETED        8.780E+08
+
+
+  INCREMENT   135 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.555E+07
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  8ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.233E+09   TIME AVG. FORCE       5.094E+09
+ LARGEST SCALED RESIDUAL FORCE      1.570E+07   AT NODE        225   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      1.570E+07
+ LARGEST INCREMENT OF DISP.        -3.544E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        4.179E-15   AT NODE        200   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   3.055E-14
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.555E+07,  FRACTION OF STEP COMPLETED  0.944    
+ STEP TIME COMPLETED       8.934E+08,  TOTAL TIME COMPLETED        8.935E+08
+
+
+  INCREMENT   136 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.555E+07
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  8ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.232E+09   TIME AVG. FORCE       5.088E+09
+ LARGEST SCALED RESIDUAL FORCE      1.606E+07   AT NODE        225   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      1.606E+07
+ LARGEST INCREMENT OF DISP.        -3.540E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        4.487E-15   AT NODE        200   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   3.136E-14
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.555E+07,  FRACTION OF STEP COMPLETED  0.961    
+ STEP TIME COMPLETED       9.089E+08,  TOTAL TIME COMPLETED        9.091E+08
+
+
+  INCREMENT   137 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.555E+07
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  7ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.231E+09   TIME AVG. FORCE       5.082E+09
+ LARGEST SCALED RESIDUAL FORCE      1.639E+07   AT NODE        225   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      1.639E+07
+ LARGEST INCREMENT OF DISP.        -3.535E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        4.752E-15   AT NODE        200   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   3.214E-14
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.555E+07,  FRACTION OF STEP COMPLETED  0.977    
+ STEP TIME COMPLETED       9.245E+08,  TOTAL TIME COMPLETED        9.247E+08
+
+
+  INCREMENT   138 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.555E+07
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  10ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.230E+09   TIME AVG. FORCE       5.076E+09
+ LARGEST SCALED RESIDUAL FORCE      1.670E+07   AT NODE        225   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      1.670E+07
+ LARGEST INCREMENT OF DISP.        -3.531E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        4.889E-15   AT NODE        200   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   3.287E-14
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.555E+07,  FRACTION OF STEP COMPLETED  0.994    
+ STEP TIME COMPLETED       9.400E+08,  TOTAL TIME COMPLETED        9.402E+08
+
+
+  INCREMENT   139 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  6.048E+06
+ 
+	UNSYMMETRIC NEW DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x 14 THREADS PER RANK
+        NUMBER OF EQUATIONS:  646
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      9.539e+05
+        SOLVER ELAPSED TIME:  7ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.229E+09   TIME AVG. FORCE       5.069E+09
+ LARGEST SCALED RESIDUAL FORCE      1.672E+07   AT NODE        225   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      1.672E+07
+ LARGEST INCREMENT OF DISP.        -1.369E-12   AT NODE        275   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        4.885E-15   AT NODE        200   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   3.304E-14
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  6.048E+06,  FRACTION OF STEP COMPLETED   1.00    
+ STEP TIME COMPLETED       9.461E+08,  TOTAL TIME COMPLETED        9.463E+08
+
+
+          THE ANALYSIS HAS BEEN COMPLETED
 
 
 
      ANALYSIS SUMMARY:
-     TOTAL OF          8  INCREMENTS
-                       5  CUTBACKS IN AUTOMATIC INCREMENTATION
-                       7  ITERATIONS INCLUDING CONTACT ITERATIONS IF PRESENT
-                       7  PASSES THROUGH THE EQUATION SOLVER OF WHICH 
-                       7  INVOLVE MATRIX DECOMPOSITION, INCLUDING
+     TOTAL OF        197  INCREMENTS
+                      12  CUTBACKS IN AUTOMATIC INCREMENTATION
+                     315  ITERATIONS INCLUDING CONTACT ITERATIONS IF PRESENT
+                     315  PASSES THROUGH THE EQUATION SOLVER OF WHICH 
+                     315  INVOLVE MATRIX DECOMPOSITION, INCLUDING
                        0  DECOMPOSITION(S) OF THE MASS MATRIX
                        1  REORDERING OF EQUATIONS TO MINIMIZE WAVEFRONT
                        0  ADDITIONAL RESIDUAL EVALUATIONS FOR LINE SEARCHES
                        0  ADDITIONAL OPERATOR EVALUATIONS FOR LINE SEARCHES
                       33  WARNING MESSAGES DURING USER INPUT PROCESSING
-                       9  WARNING MESSAGES DURING ANALYSIS
+                      51  WARNING MESSAGES DURING ANALYSIS
                        0  ANALYSIS WARNINGS ARE NUMERICAL PROBLEM MESSAGES
-                       0  ANALYSIS WARNINGS ARE NEGATIVE EIGENVALUE MESSAGES
-                       1  ERROR MESSAGES
+                       1  ANALYSIS WARNINGS ARE NEGATIVE EIGENVALUE MESSAGES
+                       0  ERROR MESSAGES
 
 
 
      JOB TIME SUMMARY
-       USER TIME (SEC)      =      1.2    
-       SYSTEM TIME (SEC)    =      1.4    
-       TOTAL CPU TIME (SEC) =      2.6    
-       WALLCLOCK TIME (SEC) =            1
+       USER TIME (SEC)      =      42.    
+       SYSTEM TIME (SEC)    =      10.    
+       TOTAL CPU TIME (SEC) =      53.    
+       WALLCLOCK TIME (SEC) =           29
        MEMORY PEAK (GB)     =            0
