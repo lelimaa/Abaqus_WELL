@@ -198,6 +198,8 @@ if __name__ == "__main__":
 
     mdb.models['MyFirstModel'].setValues(absoluteZero=0.0, stefanBoltzmann=5.670374e-8)
     
+    # AddplasticityToSteel('MyFirstModel', 'STEEL')
+
     CreateSetsPipe('MyFirstModel')
     CreateSetsFluid('MyFirstModel')
     CreateSetsRock('MyFirstModel')

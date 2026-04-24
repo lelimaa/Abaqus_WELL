@@ -182,3 +182,27 @@ def AssignRockByDepth(modelName, partName, rock_layers):
         else:
 
             print("Warning: Set '%s' not found in part '%s'. Skipping assignment." % (set_name, partName))
+
+def AddplasticityToSteel(name_model, material_name='STEEL'):
+    m = mdb.models[name_model]
+
+    mat = m.materials[material_name]
+
+    plastic_table = (
+        (7.58424e+08, 0.0,  273.15),
+        (7.58424e+08, 0.25, 273.15),
+        (7.56376e+08, 0.0,  298.15),
+        (7.56376e+08, 0.25, 298.15),
+        (7.25660e+08, 0.0,  373.15),
+        (7.25660e+08, 0.25, 373.15),
+        (7.05182e+08, 0.0,  423.15),
+        (7.05182e+08, 0.25, 423.15),
+        (6.84705e+08, 0.0,  473.15),
+        (6.84705e+08, 0.25, 473.15),
+        (6.64227e+08, 0.0,  523.15),
+        (6.64227e+08, 0.25, 523.15)
+    )
+
+    mat.Plastic(table=plastic_table, temperatureDependency=ON)
+
+    print(f">>> Plasticity dependent of temperature added to material '{material_name}'!")

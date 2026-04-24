@@ -391,7 +391,7 @@
       "Law": "DOUBLE_POWER_CREEP",
       "Elasticity": "ISOTROPIC",
       "ElasticParameters": {
-        "Density": 2170.0,
+        "Density": 1780.09,
         "Young": 20.4,
         "Poisson": 0.36
       },

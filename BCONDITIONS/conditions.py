@@ -522,3 +522,16 @@ def ConfigurePhaseRev(name_model, step_name='Rev_9_875'):
     # m.ViscoStep(name='Rev_9_875_Creep', previous='Rev_9_875', 
     #     timePeriod=945907000.0, maxNumInc=1000000, initialInc=1.0, 
     #     minInc=1e-15, maxInc=15552000.0, cetol=0.01)
+
+def DeactivateFluidForCasing(name_model, step_name='Rev_9_875'):
+    m=mdb.models[name_model]
+    a = m.rootAssembly
+
+    region_fluid = a.instances['FLUID_INST'].sets['ALL_FLUID']
+
+    m.ModelChange(
+        name = 'Remove_Drilling_Fluid',
+        createStepName = step_name
+        region = region_fluido,
+        activeInStep = False
+    )
