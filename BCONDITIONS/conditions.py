@@ -23,6 +23,20 @@ def ConvertStressesJSON(in_situ_stresses):
 
     return table_sv_pa
 
+def get_stresses_exact(z, table):
+    depths = sorted(table.keys())
+
+    if z <= depths[0]: return table[depths[0]]
+    if z >= depths[-1]: return table[depths[-1]]
+
+    for i in range(len(depths)-1):
+        z0, z1 = depths[i], depths[i+1]
+        if z0 <= z <= z1:
+            s0, s1 = table[z0], table[z1]
+
+            return s0 + (z - z0) * ((s1 - s0) / (z1 - z0))
+
+
 
 def ApplyGeostaticStresses(name_model, filtered_layers, stresses_table):
     m = mdb.models[name_model]

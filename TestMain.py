@@ -237,6 +237,8 @@ if __name__ == "__main__":
 
     stresses_table = ConvertStressesJSON(data["InSituStresses"])
 
+    UpdateMaterialDensities('MyFirstModel', filtered_layers, stresses_table)
+
     ApplyGeostaticStresses('MyFirstModel', filtered_layers, stresses_table)
 
     CreateNormalizedGeothermalGrid(
