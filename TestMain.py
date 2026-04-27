@@ -339,7 +339,7 @@ if __name__ == "__main__":
     CreateMeshVerticalBySet(
         name_model='MyFirstModel',
         name_set='MESH_VERTICAL',
-        element_size=40.0
+        element_size=5.0
     )
 
     AttributeTypeElement(
@@ -362,15 +362,21 @@ if __name__ == "__main__":
 
     # Creating a job and saving the model
 
+    job_name = 'WellClosureJob'
+
     CreateJob(
         name_model='MyFirstModel',
-        name_job='WellClosureJob',
+        name_job=job_name,
         num_cpus=14, 
         run_now=True
     )    
 
-    mdb.saveAs(pathName=r'C:\Users\hidalgo\Documents\GitHub\Abaqus_WELL_\WellClosureJob.cae')
-    print("Model saved as 'WellClosureJob.cae' in the project folder. You can open it with Abaqus/CAE to review the model and submit the job for analysis.")
+    # # mdb.jobs[job_name].writInput(consistencyChecking=OFF)
+
+    # RunJob(job_name)
+
+    # mdb.saveAs(pathName=r'C:\Users\hidalgo\Documents\GitHub\Abaqus_WELL_\WellClosureJob.cae')
+    # print("Model saved as 'WellClosureJob.cae' in the project folder. You can open it with Abaqus/CAE to review the model and submit the job for analysis.")
 
     # Falta:
     # enxugar as defs para os sets

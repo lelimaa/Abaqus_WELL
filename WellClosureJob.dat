@@ -1,6 +1,6 @@
 1
 
-   Abaqus 2024                                  Date 22-abr-2026   Time 12:45:52
+   Abaqus 2024                                  Date 27-abr-2026   Time 14:39:36
    For use by PONTIFICIA UNIVERSIDADE CATOLICA DO RIO DE JANEIRO under license from Dassault Systemes or its subsidiary.
 
 
@@ -333,7 +333,7 @@
              NOT BE REPEATED FOR SUBSEQUENT NODES WITH DUPLICATE INITIAL 
              CONDITIONS.
 
- ***WARNING: The initial conditions defined on 22 nodes are not unique. The 
+ ***WARNING: The initial conditions defined on 162 nodes are not unique. The 
              nodes have been identified in node set WarnNodeICDef.
   *initialconditions, type=TEMPERATURE
   *initialconditions, type=TEMPERATURE
@@ -408,7 +408,7 @@
            CONSTRAINTS CAN CAUSE SEVERE ELEMENT DISTORTION. IT MAY BE NECESSARY 
            TO REMESH IN ORDER TO REDUCE THE AMOUNT OF ADJUSTMENT. 
 
- ***WARNING: The aspect ratio for 220 elements exceeds 100 to 1. The elements 
+ ***WARNING: The aspect ratio for 1200 elements exceeds 100 to 1. The elements 
              have been identified in element set WarnElemAspectRatio.
   
  --------------------------------------------------------------------------------
@@ -416,226 +416,1206 @@
   
        Element        Adjusted nodes 
  -------------------- -------------- 
-        FLUID_INST.11       NO       
-          PIPE_INST.6       NO       
-         PIPE_INST.26       NO       
-        FLUID_INST.21       NO       
+       FLUID_INST.118       NO       
+        PIPE_INST.229       NO       
+        PIPE_INST.190       NO       
+       FLUID_INST.196       NO       
+        FLUID_INST.79       NO       
+        FLUID_INST.40       NO       
+        PIPE_INST.112       NO       
+       FLUID_INST.157       NO       
+         PIPE_INST.73       NO       
+        PIPE_INST.151       NO       
+       FLUID_INST.235       NO       
          FLUID_INST.1       NO       
-        FLUID_INST.26       NO       
-          PIPE_INST.1       NO       
-         FLUID_INST.6       NO       
-         PIPE_INST.11       NO       
-         PIPE_INST.16       NO       
-         PIPE_INST.21       NO       
-        FLUID_INST.16       NO       
-          ROCK_INST.9       NO       
-         ROCK_INST.11       NO       
-        FLUID_INST.12       NO       
-          PIPE_INST.7       NO       
-         PIPE_INST.27       NO       
-        FLUID_INST.22       NO       
-         FLUID_INST.2       NO       
-        FLUID_INST.27       NO       
-          PIPE_INST.2       NO       
-         FLUID_INST.7       NO       
-         PIPE_INST.12       NO       
-         PIPE_INST.17       NO       
-         PIPE_INST.22       NO       
-        FLUID_INST.17       NO       
-         ROCK_INST.10       NO       
-         ROCK_INST.12       NO       
-        FLUID_INST.13       NO       
-          PIPE_INST.8       NO       
-         PIPE_INST.28       NO       
-        FLUID_INST.23       NO       
-         FLUID_INST.3       NO       
-        FLUID_INST.28       NO       
-          PIPE_INST.3       NO       
-         FLUID_INST.8       NO       
-         PIPE_INST.13       NO       
-         PIPE_INST.18       NO       
-         PIPE_INST.23       NO       
-        FLUID_INST.18       NO       
-         ROCK_INST.16       NO       
-         ROCK_INST.13       NO       
-        FLUID_INST.14       NO       
-          PIPE_INST.9       NO       
-         PIPE_INST.29       NO       
-        FLUID_INST.24       NO       
-         FLUID_INST.4       NO       
-        FLUID_INST.29       NO       
-          PIPE_INST.4       NO       
-         FLUID_INST.9       NO       
-         PIPE_INST.14       NO       
-         PIPE_INST.19       NO       
-         PIPE_INST.24       NO       
-        FLUID_INST.19       NO       
-         ROCK_INST.17       NO       
-         ROCK_INST.14       NO       
-        FLUID_INST.15       NO       
-         PIPE_INST.10       NO       
-         PIPE_INST.30       NO       
-        FLUID_INST.25       NO       
-         FLUID_INST.5       NO       
-        FLUID_INST.30       NO       
-          PIPE_INST.5       NO       
-        FLUID_INST.10       NO       
-         PIPE_INST.15       NO       
-         PIPE_INST.20       NO       
-         PIPE_INST.25       NO       
-        FLUID_INST.20       NO       
-         ROCK_INST.18       NO       
-         ROCK_INST.15       NO       
-         ROCK_INST.21       NO       
-         ROCK_INST.33       NO       
-         ROCK_INST.36       NO       
-         ROCK_INST.41       NO       
-         ROCK_INST.46       NO       
-         ROCK_INST.57       NO       
-         ROCK_INST.61       NO       
-         ROCK_INST.66       NO       
-         ROCK_INST.71       NO       
-         ROCK_INST.81       NO       
-         ROCK_INST.86       NO       
-         ROCK_INST.91       NO       
-         ROCK_INST.19       NO       
-         ROCK_INST.96       NO       
-         ROCK_INST.22       NO       
-         ROCK_INST.34       NO       
-         ROCK_INST.37       NO       
-         ROCK_INST.42       NO       
-         ROCK_INST.47       NO       
-         ROCK_INST.58       NO       
-         ROCK_INST.62       NO       
-         ROCK_INST.67       NO       
-         ROCK_INST.72       NO       
-         ROCK_INST.82       NO       
-         ROCK_INST.87       NO       
-         ROCK_INST.92       NO       
-         ROCK_INST.20       NO       
-        ROCK_INST.105       NO       
-         ROCK_INST.23       NO       
-         ROCK_INST.35       NO       
-         ROCK_INST.38       NO       
-         ROCK_INST.43       NO       
-         ROCK_INST.48       NO       
-         ROCK_INST.59       NO       
-         ROCK_INST.63       NO       
-         ROCK_INST.68       NO       
-        ROCK_INST.106       NO       
-         ROCK_INST.83       NO       
-         ROCK_INST.88       NO       
-         ROCK_INST.93       NO       
-        ROCK_INST.111       NO       
-        ROCK_INST.116       NO       
-         ROCK_INST.24       NO       
-        ROCK_INST.129       NO       
-         ROCK_INST.39       NO       
-         ROCK_INST.44       NO       
-        ROCK_INST.131       NO       
-         ROCK_INST.60       NO       
-         ROCK_INST.64       NO       
-         ROCK_INST.69       NO       
-        ROCK_INST.107       NO       
-         ROCK_INST.84       NO       
-         ROCK_INST.89       NO       
-         ROCK_INST.94       NO       
-        ROCK_INST.112       NO       
-        ROCK_INST.117       NO       
-        ROCK_INST.136       NO       
-        ROCK_INST.130       NO       
+         PIPE_INST.34       NO       
          ROCK_INST.40       NO       
+       FLUID_INST.119       NO       
+        PIPE_INST.230       NO       
+        PIPE_INST.191       NO       
+       FLUID_INST.197       NO       
+        FLUID_INST.80       NO       
+        FLUID_INST.41       NO       
+        PIPE_INST.113       NO       
+       FLUID_INST.158       NO       
+         PIPE_INST.74       NO       
+        PIPE_INST.152       NO       
+       FLUID_INST.236       NO       
+         FLUID_INST.2       NO       
+         PIPE_INST.35       NO       
+         ROCK_INST.41       NO       
+       FLUID_INST.120       NO       
+        PIPE_INST.231       NO       
+        PIPE_INST.192       NO       
+       FLUID_INST.198       NO       
+        FLUID_INST.81       NO       
+        FLUID_INST.42       NO       
+        PIPE_INST.114       NO       
+       FLUID_INST.159       NO       
+         PIPE_INST.75       NO       
+        PIPE_INST.153       NO       
+       FLUID_INST.237       NO       
+         FLUID_INST.3       NO       
+         PIPE_INST.36       NO       
+         ROCK_INST.42       NO       
+       FLUID_INST.121       NO       
+        PIPE_INST.232       NO       
+        PIPE_INST.193       NO       
+       FLUID_INST.199       NO       
+        FLUID_INST.82       NO       
+        FLUID_INST.43       NO       
+        PIPE_INST.115       NO       
+       FLUID_INST.160       NO       
+         PIPE_INST.76       NO       
+        PIPE_INST.154       NO       
+       FLUID_INST.238       NO       
+         FLUID_INST.4       NO       
+         PIPE_INST.37       NO       
+         ROCK_INST.43       NO       
+       FLUID_INST.122       NO       
+        PIPE_INST.233       NO       
+        PIPE_INST.194       NO       
+       FLUID_INST.200       NO       
+        FLUID_INST.83       NO       
+        FLUID_INST.44       NO       
+        PIPE_INST.116       NO       
+       FLUID_INST.161       NO       
+         PIPE_INST.77       NO       
+        PIPE_INST.155       NO       
+       FLUID_INST.239       NO       
+         FLUID_INST.5       NO       
+         PIPE_INST.38       NO       
+         ROCK_INST.44       NO       
+       FLUID_INST.123       NO       
+        PIPE_INST.234       NO       
+        PIPE_INST.195       NO       
+       FLUID_INST.201       NO       
+        FLUID_INST.84       NO       
+        FLUID_INST.45       NO       
+        PIPE_INST.117       NO       
+       FLUID_INST.162       NO       
+         PIPE_INST.78       NO       
+        PIPE_INST.156       NO       
+       FLUID_INST.240       NO       
+         FLUID_INST.6       NO       
+         PIPE_INST.39       NO       
          ROCK_INST.45       NO       
-        ROCK_INST.132       NO       
-        ROCK_INST.141       NO       
+       FLUID_INST.124       NO       
+        PIPE_INST.235       NO       
+        PIPE_INST.196       NO       
+       FLUID_INST.202       NO       
+        FLUID_INST.85       NO       
+        FLUID_INST.46       NO       
+        PIPE_INST.118       NO       
+       FLUID_INST.163       NO       
+         PIPE_INST.79       NO       
+        PIPE_INST.157       NO       
+          PIPE_INST.1       NO       
+         FLUID_INST.7       NO       
+         PIPE_INST.40       NO       
+         ROCK_INST.46       NO       
+       FLUID_INST.125       NO       
+        PIPE_INST.236       NO       
+        PIPE_INST.197       NO       
+       FLUID_INST.203       NO       
+        FLUID_INST.86       NO       
+        FLUID_INST.47       NO       
+        PIPE_INST.119       NO       
+       FLUID_INST.164       NO       
+         PIPE_INST.80       NO       
+        PIPE_INST.158       NO       
+          PIPE_INST.2       NO       
+         FLUID_INST.8       NO       
+         PIPE_INST.41       NO       
+         ROCK_INST.47       NO       
+       FLUID_INST.126       NO       
+        PIPE_INST.237       NO       
+        PIPE_INST.198       NO       
+       FLUID_INST.204       NO       
+        FLUID_INST.87       NO       
+        FLUID_INST.48       NO       
+        PIPE_INST.120       NO       
+       FLUID_INST.165       NO       
+         PIPE_INST.81       NO       
+        PIPE_INST.159       NO       
+          PIPE_INST.3       NO       
+         FLUID_INST.9       NO       
+         PIPE_INST.42       NO       
+         ROCK_INST.48       NO       
+       FLUID_INST.127       NO       
+        PIPE_INST.238       NO       
+        PIPE_INST.199       NO       
+       FLUID_INST.205       NO       
+        FLUID_INST.88       NO       
+        FLUID_INST.49       NO       
+        PIPE_INST.121       NO       
+       FLUID_INST.166       NO       
+         PIPE_INST.82       NO       
+        PIPE_INST.160       NO       
+          PIPE_INST.4       NO       
+        FLUID_INST.10       NO       
+         PIPE_INST.43       NO       
+         ROCK_INST.64       NO       
+       FLUID_INST.128       NO       
+        PIPE_INST.239       NO       
+        PIPE_INST.200       NO       
+       FLUID_INST.206       NO       
+        FLUID_INST.89       NO       
+        FLUID_INST.50       NO       
+        PIPE_INST.122       NO       
+       FLUID_INST.167       NO       
+         PIPE_INST.83       NO       
+        PIPE_INST.161       NO       
+          PIPE_INST.5       NO       
+        FLUID_INST.11       NO       
+         PIPE_INST.44       NO       
          ROCK_INST.65       NO       
+       FLUID_INST.129       NO       
+        PIPE_INST.240       NO       
+        PIPE_INST.201       NO       
+       FLUID_INST.207       NO       
+        FLUID_INST.90       NO       
+        FLUID_INST.51       NO       
+        PIPE_INST.123       NO       
+       FLUID_INST.168       NO       
+         PIPE_INST.84       NO       
+        PIPE_INST.162       NO       
+          PIPE_INST.6       NO       
+        FLUID_INST.12       NO       
+         PIPE_INST.45       NO       
+         ROCK_INST.66       NO       
+       FLUID_INST.130       NO       
+         ROCK_INST.16       NO       
+        PIPE_INST.202       NO       
+       FLUID_INST.208       NO       
+        FLUID_INST.91       NO       
+        FLUID_INST.52       NO       
+        PIPE_INST.124       NO       
+       FLUID_INST.169       NO       
+         PIPE_INST.85       NO       
+        PIPE_INST.163       NO       
+          PIPE_INST.7       NO       
+        FLUID_INST.13       NO       
+         PIPE_INST.46       NO       
+         ROCK_INST.67       NO       
+       FLUID_INST.131       NO       
+         ROCK_INST.17       NO       
+        PIPE_INST.203       NO       
+       FLUID_INST.209       NO       
+        FLUID_INST.92       NO       
+        FLUID_INST.53       NO       
+        PIPE_INST.125       NO       
+       FLUID_INST.170       NO       
+         PIPE_INST.86       NO       
+        PIPE_INST.164       NO       
+          PIPE_INST.8       NO       
+        FLUID_INST.14       NO       
+         PIPE_INST.47       NO       
+         ROCK_INST.68       NO       
+       FLUID_INST.132       NO       
+         ROCK_INST.18       NO       
+        PIPE_INST.204       NO       
+       FLUID_INST.210       NO       
+        FLUID_INST.93       NO       
+        FLUID_INST.54       NO       
+        PIPE_INST.126       NO       
+       FLUID_INST.171       NO       
+         PIPE_INST.87       NO       
+        PIPE_INST.165       NO       
+          PIPE_INST.9       NO       
+        FLUID_INST.15       NO       
+         PIPE_INST.48       NO       
+         ROCK_INST.69       NO       
+        PIPE_INST.166       NO       
+         ROCK_INST.19       NO       
+        PIPE_INST.205       NO       
+       FLUID_INST.211       NO       
+        FLUID_INST.94       NO       
+        FLUID_INST.55       NO       
+        PIPE_INST.127       NO       
+       FLUID_INST.172       NO       
+         PIPE_INST.88       NO       
+       FLUID_INST.133       NO       
+         PIPE_INST.10       NO       
+        FLUID_INST.16       NO       
+         PIPE_INST.49       NO       
          ROCK_INST.70       NO       
-        ROCK_INST.108       NO       
-         ROCK_INST.85       NO       
+        PIPE_INST.167       NO       
+         ROCK_INST.20       NO       
+        PIPE_INST.206       NO       
+       FLUID_INST.212       NO       
+        FLUID_INST.95       NO       
+        FLUID_INST.56       NO       
+        PIPE_INST.128       NO       
+       FLUID_INST.173       NO       
+         PIPE_INST.89       NO       
+       FLUID_INST.134       NO       
+         PIPE_INST.11       NO       
+        FLUID_INST.17       NO       
+         PIPE_INST.50       NO       
+         ROCK_INST.71       NO       
+        PIPE_INST.168       NO       
+         ROCK_INST.21       NO       
+        PIPE_INST.207       NO       
+       FLUID_INST.213       NO       
+        FLUID_INST.96       NO       
+        FLUID_INST.57       NO       
+        PIPE_INST.129       NO       
+       FLUID_INST.174       NO       
+         PIPE_INST.90       NO       
+       FLUID_INST.135       NO       
+         PIPE_INST.12       NO       
+        FLUID_INST.18       NO       
+         PIPE_INST.51       NO       
+         ROCK_INST.72       NO       
+        PIPE_INST.169       NO       
+         ROCK_INST.22       NO       
+        PIPE_INST.208       NO       
+       FLUID_INST.214       NO       
+        FLUID_INST.97       NO       
+        FLUID_INST.58       NO       
+        PIPE_INST.130       NO       
+       FLUID_INST.175       NO       
+         PIPE_INST.91       NO       
+       FLUID_INST.136       NO       
+         PIPE_INST.13       NO       
+        FLUID_INST.19       NO       
+         PIPE_INST.52       NO       
+         ROCK_INST.88       NO       
+        PIPE_INST.170       NO       
+         ROCK_INST.23       NO       
+        PIPE_INST.209       NO       
+       FLUID_INST.215       NO       
+        FLUID_INST.98       NO       
+        FLUID_INST.59       NO       
+        PIPE_INST.131       NO       
+       FLUID_INST.176       NO       
+         PIPE_INST.92       NO       
+       FLUID_INST.137       NO       
+         PIPE_INST.14       NO       
+        FLUID_INST.20       NO       
+         PIPE_INST.53       NO       
+         ROCK_INST.89       NO       
+        PIPE_INST.171       NO       
+         ROCK_INST.24       NO       
+        PIPE_INST.210       NO       
+       FLUID_INST.216       NO       
+        FLUID_INST.99       NO       
+        FLUID_INST.60       NO       
+        PIPE_INST.132       NO       
+       FLUID_INST.177       NO       
+         PIPE_INST.93       NO       
+       FLUID_INST.138       NO       
+         PIPE_INST.15       NO       
+        FLUID_INST.21       NO       
+         PIPE_INST.54       NO       
          ROCK_INST.90       NO       
-         ROCK_INST.95       NO       
+        PIPE_INST.172       NO       
+        ROCK_INST.112       NO       
+        PIPE_INST.211       NO       
+       FLUID_INST.217       NO       
+       FLUID_INST.100       NO       
+        FLUID_INST.61       NO       
+        PIPE_INST.133       NO       
+       FLUID_INST.178       NO       
+         PIPE_INST.94       NO       
+       FLUID_INST.139       NO       
+         PIPE_INST.16       NO       
+        FLUID_INST.22       NO       
+         PIPE_INST.55       NO       
+         ROCK_INST.91       NO       
+        PIPE_INST.173       NO       
         ROCK_INST.113       NO       
-        ROCK_INST.118       NO       
-        ROCK_INST.137       NO       
-        ROCK_INST.153       NO       
-        ROCK_INST.156       NO       
-        ROCK_INST.161       NO       
-        ROCK_INST.133       NO       
-        ROCK_INST.142       NO       
-        ROCK_INST.166       NO       
-        ROCK_INST.177       NO       
-        ROCK_INST.109       NO       
-        ROCK_INST.181       NO       
-        ROCK_INST.186       NO       
-        ROCK_INST.191       NO       
+        PIPE_INST.212       NO       
+       FLUID_INST.218       NO       
+       FLUID_INST.101       NO       
+        FLUID_INST.62       NO       
+        PIPE_INST.134       NO       
+       FLUID_INST.179       NO       
+         PIPE_INST.95       NO       
+       FLUID_INST.140       NO       
+         PIPE_INST.17       NO       
+        FLUID_INST.23       NO       
+         PIPE_INST.56       NO       
+         ROCK_INST.92       NO       
+        PIPE_INST.174       NO       
         ROCK_INST.114       NO       
-        ROCK_INST.119       NO       
-        ROCK_INST.138       NO       
-        ROCK_INST.154       NO       
-        ROCK_INST.157       NO       
-        ROCK_INST.162       NO       
-        ROCK_INST.134       NO       
-        ROCK_INST.143       NO       
-        ROCK_INST.167       NO       
-        ROCK_INST.178       NO       
-        ROCK_INST.110       NO       
-        ROCK_INST.182       NO       
-        ROCK_INST.187       NO       
-        ROCK_INST.192       NO       
+        PIPE_INST.213       NO       
+       FLUID_INST.219       NO       
+       FLUID_INST.102       NO       
+        FLUID_INST.63       NO       
+        PIPE_INST.135       NO       
+       FLUID_INST.180       NO       
+         PIPE_INST.96       NO       
+       FLUID_INST.141       NO       
+         PIPE_INST.18       NO       
+        FLUID_INST.24       NO       
+         PIPE_INST.57       NO       
+         ROCK_INST.93       NO       
+        PIPE_INST.175       NO       
         ROCK_INST.115       NO       
-        ROCK_INST.120       NO       
-        ROCK_INST.139       NO       
-        ROCK_INST.155       NO       
-        ROCK_INST.158       NO       
-        ROCK_INST.163       NO       
-        ROCK_INST.135       NO       
-        ROCK_INST.144       NO       
-        ROCK_INST.168       NO       
-        ROCK_INST.179       NO       
-        ROCK_INST.201       NO       
-        ROCK_INST.183       NO       
-        ROCK_INST.188       NO       
-        ROCK_INST.206       NO       
-        ROCK_INST.211       NO       
-        ROCK_INST.216       NO       
-        ROCK_INST.140       NO       
-        ROCK_INST.225       NO       
-        ROCK_INST.159       NO       
-        ROCK_INST.164       NO       
+        PIPE_INST.214       NO       
+       FLUID_INST.220       NO       
+       FLUID_INST.103       NO       
+        FLUID_INST.64       NO       
+        PIPE_INST.136       NO       
+       FLUID_INST.181       NO       
+         PIPE_INST.97       NO       
+       FLUID_INST.142       NO       
+         PIPE_INST.19       NO       
+        FLUID_INST.25       NO       
+         PIPE_INST.58       NO       
+         ROCK_INST.94       NO       
+        PIPE_INST.176       NO       
+        ROCK_INST.116       NO       
+        PIPE_INST.215       NO       
+       FLUID_INST.221       NO       
+       FLUID_INST.104       NO       
+        FLUID_INST.65       NO       
+        PIPE_INST.137       NO       
+       FLUID_INST.182       NO       
+         PIPE_INST.98       NO       
+       FLUID_INST.143       NO       
+         PIPE_INST.20       NO       
+        FLUID_INST.26       NO       
+         PIPE_INST.59       NO       
+         ROCK_INST.95       NO       
+        PIPE_INST.177       NO       
+        ROCK_INST.117       NO       
+        PIPE_INST.216       NO       
+       FLUID_INST.222       NO       
+       FLUID_INST.105       NO       
+        FLUID_INST.66       NO       
+        PIPE_INST.138       NO       
+       FLUID_INST.183       NO       
+         PIPE_INST.99       NO       
+       FLUID_INST.144       NO       
+         PIPE_INST.21       NO       
+        FLUID_INST.27       NO       
+         PIPE_INST.60       NO       
+         ROCK_INST.96       NO       
+        PIPE_INST.178       NO       
+        ROCK_INST.118       NO       
+        PIPE_INST.217       NO       
+       FLUID_INST.223       NO       
+       FLUID_INST.106       NO       
+        FLUID_INST.67       NO       
+        PIPE_INST.139       NO       
+       FLUID_INST.184       NO       
+        PIPE_INST.100       NO       
+       FLUID_INST.145       NO       
+         PIPE_INST.22       NO       
+        FLUID_INST.28       NO       
+         PIPE_INST.61       NO       
         ROCK_INST.160       NO       
-        ROCK_INST.226       NO       
-        ROCK_INST.231       NO       
-        ROCK_INST.236       NO       
-        ROCK_INST.180       NO       
-        ROCK_INST.202       NO       
-        ROCK_INST.184       NO       
-        ROCK_INST.189       NO       
-        ROCK_INST.207       NO       
-        ROCK_INST.212       NO       
+        PIPE_INST.179       NO       
+        ROCK_INST.119       NO       
+        PIPE_INST.218       NO       
+       FLUID_INST.224       NO       
+       FLUID_INST.107       NO       
+        FLUID_INST.68       NO       
+        PIPE_INST.140       NO       
+       FLUID_INST.185       NO       
+        PIPE_INST.101       NO       
+       FLUID_INST.146       NO       
+         PIPE_INST.23       NO       
+        FLUID_INST.29       NO       
+         PIPE_INST.62       NO       
+        ROCK_INST.161       NO       
+        PIPE_INST.180       NO       
+        ROCK_INST.120       NO       
+        PIPE_INST.219       NO       
+       FLUID_INST.225       NO       
+       FLUID_INST.108       NO       
+        FLUID_INST.69       NO       
+        PIPE_INST.141       NO       
+       FLUID_INST.186       NO       
+        PIPE_INST.102       NO       
+       FLUID_INST.147       NO       
+         PIPE_INST.24       NO       
+        FLUID_INST.30       NO       
+         PIPE_INST.63       NO       
+        ROCK_INST.162       NO       
+        PIPE_INST.181       NO       
+        ROCK_INST.136       NO       
+        PIPE_INST.220       NO       
+       FLUID_INST.226       NO       
+       FLUID_INST.109       NO       
+        FLUID_INST.70       NO       
+        PIPE_INST.142       NO       
+       FLUID_INST.187       NO       
+        PIPE_INST.103       NO       
+       FLUID_INST.148       NO       
+         PIPE_INST.25       NO       
+        FLUID_INST.31       NO       
+         PIPE_INST.64       NO       
+        ROCK_INST.163       NO       
+        PIPE_INST.182       NO       
+        ROCK_INST.137       NO       
+        PIPE_INST.221       NO       
+       FLUID_INST.227       NO       
+       FLUID_INST.110       NO       
+        FLUID_INST.71       NO       
+        PIPE_INST.143       NO       
+       FLUID_INST.188       NO       
+        PIPE_INST.104       NO       
+       FLUID_INST.149       NO       
+         PIPE_INST.26       NO       
+        FLUID_INST.32       NO       
+         PIPE_INST.65       NO       
+        ROCK_INST.164       NO       
+        PIPE_INST.183       NO       
+        ROCK_INST.138       NO       
+        PIPE_INST.222       NO       
+       FLUID_INST.228       NO       
+       FLUID_INST.111       NO       
+        FLUID_INST.72       NO       
+        PIPE_INST.144       NO       
+       FLUID_INST.189       NO       
+        PIPE_INST.105       NO       
+       FLUID_INST.150       NO       
+         PIPE_INST.27       NO       
+        FLUID_INST.33       NO       
+         PIPE_INST.66       NO       
         ROCK_INST.165       NO       
-        ROCK_INST.227       NO       
-        ROCK_INST.190       NO       
-        ROCK_INST.208       NO       
-        ROCK_INST.213       NO       
+        PIPE_INST.184       NO       
+        ROCK_INST.139       NO       
+        PIPE_INST.223       NO       
+       FLUID_INST.229       NO       
+       FLUID_INST.112       NO       
+        FLUID_INST.73       NO       
+        PIPE_INST.145       NO       
+       FLUID_INST.190       NO       
+        PIPE_INST.106       NO       
+       FLUID_INST.151       NO       
+         PIPE_INST.28       NO       
+        FLUID_INST.34       NO       
+         PIPE_INST.67       NO       
+        ROCK_INST.166       NO       
+        PIPE_INST.185       NO       
+        ROCK_INST.140       NO       
+        PIPE_INST.224       NO       
+       FLUID_INST.230       NO       
+       FLUID_INST.113       NO       
+        FLUID_INST.74       NO       
+        PIPE_INST.146       NO       
+       FLUID_INST.191       NO       
+        PIPE_INST.107       NO       
+       FLUID_INST.152       NO       
+         PIPE_INST.29       NO       
+        FLUID_INST.35       NO       
+         PIPE_INST.68       NO       
+        ROCK_INST.167       NO       
+        PIPE_INST.186       NO       
+        ROCK_INST.141       NO       
+        PIPE_INST.225       NO       
+       FLUID_INST.231       NO       
+       FLUID_INST.114       NO       
+        FLUID_INST.75       NO       
+        PIPE_INST.147       NO       
+       FLUID_INST.192       NO       
+        PIPE_INST.108       NO       
+       FLUID_INST.153       NO       
+         PIPE_INST.30       NO       
+        FLUID_INST.36       NO       
+         PIPE_INST.69       NO       
+        ROCK_INST.168       NO       
+        PIPE_INST.187       NO       
+        ROCK_INST.142       NO       
+        PIPE_INST.226       NO       
+       FLUID_INST.232       NO       
+       FLUID_INST.115       NO       
+        FLUID_INST.76       NO       
+        PIPE_INST.148       NO       
+       FLUID_INST.193       NO       
+        PIPE_INST.109       NO       
+       FLUID_INST.154       NO       
+         PIPE_INST.31       NO       
+        FLUID_INST.37       NO       
+         PIPE_INST.70       NO       
+        ROCK_INST.184       NO       
+        PIPE_INST.188       NO       
+        ROCK_INST.143       NO       
+        PIPE_INST.227       NO       
+       FLUID_INST.233       NO       
+       FLUID_INST.116       NO       
+        FLUID_INST.77       NO       
+        PIPE_INST.149       NO       
+       FLUID_INST.194       NO       
+        PIPE_INST.110       NO       
+       FLUID_INST.155       NO       
+         PIPE_INST.32       NO       
+        FLUID_INST.38       NO       
+         PIPE_INST.71       NO       
         ROCK_INST.185       NO       
-        ROCK_INST.228       NO       
-        ROCK_INST.237       NO       
-        ROCK_INST.203       NO       
+        PIPE_INST.189       NO       
+        ROCK_INST.144       NO       
+        PIPE_INST.228       NO       
+       FLUID_INST.234       NO       
+       FLUID_INST.117       NO       
+        FLUID_INST.78       NO       
+        PIPE_INST.150       NO       
+       FLUID_INST.195       NO       
+        PIPE_INST.111       NO       
+       FLUID_INST.156       NO       
+         PIPE_INST.33       NO       
+        FLUID_INST.39       NO       
+         PIPE_INST.72       NO       
+        ROCK_INST.186       NO       
         ROCK_INST.232       NO       
-        ROCK_INST.209       NO       
-        ROCK_INST.214       NO       
-        ROCK_INST.229       NO       
-        ROCK_INST.238       NO       
-        ROCK_INST.204       NO       
+        ROCK_INST.262       NO       
+        ROCK_INST.304       NO       
+        ROCK_INST.352       NO       
+        ROCK_INST.379       NO       
+        ROCK_INST.424       NO       
+        ROCK_INST.472       NO       
+        ROCK_INST.496       NO       
+        ROCK_INST.544       NO       
+        ROCK_INST.574       NO       
+        ROCK_INST.616       NO       
+        ROCK_INST.664       NO       
+        ROCK_INST.691       NO       
+        ROCK_INST.187       NO       
         ROCK_INST.233       NO       
-        ROCK_INST.210       NO       
-        ROCK_INST.215       NO       
-        ROCK_INST.230       NO       
-        ROCK_INST.239       NO       
-        ROCK_INST.205       NO       
+        ROCK_INST.263       NO       
+        ROCK_INST.305       NO       
+        ROCK_INST.353       NO       
+        ROCK_INST.380       NO       
+        ROCK_INST.425       NO       
+        ROCK_INST.473       NO       
+        ROCK_INST.497       NO       
+        ROCK_INST.545       NO       
+        ROCK_INST.575       NO       
+        ROCK_INST.617       NO       
+        ROCK_INST.665       NO       
+        ROCK_INST.692       NO       
+        ROCK_INST.188       NO       
         ROCK_INST.234       NO       
-        ROCK_INST.240       NO       
+        ROCK_INST.264       NO       
+        ROCK_INST.306       NO       
+        ROCK_INST.354       NO       
+        ROCK_INST.381       NO       
         ROCK_INST.235       NO       
+        ROCK_INST.474       NO       
+        ROCK_INST.307       NO       
+        ROCK_INST.355       NO       
+        ROCK_INST.576       NO       
+        ROCK_INST.618       NO       
+        ROCK_INST.666       NO       
+        ROCK_INST.693       NO       
+        ROCK_INST.189       NO       
+        ROCK_INST.426       NO       
+        ROCK_INST.280       NO       
+        ROCK_INST.498       NO       
+        ROCK_INST.546       NO       
+        ROCK_INST.382       NO       
+        ROCK_INST.236       NO       
+        ROCK_INST.475       NO       
+        ROCK_INST.308       NO       
+        ROCK_INST.356       NO       
+        ROCK_INST.592       NO       
+        ROCK_INST.619       NO       
+        ROCK_INST.667       NO       
+        ROCK_INST.694       NO       
+        ROCK_INST.190       NO       
+        ROCK_INST.427       NO       
+        ROCK_INST.281       NO       
+        ROCK_INST.499       NO       
+        ROCK_INST.547       NO       
+        ROCK_INST.383       NO       
+        ROCK_INST.237       NO       
+        ROCK_INST.476       NO       
+        ROCK_INST.309       NO       
+        ROCK_INST.357       NO       
+        ROCK_INST.593       NO       
+        ROCK_INST.620       NO       
+        ROCK_INST.668       NO       
+        ROCK_INST.695       NO       
+        ROCK_INST.191       NO       
+        ROCK_INST.428       NO       
+        ROCK_INST.282       NO       
+        ROCK_INST.500       NO       
+        ROCK_INST.548       NO       
+        ROCK_INST.384       NO       
+        ROCK_INST.238       NO       
+        ROCK_INST.477       NO       
+        ROCK_INST.310       NO       
+        ROCK_INST.358       NO       
+        ROCK_INST.594       NO       
+        ROCK_INST.621       NO       
+        ROCK_INST.669       NO       
+        ROCK_INST.696       NO       
+        ROCK_INST.192       NO       
+        ROCK_INST.429       NO       
+        ROCK_INST.283       NO       
+        ROCK_INST.501       NO       
+        ROCK_INST.549       NO       
+        ROCK_INST.400       NO       
+        ROCK_INST.239       NO       
+        ROCK_INST.478       NO       
+        ROCK_INST.311       NO       
+        ROCK_INST.359       NO       
+        ROCK_INST.595       NO       
+        ROCK_INST.622       NO       
+        ROCK_INST.670       NO       
+        ROCK_INST.712       NO       
+        ROCK_INST.208       NO       
+        ROCK_INST.430       NO       
+        ROCK_INST.284       NO       
+        ROCK_INST.502       NO       
+        ROCK_INST.550       NO       
+        ROCK_INST.401       NO       
+        ROCK_INST.240       NO       
+        ROCK_INST.479       NO       
+        ROCK_INST.312       NO       
+        ROCK_INST.360       NO       
+        ROCK_INST.596       NO       
+        ROCK_INST.623       NO       
+        ROCK_INST.671       NO       
+        ROCK_INST.713       NO       
+        ROCK_INST.209       NO       
+        ROCK_INST.431       NO       
+        ROCK_INST.285       NO       
+        ROCK_INST.503       NO       
+        ROCK_INST.551       NO       
+        ROCK_INST.402       NO       
+        ROCK_INST.256       NO       
+        ROCK_INST.480       NO       
+        ROCK_INST.328       NO       
+        ROCK_INST.376       NO       
+        ROCK_INST.597       NO       
+        ROCK_INST.624       NO       
+        ROCK_INST.672       NO       
+        ROCK_INST.714       NO       
+        ROCK_INST.210       NO       
+        ROCK_INST.432       NO       
+        ROCK_INST.286       NO       
+        ROCK_INST.504       NO       
+        ROCK_INST.552       NO       
+        ROCK_INST.403       NO       
+        ROCK_INST.257       NO       
+        ROCK_INST.736       NO       
+        ROCK_INST.329       NO       
+        ROCK_INST.377       NO       
+        ROCK_INST.598       NO       
+        ROCK_INST.640       NO       
+        ROCK_INST.688       NO       
+        ROCK_INST.715       NO       
+        ROCK_INST.211       NO       
+        ROCK_INST.448       NO       
+        ROCK_INST.287       NO       
+        ROCK_INST.520       NO       
+        ROCK_INST.568       NO       
+        ROCK_INST.404       NO       
+        ROCK_INST.258       NO       
+        ROCK_INST.737       NO       
+        ROCK_INST.330       NO       
+        ROCK_INST.378       NO       
+        ROCK_INST.599       NO       
+        ROCK_INST.641       NO       
+        ROCK_INST.689       NO       
+        ROCK_INST.716       NO       
+        ROCK_INST.212       NO       
+        ROCK_INST.449       NO       
+        ROCK_INST.288       NO       
+        ROCK_INST.521       NO       
+        ROCK_INST.569       NO       
+        ROCK_INST.405       NO       
+        ROCK_INST.259       NO       
+        ROCK_INST.738       NO       
+        ROCK_INST.331       NO       
+        ROCK_INST.784       NO       
+        ROCK_INST.600       NO       
+        ROCK_INST.642       NO       
+        ROCK_INST.690       NO       
+        ROCK_INST.717       NO       
+        ROCK_INST.213       NO       
+        ROCK_INST.450       NO       
+        ROCK_INST.808       NO       
+        ROCK_INST.522       NO       
+        ROCK_INST.570       NO       
+        ROCK_INST.406       NO       
+        ROCK_INST.260       NO       
+        ROCK_INST.739       NO       
+        ROCK_INST.332       NO       
+        ROCK_INST.785       NO       
+        ROCK_INST.856       NO       
+        ROCK_INST.643       NO       
+        ROCK_INST.886       NO       
+        ROCK_INST.718       NO       
+        ROCK_INST.214       NO       
+        ROCK_INST.451       NO       
+        ROCK_INST.809       NO       
+        ROCK_INST.523       NO       
+        ROCK_INST.571       NO       
+        ROCK_INST.407       NO       
+        ROCK_INST.261       NO       
+        ROCK_INST.740       NO       
+        ROCK_INST.333       NO       
+        ROCK_INST.786       NO       
+        ROCK_INST.857       NO       
+        ROCK_INST.644       NO       
+        ROCK_INST.887       NO       
+        ROCK_INST.719       NO       
+        ROCK_INST.215       NO       
+        ROCK_INST.452       NO       
+        ROCK_INST.810       NO       
+        ROCK_INST.524       NO       
+        ROCK_INST.572       NO       
+        ROCK_INST.408       NO       
+        ROCK_INST.928       NO       
+        ROCK_INST.741       NO       
+        ROCK_INST.334       NO       
+        ROCK_INST.787       NO       
+        ROCK_INST.858       NO       
+        ROCK_INST.645       NO       
+        ROCK_INST.888       NO       
+        ROCK_INST.720       NO       
+        ROCK_INST.216       NO       
+        ROCK_INST.453       NO       
+        ROCK_INST.811       NO       
+        ROCK_INST.525       NO       
+        ROCK_INST.573       NO       
+        ROCK_INST.976       NO       
+        ROCK_INST.929       NO       
+        ROCK_INST.742       NO       
+        ROCK_INST.335       NO       
+        ROCK_INST.788       NO       
+        ROCK_INST.859       NO       
+        ROCK_INST.646       NO       
+        ROCK_INST.904       NO       
+       ROCK_INST.1003       NO       
+       ROCK_INST.1048       NO       
+        ROCK_INST.454       NO       
+        ROCK_INST.812       NO       
+        ROCK_INST.526       NO       
+       ROCK_INST.1096       NO       
+        ROCK_INST.977       NO       
+        ROCK_INST.930       NO       
+        ROCK_INST.743       NO       
+        ROCK_INST.336       NO       
+        ROCK_INST.789       NO       
+        ROCK_INST.860       NO       
+        ROCK_INST.647       NO       
+        ROCK_INST.905       NO       
+       ROCK_INST.1004       NO       
+       ROCK_INST.1049       NO       
+        ROCK_INST.455       NO       
+        ROCK_INST.813       NO       
+        ROCK_INST.527       NO       
+       ROCK_INST.1097       NO       
+        ROCK_INST.978       NO       
+        ROCK_INST.931       NO       
+        ROCK_INST.744       NO       
+       ROCK_INST.1120       NO       
+        ROCK_INST.790       NO       
+        ROCK_INST.861       NO       
+        ROCK_INST.648       NO       
+        ROCK_INST.906       NO       
+       ROCK_INST.1005       NO       
+       ROCK_INST.1050       NO       
+        ROCK_INST.456       NO       
+        ROCK_INST.814       NO       
+        ROCK_INST.528       NO       
+       ROCK_INST.1098       NO       
+        ROCK_INST.979       NO       
+        ROCK_INST.932       NO       
+        ROCK_INST.760       NO       
+       ROCK_INST.1121       NO       
+        ROCK_INST.791       NO       
+        ROCK_INST.862       NO       
+       ROCK_INST.1168       NO       
+        ROCK_INST.907       NO       
+       ROCK_INST.1006       NO       
+       ROCK_INST.1051       NO       
+       ROCK_INST.1198       NO       
+        ROCK_INST.815       NO       
+       ROCK_INST.1240       NO       
+       ROCK_INST.1099       NO       
+        ROCK_INST.980       NO       
+        ROCK_INST.933       NO       
+        ROCK_INST.761       NO       
+       ROCK_INST.1122       NO       
+        ROCK_INST.792       NO       
+        ROCK_INST.863       NO       
+       ROCK_INST.1169       NO       
+        ROCK_INST.908       NO       
+       ROCK_INST.1007       NO       
+       ROCK_INST.1052       NO       
+       ROCK_INST.1199       NO       
+        ROCK_INST.816       NO       
+       ROCK_INST.1241       NO       
+       ROCK_INST.1100       NO       
+        ROCK_INST.981       NO       
+        ROCK_INST.934       NO       
+        ROCK_INST.762       NO       
+       ROCK_INST.1123       NO       
+       ROCK_INST.1288       NO       
+        ROCK_INST.864       NO       
+       ROCK_INST.1170       NO       
+        ROCK_INST.909       NO       
+       ROCK_INST.1008       NO       
+       ROCK_INST.1053       NO       
+       ROCK_INST.1200       NO       
+        ROCK_INST.832       NO       
+       ROCK_INST.1242       NO       
+       ROCK_INST.1101       NO       
+        ROCK_INST.982       NO       
+        ROCK_INST.935       NO       
+        ROCK_INST.763       NO       
+       ROCK_INST.1124       NO       
+       ROCK_INST.1289       NO       
+        ROCK_INST.880       NO       
+       ROCK_INST.1171       NO       
+        ROCK_INST.910       NO       
+       ROCK_INST.1024       NO       
+       ROCK_INST.1054       NO       
+       ROCK_INST.1216       NO       
+        ROCK_INST.833       NO       
+       ROCK_INST.1243       NO       
+       ROCK_INST.1102       NO       
+        ROCK_INST.983       NO       
+        ROCK_INST.936       NO       
+        ROCK_INST.764       NO       
+       ROCK_INST.1125       NO       
+       ROCK_INST.1290       NO       
+        ROCK_INST.881       NO       
+       ROCK_INST.1172       NO       
+        ROCK_INST.911       NO       
+       ROCK_INST.1025       NO       
+       ROCK_INST.1055       NO       
+       ROCK_INST.1217       NO       
+        ROCK_INST.834       NO       
+       ROCK_INST.1244       NO       
+       ROCK_INST.1103       NO       
+        ROCK_INST.984       NO       
+        ROCK_INST.952       NO       
+        ROCK_INST.765       NO       
+       ROCK_INST.1126       NO       
+       ROCK_INST.1291       NO       
+        ROCK_INST.882       NO       
+       ROCK_INST.1173       NO       
+        ROCK_INST.912       NO       
+       ROCK_INST.1026       NO       
+       ROCK_INST.1056       NO       
+       ROCK_INST.1218       NO       
+        ROCK_INST.835       NO       
+       ROCK_INST.1245       NO       
+       ROCK_INST.1104       NO       
+       ROCK_INST.1000       NO       
+        ROCK_INST.953       NO       
+        ROCK_INST.766       NO       
+       ROCK_INST.1127       NO       
+       ROCK_INST.1292       NO       
+        ROCK_INST.883       NO       
+       ROCK_INST.1174       NO       
+       ROCK_INST.1315       NO       
+       ROCK_INST.1027       NO       
+       ROCK_INST.1072       NO       
+       ROCK_INST.1219       NO       
+        ROCK_INST.836       NO       
+       ROCK_INST.1246       NO       
+       ROCK_INST.1360       NO       
+       ROCK_INST.1001       NO       
+        ROCK_INST.954       NO       
+        ROCK_INST.767       NO       
+       ROCK_INST.1128       NO       
+       ROCK_INST.1293       NO       
+        ROCK_INST.884       NO       
+       ROCK_INST.1175       NO       
+       ROCK_INST.1316       NO       
+       ROCK_INST.1028       NO       
+       ROCK_INST.1073       NO       
+       ROCK_INST.1220       NO       
+        ROCK_INST.837       NO       
+       ROCK_INST.1247       NO       
+       ROCK_INST.1361       NO       
+       ROCK_INST.1002       NO       
+        ROCK_INST.955       NO       
+        ROCK_INST.768       NO       
+       ROCK_INST.1144       NO       
+       ROCK_INST.1294       NO       
+        ROCK_INST.885       NO       
+       ROCK_INST.1176       NO       
+       ROCK_INST.1317       NO       
+       ROCK_INST.1029       NO       
+       ROCK_INST.1074       NO       
+       ROCK_INST.1221       NO       
+        ROCK_INST.838       NO       
+       ROCK_INST.1248       NO       
+       ROCK_INST.1362       NO       
+       ROCK_INST.1408       NO       
+        ROCK_INST.956       NO       
+       ROCK_INST.1432       NO       
+       ROCK_INST.1145       NO       
+       ROCK_INST.1295       NO       
+       ROCK_INST.1480       NO       
+       ROCK_INST.1192       NO       
+       ROCK_INST.1318       NO       
+       ROCK_INST.1030       NO       
+       ROCK_INST.1075       NO       
+       ROCK_INST.1222       NO       
+        ROCK_INST.839       NO       
+       ROCK_INST.1264       NO       
+       ROCK_INST.1363       NO       
+       ROCK_INST.1409       NO       
+        ROCK_INST.957       NO       
+       ROCK_INST.1433       NO       
+       ROCK_INST.1146       NO       
+       ROCK_INST.1296       NO       
+       ROCK_INST.1481       NO       
+       ROCK_INST.1193       NO       
+       ROCK_INST.1319       NO       
+       ROCK_INST.1031       NO       
+       ROCK_INST.1076       NO       
+       ROCK_INST.1223       NO       
+        ROCK_INST.840       NO       
+       ROCK_INST.1265       NO       
+       ROCK_INST.1364       NO       
+       ROCK_INST.1410       NO       
+        ROCK_INST.958       NO       
+       ROCK_INST.1434       NO       
+       ROCK_INST.1147       NO       
+       ROCK_INST.1312       NO       
+       ROCK_INST.1482       NO       
+       ROCK_INST.1194       NO       
+       ROCK_INST.1320       NO       
+       ROCK_INST.1032       NO       
+       ROCK_INST.1077       NO       
+       ROCK_INST.1224       NO       
+       ROCK_INST.1510       NO       
+       ROCK_INST.1266       NO       
+       ROCK_INST.1365       NO       
+       ROCK_INST.1411       NO       
+        ROCK_INST.959       NO       
+       ROCK_INST.1435       NO       
+       ROCK_INST.1148       NO       
+       ROCK_INST.1313       NO       
+       ROCK_INST.1483       NO       
+       ROCK_INST.1195       NO       
+       ROCK_INST.1336       NO       
+       ROCK_INST.1552       NO       
+       ROCK_INST.1078       NO       
+       ROCK_INST.1600       NO       
+       ROCK_INST.1511       NO       
+       ROCK_INST.1267       NO       
+       ROCK_INST.1366       NO       
+       ROCK_INST.1412       NO       
+        ROCK_INST.960       NO       
+       ROCK_INST.1436       NO       
+       ROCK_INST.1149       NO       
+       ROCK_INST.1314       NO       
+       ROCK_INST.1484       NO       
+       ROCK_INST.1196       NO       
+       ROCK_INST.1337       NO       
+       ROCK_INST.1553       NO       
+       ROCK_INST.1079       NO       
+       ROCK_INST.1601       NO       
+       ROCK_INST.1512       NO       
+       ROCK_INST.1268       NO       
+       ROCK_INST.1367       NO       
+       ROCK_INST.1413       NO       
+       ROCK_INST.1627       NO       
+       ROCK_INST.1437       NO       
+       ROCK_INST.1150       NO       
+       ROCK_INST.1672       NO       
+       ROCK_INST.1485       NO       
+       ROCK_INST.1197       NO       
+       ROCK_INST.1338       NO       
+       ROCK_INST.1554       NO       
+       ROCK_INST.1080       NO       
+       ROCK_INST.1602       NO       
+       ROCK_INST.1528       NO       
+       ROCK_INST.1269       NO       
+       ROCK_INST.1368       NO       
+       ROCK_INST.1414       NO       
+       ROCK_INST.1628       NO       
+       ROCK_INST.1438       NO       
+       ROCK_INST.1151       NO       
+       ROCK_INST.1673       NO       
+       ROCK_INST.1486       NO       
+       ROCK_INST.1720       NO       
+       ROCK_INST.1339       NO       
+       ROCK_INST.1555       NO       
+       ROCK_INST.1744       NO       
+       ROCK_INST.1603       NO       
+       ROCK_INST.1529       NO       
+       ROCK_INST.1270       NO       
+       ROCK_INST.1384       NO       
+       ROCK_INST.1415       NO       
+       ROCK_INST.1629       NO       
+       ROCK_INST.1439       NO       
+       ROCK_INST.1152       NO       
+       ROCK_INST.1674       NO       
+       ROCK_INST.1487       NO       
+       ROCK_INST.1721       NO       
+       ROCK_INST.1340       NO       
+       ROCK_INST.1556       NO       
+       ROCK_INST.1745       NO       
+       ROCK_INST.1604       NO       
+       ROCK_INST.1530       NO       
+       ROCK_INST.1271       NO       
+       ROCK_INST.1385       NO       
+       ROCK_INST.1416       NO       
+       ROCK_INST.1630       NO       
+       ROCK_INST.1440       NO       
+       ROCK_INST.1792       NO       
+       ROCK_INST.1675       NO       
+       ROCK_INST.1488       NO       
+       ROCK_INST.1722       NO       
+       ROCK_INST.1341       NO       
+       ROCK_INST.1557       NO       
+       ROCK_INST.1746       NO       
+       ROCK_INST.1605       NO       
+       ROCK_INST.1531       NO       
+       ROCK_INST.1272       NO       
+       ROCK_INST.1386       NO       
+       ROCK_INST.1822       NO       
+       ROCK_INST.1631       NO       
+       ROCK_INST.1456       NO       
+       ROCK_INST.1793       NO       
+       ROCK_INST.1676       NO       
+       ROCK_INST.1504       NO       
+       ROCK_INST.1723       NO       
+       ROCK_INST.1342       NO       
+       ROCK_INST.1558       NO       
+       ROCK_INST.1747       NO       
+       ROCK_INST.1606       NO       
+       ROCK_INST.1532       NO       
+       ROCK_INST.1864       NO       
+       ROCK_INST.1387       NO       
+       ROCK_INST.1823       NO       
+       ROCK_INST.1632       NO       
+       ROCK_INST.1457       NO       
+       ROCK_INST.1794       NO       
+       ROCK_INST.1677       NO       
+       ROCK_INST.1505       NO       
+       ROCK_INST.1724       NO       
+       ROCK_INST.1343       NO       
+       ROCK_INST.1559       NO       
+       ROCK_INST.1748       NO       
+       ROCK_INST.1607       NO       
+       ROCK_INST.1533       NO       
+       ROCK_INST.1865       NO       
+       ROCK_INST.1388       NO       
+       ROCK_INST.1824       NO       
+       ROCK_INST.1648       NO       
+       ROCK_INST.1458       NO       
+       ROCK_INST.1795       NO       
+       ROCK_INST.1678       NO       
+       ROCK_INST.1506       NO       
+       ROCK_INST.1725       NO       
+       ROCK_INST.1344       NO       
+       ROCK_INST.1560       NO       
+       ROCK_INST.1749       NO       
+       ROCK_INST.1608       NO       
+       ROCK_INST.1534       NO       
+       ROCK_INST.1866       NO       
+       ROCK_INST.1389       NO       
+       ROCK_INST.1840       NO       
+       ROCK_INST.1649       NO       
+       ROCK_INST.1459       NO       
+       ROCK_INST.1796       NO       
+       ROCK_INST.1679       NO       
+       ROCK_INST.1507       NO       
+       ROCK_INST.1726       NO       
+       ROCK_INST.1912       NO       
+       ROCK_INST.1576       NO       
+       ROCK_INST.1750       NO       
+       ROCK_INST.1624       NO       
+       ROCK_INST.1535       NO       
+       ROCK_INST.1867       NO       
+       ROCK_INST.1390       NO       
+       ROCK_INST.1841       NO       
+       ROCK_INST.1650       NO       
+       ROCK_INST.1460       NO       
+       ROCK_INST.1797       NO       
+       ROCK_INST.1680       NO       
+       ROCK_INST.1508       NO       
+       ROCK_INST.1727       NO       
+       ROCK_INST.1913       NO       
+       ROCK_INST.1577       NO       
+       ROCK_INST.1751       NO       
+       ROCK_INST.1625       NO       
+       ROCK_INST.1536       NO       
+       ROCK_INST.1868       NO       
+       ROCK_INST.1391       NO       
+       ROCK_INST.1842       NO       
+       ROCK_INST.1651       NO       
+       ROCK_INST.1461       NO       
+       ROCK_INST.1798       NO       
+       ROCK_INST.1696       NO       
+       ROCK_INST.1509       NO       
+       ROCK_INST.1728       NO       
+       ROCK_INST.1914       NO       
+       ROCK_INST.1578       NO       
+       ROCK_INST.1752       NO       
+       ROCK_INST.1626       NO       
+       ROCK_INST.1869       NO       
+       ROCK_INST.1392       NO       
+       ROCK_INST.1843       NO       
+       ROCK_INST.1652       NO       
+       ROCK_INST.1462       NO       
+       ROCK_INST.1799       NO       
+       ROCK_INST.1697       NO       
+       ROCK_INST.1915       NO       
+       ROCK_INST.1579       NO       
+       ROCK_INST.1768       NO       
+       ROCK_INST.1870       NO       
+       ROCK_INST.1844       NO       
+       ROCK_INST.1653       NO       
+       ROCK_INST.1463       NO       
+       ROCK_INST.1800       NO       
+       ROCK_INST.1698       NO       
+       ROCK_INST.1916       NO       
+       ROCK_INST.1580       NO       
+       ROCK_INST.1769       NO       
+       ROCK_INST.1871       NO       
+       ROCK_INST.1845       NO       
+       ROCK_INST.1654       NO       
+       ROCK_INST.1464       NO       
+       ROCK_INST.1816       NO       
+       ROCK_INST.1699       NO       
+       ROCK_INST.1917       NO       
+       ROCK_INST.1581       NO       
+       ROCK_INST.1770       NO       
+       ROCK_INST.1872       NO       
+       ROCK_INST.1846       NO       
+       ROCK_INST.1655       NO       
+       ROCK_INST.1817       NO       
+       ROCK_INST.1700       NO       
+       ROCK_INST.1918       NO       
+       ROCK_INST.1582       NO       
+       ROCK_INST.1771       NO       
+       ROCK_INST.1888       NO       
+       ROCK_INST.1847       NO       
+       ROCK_INST.1656       NO       
+       ROCK_INST.1818       NO       
+       ROCK_INST.1701       NO       
+       ROCK_INST.1919       NO       
+       ROCK_INST.1583       NO       
+       ROCK_INST.1772       NO       
+       ROCK_INST.1889       NO       
+       ROCK_INST.1848       NO       
+       ROCK_INST.1819       NO       
+       ROCK_INST.1702       NO       
+       ROCK_INST.1920       NO       
+       ROCK_INST.1584       NO       
+       ROCK_INST.1773       NO       
+       ROCK_INST.1890       NO       
+       ROCK_INST.1820       NO       
+       ROCK_INST.1703       NO       
+       ROCK_INST.1774       NO       
+       ROCK_INST.1891       NO       
+       ROCK_INST.1821       NO       
+       ROCK_INST.1704       NO       
+       ROCK_INST.1775       NO       
+       ROCK_INST.1892       NO       
+       ROCK_INST.1776       NO       
+       ROCK_INST.1893       NO       
+       ROCK_INST.1894       NO       
+       ROCK_INST.1895       NO       
+       ROCK_INST.1896       NO       
   
   
   *timepoints, name=TIMEPOINT
@@ -935,13 +1915,13 @@
                             P R O B L E M   S I Z E
 
 
-          NUMBER OF ELEMENTS IS                                   575
-          NUMBER OF ELEMENTS DEFINED BY THE USER AND *TIE         300
-          NUMBER OF INTERNAL ELEMENTS GENERATED FOR CONTACT       275
-          NUMBER OF NODES IS                                      913
-          NUMBER OF NODES DEFINED BY THE USER                     363
-          NUMBER OF INTERNAL NODES GENERATED BY THE PROGRAM       550
-          TOTAL NUMBER OF VARIABLES IN THE MODEL                 1276
+          NUMBER OF ELEMENTS IS                                  4425
+          NUMBER OF ELEMENTS DEFINED BY THE USER AND *TIE        2400
+          NUMBER OF INTERNAL ELEMENTS GENERATED FOR CONTACT      2025
+          NUMBER OF NODES IS                                     6723
+          NUMBER OF NODES DEFINED BY THE USER                    2673
+          NUMBER OF INTERNAL NODES GENERATED BY THE PROGRAM      4050
+          TOTAL NUMBER OF VARIABLES IN THE MODEL                 9396
           (DEGREES OF FREEDOM PLUS MAX NO. OF ANY LAGRANGE MULTIPLIER
            VARIABLES. INCLUDE *PRINT,SOLVE=YES TO GET THE ACTUAL NUMBER.)
 
@@ -952,13 +1932,13 @@
 
 
      JOB TIME SUMMARY
-       USER TIME (SEC)      =     0.20    
-       SYSTEM TIME (SEC)    =     0.10    
-       TOTAL CPU TIME (SEC) =     0.30    
+       USER TIME (SEC)      =     0.50    
+       SYSTEM TIME (SEC)    =     0.40    
+       TOTAL CPU TIME (SEC) =     0.90    
        WALLCLOCK TIME (SEC) =            1
 1
 
-   Abaqus 2024                                  Date 22-abr-2026   Time 12:45:56
+   Abaqus 2024                                  Date 27-abr-2026   Time 14:39:41
    For use by PONTIFICIA UNIVERSIDADE CATOLICA DO RIO DE JANEIRO under license from Dassault Systemes or its subsidiary.
 
                                                                                                STEP    1  INCREMENT    1
@@ -981,7 +1961,7 @@
 
                     TOTAL MASS OF MODEL
 
-                      4.0285564E+08
+                      4.0284265E+08
 
 
                     LOCATION OF THE CENTER OF MASS OF THE MODEL
@@ -992,7 +1972,7 @@
                     MOMENTS OF INERTIA ABOUT THE ORIGIN
                            I(XX)               I(YY)               I(ZZ)
 
-                      6.1329283E+15      3.0152603E+10      6.1329283E+15
+                      6.1326247E+15      3.0151631E+10      6.1326247E+15
 
 
                     PRODUCTS OF INERTIA ABOUT THE ORIGIN
@@ -1004,7 +1984,7 @@
                     MOMENTS OF INERTIA ABOUT THE CENTER OF MASS
                            I(XX)               I(YY)               I(ZZ)
 
-                      5.4939131E+12      3.0152603E+10      5.4939131E+12
+                      5.3879896E+12      3.0151631E+10      5.3879896E+12
 
 
                     PRODUCTS OF INERTIA ABOUT THE CENTER OF MASS
@@ -1018,7 +1998,7 @@
               OPERATIONS           REQUIRED          MINIMIZE I/O
              PER ITERATION           (MB)               (MB)
   
-     1          8.94E+05               17                 25
+     1          2.19E+07               21                 32
   
  NOTE:
       (1) SINCE ABAQUS DOES NOT PRE-ALLOCATE MEMORY AND ONLY ALLOCATES MEMORY AS NEEDED DURING THE ANALYSIS,
@@ -1051,7 +2031,7 @@
       (6) USING "*RESTART, WRITE" CAN GENERATE A LARGE AMOUNT OF DATA WRITTEN IN THE WORK DIRECTORY.
 1
 
-   Abaqus 2024                                  Date 22-abr-2026   Time 12:45:57
+   Abaqus 2024                                  Date 27-abr-2026   Time 14:39:42
    For use by PONTIFICIA UNIVERSIDADE CATOLICA DO RIO DE JANEIRO under license from Dassault Systemes or its subsidiary.
 
                                                                                                STEP    2  INCREMENT    1
@@ -1084,7 +2064,7 @@
 
                     TOTAL MASS OF MODEL
 
-                      4.0285564E+08
+                      4.0284265E+08
 
 
                     LOCATION OF THE CENTER OF MASS OF THE MODEL
@@ -1095,7 +2075,7 @@
                     MOMENTS OF INERTIA ABOUT THE ORIGIN
                            I(XX)               I(YY)               I(ZZ)
 
-                      6.1329283E+15      3.0152603E+10      6.1329283E+15
+                      6.1326247E+15      3.0151631E+10      6.1326247E+15
 
 
                     PRODUCTS OF INERTIA ABOUT THE ORIGIN
@@ -1107,7 +2087,7 @@
                     MOMENTS OF INERTIA ABOUT THE CENTER OF MASS
                            I(XX)               I(YY)               I(ZZ)
 
-                      5.4939131E+12      3.0152603E+10      5.4939131E+12
+                      5.3879896E+12      3.0151631E+10      5.3879896E+12
 
 
                     PRODUCTS OF INERTIA ABOUT THE CENTER OF MASS
@@ -1121,7 +2101,7 @@
               OPERATIONS           REQUIRED          MINIMIZE I/O
              PER ITERATION           (MB)               (MB)
   
-     1          8.94E+05               17                 25
+     1          2.23E+07               21                 32
   
  NOTE:
       (1) SINCE ABAQUS DOES NOT PRE-ALLOCATE MEMORY AND ONLY ALLOCATES MEMORY AS NEEDED DURING THE ANALYSIS,
@@ -1154,7 +2134,7 @@
       (6) USING "*RESTART, WRITE" CAN GENERATE A LARGE AMOUNT OF DATA WRITTEN IN THE WORK DIRECTORY.
 1
 
-   Abaqus 2024                                  Date 22-abr-2026   Time 12:45:57
+   Abaqus 2024                                  Date 27-abr-2026   Time 14:39:42
    For use by PONTIFICIA UNIVERSIDADE CATOLICA DO RIO DE JANEIRO under license from Dassault Systemes or its subsidiary.
 
                                                                                                STEP    3  INCREMENT    1
@@ -1187,7 +2167,7 @@
 
                     TOTAL MASS OF MODEL
 
-                      4.0285564E+08
+                      4.0284265E+08
 
 
                     LOCATION OF THE CENTER OF MASS OF THE MODEL
@@ -1198,7 +2178,7 @@
                     MOMENTS OF INERTIA ABOUT THE ORIGIN
                            I(XX)               I(YY)               I(ZZ)
 
-                      6.1329283E+15      3.0152603E+10      6.1329283E+15
+                      6.1326247E+15      3.0151631E+10      6.1326247E+15
 
 
                     PRODUCTS OF INERTIA ABOUT THE ORIGIN
@@ -1210,7 +2190,7 @@
                     MOMENTS OF INERTIA ABOUT THE CENTER OF MASS
                            I(XX)               I(YY)               I(ZZ)
 
-                      5.4939131E+12      3.0152603E+10      5.4939131E+12
+                      5.3879896E+12      3.0151631E+10      5.3879896E+12
 
 
                     PRODUCTS OF INERTIA ABOUT THE CENTER OF MASS
@@ -1224,7 +2204,7 @@
               OPERATIONS           REQUIRED          MINIMIZE I/O
              PER ITERATION           (MB)               (MB)
   
-     1          8.94E+05               17                 25
+     1          2.23E+07               21                 32
   
  NOTE:
       (1) SINCE ABAQUS DOES NOT PRE-ALLOCATE MEMORY AND ONLY ALLOCATES MEMORY AS NEEDED DURING THE ANALYSIS,
@@ -1257,7 +2237,7 @@
       (6) USING "*RESTART, WRITE" CAN GENERATE A LARGE AMOUNT OF DATA WRITTEN IN THE WORK DIRECTORY.
 1
 
-   Abaqus 2024                                  Date 22-abr-2026   Time 12:45:58
+   Abaqus 2024                                  Date 27-abr-2026   Time 14:39:43
    For use by PONTIFICIA UNIVERSIDADE CATOLICA DO RIO DE JANEIRO under license from Dassault Systemes or its subsidiary.
 
                                                                                                STEP    4  INCREMENT    1
@@ -1290,7 +2270,7 @@
 
                     TOTAL MASS OF MODEL
 
-                      4.0285564E+08
+                      4.0284265E+08
 
 
                     LOCATION OF THE CENTER OF MASS OF THE MODEL
@@ -1301,7 +2281,7 @@
                     MOMENTS OF INERTIA ABOUT THE ORIGIN
                            I(XX)               I(YY)               I(ZZ)
 
-                      6.1329283E+15      3.0152603E+10      6.1329283E+15
+                      6.1326247E+15      3.0151631E+10      6.1326247E+15
 
 
                     PRODUCTS OF INERTIA ABOUT THE ORIGIN
@@ -1313,7 +2293,7 @@
                     MOMENTS OF INERTIA ABOUT THE CENTER OF MASS
                            I(XX)               I(YY)               I(ZZ)
 
-                      5.4939131E+12      3.0152603E+10      5.4939131E+12
+                      5.3879896E+12      3.0151631E+10      5.3879896E+12
 
 
                     PRODUCTS OF INERTIA ABOUT THE CENTER OF MASS
@@ -1327,7 +2307,7 @@
               OPERATIONS           REQUIRED          MINIMIZE I/O
              PER ITERATION           (MB)               (MB)
   
-     1          8.94E+05               17                 25
+     1          2.23E+07               21                 32
   
  NOTE:
       (1) SINCE ABAQUS DOES NOT PRE-ALLOCATE MEMORY AND ONLY ALLOCATES MEMORY AS NEEDED DURING THE ANALYSIS,
@@ -1360,7 +2340,7 @@
       (6) USING "*RESTART, WRITE" CAN GENERATE A LARGE AMOUNT OF DATA WRITTEN IN THE WORK DIRECTORY.
 1
 
-   Abaqus 2024                                  Date 22-abr-2026   Time 12:45:58
+   Abaqus 2024                                  Date 27-abr-2026   Time 14:39:43
    For use by PONTIFICIA UNIVERSIDADE CATOLICA DO RIO DE JANEIRO under license from Dassault Systemes or its subsidiary.
 
                                                                                                STEP    5  INCREMENT    1
@@ -1396,7 +2376,7 @@
 
                     TOTAL MASS OF MODEL
 
-                      4.0285564E+08
+                      4.0284265E+08
 
 
                     LOCATION OF THE CENTER OF MASS OF THE MODEL
@@ -1407,7 +2387,7 @@
                     MOMENTS OF INERTIA ABOUT THE ORIGIN
                            I(XX)               I(YY)               I(ZZ)
 
-                      6.1329283E+15      3.0152603E+10      6.1329283E+15
+                      6.1326247E+15      3.0151616E+10      6.1326247E+15
 
 
                     PRODUCTS OF INERTIA ABOUT THE ORIGIN
@@ -1419,7 +2399,7 @@
                     MOMENTS OF INERTIA ABOUT THE CENTER OF MASS
                            I(XX)               I(YY)               I(ZZ)
 
-                      5.4939131E+12      3.0152603E+10      5.4939131E+12
+                      5.3879896E+12      3.0151616E+10      5.3879896E+12
 
 
                     PRODUCTS OF INERTIA ABOUT THE CENTER OF MASS
@@ -1433,7 +2413,7 @@
               OPERATIONS           REQUIRED          MINIMIZE I/O
              PER ITERATION           (MB)               (MB)
   
-     1          8.94E+05               17                 25
+     1          2.23E+07               21                 32
   
  NOTE:
       (1) SINCE ABAQUS DOES NOT PRE-ALLOCATE MEMORY AND ONLY ALLOCATES MEMORY AS NEEDED DURING THE ANALYSIS,
@@ -1466,7 +2446,7 @@
       (6) USING "*RESTART, WRITE" CAN GENERATE A LARGE AMOUNT OF DATA WRITTEN IN THE WORK DIRECTORY.
 1
 
-   Abaqus 2024                                  Date 22-abr-2026   Time 12:46:04
+   Abaqus 2024                                  Date 27-abr-2026   Time 14:39:56
    For use by PONTIFICIA UNIVERSIDADE CATOLICA DO RIO DE JANEIRO under license from Dassault Systemes or its subsidiary.
 
                                                                                                STEP    6  INCREMENT    1
@@ -1499,7 +2479,7 @@
 
                     TOTAL MASS OF MODEL
 
-                      4.0289773E+08
+                      4.0288474E+08
 
 
                     LOCATION OF THE CENTER OF MASS OF THE MODEL
@@ -1510,7 +2490,7 @@
                     MOMENTS OF INERTIA ABOUT THE ORIGIN
                            I(XX)               I(YY)               I(ZZ)
 
-                      6.1335690E+15      3.0152604E+10      6.1335690E+15
+                      6.1332655E+15      3.0151605E+10      6.1332655E+15
 
 
                     PRODUCTS OF INERTIA ABOUT THE ORIGIN
@@ -1522,7 +2502,7 @@
                     MOMENTS OF INERTIA ABOUT THE CENTER OF MASS
                            I(XX)               I(YY)               I(ZZ)
 
-                      5.4944855E+12      3.0152604E+10      5.4944855E+12
+                      5.3885510E+12      3.0151605E+10      5.3885510E+12
 
 
                     PRODUCTS OF INERTIA ABOUT THE CENTER OF MASS
@@ -1536,7 +2516,7 @@
               OPERATIONS           REQUIRED          MINIMIZE I/O
              PER ITERATION           (MB)               (MB)
   
-     1          9.54E+05               17                 25
+     1          2.31E+07               22                 33
   
  NOTE:
       (1) SINCE ABAQUS DOES NOT PRE-ALLOCATE MEMORY AND ONLY ALLOCATES MEMORY AS NEEDED DURING THE ANALYSIS,
@@ -1569,7 +2549,7 @@
       (6) USING "*RESTART, WRITE" CAN GENERATE A LARGE AMOUNT OF DATA WRITTEN IN THE WORK DIRECTORY.
 1
 
-   Abaqus 2024                                  Date 22-abr-2026   Time 12:46:05
+   Abaqus 2024                                  Date 27-abr-2026   Time 14:39:57
    For use by PONTIFICIA UNIVERSIDADE CATOLICA DO RIO DE JANEIRO under license from Dassault Systemes or its subsidiary.
 
                                                                                                STEP    7  INCREMENT    1
@@ -1605,7 +2585,7 @@
 
                     TOTAL MASS OF MODEL
 
-                      4.0289773E+08
+                      4.0288474E+08
 
 
                     LOCATION OF THE CENTER OF MASS OF THE MODEL
@@ -1616,7 +2596,7 @@
                     MOMENTS OF INERTIA ABOUT THE ORIGIN
                            I(XX)               I(YY)               I(ZZ)
 
-                      6.1335690E+15      3.0152604E+10      6.1335690E+15
+                      6.1332655E+15      3.0151605E+10      6.1332655E+15
 
 
                     PRODUCTS OF INERTIA ABOUT THE ORIGIN
@@ -1628,7 +2608,7 @@
                     MOMENTS OF INERTIA ABOUT THE CENTER OF MASS
                            I(XX)               I(YY)               I(ZZ)
 
-                      5.4944855E+12      3.0152604E+10      5.4944855E+12
+                      5.3885510E+12      3.0151605E+10      5.3885510E+12
 
 
                     PRODUCTS OF INERTIA ABOUT THE CENTER OF MASS
@@ -1642,7 +2622,7 @@
               OPERATIONS           REQUIRED          MINIMIZE I/O
              PER ITERATION           (MB)               (MB)
   
-     1          9.54E+05               17                 25
+     1          2.31E+07               21                 33
   
  NOTE:
       (1) SINCE ABAQUS DOES NOT PRE-ALLOCATE MEMORY AND ONLY ALLOCATES MEMORY AS NEEDED DURING THE ANALYSIS,
@@ -1681,13 +2661,13 @@
 
                               ANALYSIS COMPLETE
                               WITH     33 WARNING MESSAGES ON THE DAT FILE
-                              AND      51 WARNING MESSAGES ON THE MSG FILE
-                                        1 WARNINGS ARE FOR NEGATIVE EIGENVALUES
+                              AND     350 WARNING MESSAGES ON THE MSG FILE
+                                      102 WARNINGS ARE FOR NEGATIVE EIGENVALUES
 
 
 
      JOB TIME SUMMARY
-       USER TIME (SEC)      =      42.    
-       SYSTEM TIME (SEC)    =      10.    
-       TOTAL CPU TIME (SEC) =      53.    
-       WALLCLOCK TIME (SEC) =           29
+       USER TIME (SEC)      =     8.74E+02
+       SYSTEM TIME (SEC)    =      48.    
+       TOTAL CPU TIME (SEC) =     9.22E+02
+       WALLCLOCK TIME (SEC) =          293

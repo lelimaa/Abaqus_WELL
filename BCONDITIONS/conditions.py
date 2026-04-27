@@ -35,6 +35,44 @@ def get_stresses_exact(z, table):
             s0, s1 = table[z0], table[z1]
 
             return s0 + (z - z0) * ((s1 - s0) / (z1 - z0))
+        
+        
+def UpdateMaterialDensities(name_model, filtered_layers, stresses_table):
+    m = mdb.models[name_model]
+
+    gravity=9.81
+
+    print("\n>>> Updating densities of layers via pressure gradient...")
+
+    layer_counter = 1 
+
+    for layer in filtered_layers:
+        z_top = layer['Top']
+        z_bottom = layer['Bottom']
+
+        lname = "LAYER_%02d" % layer_counter
+        layer_counter += 1
+
+        layer_name = lname + "_" + layer['Rock']
+
+        p_top = get_stresses_exact(z_top, stresses_table)
+        p_bottom = get_stresses_exact(z_bottom, stresses_table)
+
+        delta_z = abs(z_bottom - z_top)
+
+        # print("Materiais existentes no modelo:", m.materials.keys())
+
+        if delta_z > 0:
+
+            rho_calculated = abs(p_bottom - p_top) / (gravity * delta_z)
+
+            rho_final = round(rho_calculated, 2)
+
+            if layer_name in m.materials.keys():
+                m. materials[layer_name].Density(table=((rho_final, ), ))
+                print(f" Material {layer_name}: Density adjusted to {rho_final} kg/m³")
+            else:
+                print(f" [WARNING] Material {layer_name} not found to uptade density.")              
 
 
 
@@ -537,15 +575,15 @@ def ConfigurePhaseRev(name_model, step_name='Rev_9_875'):
     #     timePeriod=945907000.0, maxNumInc=1000000, initialInc=1.0, 
     #     minInc=1e-15, maxInc=15552000.0, cetol=0.01)
 
-def DeactivateFluidForCasing(name_model, step_name='Rev_9_875'):
-    m=mdb.models[name_model]
-    a = m.rootAssembly
+# def DeactivateFluidForCasing(name_model, step_name='Rev_9_875'):
+#     m=mdb.models[name_model]
+#     a = m.rootAssembly
 
-    region_fluid = a.instances['FLUID_INST'].sets['ALL_FLUID']
+#     region_fluid = a.instances['FLUID_INST'].sets['ALL_FLUID']
 
-    m.ModelChange(
-        name = 'Remove_Drilling_Fluid',
-        createStepName = step_name
-        region = region_fluido,
-        activeInStep = False
-    )
+#     m.ModelChange(
+#         name = 'Remove_Drilling_Fluid',
+#         createStepName = step_name,
+#         region = region_fluido,
+#         activeInStep = False
+#     )

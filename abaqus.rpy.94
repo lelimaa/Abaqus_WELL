@@ -2,7 +2,7 @@
 #
 # Abaqus/CAE Release 2024 replay file
 # Internal Version: 2023_09_21-09.55.25 RELr426 190762
-# Run by Hidalgo on Wed Apr 22 13:50:40 2026
+# Run by Hidalgo on Mon Apr 27 12:22:58 2026
 #
 
 # from driverUtils import executeOnCaeGraphicsStartup
@@ -56,6 +56,9 @@ cliCommand("""execfile(r'C:\\Users\\hidalgo\\Documents\\GitHub\\Abaqus_WELL_\\Te
 #: Surface 'FASEI_WELL' succesfully created with success containing 1 edges.
 #: The interaction "MC_FASEI_FLUIDO" has been created.
 #: The interaction "MC_FASEI_REV" has been created.
+#: 
+#: >>> Updating densities of layers via pressure gradient...
+#:  [WARNING] Material HALITE not found to uptade density.
 #: [L1-I-HALITE] Stresses: Top (3700m) = -58.21 MPa | Bottom (4100m) = -66.72 MPa
 #: 
 #: >>> Todas as tensões geostáticas foram aplicadas com sucesso!
@@ -89,7 +92,7 @@ cliCommand("""execfile(r'C:\\Users\\hidalgo\\Documents\\GitHub\\Abaqus_WELL_\\Te
 #: >>> Uniform mesh (Size: 0.005) applyed in 2 lines of 'FLUID_INST.'
 #: >>> Uniform mesh (Size: 0.005) applyed in 2 lines of 'PIPE_INST.'
 #: >>> Bias Mesh applyed in 2 instance lines 'ROCK_INST'!
-#: >>> Uniform mesh (Size: 40.0) applyed with success in set 'MESH_VERTICAL!'
+#: >>> Uniform mesh (Size: 5.0) applyed with success in set 'MESH_VERTICAL!'
 #: >>> Element type CAX4 and CAX3 assigned to set 'ALL'!
 #: >>> Mesh generated with success for instance 'FLUID_INST'!
 #: >>> Mesh generated with success for instance 'PIPE_INST'!
@@ -114,61 +117,10 @@ cliCommand("""execfile(r'C:\\Users\\hidalgo\\Documents\\GitHub\\Abaqus_WELL_\\Te
 #: The mapper has mapped the field values using distance weighting 
 #: algorithm for some of the target nodes.
 #: >>> File .inp succssessfully created!
-#: The model database has been saved to "C:\Users\hidalgo\Documents\GitHub\Abaqus_WELL_\WellClosureJob.cae".
-#: Model saved as 'WellClosureJob.cae' in the project folder. You can open it with Abaqus/CAE to review the model and submit the job for analysis.
 p = mdb.models['MyFirstModel'].parts['FLUID']
 session.viewports['Viewport: 1'].setValues(displayedObject=p)
 cliCommand("""execfile(r'C:\\Users\\hidalgo\\Documents\\GitHub\\Abaqus_WELL_\\AbqView1.py')""")
-session.viewports['Viewport: 1'].view.setValues(nearPlane=2104.78, 
-    farPlane=2584.9, width=0.511353, height=0.191318, cameraPosition=(0.174427, 
-    -6244.84, 0.0947106), cameraTarget=(0.174427, -3724.57, -0.0313755))
 session.viewports['Viewport: 1'].partDisplay.setValues(sectionAssignments=ON, 
     engineeringFeatures=ON)
 session.viewports['Viewport: 1'].partDisplay.geometryOptions.setValues(
     referenceRepresentation=OFF)
-session.viewports['Viewport: 1'].view.setValues(nearPlane=2104.83, 
-    farPlane=2584.85, width=0.131079, height=0.049042, cameraPosition=(
-    0.192732, -6244.84, 0.113113), cameraTarget=(0.192732, -3724.57, 
-    -0.0129726))
-a = mdb.models['MyFirstModel'].rootAssembly
-session.viewports['Viewport: 1'].setValues(displayedObject=a)
-session.viewports['Viewport: 1'].assemblyDisplay.setValues(
-    optimizationTasks=OFF, geometricRestrictions=OFF, stopConditions=OFF)
-mdb.jobs['WellClosureJob'].writeInput(consistencyChecking=OFF)
-#: Warning: 
-#: Following warning detected while evaluating the temperature ""
-#: from analytical field "Geotermico",
-#: The mapper has mapped the field values using distance weighting 
-#: algorithm for some of the target nodes.
-#: Warning: 
-#: Following warning detected while evaluating the temperature ""
-#: from analytical field "Geotermico",
-#: The mapper has mapped the field values using distance weighting 
-#: algorithm for some of the target nodes.
-#: The mapper has mapped the field values using distance weighting 
-#: algorithm for some of the target nodes.
-#: Warning: 
-#: Following warning detected while evaluating the temperature ""
-#: from analytical field "Geotermico",
-#: The mapper has mapped the field values using distance weighting 
-#: algorithm for some of the target nodes.
-#: The job input file has been written to "WellClosureJob.inp".
-mdb.jobs['WellClosureJob'].writeInput(consistencyChecking=OFF)
-#: Warning: 
-#: Following warning detected while evaluating the temperature ""
-#: from analytical field "Geotermico",
-#: The mapper has mapped the field values using distance weighting 
-#: algorithm for some of the target nodes.
-#: Warning: 
-#: Following warning detected while evaluating the temperature ""
-#: from analytical field "Geotermico",
-#: The mapper has mapped the field values using distance weighting 
-#: algorithm for some of the target nodes.
-#: The mapper has mapped the field values using distance weighting 
-#: algorithm for some of the target nodes.
-#: Warning: 
-#: Following warning detected while evaluating the temperature ""
-#: from analytical field "Geotermico",
-#: The mapper has mapped the field values using distance weighting 
-#: algorithm for some of the target nodes.
-#: The job input file has been written to "WellClosureJob.inp".

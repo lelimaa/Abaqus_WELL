@@ -36,13 +36,18 @@ def CreateJob(name_model, name_job, num_cpus, run_now=True):
 
         mdb.jobs[name_job].writeInput(consistencyChecking=OFF)
 
-        # mdb.jobs[name_job].submit(consistencyChecking=OFF)
-
-        # mdb.jobs[name_job].waitForCompletion()
-
-        # print(f">>> Job '{name_job}' completed!")
-
         print(f">>> File .inp succssessfully created!")
 
     else: 
         print(f">>> Job was only created. To run, submitt manually!")
+
+def RunJob(name_job):
+
+    print(f"\n>>> Sending the Job '{name_job}' to the solver... Wait.")
+
+    mdb.jobs[name_job].submit(consistencyChecking=OFF)
+
+    mdb.jobs[name_job].waitForCompletion()
+
+    print(f">>> Analysis concluded! See the file '{name_job}'.odb")
+

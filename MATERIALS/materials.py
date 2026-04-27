@@ -209,17 +209,6 @@ def AddplasticityToSteel(name_model, material_name='STEEL'):
 
     print(f">>> Plasticity dependent of temperature added to material '{material_name}'!")
 
-def UpdateMaterialDensities(name_model, filtered_layers, stresses_table, gravity=9.81):
-    m = mdb.models[name_model]
 
-    print("\n>>> Updating densities of layers via pressure gradient...")
-
-    for i, layer in enumerate(filtered_layers):
-        z_top = layer['Top']
-        z_bottom = layer['Bottom']
-        layer_name = layer['Rock']
-
-        p_top = get_stresses_exact(z_top, stresses_table)
-        p_bottom = get_stresses_exact(z_bottom, stresses_table)
 
         
