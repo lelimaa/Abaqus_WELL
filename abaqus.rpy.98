@@ -1,0 +1,986 @@
+# -*- coding: mbcs -*-
+#
+# Abaqus/CAE Release 2024 replay file
+# Internal Version: 2023_09_21-09.55.25 RELr426 190762
+# Run by Hidalgo on Mon Apr 27 15:04:13 2026
+#
+
+# from driverUtils import executeOnCaeGraphicsStartup
+# executeOnCaeGraphicsStartup()
+#: Executing "onCaeGraphicsStartup()" in the site directory ...
+from abaqus import *
+from abaqusConstants import *
+session.Viewport(name='Viewport: 1', origin=(0.0, 0.0), width=217.5, 
+    height=154.75)
+session.viewports['Viewport: 1'].makeCurrent()
+session.viewports['Viewport: 1'].maximize()
+from caeModules import *
+from driverUtils import executeOnCaeStartup
+executeOnCaeStartup()
+session.viewports['Viewport: 1'].partDisplay.geometryOptions.setValues(
+    referenceRepresentation=ON)
+cliCommand("""import os""")
+cliCommand("""os.chdir(r'C:\\Users\\hidalgo\\Documents\\GitHub\\Abaqus_WELL_')""")
+cliCommand("""execfile(r'C:\\Users\\hidalgo\\Documents\\GitHub\\Abaqus_WELL_\\TestMain.py')""")
+#: Data keys: dict_keys(['AnalysisData', 'ThermalGradient', 'Tubulars', 'Lithology', 'InSituStresses', 'Rocks', 'Cements', 'SteelGrades', 'Phases', 'Events', 'Fluids'])
+#: The bottom of the wellbore is at: -4100 meters
+#: The top of the wellbore is at: -2700 meters
+#: dict_keys(['MohrCoulombParameters', 'Law', 'Elasticity', 'ElasticParameters', 'ThermalParameters'])
+#: dict_keys(['DoublePowerParameters', 'Law', 'Elasticity', 'ElasticParameters', 'ThermalParameters'])
+#: Creating Geometry:  PIPE
+#: Creating Geometry:  FLUID
+#: Creating Geometry:  ROCK
+#: O nome que chegou na função foi: LAYER_02_HALITE
+#: Set 'L1-I_BASE' gerado automaticamente em Y = -3600.0
+#: Set 'L2-I_BASE' gerado automaticamente em Y = -4100.0
+#: Set 'L1-I_ID' created with sucess in the medium point Y=-3150.0
+#: Set 'L2-I_ID' created with sucess in the medium point Y=-3850.0
+#: Set 'L1-I_OD' criado com sucesso em X=12.155575, Y=-3150.0
+#: Set 'L2-I_OD' criado com sucesso em X=12.155575, Y=-3850.0
+#: Set 'L1-I_TOP' criado na altura Y = -2700.0
+#: Set 'L2-I_TOP' criado na altura Y = -3600.0
+#: Set de Face 'L1-I' criado em X=6.155575, Y=-3150.0
+#: Set de Face 'L2-I' criado em X=6.155575, Y=-3850.0
+#: Assigned section 'LAYER_01_SANDSTONE_Section' to existing set 'L1-I'.
+#: Assigned section 'LAYER_02_HALITE_Section' to existing set 'L2-I'.
+#: Assembly completed with active sets: []
+#: Set 'ALL' criado com todas as faces das 2 instancias.
+#: Set FASEI_OPEN_WELL criado na interface X = 0.155575
+#: Set FASEI_WELL criado na interface X = 0.155575
+#: Set 'FASEI_COMPLETED_WELL' criado na face interna do Pipe (X = 0.125009)
+#: Set 'MESH_TT_PIPES' criado com 3 arestas horizontais.
+#: Set 'MESH_TT_ANNULARS' criado com 3 arestas horizontais.
+#: Set 'MESH_TT_ROCK' criado com 3 arestas horizontais.
+#: Set 'MESH_VERTICAL' criado com sucesso (todas as verticais).
+#: Set 'ROCK_BC' criado com sucesso na borda X = 12.155575
+#: Set 'ROCK_OUTPUT' criado com todas as faces dessa instancia.
+#: Set 'YSYM_BASE' criado com sucesso unindo todas as instâncias.
+#: Set 'YSYM_TOP' criado com sucesso na altura Y = -2700.0
+#: Surface 'FASEI_ANNULAR' created successfully containing 6 edges.
+#: Surface 'FASEI_COMPLETED_WELL' succesfully created with success containing 2 edges.
+#: Surface 'FASEI_MASTER' succesfully created with success containing 2 edges.
+#: Surface 'FASEI_OPEN_WELL' succesfully created with success containing 2 edges.
+#: Surface 'FASEI_WELL' succesfully created with success containing 2 edges.
+#: The interaction "MC_FASEI_FLUIDO" has been created.
+#: The interaction "MC_FASEI_REV" has been created.
+#: 
+#: >>> Updating densities of layers via pressure gradient...
+#:  Material LAYER_01_SANDSTONE: Density adjusted to 2299.92 kg/m³
+#:  Material LAYER_02_HALITE: Density adjusted to 2169.93 kg/m³
+#: [L1-I-SANDSTONE] Stresses: Top (2700m) = -35.78 MPa | Bottom (3600.0m) = -56.08 MPa
+#: [L2-I-HALITE] Stresses: Top (3600.0m) = -56.08 MPa | Bottom (4100m) = -66.72 MPa
+#: 
+#: >>> Todas as tensões geostáticas foram aplicadas com sucesso!
+#: >>> Mappedfield 'Geotermico' successfully created! (T_ref = 277.15 K)
+#: >>> ExpressionField 'NT_L1-I' created with denominator 292.1 K
+#: >>> ExpressionField 'NT_L2-I' created with denominator 311.3 K
+#: 
+#: >>> All the thermal Expressionfields of the rocks were created!
+#: >>> ExpressionField 'P_FASEI_COMPLETED_WELL' created with success!
+#: >>> ExpressionField 'P_FASEI_FLUID' created with success!
+#: >>> ExpressionField 'P_FASEI_OPEN_WELL' created with success!
+#: >>> Temperature 'NT_L1-I' applied in the region L1-I (Magnitude: 292.07 K)
+#: >>> Temperature 'NT_L1-I_OD' applied in the region L1-I_OD (Magnitude: 292.07 K)
+#: >>> Temperature 'NT_L2-I' applied in the region L2-I (Magnitude: 311.25 K)
+#: >>> Temperature 'NT_L2-I_OD' applied in the region L2-I_OD (Magnitude: 311.25 K)
+#: 
+#: >>> All the temperatures of the layers were started sucsessfully!
+#: >>> Step 'Perf_10_375' created with success!
+#: >>> Hydrostatic pressure of the mud applied in the open well region.
+#: >>> ViscoStep 'Perf_10_375_Creep' created: Total duration of 2.0 days.
+#: >>> Step 'Rev_9_875' created with success!
+#: The interaction property "C_FASEI" has been created.
+#: >>> Contact property 'C_FASEI' created (Friction: 0.5).
+#: The interaction "C_FASEI" has been created.
+#: >>> Interaction 'C_FASEI' activated in Step 'Rev_9_875'.
+#:    - Pressure P_FASEI_COMPLETED_WELL activated.
+#:    - Pressure P_FASEI_FLUID activated.
+#:     - Load P_FASEI_OPEN_WELL deactivated.
+#:    - Interaction of casing (Model Change) activated.
+#:    - Boundary condition PIN_FASEI (temporary trava) deactivated.
+#: >>> Phase of casing successfully configured!
+#: >>> ViscoStep 'Rev_9_875_Creep' created: Total duration of 10950.0 days.
+#:     - Incremento travado em no máximo 180.0 dias por passo.
+#: >>> Uniform mesh (Size: 0.005) applyed in 3 lines of 'FLUID_INST.'
+#: >>> Uniform mesh (Size: 0.005) applyed in 3 lines of 'PIPE_INST.'
+#: >>> Bias Mesh applyed in 3 instance lines 'ROCK_INST'!
+#: >>> Uniform mesh (Size: 5.0) applyed with success in set 'MESH_VERTICAL!'
+#: >>> Element type CAX4 and CAX3 assigned to set 'ALL'!
+#: >>> Mesh generated with success for instance 'FLUID_INST'!
+#: >>> Mesh generated with success for instance 'PIPE_INST'!
+#: >>> Mesh generated with success for instance 'ROCK_INST'!
+#: >>> Job 'WellClosureJob' created for model 'MyFirstModel' with 14 CPUs!
+#: >>> Submiting job 'WellClosureJob' for analysis... Wait for it to finish!
+#: Warning: 
+#: Following warning detected while evaluating the temperature ""
+#: from analytical field "Geotermico",
+#: The mapper has mapped the field values using distance weighting 
+#: algorithm for some of the target nodes.
+#: Warning: 
+#: Following warning detected while evaluating the temperature ""
+#: from analytical field "Geotermico",
+#: The mapper has mapped the field values using distance weighting 
+#: algorithm for some of the target nodes.
+#: The mapper has mapped the field values using distance weighting 
+#: algorithm for some of the target nodes.
+#: Warning: 
+#: Following warning detected while evaluating the temperature ""
+#: from analytical field "Geotermico",
+#: The mapper has mapped the field values using distance weighting 
+#: algorithm for some of the target nodes.
+#: >>> File .inp succssessfully created!
+p = mdb.models['MyFirstModel'].parts['FLUID']
+session.viewports['Viewport: 1'].setValues(displayedObject=p)
+cliCommand("""execfile(r'C:\\Users\\hidalgo\\Documents\\GitHub\\Abaqus_WELL_\\AbqView1.py')""")
+session.viewports['Viewport: 1'].partDisplay.setValues(sectionAssignments=ON, 
+    engineeringFeatures=ON)
+session.viewports['Viewport: 1'].partDisplay.geometryOptions.setValues(
+    referenceRepresentation=OFF)
+a = mdb.models['MyFirstModel'].rootAssembly
+session.viewports['Viewport: 1'].setValues(displayedObject=a)
+session.viewports['Viewport: 1'].assemblyDisplay.setValues(
+    optimizationTasks=OFF, geometricRestrictions=OFF, stopConditions=OFF)
+mdb.jobs['WellClosureJob'].submit(consistencyChecking=OFF)
+#: Warning: 
+#: Following warning detected while evaluating the temperature ""
+#: from analytical field "Geotermico",
+#: The mapper has mapped the field values using distance weighting 
+#: algorithm for some of the target nodes.
+#: Warning: 
+#: Following warning detected while evaluating the temperature ""
+#: from analytical field "Geotermico",
+#: The mapper has mapped the field values using distance weighting 
+#: algorithm for some of the target nodes.
+#: The mapper has mapped the field values using distance weighting 
+#: algorithm for some of the target nodes.
+#: Warning: 
+#: Following warning detected while evaluating the temperature ""
+#: from analytical field "Geotermico",
+#: The mapper has mapped the field values using distance weighting 
+#: algorithm for some of the target nodes.
+#: **********************************************************************
+#: ** Visual Studio 2019 Developer Command Prompt v16.11.51
+#: ** Copyright (c) 2021 Microsoft Corporation
+#: **********************************************************************
+#: [vcvarsall.bat] Environment initialized for: 'x64'
+#: The job input file "WellClosureJob.inp" has been submitted for analysis.
+session.viewports['Viewport: 1'].view.setValues(session.views['User-1'])
+session.viewports['Viewport: 1'].view.setProjection(projection=PARALLEL)
+#: Job WellClosureJob: Analysis Input File Processor completed successfully.
+o3 = session.openOdb(
+    name='C:/Users/hidalgo/Documents/GitHub/Abaqus_WELL_/WellClosureJob.odb')
+#: Model: C:/Users/hidalgo/Documents/GitHub/Abaqus_WELL_/WellClosureJob.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     3
+#: Number of Meshes:             3
+#: Number of Element Sets:       46
+#: Number of Node Sets:          45
+#: Number of Steps:              7
+session.viewports['Viewport: 1'].setValues(displayedObject=o3)
+session.viewports['Viewport: 1'].makeCurrent()
+session.viewports['Viewport: 1'].view.setValues(nearPlane=2816.67, 
+    farPlane=5103.22, width=4498.86, height=1769.84, cameraPosition=(293.895, 
+    -3435.52, 3959.94), cameraTarget=(293.895, -3435.52, 0))
+session.viewports['Viewport: 1'].view.setValues(session.views['User-1'])
+session.viewports['Viewport: 1'].view.setValues(nearPlane=2144.69, 
+    farPlane=3544.91, width=0.704948, height=0.277325, cameraPosition=(
+    0.316753, -6244.8, 0.133915), cameraTarget=(0.316753, -3724.6, 0.00782901))
+session.viewports['Viewport: 1'].view.setProjection(projection=PARALLEL)
+session.viewports['Viewport: 1'].view.setValues(nearPlane=2144.72, 
+    farPlane=3544.87, width=0.356914, height=0.140409, cameraPosition=(
+    0.227025, -6244.8, 0.136897), cameraTarget=(0.227025, -3724.6, 0.0108112))
+session.viewports['Viewport: 1'].odbDisplay.display.setValues(plotState=(
+    CONTOURS_ON_DEF, ))
+session.viewports['Viewport: 1'].view.setValues(nearPlane=2144.74, 
+    farPlane=3544.86, width=0.265169, height=0.104317, cameraPosition=(
+    0.205743, -6244.8, 0.133791), cameraTarget=(0.205743, -3724.6, 0.0077049))
+session.viewports['Viewport: 1'].odbDisplay.setPrimaryVariable(
+    variableLabel='U', outputPosition=NODAL, refinement=(INVARIANT, 
+    'Magnitude'), )
+session.viewports['Viewport: 1'].view.setValues(nearPlane=2144.74, 
+    farPlane=3544.86, width=0.266253, height=0.104743, cameraPosition=(
+    0.177629, -6244.8, 0.140033), cameraTarget=(0.177629, -3724.6, 0.0139472))
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=13 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=12 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=11 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=10 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=9 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=8 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=7 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=6 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=5 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=4 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=3 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=2 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=1 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=0 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=5, frame=1 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=5, frame=0 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=5, frame=1 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=0 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=1 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=2 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=3 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=4 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=5 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=6 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=7 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=8 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=9 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=10 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=11 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=12 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=13 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=14 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=15 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=16 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=17 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=18 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=18 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=18 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=18 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=18 )
+session.viewports['Viewport: 1'].view.setValues(nearPlane=2144.76, 
+    farPlane=3544.84, width=0.018612, height=0.00732191, cameraPosition=(
+    0.156539, -6244.8, 0.132577), cameraTarget=(0.156539, -3724.6, 0.00649104))
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=17 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=16 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=15 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=14 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=13 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=12 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=11 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=10 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=9 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=8 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=7 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=8 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=9 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=10 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=11 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=12 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=13 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=14 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=15 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=16 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=17 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=18 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=18 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=18 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=18 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=18 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=18 )
+session.viewports['Viewport: 1'].view.setValues(nearPlane=2144.75, 
+    farPlane=3544.85, width=0.189778, height=0.0746584, cameraPosition=(
+    0.146832, -6244.8, 0.123191), cameraTarget=(0.146832, -3724.6, 
+    -0.00289494))
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=17 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=16 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=15 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=14 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=13 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=12 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=11 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=10 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=9 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=8 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=9 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=10 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=11 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=12 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=13 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=14 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=15 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=16 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=17 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=18 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].view.setValues(nearPlane=2144.73, 
+    farPlane=3544.87, width=0.352345, height=0.138612, cameraPosition=(0.13834, 
+    -6244.8, 0.137273), cameraTarget=(0.13834, -3724.6, 0.0111869))
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=18 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=17 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=16 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=15 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=14 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=13 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=12 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=11 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=12 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=13 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=14 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=15 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=16 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=17 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=18 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].view.setValues(nearPlane=2144.75, 
+    farPlane=3544.85, width=0.167688, height=0.0659681, cameraPosition=(
+    0.147694, -6244.8, 0.126668), cameraTarget=(0.147694, -3724.6, 
+    0.000581533))
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=18 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=17 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=16 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=15 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=14 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=13 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=12 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=11 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=10 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=11 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=12 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=13 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=14 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=15 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=16 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=17 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=18 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=18 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=17 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=16 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=17 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=18 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=18 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=17 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=18 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].view.setValues(nearPlane=2144.74, 
+    farPlane=3544.86, width=0.250119, height=0.0983963, cameraPosition=(
+    0.15787, -6244.8, 0.133829), cameraTarget=(0.15787, -3724.6, 0.0077435))
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=18 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=17 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=16 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=15 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=16 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=17 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=18 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=18 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=17 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=16 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=15 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=14 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=13 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=12 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=13 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=14 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=15 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=16 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=17 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=18 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=18 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=17 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=16 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=15 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=14 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=13 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=12 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=11 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=12 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=13 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=14 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=15 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=16 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=17 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=18 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=0 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=1 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=2 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=3 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=4 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=5 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=6 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=7 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=8 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=9 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=10 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=11 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=12 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=13 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=14 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=15 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=16 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=17 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=18 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=18 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=17 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=16 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=15 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=14 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=13 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=12 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=11 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=10 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=9 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=8 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=9 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=10 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=11 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=12 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=13 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=14 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=15 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=16 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=17 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=18 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=18 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=17 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=16 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=15 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=14 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=13 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=14 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=15 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=16 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=17 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=18 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=18 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=17 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=18 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=18 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=17 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=16 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=17 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=18 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=18 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=17 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=18 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=18 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=17 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=16 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=15 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=16 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=17 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=18 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=18 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=17 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=16 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=15 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=16 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=17 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=18 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=18 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=17 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=18 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=18 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=17 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=16 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=15 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=16 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=17 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=18 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].view.setValues(nearPlane=2144.73, 
+    farPlane=3544.86, width=0.301293, height=0.118528, cameraPosition=(
+    0.171846, -6244.8, 0.141671), cameraTarget=(0.171846, -3724.6, 0.0155851))
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=18 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=17 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=16 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=15 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=14 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=13 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=12 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=11 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=10 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=9 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=8 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=7 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=6 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=5 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=4 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=3 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=2 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=3 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=4 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=5 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=6 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=7 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=8 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=9 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=10 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=11 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=12 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=13 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=14 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=15 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=16 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=17 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=18 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].view.setValues(nearPlane=2144.73, 
+    farPlane=3544.86, width=0.303763, height=0.1195, cameraPosition=(0.173253, 
+    -6244.8, 0.141122), cameraTarget=(0.173253, -3724.6, 0.0150356))
+session.viewports['Viewport: 1'].odbDisplay.commonOptions.setValues(
+    visibleEdges=FREE)
+session.viewports['Viewport: 1'].view.setValues(nearPlane=2144.73, 
+    farPlane=3544.87, width=0.308942, height=0.121537, cameraPosition=(
+    0.173211, -6244.8, 0.142417), cameraTarget=(0.173211, -3724.6, 0.0163309))
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=18 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=17 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=16 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=15 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=14 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=15 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=16 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=17 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=18 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=18 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=17 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=16 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=15 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=16 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=17 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=18 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=18 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=17 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=16 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=15 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=14 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=13 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=12 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=11 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=10 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=9 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=8 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=7 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=6 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=5 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=4 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=3 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=2 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=1 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=0 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=5, frame=1 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=5, frame=0 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=5, frame=1 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=0 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=1 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=0 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=5, frame=1 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=5, frame=0 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=4, frame=8 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=4, frame=7 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=4, frame=6 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=4, frame=5 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=4, frame=4 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=4, frame=3 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=4, frame=2 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=4, frame=1 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=4, frame=0 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=3, frame=1 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=3, frame=0 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=2, frame=2 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=2, frame=1 )
+session.viewports['Viewport: 1'].view.setValues(nearPlane=2144.74, 
+    farPlane=3544.86, width=0.272982, height=0.10739, cameraPosition=(0.155304, 
+    -6244.8, 0.140916), cameraTarget=(0.155304, -3724.6, 0.0148297))
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=2, frame=2 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=3, frame=0 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=3, frame=1 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=4, frame=0 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=4, frame=1 )
+session.viewports['Viewport: 1'].view.setValues(nearPlane=2144.75, 
+    farPlane=3544.85, width=0.114795, height=0.0451601, cameraPosition=(
+    0.165578, -6244.8, 0.133331), cameraTarget=(0.165578, -3724.6, 0.00724524))
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=4, frame=2 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=4, frame=3 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=4, frame=4 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=4, frame=5 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=4, frame=6 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=4, frame=7 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=4, frame=8 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=5, frame=0 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=5, frame=1 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=0 )
+session.viewports['Viewport: 1'].view.setValues(nearPlane=2144.73, 
+    farPlane=3544.87, width=0.293985, height=0.115653, cameraPosition=(
+    0.180068, -6244.8, 0.138374), cameraTarget=(0.180068, -3724.6, 0.0122877))
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=1 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=2 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=3 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=4 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=5 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=6 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=7 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=8 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=9 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=10 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=11 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=12 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=13 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=14 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=15 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=16 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=17 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=18 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=18 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=17 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=16 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=15 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=16 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=17 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=18 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=18 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=17 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=16 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=15 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=14 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=15 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=16 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=17 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=18 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=18 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=17 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=16 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=17 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=18 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=18 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=17 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=16 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=15 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=14 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=13 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=12 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=11 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=10 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=9 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=8 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=7 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=8 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=9 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=10 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=11 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=12 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=13 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=14 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=15 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=16 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=17 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=18 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=18 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=17 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=16 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=15 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=14 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=15 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=16 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=17 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=18 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].view.setValues(nearPlane=2144.73, 
+    farPlane=3544.87, width=0.37806, height=0.148728, cameraPosition=(0.193627, 
+    -6244.8, 0.127368), cameraTarget=(0.193627, -3724.6, 0.00128188))
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=18 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=20 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=20 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=20 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=20 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=20 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=20 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=20 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=20 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=18 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=17 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=16 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=15 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=14 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=13 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=12 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=11 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=10 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=11 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=12 )
+session.viewports['Viewport: 1'].view.setValues(nearPlane=2144.74, 
+    farPlane=3544.86, width=0.245163, height=0.0964467, cameraPosition=(
+    0.184367, -6244.8, 0.135424), cameraTarget=(0.184367, -3724.6, 0.00933777))
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=13 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=14 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=15 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=16 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=17 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=18 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=20 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=20 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=20 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=20 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=20 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=20 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=20 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=20 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=20 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=20 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=20 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=18 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=17 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=16 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=15 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=14 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=13 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=12 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=13 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=14 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=15 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=16 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=17 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=18 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=20 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=20 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=20 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=20 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=20 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=18 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=17 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=16 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=17 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=18 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=20 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=20 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=20 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=20 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=18 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=17 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=16 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=15 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=14 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=15 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=16 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=17 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=18 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=20 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=20 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=20 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=20 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=18 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=17 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=18 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=20 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=20 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=20 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=20 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=20 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=20 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=20 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=20 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=20 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=20 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=18 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=17 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=16 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=15 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=14 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=13 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=12 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=13 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=14 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=15 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=16 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=17 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=18 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=20 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=20 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=20 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=20 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=18 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=17 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=18 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=20 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=20 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=20 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=20 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=20 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=18 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=17 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=18 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=20 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=20 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=20 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=20 )
+#: Job WellClosureJob: Abaqus/Standard completed successfully.
+#: Job WellClosureJob completed successfully. 
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=18 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=17 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=18 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=20 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=21 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=21 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=21 )
+session.viewports['Viewport: 1'].view.setValues(nearPlane=2144.74, 
+    farPlane=3544.86, width=0.353076, height=0.0964467, cameraPosition=(
+    0.142095, -6244.8, 0.126315), cameraTarget=(0.142095, -3724.6, 
+    0.000229329))
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=20 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=18 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=17 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=18 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=19 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=20 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=21 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=21 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=6, frame=21 )
+session.viewports['Viewport: 1'].view.setValues(nearPlane=2144.74, 
+    farPlane=3544.85, width=0.296873, height=0.0810943, cameraPosition=(
+    0.205963, -6244.8, 0.127044), cameraTarget=(0.205963, -3724.6, 
+    0.000958053))
+session.viewports['Viewport: 1'].odbDisplay.setPrimaryVariable(
+    variableLabel='S', outputPosition=INTEGRATION_POINT, refinement=(INVARIANT, 
+    'Mises'), )
+session.viewports['Viewport: 1'].view.setValues(nearPlane=2144.73, 
+    farPlane=3544.87, width=0.430332, height=0.11755, cameraPosition=(0.227051, 
+    -6244.8, 0.138476), cameraTarget=(0.227051, -3724.6, 0.0123905))
+session.viewports['Viewport: 1'].odbDisplay.setPrimaryVariable(
+    variableLabel='U', outputPosition=NODAL, refinement=(INVARIANT, 
+    'Magnitude'), )
+session.viewports['Viewport: 1'].view.setValues(nearPlane=2144.74, 
+    farPlane=3544.86, width=0.407829, height=0.111403, cameraPosition=(
+    0.229883, -6244.8, 0.13767), cameraTarget=(0.229883, -3724.6, 0.0115844))
+mdb.saveAs(
+    pathName='C:/Users/hidalgo/Documents/GitHub/Abaqus_WELL_/WellClosureJobTwoRocks')
+#: The model database has been saved to "C:\Users\hidalgo\Documents\GitHub\Abaqus_WELL_\WellClosureJobTwoRocks.cae".

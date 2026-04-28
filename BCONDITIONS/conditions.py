@@ -58,6 +58,9 @@ def UpdateMaterialDensities(name_model, filtered_layers, stresses_table):
         p_top = get_stresses_exact(z_top, stresses_table)
         p_bottom = get_stresses_exact(z_bottom, stresses_table)
 
+        print(f"The pressure at the top of layer '{layer_name}' (depth {z_top} m) is approximately {p_top/1e6:.2f} MPa.")
+        print(f"The pressure at the bottom of layer '{layer_name}' (depth {z_bottom} m) is approximately {p_bottom/1e6:.2f} MPa.")
+
         delta_z = abs(z_bottom - z_top)
 
         # print("Materiais existentes no modelo:", m.materials.keys())
@@ -65,6 +68,7 @@ def UpdateMaterialDensities(name_model, filtered_layers, stresses_table):
         if delta_z > 0:
 
             rho_calculated = abs(p_bottom - p_top) / (gravity * delta_z)
+            print(f"Calculated density for layer '{layer_name}': {rho_calculated:.2f} kg/m³ based on pressure gradient.")
 
             rho_final = round(rho_calculated, 2)
 

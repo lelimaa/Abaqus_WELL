@@ -2,8 +2,8 @@
   "AnalysisData": {
     "Name": "6973cbf82b7b30ef12f98ae6",
     "Depth": 0.0,
-    "Top": 2700.0,
-    "Bottom": 4100.0,
+    "Top": 2000.0,
+    "Bottom": 5500.0,
     "SimulationTime": 0.0,
     "Coupling": "M",
     "HoleDiameter": 0.0,

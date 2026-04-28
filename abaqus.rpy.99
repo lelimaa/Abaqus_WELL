@@ -1,0 +1,225 @@
+# -*- coding: mbcs -*-
+#
+# Abaqus/CAE Release 2024 replay file
+# Internal Version: 2023_09_21-09.55.25 RELr426 190762
+# Run by Hidalgo on Mon Apr 27 15:51:03 2026
+#
+
+# from driverUtils import executeOnCaeGraphicsStartup
+# executeOnCaeGraphicsStartup()
+#: Executing "onCaeGraphicsStartup()" in the site directory ...
+from abaqus import *
+from abaqusConstants import *
+session.Viewport(name='Viewport: 1', origin=(0.0, 0.0), width=217.5, 
+    height=154.75)
+session.viewports['Viewport: 1'].makeCurrent()
+session.viewports['Viewport: 1'].maximize()
+from caeModules import *
+from driverUtils import executeOnCaeStartup
+executeOnCaeStartup()
+session.viewports['Viewport: 1'].partDisplay.geometryOptions.setValues(
+    referenceRepresentation=ON)
+cliCommand("""import os""")
+cliCommand("""os.chdir(r'C:\\Users\\hidalgo\\Documents\\GitHub\\Abaqus_WELL_')""")
+cliCommand("""execfile(r'C:\\Users\\hidalgo\\Documents\\GitHub\\Abaqus_WELL_\\TestMain.py')""")
+#: Data keys: dict_keys(['AnalysisData', 'ThermalGradient', 'Tubulars', 'Lithology', 'InSituStresses', 'Rocks', 'Cements', 'SteelGrades', 'Phases', 'Events', 'Fluids'])
+#: The bottom of the wellbore is at: -5500 meters
+#: The top of the wellbore is at: -2000 meters
+#: dict_keys(['MohrCoulombParameters', 'Law', 'Elasticity', 'ElasticParameters', 'ThermalParameters'])
+#: dict_keys(['MohrCoulombParameters', 'Law', 'Elasticity', 'ElasticParameters', 'ThermalParameters'])
+#: dict_keys(['DoublePowerParameters', 'Law', 'Elasticity', 'ElasticParameters', 'ThermalParameters'])
+#: dict_keys(['DoublePowerParameters', 'Law', 'Elasticity', 'ElasticParameters', 'ThermalParameters'])
+#: dict_keys(['DoublePowerParameters', 'Law', 'Elasticity', 'ElasticParameters', 'ThermalParameters'])
+#: dict_keys(['DoublePowerParameters', 'Law', 'Elasticity', 'ElasticParameters', 'ThermalParameters'])
+#: dict_keys(['DoublePowerParameters', 'Law', 'Elasticity', 'ElasticParameters', 'ThermalParameters'])
+#: dict_keys(['ElasticParameters', 'Law', 'Elasticity', 'ThermalParameters'])
+#: dict_keys(['MohrCoulombParameters', 'Law', 'Elasticity', 'ElasticParameters', 'ThermalParameters'])
+#: Creating Geometry:  PIPE
+#: Creating Geometry:  FLUID
+#: Creating Geometry:  ROCK
+#: O nome que chegou na função foi: LAYER_03_HALITE
+#: O nome que chegou na função foi: LAYER_04_CARNALLITE
+#: O nome que chegou na função foi: LAYER_05_HALITE
+#: O nome que chegou na função foi: LAYER_06_TACHYHYDRITE
+#: O nome que chegou na função foi: LAYER_07_HALITE
+#: Set 'L1-I_BASE' gerado automaticamente em Y = -2500.0
+#: Set 'L2-I_BASE' gerado automaticamente em Y = -3600.0
+#: Set 'L3-I_BASE' gerado automaticamente em Y = -4150.0
+#: Set 'L4-I_BASE' gerado automaticamente em Y = -4250.0
+#: Set 'L5-I_BASE' gerado automaticamente em Y = -4400.0
+#: Set 'L6-I_BASE' gerado automaticamente em Y = -4500.0
+#: Set 'L7-I_BASE' gerado automaticamente em Y = -5000.0
+#: Set 'L8-I_BASE' gerado automaticamente em Y = -5200.0
+#: Set 'L9-I_BASE' gerado automaticamente em Y = -5500.0
+#: Set 'L1-I_ID' created with sucess in the medium point Y=-2250.0
+#: Set 'L2-I_ID' created with sucess in the medium point Y=-3050.0
+#: Set 'L3-I_ID' created with sucess in the medium point Y=-3875.0
+#: Set 'L4-I_ID' created with sucess in the medium point Y=-4200.0
+#: Set 'L5-I_ID' created with sucess in the medium point Y=-4325.0
+#: Set 'L6-I_ID' created with sucess in the medium point Y=-4450.0
+#: Set 'L7-I_ID' created with sucess in the medium point Y=-4750.0
+#: Set 'L8-I_ID' created with sucess in the medium point Y=-5100.0
+#: Set 'L9-I_ID' created with sucess in the medium point Y=-5350.0
+#: Set 'L1-I_OD' criado com sucesso em X=12.155575, Y=-2250.0
+#: Set 'L2-I_OD' criado com sucesso em X=12.155575, Y=-3050.0
+#: Set 'L3-I_OD' criado com sucesso em X=12.155575, Y=-3875.0
+#: Set 'L4-I_OD' criado com sucesso em X=12.155575, Y=-4200.0
+#: Set 'L5-I_OD' criado com sucesso em X=12.155575, Y=-4325.0
+#: Set 'L6-I_OD' criado com sucesso em X=12.155575, Y=-4450.0
+#: Set 'L7-I_OD' criado com sucesso em X=12.155575, Y=-4750.0
+#: Set 'L8-I_OD' criado com sucesso em X=12.155575, Y=-5100.0
+#: Set 'L9-I_OD' criado com sucesso em X=12.155575, Y=-5350.0
+#: Set 'L1-I_TOP' criado na altura Y = -2000.0
+#: Set 'L2-I_TOP' criado na altura Y = -2500.0
+#: Set 'L3-I_TOP' criado na altura Y = -3600.0
+#: Set 'L4-I_TOP' criado na altura Y = -4150.0
+#: Set 'L5-I_TOP' criado na altura Y = -4250.0
+#: Set 'L6-I_TOP' criado na altura Y = -4400.0
+#: Set 'L7-I_TOP' criado na altura Y = -4500.0
+#: Set 'L8-I_TOP' criado na altura Y = -5000.0
+#: Set 'L9-I_TOP' criado na altura Y = -5200.0
+#: Set de Face 'L1-I' criado em X=6.155575, Y=-2250.0
+#: Set de Face 'L2-I' criado em X=6.155575, Y=-3050.0
+#: Set de Face 'L3-I' criado em X=6.155575, Y=-3875.0
+#: Set de Face 'L4-I' criado em X=6.155575, Y=-4200.0
+#: Set de Face 'L5-I' criado em X=6.155575, Y=-4325.0
+#: Set de Face 'L6-I' criado em X=6.155575, Y=-4450.0
+#: Set de Face 'L7-I' criado em X=6.155575, Y=-4750.0
+#: Set de Face 'L8-I' criado em X=6.155575, Y=-5100.0
+#: Set de Face 'L9-I' criado em X=6.155575, Y=-5350.0
+#: Assigned section 'LAYER_01_SHALE_Section' to existing set 'L1-I'.
+#: Assigned section 'LAYER_02_SANDSTONE_Section' to existing set 'L2-I'.
+#: Assigned section 'LAYER_03_HALITE_Section' to existing set 'L3-I'.
+#: Assigned section 'LAYER_04_CARNALLITE_Section' to existing set 'L4-I'.
+#: Assigned section 'LAYER_05_HALITE_Section' to existing set 'L5-I'.
+#: Assigned section 'LAYER_06_TACHYHYDRITE_Section' to existing set 'L6-I'.
+#: Assigned section 'LAYER_07_HALITE_Section' to existing set 'L7-I'.
+#: Assigned section 'LAYER_08_ANHYDRITE_Section' to existing set 'L8-I'.
+#: Assigned section 'LAYER_09_CARBONATE_Section' to existing set 'L9-I'.
+#: Assembly completed with active sets: []
+#: Set 'ALL' criado com todas as faces das 2 instancias.
+#: Set FASEI_OPEN_WELL criado na interface X = 0.155575
+#: Set FASEI_WELL criado na interface X = 0.155575
+#: Set 'FASEI_COMPLETED_WELL' criado na face interna do Pipe (X = 0.125009)
+#: Set 'MESH_TT_PIPES' criado com 10 arestas horizontais.
+#: Set 'MESH_TT_ANNULARS' criado com 10 arestas horizontais.
+#: Set 'MESH_TT_ROCK' criado com 10 arestas horizontais.
+#: Set 'MESH_VERTICAL' criado com sucesso (todas as verticais).
+#: Set 'ROCK_BC' criado com sucesso na borda X = 12.155575
+#: Set 'ROCK_OUTPUT' criado com todas as faces dessa instancia.
+#: Set 'YSYM_BASE' criado com sucesso unindo todas as instâncias.
+#: Set 'YSYM_TOP' criado com sucesso na altura Y = -2000.0
+#: Surface 'FASEI_ANNULAR' created successfully containing 20 edges.
+#: Surface 'FASEI_COMPLETED_WELL' succesfully created with success containing 9 edges.
+#: Surface 'FASEI_MASTER' succesfully created with success containing 9 edges.
+#: Surface 'FASEI_OPEN_WELL' succesfully created with success containing 9 edges.
+#: Surface 'FASEI_WELL' succesfully created with success containing 9 edges.
+#: The interaction "MC_FASEI_FLUIDO" has been created.
+#: The interaction "MC_FASEI_REV" has been created.
+#: 
+#: >>> Updating densities of layers via pressure gradient...
+#:  Material LAYER_01_SHALE: Density adjusted to 2299.61 kg/m³
+#:  Material LAYER_02_SANDSTONE: Density adjusted to 2299.92 kg/m³
+#:  Material LAYER_03_HALITE: Density adjusted to 2169.93 kg/m³
+#:  Material LAYER_04_CARNALLITE: Density adjusted to 1599.95 kg/m³
+#:  Material LAYER_05_HALITE: Density adjusted to 2169.93 kg/m³
+#:  Material LAYER_06_TACHYHYDRITE: Density adjusted to 2169.93 kg/m³
+#:  Material LAYER_07_HALITE: Density adjusted to 2169.93 kg/m³
+#:  Material LAYER_08_ANHYDRITE: Density adjusted to 2918.35 kg/m³
+#:  Material LAYER_09_CARBONATE: Density adjusted to 2709.91 kg/m³
+#: [L1-I-SHALE] Stresses: Top (2000.0m) = -19.98 MPa | Bottom (2500.0m) = -31.26 MPa
+#: [L2-I-SANDSTONE] Stresses: Top (2500.0m) = -31.26 MPa | Bottom (3600.0m) = -56.08 MPa
+#: [L3-I-HALITE] Stresses: Top (3600.0m) = -56.08 MPa | Bottom (4150.0m) = -67.79 MPa
+#: [L4-I-CARNALLITE] Stresses: Top (4150.0m) = -67.79 MPa | Bottom (4250.0m) = -69.36 MPa
+#: [L5-I-HALITE] Stresses: Top (4250.0m) = -69.36 MPa | Bottom (4400.0m) = -72.55 MPa
+#: [L6-I-TACHYHYDRITE] Stresses: Top (4400.0m) = -72.55 MPa | Bottom (4500.0m) = -74.68 MPa
+#: [L7-I-HALITE] Stresses: Top (4500.0m) = -74.68 MPa | Bottom (5000.0m) = -85.32 MPa
+#: [L8-I-ANHYDRITE] Stresses: Top (5000.0m) = -85.32 MPa | Bottom (5200.0m) = -91.05 MPa
+#: [L9-I-CARBONATE] Stresses: Top (5200.0m) = -91.05 MPa | Bottom (5500.0m) = -99.03 MPa
+#: 
+#: >>> Todas as tensões geostáticas foram aplicadas com sucesso!
+#: >>> Mappedfield 'Geotermico' successfully created! (T_ref = 277.15 K)
+#: >>> ExpressionField 'NT_L1-I' created with denominator 277.1 K
+#: >>> ExpressionField 'NT_L2-I' created with denominator 287.8 K
+#: >>> ExpressionField 'NT_L3-I' created with denominator 311.3 K
+#: >>> ExpressionField 'NT_L4-I' created with denominator 323.0 K
+#: >>> ExpressionField 'NT_L5-I' created with denominator 325.1 K
+#: >>> ExpressionField 'NT_L6-I' created with denominator 328.3 K
+#: >>> ExpressionField 'NT_L7-I' created with denominator 330.4 K
+#: >>> ExpressionField 'NT_L8-I' created with denominator 341.1 K
+#: >>> ExpressionField 'NT_L9-I' created with denominator 345.4 K
+#: 
+#: >>> All the thermal Expressionfields of the rocks were created!
+#: >>> ExpressionField 'P_FASEI_COMPLETED_WELL' created with success!
+#: >>> ExpressionField 'P_FASEI_FLUID' created with success!
+#: >>> ExpressionField 'P_FASEI_OPEN_WELL' created with success!
+#: >>> Temperature 'NT_L1-I' applied in the region L1-I (Magnitude: 277.15 K)
+#: >>> Temperature 'NT_L1-I_OD' applied in the region L1-I_OD (Magnitude: 277.15 K)
+#: >>> Temperature 'NT_L2-I' applied in the region L2-I (Magnitude: 287.81 K)
+#: >>> Temperature 'NT_L2-I_OD' applied in the region L2-I_OD (Magnitude: 287.81 K)
+#: >>> Temperature 'NT_L3-I' applied in the region L3-I (Magnitude: 311.25 K)
+#: >>> Temperature 'NT_L3-I_OD' applied in the region L3-I_OD (Magnitude: 311.25 K)
+#: >>> Temperature 'NT_L4-I' applied in the region L4-I (Magnitude: 322.98 K)
+#: >>> Temperature 'NT_L4-I_OD' applied in the region L4-I_OD (Magnitude: 322.98 K)
+#: >>> Temperature 'NT_L5-I' applied in the region L5-I (Magnitude: 325.11 K)
+#: >>> Temperature 'NT_L5-I_OD' applied in the region L5-I_OD (Magnitude: 325.11 K)
+#: >>> Temperature 'NT_L6-I' applied in the region L6-I (Magnitude: 328.30 K)
+#: >>> Temperature 'NT_L6-I_OD' applied in the region L6-I_OD (Magnitude: 328.30 K)
+#: >>> Temperature 'NT_L7-I' applied in the region L7-I (Magnitude: 330.44 K)
+#: >>> Temperature 'NT_L7-I_OD' applied in the region L7-I_OD (Magnitude: 330.44 K)
+#: >>> Temperature 'NT_L8-I' applied in the region L8-I (Magnitude: 341.09 K)
+#: >>> Temperature 'NT_L8-I_OD' applied in the region L8-I_OD (Magnitude: 341.09 K)
+#: >>> Temperature 'NT_L9-I' applied in the region L9-I (Magnitude: 345.36 K)
+#: >>> Temperature 'NT_L9-I_OD' applied in the region L9-I_OD (Magnitude: 345.36 K)
+#: 
+#: >>> All the temperatures of the layers were started sucsessfully!
+#: >>> Step 'Perf_10_375' created with success!
+#: >>> Hydrostatic pressure of the mud applied in the open well region.
+#: >>> ViscoStep 'Perf_10_375_Creep' created: Total duration of 2.0 days.
+#: >>> Step 'Rev_9_875' created with success!
+#: The interaction property "C_FASEI" has been created.
+#: >>> Contact property 'C_FASEI' created (Friction: 0.5).
+#: The interaction "C_FASEI" has been created.
+#: >>> Interaction 'C_FASEI' activated in Step 'Rev_9_875'.
+#:    - Pressure P_FASEI_COMPLETED_WELL activated.
+#:    - Pressure P_FASEI_FLUID activated.
+#:     - Load P_FASEI_OPEN_WELL deactivated.
+#:    - Interaction of casing (Model Change) activated.
+#:    - Boundary condition PIN_FASEI (temporary trava) deactivated.
+#: >>> Phase of casing successfully configured!
+#: >>> ViscoStep 'Rev_9_875_Creep' created: Total duration of 10950.0 days.
+#:     - Incremento travado em no máximo 180.0 dias por passo.
+#: >>> Uniform mesh (Size: 0.005) applyed in 10 lines of 'FLUID_INST.'
+#: >>> Uniform mesh (Size: 0.005) applyed in 10 lines of 'PIPE_INST.'
+#: >>> Bias Mesh applyed in 10 instance lines 'ROCK_INST'!
+#: >>> Uniform mesh (Size: 5.0) applyed with success in set 'MESH_VERTICAL!'
+#: >>> Element type CAX4 and CAX3 assigned to set 'ALL'!
+#: >>> Mesh generated with success for instance 'FLUID_INST'!
+#: >>> Mesh generated with success for instance 'PIPE_INST'!
+#: >>> Mesh generated with success for instance 'ROCK_INST'!
+#: >>> Job 'WellClosureJob' created for model 'MyFirstModel' with 14 CPUs!
+#: >>> Submiting job 'WellClosureJob' for analysis... Wait for it to finish!
+#: Warning: 
+#: Following warning detected while evaluating the temperature ""
+#: from analytical field "Geotermico",
+#: The mapper has mapped the field values using distance weighting 
+#: algorithm for some of the target nodes.
+#: Warning: 
+#: Following warning detected while evaluating the temperature ""
+#: from analytical field "Geotermico",
+#: The mapper has mapped the field values using distance weighting 
+#: algorithm for some of the target nodes.
+#: The mapper has mapped the field values using distance weighting 
+#: algorithm for some of the target nodes.
+#: Warning: 
+#: Following warning detected while evaluating the temperature ""
+#: from analytical field "Geotermico",
+#: The mapper has mapped the field values using distance weighting 
+#: algorithm for some of the target nodes.
+#: >>> File .inp succssessfully created!
+p = mdb.models['MyFirstModel'].parts['FLUID']
+session.viewports['Viewport: 1'].setValues(displayedObject=p)
+session.viewports['Viewport: 1'].partDisplay.setValues(sectionAssignments=ON, 
+    engineeringFeatures=ON)
+session.viewports['Viewport: 1'].partDisplay.geometryOptions.setValues(
+    referenceRepresentation=OFF)
