@@ -339,7 +339,7 @@ if __name__ == "__main__":
     CreateMeshVerticalBySet(
         name_model='MyFirstModel',
         name_set='MESH_VERTICAL',
-        element_size=5.0
+        element_size=0.5
     )
 
     AttributeTypeElement(
@@ -370,6 +370,8 @@ if __name__ == "__main__":
         num_cpus=14, 
         run_now=True
     )    
+
+    
 
     # # mdb.jobs[job_name].writInput(consistencyChecking=OFF)
 

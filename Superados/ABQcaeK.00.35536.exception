@@ -1,0 +1,40 @@
+<Description>
+   ABAQUS/ABQcaeK rank 0 encountered a SEGMENTATION FAULT
+
+</Description>
+
+<Context>
+   CAE
+</Context>
+
+<Callstack>
+  1)  KERNELBASE.dll              RaiseException                          
+  2)  VCRUNTIME140_1.dll        unknown                                 
+</Callstack>
+
+<Memory>
+   <Current>            0 GB </Current>
+   <Resident>           0 GB </Resident>
+   <Physical>          63 GB </Physical>
+   <Limit>              0 GB </Limit>
+   <Accessible>        63 GB </Accessible>
+   <Available>         35 GB </Available>
+   <Allocator>            DL </Allocator>
+</Memory>
+
+<Swap>
+       <Size>          67 GB </Size>
+       <Used>          44 GB </Used>
+       <Free>          23 GB </Free>
+</Swap>
+
+<Directories>
+  <current> C:\Users\hidalgo\Documents\GitHub\Abaqus_WELL_ </current> <free>   1372 GB </free>   <used>    488 GB </used> 
+     <temp> C:\Users\hidalgo\AppData\Local\Temp </temp>    <free>   1372 GB </free>
+</Directories>
+
+<Installation>
+     <Version> 2024 6.24-1 </Version>
+       <Build> 2023_09_21-09.55.25 RELr426 190762 </Build>
+</Installation>
+
