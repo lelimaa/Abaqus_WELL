@@ -191,9 +191,10 @@ def CreateSetsRock(name_model):
     v = p.vertices
     tol = 0.001
 
-    # ALLROCK
+    # ALLROCK and FASEI_SLAVE (all faces of the rock part, to be used in the contact definition as slave surface)
     all_faces = f[0:len(f)]
     p.Set(faces=all_faces, name='ALLROCK')
+    p.Set(faces=all_faces, name='FASEI_SLAVE')
 
     # L1-I_BASE, L2-I_BASE, L3-I_BASE, ... , LN-I_BASE
     todas_as_alturas = sorted(list(set([vert.pointOn[0][1] for vert in v])))
@@ -639,12 +640,14 @@ def CreateSurfacesAssembly(modelName, data):
     # Creation of inner and outer surfaces in the fluid 
     # FASEI_FLUIDO
 
-    edges_fluid_phasei = inner_edges_fluid + outer_edges_fluid 
+    # edges_fluid_phasei = inner_edges_fluid + outer_edges_fluid 
 
-    surface_name_fluid_phasei = 'FASEI_FLUIDO'
-    a.Surface(side1Edges= edges_fluid_phasei, name=surface_name_fluid_phasei)
+    # surface_name_fluid_phasei = 'FASEI_FLUIDO'
+    # a.Surface(side1Edges= edges_fluid_phasei, name=surface_name_fluid_phasei)
 
-    print("Surface '%s' created successfully containing %d edges." % (surface_name_fluid_phasei, len(edges_fluid_phasei)))
+    # print("Surface '%s' created successfully containing %d edges." % (surface_name_fluid_phasei, len(edges_fluid_phasei)))
+
+    # It was defined below in the PIPE and ROCK instances ###############################################################
 
     # Creating the casing surface using edges from the pipe instance
     # FASEI_COMPLETED_WELL
@@ -704,6 +707,8 @@ def CreateSurfacesAssembly(modelName, data):
     # Creating the rock internal surfaces using edges from the rock instance
     # FASEI_OPEN_WELL
 
+
+
     instanceName = 'ROCK_INST'
     inst = a.instances[instanceName]
 
@@ -728,3 +733,12 @@ def CreateSurfacesAssembly(modelName, data):
 
     # return a.surfaces[surface_name_fluid], a.surfaces[surface_name_fluid_phasei], a.surfaces[surfaceName_pipe], a.surfaces[surfaceName_pipe_outer], a.surfaces[surfaceName_pipe], a.surfaces[surfaceName_rock], a.surfaces[surfaceName_rock_open]
 
+    # Defining the FASEI_FLUID via pipe and rock surfaces 
+
+    edges_fluid_phasei = outer_edges_pipe + inner_edges_rock
+
+    surface_name_fluid_phasei = 'FASEI_FLUIDO'
+    a.Surface(side1Edges= edges_fluid_phasei, name=surface_name_fluid_phasei)
+
+    # print("Surface '%s' created successfully containing %d edges." % (surface_name_fluid_phasei, len(edges_fluid_phasei)))
+    

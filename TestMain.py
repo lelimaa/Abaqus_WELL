@@ -15,12 +15,17 @@ from GEOMETRY.geometries import *
 from GEOMETRY.assembly import *
 from GEOMETRY.sets import *
 from MATERIALS.materials import *
-from JSONS.ImportTools import process_lithology             
+from JSONS.ImportTools import *
+from BCONDITIONS.conditions import *     
+from BCONDITIONS.casing import *     
+from MESH.meshAlt import *    
+from JOBS.job import *
 
 mdb.models.changeKey(fromName='Model-1', toName='MyFirstModel')
 
 if 'MyFirstModel' not in mdb.models:
     mdb.Model(name='MyFirstModel')
+# mdb.Model(name='MyFirstModel')
 
 # Reading the json file and filling the input data for the analysis ####################
 
@@ -32,8 +37,8 @@ print(f"Data keys: {data.keys()}")
 
 # variables read from json (geometry) ####################################################
 
-name_phase = '136fdd5d-6082-4c4f-8f77-7ed08da1932c'
-name_tubular = 'VAM_16in_#97_P110'
+name_phase = '3dda7930-6dbf-4d05-87f2-d2809a3e9fc6'
+name_tubular = 'LIN_09_875'
 
 outer_diamenter_pipe = data["Tubulars"][name_tubular]['OD']
 thickness_pipe = data["Tubulars"][name_tubular]['Thickness']
@@ -83,13 +88,12 @@ if __name__ == "__main__":
                  }
     }
 
-for part_name, part_data in data_code.items():
-        CreateGeometry('MyFirstModel', part_name, part_data)
-        PartitionLayersByDepth("MyFirstModel", part_name=part_name, layer_depths=part_data["layer_depths"])
+    for part_name, part_data in data_code.items():
+            CreateGeometry('MyFirstModel', part_name, part_data)
+            PartitionLayersByDepth("MyFirstModel", part_name=part_name, layer_depths=part_data["layer_depths"])
 
-# Definition of materials ###############################################################
+    # Definition of materials ###############################################################
 
-if __name__ == "__main__":
 
     lithology = data["Lithology"]
 
@@ -105,7 +109,9 @@ if __name__ == "__main__":
 
     examples = {}
 
-    casing_type = "P110"
+    # casing_type = "VM110"
+    casing_type = "VM-95"
+
     examples["STEEL"] = {
         "behavior": data["SteelGrades"][casing_type]["Law"],
         'density': data["SteelGrades"][casing_type]["ElasticParameters"]["Density"],
@@ -169,8 +175,8 @@ if __name__ == "__main__":
 
     lythology_examples = []
 
-    import pprint 
-    pprint.pprint(filtered_layers)
+    # import pprint 
+    # pprint.pprint(filtered_layers)
 
 
     for i, layer in enumerate(filtered_layers, start=1):
@@ -189,6 +195,10 @@ if __name__ == "__main__":
 
     for mat_name, mat_data in examples.items():
         CreateMaterial('MyFirstModel', mat_name, mat_data, sectionLength=1.)
+
+    mdb.models['MyFirstModel'].setValues(absoluteZero=0.0, stefanBoltzmann=5.670374e-8)
+    
+    # AddplasticityToSteel('MyFirstModel', 'STEEL')
 
     CreateSetsPipe('MyFirstModel')
     CreateSetsFluid('MyFirstModel')
@@ -212,3 +222,166 @@ if __name__ == "__main__":
     CreateSetsAssembly('MyFirstModel')   
 
     CreateSurfacesAssembly('MyFirstModel', data_code)
+
+    # Steps creation and boundary conditions application
+
+    CreateSteps('MyFirstModel')
+
+    # Calculation of axial stresses in the casing due to its own weight (initial stresses)    
+
+    stress_top, stress_bottom = CasingStresses(data, name_phase, examples["STEEL"]["density"], top_depth, base_depth)
+
+    ApplyCasingInitialStresses('MyFirstModel', top_depth, base_depth, stress_top, stress_bottom)
+
+    CreateStepsPartOne('MyFirstModel')
+
+    stresses_table = ConvertStressesJSON(data["InSituStresses"])
+
+    UpdateMaterialDensities('MyFirstModel', filtered_layers, stresses_table)
+
+    ApplyGeostaticStresses('MyFirstModel', filtered_layers, stresses_table)
+
+    CreateNormalizedGeothermalGrid(
+        name_model='MyFirstModel',
+        top_depth=data["ThermalGradient"]["Geothermal_cold"][0]["Depth"], top_temp_C=data["ThermalGradient"]["Geothermal_cold"][0]["Temperature"],
+        bottom_depth=data["ThermalGradient"]["Geothermal_cold"][-1]["Depth"], bottom_temp_C=data["ThermalGradient"]["Geothermal_cold"][-1]["Temperature"],
+        start_mesh_depth=top_depth,
+        end_mesh_depth=base_depth 
+    )
+
+    CreateStepsPartTwo('MyFirstModel')
+
+    ApplyExpressionFieldsGeothermal(
+        name_model='MyFirstModel', filtered_layers=filtered_layers,
+        top_depth=data["ThermalGradient"]["Geothermal_cold"][0]["Depth"], top_temp_C=data["ThermalGradient"]["Geothermal_cold"][0]["Temperature"],
+        bottom_depth=data["ThermalGradient"]["Geothermal_cold"][-1]["Depth"], bottom_temp_C=data["ThermalGradient"]["Geothermal_cold"][-1]["Temperature"]
+        )
+
+    CreateFluidExpressionFields(name_model='MyFirstModel', mud_weight_ppg=8.5)
+
+    ApplyInitialTemperatures(
+        name_model='MyFirstModel', filtered_layers=filtered_layers,
+        top_depth=data["ThermalGradient"]["Geothermal_cold"][0]["Depth"], top_temp_C=data["ThermalGradient"]["Geothermal_cold"][0]["Temperature"],
+        base_depth=data["ThermalGradient"]["Geothermal_cold"][-1]["Depth"], base_temp_C=data["ThermalGradient"]["Geothermal_cold"][-1]["Temperature"] 
+    )
+
+    CreateStepsPartThree('MyFirstModel')
+
+    CreateCreepStep(
+        name_model='MyFirstModel', 
+        step_name='Perf_10_375_Creep',
+        previous_step='Perf_10_375',
+        time_period_days=2.0 
+        # max_inc_days=None,
+        # cetol_value=0.01
+    )
+
+    CreateStepsPartFour(
+        name_model='MyFirstModel'
+    )
+
+    CreateContactCondition(
+        name_model='MyFirstModel', 
+        contact_name='C_FASEI', 
+        step_name='Rev_9_875',
+        main_surface_name='FASEI_MASTER', 
+        secondary_set_name='FASEI_SLAVE', 
+        friction_coeff=0.5, 
+        secondary_instance='ROCK_INST'
+    )
+
+    ConfigurePhaseRev(
+        name_model='MyFirstModel',
+        step_name='Rev_9_875'
+    )
+
+    CreateCreepStep(
+        name_model='MyFirstModel', 
+        step_name='Rev_9_875_Creep',
+        previous_step='Rev_9_875',
+        time_period_days=10950.0, 
+        max_inc_days=180.0
+        # cetol_value=0.01
+    )
+
+    # Calling mesh
+
+    radius_search_pipe = (inner_radius_pipe+inner_radius_annular) / 2.0
+    radius_search_fluid = (inner_radius_annular + inner_radius_wellbore) / 2.0
+    radius_search_rock = (2 * inner_radius_wellbore + thickness_wellbore) / 2.0
+
+
+    CreateMeshSizeHorizontal(
+        name_model='MyFirstModel',
+        name_instance='FLUID_INST',
+        filtered_layers=filtered_layers,
+        radius_middle=radius_search_fluid,
+        elementSize=5e-3,
+        deviationFactor=0.1
+    )
+    CreateMeshSizeHorizontal(
+        name_model='MyFirstModel',
+        name_instance='PIPE_INST',
+        filtered_layers=filtered_layers,
+        radius_middle=radius_search_pipe,
+        elementSize=5e-3,
+        deviationFactor=0.1
+    )
+    CreateMeshBiasHorizontal(
+        name_model='MyFirstModel',
+        name_instance='ROCK_INST',
+        filtered_layers=filtered_layers,
+        radius_middle=radius_search_rock,
+        minSize=4e-3,
+        maxSize=3.0
+    )
+
+    CreateMeshVerticalBySet(
+        name_model='MyFirstModel',
+        name_set='MESH_VERTICAL',
+        element_size=0.5
+    )
+
+    AttributeTypeElement(
+        name_model='MyFirstModel',
+        name_set='ALL'
+    )
+
+    GenerateMesh(
+        name_model='MyFirstModel',
+        name_instance='FLUID_INST'
+    )
+    GenerateMesh(
+        name_model='MyFirstModel',
+        name_instance='PIPE_INST'
+    )
+    GenerateMesh(
+        name_model='MyFirstModel',
+        name_instance='ROCK_INST'
+    )
+
+    # Creating a job and saving the model
+
+    job_name = 'WellClosureJob'
+
+    CreateJob(
+        name_model='MyFirstModel',
+        name_job=job_name,
+        num_cpus=14, 
+        run_now=True
+    )    
+
+    
+
+    # # mdb.jobs[job_name].writInput(consistencyChecking=OFF)
+
+    # RunJob(job_name)
+
+    # mdb.saveAs(pathName=r'C:\Users\hidalgo\Documents\GitHub\Abaqus_WELL_\WellClosureJob.cae')
+    # print("Model saved as 'WellClosureJob.cae' in the project folder. You can open it with Abaqus/CAE to review the model and submit the job for analysis.")
+
+    # Falta:
+    # enxugar as defs para os sets
+    # enxugar as defs para os steps
+    # adaptar para os diferentes nomes de rev que dependem dos diametros dos casings
+    

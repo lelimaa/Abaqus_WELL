@@ -1,16 +1,20 @@
 {
   "AnalysisData": {
     "Name": "6973cbf82b7b30ef12f98ae6",
-    "Depth": 0.0,
-    "Top": 3600.0,
-    "Bottom": 4100.0,
-    "SimulationTime": 0.0,
+    "Top": 2600.0,
+    "Bottom": 3200.0,
+    "GeothermalGradient": "temp. drilling 14in - 60 degC",
     "Coupling": "M",
-    "HoleDiameter": 0.0,
     "Solver": "Abaqus",
     "Domain": "axisymmetric",
-    "WellboreFluid": null,
-    "GeothermalGradient": "temp. drilling 14in - 60 degC"
+    
+    "CreepTime": 0.0,
+    "HoleDiameter": 0.0,
+    "Casing": "VAM_16in_#97_P110",
+    "InnerFluid": null,
+    "AnnulusFluid": null,
+    "AxialStress": null,
+    "Standoff": null
   },
   "ThermalGradient": {
     "Geothermal_cold": [
@@ -882,102 +886,6 @@
       }
     }
   },
-  "Phases": {
-    "136fdd5d-6082-4c4f-8f77-7ed08da1932c": {
-      "Casing": [
-        {
-          "Tubular": "TEN_30_#161.33_X56",
-          "Top": 2000.0,
-          "Bottom": 2100.0
-        },
-        {
-          "Tubular": "22_0IN_251_0NW_X70",
-          "Top": 2100.0,
-          "Bottom": 2200.0
-        }
-      ],
-      "CementSheath": [
-        {
-          "Cement": "CLASS_G",
-          "Top": 2000.0,
-          "Bottom": 2200.0
-        }
-      ],
-      "HoleDiameter": 36.0,
-      "Standoff": 100.0,
-      "RateOfPenetration": 10.0,
-      "TripSpeed": 400.0,
-      "Fluid": "sea_water",
-      "Name": "conductor"
-    },
-    "812c492a-c945-4184-be51-841c5fb86b15": {
-      "Casing": [
-        {
-          "Tubular": "VAM_20_#169_K55",
-          "Top": 2000.0,
-          "Bottom": 3200.0
-        }
-      ],
-      "CementSheath": [
-        {
-          "Cement": "CLASS_G",
-          "Top": 2500.0,
-          "Bottom": 3200.0
-        }
-      ],
-      "HoleDiameter": 26.0,
-      "Standoff": 100.0,
-      "RateOfPenetration": 10.0,
-      "TripSpeed": 400.0,
-      "Fluid": "drilling 20 in",
-      "Name": "surface"
-    },
-    "3dda7930-6dbf-4d05-87f2-d2809a3e9fc6": {
-      "Casing": [
-        {
-          "Tubular": "VAM_9-5/8_#53.5_V110HCSS",
-          "Top": 4250.0,
-          "Bottom": 5250.0
-        }
-      ],
-      "CementSheath": [
-        {
-          "Cement": "CLASS_G",
-          "Top": 4750.0,
-          "Bottom": 5250.0
-        }
-      ],
-      "HoleDiameter": 12.25,
-      "Standoff": 67.0,
-      "RateOfPenetration": 10.0,
-      "TripSpeed": 400.0,
-      "Fluid": "production_annulusA",
-      "Name": "inter. 9 5/8"
-    },
-    "9c6179ee-f0da-4e8d-aa9d-941090754187": {
-      "Casing": [
-        {
-          "Tubular": "VAM_14_#82.5_P110",
-          "Top": 2000.0,
-          "Bottom": 4550.0
-        }
-      ],
-      "CementSheath": [
-        {
-          "Cement": "CLASS_G",
-          "Top": 4000.0,
-          "Bottom": 4550.0
-        }
-      ],
-      "HoleDiameter": 17.5,
-      "Standoff": 67.0,
-      "RateOfPenetration": 10.0,
-      "TripSpeed": 400.0,
-      "Fluid": "derated_mud",
-      "Name": "intermed_14"
-    }
-  },
-  "Events": {},
   "Fluids": {
     "sea_water": {
       "Density": 8.5,

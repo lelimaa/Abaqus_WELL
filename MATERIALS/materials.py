@@ -21,6 +21,9 @@ def ElasticMaterial(modelName, name, data, sectionLength=1.):
         mat.Conductivity(table=((data.get('conductivity'),),))
 
     if data.get('specific_heat') is not None:
+        # raw_value = data.get('specific_heat')
+        # corrected_spec_heat = raw_value * 4184.0 
+        # mat.SpecificHeat(table=((corrected_spec_heat,),))
         mat.SpecificHeat(table=((data.get('specific_heat'),),))
 
     if data.get('expansion') is not None:
@@ -69,13 +72,15 @@ def DoublePowerCreepMaterial(modelName, name, data, sectionLength=1.):
         # dp_data = data["Rocks"][name]["DoublePowerParameters"]        
         dp_data = data.get("DoublePowerParameters", {})
         # dp_data = data.get("creep_parameters", {})
-        A1 = dp_data["a1"]
-        A2 = dp_data["a2"]
+        A1 = dp_data["a1"] 
+        A2 = dp_data["a2"] 
+        # A1 = dp_data["a1"] / 86400.0  # Convert from per day to per second
+        # A2 = dp_data["a2"] / 86400.0  # Convert from per day to per second
         B1 = dp_data["b1"]
         B2 = dp_data["b2"]
         C1 = dp_data["c1"]
         C2 = dp_data["c2"]
-        ref_stress = dp_data["s0"]
+        ref_stress = dp_data["s0"]*1e6  # Converting from MPa to Pa
         mat.Creep(law=DOUBLE_POWER,
                   table=((A1, B1, C1, A2, B2, C2, ref_stress),))
     except:
@@ -90,7 +95,6 @@ def DoubleMechanismCreepMaterial(modelName, name, data, sectionLength=1.):
     mat.Creep(law=USER, table=())
     subroutine = {"CREEP": " my fortran subroutine "}
     return mat, sect, subroutine
-
 
 def CreateMaterial(modelName, name, data, sectionLength=1.):
     behavior = data.get("behavior")
@@ -178,3 +182,33 @@ def AssignRockByDepth(modelName, partName, rock_layers):
         else:
 
             print("Warning: Set '%s' not found in part '%s'. Skipping assignment." % (set_name, partName))
+
+
+
+def AddplasticityToSteel(name_model, material_name='STEEL'):
+    m = mdb.models[name_model]
+
+    mat = m.materials[material_name]
+
+    plastic_table = (
+        (7.58424e+08, 0.0,  273.15),
+        (7.58424e+08, 0.25, 273.15),
+        (7.56376e+08, 0.0,  298.15),
+        (7.56376e+08, 0.25, 298.15),
+        (7.25660e+08, 0.0,  373.15),
+        (7.25660e+08, 0.25, 373.15),
+        (7.05182e+08, 0.0,  423.15),
+        (7.05182e+08, 0.25, 423.15),
+        (6.84705e+08, 0.0,  473.15),
+        (6.84705e+08, 0.25, 473.15),
+        (6.64227e+08, 0.0,  523.15),
+        (6.64227e+08, 0.25, 523.15)
+    )
+
+    mat.Plastic(table=plastic_table, temperatureDependency=ON)
+
+    print(f">>> Plasticity dependent of temperature added to material '{material_name}'!")
+
+
+
+        

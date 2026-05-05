@@ -126,7 +126,7 @@ def PartitionLayersByDepth(model_name, part_name, layer_depths):
     p = model.parts[part_name]
 
     # Todas as faces do shell axisimétrico
-    faces = p.faces[:]
+    # faces = p.faces[:]
 
     for depth in layer_depths:
         y_coord = -depth  # convenção do seu modelo
@@ -137,7 +137,7 @@ def PartitionLayersByDepth(model_name, part_name, layer_depths):
 
         # Particiona todas as faces cortadas pelo plano
         p.PartitionFaceByDatumPlane(datumPlane=p.datums[datum_id],
-                                    faces=faces
+                                    faces=p.faces[:]
                                     )
 
 def CreateGeometry(name_model, name, data):

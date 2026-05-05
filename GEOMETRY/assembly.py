@@ -38,7 +38,7 @@ def Assembly(modelName, partsNames, top_depth=3200, base_depth=3600):
 
         p = model.parts[name]
         instName = name + '_INST'
-        a.Instance(name=instName, part=p, dependent=ON)
+        a.Instance(name=instName, part=p, dependent=OFF)
         inst = a.instances[instName]
         instances[name] = inst
 
