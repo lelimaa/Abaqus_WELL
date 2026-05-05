@@ -13,7 +13,7 @@ def CreateSetsPipe(name_model):
     p.Set(faces=all_faces, name='FASEI_REV_ABOVE_TOC')
 
 
-    # FASEI_REV_BASE)    
+    # FASEI_REV_BASE    
     tol = 0.001
     e = p.edges
     all_coords = [v.pointOn[0][1] for v in p.vertices]
