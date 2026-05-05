@@ -369,16 +369,15 @@ if __name__ == "__main__":
         name_job=job_name,
         num_cpus=14, 
         run_now=True
-    )    
+    )        
 
+    # mdb.jobs[job_name].writeInput(consistencyChecking=OFF)
+
+    RunJob(job_name)
+
+    mdb.saveAs(pathName=r'C:\Users\hidalgo\Documents\GitHub\Abaqus_WELL_\WellClosureJob.cae')
     
-
-    # # mdb.jobs[job_name].writInput(consistencyChecking=OFF)
-
-    # RunJob(job_name)
-
-    # mdb.saveAs(pathName=r'C:\Users\hidalgo\Documents\GitHub\Abaqus_WELL_\WellClosureJob.cae')
-    # print("Model saved as 'WellClosureJob.cae' in the project folder. You can open it with Abaqus/CAE to review the model and submit the job for analysis.")
+    print("Model saved as 'WellClosureJob.cae' in the project folder. You can open it with Abaqus/CAE to review the model and submit the job for analysis.")
 
     # Falta:
     # enxugar as defs para os sets
