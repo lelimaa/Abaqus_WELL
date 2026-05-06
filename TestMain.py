@@ -18,7 +18,7 @@ from MATERIALS.materials import *
 from JSONS.ImportTools import *
 from BCONDITIONS.conditions import *     
 from BCONDITIONS.casing import *     
-from MESH.meshAlt import *    
+from MESH.mesh import *    
 from JOBS.job import *
 
 mdb.models.changeKey(fromName='Model-1', toName='MyFirstModel')
@@ -316,7 +316,7 @@ if __name__ == "__main__":
         name_instance='FLUID_INST',
         filtered_layers=filtered_layers,
         radius_middle=radius_search_fluid,
-        elementSize=5e-3,
+        elementSize=4e-3,
         deviationFactor=0.1
     )
     CreateMeshSizeHorizontal(
@@ -324,7 +324,7 @@ if __name__ == "__main__":
         name_instance='PIPE_INST',
         filtered_layers=filtered_layers,
         radius_middle=radius_search_pipe,
-        elementSize=5e-3,
+        elementSize=4e-3,
         deviationFactor=0.1
     )
     CreateMeshBiasHorizontal(
@@ -367,13 +367,11 @@ if __name__ == "__main__":
     CreateJob(
         name_model='MyFirstModel',
         name_job=job_name,
-        num_cpus=14, 
-        run_now=True
-    )    
+        num_cpus=1, 
+        run_now=False
+    )        
 
-    
-
-    # # mdb.jobs[job_name].writInput(consistencyChecking=OFF)
+    # # mdb.jobs[job_name].writeInput(consistencyChecking=OFF)
 
     # RunJob(job_name)
 
