@@ -120,8 +120,6 @@ def CreateMeshVerticalWithBias(name_model, name_set, min_size, max_size):
     # max_size: element size in the middle of the layer (ex: 1.0)
     # ratio: max_size / min_size
 
-    bias_ratio = float(max_size) / float(min_size)
-
     a.seedEdgeByBias(
         DOUBLE,
         vertical_lines,
