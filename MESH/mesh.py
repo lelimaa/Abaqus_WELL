@@ -116,10 +116,6 @@ def CreateMeshVerticalWithBias(name_model, name_set, min_size, max_size):
 
     vertical_lines = a.sets[name_set].edges
 
-    # min_size: element size in the interface (ex: 0.1)
-    # max_size: element size in the middle of the layer (ex: 1.0)
-    # ratio: max_size / min_size
-
     a.seedEdgeByBias(
         DOUBLE,
         vertical_lines,

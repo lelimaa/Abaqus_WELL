@@ -1,0 +1,143 @@
+# -*- coding: mbcs -*-
+#
+# Abaqus/CAE Release 2024 replay file
+# Internal Version: 2023_09_21-09.55.25 RELr426 190762
+# Run by Hidalgo on Thu May  7 15:20:00 2026
+#
+
+# from driverUtils import executeOnCaeGraphicsStartup
+# executeOnCaeGraphicsStartup()
+#: Executing "onCaeGraphicsStartup()" in the site directory ...
+from abaqus import *
+from abaqusConstants import *
+session.Viewport(name='Viewport: 1', origin=(1.25, 1.25), width=184, 
+    height=124)
+session.viewports['Viewport: 1'].makeCurrent()
+from driverUtils import executeOnCaeStartup
+executeOnCaeStartup()
+execfile('TestMain.py', __main__.__dict__)
+#: Data keys: dict_keys(['AnalysisData', 'ThermalGradient', 'Tubulars', 'Lithology', 'InSituStresses', 'Rocks', 'Cements', 'SteelGrades', 'Phases', 'Events', 'Fluids'])
+#: The bottom of the wellbore is at: -4100 meters
+#: The top of the wellbore is at: -2500 meters
+#: dict_keys(['MohrCoulombParameters', 'Law', 'Elasticity', 'ElasticParameters', 'ThermalParameters'])
+#: dict_keys(['DoublePowerParameters', 'Law', 'Elasticity', 'ElasticParameters', 'ThermalParameters'])
+#: Creating Geometry:  PIPE
+#: Creating Geometry:  FLUID
+#: Creating Geometry:  ROCK
+#: O nome que chegou na função foi: LAYER_02_HALITE
+#: Set 'L1-I_BASE' gerado automaticamente em Y = -3600.0
+#: Set 'L2-I_BASE' gerado automaticamente em Y = -4100.0
+#: Set 'L1-I_ID' created with sucess in the medium point Y=-3050.0
+#: Set 'L2-I_ID' created with sucess in the medium point Y=-3850.0
+#: Set 'L1-I_OD' criado com sucesso em X=12.155575, Y=-3050.0
+#: Set 'L2-I_OD' criado com sucesso em X=12.155575, Y=-3850.0
+#: Set 'L1-I_TOP' criado na altura Y = -2500.0
+#: Set 'L2-I_TOP' criado na altura Y = -3600.0
+#: Set de Face 'L1-I' criado em X=6.155575, Y=-3050.0
+#: Set de Face 'L2-I' criado em X=6.155575, Y=-3850.0
+#: Assigned section 'LAYER_01_SANDSTONE_Section' to existing set 'L1-I'.
+#: Assigned section 'LAYER_02_HALITE_Section' to existing set 'L2-I'.
+#: Assembly completed with active sets: []
+#: Set 'ALL' criado com todas as faces das 2 instancias.
+#: Set FASEI_OPEN_WELL criado na interface X = 0.155575
+#: Set FASEI_WELL criado na interface X = 0.155575
+#: Set 'FASEI_COMPLETED_WELL' criado na face interna do Pipe (X = 0.125009)
+#: Set 'MESH_TT_PIPES' criado com 3 arestas horizontais.
+#: Set 'MESH_TT_ANNULARS' criado com 3 arestas horizontais.
+#: Set 'MESH_TT_ROCK' criado com 3 arestas horizontais.
+#: Set 'MESH_VERTICAL' criado com sucesso (todas as verticais).
+#: Set 'ROCK_BC' criado com sucesso na borda X = 12.155575
+#: Set 'ROCK_OUTPUT' criado com todas as faces dessa instancia.
+#: Set 'YSYM_BASE' criado com sucesso unindo todas as instâncias.
+#: Set 'YSYM_TOP' criado com sucesso na altura Y = -2500.0
+#: Surface 'FASEI_ANNULAR' created successfully containing 6 edges.
+#: Surface 'FASEI_COMPLETED_WELL' succesfully created with success containing 2 edges.
+#: Surface 'FASEI_MASTER' succesfully created with success containing 2 edges.
+#: Surface 'FASEI_OPEN_WELL' succesfully created with success containing 2 edges.
+#: Surface 'FASEI_WELL' succesfully created with success containing 2 edges.
+#: The interaction "MC_FASEI_FLUIDO" has been created.
+#: The interaction "MC_FASEI_REV" has been created.
+#: 
+#: >>> Updating densities of layers via pressure gradient...
+#: The pressure at the top of layer 'LAYER_01_SANDSTONE' (depth 2500.0 m) is approximately -31.26 MPa.
+#: The pressure at the bottom of layer 'LAYER_01_SANDSTONE' (depth 3600.0 m) is approximately -56.08 MPa.
+#: Calculated density for layer 'LAYER_01_SANDSTONE': 2299.92 kg/m³ based on pressure gradient.
+#:  Material LAYER_01_SANDSTONE: Density adjusted to 2299.92 kg/m³
+#: The pressure at the top of layer 'LAYER_02_HALITE' (depth 3600.0 m) is approximately -56.08 MPa.
+#: The pressure at the bottom of layer 'LAYER_02_HALITE' (depth 4100 m) is approximately -66.72 MPa.
+#: Calculated density for layer 'LAYER_02_HALITE': 2169.93 kg/m³ based on pressure gradient.
+#:  Material LAYER_02_HALITE: Density adjusted to 2169.93 kg/m³
+#: [L1-I-SANDSTONE] Stresses: Top (2500.0m) = -31.26 MPa | Bottom (3600.0m) = -56.08 MPa
+#: [L2-I-HALITE] Stresses: Top (3600.0m) = -56.08 MPa | Bottom (4100m) = -66.72 MPa
+#: 
+#: >>> Todas as tensões geostáticas foram aplicadas com sucesso!
+#: >>> Mappedfield 'Geotermico' successfully created! (T_ref = 277.15 K)
+#: >>> ExpressionField 'NT_L1-I' created with denominator 287.8 K
+#: >>> ExpressionField 'NT_L2-I' created with denominator 311.3 K
+#: 
+#: >>> All the thermal Expressionfields of the rocks were created!
+#: >>> ExpressionField 'P_FASEI_COMPLETED_WELL' created with success!
+#: >>> ExpressionField 'P_FASEI_FLUID' created with success!
+#: >>> ExpressionField 'P_FASEI_OPEN_WELL' created with success!
+#: >>> Temperature 'NT_L1-I' applied in the region L1-I (Magnitude: 287.81 K)
+#: >>> Temperature 'NT_L1-I_OD' applied in the region L1-I_OD (Magnitude: 287.81 K)
+#: >>> Temperature 'NT_L2-I' applied in the region L2-I (Magnitude: 311.25 K)
+#: >>> Temperature 'NT_L2-I_OD' applied in the region L2-I_OD (Magnitude: 311.25 K)
+#: 
+#: >>> All the temperatures of the layers were started sucsessfully!
+#: >>> Step 'Perf_10_375' created with success!
+#: >>> Hydrostatic pressure of the mud applied in the open well region.
+#: >>> ViscoStep 'Perf_10_375_Creep' created: Total duration of 2.0 days.
+#: >>> Step 'Rev_9_875' created with success!
+#: The interaction property "C_FASEI" has been created.
+#: >>> Contact property 'C_FASEI' created (Friction: 0.5).
+#: The interaction "C_FASEI" has been created.
+#: >>> Interaction 'C_FASEI' activated in Step 'Rev_9_875'.
+#:    - Pressure P_FASEI_COMPLETED_WELL activated.
+#:    - Pressure P_FASEI_FLUID activated.
+#:     - Load P_FASEI_OPEN_WELL deactivated.
+#:    - Interaction of casing (Model Change) activated.
+#:    - Boundary condition PIN_FASEI (temporary trava) deactivated.
+#: >>> Phase of casing successfully configured!
+#: >>> ViscoStep 'Rev_9_875_Creep' created: Total duration of 10950.0 days.
+#:     - Incremento travado em no máximo 180.0 dias por passo.
+#: >>> Uniform mesh (Size: 0.004) applyed in 3 lines of 'FLUID_INST.'
+#: >>> Uniform mesh (Size: 0.004) applyed in 3 lines of 'PIPE_INST.'
+#: >>> Bias Mesh applyed in 3 instance lines 'ROCK_INST'!
+#: Delta Y for vertical edges mesh: 10.0 meters
+#: >>> Mesh Bias applyed: Interface (1) | Center (10)
+#: >>> Element type CAX4 and CAX3 assigned to set 'ALL'!
+#: >>> Mesh generated with success for instance 'FLUID_INST'!
+#: >>> Mesh generated with success for instance 'PIPE_INST'!
+#: >>> Mesh generated with success for instance 'ROCK_INST'!
+#: >>> Job 'WellClosureJob' created for model 'MyFirstModel' with 1 CPUs!
+#: >>> Job was only created. To run, submitt manually!
+#: 
+#: >>> Sending the Job 'WellClosureJob' to the solver... Wait.
+#: Warning: 
+#: Following warning detected while evaluating the temperature ""
+#: from analytical field "Geotermico",
+#: The mapper has mapped the field values using distance weighting 
+#: algorithm for some of the target nodes.
+#: Warning: 
+#: Following warning detected while evaluating the temperature ""
+#: from analytical field "Geotermico",
+#: The mapper has mapped the field values using distance weighting 
+#: algorithm for some of the target nodes.
+#: The mapper has mapped the field values using distance weighting 
+#: algorithm for some of the target nodes.
+#: Warning: 
+#: Following warning detected while evaluating the temperature ""
+#: from analytical field "Geotermico",
+#: The mapper has mapped the field values using distance weighting 
+#: algorithm for some of the target nodes.
+#: **********************************************************************
+#: ** Visual Studio 2019 Developer Command Prompt v16.11.51
+#: ** Copyright (c) 2021 Microsoft Corporation
+#: **********************************************************************
+#: [vcvarsall.bat] Environment initialized for: 'x64'
+#: >>> Analysis concluded! See the file 'WellClosureJob'.odb
+#: The model database has been saved to "C:\Users\hidalgo\Documents\GitHub\Abaqus_WELL_\WellClosureJob.cae".
+#: Model saved as 'WellClosureJob.cae' in the project folder. You can open it with Abaqus/CAE to review the model and submit the job for analysis.
+print('RT script done')
+#: RT script done

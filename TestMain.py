@@ -4,9 +4,10 @@ from abaqusConstants import *
 # import os
 import json
 import sys 
+import numpy as np
 
-path_project = r'C:\Users\juani\Documents\Github\Abaqus_WELL_' 
-# path_project = r'C:\Users\hidalgo\Documents\GitHub\Abaqus_WELL_'
+# path_project = r'C:\Users\juani\Documents\Github\Abaqus_WELL_' 
+path_project = r'C:\Users\hidalgo\Documents\GitHub\Abaqus_WELL_'
 
 if path_project not in sys.path:
     sys.path.append(path_project)
@@ -20,6 +21,7 @@ from BCONDITIONS.conditions import *
 from BCONDITIONS.casing import *     
 from MESH.mesh import *    
 from JOBS.job import *
+from POSTPROCESS.post import *
 
 mdb.models.changeKey(fromName='Model-1', toName='MyFirstModel')
 
@@ -29,8 +31,8 @@ if 'MyFirstModel' not in mdb.models:
 
 # Reading the json file and filling the input data for the analysis ####################
 
-with open(r'C:\Users\juani\Documents\Github\Abaqus_WELL_\wellClosure_axi.json') as f:
-# with open(r'C:\Users\hidalgo\Documents\GitHub\Abaqus_WELL_\wellClosure_axi.json') as f:
+# with open(r'C:\Users\juani\Documents\Github\Abaqus_WELL_\wellClosure_axi.json') as f:
+with open(r'C:\Users\hidalgo\Documents\GitHub\Abaqus_WELL_\wellClosure_axi.json') as f:
     data = json.load(f)
 
 print(f"Data keys: {data.keys()}")
@@ -336,17 +338,24 @@ if __name__ == "__main__":
         maxSize=3.0
     )
 
+    length_analyzed = np.abs(base_depth - top_depth)
+
+    ratio_mesh = 0.00625
+    delta_y_mesh = length_analyzed * ratio_mesh
+
+    print(f"Delta Y for vertical edges mesh: {delta_y_mesh} meters")
+
     # CreateMeshVerticalBySet(
     #     name_model='MyFirstModel',
     #     name_set='MESH_VERTICAL',
-    #     element_size=0.5
+    #     element_size=10
     # )
 
     CreateMeshVerticalWithBias(
         name_model='MyFirstModel',
         name_set='MESH_VERTICAL',
-         min_size=0.05,
-         max_size=5
+         min_size=1,
+         max_size=10
     )
 
     AttributeTypeElement(
@@ -376,14 +385,19 @@ if __name__ == "__main__":
         name_job=job_name,
         num_cpus=1, 
         run_now=False
-    )        
+    )
 
-    # # mdb.jobs[job_name].writeInput(consistencyChecking=OFF)
+    RunJob(job_name)
 
-    # RunJob(job_name)
-
-    # mdb.saveAs(pathName=r'C:\Users\hidalgo\Documents\GitHub\Abaqus_WELL_\WellClosureJob.cae')
+    mdb.saveAs(pathName=r'C:\Users\hidalgo\Documents\GitHub\Abaqus_WELL_\WellClosureJob.cae')
     # print("Model saved as 'WellClosureJob.cae' in the project folder. You can open it with Abaqus/CAE to review the model and submit the job for analysis.")
+
+    ExportDisplacementHistory(
+        odb_path=job_name + '.odb',
+        node_label=3,
+        instance_name='ROCK_INST',
+        output_file='displacement_no_3.csv'
+    )
 
     # Falta:
     # enxugar as defs para os sets
