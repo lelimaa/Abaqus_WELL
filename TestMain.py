@@ -370,7 +370,6 @@ if __name__ == "__main__":
         num_cpus=14, 
         run_now=True
     )    
-
     
 
     # # mdb.jobs[job_name].writInput(consistencyChecking=OFF)
