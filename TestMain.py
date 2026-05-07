@@ -336,10 +336,17 @@ if __name__ == "__main__":
         maxSize=3.0
     )
 
-    CreateMeshVerticalBySet(
+    # CreateMeshVerticalBySet(
+    #     name_model='MyFirstModel',
+    #     name_set='MESH_VERTICAL',
+    #     element_size=0.5
+    # )
+
+    CreateMeshVerticalWithBias(
         name_model='MyFirstModel',
         name_set='MESH_VERTICAL',
-        element_size=0.5
+         min_size=0.05,
+         max_size=5
     )
 
     AttributeTypeElement(

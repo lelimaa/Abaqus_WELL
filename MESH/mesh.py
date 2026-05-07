@@ -110,6 +110,31 @@ def CreateMeshVerticalBySet(name_model, name_set, element_size):
 
     print(f">>> Uniform mesh (Size: {element_size}) applyed with success in set '{name_set}!'")
 
+def CreateMeshVerticalWithBias(name_model, name_set, min_size, max_size):
+    m = mdb.models[name_model]
+    a = m.rootAssembly
+
+    vertical_lines = a.sets[name_set].edges
+
+    # min_size: element size in the interface (ex: 0.1)
+    # max_size: element size in the middle of the layer (ex: 1.0)
+    # ratio: max_size / min_size
+
+    bias_ratio = float(max_size) / float(min_size)
+
+    a.seedEdgeByBias(
+        DOUBLE,
+        vertical_lines,
+        constraint=FINER,
+        minSize=min_size,
+        maxSize=max_size
+        # ratio=bias_ratio,
+        # numberElements=None,
+    )
+
+    print(f">>> Mesh Bias applyed: Interface ({min_size}) | Center ({max_size})")
+
+    
 def AttributeTypeElement(name_model, name_set):
     m = mdb.models[name_model]
     a = m.rootAssembly
