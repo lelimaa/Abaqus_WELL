@@ -2,7 +2,7 @@
 #
 # Abaqus/CAE Release 2024 replay file
 # Internal Version: 2023_09_21-09.55.25 RELr426 190762
-# Run by Hidalgo on Thu May  7 17:28:46 2026
+# Run by Hidalgo on Fri May  8 14:40:45 2026
 #
 
 # from driverUtils import executeOnCaeGraphicsStartup
@@ -16,10 +16,14 @@ session.viewports['Viewport: 1'].makeCurrent()
 from driverUtils import executeOnCaeStartup
 executeOnCaeStartup()
 execfile('teste.py', __main__.__dict__)
-#* ImportError: cannot import name 'visualization' from 'abaqus' 
-#* (C:\SIMULIA\EstProducts\2024\win_b64\code\python3.10\lib\abaqus.pyc)
-#* File "teste.py", line 11, in <module>
-#*     from POSTPROCESS.post import *
-#* File "C:\Users\hidalgo\Documents\GitHub\Abaqus_WELL_\POSTPROCESS\post.py", 
-#* line 5, in <module>
-#*     from abaqus import visualization
+#: Model: C:/Users/hidalgo/Documents/GitHub/Abaqus_WELL_/WellClosureJob.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     3
+#: Number of Meshes:             3
+#: Number of Element Sets:       46
+#: Number of Node Sets:          45
+#: Number of Steps:              7
+#: >>> Success! complete curves exported to: path_data_all_frames.csv
+print('RT script done')
+#: RT script done

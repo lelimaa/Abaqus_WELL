@@ -3,6 +3,7 @@
 
 from odbAccess import openOdb
 import visualization
+import numpy as np
 
 def ExportDisplacementHistory(odb_path, node_label, instance_name, output_file):
     odb = openOdb(path=odb_path)
@@ -39,3 +40,45 @@ def ExportDisplacementHistory(odb_path, node_label, instance_name, output_file):
     odb.close()
     print(f">>> Exported data successfully to: {output_file}")
 
+
+def ExportPathDataAllFrames(odb_path, output_file):
+
+    odb = openOdb(path=odb_path)
+    a = odb.rootAssembly
+    set_name = 'FASEI_OPEN_WELL'
+
+    if set_name not in a.nodeSets.keys():
+        print("Error: The set was not found.")
+        odb.close()
+        return
+
+    target_set = a.nodeSets[set_name]
+    instance_name = 'ROCK_INST' 
+
+    node_coords = {}
+    nodes = a.instances[instance_name].nodes
+
+    for node in target_set.nodes[0]:
+
+        node_coords[node.label] = node.coordinates[2]
+    
+
+    with open(output_file, 'w') as f:
+
+        f.write("Time (s), Node Label, Z Position (m), U1 Displacement (m)\n")
+
+        for step in odb.steps.values():
+            for frame in step.frames:
+                time = frame.frameValue
+                u_field = frame.fieldOutputs['U'].getSubset(region=target_set)
+
+                for val in u_field.values:
+                    n_label = val.nodeLabel
+                    z_pos = float(odb.rootAssembly.instances['ROCK_INST'].nodes[n_label-1].coordinates[1])
+                    # z_pos = node_coords[n_label]
+                    u1 = float(val.data[0])
+
+                    f.write(f"{time},{n_label},{z_pos},{u1}\n")
+
+    odb.close()
+    print(f">>> Success! complete curves exported to: {output_file}")

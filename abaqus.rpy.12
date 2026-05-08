@@ -2,7 +2,7 @@
 #
 # Abaqus/CAE Release 2024 replay file
 # Internal Version: 2023_09_21-09.55.25 RELr426 190762
-# Run by Hidalgo on Thu May  7 17:31:32 2026
+# Run by Hidalgo on Fri May  8 16:44:51 2026
 #
 
 # from driverUtils import executeOnCaeGraphicsStartup
@@ -24,9 +24,9 @@ execfile('teste.py', __main__.__dict__)
 #: Number of Element Sets:       46
 #: Number of Node Sets:          45
 #: Number of Steps:              7
-#* NameError: name 'NODAL' is not defined
-#* File "teste.py", line 15, in <module>
-#*     ExportDisplacementHistory(
+#* NameError: name 'z_pos' is not defined
+#* File "teste.py", line 27, in <module>
+#*     ExportPathDataAllFrames(
 #* File "C:\Users\hidalgo\Documents\GitHub\Abaqus_WELL_\POSTPROCESS\post.py", 
-#* line 22, in ExportDisplacementHistory
-#*     position=NODAL,
+#* line 158, in ExportPathDataAllFrames
+#*     f.write(f"{time},{n_label},{z_pos},{u1}\n")

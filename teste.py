@@ -12,9 +12,14 @@ from POSTPROCESS.post import *
 
 job_name = 'WellClosureJob'
 
-ExportDisplacementHistory(
-        odb_path=job_name + '.odb',
-        node_label=3,
-        instance_name='ROCK_INST',
-        output_file='displacement_no_3.csv'
-    )
+# ExportDisplacementHistory(
+#         odb_path=job_name + '.odb',
+#         node_label=3,
+#         instance_name='ROCK_INST',
+#         output_file='displacement_no_3.csv'
+#     )
+
+ExportPathDataAllFrames(
+    odb_path=job_name + '.odb',
+    output_file='path_data_all_frames.csv'
+)

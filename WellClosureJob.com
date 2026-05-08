@@ -1,5 +1,5 @@
 from driverConstants import *
-from driverStandard import StandardAnalysis
+from driverStandardMPI import StandardMPIAnalysis
 import driverUtils, sys
 options = {
     'SIMExt':'.sim',
@@ -9,6 +9,7 @@ options = {
     'applicationName':'analysis',
     'aqua':OFF,
     'ask_delete':OFF,
+    'background':None,
     'beamSectGen':OFF,
     'biorid':OFF,
     'cavityTypes':[],
@@ -17,11 +18,12 @@ options = {
     'contact':ON,
     'cosimulation':OFF,
     'coupledProcedure':OFF,
-    'cpus':1,
+    'cpus':14,
     'cpusValidated':True,
     'cse':OFF,
     'cyclicSymmetryModel':OFF,
     'directCyclic':OFF,
+    'direct_port':'59409',
     'direct_solver':DMP,
     'direct_solver_use_default':'1',
     'dsa':OFF,
@@ -59,18 +61,26 @@ options = {
     'keyword_licenses':[],
     'lanczos':OFF,
     'libs':[],
+    'listener_name':'ARIES.gtep.civ.puc-rio.br',
+    'listener_resource':'47520',
     'magnetostatic':OFF,
     'massDiffusion':OFF,
     'materialresponse':OFF,
     'memory':'90%',
+    'message':None,
+    'messaging_mechanism':'DIRECT',
     'modifiedTet':OFF,
     'moldflowFiles':[],
     'moldflowMaterial':OFF,
-    'mp_mode':THREADS,
+    'mp_file_system':(DETECT, DETECT),
+    'mp_head_node':('aries.gtep.civ.puc-rio.br', 'aries', '139.82.116.59'),
+    'mp_host_list':(('aries', 14),),
+    'mp_mode':MPI,
     'mp_mode_requested':MPI,
+    'mp_mpi_validate':OFF,
+    'mp_rsh_command':'dummy %H -l Hidalgo -n %C',
     'multiphysics':OFF,
     'noDmpDirect':[],
-    'noGUI':None,
     'noMultiHost':[],
     'noMultiHostElemLoop':[],
     'no_domain_check':1,
@@ -92,7 +102,6 @@ options = {
     'resultsFormat':ODB,
     'rezone':OFF,
     'runCalculator':OFF,
-    'sequential':None,
     'simpackBodies':[],
     'soils':OFF,
     'soliter':OFF,
@@ -123,6 +132,6 @@ options = {
     'visco':ON,
     'xplSelect':OFF,
 }
-analysis = StandardAnalysis(options)
+analysis = StandardMPIAnalysis(options)
 status = analysis.run()
 sys.exit(status)
