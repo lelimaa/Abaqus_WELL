@@ -21,6 +21,7 @@ from BCONDITIONS.conditions import *
 from BCONDITIONS.casing import *
 from MESH.meshAlt import *
 
+# Change default model name to avoid conflicts when running the script multiple times in the same Abaqus session
 mdb.models.changeKey(fromName='Model-1', toName='MyFirstModel')
 
 if 'MyFirstModel' not in mdb.models:
