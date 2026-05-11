@@ -1,14 +1,5 @@
-from MESH.meshAlt import *
-from BCONDITIONS.casing import *
-from BCONDITIONS.conditions import *
-from GEOMETRY.geometries import *
-from JOBS.job import *
-from JSONS.ImportTools import *
-from MATERIALS.materials import *
-from GEOMETRY.sets import *
-from GEOMETRY.assembly import *
-from abaqus import *
 from abaqusConstants import *
+from abaqus import *
 
 # import os
 import json
@@ -20,6 +11,15 @@ path_project = r'C:\Users\leticia\Documents\GitHub\Abaqus_WELL_'
 if path_project not in sys.path:
     sys.path.append(path_project)
 
+from GEOMETRY.assembly import *
+from GEOMETRY.sets import *
+from MATERIALS.materials import *
+from JSONS.ImportTools import *
+from JOBS.job import *
+from GEOMETRY.geometries import *
+from BCONDITIONS.conditions import *
+from BCONDITIONS.casing import *
+from MESH.meshAlt import *
 
 mdb.models.changeKey(fromName='Model-1', toName='MyFirstModel')
 
@@ -30,7 +30,7 @@ if 'MyFirstModel' not in mdb.models:
 # Reading the json file and filling the input data for the analysis ####################
 
 # with open(r'C:\Users\juani\Documents\Github\Abaqus_WELL_\wellClosure_axi.json') as f:
-with open(r'C:\Users\hidalgo\Documents\GitHub\Abaqus_WELL_\wellClosure_axi.json') as f:
+with open(r'C:\Users\leticia\Documents\GitHub\Abaqus_WELL_\wellClosure_axi.json') as f:
     data = json.load(f)
 
 print(f"Data keys: {data.keys()}")
