@@ -118,6 +118,7 @@ if __name__ == "__main__":
 
     # casing_type = "VM110"
     casing_type = "VM-95"
+    # casing_type = data["SteelGrades"][name_tubular]
 
     examples["STEEL"] = {
         "behavior": data["SteelGrades"][casing_type]["Law"],
@@ -375,7 +376,7 @@ if __name__ == "__main__":
         run_now=True
     )
 
-    # # mdb.jobs[job_name].writInput(consistencyChecking=OFF)
+    ## mdb.jobs[job_name].writInput(consistencyChecking=OFF)
 
     # RunJob(job_name)
 
