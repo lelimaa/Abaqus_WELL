@@ -35,11 +35,16 @@ with open(r'C:\Users\leticia\Documents\GitHub\Abaqus_WELL_\wellClosure_axi.json'
     data = json.load(f)
 
 print(f"Data keys: {data.keys()}")
+# Data keys: dict_keys(['AnalysisData', 'ThermalGradient', 
+#           'Tubulars', 'Lithology', 'InSituStresses', 'Rocks', 'Cements', 
+#           'SteelGrades', 'Phases', 'Events', 'Fluids'])
 
-# variables read from json (geometry) ####################################################
+# Variables read from json (geometry) #####################################
 
 name_phase = '3dda7930-6dbf-4d05-87f2-d2809a3e9fc6'
+# name_phase = data["AnalysisData"]["Phase"]
 name_tubular = 'LIN_09_875'
+# name_tubular = data["Phases"][name_phase]["Casing"]["Tubular"]
 
 outer_diamenter_pipe = data["Tubulars"][name_tubular]['OD']
 thickness_pipe = data["Tubulars"][name_tubular]['Thickness']
@@ -61,7 +66,7 @@ top_depth = int(top_depth)
 print(f"The bottom of the wellbore is at: {-base_depth} meters")
 print(f"The top of the wellbore is at: {-top_depth} meters")
 
-########################################################################################
+# Script to create the geometry ##########################################
 
 if __name__ == "__main__":
 
