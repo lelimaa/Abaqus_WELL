@@ -2,7 +2,7 @@
 #
 # Abaqus/CAE Release 2024 replay file
 # Internal Version: 2023_09_21-09.55.25 RELr426 190762
-# Run by Hidalgo on Fri May  8 14:40:45 2026
+# Run by Hidalgo on Wed May 13 14:38:44 2026
 #
 
 # from driverUtils import executeOnCaeGraphicsStartup
@@ -24,6 +24,14 @@ execfile('teste.py', __main__.__dict__)
 #: Number of Element Sets:       46
 #: Number of Node Sets:          45
 #: Number of Steps:              7
-#: >>> Success! complete curves exported to: path_data_all_frames.csv
+#: Error: The set was not found.
+#: 
+#: ==============================
+#: STARTING POST-PROCESSING...
+#: ==============================
+#: >>> Error: Could not import the 'post' module or execute the function. Check the file and try again.
+#: ==============================
+#: END OF SCRIPT
+#: ==============================
 print('RT script done')
 #: RT script done

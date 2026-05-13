@@ -18,5 +18,3 @@ def CasingStresses(data, name_phase, density_steel, z_top, z_bottom):
 
     return stress_top, stress_bottom
 
-
-

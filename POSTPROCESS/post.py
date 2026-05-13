@@ -2,8 +2,10 @@
 # from abaqusConstants import *
 
 from odbAccess import openOdb
-import visualization
+# import visualization
 import numpy as np
+import os
+from abaqusConstants import ELEMENT_NODAL
 
 def ExportDisplacementHistory(odb_path, node_label, instance_name, output_file):
     odb = openOdb(path=odb_path)
@@ -53,6 +55,7 @@ def ExportPathDataAllFrames(odb_path, output_file):
         return
 
     target_set = a.nodeSets[set_name]
+
     instance_name = 'ROCK_INST' 
 
     node_coords = {}
@@ -82,3 +85,135 @@ def ExportPathDataAllFrames(odb_path, output_file):
 
     odb.close()
     print(f">>> Success! complete curves exported to: {output_file}")
+
+def ExportPipeStressAtFixedPoint(odb_path, output_file):
+    
+    odb = openOdb(path=odb_path)
+
+    target_set = odb.rootAssembly.nodeSets['SET_STRESS_MONITOR']
+
+    results = []  
+
+    for step in odb.steps.values():
+        for frame in step.frames:
+            time = frame.frameValue
+
+            stress_field = frame.fieldOutputs['S'].getSubset(
+                region=target_set,
+                position=ELEMENT_NODAL
+            )       
+            
+            if stress_field.values:
+            
+                s11 = np.mean([v.data[0] for v in stress_field.values])
+
+                mises = np.mean([v.mises for v in stress_field.values])
+
+                results.append((time, s11, mises))
+
+    with open(output_file, 'w') as f:
+        f.write("Time (s), S11_Radial (Pa), Mises (Pa)\n")
+        for t, s, m in results:
+            f.write(f"{t}, {s}, {m}\n")
+
+    odb.close()
+    print(f">>> Exported data successfully to: {output_file}")
+
+# def ExportCasingStressAllFrames(odb_path, output_file):
+
+#     # if not os.path.exists(odb_path):
+#     #     print(f">>> ERROR: File ODB not found at: {odb_path}")
+#     #     return
+    
+
+#     odb = openOdb(path=odb_path)
+#     a = odb.rootAssembly
+#     # print("Sets disponíveis no ODB:", a.nodeSets.keys())
+#     instance_name = 'PIPE_INST'
+#     set_name = 'PIPE_INST.FASEI_REV_OD'
+
+#     print(f">>> Finding Set: {set_name}")
+
+#     if set_name not in a.nodeSets.keys():
+#         print(f">>> ERROR: Set not found! Available sets: {a.nodeSets.keys()}")
+#         odb.close()
+#         return
+    
+#     print(">>> Mapping coordinates of nodes...")
+#     node_coords = {node.label: node.coordinates for node in a.instances[instance_name].nodes}
+    
+#     target_set = a.nodeSets[set_name]
+
+#     try:
+#         with open(output_file, 'w') as f:
+#             f.write("Time (s), Node Label, Z Position (m), S11_Radial (Pa), Mises (Pa)\n")
+
+#             for step in odb.steps.values():
+#                 for frame in step.frames:
+#                     time = frame.frameValue
+
+#                     stress_field = frame.fieldOutputs['S'].getSubset(
+#                         region=target_set,
+#                         position=ELEMENT_NODAL
+#                     )       
+                    
+#                     for val in stress_field.values:
+#                         n_label = val.nodeLabel
+#                         z_pos = node_coords[n_label][1]
+#                         # mises = float(val.mises)
+#                         # s11 = float(val.data[0])
+
+#                         f.write(f"{time},{n_label},{z_pos},{val.mises},{val.data[0]}\n")
+
+#         print(f">>> Success! File generated: {output_file}")
+#     except Exception as e:
+#         print(f">>> ERROR during export: {str(e)}")
+#     finally:
+#         odb.close()
+
+
+def ExportCasingStressAllFrames(odb_path, output_file):
+
+    odb = openOdb(path=odb_path)
+    a = odb.rootAssembly
+
+    instance_name = 'PIPE_INST'
+    set_name = 'FASEI_REV_OD'
+
+    try:
+        inst = a.instances[instance_name]
+        if set_name in inst.nodeSets.keys():
+            target_set = inst.nodeSets[set_name]
+            print(f">>> Success: Set '{set_name}' found at instance '{instance_name}'!")
+            print(">>> Mapeando coordenadas da malha...")
+            node_coords = {node.label: node.coordinates[2] for node in inst.nodes}
+        else:
+            print(f">>> Success: Set '{set_name}' don't exist at instance '{instance_name}'!")
+            odb.close()
+            return
+    except:
+        print(f">>> Error: Instance '{instance_name}' not found at ODB.")
+        odb.close()
+        return
+
+    with open(output_file, 'w') as f:
+
+        f.write("Time (s), Node Label, Z Position (m), Mises (Pa),S11_Radial (Pa)\n")
+
+        for step in odb.steps.keys():
+            step = odb.steps[step]
+            for frame in step.frames:
+                time = frame.frameValue
+                stress_field = frame.fieldOutputs['S'].getSubset(region=target_set, position=ELEMENT_NODAL)
+
+                for val in stress_field.values:
+                    n_label = val.nodeLabel
+                    z_pos = node_coords[n_label]
+                    mises = val.mises
+                    s11 = float(val.data[0])
+
+                    f.write("{},{},{},{},{}\n".format(time, n_label, z_pos, mises, s11))
+
+    print(f">>> Success! complete curves exported to: {output_file}")
+
+    odb.close()

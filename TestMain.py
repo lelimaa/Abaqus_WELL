@@ -334,9 +334,11 @@ if __name__ == "__main__":
         name_instance='ROCK_INST',
         filtered_layers=filtered_layers,
         radius_middle=radius_search_rock,
-        minSize=1e-3,
+        minSize=0.5e-3,
         maxSize=3.0
     )
+
+    # Here I was testing if the mesh had to be adapted to the different lengths of the model
 
     length_analyzed = np.abs(base_depth - top_depth)
 
@@ -376,6 +378,13 @@ if __name__ == "__main__":
         name_instance='ROCK_INST'
     )
 
+    # Creating a set for the target point in the bottom of the casing 
+
+    CreateSetPointRock(model_name='MyFirstModel', r_coord=inner_radius_wellbore, z_coord=-abs(base_depth))
+    
+    CreateSetPointCasing(model_name='MyFirstModel', r_coord=inner_radius_annular, z_coord=-abs(base_depth))
+
+
     # Creating a job and saving the model
 
     job_name = 'WellClosureJob'
@@ -388,10 +397,10 @@ if __name__ == "__main__":
         run_now=False
     )
 
-    # RunJob(job_name)
+    RunJob(job_name)
 
-    # mdb.saveAs(pathName=r'C:\Users\hidalgo\Documents\GitHub\Abaqus_WELL_\WellClosureJob.cae')
-    # # print("Model saved as 'WellClosureJob.cae' in the project folder. You can open it with Abaqus/CAE to review the model and submit the job for analysis.")
+    mdb.saveAs(pathName=r'C:\Users\hidalgo\Documents\GitHub\Abaqus_WELL_\WellClosureJob.cae')
+    # print("Model saved as 'WellClosureJob.cae' in the project folder. You can open it with Abaqus/CAE to review the model and submit the job for analysis.")
 
     ExportDisplacementHistory(
         odb_path=job_name + '.odb',
@@ -405,6 +414,13 @@ if __name__ == "__main__":
         odb_path=job_name + '.odb',
         output_file='path_data_all_frames.csv'
     )
+
+    ExportPipeStressAtFixedPoint(
+        odb_path=job_name + '.odb',
+        output_file='pipe_stress_at_fixed_point_bottom.csv'
+    )
+
+
 
     # Falta:
     # enxugar as defs para os sets

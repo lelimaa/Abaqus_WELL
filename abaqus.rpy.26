@@ -2,7 +2,7 @@
 #
 # Abaqus/CAE Release 2024 replay file
 # Internal Version: 2023_09_21-09.55.25 RELr426 190762
-# Run by Hidalgo on Fri May  8 14:40:16 2026
+# Run by Hidalgo on Wed May 13 14:40:27 2026
 #
 
 # from driverUtils import executeOnCaeGraphicsStartup
@@ -24,9 +24,14 @@ execfile('teste.py', __main__.__dict__)
 #: Number of Element Sets:       46
 #: Number of Node Sets:          45
 #: Number of Steps:              7
-#* NameError: name 'frame' is not defined
-#* File "teste.py", line 27, in <module>
-#*     ExportPathDataAllFrames(
-#* File "C:\Users\hidalgo\Documents\GitHub\Abaqus_WELL_\POSTPROCESS\post.py", 
-#* line 148, in ExportPathDataAllFrames
-#*     time = frame.frameValue
+#: Error: The set was not found.
+#: 
+#: ==============================
+#: STARTING POST-PROCESSING...
+#: ==============================
+#: >>> Error: Could not import the 'post' module or execute the function. Check the file and try again.
+#: ==============================
+#: END OF SCRIPT
+#: ==============================
+print('RT script done')
+#: RT script done

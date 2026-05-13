@@ -742,3 +742,71 @@ def CreateSurfacesAssembly(modelName, data):
 
     # print("Surface '%s' created successfully containing %d edges." % (surface_name_fluid_phasei, len(edges_fluid_phasei)))
     
+def CreateSetPointRock(model_name, r_coord, z_coord):
+
+    m = mdb.models[model_name]
+    a = m.rootAssembly
+
+    a.regenerate()
+    
+    # Mudança da Instância
+    inst_rock = a.instances['ROCK_INST']
+    
+    # Lembre-se da ordem (R, 0, -Z) que corrigimos antes
+    target_coords = (r_coord, z_coord, 0.0)
+    
+    closest_nodes = inst_rock.nodes.getClosest(coordinates=(target_coords,))
+    
+    if closest_nodes:
+        node_label = closest_nodes[0].label
+        # Use um nome diferente para não sobrescrever o do PIPE
+        set_name = 'SET_ROCK_STRESS_MONITOR'
+        
+        if set_name in a.sets.keys():
+            del a.sets[set_name]
+            
+        target_node_seq = inst_rock.nodes.sequenceFromLabels((node_label,))
+        a.Set(name=set_name, nodes=target_node_seq)
+        
+        print(">>> SUCESSO: Set da rocha '%s' criado (No: %d)" % (set_name, node_label))
+        return a.sets[set_name]
+    return None    
+    
+def CreateSetPointCasing(model_name, r_coord, z_coord):
+    
+    m = mdb.models[model_name]
+    a = m.rootAssembly
+    
+    # 1. Garante que o Assembly está atualizado com a nova malha
+    a.regenerate()
+    
+    inst_pipe = a.instances['PIPE_INST']
+    target_coords = (r_coord, z_coord, 0.0)
+    
+    # 2. Busca o nó mais próximo para capturar o seu LABEL
+    closest_nodes = inst_pipe.nodes.getClosest(coordinates=(target_coords,))
+    
+    if closest_nodes:
+        node_label = closest_nodes[0].label # Pegamos o número de identidade do nó
+        set_name = 'SET_STRESS_MONITOR'
+        
+        # 3. Limpeza rigorosa do Set antigo
+        if set_name in a.sets.keys():
+            del a.sets[set_name]
+            
+        try:
+            # 4. Criamos o Set pedindo ao Abaqus para buscar o nó pelo seu Label
+            # Esta é a forma mais estável de vincular nós de instância ao Assembly
+            target_node_seq = inst_pipe.nodes.sequenceFromLabels((node_label,))
+            a.Set(name=set_name, nodes=target_node_seq)
+            
+            print(">>> SUCESSO: Set '%s' criado (No Label: %d)" % (set_name, node_label))
+            return a.sets[set_name]
+            
+        except Exception as e:
+            print(">>> Erro fatal na criacao do Set: %s" % str(e))
+            return None
+    else:
+        print(">>> AVISO: Nenhum no encontrado nas coordenadas (%.2f, %.2f)" % (r_coord, z_coord))
+        return None    
+    
