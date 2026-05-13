@@ -118,7 +118,23 @@ if __name__ == "__main__":
 
     # casing_type = "VM110"
     casing_type = "VM-95"
-    # casing_type = data["SteelGrades"][name_tubular]
+    # casing_type = data["Tubulars"][name_tubular]["Material"] 
+    # Seleciona o tipo de aço para o casing definido no json (ex: VM-95) e pega as propriedades do material a partir do json
+    # steelgrade_info = data["SteelGrades"][casing_type]
+
+    # Seleciona o Gradiente Geotérmico definido no "AnalysisData"
+    data_geothermal = data["AnalysisData"]["GeothermalGradient"]
+
+    # Seleciona o Gradiente Geotérmico definido no "AnalysisData"
+    data_geothermal = data["AnalysisData"]["GeothermalGradient"]
+    # Seleciona o Gradiente Térmico presente e definido antes
+    thermalGradient = data["ThermalGradient"][data_geothermal]
+    # Retorna uma lista de todos os fluidos com "ThermalGradient" = "data_geothermal"
+    
+    name_fluido = next(
+        (name for name, info in data["Fluids"].items() 
+         if info.get("ThermalGradient") == data_geothermal), None)
+    print(f"Selected Fluid: {name_fluido}")
 
     examples["STEEL"] = {
         "behavior": data["SteelGrades"][casing_type]["Law"],
@@ -133,12 +149,18 @@ if __name__ == "__main__":
 
     examples["FLUID"] = {
         "behavior": "ELASTIC",
-        'density': 1.0,
-        'elastic': (10000, 0),
-        'conductivity': 0.702,
-        'specific_heat': 2060.0,
+        'density': data["Fluids"][name_fluido]["Density"],
+        'compressibility': data["Fluids"][name_fluido]["Compressibility"],
+        'ThermalExpansion': data["Fluids"][name_fluido]["ThermalExpansion"],
         "type": "Fluid"
     }
+    #     "behavior": "ELASTIC",
+    #     'density': 1.0,
+    #     'elastic': (10000, 0),
+    #     'conductivity': 0.702,
+    #     'specific_heat': 2060.0,
+    #     "type": "Fluid"
+    # }
 
     for mat_name, properties in filtered_rocks.items():
 
