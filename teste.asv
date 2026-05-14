@@ -157,10 +157,7 @@ title('Evolução do Perfil de Tensão no Revestimento');
 legend(legendas, 'Location', 'best');
 set(gca, 'YDir', 'normal'); % Garante que o topo fique no topo
 
-%% Lendo tensão no casing em um ponto (base do revestimento)
+%% Lendo tensão no casing em um ponto (base)
 
 figure()
-plot(instantes_tempo/(60*60*24*365),matriz_U1(end,:)/1e6)
-xlabel('time [years]')
-ylabel('Stress [MPa]')
-grid minor
+plot(instantes_tempo*1e,matriz_U1(end,:)/1e6)

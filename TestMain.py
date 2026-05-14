@@ -420,7 +420,12 @@ if __name__ == "__main__":
         output_file='pipe_stress_at_fixed_point_bottom.csv'
     )
 
+    ExportCasingStressAllFrames(
+        odb_path=job_name + '.odb',
+        output_file='casing_stress_all_frames.csv'
+    ) 
 
+    
 
     # Falta:
     # enxugar as defs para os sets

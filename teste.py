@@ -28,37 +28,37 @@ job_name = 'WellClosureJob'
 #     output_file='path_data_all_frames.csv'
 # )
 
-# ExportPipeStressAtFixedPoint(
-#         odb_path=job_name + '.odb',
-#         output_file='pipe_stress_at_fixed_point_bottom.csv'
-#     )
-
-ExportCasingStressAllFrames(
+ExportPipeStressAtFixedPoint(
         odb_path=job_name + '.odb',
-        output_file='casing_stress_all_frames.csv'
-    )       
+        output_file='pipe_stress_at_fixed_point_bottom.csv'
+    )
 
-print("\n" + "="*30)
-print("STARTING POST-PROCESSING...")
-print("="*30)
+# ExportCasingStressAllFrames(
+#         odb_path=job_name + '.odb',
+#         output_file='casing_stress_all_frames.csv'
+#     )       
 
-try:
-    import post 
-    print(">>> Module 'post' imported successfully.")
+# print("\n" + "="*30)
+# print("STARTING POST-PROCESSING...")
+# print("="*30)
 
-    odb_name ='WellClosureJob.odb'
+# try:
+#     import post 
+#     print(">>> Module 'post' imported successfully.")
 
-    csv_name = 'casing_stress_all_frames.csv'
+#     odb_name ='WellClosureJob.odb'
 
-    print(f">>> Trying to process: {odb_name}")
-    post.ExportCasingStressAllFrames(odb_name, csv_name)
+#     csv_name = 'casing_stress_all_frames.csv'
 
-    print(">>> Command of export finished.")
+#     print(f">>> Trying to process: {odb_name}")
+#     post.ExportCasingStressAllFrames(odb_name, csv_name)
 
-except:
-    print(">>> Error: Could not import the 'post' module or execute the function. Check the file and try again.")
+#     print(">>> Command of export finished.")
 
-print("="*30)
-print("END OF SCRIPT")
-print("="*30)
+# except:
+#     print(">>> Error: Could not import the 'post' module or execute the function. Check the file and try again.")
+
+# print("="*30)
+# print("END OF SCRIPT")
+# print("="*30)
 
