@@ -338,14 +338,13 @@ if __name__ == "__main__":
         maxSize=3.0
     )
 
-    # Here I was testing if the mesh had to be adapted to the different lengths of the model
+    # # Here I was testing if the mesh had to be adapted to the different lengths of the model
+    # length_analyzed = np.abs(base_depth - top_depth)
 
-    length_analyzed = np.abs(base_depth - top_depth)
+    # ratio_mesh = 0.00625
+    # delta_y_mesh = length_analyzed * ratio_mesh
 
-    ratio_mesh = 0.00625
-    delta_y_mesh = length_analyzed * ratio_mesh
-
-    print(f"Delta Y for vertical edges mesh: {delta_y_mesh} meters")
+    # print(f"Delta Y for vertical edges mesh: {delta_y_mesh} meters")
 
     # CreateMeshVerticalBySet(
     #     name_model='MyFirstModel',
@@ -402,33 +401,54 @@ if __name__ == "__main__":
     mdb.saveAs(pathName=r'C:\Users\hidalgo\Documents\GitHub\Abaqus_WELL_\WellClosureJob.cae')
     # print("Model saved as 'WellClosureJob.cae' in the project folder. You can open it with Abaqus/CAE to review the model and submit the job for analysis.")
 
-    ExportDisplacementHistory(
-        odb_path=job_name + '.odb',
-        node_label=3,
-        instance_name='ROCK_INST',
-        output_file='displacement_no_3.csv'
-    )
 
+    # ExportRockdisplacementAllFrames(
+    #     odb_path=job_name + '.odb',
+    #     output_file='wall_displacement_all_frames.csv'
+    # )
 
-    ExportPathDataAllFrames(
-        odb_path=job_name + '.odb',
-        output_file='path_data_all_frames.csv'
-    )
+    # ExportRockStressAllFrames(
+    #     odb_path=job_name + '.odb',
+    #     output_file='rock_stress_all_frames.csv'
+    # )
 
-    ExportPipeStressAtFixedPoint(
-        odb_path=job_name + '.odb',
-        output_file='pipe_stress_at_fixed_point_bottom.csv'
-    )
+    # ExportCasingStressAllFrames(
+    #     odb_path=job_name + '.odb',
+    #     output_file='casing_stress_all_frames.csv'
+    # )
 
-    ExportCasingStressAllFrames(
-        odb_path=job_name + '.odb',
-        output_file='casing_stress_all_frames.csv'
-    ) 
+    # ExportCasingTemperatureAllFrames(
+    #     odb_path=job_name + '.odb',  
+    #     output_file='casing_temperature_all_frames.csv'
+    # )     
 
-    
+    # ExportRockTemperatureAllFrames(
+    #     odb_path=job_name + '.odb',
+    #     output_file='rock_temperature_all_frames.csv'
+    # )   
+
 
     # Falta:
     # enxugar as defs para os sets
     # enxugar as defs para os steps
     # adaptar para os diferentes nomes de rev que dependem dos diametros dos casings
     
+    # Can be discussed if necessary to be plotted    
+    # ExportCasingTemperatureAllFrames(
+    #     odb_path=job_name + '.odb',  
+    #     output_file='casing_temperature_all_frames.csv'
+    # )
+    
+    # Can be useful in the plane strain codes
+    # ExportPipeStressAtFixedPoint(
+    #     odb_path=job_name + '.odb',
+    #     output_file='pipe_stress_at_fixed_point_bottom.csv'
+    # )
+
+    # Can be useful in the plane strain codes
+    # ExportDisplacementHistory(
+    #     odb_path=job_name + '.odb',
+    #     node_label=3,
+    #     instance_name='ROCK_INST',
+    #     output_file='displacement_no_3.csv'
+    # )

@@ -251,7 +251,7 @@ def CreateStepsPartOne(name_model):
 
     regionDef=m.rootAssembly.sets['ROCK_OUTPUT']
     m.FieldOutputRequest(name='ROCK_OUTPUT', 
-        createStepName='Geostatic', variables=('U', 'TEMP', 'S', 'MISES'), region=regionDef, 
+        createStepName='Geostatic', variables=('U', 'TEMP','NT', 'S', 'MISES'), region=regionDef, 
         sectionPoints=DEFAULT, rebar=EXCLUDE)
 
     if 'H-Output-1' in m.historyOutputRequests.keys():
