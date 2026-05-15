@@ -49,7 +49,6 @@ if fase_data:
     name_tubular = fase_data["Casing"][0]["Tubular"]
 else:
     print(f"Phase '{name_phase}' not found in data['Phases']")
-print(name_tubular)
 
 outer_diamenter_pipe = data["Tubulars"][name_tubular]['OD']
 thickness_pipe = data["Tubulars"][name_tubular]['Thickness']
