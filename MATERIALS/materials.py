@@ -50,7 +50,7 @@ def MohrCoulombMaterial(modelName, name, data, sectionLength=1.):
     if None in (phi, c, labData):
         raise ValueError(
             "friction_angle, dilatancy_angle, cohesion, and lab_data must be provided for Mohr-Coulomb material.")
-        return
+    
     if dilat is None:
         dilat = 0.0
     mat.MohrCoulombPlasticity(table=((phi, dilat), ))
