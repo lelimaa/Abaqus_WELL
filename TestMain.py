@@ -41,10 +41,15 @@ print(f"Data keys: {data.keys()}")
 
 # Variables read from json (geometry) #####################################
 
-name_phase = '3dda7930-6dbf-4d05-87f2-d2809a3e9fc6'
-# name_phase = data["AnalysisData"]["Phase"]
-name_tubular = 'LIN_09_875'
-# name_tubular = data["Phases"][name_phase]["Casing"]["Tubular"]
+# name_phase = '3dda7930-6dbf-4d05-87f2-d2809a3e9fc6'
+name_phase = data["AnalysisData"]["Phases"]
+# name_tubular = 'LIN_09_875'
+fase_data = data["Phases"].get(name_phase)
+if fase_data:
+    name_tubular = fase_data["Casing"][0]["Tubular"]
+else:
+    print(f"Phase '{name_phase}' not found in data['Phases']")
+print(name_tubular)
 
 outer_diamenter_pipe = data["Tubulars"][name_tubular]['OD']
 thickness_pipe = data["Tubulars"][name_tubular]['Thickness']
@@ -117,10 +122,10 @@ if __name__ == "__main__":
     examples = {}
 
     # casing_type = "VM110"
-    casing_type = "VM-95"
-    # casing_type = data["Tubulars"][name_tubular]["Material"] 
+    # casing_type = "VM-95"
+    casing_type = data["Tubulars"][name_tubular]["Material"] 
     # Seleciona o tipo de aço para o casing definido no json (ex: VM-95) e pega as propriedades do material a partir do json
-    # steelgrade_info = data["SteelGrades"][casing_type]
+    steelgrade_info = data["SteelGrades"][casing_type]
 
     # Seleciona o Gradiente Geotérmico definido no "AnalysisData"
     data_geothermal = data["AnalysisData"]["GeothermalGradient"]
