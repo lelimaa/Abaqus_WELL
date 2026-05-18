@@ -1,7 +1,7 @@
 from abaqus import *
 from abaqusConstants import *
 
-def CreateJob(name_model, name_job, num_cpus, run_now=True):
+def CreateJob(name_model, name_job, num_cpus, num_gpus, run_now=True):
     mdb.Job(
         name=name_job,
         model=name_model,
@@ -26,7 +26,7 @@ def CreateJob(name_model, name_job, num_cpus, run_now=True):
         multiprocessingMode=DEFAULT,
         numCpus=num_cpus,
         numDomains=num_cpus,
-        numGPUs=0
+        numGPUs=num_gpus
     )
     print(f">>> Job '{name_job}' created for model '{name_model}' with {num_cpus} CPUs!")
 

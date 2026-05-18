@@ -239,20 +239,23 @@ def CreateStepsPartOne(name_model):
     m.GeostaticStep(name='Geostatic', previous='Initial', 
     nlgeom=ON)
 
+    # Here we define the field outputs that we want to be able to export later in the post-processing phase. 
+
     regionDef=m.rootAssembly.instances['PIPE_INST'].sets['FASEI_REV']
     m.FieldOutputRequest(name='FASEI_REV', 
         createStepName='Geostatic', variables=('S', 'MISES', 'E', 'PE', 'U', 
-        'NT'), region=regionDef, sectionPoints=DEFAULT, rebar=EXCLUDE)
-    m.fieldOutputRequests['F-Output-1'].suppress()
-    del m.fieldOutputRequests['F-Output-1']
+        'NT', 'CSTRESS'), region=regionDef, sectionPoints=DEFAULT, rebar=EXCLUDE)
+    
+    if 'F-Output-1' in m.fieldOutputRequests.keys():
+        del m.fieldOutputRequests['F-Output-1']
 
     regionDef=m.rootAssembly.sets['ROCK_OUTPUT']
     m.FieldOutputRequest(name='ROCK_OUTPUT', 
-        createStepName='Geostatic', variables=('U', 'TEMP'), region=regionDef, 
+        createStepName='Geostatic', variables=('U', 'TEMP','NT', 'S', 'MISES'), region=regionDef, 
         sectionPoints=DEFAULT, rebar=EXCLUDE)
 
-    m.historyOutputRequests['H-Output-1'].suppress()
-    del m.historyOutputRequests['H-Output-1']
+    if 'H-Output-1' in m.historyOutputRequests.keys():
+        del m.historyOutputRequests['H-Output-1']
 
     region =a.instances['FLUID_INST'].sets['FASEI_FLUIDO']
     m.ModelChange(name='MC_FASEI_FLUIDO', 
@@ -275,9 +278,13 @@ def CreateStepsPartOne(name_model):
         63072000.0, ), (126144000.0, ), (252288000.0, ), (504576000.0, ), (
         946080000.0, )))
     m.fieldOutputRequests['FASEI_REV'].setValuesInStep(
-        stepName='Transition', timePoint='timePoint')
+        stepName='Transition')
+        # stepName='Transition', timePoint='timePoint')
     m.fieldOutputRequests['ROCK_OUTPUT'].setValuesInStep(
-        stepName='Transition', timePoint='timePoint')
+        stepName='Transition')
+        # stepName='Transition', timePoint='timePoint')
+    
+
     m.StaticStep(name='TempDefine', previous='Transition', 
         timePeriod=3.0, initialInc=1.0, minInc=3e-05, maxInc=3.0)
     

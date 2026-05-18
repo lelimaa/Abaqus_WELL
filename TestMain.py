@@ -4,6 +4,7 @@ from abaqusConstants import *
 # import os
 import json
 import sys 
+import numpy as np
 
 # path_project = r'C:\Users\juani\Documents\Github\Abaqus_WELL_' 
 path_project = r'C:\Users\hidalgo\Documents\GitHub\Abaqus_WELL_'
@@ -18,8 +19,9 @@ from MATERIALS.materials import *
 from JSONS.ImportTools import *
 from BCONDITIONS.conditions import *     
 from BCONDITIONS.casing import *     
-from MESH.meshAlt import *    
+from MESH.mesh import *    
 from JOBS.job import *
+from POSTPROCESS.post import *
 
 mdb.models.changeKey(fromName='Model-1', toName='MyFirstModel')
 
@@ -178,7 +180,6 @@ if __name__ == "__main__":
     # import pprint 
     # pprint.pprint(filtered_layers)
 
-
     for i, layer in enumerate(filtered_layers, start=1):
 
         new_block = {
@@ -310,13 +311,12 @@ if __name__ == "__main__":
     radius_search_fluid = (inner_radius_annular + inner_radius_wellbore) / 2.0
     radius_search_rock = (2 * inner_radius_wellbore + thickness_wellbore) / 2.0
 
-
     CreateMeshSizeHorizontal(
         name_model='MyFirstModel',
         name_instance='FLUID_INST',
         filtered_layers=filtered_layers,
         radius_middle=radius_search_fluid,
-        elementSize=5e-3,
+        elementSize=4e-3,
         deviationFactor=0.1
     )
     CreateMeshSizeHorizontal(
@@ -324,7 +324,7 @@ if __name__ == "__main__":
         name_instance='PIPE_INST',
         filtered_layers=filtered_layers,
         radius_middle=radius_search_pipe,
-        elementSize=5e-3,
+        elementSize=4e-3,
         deviationFactor=0.1
     )
     CreateMeshBiasHorizontal(
@@ -332,14 +332,29 @@ if __name__ == "__main__":
         name_instance='ROCK_INST',
         filtered_layers=filtered_layers,
         radius_middle=radius_search_rock,
-        minSize=4e-3,
+        minSize=0.5e-3,
         maxSize=3.0
     )
 
-    CreateMeshVerticalBySet(
+    # # Here I was testing if the mesh had to be adapted to the different lengths of the model
+    # length_analyzed = np.abs(base_depth - top_depth)
+
+    # ratio_mesh = 0.00625
+    # delta_y_mesh = length_analyzed * ratio_mesh
+
+    # print(f"Delta Y for vertical edges mesh: {delta_y_mesh} meters")
+
+    # CreateMeshVerticalBySet(
+    #     name_model='MyFirstModel',
+    #     name_set='MESH_VERTICAL',
+    #     element_size=10
+    # )
+
+    CreateMeshVerticalWithBias(
         name_model='MyFirstModel',
         name_set='MESH_VERTICAL',
-        element_size=0.5
+         min_size=1,
+         max_size=10
     )
 
     AttributeTypeElement(
@@ -360,6 +375,13 @@ if __name__ == "__main__":
         name_instance='ROCK_INST'
     )
 
+    # Creating a set for the target point in the bottom of the casing 
+
+    CreateSetPointRock(model_name='MyFirstModel', r_coord=inner_radius_wellbore, z_coord=-abs(base_depth))
+    
+    CreateSetPointCasing(model_name='MyFirstModel', r_coord=inner_radius_annular, z_coord=-abs(base_depth))
+
+
     # Creating a job and saving the model
 
     job_name = 'WellClosureJob'
@@ -367,21 +389,68 @@ if __name__ == "__main__":
     CreateJob(
         name_model='MyFirstModel',
         name_job=job_name,
-        num_cpus=14, 
-        run_now=True
-    )    
+        num_cpus=14,
+        num_gpus=1, 
+        run_now=False
+    )
 
-    
+    RunJob(job_name)
 
-    # # mdb.jobs[job_name].writInput(consistencyChecking=OFF)
-
-    # RunJob(job_name)
-
-    # mdb.saveAs(pathName=r'C:\Users\hidalgo\Documents\GitHub\Abaqus_WELL_\WellClosureJob.cae')
+    mdb.saveAs(pathName=r'C:\Users\hidalgo\Documents\GitHub\Abaqus_WELL_\WellClosureJob.cae')
     # print("Model saved as 'WellClosureJob.cae' in the project folder. You can open it with Abaqus/CAE to review the model and submit the job for analysis.")
+
+    # Output exporting 
+
+    # ExportRockdisplacementAllFrames(
+    #     odb_path=job_name + '.odb',
+    #     output_file='wall_displacement_all_frames.csv'
+    # )
+
+    # ExportRockStressAllFrames(
+    #     odb_path=job_name + '.odb',
+    #     output_file='rock_stress_all_frames.csv'
+    # )
+
+    # ExportCasingStressAllFrames(
+    #     odb_path=job_name + '.odb',
+    #     output_file='casing_stress_all_frames.csv'
+    # )
+
+    # ExportCasingTemperatureAllFrames(
+    #     odb_path=job_name + '.odb',  
+    #     output_file='casing_temperature_all_frames.csv'
+    # )     
+
+    # ExportRockTemperatureAllFrames(
+    #     odb_path=job_name + '.odb',
+    #     output_file='rock_temperature_all_frames.csv'
+    # )   
+
+
+    # End of the script. ############################################
+
 
     # Falta:
     # enxugar as defs para os sets
     # enxugar as defs para os steps
     # adaptar para os diferentes nomes de rev que dependem dos diametros dos casings
     
+    # Can be discussed if necessary to be plotted    
+    # ExportCasingTemperatureAllFrames(
+    #     odb_path=job_name + '.odb',  
+    #     output_file='casing_temperature_all_frames.csv'
+    # )
+    
+    # Can be useful in the plane strain codes
+    # ExportPipeStressAtFixedPoint(
+    #     odb_path=job_name + '.odb',
+    #     output_file='pipe_stress_at_fixed_point_bottom.csv'
+    # )
+
+    # Can be useful in the plane strain codes
+    # ExportDisplacementHistory(
+    #     odb_path=job_name + '.odb',
+    #     node_label=3,
+    #     instance_name='ROCK_INST',
+    #     output_file='displacement_no_3.csv'
+    # )
