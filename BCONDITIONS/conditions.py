@@ -8,9 +8,6 @@ def ConvertStressesJSON(in_situ_stresses):
 
     table_sv_pa = {}
 
-    # print(f"{'TVD (m)':<10} | {'Sv (ppg)':<12} | {'Sv (Pa) Calculated':<20}")
-    # print("-" * 47)
-
     for item in in_situ_stresses:
         depth = item["Depth"]
         emw_ppg = item["Overburden"]
@@ -18,8 +15,6 @@ def ConvertStressesJSON(in_situ_stresses):
         sv_pa = - (emw_ppg * convertion_factor * depth)
 
         table_sv_pa[depth] = sv_pa
-
-        # print(f"{depth:<10.2f} | {emw_ppg:<12.5f} | {abs(sv_pa)/1e6:<20.5f}")
 
     return table_sv_pa
 
@@ -63,8 +58,6 @@ def UpdateMaterialDensities(name_model, filtered_layers, stresses_table):
 
         delta_z = abs(z_bottom - z_top)
 
-        # print("Materiais existentes no modelo:", m.materials.keys())
-
         if delta_z > 0:
 
             rho_calculated = abs(p_bottom - p_top) / (gravity * delta_z)
@@ -105,7 +98,6 @@ def ApplyGeostaticStresses(name_model, filtered_layers, stresses_table):
 
         layer_num = i + 1
         set_name = f'L{layer_num}-I'  
-        # set_name = layer['Name']  
 
         stress_top = get_stresses_exact(z_top, stresses_table)
         stress_bottom = get_stresses_exact(z_bottom, stresses_table)
@@ -132,8 +124,7 @@ def ApplyGeostaticStresses(name_model, filtered_layers, stresses_table):
 
 
 def CreateNormalizedGeothermalGrid(name_model, top_depth, top_temp_C, bottom_depth, bottom_temp_C, start_mesh_depth, end_mesh_depth):
-    
-    
+        
     m = mdb.models[name_model]
 
     T_ref = top_temp_C + 273.15
@@ -475,9 +466,6 @@ def CreateCreepStep(name_model, step_name, previous_step, time_period_days, max_
     if max_inc_days:
         print(f"    - Incremento travado em no máximo {max_inc_days} dias por passo.")
 
-    # m.ViscoStep(name='Perf_10_375_Creep', 
-    #     previous='Perf_10_375', timePeriod=172800.0, maxNumInc=1000000, 
-    #     initialInc=1.0, minInc=1e-15, maxInc=172800.0, cetol=0.01)
 
 def CreateStepsPartFour(name_model):
     
@@ -582,9 +570,6 @@ def ConfigurePhaseRev(name_model, step_name='Rev_9_875'):
 
     print(">>> Phase of casing successfully configured!")
 
-    # m.ViscoStep(name='Rev_9_875_Creep', previous='Rev_9_875', 
-    #     timePeriod=945907000.0, maxNumInc=1000000, initialInc=1.0, 
-    #     minInc=1e-15, maxInc=15552000.0, cetol=0.01)
 
 # def DeactivateFluidForCasing(name_model, step_name='Rev_9_875'):
 #     m=mdb.models[name_model]

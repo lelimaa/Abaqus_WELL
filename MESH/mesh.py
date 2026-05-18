@@ -9,9 +9,6 @@ def CreateMeshBiasHorizontal(name_model, name_instance, filtered_layers, radius_
     a = m.rootAssembly
 
     inst = a.instances[name_instance]
-    # p = m.parts[name_part]
-    # p = a.instances[name_instance]
-    # e = p.edges
 
     depths = []
 
@@ -20,7 +17,6 @@ def CreateMeshBiasHorizontal(name_model, name_instance, filtered_layers, radius_
 
     depths.append(filtered_layers[-1]['Bottom'])  
 
-    # points_search = []
     found_lines = 0
 
     for z in depths:
@@ -30,7 +26,6 @@ def CreateMeshBiasHorizontal(name_model, name_instance, filtered_layers, radius_
         if not found_edges:
             continue 
         
-        # edge = p.edges.findAt(((radius_middle, -z, 0.0), ))
         edge = found_edges[0]
         found_lines += 1
 
@@ -82,7 +77,6 @@ def CreateMeshSizeHorizontal(name_model, name_instance, filtered_layers, radius_
         found_edges = inst.edges.findAt(((radius_middle, -z, 0.0), ))
 
         if found_edges: 
-            # edge = p.edges.findAt(((radius_middle, -z, 0.0), ))
             edge = found_edges[0]
             found_lines += 1
 
@@ -122,8 +116,6 @@ def CreateMeshVerticalWithBias(name_model, name_set, min_size, max_size):
         constraint=FINER,
         minSize=min_size,
         maxSize=max_size
-        # ratio=bias_ratio,
-        # numberElements=None,
     )
 
     print(f">>> Mesh Bias applyed: Interface ({min_size}) | Center ({max_size})")
