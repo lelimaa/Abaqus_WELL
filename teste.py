@@ -16,7 +16,6 @@ from POSTPROCESS.post import *
 
 job_name = 'WellClosureJob'
 
-
 # ExportRockDisplacementAllFrames(
 #     odb_path=job_name + '.odb',
 #     output_file='path_data_all_frames.csv'
@@ -27,16 +26,15 @@ job_name = 'WellClosureJob'
 #     output_file='rock_stress_all_frames.csv'
 # )
 
-
 # ExportCasingStressAllFrames(
 #         odb_path=job_name + '.odb',
 #         output_file='casing_stress_all_frames.csv'
-    # )     
+# )     
 
 # ExportCasingTemperatureAllFrames(
 #         odb_path=job_name + '.odb',  
 #         output_file='casing_temperature_all_frames.csv'
-#     )
+#         )
 
 ExportRockTemperatureAllFrames(
         odb_path=job_name + '.odb',
@@ -45,7 +43,7 @@ ExportRockTemperatureAllFrames(
 
 
 
-
+# Lines for tests with the post-processing functions.
 
 # print("\n" + "="*30)
 # print("STARTING POST-PROCESSING...")

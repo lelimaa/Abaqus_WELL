@@ -180,7 +180,6 @@ if __name__ == "__main__":
     # import pprint 
     # pprint.pprint(filtered_layers)
 
-
     for i, layer in enumerate(filtered_layers, start=1):
 
         new_block = {
@@ -312,7 +311,6 @@ if __name__ == "__main__":
     radius_search_fluid = (inner_radius_annular + inner_radius_wellbore) / 2.0
     radius_search_rock = (2 * inner_radius_wellbore + thickness_wellbore) / 2.0
 
-
     CreateMeshSizeHorizontal(
         name_model='MyFirstModel',
         name_instance='FLUID_INST',
@@ -401,6 +399,7 @@ if __name__ == "__main__":
     mdb.saveAs(pathName=r'C:\Users\hidalgo\Documents\GitHub\Abaqus_WELL_\WellClosureJob.cae')
     # print("Model saved as 'WellClosureJob.cae' in the project folder. You can open it with Abaqus/CAE to review the model and submit the job for analysis.")
 
+    # Output exporting 
 
     # ExportRockdisplacementAllFrames(
     #     odb_path=job_name + '.odb',
@@ -426,6 +425,9 @@ if __name__ == "__main__":
     #     odb_path=job_name + '.odb',
     #     output_file='rock_temperature_all_frames.csv'
     # )   
+
+
+    # End of the script. ############################################
 
 
     # Falta:
