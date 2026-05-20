@@ -6,8 +6,8 @@ import json
 import sys 
 import numpy as np
 
-# path_project = r'C:\Users\juani\Documents\Github\Abaqus_WELL_' 
-path_project = r'C:\Users\hidalgo\Documents\GitHub\Abaqus_WELL_'
+# path_project = r'C:\Users\juani\Documents\Github\Abaqus_WELL' 
+path_project = r'C:\Users\hidalgo\Documents\GitHub\Abaqus_WELL'
 
 if path_project not in sys.path:
     sys.path.append(path_project)
@@ -31,8 +31,8 @@ if 'MyFirstModel' not in mdb.models:
 
 # Reading the json file and filling the input data for the analysis ####################
 
-# with open(r'C:\Users\juani\Documents\Github\Abaqus_WELL_\wellClosure_axi.json') as f:
-with open(r'C:\Users\hidalgo\Documents\GitHub\Abaqus_WELL_\wellClosure_axi.json') as f:
+# with open(r'C:\Users\juani\Documents\Github\Abaqus_WELL\wellClosure_axi.json') as f:
+with open(r'C:\Users\hidalgo\Documents\GitHub\Abaqus_WELL\wellClosure_axi.json') as f:
     data = json.load(f)
 
 print(f"Data keys: {data.keys()}")
@@ -43,10 +43,10 @@ name_phase = '3dda7930-6dbf-4d05-87f2-d2809a3e9fc6'
 name_tubular = 'LIN_09_875'
 
 outer_diamenter_pipe = data["Tubulars"][name_tubular]['OD']
+outer_diamenter_pipe = outer_diamenter_pipe * 0.0254  # Convert from inches to meters
 thickness_pipe = data["Tubulars"][name_tubular]['Thickness']
 thickness_pipe = thickness_pipe * 0.0254  # Convert from inches to meters
-inner_radius_pipe = outer_diamenter_pipe / 2 - thickness_pipe 
-inner_radius_pipe = inner_radius_pipe * 0.0254  # Convert from inches to meters
+inner_radius_pipe = outer_diamenter_pipe / 2 - thickness_pipe # It is already in meters
 inner_radius_annular = inner_radius_pipe + thickness_pipe
 diameter_wellbore = data["Phases"][name_phase]['HoleDiameter']
 diameter_wellbore = diameter_wellbore * 0.0254  # Convert from inches to meters
