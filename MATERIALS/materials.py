@@ -62,20 +62,15 @@ def MohrCoulombMaterial(modelName, name, data, sectionLength=1.):
 
     # mat.Creep(law=USER, table=())
 
-
 def DoublePowerCreepMaterial(modelName, name, data, sectionLength=1.):
     mat, sect, subroutine = ElasticMaterial(
         modelName, name, data, sectionLength)
     
     print(f"O nome que chegou na função foi: {name}")
     try:
-        # dp_data = data["Rocks"][name]["DoublePowerParameters"]        
         dp_data = data.get("DoublePowerParameters", {})
-        # dp_data = data.get("creep_parameters", {})
         A1 = dp_data["a1"] 
         A2 = dp_data["a2"] 
-        # A1 = dp_data["a1"] / 86400.0  # Convert from per day to per second
-        # A2 = dp_data["a2"] / 86400.0  # Convert from per day to per second
         B1 = dp_data["b1"]
         B2 = dp_data["b2"]
         C1 = dp_data["c1"]
@@ -140,9 +135,6 @@ def Assign_Section(modelName, partName, sectionName, setName=None, isSolid=True)
             region = part.Set(name=setName, faces=part.faces[:])
         elif part.space == THREE_D:
             region = part.Set(name=setName, cells=part.cells[:])
-        # if isSolid is True:
-        #     region = part.Set(name=setName, cells=part.cells[:])
-        # elif isSolid is False:
         else:
             raise ValueError("No valid entities to assign section in %s" % partName)
 

@@ -180,11 +180,6 @@ def ApplyCasingInitialStresses(name_model, z_top, z_bottom, stress_top, stress_b
         lateralCoeff2=0.0
     )
 
-    # region = a.instances['PIPE_INST'].sets['FASEI_REV']
-    # m.GeostaticStress(name='S_FASEI_REV', region=region, 
-    #     stressMag1=133997000.0, vCoord1=-2000, stressMag2=-21981800.0, 
-    #     vCoord2=-4000, lateralCoeff1=0.0, lateralCoeff2=0.0)
-
 
 def CreateSteps(name_model):
     m = mdb.models[name_model]
@@ -570,16 +565,3 @@ def ConfigurePhaseRev(name_model, step_name='Rev_9_875'):
 
     print(">>> Phase of casing successfully configured!")
 
-
-# def DeactivateFluidForCasing(name_model, step_name='Rev_9_875'):
-#     m=mdb.models[name_model]
-#     a = m.rootAssembly
-
-#     region_fluid = a.instances['FLUID_INST'].sets['ALL_FLUID']
-
-#     m.ModelChange(
-#         name = 'Remove_Drilling_Fluid',
-#         createStepName = step_name,
-#         region = region_fluido,
-#         activeInStep = False
-#     )

@@ -13,7 +13,7 @@ def CreateSetsPipe(name_model):
     p.Set(faces=all_faces, name='FASEI_REV_ABOVE_TOC')
 
 
-    # FASEI_REV_BASE)    
+    # FASEI_REV_BASE    
     tol = 0.001
     e = p.edges
     all_coords = [v.pointOn[0][1] for v in p.vertices]
@@ -163,7 +163,6 @@ def CreateSetsFluid(name_model):
     )
     p.Set(edges=top_edges, name='FASEI_ANNULAR_TOP')
 
-
     # FASEI_ANNULAR_TT
     horizontal_edges = []
     tol = 0.0001
@@ -197,98 +196,98 @@ def CreateSetsRock(name_model):
     p.Set(faces=all_faces, name='FASEI_SLAVE')
 
     # L1-I_BASE, L2-I_BASE, L3-I_BASE, ... , LN-I_BASE
-    todas_as_alturas = sorted(list(set([vert.pointOn[0][1] for vert in v])))
-    alturas_invertidas = sorted(todas_as_alturas, reverse=True)
-    interfaces_descendo = alturas_invertidas[1:]
+    all_heights = sorted(list(set([vert.pointOn[0][1] for vert in v])))
+    inverted_heights = sorted(all_heights, reverse=True)
+    descendant_interfaces = inverted_heights[1:]
 
-    for i, altura_y in enumerate(interfaces_descendo):
-        nome_set = 'L' + str(i+1) + '-I_BASE'
+    for i, height_y in enumerate(descendant_interfaces):
+        name_set = 'L' + str(i+1) + '-I_BASE'
 
         edges_interface = e.getByBoundingBox(
-            xMin=-1e20, yMin=altura_y - tol, zMin=-tol,
-            xMax=1e20, yMax=altura_y + tol, zMax=tol
+            xMin=-1e20, yMin=height_y - tol, zMin=-tol,
+            xMax=1e20, yMax=height_y + tol, zMax=tol
         )
 
         if edges_interface:
-            p.Set(edges=edges_interface, name=nome_set)
-            print(f"Set '{nome_set}' gerado automaticamente em Y = {altura_y}")
+            p.Set(edges=edges_interface, name=name_set)
+            print(f"Set '{name_set}' gerado automaticamente em Y = {height_y}")
 
 
     # L1-I_ID, L2-I_ID, L3-I_ID, ... , LN-I_ID
-    alturas = sorted(list(set([vert.pointOn[0][1] for vert in v])), reverse=True)
+    heights = sorted(list(set([vert.pointOn[0][1] for vert in v])), reverse=True)
     min_x = min([vert.pointOn[0][0] for vert in v])
 
-    for i in range(len(alturas) - 1):
-        y_topo = alturas[i]
-        y_base = alturas[i+1]
+    for i in range(len(heights) - 1):
+        y_top = heights[i]
+        y_base = heights[i+1]
 
-        y_meio = (y_topo + y_base) / 2.0
+        y_middle = (y_top + y_base) / 2.0
 
-        nome_set = 'L' + str(i+1) + '-I_ID'
+        name_set = 'L' + str(i+1) + '-I_ID'
 
-        edge_encontrada = e.findAt(((min_x, y_meio, 0.0), ))
+        edge_found = e.findAt(((min_x, y_middle, 0.0), ))
 
-        if edge_encontrada:
-            p.Set(edges=edge_encontrada, name=nome_set)
-            print(f"Set '{nome_set}' created with sucess in the medium point Y={y_meio}")
+        if edge_found:
+            p.Set(edges=edge_found, name=name_set)
+            print(f"Set '{name_set}' created with sucess in the medium point Y={y_middle}")
 
 
     # L1-I_OD, L2-I_OD, L3-I_OD, ... , LN-I_OD
-    alturas = sorted(list(set([vert.pointOn[0][1] for vert in v])), reverse=True)
+    heights = sorted(list(set([vert.pointOn[0][1] for vert in v])), reverse=True)
     max_x = max([vert.pointOn[0][0] for vert in v])
 
-    for i in range(len(alturas)-1):
-        y_topo = alturas[i]
-        y_base = alturas[i+1]
+    for i in range(len(heights)-1):
+        y_top = heights[i]
+        y_base = heights[i+1]
 
-        y_meio = (y_topo+y_base) / 2.0
+        y_middle = (y_top+y_base) / 2.0
 
-        nome_set = 'L' + str(i+1) + '-I_OD'
+        name_set = 'L' + str(i+1) + '-I_OD'
 
-        edge_encontrada = e.findAt(((max_x, y_meio, 0.0), ))
+        edge_found = e.findAt(((max_x, y_middle, 0.0), ))
 
-        if edge_encontrada:
-            p.Set(edges=edge_encontrada, name=nome_set)
-            print(f"Set '{nome_set}' criado com sucesso em X={max_x}, Y={y_meio}")
+        if edge_found:
+            p.Set(edges=edge_found, name=name_set)
+            print(f"Set '{name_set}' created with success in X={max_x}, Y={y_middle}")
 
     # L1-I_TOP, L2-I_TOP, L3-I_TOP, ... , LN-I_TOP
-    alturas = sorted(list(set([vert.pointOn[0][1] for vert in v])), reverse=True)
+    heights = sorted(list(set([vert.pointOn[0][1] for vert in v])), reverse=True)
 
-    for i in range(len(alturas) - 1):
-        altura_topo_camada = alturas[i]
-        nome_set = 'L' +str(i+1)+ '-I_TOP'
+    for i in range(len(heights) - 1):
+        height_top_layer = heights[i]
+        name_set = 'L' +str(i+1)+ '-I_TOP'
 
-        edges_topo = e.getByBoundingBox(
-            xMin=-1e20, yMin=altura_topo_camada - tol, zMin=-tol,
-            xMax=1e20, yMax=altura_topo_camada + tol, zMax=tol
+        edges_top = e.getByBoundingBox(
+            xMin=-1e20, yMin=height_top_layer - tol, zMin=-tol,
+            xMax=1e20, yMax=height_top_layer + tol, zMax=tol
         )
 
-        if edges_topo:
-            p.Set(edges=edges_topo, name=nome_set)
-            print(f"Set '{nome_set}' criado na altura Y = {altura_topo_camada}")
+        if edges_top:
+            p.Set(edges=edges_top, name=name_set)
+            print(f"Set '{name_set}' created in the height Y = {height_top_layer}")
 
     # L1-I, L2-I, L3-I, ... , LN-I
-    alturas = sorted(list(set([vert.pointOn[0][1] for vert in v])), reverse=True)
+    heights = sorted(list(set([vert.pointOn[0][1] for vert in v])), reverse=True)
 
     min_x = min([vert.pointOn[0][0] for vert in v])
     max_x = max([vert.pointOn[0][0] for vert in v])
-    x_meio_face = (min_x + max_x) / 2.0
+    x_middle_face = (min_x + max_x) / 2.0
 
-    for i in range(len(alturas)-1):
-        y_topo = alturas[i]
-        y_base = alturas[i+1]
+    for i in range(len(heights)-1):
+        y_top = heights[i]
+        y_base = heights[i+1]
 
-        y_meio_camada = (y_topo + y_base) / 2.0
+        y_middle_layer = (y_top + y_base) / 2.0
 
-        nome_set = 'L' + str(i+1) + '-I'
+        name_set = 'L' + str(i+1) + '-I'
 
-        ponto_busca = ((x_meio_face, y_meio_camada, 0.0), )
+        point_search = ((x_middle_face, y_middle_layer, 0.0), )
 
-        face_encontrada = f.findAt(ponto_busca)
+        face_found = f.findAt(point_search)
 
-        if face_encontrada:
-            p.Set(faces=face_encontrada, name=nome_set)
-            print(f"Set de Face '{nome_set}' criado em X={x_meio_face}, Y={y_meio_camada}")
+        if face_found:
+            p.Set(faces=face_found, name=name_set)
+            print(f"Set of Face '{name_set}' created in X={x_middle_face}, Y={y_middle_layer}")
 
 def CreateSetsAssembly(name_model):  
 
@@ -296,31 +295,31 @@ def CreateSetsAssembly(name_model):
     a = m.rootAssembly
     
     # ALL    
-    faces_totais = None
+    faces_total = None
 
     for inst in a.instances.values():
-        if faces_totais is None:
-            faces_totais = inst.faces[:]
+        if faces_total is None:
+            faces_total = inst.faces[:]
         else:
-            faces_totais = faces_totais + inst.faces[:]
+            faces_total = faces_total + inst.faces[:]
 
-    a.Set(faces=faces_totais, name='ALL')
+    a.Set(faces=faces_total, name='ALL')
 
     # FASEI
-    nomes_instancias = ['FLUID_INST', 'PIPE_INST']
-    faces_totais = None
+    names_instances = ['FLUID_INST', 'PIPE_INST']
+    faces_total = None
 
-    for nome in nomes_instancias:
-        if nome in a.instances.keys():
-            inst = a.instances[nome]
-            if faces_totais is None:
-                faces_totais = inst.faces[:]
+    for name in names_instances:
+        if name in a.instances.keys():
+            inst = a.instances[name]
+            if faces_total is None:
+                faces_total = inst.faces[:]
             else:
-                faces_totais = faces_totais + inst.faces[:]
+                faces_total = faces_total + inst.faces[:]
 
-    if faces_totais:
-        a.Set(faces=faces_totais, name='FASEI')
-        print("Set 'ALL' criado com todas as faces das 2 instancias.")
+    if faces_total:
+        a.Set(faces=faces_total, name='FASEI')
+        print("Set 'ALL' created with all faces from the 2 instances.")
 
     # FASEI_OPEN_WELL
     tol =0.001
@@ -347,10 +346,10 @@ def CreateSetsAssembly(name_model):
     # a.Set(edges=edges_f, name='FASEI_OPEN_WELL') # if only from fluid
     a.Set(edges=edges_r, name='FASEI_OPEN_WELL') # if only from rock
     # a.Set(edges=edges_total, name='FASEI_OPEN_WELL') # if from fluid and rock
-    print(f"Set FASEI_OPEN_WELL criado na interface X = {x_interface}")  
+    print(f"Set FASEI_OPEN_WELL created at the interface X = {x_interface}")  
 
     a.Set(edges=edges_r, name='FASEI_WELL') # if only from rock
-    print(f"Set FASEI_WELL criado na interface X = {x_interface}")  
+    print(f"Set FASEI_WELL created at the interface X = {x_interface}")  
 
 
     # FASEI_COMPLETED_WELL
@@ -367,165 +366,165 @@ def CreateSetsAssembly(name_model):
 
     if edges_completed:
         a.Set(edges=edges_completed, name='FASEI_COMPLETED_WELL')
-        print(f"Set 'FASEI_COMPLETED_WELL' criado na face interna do Pipe (X = {x_int_pipe})")
+        print(f"Set 'FASEI_COMPLETED_WELL' created at the internal face of the Pipe (X = {x_int_pipe})")
 
 
     # MESH_TT_PIPES
     inst_p = a.instances['PIPE_INST']
-    alturas_pipe = sorted(list(set([v.pointOn[0][1] for v in inst_p.vertices])))
+    heights_pipe = sorted(list(set([v.pointOn[0][1] for v in inst_p.vertices])))
 
     min_x_p = min([v.pointOn[0][0] for v in inst_p.vertices])
     max_x_p = max([v.pointOn[0][0] for v in inst_p.vertices])
 
     edges_tt = None
 
-    for y in alturas_pipe:
-        edges_camada = inst_p.edges.getByBoundingBox(
+    for y in heights_pipe:
+        edges_layer = inst_p.edges.getByBoundingBox(
             xMin=min_x_p - tol, yMin=y - tol, zMin=-tol,
             xMax=max_x_p + tol, yMax=y + tol, zMax=tol
         )
 
-        if edges_camada:
+        if edges_layer:
             if edges_tt is None:
-                edges_tt = edges_camada
+                edges_tt = edges_layer
             else:
-                edges_tt = edges_tt + edges_camada
+                edges_tt = edges_tt + edges_layer
 
     if edges_tt:
         a.Set(edges=edges_tt, name='MESH_TT_PIPES')
-        print(f"Set 'MESH_TT_PIPES' criado com {len(edges_tt)} arestas horizontais.")
+        print(f"Set 'MESH_TT_PIPES' created with {len(edges_tt)} horizontal edges.")
 
     # MESH_TT_PIPES
     inst_f = a.instances['FLUID_INST']
-    alturas_annular = sorted(list(set([v.pointOn[0][1] for v in inst_f.vertices])))
+    heights_annular = sorted(list(set([v.pointOn[0][1] for v in inst_f.vertices])))
 
     min_x_a = min([v.pointOn[0][0] for v in inst_f.vertices])
     max_x_a = max([v.pointOn[0][0] for v in inst_f.vertices])
 
     edges_tt = None
 
-    for y in alturas_annular:
-        edges_camada = inst_f.edges.getByBoundingBox(
+    for y in heights_annular:
+        edges_layer = inst_f.edges.getByBoundingBox(
             xMin=min_x_a - tol, yMin=y - tol, zMin=-tol,
             xMax=max_x_a + tol, yMax=y + tol, zMax=tol
         )
 
-        if edges_camada:
+        if edges_layer:
             if edges_tt is None:
-                edges_tt = edges_camada
+                edges_tt = edges_layer
             else:
-                edges_tt = edges_tt + edges_camada
+                edges_tt = edges_tt + edges_layer
 
     if edges_tt:
         a.Set(edges=edges_tt, name='MESH_TT_ANNULARS')
-        print(f"Set 'MESH_TT_ANNULARS' criado com {len(edges_tt)} arestas horizontais.")  
+        print(f"Set 'MESH_TT_ANNULARS' created with {len(edges_tt)} horizontal edges.")  
 
 
     # MESH_TT_ROCK
     inst_r = a.instances['ROCK_INST']
-    alturas_rock = sorted(list(set([v.pointOn[0][1] for v in inst_r.vertices])))
+    heights_rock = sorted(list(set([v.pointOn[0][1] for v in inst_r.vertices])))
 
     min_x_r = min([v.pointOn[0][0] for v in inst_r.vertices])
     max_x_r = max([v.pointOn[0][0] for v in inst_r.vertices])
 
     edges_tt = None
 
-    for y in alturas_rock:
-        edges_camada = inst_r.edges.getByBoundingBox(
+    for y in heights_rock:
+        edges_layer = inst_r.edges.getByBoundingBox(
             xMin=min_x_r - tol, yMin=y - tol, zMin=-tol,
             xMax=max_x_r + tol, yMax=y + tol, zMax=tol
         )
 
-        if edges_camada:
+        if edges_layer:
             if edges_tt is None:
-                edges_tt = edges_camada
+                edges_tt = edges_layer
             else:
-                edges_tt = edges_tt + edges_camada
+                edges_tt = edges_tt + edges_layer
 
     if edges_tt:
         a.Set(edges=edges_tt, name='MESH_TT_ROCK')
-        print(f"Set 'MESH_TT_ROCK' criado com {len(edges_tt)} arestas horizontais.")           
+        print(f"Set 'MESH_TT_ROCK' created with {len(edges_tt)} horizontal edges.")           
 
 
     # MESH_VERTICAL
-    instancias = ['FLUID_INST', 'PIPE_INST', 'ROCK_INST']
-    edges_verticais_total = None
+    instances = ['FLUID_INST', 'PIPE_INST', 'ROCK_INST']
+    edges_verticals_total = None
 
-    for nome in instancias:
-        if nome in a.instances.keys():
-            inst = a.instances[nome]
-            edges_da_instancia = inst.edges
+    for name in instances:
+        if name in a.instances.keys():
+            inst = a.instances[name]
+            edges_of_instance = inst.edges
 
-            indices_verticais = []
+            indexes_verticals = []
 
-            for i, edge in enumerate(edges_da_instancia):
+            for i, edge in enumerate(edges_of_instance):
                 v1 = inst.vertices[edge.getVertices()[0]]
                 v2 = inst.vertices[edge.getVertices()[1]]
 
                 if abs(v1.pointOn[0][0] - v2.pointOn[0][0]) < tol:
-                    indices_verticais.append(edge)
+                    indexes_verticals.append(edge)
 
-            if indices_verticais:
+            if indexes_verticals:
                 temp_seq = inst.edges[0:0]
-                for ed in indices_verticais:
+                for ed in indexes_verticals:
                     temp_seq = temp_seq + inst.edges[ed.index:ed.index+1]
 
-                if edges_verticais_total is None:
-                    edges_verticais_total = temp_seq
+                if edges_verticals_total is None:
+                    edges_verticals_total = temp_seq
                 else:
-                    edges_verticais_total = edges_verticais_total + temp_seq
+                    edges_verticals_total = edges_verticals_total + temp_seq
 
-    if edges_verticais_total:
-        a.Set(edges=edges_verticais_total, name='MESH_VERTICAL')
-        print("Set 'MESH_VERTICAL' criado com sucesso (todas as verticais).")
+    if edges_verticals_total:
+        a.Set(edges=edges_verticals_total, name='MESH_VERTICAL')
+        print("Set 'MESH_VERTICAL' created with success (all vertical edges).")
 
     # ROCK_BC
     inst_r = a.instances['ROCK_INST']
-    x_externo_rock = max([v.pointOn[0][0] for v in inst_r.vertices])
+    x_external_rock = max([v.pointOn[0][0] for v in inst_r.vertices])
 
     y_min = min([v.pointOn[0][1] for v in inst_r.vertices])
     y_max = max([v.pointOn[0][1] for v in inst_r.vertices])
 
     edges_bc = inst_r.edges.getByBoundingBox(
-        xMin=x_externo_rock - tol, yMin=y_min - tol, zMin=-tol,
-        xMax=x_externo_rock + tol, yMax=y_max + tol, zMax=tol
+        xMin=x_external_rock - tol, yMin=y_min - tol, zMin=-tol,
+        xMax=x_external_rock + tol, yMax=y_max + tol, zMax=tol
     )
 
     if edges_bc:
         a.Set(edges=edges_bc, name='ROCK_BC')
-        print(f"Set 'ROCK_BC' criado com sucesso na borda X = {x_externo_rock}")
+        print(f"Set 'ROCK_BC' created with success at the border X = {x_external_rock}")
 
     # ROCK_OUTPUT
-    nome_instancia = ['ROCK_INST']
-    faces_totais = None
+    name_instance = ['ROCK_INST']
+    faces_total = None
 
-    for nome in nome_instancia:
-        if nome in a.instances.keys():
-            inst = a.instances[nome]
-            if faces_totais is None:
-                faces_totais = inst.faces[:]
+    for name in name_instance:
+        if name in a.instances.keys():
+            inst = a.instances[name]
+            if faces_total is None:
+                faces_total = inst.faces[:]
             else:
-                faces_totais = faces_totais + inst.faces[:]
+                faces_total = faces_total + inst.faces[:]
 
-    if faces_totais:
-        a.Set(faces=faces_totais, name='ROCK_OUTPUT')
-        print("Set 'ROCK_OUTPUT' criado com todas as faces dessa instancia.")
+    if faces_total:
+        a.Set(faces=faces_total, name='ROCK_OUTPUT')
+        print("Set 'ROCK_OUTPUT' created with all faces from this instance.")
 
 
     # YSYM_BASE
-    # 1. Identificar a altura mínima (Y) global do modelo
-    # Procuramos em todas as instâncias para achar o "chão"
+    # 1. Identify the minimum height (Y) globally in the model
+    # We search all instances to find the "floor"
     y_global = []
     for inst in a.instances.values():
         y_global.append(min([v.pointOn[0][1] for v in inst.vertices]))
     y_base = min(y_global)
 
-    # 2. Criar uma lista para acumular as arestas da base de cada instância
-    edges_base_lista = None
+    # 2. Create a list to accumulate the edges of the base of each instance
+    edges_base_list = None
 
     for inst in a.instances.values():
-        # Buscamos as arestas horizontais desta instância específica que estão na cota y_base
-        # Limitamos o X aos limites da própria instância para ser preciso
+        # Search for the horizontal edges of this specific instance that are at the y_base level
+        # We limit the X to the bounds of the instance itself for precision
         x_min_i = min([v.pointOn[0][0] for v in inst.vertices])
         x_max_i = max([v.pointOn[0][0] for v in inst.vertices])
         
@@ -534,55 +533,54 @@ def CreateSetsAssembly(name_model):
             xMax=x_max_i + tol, yMax=y_base + tol, zMax=tol
         )
         
-        # Se encontrou arestas na base desta instância, adiciona à "bolsa"
+        # If we found edges at the base of this instance, add them to the "bag"
         if edges_inst:
-            if edges_base_lista is None:
-                edges_base_lista = edges_inst
+            if edges_base_list is None:
+                edges_base_list = edges_inst
             else:
-                edges_base_lista = edges_base_lista + edges_inst
+                edges_base_list = edges_base_list + edges_inst
 
-    # 3. Criar o Set no Assembly com o acumulado
-    if edges_base_lista:
-        a.Set(edges=edges_base_lista, name='YSYM_BASE')
-        print("Set 'YSYM_BASE' criado com sucesso unindo todas as instâncias.")
+    # 3. Create the Set in the Assembly with the accumulated edges
+    if edges_base_list:
+        a.Set(edges=edges_base_list, name='YSYM_BASE')
+        print("Set 'YSYM_BASE' created with success uniting all instances.")
     else:
-        print("Erro: Nenhuma aresta encontrada na cota Y =", y_base)
-
+        print("Error: No edges found at Y coordinate =", y_base)
 
 
     # YSYM_TOP
-    # 1. Identificar a altura MÁXIMA (Y) global do modelo
+    # 1. Identify the maximum height (Y) globally in the model
     y_global_topo = []
     for inst in a.instances.values():
         y_global_topo.append(max([v.pointOn[0][1] for v in inst.vertices]))
-    y_topo = max(y_global_topo)
+    y_top = max(y_global_topo)
 
-    # 2. Criar uma lista para acumular as arestas do topo de cada instância
-    edges_topo_lista = None
+    # 2. Create a list to accumulate the edges of the top of each instance
+    edges_top_list = None
 
     for inst in a.instances.values():
-        # Buscamos as arestas horizontais desta instância que estão na cota y_topo
+        # Search for the horizontal edges of this specific instance that are at the y_top level
         x_min_i = min([v.pointOn[0][0] for v in inst.vertices])
         x_max_i = max([v.pointOn[0][0] for v in inst.vertices])
         
         edges_inst = inst.edges.getByBoundingBox(
-            xMin=x_min_i - tol, yMin=y_topo - tol, zMin=-tol,
-            xMax=x_max_i + tol, yMax=y_topo + tol, zMax=tol
+            xMin=x_min_i - tol, yMin=y_top - tol, zMin=-tol,
+            xMax=x_max_i + tol, yMax=y_top + tol, zMax=tol
         )
         
-        # Se encontrou arestas no topo desta instância, adiciona à sequência
+        # If we found edges at the top of this instance, add them to the sequence
         if edges_inst:
-            if edges_topo_lista is None:
-                edges_topo_lista = edges_inst
+            if edges_top_list is None:
+                edges_top_list = edges_inst
             else:
-                edges_topo_lista = edges_topo_lista + edges_inst
+                edges_top_list = edges_top_list + edges_inst
 
-    # 3. Criar o Set no Assembly
-    if edges_topo_lista:
-        a.Set(edges=edges_topo_lista, name='YSYM_TOP')
-        print(f"Set 'YSYM_TOP' criado com sucesso na altura Y = {y_topo}")
+    # 3. Create the Set in the Assembly
+    if edges_top_list:
+        a.Set(edges=edges_top_list, name='YSYM_TOP')
+        print(f"Set 'YSYM_TOP' created with success at Y coordinate = {y_top}")
     else:
-        print("Erro: Nenhuma aresta encontrada no topo (Y =", y_topo, ")")
+        print("Error: No edges found at Y coordinate =", y_top)
 
 def CreateSurfacesAssembly(modelName, data):
 
@@ -598,7 +596,7 @@ def CreateSurfacesAssembly(modelName, data):
     inner_radius_rock = data["ROCK"]["inner_radius"]
     outer_radius_rock = data["ROCK"]["inner_radius"] + data["ROCK"]["thickness"]
 
-    # SUPERFICIE DE INTERFACE
+    # INTERFACE SURFACE 
     tol = 0.001
 
     y_min = min(top_depth, base_depth)
@@ -637,15 +635,6 @@ def CreateSurfacesAssembly(modelName, data):
 
     print("Surface '%s' created successfully containing %d edges." % (surface_name_fluid, len(all_edges_fluid)))
     
-    # Creation of inner and outer surfaces in the fluid 
-    # FASEI_FLUIDO
-
-    # edges_fluid_phasei = inner_edges_fluid + outer_edges_fluid 
-
-    # surface_name_fluid_phasei = 'FASEI_FLUIDO'
-    # a.Surface(side1Edges= edges_fluid_phasei, name=surface_name_fluid_phasei)
-
-    # print("Surface '%s' created successfully containing %d edges." % (surface_name_fluid_phasei, len(edges_fluid_phasei)))
 
     # It was defined below in the PIPE and ROCK instances ###############################################################
 
@@ -704,10 +693,7 @@ def CreateSurfacesAssembly(modelName, data):
     surfaceName_pipe = 'FASEI_REV'
     a.Surface(side1Edges= all_edges_pipe, name=surfaceName_pipe)
 
-    # Creating the rock internal surfaces using edges from the rock instance
-    # FASEI_OPEN_WELL
-
-
+    # Creating the rock internal surfaces using edges from the rock instance FASEI_OPEN_WELL
 
     instanceName = 'ROCK_INST'
     inst = a.instances[instanceName]
@@ -749,17 +735,17 @@ def CreateSetPointRock(model_name, r_coord, z_coord):
 
     a.regenerate()
     
-    # Mudança da Instância
+    # Change in the instance
     inst_rock = a.instances['ROCK_INST']
     
-    # Lembre-se da ordem (R, 0, -Z) que corrigimos antes
+    # Remember the order (R, 0, -Z) that we corrected before
     target_coords = (r_coord, z_coord, 0.0)
     
     closest_nodes = inst_rock.nodes.getClosest(coordinates=(target_coords,))
     
     if closest_nodes:
         node_label = closest_nodes[0].label
-        # Use um nome diferente para não sobrescrever o do PIPE
+        # Use a different name to avoid overwriting the PIPE set
         set_name = 'SET_ROCK_STRESS_MONITOR'
         
         if set_name in a.sets.keys():
@@ -768,7 +754,7 @@ def CreateSetPointRock(model_name, r_coord, z_coord):
         target_node_seq = inst_rock.nodes.sequenceFromLabels((node_label,))
         a.Set(name=set_name, nodes=target_node_seq)
         
-        print(">>> SUCESSO: Set da rocha '%s' criado (No: %d)" % (set_name, node_label))
+        print(">>> SUCESSO: Set of rock '%s' created (No: %d)" % (set_name, node_label))
         return a.sets[set_name]
     return None    
     
@@ -777,36 +763,36 @@ def CreateSetPointCasing(model_name, r_coord, z_coord):
     m = mdb.models[model_name]
     a = m.rootAssembly
     
-    # 1. Garante que o Assembly está atualizado com a nova malha
+    # 1. Guarantee that the Assembly is updated with the new mesh
     a.regenerate()
     
     inst_pipe = a.instances['PIPE_INST']
     target_coords = (r_coord, z_coord, 0.0)
     
-    # 2. Busca o nó mais próximo para capturar o seu LABEL
+    # 2. Search for the closest node to capture its LABEL
     closest_nodes = inst_pipe.nodes.getClosest(coordinates=(target_coords,))
     
     if closest_nodes:
-        node_label = closest_nodes[0].label # Pegamos o número de identidade do nó
+        node_label = closest_nodes[0].label # We get the identity number of the node
         set_name = 'SET_STRESS_MONITOR'
         
-        # 3. Limpeza rigorosa do Set antigo
+        # 3. Rigorous cleanup of the old Set
         if set_name in a.sets.keys():
             del a.sets[set_name]
             
         try:
-            # 4. Criamos o Set pedindo ao Abaqus para buscar o nó pelo seu Label
-            # Esta é a forma mais estável de vincular nós de instância ao Assembly
+            # 4. Create the Set by asking Abaqus to search for the node by its label
+            # This is the most stable way to link instance nodes to the Assembly
             target_node_seq = inst_pipe.nodes.sequenceFromLabels((node_label,))
             a.Set(name=set_name, nodes=target_node_seq)
             
-            print(">>> SUCESSO: Set '%s' criado (No Label: %d)" % (set_name, node_label))
+            print(">>> SUCCESS: Set '%s' created (Node Label: %d)" % (set_name, node_label))
             return a.sets[set_name]
             
         except Exception as e:
-            print(">>> Erro fatal na criacao do Set: %s" % str(e))
+            print(">>> Fatal Error in Set creation: %s" % str(e))
             return None
     else:
-        print(">>> AVISO: Nenhum no encontrado nas coordenadas (%.2f, %.2f)" % (r_coord, z_coord))
+        print(">>> AVISO: No node found at coordinates (%.2f, %.2f)" % (r_coord, z_coord))
         return None    
     
