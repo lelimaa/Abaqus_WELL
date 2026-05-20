@@ -4,7 +4,8 @@ clear all
 close all
 clc
 
-PATH = 'C:\Users\hidalgo\Documents\GitHub\Abaqus_WELL_';
+% PATH = 'C:\Users\hidalgo\Documents\GitHub\Abaqus_WELL_';
+PATH = 'C:\Users\juani\Documents\Github\Abaqus_WELL_';
 cd(PATH)
 
 filename = 'path_data_all_frames';
