@@ -46,17 +46,21 @@ def MohrCoulombMaterial(modelName, name, data, sectionLength=1.):
     phi = data.get("friction_angle")
     dilat = data.get("dilatancy_angle")
     c = data.get("cohesion")
+    c = c * 1e6  # Convert from MPa to Pa
+    ut = data.get("ultimate_traction")
+    ut = ut * 1e6  # Convert from MPa to Pa
     labData = data.get("lab_data")
-    if None in (phi, c, labData):
+    if None in (phi, c, ut, labData):
         raise ValueError(
-            "friction_angle, dilatancy_angle, cohesion, and lab_data must be provided for Mohr-Coulomb material.")
+            "friction_angle, dilatancy_angle,  cohesion, ultimate traction, and lab_data must be provided for Mohr-Coulomb material.")
         return
     if dilat is None:
         dilat = 0.0
     mat.MohrCoulombPlasticity(table=((phi, dilat), ))
-    mat.mohrCoulombPlasticity.MohrCoulombHardening(table=labData)
+    # mat.mohrCoulombPlasticity.MohrCoulombHardening(table=labData)
+    mat.mohrCoulombPlasticity.MohrCoulombHardening(table=((c, 0.0), ))
     mat.mohrCoulombPlasticity.TensionCutOff(temperatureDependency=OFF, dependencies=0,
-                                            table=((c, 0.0), ))
+                                            table=((ut, 0.0), ))
 
     return mat, sect, subroutine
 
