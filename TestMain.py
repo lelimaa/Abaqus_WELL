@@ -96,7 +96,6 @@ if __name__ == "__main__":
 
     # Definition of materials ###############################################################
 
-
     lithology = data["Lithology"]
 
     init_search = top_depth
