@@ -114,36 +114,37 @@ if __name__ == "__main__":
     casing_type = "VM-95"
 
     examples["STEEL"] = {
-        "behavior": data["SteelGrades"][casing_type]["Law"],
+        'behavior': data["SteelGrades"][casing_type]["Law"],
         'density': data["SteelGrades"][casing_type]["ElasticParameters"]["Density"],
         'elastic': (data["SteelGrades"][casing_type]["ElasticParameters"]["Young"]*1e9,
                      data["SteelGrades"][casing_type]["ElasticParameters"]["Poisson"]),
         'conductivity': data["SteelGrades"][casing_type]["ThermalParameters"]["Conductivity"],
         'specific_heat': data["SteelGrades"][casing_type]["ThermalParameters"]["SpecificHeat"],
         'expansion': data["SteelGrades"][casing_type]["ThermalParameters"]["ThermalExpansion"],
-        "type": "Casing"
+        # 'plastic': tuple(tuple(item) for item in data["SteelGrades"][casing_type]["MisesPlastic"]["PlasticTable"]),    
+        'type': "Casing"
     }
 
     examples["FLUID"] = {
-        "behavior": "ELASTIC",
+        'behavior': "ELASTIC",
         'density': 1.0,
         'elastic': (10000, 0),
         'conductivity': 0.702,
         'specific_heat': 2060.0,
-        "type": "Fluid"
+        'type': "Fluid"
     }    
 
     for mat_name, properties in filtered_rocks.items():
 
         examples[mat_name] = {
-            "behavior": properties["Law"],
+            'behavior': properties["Law"],
             'density': properties["ElasticParameters"]["Density"],
             'elastic': (properties["ElasticParameters"]["Young"]*1e9,
                         properties["ElasticParameters"]["Poisson"]),
             'conductivity': properties["ThermalParameters"]["Conductivity"],
             'specific_heat': properties["ThermalParameters"]["SpecificHeat"],
             'expansion': properties["ThermalParameters"]["ThermalExpansion"],
-            "type": "Rock"
+            'type': "Rock"
         }
 
         if "MohrCoulombParameters" in properties:
@@ -194,8 +195,13 @@ if __name__ == "__main__":
         CreateMaterial('MyFirstModel', mat_name, mat_data, sectionLength=1.)
 
     mdb.models['MyFirstModel'].setValues(absoluteZero=0.0, stefanBoltzmann=5.670374e-8)
+
+    # plastic_list = data["SteelGrades"][casing_type]["MisesPlastic"]["PlasticTable"]
+    # plastic_table_formatted = tuple(tuple(item) for item in plastic_list)
+
+    plastic_table = tuple([tuple(item) for item in data["SteelGrades"][casing_type]["MisesPlastic"]["PlasticTable"]])
     
-    # AddplasticityToSteel('MyFirstModel', 'STEEL')
+    AddPlasticityToSteel('MyFirstModel', 'STEEL', plastic_table)
 
     CreateSetsPipe('MyFirstModel')
     CreateSetsFluid('MyFirstModel')

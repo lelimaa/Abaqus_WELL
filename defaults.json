@@ -1,0 +1,131 @@
+{"DummyMaterials": {
+    "DUMMY": {
+        "mtype": "DUMMY",
+        "Law": "ELASTIC",
+        "Elasticity": "ISOTROPIC",
+        "ElasticParameters": {
+            "Density": 1000.0,
+            "Young": 1,
+            "Poisson": 0.0},
+        "ThermalParameters": {
+            "Conductivity": 0.209946,
+            "SpecificHeat": 1592.0,
+            "ThermalExpansion": 1e-05}
+        },
+    "DUMMY_OIL": {
+        "mtype": "DUMMY_OIL",
+        "Law": "ELASTIC",
+        "Elasticity": "ISOTROPIC",
+        "ElasticParameters": {
+            "Density": 1000.0,
+            "Young": 1,
+            "Poisson": 0.0},
+        "ThermalParameters": {
+            "Conductivity": 0.209946,
+            "SpecificHeat": 1592.0,
+            "ThermalExpansion": 1e-05}
+        },
+    "DUMMY_WATER": {
+        "mtype": "DUMMY_WATER",
+        "Law": "ELASTIC",
+        "Elasticity": "ISOTROPIC",
+        "ElasticParameters": {
+            "Density": 1000.0,
+            "Young": 1,
+            "Poisson": 0.0},
+        "ThermalParameters": {
+            "Conductivity": 0.598,
+            "SpecificHeat": 4182.0,
+            "ThermalExpansion": 1e-05}
+        }
+    },
+"SteelDeratings": {
+    "Wellcat": {"Temperature":[0, 25.0, 93.3, 148.9, 176.7, 204.4, 232.2, 260.0],
+                "Derating": [1.0, 1.0, 0.960, 0.930, 0.915, 0.9, 0.885, 0.870]}
+    },
+"ContactProperties": {
+    "FULL_FRICTION": {"mi": 1, "normal": true},
+    "FRICTIONLESS":{"mi": 0, "normal": true},
+    "STEEL_STEEL":{"mi": 0.4, "normal": true},
+    "STEEL_CEMENT":{"mi": 0.5, "normal": true},
+    "ROCK_CEMENT":{"mi": 0.4, "normal": true} ,
+    "ROCK_STEEL":{"mi": 0.3, "normal": true}
+    },
+"Connectors":{
+    "CENTRALIZER_SPRINGS": {
+        "Behavior": "CARTESIAN_SPRING",
+        "Stiffness": 10.0
+        }
+    },
+"simulationTypes": {
+    "M": "mechanical",
+    "TM": "thermo-mechanical",
+    "THM": "thermo-hydro-mechanical",
+    "HM": "hydro-mechanical"
+    },
+"MeshParameters": {
+    "axisymmetric": {
+        "axialresolution": 1,
+        "maxMinRatio": 20,
+        "minAxialResolution": 0.25,
+        "maxAxialResolution": 4,
+        "Rock": {"elemShape": "QUAD4",
+                "integration": "FULL",
+                "elemType": "SOLID",
+                "radialBias": 300,
+                "radialpoints": 30,
+                "farfieldSize": 50},
+        "pipes": {"radialpoints": 6,
+                "elemShape": "QUAD4",
+                "integration": "FULL",
+                "elemType": "SOLID"},
+        "annulus": {"radialpoints": 7,
+                    "elemShape": "QUAD4",
+                    "integration": "FULL",
+                    "elemType": "SOLID"}
+    },
+    "planestrain":{
+        "TangentialResolution": 0.013659,
+        "Rock": {"elemShape": "QUAD4",
+                    "farfieldSize": 30,
+                    "integration": "FULL",
+                    "elemType": "SOLID",
+                    "radialBias": 1000,
+                    "radialpoints": 50,
+                    "squareLimit": true},
+        "pipes": {"radialpoints": 7,
+                    "elemShape": "QUAD4",
+                    "integration": "FULL",
+                    "elemType": "SOLID"},
+        "annulus": {"radialpoints": 8,
+                    "elemShape": "QUAD4",
+                    "integration": "FULL",
+                    "elemType": "SOLID"}
+    },
+    "three_dimension": {}
+    },
+"physicalConstants": {
+    "absolute_zero": 0
+    },
+"stepDefaults": {
+    "nlgeom": true,
+    "period": 1,
+    "outputFrequency": 1,
+    "minInc":1e-10,
+    "maxInc":864000,
+    "iniInc":1,
+    "maxThermalChange":400.0,
+    "creepTol": 0.01
+    },
+"time_points": {
+    "short_term": {
+        "type": "periods",
+        "data": [[0, 43200.0, 3600],
+                 [43200.0, 86400.0, 14400.0],
+                 [86400.0, 864000.0, 86400.0],
+                 [864000.0, 259200.0, 432000.0],
+                 [2592000.0, 15552000, 2592000.0],
+                 [15552000.0, 1e30, 15552000.0]]
+                 }
+                }
+}

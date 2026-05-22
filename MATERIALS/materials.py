@@ -4,6 +4,7 @@ from abaqusConstants import *
 from part import *
 
 
+
 def ElasticMaterial(modelName, name, data, sectionLength=1.):
     m = mdb.models[modelName]
     mat = m.Material(name=name)
@@ -30,6 +31,17 @@ def ElasticMaterial(modelName, name, data, sectionLength=1.):
         mat.Expansion(table=((data.get('expansion'),),))
     subroutine = None
     return mat, sect, subroutine
+
+# def Plasticity(modelName, name, data, sectionLength=1.):
+#     m = mdb.models[modelName]
+#     mat = m.Material(name=name)
+
+#     mat, sect, subroutine = ElasticMaterial(
+#         modelName, name, data, sectionLength)
+
+#     if data.get('plastic') is not None:
+#         mat.Plastic(table=data.get('plastic'), temperatureDependency=ON)
+#         # mat.Density(table=((data.get('plastic'),),))
 
 
 def vonMisesMaterial(modelName, name, data, sectionLength=1.):
@@ -97,6 +109,7 @@ def DoubleMechanismCreepMaterial(modelName, name, data, sectionLength=1.):
     subroutine = {"CREEP": " my fortran subroutine "}
     return mat, sect, subroutine
 
+
 def CreateMaterial(modelName, name, data, sectionLength=1.):
     behavior = data.get("behavior")
     mapping = {
@@ -111,7 +124,6 @@ def CreateMaterial(modelName, name, data, sectionLength=1.):
         return create_func(modelName, name, data, sectionLength)
     else:
         raise ValueError("Behavior '%s' not recognized." % behavior)
-
 
 def Assign_Section(modelName, partName, sectionName, setName=None, isSolid=True):
     model = mdb.models[modelName]
@@ -183,30 +195,36 @@ def AssignRockByDepth(modelName, partName, rock_layers):
 
 
 
-def AddplasticityToSteel(name_model, material_name='STEEL'):
-    m = mdb.models[name_model]
+def AddPlasticityToSteel(name_model, material_name, plastic_table):
 
-    mat = m.materials[material_name]
+    # import mdbPrerequisites
+    from abaqusConstants import ON
+    import traceback
 
-    plastic_table = (
-        (7.58424e+08, 0.0,  273.15),
-        (7.58424e+08, 0.25, 273.15),
-        (7.56376e+08, 0.0,  298.15),
-        (7.56376e+08, 0.25, 298.15),
-        (7.25660e+08, 0.0,  373.15),
-        (7.25660e+08, 0.25, 373.15),
-        (7.05182e+08, 0.0,  423.15),
-        (7.05182e+08, 0.25, 423.15),
-        (6.84705e+08, 0.0,  473.15),
-        (6.84705e+08, 0.25, 473.15),
-        (6.64227e+08, 0.0,  523.15),
-        (6.64227e+08, 0.25, 523.15)
-    )
+    try:
 
-    mat.Plastic(table=plastic_table, temperatureDependency=ON)
+        m = mdb.models[name_model]
+        mat = m.materials[material_name]
 
-    print(f">>> Plasticity dependent of temperature added to material '{material_name}'!")
+        # plastic_table = (
+        #     (7.58424e+08, 0.0,  273.15),
+        #     (7.58424e+08, 0.25, 273.15),
+        #     (7.56376e+08, 0.0,  298.15),
+        #     (7.56376e+08, 0.25, 298.15),
+        #     (7.25660e+08, 0.0,  373.15),
+        #     (7.25660e+08, 0.25, 373.15),
+        #     (7.05182e+08, 0.0,  423.15),
+        #     (7.05182e+08, 0.25, 423.15),
+        #     (6.84705e+08, 0.0,  473.15),
+        #     (6.84705e+08, 0.25, 473.15),
+        #     (6.64227e+08, 0.0,  523.15),
+        #     (6.64227e+08, 0.25, 523.15)
+        # )        
 
+        mat.Plastic(temperatureDependency=ON, table=plastic_table)
 
+        print(f">>> Plasticity dependent of temperature added to material '{material_name}'!")
 
-        
+    except Exception as e:
+        print(">>> ERRO CRITICO ao adicionar plasticidade no material '{}': {}".format(material_name, str(e)))
+        traceback.print_exc()
