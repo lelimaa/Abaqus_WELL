@@ -49,10 +49,12 @@ def MohrCoulombMaterial(modelName, name, data, sectionLength=1.):
     c = c * 1e6  # Convert from MPa to Pa
     ut = data.get("ultimate_traction")
     ut = ut * 1e6  # Convert from MPa to Pa
-    labData = data.get("lab_data")
-    if None in (phi, c, ut, labData):
+    # labData = data.get("lab_data")
+    # if None in (phi, c, ut, labData):
+    if None in (phi, c, ut):
         raise ValueError(
-            "friction_angle, dilatancy_angle,  cohesion, ultimate traction, and lab_data must be provided for Mohr-Coulomb material.")
+            # "friction_angle, dilatancy_angle,  cohesion, ultimate traction, and lab_data must be provided for Mohr-Coulomb material.")
+            "friction_angle, dilatancy_angle,  cohesion, and ultimate traction must be provided for Mohr-Coulomb material.")
         return
     if dilat is None:
         dilat = 0.0

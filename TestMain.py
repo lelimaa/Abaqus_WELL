@@ -152,10 +152,9 @@ if __name__ == "__main__":
                 'friction_angle': mc["FrictionAngle"],
                 'dilatancy_angle': mc["DilatancyAngle"],
                 'cohesion': mc["Cohesion"],
-                'ultimate_traction': mc["UltimateTraction"],
-                "lab_data": ((20001698.76, 0.0), )
+                'ultimate_traction': mc["UltimateTraction"]
+                # "lab_data": ((20001698.76, 0.0), )
                 })
-            # examples[rock_name]['lab_data'] = ((10e6, 0.0), (20e6, 0.01), (30e6, 0.03), (40e6, 0.06))
 
         if "DoublePowerParameters" in properties:
             examples[mat_name]["DoublePowerParameters"] = properties["DoublePowerParameters"]
@@ -176,9 +175,6 @@ if __name__ == "__main__":
 
 
     lythology_examples = []
-
-    # import pprint 
-    # pprint.pprint(filtered_layers)
 
     for i, layer in enumerate(filtered_layers, start=1):
 
