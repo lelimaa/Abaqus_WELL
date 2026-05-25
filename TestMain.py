@@ -23,11 +23,13 @@ from MESH.mesh import *
 from JOBS.job import *
 from POSTPROCESS.post import *
 
-mdb.models.changeKey(fromName='Model-1', toName='MyFirstModel')
+name_of_model = 'MyFirstModel'
 
-if 'MyFirstModel' not in mdb.models:
-    mdb.Model(name='MyFirstModel')
-# mdb.Model(name='MyFirstModel')
+mdb.models.changeKey(fromName='Model-1', toName=name_of_model)
+
+if name_of_model not in mdb.models:
+    mdb.Model(name=name_of_model)
+# mdb.Model(name=name_of_model)
 
 # Reading the json file and filling the input data for the analysis ####################
 
@@ -91,8 +93,8 @@ if __name__ == "__main__":
     }
 
     for part_name, part_data in data_code.items():
-            CreateGeometry('MyFirstModel', part_name, part_data)
-            PartitionLayersByDepth("MyFirstModel", part_name=part_name, layer_depths=part_data["layer_depths"])
+            CreateGeometry(name_of_model, part_name, part_data)
+            PartitionLayersByDepth(name_of_model, part_name=part_name, layer_depths=part_data["layer_depths"])
 
     # Definition of materials ###############################################################
 
@@ -192,86 +194,86 @@ if __name__ == "__main__":
 
 
     for mat_name, mat_data in examples.items():
-        CreateMaterial('MyFirstModel', mat_name, mat_data, sectionLength=1.)
+        CreateMaterial(name_of_model, mat_name, mat_data, sectionLength=1.)
 
-    mdb.models['MyFirstModel'].setValues(absoluteZero=0.0, stefanBoltzmann=5.670374e-8)
+    mdb.models[name_of_model].setValues(absoluteZero=0.0, stefanBoltzmann=5.670374e-8)
 
     # plastic_list = data["SteelGrades"][casing_type]["MisesPlastic"]["PlasticTable"]
     # plastic_table_formatted = tuple(tuple(item) for item in plastic_list)
 
     plastic_table = tuple([tuple(item) for item in data["SteelGrades"][casing_type]["MisesPlastic"]["PlasticTable"]])
     
-    AddPlasticityToSteel('MyFirstModel', 'STEEL', plastic_table)
+    AddPlasticityToSteel(name_of_model, 'STEEL', plastic_table)
 
-    CreateSetsPipe('MyFirstModel')
-    CreateSetsFluid('MyFirstModel')
-    CreateSetsRock('MyFirstModel')
+    CreateSetsPipe(name_of_model)
+    CreateSetsFluid(name_of_model)
+    CreateSetsRock(name_of_model)
 
 
     for section_name in material_examples.values():
-        Assign_Section('MyFirstModel',
+        Assign_Section(name_of_model,
                         partName=section_name["partName"],
                         sectionName=section_name["sectionName"],
                         isSolid=section_name["isSolid"])
  
     # Assign rock materials by depth layers
-    AssignRockByDepth('MyFirstModel', 'ROCK', lythology_examples)
+    AssignRockByDepth(name_of_model, 'ROCK', lythology_examples)
 
     # Create assembly
-    Assembly('MyFirstModel', partsNames=['FLUID', 'PIPE', 'ROCK'],
+    Assembly(name_of_model, partsNames=['FLUID', 'PIPE', 'ROCK'],
                 top_depth=top_depth, base_depth=base_depth)  
         
     # Defining sets for boundary conditions and interactions
-    CreateSetsAssembly('MyFirstModel')   
+    CreateSetsAssembly(name_of_model)   
 
-    CreateSurfacesAssembly('MyFirstModel', data_code)
+    CreateSurfacesAssembly(name_of_model, data_code)
 
     # Steps creation and boundary conditions application
 
-    CreateSteps('MyFirstModel')
+    CreateSteps(name_of_model)
 
     # Calculation of axial stresses in the casing due to its own weight (initial stresses)    
 
     stress_top, stress_bottom = CasingStresses(data, name_phase, examples["STEEL"]["density"], top_depth, base_depth)
 
-    ApplyCasingInitialStresses('MyFirstModel', top_depth, base_depth, stress_top, stress_bottom)
+    ApplyCasingInitialStresses(name_of_model, top_depth, base_depth, stress_top, stress_bottom)
 
-    CreateStepsPartOne('MyFirstModel')
+    CreateStepsPartOne(name_of_model)
 
     stresses_table = ConvertStressesJSON(data["InSituStresses"])
 
-    UpdateMaterialDensities('MyFirstModel', filtered_layers, stresses_table)
+    UpdateMaterialDensities(name_of_model, filtered_layers, stresses_table)
 
-    ApplyGeostaticStresses('MyFirstModel', filtered_layers, stresses_table)
+    ApplyGeostaticStresses(name_of_model, filtered_layers, stresses_table)
 
     CreateNormalizedGeothermalGrid(
-        name_model='MyFirstModel',
+        name_model=name_of_model,
         top_depth=data["ThermalGradient"]["Geothermal_cold"][0]["Depth"], top_temp_C=data["ThermalGradient"]["Geothermal_cold"][0]["Temperature"],
         bottom_depth=data["ThermalGradient"]["Geothermal_cold"][-1]["Depth"], bottom_temp_C=data["ThermalGradient"]["Geothermal_cold"][-1]["Temperature"],
         start_mesh_depth=top_depth,
         end_mesh_depth=base_depth 
     )
 
-    CreateStepsPartTwo('MyFirstModel')
+    CreateStepsPartTwo(name_of_model)
 
     ApplyExpressionFieldsGeothermal(
-        name_model='MyFirstModel', filtered_layers=filtered_layers,
+        name_model=name_of_model, filtered_layers=filtered_layers,
         top_depth=data["ThermalGradient"]["Geothermal_cold"][0]["Depth"], top_temp_C=data["ThermalGradient"]["Geothermal_cold"][0]["Temperature"],
         bottom_depth=data["ThermalGradient"]["Geothermal_cold"][-1]["Depth"], bottom_temp_C=data["ThermalGradient"]["Geothermal_cold"][-1]["Temperature"]
         )
 
-    CreateFluidExpressionFields(name_model='MyFirstModel', mud_weight_ppg=8.5)
+    CreateFluidExpressionFields(name_model=name_of_model, mud_weight_ppg=8.5)
 
     ApplyInitialTemperatures(
-        name_model='MyFirstModel', filtered_layers=filtered_layers,
+        name_model=name_of_model, filtered_layers=filtered_layers,
         top_depth=data["ThermalGradient"]["Geothermal_cold"][0]["Depth"], top_temp_C=data["ThermalGradient"]["Geothermal_cold"][0]["Temperature"],
         base_depth=data["ThermalGradient"]["Geothermal_cold"][-1]["Depth"], base_temp_C=data["ThermalGradient"]["Geothermal_cold"][-1]["Temperature"] 
     )
 
-    CreateStepsPartThree('MyFirstModel')
+    CreateStepsPartThree(name_of_model)
 
     CreateCreepStep(
-        name_model='MyFirstModel', 
+        name_model=name_of_model, 
         step_name='Perf_10_375_Creep',
         previous_step='Perf_10_375',
         time_period_days=2.0 
@@ -280,11 +282,11 @@ if __name__ == "__main__":
     )
 
     CreateStepsPartFour(
-        name_model='MyFirstModel'
+        name_model=name_of_model
     )
 
     CreateContactCondition(
-        name_model='MyFirstModel', 
+        name_model=name_of_model, 
         contact_name='C_FASEI', 
         step_name='Rev_9_875',
         main_surface_name='FASEI_MASTER', 
@@ -294,12 +296,12 @@ if __name__ == "__main__":
     )
 
     ConfigurePhaseRev(
-        name_model='MyFirstModel',
+        name_model=name_of_model,
         step_name='Rev_9_875'
     )
 
     CreateCreepStep(
-        name_model='MyFirstModel', 
+        name_model=name_of_model, 
         step_name='Rev_9_875_Creep',
         previous_step='Rev_9_875',
         time_period_days=10950.0, 
@@ -314,7 +316,7 @@ if __name__ == "__main__":
     radius_search_rock = (2 * inner_radius_wellbore + thickness_wellbore) / 2.0
 
     CreateMeshSizeHorizontal(
-        name_model='MyFirstModel',
+        name_model=name_of_model,
         name_instance='FLUID_INST',
         filtered_layers=filtered_layers,
         radius_middle=radius_search_fluid,
@@ -322,7 +324,7 @@ if __name__ == "__main__":
         deviationFactor=0.1
     )
     CreateMeshSizeHorizontal(
-        name_model='MyFirstModel',
+        name_model=name_of_model,
         name_instance='PIPE_INST',
         filtered_layers=filtered_layers,
         radius_middle=radius_search_pipe,
@@ -330,7 +332,7 @@ if __name__ == "__main__":
         deviationFactor=0.1
     )
     CreateMeshBiasHorizontal(
-        name_model='MyFirstModel',
+        name_model=name_of_model,
         name_instance='ROCK_INST',
         filtered_layers=filtered_layers,
         radius_middle=radius_search_rock,
@@ -347,41 +349,41 @@ if __name__ == "__main__":
     # print(f"Delta Y for vertical edges mesh: {delta_y_mesh} meters")
 
     # CreateMeshVerticalBySet(
-    #     name_model='MyFirstModel',
+    #     name_model=name_of_model,
     #     name_set='MESH_VERTICAL',
     #     element_size=10
     # )
 
     CreateMeshVerticalWithBias(
-        name_model='MyFirstModel',
+        name_model=name_of_model,
         name_set='MESH_VERTICAL',
          min_size=1,
          max_size=10
     )
 
     AttributeTypeElement(
-        name_model='MyFirstModel',
+        name_model=name_of_model,
         name_set='ALL'
     )
 
     GenerateMesh(
-        name_model='MyFirstModel',
+        name_model=name_of_model,
         name_instance='FLUID_INST'
     )
     GenerateMesh(
-        name_model='MyFirstModel',
+        name_model=name_of_model,
         name_instance='PIPE_INST'
     )
     GenerateMesh(
-        name_model='MyFirstModel',
+        name_model=name_of_model,
         name_instance='ROCK_INST'
     )
 
     # Creating a set for the target point in the bottom of the casing 
 
-    CreateSetPointRock(model_name='MyFirstModel', r_coord=inner_radius_wellbore, z_coord=-abs(base_depth))
+    CreateSetPointRock(model_name=name_of_model, r_coord=inner_radius_wellbore, z_coord=-abs(base_depth))
     
-    CreateSetPointCasing(model_name='MyFirstModel', r_coord=inner_radius_annular, z_coord=-abs(base_depth))
+    CreateSetPointCasing(model_name=name_of_model, r_coord=inner_radius_annular, z_coord=-abs(base_depth))
 
 
     # Creating a job and saving the model
@@ -389,7 +391,7 @@ if __name__ == "__main__":
     job_name = 'WellClosureJob'
 
     CreateJob(
-        name_model='MyFirstModel',
+        name_model=name_of_model,
         name_job=job_name,
         num_cpus=14,
         num_gpus=1, 

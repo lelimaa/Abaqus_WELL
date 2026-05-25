@@ -1,9 +1,6 @@
 from abaqus import mdb
 from abaqusConstants import *
-
 from part import *
-
-
 
 def ElasticMaterial(modelName, name, data, sectionLength=1.):
     m = mdb.models[modelName]
@@ -31,17 +28,6 @@ def ElasticMaterial(modelName, name, data, sectionLength=1.):
         mat.Expansion(table=((data.get('expansion'),),))
     subroutine = None
     return mat, sect, subroutine
-
-# def Plasticity(modelName, name, data, sectionLength=1.):
-#     m = mdb.models[modelName]
-#     mat = m.Material(name=name)
-
-#     mat, sect, subroutine = ElasticMaterial(
-#         modelName, name, data, sectionLength)
-
-#     if data.get('plastic') is not None:
-#         mat.Plastic(table=data.get('plastic'), temperatureDependency=ON)
-#         # mat.Density(table=((data.get('plastic'),),))
 
 
 def vonMisesMaterial(modelName, name, data, sectionLength=1.):
@@ -206,21 +192,6 @@ def AddPlasticityToSteel(name_model, material_name, plastic_table):
         m = mdb.models[name_model]
         mat = m.materials[material_name]
 
-        # plastic_table = (
-        #     (7.58424e+08, 0.0,  273.15),
-        #     (7.58424e+08, 0.25, 273.15),
-        #     (7.56376e+08, 0.0,  298.15),
-        #     (7.56376e+08, 0.25, 298.15),
-        #     (7.25660e+08, 0.0,  373.15),
-        #     (7.25660e+08, 0.25, 373.15),
-        #     (7.05182e+08, 0.0,  423.15),
-        #     (7.05182e+08, 0.25, 423.15),
-        #     (6.84705e+08, 0.0,  473.15),
-        #     (6.84705e+08, 0.25, 473.15),
-        #     (6.64227e+08, 0.0,  523.15),
-        #     (6.64227e+08, 0.25, 523.15)
-        # )        
-
         mat.Plastic(temperatureDependency=ON, table=plastic_table)
 
         print(f">>> Plasticity dependent of temperature added to material '{material_name}'!")
@@ -228,3 +199,33 @@ def AddPlasticityToSteel(name_model, material_name, plastic_table):
     except Exception as e:
         print(">>> ERRO CRITICO ao adicionar plasticidade no material '{}': {}".format(material_name, str(e)))
         traceback.print_exc()
+
+
+# def Plasticity(modelName, name, data, sectionLength=1.):
+#     m = mdb.models[modelName]
+#     mat = m.Material(name=name)
+
+#     mat, sect, subroutine = ElasticMaterial(
+#         modelName, name, data, sectionLength)
+
+#     if data.get('plastic') is not None:
+#         mat.Plastic(table=data.get('plastic'), temperatureDependency=ON)
+#         # mat.Density(table=((data.get('plastic'),),))
+
+
+    # This is the example of how the plastic table should look like.
+
+    # plastic_table = (
+    #     (7.58424e+08, 0.0,  273.15),
+    #     (7.58424e+08, 0.25, 273.15),
+    #     (7.56376e+08, 0.0,  298.15),
+    #     (7.56376e+08, 0.25, 298.15),
+    #     (7.25660e+08, 0.0,  373.15),
+    #     (7.25660e+08, 0.25, 373.15),
+    #     (7.05182e+08, 0.0,  423.15),
+    #     (7.05182e+08, 0.25, 423.15),
+    #     (6.84705e+08, 0.0,  473.15),
+    #     (6.84705e+08, 0.25, 473.15),
+    #     (6.64227e+08, 0.0,  523.15),
+    #     (6.64227e+08, 0.25, 523.15)
+    # )        
