@@ -2,7 +2,7 @@
 #
 # Abaqus/CAE Release 2024 replay file
 # Internal Version: 2023_09_21-09.55.25 RELr426 190762
-# Run by Leticia on Fri May 15 12:20:21 2026
+# Run by Leticia on Tue May 26 09:11:43 2026
 #
 
 # from driverUtils import executeOnCaeGraphicsStartup
@@ -15,8 +15,11 @@ session.Viewport(name='Viewport: 1', origin=(1.55859, 1.5463), width=229.425,
 session.viewports['Viewport: 1'].makeCurrent()
 from driverUtils import executeOnCaeStartup
 executeOnCaeStartup()
-execfile('TestMain.py', __main__.__dict__)
+execfile('PLANESTRAIN/Test_Main_PS.py', __main__.__dict__)
 #: Data keys: dict_keys(['AnalysisData', 'ThermalGradient', 'Tubulars', 'Lithology', 'InSituStresses', 'Rocks', 'Cements', 'SteelGrades', 'Phases', 'Events', 'Fluids'])
-#* TypeError: string indices must be integers
-#* File "TestMain.py", line 51, in <module>
-#*     casing_data = fase["Casing"]
+#: Chave 'Phases' não encontrada
+#: dict_keys(['Name', 'Depth', 'Top', 'Bottom', 'CreepTime', 'Coupling', 'HoleDiameter', 'Solver', 'Domain', 'WellboreFluid', 'GeothermalGradient'])
+#: Phase 'None' not found in data['Phases']
+#* KeyError: None
+#* File "PLANESTRAIN/Test_Main_PS.py", line 53, in <module>
+#*     diameter_wellbore = data["Phases"][name_phase]['HoleDiameter']

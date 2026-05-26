@@ -1,0 +1,22 @@
+# -*- coding: mbcs -*-
+#
+# Abaqus/CAE Release 2024 replay file
+# Internal Version: 2023_09_21-09.55.25 RELr426 190762
+# Run by Leticia on Tue May 26 09:12:57 2026
+#
+
+# from driverUtils import executeOnCaeGraphicsStartup
+# executeOnCaeGraphicsStartup()
+#: Executing "onCaeGraphicsStartup()" in the site directory ...
+from abaqus import *
+from abaqusConstants import *
+session.Viewport(name='Viewport: 1', origin=(1.55859, 1.5463), width=229.425, 
+    height=153.393)
+session.viewports['Viewport: 1'].makeCurrent()
+from driverUtils import executeOnCaeStartup
+executeOnCaeStartup()
+execfile('PLANESTRAIN/Test_Main_PS.py', __main__.__dict__)
+#: Data keys: dict_keys(['AnalysisData', 'ThermalGradient', 'Tubulars', 'Lithology', 'InSituStresses', 'Rocks', 'Cements', 'SteelGrades', 'Phases', 'Events', 'Fluids'])
+#* KeyError: 'Phases'
+#* File "PLANESTRAIN/Test_Main_PS.py", line 41, in <module>
+#*     name_phase = data["AnalysisData"]["Phases"]
