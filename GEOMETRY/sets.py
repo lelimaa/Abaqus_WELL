@@ -776,7 +776,7 @@ def CreateSetPointRock(model_name, r_coord, z_coord):
         target_node_seq = inst_rock.nodes.sequenceFromLabels((node_label,))
         a.Set(name=set_name, nodes=target_node_seq)
         
-        print(">>> SUCESSO: Set of rock '%s' created (No: %d)" % (set_name, node_label))
+        print("SUCESSO: Set of rock '%s' created (No: %d)" % (set_name, node_label))
         return a.sets[set_name]
     return None    
     
@@ -812,7 +812,7 @@ def CreateSetPointCasing(model_name, r_coord, z_coord):
             target_node_seq = inst_pipe.nodes.sequenceFromLabels((node_label,))
             a.Set(name=set_name, nodes=target_node_seq)
             
-            print(">>> SUCCESS: Set '%s' created (Node Label: %d)" % (set_name, node_label))
+            print("SUCCESS: Set '%s' created (Node Label: %d)" % (set_name, node_label))
             return a.sets[set_name]
             
         except Exception as e:

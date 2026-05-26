@@ -120,7 +120,7 @@ def ApplyGeostaticStresses(name_model, filtered_layers, stresses_table):
 
         print(f"[{set_name}-{name_material}] Stresses: Top ({z_top}m) = {stress_top/1e6:.2f} MPa | Bottom ({z_bottom}m) = {stress_bottom/1e6:.2f} MPa")
     
-    print("\n>>> All the geostatic stresses were successfully applied!")
+    print("All the geostatic stresses were successfully applied!")
 
 
 def CreateNormalizedGeothermalGrid(name_model, top_depth, top_temp_C, bottom_depth, bottom_temp_C, start_mesh_depth, end_mesh_depth):
@@ -156,7 +156,7 @@ def CreateNormalizedGeothermalGrid(name_model, top_depth, top_temp_C, bottom_dep
         pointDataFormat=GRID, fieldDataType=SCALAR, gridPointPlane=PLANE13,
         gridPointData=gridPointData1
     )
-    print(f">>> Mappedfield 'Geothermal' successfully created! (T_ref = {T_ref} K)")
+    print(f"Mappedfield 'Geothermal' successfully created! (T_ref = {T_ref} K)")
 
 
 def ApplyCasingInitialStresses(name_model, z_top, z_bottom, stress_top, stress_bottom):
@@ -340,9 +340,9 @@ def ApplyExpressionFieldsGeothermal(name_model, filtered_layers, top_depth=2000.
             description=f'Normalized Temperature for the layer base {set_name}',
             expression=expressionf
         )
-        print(f">>> ExpressionField '{name_field}' created with denominator {t_top_K:.1f} K")
+        print(f"ExpressionField '{name_field}' created with denominator {t_top_K:.1f} K")
 
-    print("\n>>> All the thermal ExpressionFields of the rocks were created!")
+    print("All the thermal ExpressionFields of the rocks were created!")
 
     
 def CreateFluidExpressionFields(name_model, mud_weight_ppg=8.5):
@@ -374,7 +374,7 @@ def CreateFluidExpressionFields(name_model, mud_weight_ppg=8.5):
             description=f'Pressure hydrostatic clean ({mud_weight_ppg} ppg)',
             expression=expression_clean
         )
-        print(f">>> ExpressionField '{name_field}' created with success!")
+        print(f"ExpressionField '{name_field}' created with success!")
 
 
 def ApplyInitialTemperatures(name_model, filtered_layers, step_name='Initial', top_depth=2000.0, top_temp_C=4.0, base_depth=4000.0, base_temp_C=75.0):
@@ -413,12 +413,12 @@ def ApplyInitialTemperatures(name_model, filtered_layers, step_name='Initial', t
                 field=name_field_analytical,
                 magnitudes=(t_top_K, )
             )
-            print(f">>> Temperature '{name_condition}' applied in the region {name_set} (Magnitude: {t_top_K:.2f} K)")
+            print(f"Temperature '{name_condition}' applied in the region {name_set} (Magnitude: {t_top_K:.2f} K)")
 
     # print("\n>>> All the temperatures of the layers were started successfully!")
 
 
-def CreateStepsPartThree(name_model,hole_diameter):
+def CreateStepsPartThree(name_model,name_step):
     """
     Create a step of pressure in the model, corresponding to the stage of drilling.
     """ 
@@ -426,10 +426,7 @@ def CreateStepsPartThree(name_model,hole_diameter):
     m = mdb.models[name_model]
     a = m.rootAssembly
 
-    diameter_str = str(hole_diameter).replace('.','_')
-
     # name_step = 'Perf_10_375'
-    name_step = 'Perf_' + diameter_str
 
     m.StaticStep(name=name_step, previous='TempDefine')
     print(f">>> Step '{name_step}' created with success!")
@@ -449,7 +446,7 @@ def CreateStepsPartThree(name_model,hole_diameter):
         amplitude=UNSET
     )
 
-    print(">>> Hydrostatic pressure of the mud applied in the open well region.")
+    print("Hydrostatic pressure of the mud applied in the open well region.")
     
     m.boundaryConditions['FIX_FASEI_WELL'].deactivate(
         name_step)
@@ -483,19 +480,19 @@ def CreateCreepStep(name_model, step_name, previous_step, time_period_days, max_
     print(f">>> ViscoStep '{step_name}' created: Total duration of {time_period_days} days.")
 
     if max_inc_days:
-        print(f"    - Incremento travado em no máximo {max_inc_days} dias por passo.")
+        print(f"    - Increment locked in maximum of {max_inc_days} days per step.")
 
 
-def CreateStepsPartFour(name_model):
+def CreateStepsPartFour(name_model,name_step,name_step_prev):
     """
     Create a step corresponding to the stage of casing installation.
     """     
     
     m = mdb.models[name_model]
 
-    name_step = 'Rev_9_875'
+    # name_step = 'Rev_9_875'
 
-    m.StaticStep(name=name_step, previous='Perf_10_375_Creep', minInc=1e-15)
+    m.StaticStep(name=name_step, previous=name_step_prev, minInc=1e-15)
     print(f">>> Step '{name_step}' created with success!") 
 
 def CreateContactCondition(name_model, contact_name, step_name, main_surface_name, secondary_set_name, friction_coeff=0.5, secondary_instance='ROCK_INST'):
@@ -521,9 +518,9 @@ def CreateContactCondition(name_model, contact_name, step_name, main_surface_nam
             pressureOverclosure=HARD, allowSeparation=ON, constraintEnforcementMethod=DEFAULT
         )
 
-        print(f">>> Contact property '{contact_name}' created (Friction: {friction_coeff}).")
+        print(f"Contact property '{contact_name}' created (Friction: {friction_coeff}).")
     else:
-        print(f">>> Contact property '{contact_name}' already exists. Skipping creation.")
+        print(f"Contact property '{contact_name}' already exists. Skipping creation.")
 
     region_main = a.surfaces[main_surface_name]
     region_secondary = a.instances[secondary_instance].sets[secondary_set_name]
@@ -546,9 +543,9 @@ def CreateContactCondition(name_model, contact_name, step_name, main_surface_nam
         clearanceRegion=None
     )
 
-    print(f">>> Interaction '{contact_name}' activated in Step '{step_name}'.")
+    print(f"Interaction '{contact_name}' activated in Step '{step_name}'.")
 
-def ConfigurePhaseRev(name_model, step_name='Rev_9_875'):
+def ConfigurePhaseRev(name_model, step_name):
     """
     Create conditions of pressure in the phase of casing installation.
     """ 
@@ -566,7 +563,7 @@ def ConfigurePhaseRev(name_model, step_name='Rev_9_875'):
             magnitude=1.0,
             amplitude=UNSET
         )
-        print("   - Pressure P_FASEI_COMPLETED_WELL activated.")
+        print("- Pressure P_FASEI_COMPLETED_WELL activated.")
 
     if 'FASEI_FLUIDO' in a.surfaces.keys():
         region_fluid = a.surfaces['FASEI_FLUIDO']
@@ -579,21 +576,21 @@ def ConfigurePhaseRev(name_model, step_name='Rev_9_875'):
             magnitude=1.0,
             amplitude=UNSET
         )
-        print("   - Pressure P_FASEI_FLUID activated.")
+        print("- Pressure P_FASEI_FLUID activated.")
 
     if 'P_FASEI_OPEN_WELL' in m.loads.keys():
         m.loads['P_FASEI_OPEN_WELL'].deactivate(step_name)
-        print("    - Load P_FASEI_OPEN_WELL deactivated.")
+        print(" - Load P_FASEI_OPEN_WELL deactivated.")
 
     if 'MC_FASEI_REV' in m.interactions.keys():
         m.interactions['MC_FASEI_REV'].setValuesInStep(
             stepName=step_name, 
             activeInStep=True)
-        print("   - Interaction of casing (Model Change) activated.")
+        print("- Interaction of casing (Model Change) activated.")
 
     if 'PIN_FASEI' in m.boundaryConditions.keys():
         m.boundaryConditions['PIN_FASEI'].deactivate(step_name)
-        print("   - Boundary condition PIN_FASEI (temporary trava) deactivated.")
+        print(" - Boundary condition PIN_FASEI (temporary lock) deactivated.")
 
-    print(">>> Phase of casing successfully configured!")
+    # print("Phase of casing successfully configured!")
 

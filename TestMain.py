@@ -228,7 +228,18 @@ if __name__ == "__main__":
 
     # Steps creation and boundary conditions application  ##############################################
 
-    
+    # Four main steps are required to be created, corresponding to drilling and casing stages
+
+    diameter_wellbore_inch = diameter_wellbore / 0.0254
+    diameter_wellbore_str = str(diameter_wellbore_inch).replace('.','_')
+
+    diameter_casing_inch = outer_diamenter_pipe / 0.0254
+    diameter_casing_str = str(diameter_casing_inch).replace('.','_')
+
+    name_step1 = 'Drill_' + diameter_wellbore_str
+    name_step2 = name_step1 + '_Creep'
+    name_step3 = 'Cas_' + diameter_casing_str
+    name_step4 = name_step3 + '_Creep'
     
     CreateSteps(name_of_model)
 
@@ -273,185 +284,190 @@ if __name__ == "__main__":
     )
 
     # Another part of creation of steps
-    CreateStepsPartThree(name_of_model,data["Phases"][name_phase]['HoleDiameter'])
+    CreateStepsPartThree(name_of_model,name_step1)
+    
 
-    # CreateCreepStep(
-    #     name_model=name_of_model, 
-    #     step_name='Perf_10_375_Creep',
-    #     previous_step='Perf_10_375',
-    #     time_period_days=2.0 
-    #     # max_inc_days=None,
-    #     # cetol_value=0.01
-    # )
+    CreateCreepStep(
+        name_model=name_of_model, 
+        step_name=name_step2,
+        previous_step=name_step1,
+        time_period_days=2.0 
+        # max_inc_days=None,
+        # cetol_value=0.01
+    )
 
-    # # Another part of creation of steps
-    # CreateStepsPartFour(
-    #     name_model=name_of_model
-    # )
+    # Another part of creation of steps
+    CreateStepsPartFour(
+        name_model=name_of_model,
+        name_step=name_step3,
+        name_step_prev=name_step2
+    )
 
-    # CreateContactCondition(
-    #     name_model=name_of_model, 
-    #     contact_name='C_FASEI', 
-    #     step_name='Rev_9_875',
-    #     main_surface_name='FASEI_MASTER', 
-    #     secondary_set_name='FASEI_SLAVE', 
-    #     friction_coeff=0.5, 
-    #     secondary_instance='ROCK_INST'
-    # )
+    CreateContactCondition(
+        name_model=name_of_model, 
+        contact_name='C_FASEI', 
+        step_name=name_step3,
+        main_surface_name='FASEI_MASTER', 
+        secondary_set_name='FASEI_SLAVE', 
+        friction_coeff=0.5, 
+        secondary_instance='ROCK_INST'
+    )
 
-    # ConfigurePhaseRev(
-    #     name_model=name_of_model,
-    #     step_name='Rev_9_875'
-    # )
+    ConfigurePhaseRev(
+        name_model=name_of_model,
+        step_name=name_step3
+    )
 
-    # CreateCreepStep(
-    #     name_model=name_of_model, 
-    #     step_name='Rev_9_875_Creep',
-    #     previous_step='Rev_9_875',
-    #     time_period_days=10950.0, 
-    #     max_inc_days=180.0
-    #     # cetol_value=0.01
-    # )
+    CreateCreepStep(
+        name_model=name_of_model, 
+        step_name=name_step4,
+        previous_step=name_step3,
+        time_period_days=10950.0, 
+        max_inc_days=180.0
+        # cetol_value=0.01
+    )
 
     ###############################################################################################
 
-    # # Calling mesh
+    # Calling mesh
 
-    # radius_search_pipe = (inner_radius_pipe+inner_radius_annular) / 2.0
-    # radius_search_fluid = (inner_radius_annular + inner_radius_wellbore) / 2.0
-    # radius_search_rock = (2 * inner_radius_wellbore + thickness_wellbore) / 2.0
+    radius_search_pipe = (inner_radius_pipe+inner_radius_annular) / 2.0
+    radius_search_fluid = (inner_radius_annular + inner_radius_wellbore) / 2.0
+    radius_search_rock = (2 * inner_radius_wellbore + thickness_wellbore) / 2.0
 
-    # CreateMeshSizeHorizontal(
-    #     name_model=name_of_model,
-    #     name_instance='FLUID_INST',
-    #     filtered_layers=filtered_layers,
-    #     radius_middle=radius_search_fluid,
-    #     elementSize=4e-3,
-    #     deviationFactor=0.1
-    # )
-    # CreateMeshSizeHorizontal(
-    #     name_model=name_of_model,
-    #     name_instance='PIPE_INST',
-    #     filtered_layers=filtered_layers,
-    #     radius_middle=radius_search_pipe,
-    #     elementSize=4e-3,
-    #     deviationFactor=0.1
-    # )
-    # CreateMeshBiasHorizontal(
-    #     name_model=name_of_model,
-    #     name_instance='ROCK_INST',
-    #     filtered_layers=filtered_layers,
-    #     radius_middle=radius_search_rock,
-    #     minSize=0.5e-3,
-    #     maxSize=3.0
-    # )
+    CreateMeshSizeHorizontal(
+        name_model=name_of_model,
+        name_instance='FLUID_INST',
+        filtered_layers=filtered_layers,
+        radius_middle=radius_search_fluid,
+        elementSize=4e-3,
+        deviationFactor=0.1
+    )
+    CreateMeshSizeHorizontal(
+        name_model=name_of_model,
+        name_instance='PIPE_INST',
+        filtered_layers=filtered_layers,
+        radius_middle=radius_search_pipe,
+        elementSize=4e-3,
+        deviationFactor=0.1
+    )
+    CreateMeshBiasHorizontal(
+        name_model=name_of_model,
+        name_instance='ROCK_INST',
+        filtered_layers=filtered_layers,
+        radius_middle=radius_search_rock,
+        minSize=0.5e-3,
+        maxSize=3.0
+    )
 
-    # # CreateMeshVerticalBySet(
-    # #     name_model=name_of_model,
-    # #     name_set='MESH_VERTICAL',
-    # #     element_size=10
-    # # )
-
-    # CreateMeshVerticalWithBias(
+    # CreateMeshVerticalBySet(
     #     name_model=name_of_model,
     #     name_set='MESH_VERTICAL',
-    #      min_size=1,
-    #      max_size=10
+    #     element_size=10
     # )
 
-    # AttributeTypeElement(
-    #     name_model=name_of_model,
-    #     name_set='ALL'
+    CreateMeshVerticalWithBias(
+        name_model=name_of_model,
+        name_set='MESH_VERTICAL',
+         min_size=1,
+         max_size=10
+    )
+
+    AttributeTypeElement(
+        name_model=name_of_model,
+        name_set='ALL'
+    )
+
+    GenerateMesh(
+        name_model=name_of_model,
+        name_instance='FLUID_INST'
+    )
+    GenerateMesh(
+        name_model=name_of_model,
+        name_instance='PIPE_INST'
+    )
+    GenerateMesh(
+        name_model=name_of_model,
+        name_instance='ROCK_INST'
+    )
+
+    # Creating a set for the target point in the bottom of the casing 
+
+    CreateSetPointRock(model_name=name_of_model, r_coord=inner_radius_wellbore, z_coord=-abs(base_depth))    
+    CreateSetPointCasing(model_name=name_of_model, r_coord=inner_radius_annular, z_coord=-abs(base_depth))
+
+
+    # Creating a job and saving the model #################################################################
+    job_name = 'WellClosureJob'
+
+    CreateJob(
+        name_model=name_of_model,
+        name_job=job_name,
+        num_cpus=14,
+        num_gpus=1, 
+        run_now=False
+    )
+
+    run_now=False
+
+    if run_now:
+        RunJob(job_name)
+
+    mdb.saveAs(pathName=r'C:\Users\hidalgo\Documents\GitHub\Abaqus_WELL_\WellClosureJob.cae')
+    print("Model saved as 'WellClosureJob.cae' in the project folder. You can open it with Abaqus/CAE to review the model and submit the job for analysis.")
+
+    # Output exporting 
+
+    # ExportRockdisplacementAllFrames(
+    #     odb_path=job_name + '.odb',
+    #     output_file='wall_displacement_all_frames.csv'
     # )
 
-    # GenerateMesh(
-    #     name_model=name_of_model,
-    #     name_instance='FLUID_INST'
-    # )
-    # GenerateMesh(
-    #     name_model=name_of_model,
-    #     name_instance='PIPE_INST'
-    # )
-    # GenerateMesh(
-    #     name_model=name_of_model,
-    #     name_instance='ROCK_INST'
+    # ExportRockStressAllFrames(
+    #     odb_path=job_name + '.odb',
+    #     output_file='rock_stress_all_frames.csv'
     # )
 
-    # # Creating a set for the target point in the bottom of the casing 
+    # ExportCasingStressAllFrames(
+    #     odb_path=job_name + '.odb',
+    #     output_file='casing_stress_all_frames.csv'
+    # )
 
-    # CreateSetPointRock(model_name=name_of_model, r_coord=inner_radius_wellbore, z_coord=-abs(base_depth))
+    # ExportCasingTemperatureAllFrames(
+    #     odb_path=job_name + '.odb',  
+    #     output_file='casing_temperature_all_frames.csv'
+    # )     
+
+    # ExportRockTemperatureAllFrames(
+    #     odb_path=job_name + '.odb',
+    #     output_file='rock_temperature_all_frames.csv'
+    # )   
+
+
+    # End of the script. ############################################
+
+
+    # Falta:
+    # enxugar as defs para os sets
+    # enxugar as defs para os steps
+    # adaptar para os diferentes nomes de rev que dependem dos diametros dos casings
     
-    # CreateSetPointCasing(model_name=name_of_model, r_coord=inner_radius_annular, z_coord=-abs(base_depth))
-
-
-    # # Creating a job and saving the model #################################################################
-    # job_name = 'WellClosureJob'
-
-    # CreateJob(
-    #     name_model=name_of_model,
-    #     name_job=job_name,
-    #     num_cpus=14,
-    #     num_gpus=1, 
-    #     run_now=False
+    # Can be discussed if necessary to be plotted    
+    # ExportCasingTemperatureAllFrames(
+    #     odb_path=job_name + '.odb',  
+    #     output_file='casing_temperature_all_frames.csv'
+    # )
+    
+    # Can be useful in the plane strain codes
+    # ExportPipeStressAtFixedPoint(
+    #     odb_path=job_name + '.odb',
+    #     output_file='pipe_stress_at_fixed_point_bottom.csv'
     # )
 
-    # # RunJob(job_name)
-
-    # # mdb.saveAs(pathName=r'C:\Users\hidalgo\Documents\GitHub\Abaqus_WELL_\WellClosureJob.cae')
-    # # # print("Model saved as 'WellClosureJob.cae' in the project folder. You can open it with Abaqus/CAE to review the model and submit the job for analysis.")
-
-    # # Output exporting 
-
-    # # ExportRockdisplacementAllFrames(
-    # #     odb_path=job_name + '.odb',
-    # #     output_file='wall_displacement_all_frames.csv'
-    # # )
-
-    # # ExportRockStressAllFrames(
-    # #     odb_path=job_name + '.odb',
-    # #     output_file='rock_stress_all_frames.csv'
-    # # )
-
-    # # ExportCasingStressAllFrames(
-    # #     odb_path=job_name + '.odb',
-    # #     output_file='casing_stress_all_frames.csv'
-    # # )
-
-    # # ExportCasingTemperatureAllFrames(
-    # #     odb_path=job_name + '.odb',  
-    # #     output_file='casing_temperature_all_frames.csv'
-    # # )     
-
-    # # ExportRockTemperatureAllFrames(
-    # #     odb_path=job_name + '.odb',
-    # #     output_file='rock_temperature_all_frames.csv'
-    # # )   
-
-
-    # # End of the script. ############################################
-
-
-    # # Falta:
-    # # enxugar as defs para os sets
-    # # enxugar as defs para os steps
-    # # adaptar para os diferentes nomes de rev que dependem dos diametros dos casings
-    
-    # # Can be discussed if necessary to be plotted    
-    # # ExportCasingTemperatureAllFrames(
-    # #     odb_path=job_name + '.odb',  
-    # #     output_file='casing_temperature_all_frames.csv'
-    # # )
-    
-    # # Can be useful in the plane strain codes
-    # # ExportPipeStressAtFixedPoint(
-    # #     odb_path=job_name + '.odb',
-    # #     output_file='pipe_stress_at_fixed_point_bottom.csv'
-    # # )
-
-    # # Can be useful in the plane strain codes
-    # # ExportDisplacementHistory(
-    # #     odb_path=job_name + '.odb',
-    # #     node_label=3,
-    # #     instance_name='ROCK_INST',
-    # #     output_file='displacement_no_3.csv'
-    # # )
+    # Can be useful in the plane strain codes
+    # ExportDisplacementHistory(
+    #     odb_path=job_name + '.odb',
+    #     node_label=3,
+    #     instance_name='ROCK_INST',
+    #     output_file='displacement_no_3.csv'
+    # )
