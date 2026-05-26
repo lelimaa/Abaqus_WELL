@@ -450,7 +450,6 @@ if __name__ == "__main__":
     # Falta:
     # enxugar as defs para os sets
     # enxugar as defs para os steps
-    # adaptar para os diferentes nomes de rev que dependem dos diametros dos casings
     
     # Can be discussed if necessary to be plotted    
     # ExportCasingTemperatureAllFrames(
