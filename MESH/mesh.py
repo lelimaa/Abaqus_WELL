@@ -87,7 +87,7 @@ def CreateMeshSizeHorizontal(name_model, name_instance, filtered_layers, radius_
                 constraint=FINER
             )
 
-    print(f">>> Uniform mesh (Size: {elementSize}) applyed in {found_lines} lines of '{name_instance}.'")    
+    print(f"Uniform mesh (Size: {elementSize}) applyed in {found_lines} lines of '{name_instance}.'")    
     
 def CreateMeshVerticalBySet(name_model, name_set, element_size):
     m = mdb.models[name_model]
@@ -102,7 +102,7 @@ def CreateMeshVerticalBySet(name_model, name_set, element_size):
         constraint=FINER
     )
 
-    print(f">>> Uniform mesh (Size: {element_size}) applyed with success in set '{name_set}!'")
+    print(f"Uniform mesh (Size: {element_size}) applyed with success in set '{name_set}!'")
 
 def CreateMeshVerticalWithBias(name_model, name_set, min_size, max_size):
     m = mdb.models[name_model]
@@ -118,9 +118,8 @@ def CreateMeshVerticalWithBias(name_model, name_set, min_size, max_size):
         maxSize=max_size
     )
 
-    print(f">>> Mesh Bias applyed: Interface ({min_size}) | Center ({max_size})")
+    print(f"Mesh Bias applyed: Interface ({min_size}) | Center ({max_size})")
 
-    
 def AttributeTypeElement(name_model, name_set):
     m = mdb.models[name_model]
     a = m.rootAssembly
@@ -130,7 +129,7 @@ def AttributeTypeElement(name_model, name_set):
     region_aim = a.sets[name_set]
     a.setElementType(regions=region_aim, elemTypes=(elemType1, elemType2))
 
-    print(f">>> Element type CAX4 and CAX3 assigned to set '{name_set}'!")
+    print(f"Element type CAX4 and CAX3 assigned to set '{name_set}'!")
 
 def GenerateMesh(name_model, name_instance):
     m = mdb.models[name_model]
@@ -140,4 +139,4 @@ def GenerateMesh(name_model, name_instance):
 
     a.generateMesh(regions=(inst, ))
 
-    print(f">>> Mesh generated with success for instance '{name_instance}'!")
+    print(f"Mesh generated with success for instance '{name_instance}'!")

@@ -2,6 +2,9 @@ from abaqus import mdb
 from abaqusConstants import *
 
 def CreateSetsPipe(name_model):
+    """
+    Creates all the sets corresponding to the pipe.
+    """
     m = mdb.models[name_model]
     p = m.parts['PIPE']
     f = p.faces
@@ -73,6 +76,9 @@ def CreateSetsPipe(name_model):
         p.Set(edges=all_horizontals, name='FASEI_REV_TT')
     
 def CreateSetsFluid(name_model):
+    """
+    Creates all the sets present in the fluid (annular space).
+    """
     m = mdb.models[name_model]
     p = m.parts['FLUID']
     f = p.faces
@@ -183,6 +189,10 @@ def CreateSetsFluid(name_model):
         p.Set(edges=all_horizontals, name='FASEI_ANNULAR_TT')
 
 def CreateSetsRock(name_model):
+    """
+    Creates all the sets corresponding to the rock layers, including individually 
+    for all the lithologies.
+    """
     m = mdb.models[name_model]
     p = m.parts['ROCK']
     e = p.edges
@@ -210,7 +220,7 @@ def CreateSetsRock(name_model):
 
         if edges_interface:
             p.Set(edges=edges_interface, name=name_set)
-            print(f"Set '{name_set}' gerado automaticamente em Y = {height_y}")
+            print(f"Set '{name_set}' automatically created in Y = {height_y}")
 
 
     # L1-I_ID, L2-I_ID, L3-I_ID, ... , LN-I_ID
@@ -289,8 +299,10 @@ def CreateSetsRock(name_model):
             p.Set(faces=face_found, name=name_set)
             print(f"Set of Face '{name_set}' created in X={x_middle_face}, Y={y_middle_layer}")
 
-def CreateSetsAssembly(name_model):  
-
+def CreateSetsAssembly(name_model): 
+    """
+    Creates all the sets corresponding to the assembly.
+    """ 
     m = mdb.models[name_model]  
     a = m.rootAssembly
     
@@ -583,6 +595,9 @@ def CreateSetsAssembly(name_model):
         print("Error: No edges found at Y coordinate =", y_top)
 
 def CreateSurfacesAssembly(modelName, data):
+    """
+    Creates all the surfaces corresponding to the assembly.
+    """
 
     m = mdb.models[modelName]
     a = m.rootAssembly
@@ -727,8 +742,15 @@ def CreateSurfacesAssembly(modelName, data):
     a.Surface(side1Edges= edges_fluid_phasei, name=surface_name_fluid_phasei)
 
     # print("Surface '%s' created successfully containing %d edges." % (surface_name_fluid_phasei, len(edges_fluid_phasei)))
+
+
+##### These functions were created in order to display the results in the post processing phase at specific points of the model, such as the outer face of the pipe (bottom) and at the rock wall (bottom).
     
 def CreateSetPointRock(model_name, r_coord, z_coord):
+    """
+    Creates the set corresponding to a point located at the bottom and the internal 
+    surface of the well formation.
+    """
 
     m = mdb.models[model_name]
     a = m.rootAssembly
@@ -754,11 +776,15 @@ def CreateSetPointRock(model_name, r_coord, z_coord):
         target_node_seq = inst_rock.nodes.sequenceFromLabels((node_label,))
         a.Set(name=set_name, nodes=target_node_seq)
         
-        print(">>> SUCESSO: Set of rock '%s' created (No: %d)" % (set_name, node_label))
+        print("SUCESSO: Set of rock '%s' created (No: %d)" % (set_name, node_label))
         return a.sets[set_name]
     return None    
     
 def CreateSetPointCasing(model_name, r_coord, z_coord):
+    """
+    Creates the set corresponding to a point located at the bottom and the internal 
+    surface of the well formation.
+    """
     
     m = mdb.models[model_name]
     a = m.rootAssembly
@@ -786,7 +812,7 @@ def CreateSetPointCasing(model_name, r_coord, z_coord):
             target_node_seq = inst_pipe.nodes.sequenceFromLabels((node_label,))
             a.Set(name=set_name, nodes=target_node_seq)
             
-            print(">>> SUCCESS: Set '%s' created (Node Label: %d)" % (set_name, node_label))
+            print("SUCCESS: Set '%s' created (Node Label: %d)" % (set_name, node_label))
             return a.sets[set_name]
             
         except Exception as e:
