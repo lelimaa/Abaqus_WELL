@@ -3,6 +3,9 @@ from abaqusConstants import *
 from part import *
 
 def ElasticMaterial(modelName, name, data, sectionLength=1.):
+    """
+    Get the properties necessary for an elastic material.
+    """
     m = mdb.models[modelName]
     mat = m.Material(name=name)
     sect_name = name + '_Section'
@@ -31,6 +34,9 @@ def ElasticMaterial(modelName, name, data, sectionLength=1.):
 
 
 def vonMisesMaterial(modelName, name, data, sectionLength=1.):
+    """
+    Get and define the vonMises properties.
+    """
     mat, sect, subroutine = ElasticMaterial(
         modelName, name, data, sectionLength)
     if data.get("stress_strain_curve") is not None:
@@ -39,6 +45,9 @@ def vonMisesMaterial(modelName, name, data, sectionLength=1.):
 
 
 def MohrCoulombMaterial(modelName, name, data, sectionLength=1.):
+    """
+    Get and define the MohrCoulombMaterial properties.
+    """
     mat, sect, subroutine = ElasticMaterial(
         modelName, name, data, sectionLength)
     phi = data.get("friction_angle")
@@ -67,10 +76,15 @@ def MohrCoulombMaterial(modelName, name, data, sectionLength=1.):
     # mat.Creep(law=USER, table=())
 
 def DoublePowerCreepMaterial(modelName, name, data, sectionLength=1.):
+    """
+    Get and define the DoublePowerCreepMaterial properties.
+    """
+
     mat, sect, subroutine = ElasticMaterial(
         modelName, name, data, sectionLength)
     
-    print(f"O nome que chegou na função foi: {name}")
+    print(f"The material that reached the function was: {name}")
+    
     try:
         dp_data = data.get("DoublePowerParameters", {})
         A1 = dp_data["a1"] 
@@ -89,6 +103,9 @@ def DoublePowerCreepMaterial(modelName, name, data, sectionLength=1.):
 
 
 def DoubleMechanismCreepMaterial(modelName, name, data, sectionLength=1.):
+    """
+    Get and define the DoubleMechanismCreepMaterial properties.
+    """
     mat, sect, subroutine = ElasticMaterial(
         modelName, name, data, sectionLength)
     mat.Creep(law=USER, table=())
@@ -97,6 +114,9 @@ def DoubleMechanismCreepMaterial(modelName, name, data, sectionLength=1.):
 
 
 def CreateMaterial(modelName, name, data, sectionLength=1.):
+    """
+    Create and address each material behavior.
+    """
     behavior = data.get("behavior")
     mapping = {
         "ELASTIC": ElasticMaterial,
@@ -111,9 +131,12 @@ def CreateMaterial(modelName, name, data, sectionLength=1.):
     else:
         raise ValueError("Behavior '%s' not recognized." % behavior)
 
-def Assign_Section(modelName, partName, sectionName, setName=None, isSolid=True):
+def AssignSection(modelName, partName, sectionName, setName=None, isSolid=True):
+    """
+    Assigns the materials, except rock, which has a specific function for all layers.
+    """
     model = mdb.models[modelName]
-    # Only work with PIPE and FLUID from material_examples
+    # Only works with PIPE and FLUID from material_examples
     allowed_parts = ("PIPE", "FLUID")
     if partName not in allowed_parts:
         print("Skipping section assignment for '%s' (use AssignRockByDepth for rock materials)" % partName)
@@ -151,6 +174,9 @@ def Assign_Section(modelName, partName, sectionName, setName=None, isSolid=True)
 
 
 def AssignRockByDepth(modelName, partName, rock_layers):
+    """
+    Assigns the materials for each lithology.
+    """
     model = mdb.models[modelName]
     part = model.parts[partName]
 
@@ -173,7 +199,7 @@ def AssignRockByDepth(modelName, partName, rock_layers):
                 thicknessAssignment=FROM_SECTION
             )
 
-            print("Assigned section '%s' to existing set '%s'." % (sec_name, set_name))
+            # print("Assigned section '%s' to existing set '%s'." % (sec_name, set_name))
 
         else:
 
@@ -182,6 +208,10 @@ def AssignRockByDepth(modelName, partName, rock_layers):
 
 
 def AddPlasticityToSteel(name_model, material_name, plastic_table):
+    """
+    Adds plasticity to the created pipe, giving the appropriate parameters, which 
+    depend on temperature.
+    """
 
     # import mdbPrerequisites
     from abaqusConstants import ON
@@ -194,10 +224,10 @@ def AddPlasticityToSteel(name_model, material_name, plastic_table):
 
         mat.Plastic(temperatureDependency=ON, table=plastic_table)
 
-        print(f">>> Plasticity dependent of temperature added to material '{material_name}'!")
+        # print(f"Plasticity dependent of temperature added to material '{material_name}'!")
 
     except Exception as e:
-        print(">>> ERRO CRITICO ao adicionar plasticidade no material '{}': {}".format(material_name, str(e)))
+        print("CRITICAL ERROR when adding plasticity to material '{}': {}".format(material_name, str(e)))
         traceback.print_exc()
 
 

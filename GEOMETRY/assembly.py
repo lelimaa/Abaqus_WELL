@@ -21,6 +21,9 @@ import connectorBehavior
 
 
 def Assembly(name_model, partsNames, top_depth=3200, base_depth=3600):
+    """
+    Creates the assembly of all the parts.
+    """
     model = mdb.models[name_model]
     a = model.rootAssembly
     depth = base_depth - top_depth
@@ -41,4 +44,4 @@ def Assembly(name_model, partsNames, top_depth=3200, base_depth=3600):
         instances[name] = inst
     
     a.regenerate()
-    print("Assembly completed with active sets:", a.sets.keys())
+    # print("Assembly completed with active sets:", a.sets.keys())
