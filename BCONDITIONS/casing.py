@@ -17,4 +17,3 @@ def CasingStresses(data, name_phase, density_steel, z_top, z_bottom):
     stress_bottom = -stress_base + density_steel * gravity * (height_base_casing - z_bottom)
 
     return stress_top, stress_bottom
-

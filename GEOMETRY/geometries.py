@@ -16,7 +16,10 @@ from driverUtils import executeOnCaeStartup
 executeOnCaeStartup()
 
 def Pipe(name_model, name_part, inner_radius, base_depth, top_depth, thickness):
-
+    """
+    Creates the geometry of the pipe part, which will be partitioned along 
+    the creation of different lithologies.
+    """
     # Creation of Sketch - Geometry of the Pipe
     sketch_name = '__profile__' + name_part
     s = mdb.models[name_model].ConstrainedSketch(
@@ -40,6 +43,10 @@ def Pipe(name_model, name_part, inner_radius, base_depth, top_depth, thickness):
 
 
 def Fluid(name_model, name_part, inner_radius, base_depth, top_depth, thickness):
+    """
+    Creates the geometry of the fluid part, which will be partitioned along 
+    the creation of different lithologies.
+    """
 
     # Creation of Sketch - Geometry of the Fluid/Annular
     sketch_name = '__profile__' + name_part
@@ -64,8 +71,10 @@ def Fluid(name_model, name_part, inner_radius, base_depth, top_depth, thickness)
 
 
 def Rock(name_model, name_part, inner_radius, base_depth, top_depth, thickness):
-
-
+    """
+    Creates the geometry of the rock part, which will be partitioned into
+    different lithologies.
+    """
     # Creation of Sketch - Geometry of the Rock
     sketch_name = '__profile__' + name_part
     s2 = mdb.models[name_model].ConstrainedSketch(
@@ -98,8 +107,8 @@ def Rock(name_model, name_part, inner_radius, base_depth, top_depth, thickness):
 
 def PartitionLayersByDepth(model_name, part_name, layer_depths):
     """
-    Cria partições horizontais (camadas) em uma Part axisimétrica
-    usando planos em profundidades especificadas.
+    Creates horizontal partitions (layers) in an axisymmetric partition
+    using planes at specified depths.
     """
     model = mdb.models[model_name]
     p = model.parts[part_name]
@@ -117,6 +126,10 @@ def PartitionLayersByDepth(model_name, part_name, layer_depths):
                                     )
 
 def CreateGeometry(name_model, name, data):
+    """
+    This function is responsible for addressing the creation of the different 
+    parts of the model, namely, pipe, fluid and rock.
+    """
     print("Creating Geometry: ", name)
 
     geometry = {

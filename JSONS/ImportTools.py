@@ -42,7 +42,7 @@ def process_lithology(data, global_top, global_bottom):
         rock_name = layer["Rock"]
         rock_mat = json_rocks[rock_name].copy()
         mat_name = lname + "_" + rock_name # Ex: LAYER_01_SANDSTONE
-        print(rock_mat.keys())
+        # print(rock_mat.keys())
         rock_mat["Name"] = mat_name
         # rock_mat["ElasticParameters"]["Density"] = getFromOverburden(data["overburden"])
         filtered_rocks[mat_name] = rock_mat
