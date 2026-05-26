@@ -1,4 +1,6 @@
-import os
+from abaqusConstants import *
+from abaqus import *
+# import os
 import json
 import sys
 # from MESH.meshAlt import *
@@ -10,8 +12,6 @@ import sys
 # from MATERIALS.materials import *
 # from GEOMETRY.sets import *
 # from GEOMETRY.assembly import *
-from abaqusConstants import *
-from abaqus import *
 from PLANESTRAIN.geometry_plane_strain import *
 
 # path_project = r'C:\Users\juani\Documents\Github\Abaqus_WELL_'
@@ -54,7 +54,7 @@ else:
 diameter_wellbore = phase_data["HoleDiameter"]
 outer_radius_wellbore = diameter_wellbore / 2
 outer_radius_wellbore = outer_radius_wellbore * 0.0254  # Convert from inches to meters
-thickness_wellbore = diameter_wellbore * 1.5 # Variavel da espessura da rocha
+thickness_wellbore = outer_radius_wellbore * 0.98 # Variavel da espessura da rocha
 thickness_wellbore = thickness_wellbore * 0.0254 # Convert from inches to meters
 inner_radius_wellbore = outer_radius_wellbore + thickness_wellbore
 inner_radius_wellbore = inner_radius_wellbore * 0.0254

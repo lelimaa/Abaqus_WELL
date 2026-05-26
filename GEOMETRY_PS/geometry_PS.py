@@ -142,8 +142,8 @@ class PlaneStrainPart:
 #     CasingPart = PlaneStrainPart("CasingPart1",
 #                      data={"center1": [0,0],    
 #                            "center2": [0,0],
-#                            "outer_radius": 5,
-#                            "thickness": 1},)
+#                            "outer_radius": 8,
+#                            "thickness": 2},)
 #     CasingPart.create_part("MyFirstModel")
 #     CasingPart.create_base_sets("MyFirstModel")
 #     CasingPart.add_to_assembly("MyFirstModel")
