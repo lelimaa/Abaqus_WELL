@@ -55,24 +55,22 @@ else:
 ############ Rock dimensions ############################
 diameter_wellbore = phase_data["HoleDiameter"]
 outer_radius_wellbore = diameter_wellbore / 2
-# outer_radius_wellbore = outer_radius_wellbore * 0.0254  # Convert from inches to meters
-thickness_wellbore = outer_radius_wellbore * 0.98 # Variavel da espessura da rocha
-# thickness_wellbore = thickness_wellbore * 0.0254 # Convert from inches to meters
+outer_radius_wellbore = outer_radius_wellbore * 0.0254  # Convert from inches to meters
+thickness_wellbore = outer_radius_wellbore * 0.9  # Variavel da espessura da rocha
 inner_radius_wellbore = outer_radius_wellbore - thickness_wellbore
-# inner_radius_wellbore = inner_radius_wellbore * 0.0254
+
 ########### Casing / Pipe dimensions ####################
 outer_diameter_pipe = data["Tubulars"][name_tubular]['OD']
-outer_radius_pipe = outer_diameter_pipe / 2
-# outer_radius_pipe = radius_pipe * 0.0254  # Convert from inches to meters
+outer_radius_pipe = (outer_diameter_pipe / 2) * 0.1 # 10% do valor do raio externo para criar um espaço entre a parede do tubo e a borda do modelo
+outer_radius_pipe = outer_radius_pipe * 0.0254  # Convert from inches to meters
 thickness_pipe = data["Tubulars"][name_tubular]['Thickness']
-thickness_pipe = thickness_pipe * 0.0254  # Convert from inches to meters
+thickness_pipe = thickness_pipe * 0.1 * 0.0254  # 10% do valor da espessira (inches to meters)
 inner_radius_pipe = outer_radius_pipe - thickness_pipe
-# inner_radius_pipe = inner_radius_pipe * 0.0254  # Convert from inches to meters
+
 ########## Annulus dimensions ###########################
 outer_radius_annular = inner_radius_wellbore
 inner_radius_annular = outer_radius_pipe
 thickness_annular = outer_radius_annular - inner_radius_annular
-# thickness_annular = thickness_annular * 0.0254  # Convert from inches to meters
 
 l_depth = data["AnalysisData"]["Depth"]
 print(f"The bottom of the wellbore is at: {-l_depth} meters")
@@ -93,8 +91,8 @@ if __name__ == "__main__":
     RockPart = PlaneStrainPart("RockPart1",
                      data={"center1": [0,0],
                            "center2": [0,0],
-                           "outer_radius": outer_radius_annular,
-                           "thickness": thickness_annular},)
+                           "outer_radius": outer_radius_wellbore,
+                           "thickness": thickness_wellbore},)
     RockPart.create_part("MyFirstModel")
     RockPart.create_base_sets("MyFirstModel")
     RockPart.add_to_assembly("MyFirstModel")
