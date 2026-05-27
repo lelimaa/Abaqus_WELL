@@ -1,0 +1,38 @@
+<Description>
+   ABAQUS/ABQcaeK rank 0 received the ABORT signal
+
+</Description>
+
+<Context>
+   CAE
+</Context>
+
+<Callstack>
+</Callstack>
+
+<Memory>
+   <Current>            0 GB </Current>
+   <Resident>           0 GB </Resident>
+   <Physical>          23 GB </Physical>
+   <Limit>              0 GB </Limit>
+   <Accessible>        23 GB </Accessible>
+   <Free>              12 GB </Free>
+   <Allocator>            DL </Allocator>
+</Memory>
+
+<Swap>
+       <Size>          27 GB </Size>
+       <Used>          16 GB </Used>
+       <Free>          10 GB </Free>
+</Swap>
+
+<Directories>
+  <current> C:\Users\juani\Documents\Github\Abaqus_WELL_ </current> <free>    170 GB </free>   <used>    304 GB </used> 
+     <temp> C:\Users\juani\AppData\Local\Temp </temp>    <free>    170 GB </free>
+</Directories>
+
+<Installation>
+     <Version> Learning Edition 2025 2025 HF2 </Version>
+       <Build> 2025_03_14-10.12.51 RELr427 199052 </Build>
+</Installation>
+
