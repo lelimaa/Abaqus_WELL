@@ -1,6 +1,6 @@
 import json
 # with open(r'C:\Users\juani\Documents\Github\Abaqus_WELL_\wellClosure_axi.json') as f:
-with open(r'C:\Users\leticia\Documents\GitHub\Abaqus_WELL_\wellClosure_axi.json') as f:
+with open(r'C:\Users\leticia\Documents\GitHub\Abaqus_WELL\wellClosure_axi.json') as f:
     data = json.load(f)
 
 def process_lithology(data, global_top, global_bottom):
