@@ -10,6 +10,7 @@
     "Solver": "Abaqus",
     "Domain": "planestrain",
     "WellboreFluid": null,
+    "StandOff": 100,
     "Phases": "812c492a-c945-4184-be51-841c5fb86b15",
     "GeothermalGradient": "temp. drilling 14in - 60 degC"
   },

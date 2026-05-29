@@ -66,6 +66,11 @@ outer_radius_pipe = outer_radius_pipe * 0.0254  # Convert from inches to meters
 thickness_pipe = data["Tubulars"][name_tubular]['Thickness']
 thickness_pipe = thickness_pipe * 0.1 * 0.0254  # 10% do valor da espessira (inches to meters)
 inner_radius_pipe = outer_radius_pipe - thickness_pipe
+stand_off = data["AnalysisData"]["StandOff"] / 100   # Convert from inches to meters
+min_wall_thickness = data["Tubulars"][name_tubular]["MinWallThickness"]/100
+min_wall_thickness = (1 - min_wall_thickness)   # Convert from inches to meters
+thickness_min = thickness_pipe * min_wall_thickness
+ovality = data["Tubulars"][name_tubular]["Ovality"] / 100
 
 ########## Annulus dimensions ###########################
 outer_radius_annular = inner_radius_wellbore
@@ -75,9 +80,20 @@ thickness_annular = outer_radius_annular - inner_radius_annular
 l_depth = data["AnalysisData"]["Depth"]
 print(f"The bottom of the wellbore is at: {-l_depth} meters")
 
-# Script to create the geometry ##########################################
+################### Script to create the geometry ##########################################
 
 if __name__ == "__main__":
+    if 'MyFirstModel' not in mdb.models:
+        mdb.Model(name='MyFirstModel')
+    
+    if PlaneStrainPart.parametrize_geometry is None:
+        PlaneStrainPart.parametrize_geometry = {
+            "center1": [0,0],
+            "center2": [0,0],
+            "outer_radius": outer_radius_wellbore,
+            "thickness": thickness_wellbore
+        }
+
     AnnulusPart = PlaneStrainPart("AnnulusPart1",
                      data={"center1": [0,0],
                            "center2": [0,0],
@@ -108,7 +124,7 @@ if __name__ == "__main__":
     CasingPart.add_to_assembly("MyFirstModel")
     print("Casing created and added to assembly.")
 
-    # Definition of materials ###############################################################
+    ################### Definition of materials #################################################
     lithology = data["Lithology"]
     
     for layer in lithology:
@@ -119,7 +135,6 @@ if __name__ == "__main__":
     examples = {}
 
     # casing_type = "VM110"
-    # casing_type = "VM-95"
     casing_type = data["Tubulars"][name_tubular]["Material"] 
     # Seleciona o tipo de aço para o casing definido no json (ex: VM-95) e pega as propriedades do material a partir do json
     steelgrade_info = data["SteelGrades"][casing_type]
