@@ -15,7 +15,7 @@ if path_project not in sys.path:
 # from BCONDITIONS.conditions import *
 # from GEOMETRY.geometries import *
 # from JOBS.job import *
-# from JSONS.ImportTools import *
+from JSONS.ImportTools import *
 from MATERIALS.materials import *
 from GEOMETRY.sets import *
 # from GEOMETRY.assembly import *
@@ -111,9 +111,9 @@ if __name__ == "__main__":
     # Definition of materials ###############################################################
     lithology = data["Lithology"]
     
-    for item in lithology:
-        if item["Top"] < l_depth and item["Bottom"] > l_depth:
-            layer_rock = item["Rock"]
+    for layer in lithology:
+        if l_depth >= layer["Top"] and l_depth < layer["Bottom"]:
+            layer_rock = layer["Rock"]
             print(f"Layer at depth {l_depth} meters: {layer_rock}")
             
     examples = {}
@@ -153,31 +153,29 @@ if __name__ == "__main__":
         "type": "Fluid"
     }
     
-    for mat_name, properties in layer_rock.items():
+    examples[layer_rock] = {
+    "behavior": data["Rocks"][layer_rock]["Law"],
+    'density': data["Rocks"][layer_rock]["ElasticParameters"]["Density"],
+    'elastic': (data["Rocks"][layer_rock]["ElasticParameters"]["Young"]*1e9,
+                data["Rocks"][layer_rock]["ElasticParameters"]["Poisson"]),
+    'conductivity': data["Rocks"][layer_rock]["ThermalParameters"]["Conductivity"],
+    'specific_heat': data["Rocks"][layer_rock]["ThermalParameters"]["SpecificHeat"],
+    'expansion': data["Rocks"][layer_rock]["ThermalParameters"]["ThermalExpansion"],
+    "type": "Rock"
+}
 
-        examples[mat_name] = {
-            "behavior": properties["Law"],
-            'density': properties["ElasticParameters"]["Density"],
-            'elastic': (properties["ElasticParameters"]["Young"]*1e9,
-                        properties["ElasticParameters"]["Poisson"]),
-            'conductivity': properties["ThermalParameters"]["Conductivity"],
-            'specific_heat': properties["ThermalParameters"]["SpecificHeat"],
-            'expansion': properties["ThermalParameters"]["ThermalExpansion"],
-            "type": "Rock"
-        }
-
-        if "MohrCoulombParameters" in properties:
-            mc = properties["MohrCoulombParameters"]
-            examples[mat_name].update({
-                'friction_angle': mc["FrictionAngle"],
-                'dilatancy_angle': mc["DilatancyAngle"],
-                'cohesion': mc["Cohesion"],
-                "lab_data": ((20001698.76, 0.0), )
-            })
-            # examples[rock_name]['lab_data'] = ((10e6, 0.0), (20e6, 0.01), (30e6, 0.03), (40e6, 0.06))
-
-        if "DoublePowerParameters" in properties:
-            examples[mat_name]["DoublePowerParameters"] = properties["DoublePowerParameters"]
+    if "MohrCoulombParameters" in data["Rocks"][layer_rock]:
+        mc = data["Rocks"][layer_rock]["MohrCoulombParameters"]
+        examples[layer_rock].update({
+        'friction_angle': mc["FrictionAngle"],
+        'dilatancy_angle': mc["DilatancyAngle"],
+        'cohesion': mc["Cohesion"],
+        "lab_data": ((20001698.76, 0.0), )
+        })
+  
+############# PAREI AQUI #############################
+    if "DoublePowerParameters" in data["Rocks"][layer_rock]:
+            examples[layer_rock]["DoublePowerParameters"] = data["Rocks"][layer_rock]["DoublePowerParameters"]
 
     material_examples = {
         "PIPE": {

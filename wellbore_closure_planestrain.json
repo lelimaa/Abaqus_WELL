@@ -1,7 +1,7 @@
 {
   "AnalysisData": {
     "Name": "691340b2162e6b3c840657eb",
-    "Depth": 2500.0,
+    "Depth": 2600.0,
     "Top": 0.0,
     "Bottom": 0.0,
     "CreepTime": 0.0,
@@ -983,7 +983,8 @@
     "drilling_14in (60 deg)": {
       "Density": 10.5,
       "ThermalGradient": "temp. drilling 14in - 60 degC",
-      "Data": []
+      "Compressibility": 1E-05,
+      "ThermalExpansion": 0.0001242
     },
     "derated_mud": {
       "Density": 9.5,
