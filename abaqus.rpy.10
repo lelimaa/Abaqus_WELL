@@ -2,7 +2,7 @@
 #
 # Abaqus/CAE Release 2024 replay file
 # Internal Version: 2023_09_21-09.55.25 RELr426 190762
-# Run by Leticia on Mon Jun  1 14:32:05 2026
+# Run by Leticia on Mon Jun  1 15:05:15 2026
 #
 
 # from driverUtils import executeOnCaeGraphicsStartup
@@ -20,7 +20,15 @@ execfile('Test_Main_PS.py', __main__.__dict__)
 #: Data keys: dict_keys(['AnalysisData', 'ThermalGradient', 'Tubulars', 'Lithology', 'InSituStresses', 'Rocks', 'Cements', 'SteelGrades', 'Phases', 'Events', 'Fluids'])
 #: 812c492a-c945-4184-be51-841c5fb86b15
 #: The bottom of the wellbore is at: -2600.0 meters
-#* AttributeError: type object 'PlaneStrainPart' has no attribute 
-#* 'parametrize_geometry'
-#* File "Test_Main_PS.py", line 90, in <module>
-#*     if PlaneStrainPart.parametrize_geometry is None:
+#: Annulus created and added to assembly.
+#: Rock created and added to assembly.
+#: Casing created and added to assembly.
+#: Layer at depth 2600.0 meters: SANDSTONE
+#: Selected Fluid: drilling_14in (60 deg)
+#: >>> Plasticity dependent of temperature added to material 'STEEL'!
+#* KeyError: 'FLUID_INST'
+#* File "Test_Main_PS.py", line 235, in <module>
+#*     CreateSetsAssembly('MyFirstModel')
+#* File "C:\Users\leticia\Documents\GitHub\Abaqus_WELL\GEOMETRY\sets.py", line 
+#* 328, in CreateSetsAssembly
+#*     inst_f = a.instances['FLUID_INST']

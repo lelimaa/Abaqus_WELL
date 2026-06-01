@@ -22,7 +22,7 @@ from GEOMETRY.assembly import *
 from GEOMETRY_PS.geometry_PS import *
 
 # Change default model name to avoid conflicts when running the script multiple times in the same Abaqus session
-# mdb.models.changeKey(fromName='Model-1', toName='MyFirstModel')
+mdb.models.changeKey(fromName='Model-1', toName='MyFirstModel')
 
 if 'MyFirstModel' not in mdb.models:
     mdb.Model(name='MyFirstModel')
@@ -232,9 +232,9 @@ if __name__ == "__main__":
     #          top_depth=top_depth, base_depth=base_depth)
 
     # Defining sets for boundary conditions and interactions
-    CreateSetsAssembly('MyFirstModel')
-    CreateSurfacesAssembly('MyFirstModel', data_code)
+    # CreateSetsAssembly('MyFirstModel')
+    # CreateSurfacesAssembly('MyFirstModel', data_code)
 
     # Steps creation and boundary conditions application
 
-    CreateSteps('MyFirstModel')
+    # CreateSteps('MyFirstModel')
