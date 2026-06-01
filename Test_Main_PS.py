@@ -10,15 +10,15 @@ path_project = r'C:\Users\leticia\Documents\GitHub\Abaqus_WELL'
 if path_project not in sys.path:
     sys.path.append(path_project)
 
-# from MESH.meshAlt import *
-# from BCONDITIONS.casing import *
-# from BCONDITIONS.conditions import *
-# from GEOMETRY.geometries import *
-# from JOBS.job import *
+from MESH.meshAlt import *
+from BCONDITIONS.casing import *
+from BCONDITIONS.conditions import *
+from GEOMETRY.geometries import *
+from JOBS.job import *
 from JSONS.ImportTools import *
 from MATERIALS.materials import *
 from GEOMETRY.sets import *
-# from GEOMETRY.assembly import *
+from GEOMETRY.assembly import *
 from GEOMETRY_PS.geometry_PS import *
 
 # Change default model name to avoid conflicts when running the script multiple times in the same Abaqus session
@@ -67,10 +67,11 @@ thickness_pipe = data["Tubulars"][name_tubular]['Thickness']
 thickness_pipe = thickness_pipe * 0.1 * 0.0254  # 10% do valor da espessira (inches to meters)
 inner_radius_pipe = outer_radius_pipe - thickness_pipe
 stand_off = data["AnalysisData"]["StandOff"] / 100   # Convert from inches to meters
-min_wall_thickness = data["Tubulars"][name_tubular]["MinWallThickness"]/100
-min_wall_thickness = (1 - min_wall_thickness)   # Convert from inches to meters
-thickness_min = thickness_pipe * min_wall_thickness
-ovality = data["Tubulars"][name_tubular]["Ovality"] / 100
+min_wall_thickness = data["Tubulars"][name_tubular]["MinThickness"]
+# min_wall_thickness = min_wall_thickness / 100  # Convert from inches to meters
+# min_wall_thickness = (1 - min_wall_thickness)   # Convert from inches to meters
+# thickness_min = thickness_pipe * min_wall_thickness
+# ovality = data["Tubulars"][name_tubular]["Ovality"] / 100
 
 ########## Annulus dimensions ###########################
 outer_radius_annular = inner_radius_wellbore
@@ -86,15 +87,15 @@ if __name__ == "__main__":
     if 'MyFirstModel' not in mdb.models:
         mdb.Model(name='MyFirstModel')
     
-    if PlaneStrainPart.parametrize_geometry is None:
-        PlaneStrainPart.parametrize_geometry = {
-            "center1": [0,0],
-            "center2": [0,0],
-            "outer_radius": outer_radius_wellbore,
-            "thickness": thickness_wellbore
-        }
+    # if PlaneStrainPart.parametrize_geometry is None:
+    #     PlaneStrainPart.parametrize_geometry = {
+    #         "center1": [0,0],
+    #         "center2": [0,0],
+    #         "outer_radius": outer_radius_wellbore,
+    #         "thickness": thickness_wellbore
+    #     }
 
-    AnnulusPart = PlaneStrainPart("AnnulusPart1",
+    AnnulusPart = PlaneStrainPart("FLUID",
                      data={"center1": [0,0],
                            "center2": [0,0],
                            "outer_radius": outer_radius_annular,
@@ -104,7 +105,7 @@ if __name__ == "__main__":
     AnnulusPart.add_to_assembly("MyFirstModel")
     print("Annulus created and added to assembly.")
 
-    RockPart = PlaneStrainPart("RockPart1",
+    RockPart = PlaneStrainPart("ROCK",
                      data={"center1": [0,0],
                            "center2": [0,0],
                            "outer_radius": outer_radius_wellbore,
@@ -114,7 +115,7 @@ if __name__ == "__main__":
     RockPart.add_to_assembly("MyFirstModel")
     print("Rock created and added to assembly.")
 
-    CasingPart = PlaneStrainPart("CasingPart1",
+    CasingPart = PlaneStrainPart("PIPE",
                      data={"center1": [0,0],    
                            "center2": [0,0],
                            "outer_radius": outer_radius_pipe,
@@ -223,16 +224,15 @@ if __name__ == "__main__":
                        sectionName=section_name["sectionName"],
                        isSolid=section_name["isSolid"])
 
-    # Assign rock materials by depth layers
-    AssignRockByDepth('MyFirstModel', 'ROCK', lythology_examples)
+    # # Assign rock materials by depth layers
+    # AssignRockByDepth('MyFirstModel', 'ROCK', lythology_examples)
 
     # Create assembly
-    Assembly('MyFirstModel', partsNames=['FLUID', 'PIPE', 'ROCK'],
-             top_depth=top_depth, base_depth=base_depth)
+    # Assembly('MyFirstModel', partsNames=['FLUID', 'PIPE', 'ROCK'],
+    #          top_depth=top_depth, base_depth=base_depth)
 
     # Defining sets for boundary conditions and interactions
     CreateSetsAssembly('MyFirstModel')
-
     CreateSurfacesAssembly('MyFirstModel', data_code)
 
     # Steps creation and boundary conditions application
