@@ -188,7 +188,6 @@ if __name__ == "__main__":
         "lab_data": ((20001698.76, 0.0), )
         })
   
-############# PAREI AQUI #############################
     if "DoublePowerParameters" in data["Rocks"][layer_rock]:
             examples[layer_rock]["DoublePowerParameters"] = data["Rocks"][layer_rock]["DoublePowerParameters"]
 
@@ -212,3 +211,30 @@ if __name__ == "__main__":
         absoluteZero=0.0, stefanBoltzmann=5.670374e-8)
 
     AddplasticityToSteel('MyFirstModel', 'STEEL')
+
+######### Create sets for boundary conditions and interactions ############################
+    CreateSetsPipe('MyFirstModel')
+    CreateSetsFluid('MyFirstModel')
+    CreateSetsRock('MyFirstModel')
+
+    for section_name in material_examples.values():
+        Assign_Section('MyFirstModel',
+                       partName=section_name["partName"],
+                       sectionName=section_name["sectionName"],
+                       isSolid=section_name["isSolid"])
+
+    # Assign rock materials by depth layers
+    AssignRockByDepth('MyFirstModel', 'ROCK', lythology_examples)
+
+    # Create assembly
+    Assembly('MyFirstModel', partsNames=['FLUID', 'PIPE', 'ROCK'],
+             top_depth=top_depth, base_depth=base_depth)
+
+    # Defining sets for boundary conditions and interactions
+    CreateSetsAssembly('MyFirstModel')
+
+    CreateSurfacesAssembly('MyFirstModel', data_code)
+
+    # Steps creation and boundary conditions application
+
+    CreateSteps('MyFirstModel')

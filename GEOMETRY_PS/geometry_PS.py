@@ -21,19 +21,19 @@ class PlaneStrainPart:
         self.span = span
         self.get_geometry()
 
-    def parameterize_geometry(self):
-        standoff = self.data.get("standoff", 0.0)
-        self.geometry["center1"][0] += standoff
-        self.geometry["center2"][0] += standoff
+    # def parameterize_geometry(self):
+    #     standoff = self.data.get("standoff", 0.0)
+    #     self.geometry["center1"][0] += standoff
+    #     self.geometry["center2"][0] += standoff
 
-        min_wallthickness = self.data.get("excentricity", 0.0)
-        self.geometry["center1"][0] += min_wallthickness
-        self.geometry["center2"][1] += min_wallthickness
+    #     min_wallthickness = self.data.get("excentricity", 0.0)
+    #     self.geometry["center1"][0] += min_wallthickness
+    #     self.geometry["center2"][1] += min_wallthickness
 
-        ovalization = self.data.get("ovalization", 0.0)
-        self.geometry["center1"][0] += ovalization
-        self.geometry["center2"][1] += ovalization
-        pass
+    #     ovalization = self.data.get("ovalization", 0.0)
+    #     self.geometry["center1"][0] += ovalization
+    #     self.geometry["center2"][1] += ovalization
+    #     pass
 
     def get_geometry(self):
         center1 = self.data.get("center1", [0,0])
