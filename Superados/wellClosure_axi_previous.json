@@ -592,20 +592,44 @@
     }
   },
   "Cements": {
-    "CEMENT_Type1": {      
+    "CEMENT_Type1": {
+      "MohrCoulombParameters": {
+        "Cohesion": 8.852872,
+        "FrictionAngle": 1.7,
+        "DilatancyAngle": 0.4,
+        "UltimateTraction": 0.0
+      },
+      "Law": "MOHR_COULOMB",
       "Elasticity": "ISOTROPIC",
       "ElasticParameters": {
         "Density": 1437.9171,
         "Young": 4.791858,
         "Poisson": 0.138
+      },
+      "ThermalParameters": {
+        "Conductivity": 0.517,
+        "SpecificHeat": 2639.0,
+        "ThermalExpansion": 7.34
       }
     },
     "CLASS_G": {
+      "MohrCoulombParameters": {
+        "Cohesion": 8.852872,
+        "FrictionAngle": 1.7,
+        "DilatancyAngle": 0.4,
+        "UltimateTraction": 0.0
+      },
+      "Law": "MOHR_COULOMB",
       "Elasticity": "ISOTROPIC",
       "ElasticParameters": {
         "Density": 1893.26,
         "Young": 17.0,
         "Poisson": 0.2
+      },
+      "ThermalParameters": {
+        "Conductivity": 0.6,
+        "SpecificHeat": 1500.0,
+        "ThermalExpansion": 0.0
       }
     }
   },
@@ -1161,6 +1185,7 @@
       "Name": "intermed_14"
     }
   },
+  "Events": {},
   "Fluids": {
     "sea_water": {
       "Density": 8.5,
