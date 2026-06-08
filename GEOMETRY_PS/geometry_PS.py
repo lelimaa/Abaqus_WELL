@@ -21,20 +21,6 @@ class PlaneStrainPart:
         self.span = span
         self.get_geometry()
 
-    # def parameterize_geometry(self):
-    #     standoff = self.data.get("standoff", 0.0)
-    #     self.geometry["center1"][0] += standoff
-    #     self.geometry["center2"][0] += standoff
-
-    #     min_wallthickness = self.data.get("excentricity", 0.0)
-    #     self.geometry["center1"][0] += min_wallthickness
-    #     self.geometry["center2"][1] += min_wallthickness
-
-    #     ovalization = self.data.get("ovalization", 0.0)
-    #     self.geometry["center1"][0] += ovalization
-    #     self.geometry["center2"][1] += ovalization
-    #     pass
-
     def get_geometry(self):
         center1 = self.data.get("center1", [0,0])
         center2 = self.data.get("center2", [0,0])
@@ -101,12 +87,57 @@ class PlaneStrainPart:
                                 dependent=ON)
         m.rootAssembly.regenerate()
 
-    def create_base_sets(self, modelName):
+    # def create_base_sets(self, modelName):
+    #     m = mdb.models[modelName]
+    #     p = m.parts[self.name]
 
+    #     p.Set(name='ALL', faces=p.faces)
+    #     if self.span == "half":
+    #         angles = (0.25*np.pi, 0.75*np.pi)
+    #     elif self.span == "quarter":
+    #         angles = (0.25*np.pi,)
+    #     else:
+    #         angles = (0.25*np.pi, 0.75*np.pi, 1.25*np.pi, 1.75*np.pi)
+    #     od_edges = p.edges[:0]
+    #     id_edges = p.edges[:0]
+    #     for angle in angles:
+    #         xy1 = (self.geometry["Ro1"]*np.cos(angle) + self.geometry["center1"][0],
+    #                self.geometry["Ro2"]*np.sin(angle) + self.geometry["center1"][1],
+    #                0.0)
+    #         xy2 = (self.geometry["Ri1"]*np.cos(angle) + self.geometry["center2"][0],
+    #                self.geometry["Ri2"]*np.sin(angle) + self.geometry["center2"][1],
+    #                0.0)
+    #         od_edges += p.edges.findAt((xy1,))
+    #         id_edges += p.edges.findAt((xy2,))
+    #     p.Set(name='OD', edges = od_edges)
+    #     p.Set(name='ID', edges = id_edges)
+
+    def create_spec_sets(self, modelName):
+        pass
+
+    def create_contact_sets(self):
+        pass
+             
+    def create_sets(self, modelName):
         m = mdb.models[modelName]
         p = m.parts[self.name]
-
-        p.Set(name='ALL', faces=p.faces)
+        f = p.faces
+        
+######### Criando os Sets inteiros para facilitar a atribuição de seções e condições de contorno ##########
+        # p.Set(name='ALL', faces=p.faces)
+        all_faces = f[0:len(f)]
+        p.Set(faces=all_faces, name='FASEI_' + self.name.upper())
+        
+        ##### FASEI_REV_TT    ##################
+        tol = 0.001
+        all_coords = [v.pointOn[0][1] for v in p.vertices]
+        min_y_global = min(all_coords)
+        base_edges = p.edges.getByBoundingBox(
+            xMin = -1e20, yMin=min_y_global - tol, zMin=-tol,
+            xMax = 1e20, yMax=min_y_global + tol, zMax=tol
+        )
+        p.Set(edges=base_edges, name='FASEI_' + self.name.upper() + '_TT')
+########## FASEI_REV_OD e FASEI_REV_ID ###########################
         if self.span == "half":
             angles = (0.25*np.pi, 0.75*np.pi)
         elif self.span == "quarter":
@@ -117,48 +148,13 @@ class PlaneStrainPart:
         id_edges = p.edges[:0]
         for angle in angles:
             xy1 = (self.geometry["Ro1"]*np.cos(angle) + self.geometry["center1"][0],
-                   self.geometry["Ro2"]*np.sin(angle) + self.geometry["center1"][1], 0.0)
+                   self.geometry["Ro2"]*np.sin(angle) + self.geometry["center1"][1],
+                   0.0)
             xy2 = (self.geometry["Ri1"]*np.cos(angle) + self.geometry["center2"][0],
-                   self.geometry["Ri2"]*np.sin(angle) + self.geometry["center2"][1], 0.0)
+                   self.geometry["Ri2"]*np.sin(angle) + self.geometry["center2"][1],
+                   0.0)
             od_edges += p.edges.findAt((xy1,))
             id_edges += p.edges.findAt((xy2,))
-        p.Set(name='OD', edges = od_edges)
-        p.Set(name='ID', edges = id_edges)
-
-    def create_spec_sets(self, modelName):
-        pass
-
-    def create_contact_sets(self):
-        pass
-
-# if __name__ == "__main__":
-#     mdb.models.changeKey(fromName='Model-1', toName='MyFirstModel')
-#     AnnulusPart = PlaneStrainPart("AnnulusPart1",
-#                      data={"center1": [0,0],
-#                            "center2": [0,0],
-#                            "outer_radius": 10,
-#                            "thickness": 2},)
-#     AnnulusPart.create_part("MyFirstModel")
-#     AnnulusPart.create_base_sets("MyFirstModel")
-#     AnnulusPart.add_to_assembly("MyFirstModel")
-#     print("Annulus created and added to assembly.")
-
-#     RockPart = PlaneStrainPart("RockPart1",
-#                      data={"center1": [0,0],
-#                            "center2": [0,0],
-#                            "outer_radius": 100,
-#                            "thickness": 90},)
-#     RockPart.create_part("MyFirstModel")
-#     RockPart.create_base_sets("MyFirstModel")
-#     RockPart.add_to_assembly("MyFirstModel")
-#     print("Rock created and added to assembly.")
-
-#     CasingPart = PlaneStrainPart("CasingPart1",
-#                      data={"center1": [0,0],    
-#                            "center2": [0,0],
-#                            "outer_radius": 8,
-#                            "thickness": 2},)
-#     CasingPart.create_part("MyFirstModel")
-#     CasingPart.create_base_sets("MyFirstModel")
-#     CasingPart.add_to_assembly("MyFirstModel")
-#     print("Casing created and added to assembly.")
+        p.Set(edges = od_edges,name='FASEI_' + self.name.upper() + '_OD')
+        p.Set(edges = id_edges,name='FASEI_' + self.name.upper() + '_ID')
+        

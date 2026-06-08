@@ -2,7 +2,7 @@
 #
 # Abaqus/CAE Release 2024 replay file
 # Internal Version: 2023_09_21-09.55.25 RELr426 190762
-# Run by Leticia on Mon Jun  8 12:53:48 2026
+# Run by Leticia on Mon Jun  8 18:53:45 2026
 #
 
 # from driverUtils import executeOnCaeGraphicsStartup
@@ -22,11 +22,8 @@ execfile('Test_Main_PS.py', __main__.__dict__)
 #: Annulus created and added to assembly.
 #: Rock created and added to assembly.
 #: Casing created and added to assembly.
+#: Testando a criação dos materiais a partir do json...
 #: Layer at depth 2600.0 meters: SANDSTONE
 #: Selected Fluid: drilling_14in (60 deg)
-#: >>> Plasticity dependent of temperature added to material 'STEEL'!
-#: Sets for PIPE created.
-#: Sets for FLUID created.
-#: Sets for ROCK created.
 print('RT script done')
 #: RT script done

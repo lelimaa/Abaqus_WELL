@@ -101,7 +101,7 @@ if __name__ == "__main__":
                            "outer_radius": outer_radius_annular,
                            "thickness": thickness_annular},)
     AnnulusPart.create_part("MyFirstModel")
-    AnnulusPart.create_base_sets("MyFirstModel")
+    AnnulusPart.create_sets("MyFirstModel")
     AnnulusPart.add_to_assembly("MyFirstModel")
     print("Annulus created and added to assembly.")
 
@@ -111,7 +111,7 @@ if __name__ == "__main__":
                            "outer_radius": outer_radius_wellbore,
                            "thickness": thickness_wellbore},)
     RockPart.create_part("MyFirstModel")
-    RockPart.create_base_sets("MyFirstModel")
+    RockPart.create_sets("MyFirstModel")
     RockPart.add_to_assembly("MyFirstModel")
     print("Rock created and added to assembly.")
 
@@ -121,13 +121,13 @@ if __name__ == "__main__":
                            "outer_radius": outer_radius_pipe,
                            "thickness": thickness_pipe},)
     CasingPart.create_part("MyFirstModel")
-    CasingPart.create_base_sets("MyFirstModel")
+    CasingPart.create_sets("MyFirstModel")
     CasingPart.add_to_assembly("MyFirstModel")
     print("Casing created and added to assembly.")
+    print("Testando a criação dos materiais a partir do json...")
 
-    ################### Definition of materials #################################################
     lithology = data["Lithology"]
-    
+       
     for layer in lithology:
         if l_depth >= layer["Top"] and l_depth < layer["Bottom"]:
             layer_rock = layer["Rock"]
@@ -150,6 +150,7 @@ if __name__ == "__main__":
          if info.get("ThermalGradient") == data_geothermal), None)
     print(f"Selected Fluid: {name_fluido}")
 
+### Criar dicionário do aço a partir do json (ex: VM-95) e suas propriedades 
     examples["STEEL"] = {
         "behavior": data["SteelGrades"][casing_type]["Law"],
         'density': data["SteelGrades"][casing_type]["ElasticParameters"]["Density"],
@@ -160,7 +161,7 @@ if __name__ == "__main__":
         'expansion': data["SteelGrades"][casing_type]["ThermalParameters"]["ThermalExpansion"],
         "type": "Casing"
     }
-
+### Criar dicionário do fluido a partir do json e suas propriedades 
     examples["FLUID"] = {
         "behavior": "ELASTIC",
         'density': data["Fluids"][name_fluido]["Density"],
@@ -168,7 +169,8 @@ if __name__ == "__main__":
         'ThermalExpansion': data["Fluids"][name_fluido]["ThermalExpansion"],
         "type": "Fluid"
     }
-    
+
+### Criar dicionário da rocha a partir do json e suas propriedades 
     examples[layer_rock] = {
     "behavior": data["Rocks"][layer_rock]["Law"],
     'density': data["Rocks"][layer_rock]["ElasticParameters"]["Density"],
@@ -211,15 +213,15 @@ if __name__ == "__main__":
     mdb.models['MyFirstModel'].setValues(
         absoluteZero=0.0, stefanBoltzmann=5.670374e-8)
 
-    AddplasticityToSteel('MyFirstModel', 'STEEL')
+    # AddplasticityToSteel('MyFirstModel', 'STEEL')
 
 ######### Create sets for boundary conditions and interactions ############################
-    CreateSetsPipe('MyFirstModel')
-    print("Sets for PIPE created.")
-    CreateSetsFluid('MyFirstModel')
-    print("Sets for FLUID created.")
-    CreateSetsRock('MyFirstModel')
-    print("Sets for ROCK created.")
+    # CreateSetsPipe('MyFirstModel')
+    # print("Sets for PIPE created.")
+    # CreateSetsFluid('MyFirstModel')
+    # print("Sets for FLUID created.")
+    # CreateSetsRock('MyFirstModel')
+    # print("Sets for ROCK created.")
 
     for section_name in material_examples.values():
         Assign_Section('MyFirstModel',
@@ -227,17 +229,12 @@ if __name__ == "__main__":
                        sectionName=section_name["sectionName"],
                        isSolid=section_name["isSolid"])
 
-    # # Assign rock materials by depth layers
+    # Assign rock materials by depth layers
     # AssignRockByDepth('MyFirstModel', 'ROCK', lythology_examples)
 
-    # Create assembly
-    # Assembly('MyFirstModel', partsNames=['FLUID', 'PIPE', 'ROCK'],
-    #          top_depth=top_depth, base_depth=base_depth)
-
-    # Defining sets for boundary conditions and interactions
+    # # Defining sets for boundary conditions and interactions
     # CreateSetsAssembly('MyFirstModel')
     # CreateSurfacesAssembly('MyFirstModel', data_code)
 
-    # Steps creation and boundary conditions application
-
+    # # Steps creation and boundary conditions application
     # CreateSteps('MyFirstModel')
