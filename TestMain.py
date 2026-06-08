@@ -125,10 +125,6 @@ if __name__ == "__main__":
     casing_type = data["Tubulars"][name_tubular]["Material"] 
     # Seleciona o tipo de aço para o casing definido no json (ex: VM-95) e pega as propriedades do material a partir do json
     steelgrade_info = data["SteelGrades"][casing_type]
-
-    # Seleciona o Gradiente Geotérmico definido no "AnalysisData"
-    data_geothermal = data["AnalysisData"]["GeothermalGradient"]
-
     # Seleciona o Gradiente Geotérmico definido no "AnalysisData"
     data_geothermal = data["AnalysisData"]["GeothermalGradient"]
     # Seleciona o Gradiente Térmico presente e definido antes

@@ -215,8 +215,11 @@ if __name__ == "__main__":
 
 ######### Create sets for boundary conditions and interactions ############################
     CreateSetsPipe('MyFirstModel')
+    print("Sets for PIPE created.")
     CreateSetsFluid('MyFirstModel')
+    print("Sets for FLUID created.")
     CreateSetsRock('MyFirstModel')
+    print("Sets for ROCK created.")
 
     for section_name in material_examples.values():
         Assign_Section('MyFirstModel',

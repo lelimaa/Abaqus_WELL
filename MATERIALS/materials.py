@@ -187,7 +187,6 @@ def AssignRockByDepth(modelName, partName, rock_layers):
 
 def AddplasticityToSteel(name_model, material_name='STEEL'):
     m = mdb.models[name_model]
-
     mat = m.materials[material_name]
 
     plastic_table = (

@@ -7,7 +7,7 @@ import regionToolset
 import displayGroupMdbToolset as dgm
 import part
 import sys
-import os
+# import os
 
 from caeModules import *
 from driverUtils import executeOnCaeStartup
