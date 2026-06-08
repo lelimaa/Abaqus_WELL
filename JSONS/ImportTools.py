@@ -1,7 +1,13 @@
 import json
+
+# Path of the json file  #####################################################################
+# Pay attention and adapth the path here 
+
 # with open(r'C:\Users\juani\Documents\Github\Abaqus_WELL_\wellClosure_axi.json') as f:
 with open(r'C:\Users\hidalgo\Documents\GitHub\Abaqus_WELL_\wellClosure_axi.json') as f:
     data = json.load(f)
+
+################################################################################################
 
 def process_lithology(data, global_top, global_bottom):
     # 1. Pega os limites globais do modelo (Ex: 3200 e 4250)
