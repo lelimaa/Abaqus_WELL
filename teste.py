@@ -41,8 +41,6 @@ ExportRockTemperatureAllFrames(
         output_file='rock_temperature_all_frames.csv'
     )
 
-
-
 # Lines for tests with the post-processing functions.
 
 # print("\n" + "="*30)
