@@ -225,14 +225,14 @@ if __name__ == "__main__":
     mdb.models['MyFirstModel'].setValues(
         absoluteZero=0.0, stefanBoltzmann=5.670374e-8)
 
-    AddplasticityToSteel('MyFirstModel', 'STEEL')
+    AddPlasticityToSteel('MyFirstModel', 'STEEL')
 
     CreateSetsPipe('MyFirstModel')
     CreateSetsFluid('MyFirstModel')
     CreateSetsRock('MyFirstModel')
 
     for section_name in material_examples.values():
-        Assign_Section('MyFirstModel',
+        AssignSection('MyFirstModel',
                        partName=section_name["partName"],
                        sectionName=section_name["sectionName"],
                        isSolid=section_name["isSolid"])

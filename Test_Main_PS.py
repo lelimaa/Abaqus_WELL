@@ -87,14 +87,6 @@ if __name__ == "__main__":
     if 'MyFirstModel' not in mdb.models:
         mdb.Model(name='MyFirstModel')
     
-    # if PlaneStrainPart.parametrize_geometry is None:
-    #     PlaneStrainPart.parametrize_geometry = {
-    #         "center1": [0,0],
-    #         "center2": [0,0],
-    #         "outer_radius": outer_radius_wellbore,
-    #         "thickness": thickness_wellbore
-    #     }
-
     AnnulusPart = PlaneStrainPart("FLUID",
                      data={"center1": [0,0],
                            "center2": [0,0],
@@ -103,6 +95,8 @@ if __name__ == "__main__":
     AnnulusPart.create_part("MyFirstModel")
     AnnulusPart.create_sets("MyFirstModel")
     AnnulusPart.add_to_assembly("MyFirstModel")
+    # AnnulusPart.CreateSetsAssembly("MyFirstModel")
+    # AnnulusPart.CreateSurfacesAssembly("MyFirstModel")
     print("Annulus created and added to assembly.")
 
     RockPart = PlaneStrainPart("ROCK",
@@ -113,6 +107,8 @@ if __name__ == "__main__":
     RockPart.create_part("MyFirstModel")
     RockPart.create_sets("MyFirstModel")
     RockPart.add_to_assembly("MyFirstModel")
+    # RockPart.CreateSetsAssembly("MyFirstModel")
+    # RockPart.CreateSurfacesAssembly("MyFirstModel")
     print("Rock created and added to assembly.")
 
     CasingPart = PlaneStrainPart("PIPE",
@@ -123,8 +119,16 @@ if __name__ == "__main__":
     CasingPart.create_part("MyFirstModel")
     CasingPart.create_sets("MyFirstModel")
     CasingPart.add_to_assembly("MyFirstModel")
+    # CasingPart.CreateSetsAssembly("MyFirstModel")
+    # CasingPart.CreateSurfacesAssembly("MyFirstModel")
     print("Casing created and added to assembly.")
     print("Testando a criação dos materiais a partir do json...")
+
+    for rp_top in RockPart.referencePoints:
+        print(f"Reference Point at: {rp_top.pointOn}") 
+    rp_top = RockPart.ReferencePoint(point=(0.0, -(l_depth), 0.0))
+    RockPart.Set(name='RP_TOP_%s' % l_depth, referencePoints=(RockPart.referencePoints[rp_top.id], ))
+
 
     lithology = data["Lithology"]
        
@@ -215,26 +219,13 @@ if __name__ == "__main__":
 
     # AddplasticityToSteel('MyFirstModel', 'STEEL')
 
-######### Create sets for boundary conditions and interactions ############################
-    # CreateSetsPipe('MyFirstModel')
-    # print("Sets for PIPE created.")
-    # CreateSetsFluid('MyFirstModel')
-    # print("Sets for FLUID created.")
-    # CreateSetsRock('MyFirstModel')
-    # print("Sets for ROCK created.")
-
     for section_name in material_examples.values():
-        Assign_Section('MyFirstModel',
+        AssignSection('MyFirstModel',
                        partName=section_name["partName"],
                        sectionName=section_name["sectionName"],
                        isSolid=section_name["isSolid"])
+    # Defining sets for boundary conditions and interactions
+    CreateSetsAssembly('MyFirstModel')
 
-    # Assign rock materials by depth layers
-    # AssignRockByDepth('MyFirstModel', 'ROCK', lythology_examples)
-
-    # # Defining sets for boundary conditions and interactions
-    # CreateSetsAssembly('MyFirstModel')
-    # CreateSurfacesAssembly('MyFirstModel', data_code)
-
-    # # Steps creation and boundary conditions application
+    # Steps creation and boundary conditions application
     # CreateSteps('MyFirstModel')

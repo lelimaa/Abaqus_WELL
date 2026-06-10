@@ -290,7 +290,7 @@ def CreateSetsRock(name_model):
             p.Set(faces=face_encontrada, name=nome_set)
             print(f"Set de Face '{nome_set}' criado em X={x_meio_face}, Y={y_meio_camada}")
 
-def CreateSetsAssembly(name_model):  
+def CreateSetsAssembly(self, name_model):  
 
     m = mdb.models[name_model]  
     a = m.rootAssembly
@@ -307,11 +307,11 @@ def CreateSetsAssembly(name_model):
     a.Set(faces=faces_totais, name='ALL')
 
     # FASEI
-    nomes_instancias = ['FLUID_INST', 'PIPE_INST']
+    nomes_instancias = [self.name + '_INST']
     faces_totais = None
 
     for nome in nomes_instancias:
-        if nome in a.instances.keys():
+        if nome == 'FLUID_INST' or nome == 'PIPE_INST':
             inst = a.instances[nome]
             if faces_totais is None:
                 faces_totais = inst.faces[:]
@@ -324,9 +324,11 @@ def CreateSetsAssembly(name_model):
 
     # FASEI_OPEN_WELL
     tol =0.001
-
-    inst_f = a.instances['FLUID_INST']
-    x_interface = max([v.pointOn[0][0] for v in inst_f.vertices])
+        
+    # inst_f = a.instances['FLUID_INST']
+    for inst_f in nomes_instancias:
+        if inst_f == 'FLUID_INST':
+            x_interface = max([v.pointOn[0][0] for v in inst_f.vertices])
 
     y_min = min([v.pointOn[0][1] for v in inst_f.vertices])
     y_max = max([v.pointOn[0][1] for v in inst_f.vertices])
@@ -354,11 +356,13 @@ def CreateSetsAssembly(name_model):
 
 
     # FASEI_COMPLETED_WELL
-    inst_p = a.instances['PIPE_INST']
-    x_int_pipe = min([v.pointOn[0][0] for v in inst_p.vertices])
+    for inst_p in nomes_instancias:
+        if inst_p == 'PIPE_INST':
+            inst = a.instances[inst_p]
+            x_int_pipe = min([v.pointOn[0][0] for v in inst.vertices])
 
-    y_min_p = min([v.pointOn[0][1] for v in inst_p.vertices])
-    y_max_p = max([v.pointOn[0][1] for v in inst_p.vertices])
+    y_min_p = min([v.pointOn[0][1] for v in inst.vertices])
+    y_max_p = max([v.pointOn[0][1] for v in inst.vertices])
 
     edges_completed = inst_p.edges.getByBoundingBox(
         xMin=x_int_pipe - tol, yMin=y_min_p - tol, zMin=-tol,
@@ -371,8 +375,9 @@ def CreateSetsAssembly(name_model):
 
 
     # MESH_TT_PIPES
-    inst_p = a.instances['PIPE_INST']
-    alturas_pipe = sorted(list(set([v.pointOn[0][1] for v in inst_p.vertices])))
+    for inst_p in nomes_instancias:
+        if inst_p == 'PIPE_INST':
+            alturas_pipe = sorted(list(set([v.pointOn[0][1] for v in inst_p.vertices])))
 
     min_x_p = min([v.pointOn[0][0] for v in inst_p.vertices])
     max_x_p = max([v.pointOn[0][0] for v in inst_p.vertices])
