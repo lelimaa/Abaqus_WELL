@@ -1078,6 +1078,7 @@
       "CementSheath": [
         {
           "Cement": "CLASS_G",
+          "Density": 1900.0,
           "Top": 4750.0,
           "Bottom": 5250.0
         }
