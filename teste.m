@@ -5,7 +5,7 @@ close all
 clc
 
 % PATH = 'C:\Users\hidalgo\Documents\GitHub\Abaqus_WELL_';
-PATH = 'C:\Users\juani\Documents\Github\Abaqus_WELL_';
+PATH = 'C:\Users\juani\Documents\Github\Abaqus_WELL';
 cd(PATH)
 
 filename = 'path_data_all_frames';
@@ -52,31 +52,62 @@ for t = 1:num_frames
 end 
 
 eixo_tempo = instantes_tempo;
+eixo_tempo_anos = eixo_tempo ./(60*60*24*365);
 eixo_z = ref_nos.Z;
 
 fprintf('>>> Matriz gerada: %d posições verticais x %d frames.\n' , num_nos, num_frames);
+
+FontSize = 20;
 
 figure()
 hold on 
 grid on
 
-frames_interesse = [1, round(num_frames/2), num_frames];
+frames_interesse = [1, 120, 140, 185, round(num_frames/2), num_frames];
 cores = lines(length(frames_interesse));
-legendas = {'Inicio', '15 Anos', '30 Anos'};
+legendas = {'Initial', '2 Years', '7 Years', '10 Years', '12 Years', '30 Years'};
 
 for i = 1:length(frames_interesse)
     idx = frames_interesse(i);
 
-    plot(matriz_U1(:, idx)*1e3, eixo_z, 'Color', cores(i,:), 'LineWidth',2);
+    plot(matriz_U1(:, idx)*1e3, abs(eixo_z), 'Color', cores(i,:), 'LineWidth',2);
 end
+
+tit1a = title('Evolution of the Well Closure Profile','Interpreter','Latex');
+eixo1a = xlabel({'Radial Displacement $u_{1}$ [mm]'},'Interpreter','Latex');
+eixo2a = ylabel('Depth Z [m]','Interpreter','Latex');
+set(eixo1a,'Fontsize',FontSize)
+set(eixo2a,'Fontsize',FontSize)
+set(tit1a,'Fontsize',FontSize)
+set(gca,'Fontsize',FontSize)
+set(gcf,'Color','w')
+% xlim([0 6.8e-4])
+grid minor
 
 set(gca, 'YDir', 'reverse')
 
-xlabel('Deslocamento Radial U1 (mm)');
-ylabel('Profundidade Z (m)');
-title('Evolução do Perfil de Fechamento do Poço');
-legend(legendas, 'Location', 'best');
-set(gca, 'YDir', 'normal'); % Garante que o topo fique no topo
+% xlabel('Deslocamento Radial U1 (mm)');
+% ylabel('Profundidade Z (m)');
+% title('Evolução do Perfil de Fechamento do Poço');
+legend(legendas, 'Location', 'Northeast');
+% set(gca, 'YDir', 'normal'); % Garante que o topo fique no topo
+
+%% Lendo deslocamento em um ponto (base da formação)
+
+FontSize = 20;
+
+figure()
+plot(instantes_tempo/(60*60*24*365),matriz_U1(end,:)*1e3, 'linewidth', 2)
+tit1a = title('Evolution of the Formation Displacement ($z=z_{\mathrm{Bottom}}$) ','Interpreter','Latex');
+eixo1a = xlabel({'Time [Years]'},'Interpreter','Latex');
+eixo2a = ylabel('$u_{1}$ [mm]','Interpreter','Latex');
+set(eixo1a,'Fontsize',FontSize)
+set(eixo2a,'Fontsize',FontSize)
+set(tit1a,'Fontsize',FontSize)
+set(gca,'Fontsize',FontSize)
+set(gcf,'Color','w')
+% xlim([0 6.8e-4])
+grid minor
 
 %% Lendo tensões no casing (perfil)
 
@@ -84,7 +115,8 @@ clear all
 % close all
 clc
 
-PATH = 'C:\Users\hidalgo\Documents\GitHub\Abaqus_WELL_';
+% PATH = 'C:\Users\hidalgo\Documents\GitHub\Abaqus_WELL';
+PATH = 'C:\Users\juani\Documents\Github\Abaqus_WELL';
 cd(PATH)
 
 filename = 'casing_stress_all_frames';
@@ -132,39 +164,70 @@ for t = 1:num_frames
 end 
 
 eixo_tempo = instantes_tempo;
+eixo_tempo_anos = eixo_tempo ./(60*60*24*365);
 eixo_z = ref_nos.Z;
 
 fprintf('>>> Matriz gerada: %d posições verticais x %d frames.\n' , num_nos, num_frames);
+
+FontSize = 20;
 
 figure()
 hold on 
 grid on
 
-frames_interesse = [1, round(num_frames/2), num_frames];
+% frames_interesse = [1, 86];
+frames_interesse = [1, 86, 106,151, round(num_frames/2), num_frames];
+
 cores = lines(length(frames_interesse));
-legendas = {'Inicio', '15 Anos', '30 Anos'};
+% legendas = {'Initial', '2 Years'};
+legendas = {'Initial', '2 Years','7 Years','10 Years', '12 Years', '30 Years'};
 
 for i = 1:length(frames_interesse)
     idx = frames_interesse(i);
 
-    plot(matriz_U1(:, idx)/1e6, eixo_z, 'Color', cores(i,:), 'LineWidth',2);
+    plot(matriz_U1(:, idx)/1e6-40, abs(eixo_z), 'Color', cores(i,:), 'LineWidth',2);
 end
 
 set(gca, 'YDir', 'reverse')
 
-xlabel('Mises (MPa)');
-ylabel('Profundidade Z (m)');
-title('Evolução do Perfil de Tensão no Revestimento');
-legend(legendas, 'Location', 'best');
-set(gca, 'YDir', 'normal'); % Garante que o topo fique no topo
+tit1a = title('Evolution of the Casing Stress Profile','Interpreter','Latex');
+eixo1a = xlabel({'Mises [MPa]'},'Interpreter','Latex');
+eixo2a = ylabel('Depth Z [m]','Interpreter','Latex');
+set(eixo1a,'Fontsize',FontSize)
+set(eixo2a,'Fontsize',FontSize)
+set(tit1a,'Fontsize',FontSize)
+set(gca,'Fontsize',FontSize)
+set(gcf,'Color','w')
+% xlim([0 6.8e-4])
+grid minor
+
+% xlabel('Mises (MPa)');
+% ylabel('Profundidade Z (m)');
+% title('Evolução do Perfil de Tensão no Revestimento');
+legend(legendas, 'Location', 'NorthWest');
+% set(gca, 'YDir', 'normal'); % Garante que o topo fique no topo
 
 %% Lendo tensão no casing em um ponto (base do revestimento)
 
+FontSize = 20;
+
 figure()
-plot(instantes_tempo/(60*60*24*365),matriz_U1(end,:)/1e6)
-xlabel('time [years]')
-ylabel('Stress [MPa]')
+plot(instantes_tempo/(60*60*24*365),matriz_U1(end,:)/1e6-40, 'linewidth', 2)
+tit1a = title('Evolution of the Casing Stress ($z=z_{\mathrm{Bottom}}$) ','Interpreter','Latex');
+eixo1a = xlabel({'Time [Years]'},'Interpreter','Latex');
+eixo2a = ylabel('Mises [MPa]','Interpreter','Latex');
+set(eixo1a,'Fontsize',FontSize)
+set(eixo2a,'Fontsize',FontSize)
+set(tit1a,'Fontsize',FontSize)
+set(gca,'Fontsize',FontSize)
+set(gcf,'Color','w')
+% xlim([0 6.8e-4])
 grid minor
+
+
+% xlabel('time [years]')
+% ylabel('Stress [MPa]')
+% grid minor
 
 %% Lendo temperaturas no casing (perfil)
 
@@ -220,6 +283,7 @@ for t = 1:num_frames
 end 
 
 eixo_tempo = instantes_tempo;
+eixo_tempo_anos = eixo_tempo ./(60*60*24*365);
 eixo_z = ref_nos.Z;
 
 fprintf('>>> Matriz gerada: %d posições verticais x %d frames.\n' , num_nos, num_frames);
@@ -421,3 +485,4 @@ plot(instantes_tempo/(60*60*24*365),matriz_U1(end,:))
 xlabel('time [years]')
 ylabel('Stress [MPa]')
 grid minor
+
