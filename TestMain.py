@@ -6,8 +6,8 @@ import json
 import sys 
 import numpy as np
 
-# path_project = r'C:\Users\juani\Documents\Github\Abaqus_WELL' 
-path_project = r'C:\Users\hidalgo\Documents\GitHub\Abaqus_WELL'
+path_project = r'C:\Users\juani\Documents\Github\Abaqus_WELL' 
+# path_project = r'C:\Users\hidalgo\Documents\GitHub\Abaqus_WELL'
 
 if path_project not in sys.path:
     sys.path.append(path_project)
@@ -33,8 +33,8 @@ if name_of_model not in mdb.models:
 
 # Reading the json file and filling the input data for the analysis ####################
 
-# with open(r'C:\Users\juani\Documents\Github\Abaqus_WELL\wellClosure_axi.json') as f:
-with open(r'C:\Users\hidalgo\Documents\GitHub\Abaqus_WELL\wellClosure_axi.json') as f:
+with open(r'C:\Users\juani\Documents\Github\Abaqus_WELL\wellClosure_axi.json') as f:
+# with open(r'C:\Users\hidalgo\Documents\GitHub\Abaqus_WELL\wellClosure_axi.json') as f:
     data = json.load(f)
 
 # print(f"Data keys: {data.keys()}") # To see the main keys of the json file
