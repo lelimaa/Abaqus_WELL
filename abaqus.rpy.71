@@ -2,7 +2,7 @@
 #
 # Abaqus/CAE Release 2024 replay file
 # Internal Version: 2023_09_21-09.55.25 RELr426 190762
-# Run by Leticia on Tue Jun  9 14:17:25 2026
+# Run by Leticia on Wed Jun 10 12:13:31 2026
 #
 
 # from driverUtils import executeOnCaeGraphicsStartup
@@ -25,5 +25,9 @@ execfile('Test_Main_PS.py', __main__.__dict__)
 #: Testando a criação dos materiais a partir do json...
 #: Layer at depth 2600.0 meters: SANDSTONE
 #: Selected Fluid: drilling_14in (60 deg)
-print('RT script done')
-#: RT script done
+#* KeyError: 'FLUID_INST'
+#* File "Test_Main_PS.py", line 222, in <module>
+#*     CreateSetsAssembly('MyFirstModel')
+#* File "C:\Users\leticia\Documents\GitHub\Abaqus_WELL\GEOMETRY\sets.py", line 
+#* 328, in CreateSetsAssembly
+#*     inst_f = a.instances['FLUID_INST']

@@ -7,6 +7,7 @@ import regionToolset
 import displayGroupMdbToolset as dgm
 import part
 import sys
+import importlib
 # import os
 
 from caeModules import *
@@ -19,11 +20,10 @@ class PlaneStrainPart:
         self.name = name
         self.data = data
         self.span = span
-        self.get_geometry()
-
-    def get_geometry(self):
-        center1 = self.data.get("center1", [0,0])
-        center2 = self.data.get("center2", [0,0])
+        
+    def get_geometry(self, depth):
+        center1 = self.data.get("center1", [0.0,-depth])
+        center2 = self.data.get("center2", [0.0,-depth])
         Ro1 = self.data.get("outer_radius")
         Ro2 = self.data.get("outer_radius")
         Ri1 = Ro1 - self.data.get("thickness")
@@ -37,27 +37,38 @@ class PlaneStrainPart:
             "Ri2": Ri2
         }
 
-    def create_part(self, modelName):
+    def create_part(self, modelName, depth):
+        self.get_geometry(depth)
         m = mdb.models[modelName]
         sketch_name = '__profile__' + self.name
-        s = m.ConstrainedSketch(name=sketch_name, sheetSize=200.0)
+        # Ajuste o sheetSize conforme necessário para acomodar a geometria
+        s = m.ConstrainedSketch(name=sketch_name, sheetSize=10000.0)
         s.setPrimaryObject(option=STANDALONE)
+        
+        # Simplificando o acesso às variáveis de centro
+        cx = self.geometry["center1"][0]
+        cy = self.geometry["center1"][1]
+        Ro = self.geometry["Ro1"]
+        Ri = self.geometry["Ri1"]
 
-        g1 = s.ArcByCenterEnds(center=self.geometry["center1"], point1 = (self.geometry["Ro1"], 0.0), point2 = (self.geometry["Ro2"], 0.0), direction=COUNTERCLOCKWISE)
-        g2 = s.ArcByCenterEnds(center=self.geometry["center2"], point1 = (self.geometry["Ri1"], 0.0), point2 = (self.geometry["Ri2"], 0.0), direction=COUNTERCLOCKWISE)
 
         if self.span == "half":
-            g3 = s.Line(point1=(-self.geometry["Ro1"], 0.0), point2=(self.geometry["Ro1"], 0.0))
-            s.autoTrimCurve(curve1=g1, point1=(self.geometry["center1"][0], -self.geometry["Ro2"]))
-            s.autoTrimCurve(curve1=g2, point1=(self.geometry["center2"][0], -self.geometry["Ri2"]))
-            s.autoTrimCurve(curve1=g3, point1=self.geometry["center1"])
+            # Arco Externo (Curva superior): do lado direito (+Ro) para o esquerdo (-Ro)
+            s.ArcByCenterEnds(center=(cx, cy), point1=(cx + Ro, cy), point2=(cx - Ro, cy), direction=COUNTERCLOCKWISE)
+            # Arco Interno (Curva inferior): do lado direito (+Ri) para o esquerdo (-Ri)
+            s.ArcByCenterEnds(center=(cx, cy), point1=(cx + Ri, cy), point2=(cx - Ri, cy), direction=COUNTERCLOCKWISE)
+            
+            # Linhas retas que fecham a base em y = -2600
+            s.Line(point1=(cx - Ro, cy), point2=(cx - Ri, cy)) # Fecha o lado esquerdo
+            s.Line(point1=(cx + Ro, cy), point2=(cx + Ri, cy)) # Fecha o lado direito
         elif self.span == "quarter":
-            g3 = s.Line(point1=(self.geometry["center1"][0], 0.0), point2=(self.geometry["Ro1"], 0.0))
-            g4 = s.Line(point1=(self.geometry["center1"][0], 0.0), point2=(0.0, self.geometry["Ro2"]))
-            s.autoTrimCurve(curve1=g1, point1=(self.geometry["center1"][0], -self.geometry["Ro2"]))
-            s.autoTrimCurve(curve1=g2, point1=(self.geometry["center2"][0], -self.geometry["Ri2"]))
-            s.autoTrimCurve(curve1=g3, point1=self.geometry["center1"])
-            s.autoTrimCurve(curve1=g4, point1=self.geometry["center1"])
+            # Quadrante superior direito (0 a 90 graus)
+            s.ArcByCenterEnds(center=(cx, cy), point1=(cx + Ro, cy), point2=(cx, cy + Ro), direction=COUNTERCLOCKWISE)
+            s.ArcByCenterEnds(center=(cx, cy), point1=(cx + Ri, cy), point2=(cx, cy + Ri), direction=COUNTERCLOCKWISE)
+            
+            s.Line(point1=(cx + Ri, cy), point2=(cx + Ro, cy)) # Base horizontal no eixo X
+            s.Line(point1=(cx, cy + Ri), point2=(cx, cy + Ro)) # Base vertical no eixo Y
+        
         p = m.Part(name=self.name, dimensionality=TWO_D_PLANAR, type=DEFORMABLE_BODY)
         p.BaseShell(sketch=s)
         s.unsetPrimaryObject()
@@ -98,28 +109,24 @@ class PlaneStrainPart:
         p = m.parts[self.name]
         f = p.faces
         
-######### Criando os Sets inteiros para facilitar a atribuição de seções e condições de contorno ##########
-        # p.Set(name='ALL', faces=p.faces)
+        #### Criando os Sets inteiros para a atribuição de seções + condições de contorno ##########
         all_faces = f[0:len(f)]
         p.Set(faces=all_faces, name='FASEI_' + self.name.upper())
-               
-        ##### FASEI_REV_TT    ##################
+                               
+        ##### FASEI_REV_TT #####################
         tol = 0.001
         all_coords = [v.pointOn[0][1] for v in p.vertices]
         min_y_global = min(all_coords)
+
         base_edges = p.edges.getByBoundingBox(
             xMin = -1e20, yMin=min_y_global - tol, zMin=-tol,
             xMax = 1e20, yMax=min_y_global + tol, zMax=tol
         )
         p.Set(edges=base_edges, name='FASEI_' + self.name.upper() + '_TT')
 
-        if self.name == RockPart.name:
-            print(f"Reference Point at: {rp_top.pointOn}") 
-            rp_top = RockPart.ReferencePoint(point=(0.0, -(l_depth), 0.0))
-            RockPart.Set(name='RP_TOP_%s' % l_depth, referencePoints=(RockPart.referencePoints[rp_top.id], ))
-
-########## FASEI_REV_OD e FASEI_REV_ID ###########################
+        ########## FASEI_REV_OD e FASEI_REV_ID ###########################
         if self.span == "half":
+            # Ângulos superiores para a abóbada
             angles = (0.25*np.pi, 0.75*np.pi)
         elif self.span == "quarter":
             angles = (0.25*np.pi,)
@@ -138,7 +145,243 @@ class PlaneStrainPart:
             id_edges += p.edges.findAt((xy2,))
         p.Set(edges = od_edges,name='FASEI_' + self.name.upper() + '_OD')
         p.Set(edges = id_edges,name='FASEI_' + self.name.upper() + '_ID')
+        
+        if self.span == "quarter":
+            vertical_edges = p.edges[:0]
+            for edge in p.edges:
+                v1 = p.vertices[edge.getVertices()[0]]
+                v2 = p.vertices[edge.getVertices()[1]]
+                # Se X for igual, é uma linha perfeitamente vertical
+                if abs(v1.pointOn[0][0] - v2.pointOn[0][0]) < tol:
+                    vertical_edges += p.edges[edge.index:edge.index+1]
+                
+            if vertical_edges:
+                p.Set(edges=vertical_edges, name='FASEI_TT_VERTICAL_' + self.name.upper())
+        
+        if self.name == 'FLUID':
+            if 'FLUID' in p.sets.keys():
+                # Cria e duplica a face principal
+                p.Set(faces=p.sets['FLUID'].faces[:], name='FASEI_FLUID')
+                p.Set(faces=p.sets['FLUID'].faces[:], name='FASEI_ANNULAR')
+                
+                # Cria os sets do FLUID usando as variáveis
+                p.Set(edges=od_edges, name='FASEI_FLUID_OD')
+                p.Set(edges=id_edges, name='FASEI_FLUID_ID')
+                p.Set(edges=base_edges, name='FASEI_FLUID_TT')
+                
+                # Cria os sets do ANNULAR usando as mesmas variáveis
+                p.Set(edges=od_edges, name='FASEI_ANNULAR_OD')
+                p.Set(edges=id_edges, name='FASEI_ANNULAR_ID')
+                p.Set(edges=base_edges, name='FASEI_ANNULAR_TT')
+            else:
+                pass
+        
+        # FASEI_COMPLETED_WELL
+        if 'FASEI_REV_ID' in p.sets.keys():
+            # Cria e duplica a face principal
+            p.Set(edges=id_edges, name='FASEI_COMPLETED_WELL')
+        
+        # FASEI_WELL
+        if 'FASEI_ROCK_ID' in p.sets.keys():
+            p.Set(edges=id_edges, name='FASEI_WELL')
 
+        if 'FASEI_ROCK_ID' in p.sets.keys():
+            p.Set(edges=od_edges, name='ROCK_BC')
+        
+        # # ROCK_OUTPUT
+        # if 'FASEI_ROCK' in p.sets.keys():
+        #     p.Set(faces=all_faces, name='FASEI_OUTPUT')
+
+        # # YSYM_BASE (NÍVEL DA PART)
+        # tol = 0.001
+
+        # # 1. Identificar a altura mínima (Y) e limites (X) globais da Part
+        # y_global = [v.pointOn[0][1] for v in p.vertices]
+        # y_base = min(y_global)
+
+        # x_min_i = min([v.pointOn[0][0] for v in p.vertices])
+        # x_max_i = max([v.pointOn[0][0] for v in p.vertices])
+
+        # # 2. Buscar as arestas da base
+        # edges_base = p.edges.getByBoundingBox(
+        #     xMin=x_min_i - tol, yMin=y_base - tol, zMin=-tol,
+        #     xMax=x_max_i + tol, yMax=y_base + tol, zMax=tol
+        # )
+
+        # # 3. Criar o Set na Part
+        # if edges_base:
+        #     p.Set(edges=edges_base, name='YSYM_BASE')
+        #     print("Set 'YSYM_BASE' criado com sucesso na Part!")
+        # else:
+        #     print("Erro: Nenhuma aresta encontrada na cota Y =", y_base)
+
+    def CreateSetsAssembly(self, modelName):  
+        m = mdb.models[modelName]  
+        a = m.rootAssembly
+        tol =0.001
+        
+        # Set ALL    
+        faces_totais = []
+        if faces_totais:
+            a.Set(faces=faces_totais, name='ALL')
+
+        # =========================================================
+        # FASEI = FLUIDO + PIPE
+        # =========================================================
+        inst_fluid = a.instances['FLUID_INST'] if 'FLUID_INST' in a.instances.keys() else None
+        inst_pipe = a.instances['PIPE_INST'] if 'PIPE_INST' in a.instances.keys() else None
+        inst_rock = a.instances['ROCK_INST'] if 'ROCK_INST' in a.instances.keys() else None
+
+        # ATENÇÃO: As linhas antigas "faces_fluid = ..." e "faces_pipe = ..." 
+        # DEVEM SER APAGADAS! 
+
+        # 3. Some as sequências de forma segura
+        faces_combinadas = ()
+        
+        if inst_fluid is not None:
+            faces_combinadas += inst_fluid.faces[:]
+        if inst_pipe is not None:
+            faces_combinadas += inst_pipe.faces[:]
+
+        # 4. Crie o Set no nível da Montagem (Assembly)
+        if faces_combinadas:
+            a.Set(faces=faces_combinadas, name='FASEI')
+            print("Set 'FASEI' combinado gerado com sucesso no Assembly!")
+        else:
+            print("Aviso: Nenhuma face encontrada para FLUID e PIPE. Set 'FASEI' ignorado nesta etapa.")
+        
+        # =========================================================
+        # FASEI_OPEN_WELL + FASEI_WELL
+        # =========================================================
+        if self.span == "half":
+            angles = (0.25*np.pi, 0.75*np.pi)
+        elif self.span == "quarter":
+            angles = (0.25*np.pi,)
+        else:
+            angles = (0.25*np.pi, 0.75*np.pi, 1.25*np.pi, 1.75*np.pi)
+            
+        od_edges = a.edges[:0]
+        id_edges = a.edges[:0]
+        
+        for angle in angles:
+            xy1 = (self.geometry["Ro1"]*np.cos(angle) + self.geometry["center1"][0],
+                    self.geometry["Ro2"]*np.sin(angle) + self.geometry["center1"][1],
+                    0.0)
+            xy2 = (self.geometry["Ri1"]*np.cos(angle) + self.geometry["center2"][0],
+                    self.geometry["Ri2"]*np.sin(angle) + self.geometry["center2"][1],
+                    0.0)
+            
+            # Bloco de proteção para evitar os Warnings do findAt
+            try:
+                encontrado_od = a.edges.findAt((xy1,))
+                if encontrado_od: od_edges += encontrado_od
+            except:
+                pass # Silencia o erro se não achar nada
+                
+            try:
+                encontrado_id = a.edges.findAt((xy2,))
+                if encontrado_id: id_edges += encontrado_id
+            except:
+                pass # Silencia o erro se não achar nada
+
+        if inst_fluid in a.instances.values() and od_edges:
+            a.Set(edges=od_edges, name='FASEI_OPEN_WELL')
+        if inst_rock in a.instances.values() and id_edges:
+            a.Set(edges = id_edges, name='FASEI_WELL') # if only from ROCK      
+
+        # =========================================================
+        # FASEI_COMPLETED_WELL
+        # =========================================================
+        if inst_pipe in a.instances.values() and id_edges:
+            a.Set(edges = id_edges,name='FASEI_COMPLETED_WELL') # if only from PIPE  
+        
+        # =========================================================
+        # ROCK_BC
+        # =========================================================
+        if inst_rock in a.instances.values() and od_edges:
+            a.Set(edges=od_edges, name='ROCK_BC')
+        
+        # =========================================================
+        # ROCK_OUTPUT
+        # =========================================================
+        nome_instancia = ['ROCK_INST']
+        faces_totais = None
+
+        for nome in nome_instancia:
+            if nome in a.instances.keys():
+                inst = a.instances[nome]
+                if faces_totais is None:
+                    faces_totais = inst.faces[:]
+                else:
+                    faces_totais = faces_totais + inst.faces[:]
+
+        if faces_totais:
+            a.Set(faces=faces_totais, name='ROCK_OUTPUT')
+            print("Set 'ROCK_OUTPUT' criado com todas as faces dessa instancia.")
+
+        # =========================================================
+        # YSYM_BASE
+        # =========================================================
+        # 1. Identificar a altura mínima (Y) global do modelo
+        y_global = []
+        for inst in a.instances.values():
+            # ESTA É A LINHA QUE EVITA O CRASH (ValueError)
+            if len(inst.vertices) > 0: 
+                y_global.append(min([v.pointOn[0][1] for v in inst.vertices]))
+        
+        # Só prossegue com o cálculo da base se a lista y_global não estiver vazia
+        if y_global:
+            y_base = min(y_global)
+
+            # 2. Criar uma lista para acumular as arestas da base de cada instância
+            edges_base_lista = None
+
+            for inst in a.instances.values():
+                if len(inst.vertices) > 0:
+                    x_min_i = min([v.pointOn[0][0] for v in inst.vertices])
+                    x_max_i = max([v.pointOn[0][0] for v in inst.vertices])
+                    
+                    edges_inst = inst.edges.getByBoundingBox(
+                        xMin=x_min_i - tol, yMin=y_base - tol, zMin=-tol,
+                        xMax=x_max_i + tol, yMax=y_base + tol, zMax=tol
+                    )
+                    
+                    if edges_inst:
+                        if edges_base_lista is None:
+                            edges_base_lista = edges_inst
+                        else:
+                            edges_base_lista = edges_base_lista + edges_inst
+
+            # 3. Criar o Set no Assembly com o acumulado
+            if edges_base_lista:
+                a.Set(edges=edges_base_lista, name='YSYM_BASE')
+                print("Set 'YSYM_BASE' criado com sucesso unindo todas as instâncias.")
+            else:
+                print("Aviso: Nenhuma aresta encontrada na cota Y =", y_base)
+                
+        else:
+            print("Aviso: Não foi possível determinar a base (y_base). O Assembly está vazio ou as instâncias não possuem vértices.")
+
+    def add_reference_point(self, modelName, depth):
+        # 1. Acessa a parte dentro da classe (assumindo que self.name é o nome da parte)
+        part = mdb.models[modelName].parts[self.name]
+    
+        # 2. Define nome seguro
+        depth_str = str(-depth).replace('.', '_')
+        set_name = f'RP_TOP_{depth_str}'
+        
+        # 3. Cria o RP
+        rp_feature = part.ReferencePoint(point=(0.0, -depth, 0.0))
+        
+        rp_object = part.referencePoints[rp_feature.id]
+        # 4. Remove se já existir para evitar conflito
+        if set_name in part.sets.keys():
+            del part.sets[set_name]
+                    
+        # 5. Cria o set passando o objeto diretamente
+        part.Set(name=set_name, referencePoints=(rp_object, ))
+        print(f"Set '{set_name}' criado com sucesso na parte '{self.name}'.")
+    
     # def CreateSetsAssembly(self, modelName):  
     #     m = mdb.models[modelName]
     #     a = m.rootAssembly

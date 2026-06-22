@@ -17,7 +17,7 @@ from GEOMETRY.geometries import *
 from JOBS.job import *
 from JSONS.ImportTools import *
 from MATERIALS.materials import *
-from GEOMETRY.sets import *
+from GEOMETRY.sets_PS import *
 from GEOMETRY.assembly import *
 from GEOMETRY_PS.geometry_PS import *
 
@@ -88,54 +88,58 @@ if __name__ == "__main__":
         mdb.Model(name='MyFirstModel')
     
     AnnulusPart = PlaneStrainPart("FLUID",
-                     data={"center1": [0,0],
-                           "center2": [0,0],
+                    data={"center1": [0,-l_depth],
+                           "center2": [0,-l_depth],
                            "outer_radius": outer_radius_annular,
-                           "thickness": thickness_annular},)
-    AnnulusPart.create_part("MyFirstModel")
+                           "thickness": thickness_annular},
+                    span="half"
+                        )
+    AnnulusPart.create_part("MyFirstModel", depth=l_depth)
     AnnulusPart.create_sets("MyFirstModel")
+    AnnulusPart.CreateSetsAssembly("MyFirstModel")
     AnnulusPart.add_to_assembly("MyFirstModel")
     # AnnulusPart.CreateSetsAssembly("MyFirstModel")
     # AnnulusPart.CreateSurfacesAssembly("MyFirstModel")
     print("Annulus created and added to assembly.")
 
     RockPart = PlaneStrainPart("ROCK",
-                     data={"center1": [0,0],
-                           "center2": [0,0],
+                    data={"center1": [0,-l_depth],
+                           "center2": [0,-l_depth],
                            "outer_radius": outer_radius_wellbore,
-                           "thickness": thickness_wellbore},)
-    RockPart.create_part("MyFirstModel")
+                           "thickness": thickness_wellbore},
+                    span="half"
+                        )
+    RockPart.create_part("MyFirstModel", depth=l_depth)
     RockPart.create_sets("MyFirstModel")
+    RockPart.CreateSetsAssembly("MyFirstModel")
     RockPart.add_to_assembly("MyFirstModel")
+    RockPart.add_reference_point("MyFirstModel", depth=l_depth)
     # RockPart.CreateSetsAssembly("MyFirstModel")
     # RockPart.CreateSurfacesAssembly("MyFirstModel")
     print("Rock created and added to assembly.")
-
+        
     CasingPart = PlaneStrainPart("PIPE",
-                     data={"center1": [0,0],    
-                           "center2": [0,0],
+                    data={"center1": [0,-l_depth],    
+                           "center2": [0,-l_depth],
                            "outer_radius": outer_radius_pipe,
-                           "thickness": thickness_pipe},)
-    CasingPart.create_part("MyFirstModel")
+                           "thickness": thickness_pipe},
+                    span="half"
+                        )
+    CasingPart.create_part("MyFirstModel", depth=l_depth)
     CasingPart.create_sets("MyFirstModel")
+    CasingPart.CreateSetsAssembly("MyFirstModel")
     CasingPart.add_to_assembly("MyFirstModel")
     # CasingPart.CreateSetsAssembly("MyFirstModel")
     # CasingPart.CreateSurfacesAssembly("MyFirstModel")
     print("Casing created and added to assembly.")
     print("Testando a criação dos materiais a partir do json...")
 
-    for rp_top in RockPart.referencePoints:
-        print(f"Reference Point at: {rp_top.pointOn}") 
-    rp_top = RockPart.ReferencePoint(point=(0.0, -(l_depth), 0.0))
-    RockPart.Set(name='RP_TOP_%s' % l_depth, referencePoints=(RockPart.referencePoints[rp_top.id], ))
-
-
     lithology = data["Lithology"]
        
     for layer in lithology:
         if l_depth >= layer["Top"] and l_depth < layer["Bottom"]:
             layer_rock = layer["Rock"]
-            print(f"Layer at depth {l_depth} meters: {layer_rock}")
+            print(f"Layer at depth {-l_depth} meters: {layer_rock}")
             
     examples = {}
 
@@ -224,8 +228,14 @@ if __name__ == "__main__":
                        partName=section_name["partName"],
                        sectionName=section_name["sectionName"],
                        isSolid=section_name["isSolid"])
+    
     # Defining sets for boundary conditions and interactions
-    CreateSetsAssembly('MyFirstModel')
+        # AnnulusSets = Sets.CreateSetsAssembly('MyFirstModel')
+        # RockSets = Sets.CreateSetsAssembly('MyFirstModel')
+        # PipeSets = Sets.CreateSetsAssembly('MyFirstModel')
 
+    # CreateSurfacesAssembly('MyFirstModel')
+
+    # Steps creation and boundary conditions application
     # Steps creation and boundary conditions application
     # CreateSteps('MyFirstModel')
