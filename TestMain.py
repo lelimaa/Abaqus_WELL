@@ -245,6 +245,7 @@ if __name__ == "__main__":
 
     # Calculation of axial stresses in the casing due to its own weight (initial stresses)    
     stress_top, stress_bottom = CasingStresses(data, name_phase, examples["STEEL"]["density"], top_depth, base_depth)
+    # stress_top, stress_bottom = CasingStressesNoCement(data, name_phase, examples["STEEL"]["density"], top_depth, base_depth)
     ApplyCasingInitialStresses(name_of_model, top_depth, base_depth, stress_top, stress_bottom)
 
     # Another part of creation of steps
