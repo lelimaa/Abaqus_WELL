@@ -196,13 +196,11 @@ if __name__ == "__main__":
     for mat_name, mat_data in examples.items():
         CreateMaterial(name_of_model, mat_name, mat_data, sectionLength=1.)
 
+    # Setting the absolute zero and Stefan-Boltzmann constant for the model
     mdb.models[name_of_model].setValues(absoluteZero=0.0, stefanBoltzmann=5.670374e-8)
 
-    # plastic_list = data["SteelGrades"][casing_type]["MisesPlastic"]["PlasticTable"]
-    # plastic_table_formatted = tuple(tuple(item) for item in plastic_list)
-
+    # Setting the plasticity for the steel casing material, based on the plastic table from the json file
     plastic_table = tuple([tuple(item) for item in data["SteelGrades"][casing_type]["MisesPlastic"]["PlasticTable"]])
-    
     AddPlasticityToSteel(name_of_model, 'STEEL', plastic_table)
 
     CreateSetsPipe(name_of_model)
@@ -243,7 +241,7 @@ if __name__ == "__main__":
     
     CreateSteps(name_of_model)
 
-    # Calculation of axial stresses in the casing due to its own weight (initial stresses)    
+    # Calculation of axial stresses in the casing due to its own weight (initial stresses), considering the hydrostatic pressure of the cement and the mud in the annular space. 
     stress_top, stress_bottom = CasingStresses(data, name_phase, examples["STEEL"]["density"], top_depth, base_depth)
     # stress_top, stress_bottom = CasingStressesNoCement(data, name_phase, examples["STEEL"]["density"], top_depth, base_depth)
     ApplyCasingInitialStresses(name_of_model, top_depth, base_depth, stress_top, stress_bottom)
@@ -285,8 +283,7 @@ if __name__ == "__main__":
     )
 
     # Another part of creation of steps
-    CreateStepsPartThree(name_of_model,name_step1)
-    
+    CreateStepsPartThree(name_of_model,name_step1)    
 
     CreateCreepStep(
         name_model=name_of_model, 
@@ -396,7 +393,6 @@ if __name__ == "__main__":
 
     CreateSetPointRock(model_name=name_of_model, r_coord=inner_radius_wellbore, z_coord=-abs(base_depth))    
     CreateSetPointCasing(model_name=name_of_model, r_coord=inner_radius_annular, z_coord=-abs(base_depth))
-
 
     # Creating a job and saving the model #################################################################
     job_name = 'WellClosureJob'

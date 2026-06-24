@@ -426,8 +426,6 @@ def CreateStepsPartThree(name_model,name_step):
     m = mdb.models[name_model]
     a = m.rootAssembly
 
-    # name_step = 'Perf_10_375'
-
     m.StaticStep(name=name_step, previous='TempDefine')
     print(f">>> Step '{name_step}' created with success!")
 
@@ -489,8 +487,6 @@ def CreateStepsPartFour(name_model,name_step,name_step_prev):
     """     
     
     m = mdb.models[name_model]
-
-    # name_step = 'Rev_9_875'
 
     m.StaticStep(name=name_step, previous=name_step_prev, minInc=1e-15)
     print(f">>> Step '{name_step}' created with success!") 
@@ -592,5 +588,4 @@ def ConfigurePhaseRev(name_model, step_name):
         m.boundaryConditions['PIN_FASEI'].deactivate(step_name)
         print(" - Boundary condition PIN_FASEI (temporary lock) deactivated.")
 
-    # print("Phase of casing successfully configured!")
 

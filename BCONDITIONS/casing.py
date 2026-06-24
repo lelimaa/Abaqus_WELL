@@ -40,20 +40,6 @@ def CasingStresses(data, name_phase, density_steel, z_top, z_bottom):
 
     return stress_top, stress_bottom
 
-    # force_real_top = force_real_base + density_steel * gravity * area_s * (height_base_casing - height_water_above_casing)  # Net force at the top of the casing considering the weight of the steel material
-    # stress_real_top = force_real_top / area_s
-
-    # a = (stress_real_top-stress_real_base)/(height_water_above_casing-height_base_casing)
-    # b = stress_real_top - a * height_water_above_casing
-
-    # stress_top = a * z_top + b
-    # stress_bottom = a * z_bottom + b
-
-    # # stress_base = density_fluid * gravity * height_base_casing
-    # stress_base = density_fluid * gravity * height_base_casing
-
-    # stress_top = -stress_base + density_steel * gravity * (height_base_casing - z_top)
-    # stress_bottom = -stress_base + density_steel * gravity * (height_base_casing - z_bottom)
 
 def CasingStressesNoCement(data, name_phase, density_steel, z_top, z_bottom):
 
