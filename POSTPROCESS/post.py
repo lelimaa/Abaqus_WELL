@@ -317,7 +317,8 @@ def ExportRockTemperatureAllFrames(odb_path, output_file):
     finally:
         odb.close()
     print("="*50 + "\n")
-    
+
+
 
 # Can be useful in the plane strain codes   
 # def ExportDisplacementHistory(odb_path, node_label, instance_name, output_file):
