@@ -8,7 +8,7 @@ data_for_time = defaultdict(dict)
 nodes_order = []  # To ensure nodes and displacements are in the same order
 
 # 2. Reading the CSV file
-with open('path_data_all_frames.csv', 'r', encoding='utf-8') as f:
+with open('rock_displacement_all_frames.csv', 'r', encoding='utf-8') as f:
     reader = csv.reader(f)
     next(reader)  # Skip the header ("Time (s), Node Label, ...")
     
@@ -56,7 +56,7 @@ json_final = {
 }
 
 # 6. Saving the file
-with open('open_well_closure.json', 'w', encoding='utf-8') as f:
+with open('rock_displacement_all_frames.json', 'w', encoding='utf-8') as f:
     json.dump(json_final, f, indent=4)
 
 print("Conversion completed successfully!")

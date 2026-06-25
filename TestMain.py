@@ -17,6 +17,7 @@ from GEOMETRY.assembly import *
 from GEOMETRY.sets import *
 from MATERIALS.materials import *
 from JSONS.ImportTools import *
+from JSONS.ConvertTools import *
 from BCONDITIONS.conditions import *     
 from BCONDITIONS.casing import *     
 from MESH.mesh import *    
@@ -415,30 +416,73 @@ if __name__ == "__main__":
 
     # Output exporting 
 
-    # ExportRockdisplacementAllFrames(
-    #     odb_path=job_name + '.odb',
-    #     output_file='wall_displacement_all_frames.csv'
-    # )
+    ExportRockDisplacementAllFrames(
+        odb_path=job_name + '.odb',
+        output_file='rock_displacement_all_frames.csv'
+    )
 
-    # ExportRockStressAllFrames(
-    #     odb_path=job_name + '.odb',
-    #     output_file='rock_stress_all_frames.csv'
-    # )
+    ExportRockStressAllFrames(
+        odb_path=job_name + '.odb',
+        output_file='rock_stress_all_frames.csv'
+    )
 
-    # ExportCasingStressAllFrames(
-    #     odb_path=job_name + '.odb',
-    #     output_file='casing_stress_all_frames.csv'
-    # )
+    ExportCasingStressAllFrames(
+        odb_path=job_name + '.odb',
+        output_file='casing_stress_all_frames.csv'
+    )
 
-    # ExportCasingTemperatureAllFrames(
-    #     odb_path=job_name + '.odb',  
-    #     output_file='casing_temperature_all_frames.csv'
-    # )     
+    ExportCasingTemperatureAllFrames(
+        odb_path=job_name + '.odb',  
+        output_file='casing_temperature_all_frames.csv'
+    )     
 
-    # ExportRockTemperatureAllFrames(
-    #     odb_path=job_name + '.odb',
-    #     output_file='rock_temperature_all_frames.csv'
-    # )   
+    ExportRockTemperatureAllFrames(
+        odb_path=job_name + '.odb',
+        output_file='rock_temperature_all_frames.csv'
+    )   
+
+    # Converting to csv
+
+    # Dicionário de configuração mapeando cada arquivo e suas respectivas chaves estruturais
+    configuration_tasks = [
+        {
+            "csv": "rock_displacement_all_frames.csv",
+            "json": "rock_displacement_all_frames.json",
+            "key_root": "wellbore_closure",
+            "key_data": "time_displacements"
+        },
+        {
+            "csv": "RockDisplacementAllFrames.csv",
+            "json": "rock_displacement_output.json",
+            "key_root": "rock_displacement",
+            "key_data": "time_displacements"
+        },
+        {
+            "csv": "ExportRockStressAllFrames.csv",
+            "json": "rock_stress_output.json",
+            "key_root": "rock_stress",
+            "key_data": "time_stresses"
+        },
+        {
+            "csv": "ExportCasingStressAllFrames.csv",
+            "json": "casing_stress_output.json",
+            "key_root": "casing_stress",
+            "key_data": "time_stresses"
+        }
+    ]
+
+    print("Starting the processing of Abaqus files in batch...\n")
+    
+    # Sweep the list of configurations executing the funtion for each item
+    for task in configuration_tasks:
+        convert_csv_abaqus_to_json(
+            path_csv=task["csv"],
+            path_json=task["json"],
+            main_key=task["key_root"],
+            name_field_data=task["key_data"]
+        )
+        
+    print("\nAll the available files were processed!")
 
 
     # End of the script. ############################################
