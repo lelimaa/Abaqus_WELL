@@ -443,46 +443,62 @@ if __name__ == "__main__":
 
     # Converting to csv
 
-    # Dicionário de configuração mapeando cada arquivo e suas respectivas chaves estruturais
-    configuration_tasks = [
-        {
-            "csv": "rock_displacement_all_frames.csv",
-            "json": "rock_displacement_all_frames.json",
-            "key_root": "wellbore_closure",
-            "key_data": "time_displacements"
-        },
-        {
-            "csv": "RockDisplacementAllFrames.csv",
-            "json": "rock_displacement_output.json",
-            "key_root": "rock_displacement",
-            "key_data": "time_displacements"
-        },
-        {
-            "csv": "ExportRockStressAllFrames.csv",
-            "json": "rock_stress_output.json",
-            "key_root": "rock_stress",
-            "key_data": "time_stresses"
-        },
-        {
-            "csv": "ExportCasingStressAllFrames.csv",
-            "json": "casing_stress_output.json",
-            "key_root": "casing_stress",
-            "key_data": "time_stresses"
-        }
-    ]
+    convert_now = True  # Set to True to enable conversion of CSV files to JSON
 
-    print("Starting the processing of Abaqus files in batch...\n")
-    
-    # Sweep the list of configurations executing the funtion for each item
-    for task in configuration_tasks:
-        convert_csv_abaqus_to_json(
-            path_csv=task["csv"],
-            path_json=task["json"],
-            main_key=task["key_root"],
-            name_field_data=task["key_data"]
-        )
+    if convert_now:
+
+        # Dicionário de configuração mapeando cada arquivo e suas respectivas chaves estruturais
+        configuration_tasks = [
+            {
+                "csv": "rock_displacement_all_frames.csv",
+                "json": "rock_displacement_all_frames.json",
+                "key_root": "wellbore_closure",
+                "key_data": "time_rock_displacements"
+            },
+            {
+                "csv": "rock_stress_all_frames.csv",
+                "json": "rock_stress_all_frames.json",
+                "key_root": "rock_stress",
+                "key_data": "time_rock_stresses"
+            },
+            {
+                "csv": "rock_temperature_all_frames.csv",
+                "json": "rock_temperature_all_frames.json",
+                "key_root": "rock_temperature",
+                "key_data": "time_rock_temperatures"
+            },
+            {
+                "csv": "casing_displacement_all_frames.csv",
+                "json": "casing_displacement_all_frames.json",
+                "key_root": "casing_displacement",
+                "key_data": "time_casing_displacements"
+            },
+            {
+                "csv": "casing_stress_all_frames.csv",
+                "json": "casing_stress_all_frames.json",
+                "key_root": "casing_stress",
+                "key_data": "time_casing_stresses"
+            },
+            {
+                "csv": "casing_temperature_all_frames.csv",
+                "json": "casing_temperature_all_frames.json",
+                "key_root": "casing_temperature",
+                "key_data": "time_casing_temperatures"
+            }
+        ]
+
+        print("Starting the processing of Abaqus files in batch...\n")
         
-    print("\nAll the available files were processed!")
+        # Sweep the list of configurations executing the funtion for each item
+        for task in configuration_tasks:
+            convert_csv_abaqus_to_json(
+                path_csv=task["csv"],
+                path_json=task["json"],
+                main_key=task["key_root"],
+                name_field_data=task["key_data"]
+            )
+            
+        print("\nAll the available files were processed!")
 
 
     # End of the script. ############################################
@@ -490,24 +506,6 @@ if __name__ == "__main__":
 
     # Falta:
     # enxugar as defs para os sets
-    # enxugar as defs para os steps
+    # enxugar as defs para os steps    
+    # Verificar como obter plots dos pontos mais profundos do poço
     
-    # Can be discussed if necessary to be plotted    
-    # ExportCasingTemperatureAllFrames(
-    #     odb_path=job_name + '.odb',  
-    #     output_file='casing_temperature_all_frames.csv'
-    # )
-    
-    # Can be useful in the plane strain codes
-    # ExportPipeStressAtFixedPoint(
-    #     odb_path=job_name + '.odb',
-    #     output_file='pipe_stress_at_fixed_point_bottom.csv'
-    # )
-
-    # Can be useful in the plane strain codes
-    # ExportDisplacementHistory(
-    #     odb_path=job_name + '.odb',
-    #     node_label=3,
-    #     instance_name='ROCK_INST',
-    #     output_file='displacement_no_3.csv'
-    # )

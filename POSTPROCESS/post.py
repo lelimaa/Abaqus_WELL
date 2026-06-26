@@ -103,6 +103,66 @@ def ExportRockStressAllFrames(odb_path, output_file):
     odb.close()
     print(f">>> Success! complete curves exported to: {output_file}")
 
+def ExportCasingDisplacementAllFrames(odb_path, output_file):
+
+    odb = openOdb(path=odb_path)
+    a = odb.rootAssembly
+
+    # Keeping the names of your instance and set as script of stress
+    instance_name = 'PIPE_INST'
+    set_name = 'FASEI_REV_OD'
+
+    try:
+        inst = a.instances[instance_name]
+        if set_name in inst.nodeSets.keys():
+            target_set = inst.nodeSets[set_name]
+            print(f">>> Success: Set '{set_name}' found at instance '{instance_name}'!")
+            print(">>> Mapping the coordinates of the mesh...")
+            # Uses the Y coordinate (index 1) as depth/Z
+            node_coords = {node.label: node.coordinates[1] for node in inst.nodes}
+        else:
+            print(f">>> Warning: Set '{set_name}' doesn't exist at instance '{instance_name}'!")
+            odb.close()
+            return
+    except:
+        print(f">>> Error: Instance '{instance_name}' not found at ODB.")
+        odb.close()
+        return
+
+    with open(output_file, 'w') as f:
+        # Updating the header to reflect the displacement quantities
+        f.write("Time (s), Node Label, Z Position (m), U1_Radial (m)\n")
+
+        print(">>> Extracting displacement data from frames...")
+
+        for step_key in odb.steps.keys():
+            step = odb.steps[step_key]
+            for frame in step.frames:
+                time = frame.frameValue
+
+                # Verifies if the 'U' field (Displacement) exists in the frame
+                if 'U' not in frame.fieldOutputs.keys():
+                    print(">>> Aviso: Deslocamento 'U' não encontrado no Step {} - Frame {}. (Disponíveis: {})".format(
+                            step_key, frame.frameId, frame.fieldOutputs.keys()
+                        ))
+                    continue
+
+                # Extracts the subset. Since 'U' is originally NODAL, we don't use position=ELEMENT_NODAL
+                disp_field = frame.fieldOutputs['U'].getSubset(region=target_set)
+
+                for val in disp_field.values:
+                    n_label = val.nodeLabel
+                    z_pos = node_coords[n_label]
+                    
+                    # Extracts the magnitude and the component U1 (radial displacement)
+                    u1 = float(val.data[0]) 
+
+                    f.write("{},{},{},{}\n".format(time, n_label, z_pos, u1))
+
+    print(f">>> Success! Displacement curves exported to: {output_file}")
+    
+    odb.close()
+
 
 def ExportCasingStressAllFrames(odb_path, output_file):
 
