@@ -431,6 +431,11 @@ if __name__ == "__main__":
         output_file='rock_displacement_all_frames.csv'
     )
 
+    ExportCasingDisplacementAllFrames(
+        odb_path=job_name + '.odb',
+        output_file='casing_displacement_all_frames.csv'
+    )
+
     ExportRockStressAllFrames(
         odb_path=job_name + '.odb',
         output_file='rock_stress_all_frames.csv'
