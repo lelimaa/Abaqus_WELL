@@ -3,6 +3,8 @@ import json
 with open(r'C:\Users\hidalgo\Documents\GitHub\Abaqus_WELL_\wellClosure_axi.json') as f:
     data = json.load(f)
 
+################################################################################################
+
 def process_lithology(data, global_top, global_bottom):
 
     t_depths = set()
