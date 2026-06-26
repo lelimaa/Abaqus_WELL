@@ -22,6 +22,7 @@ from GEOMETRY.assembly import *
 from GEOMETRY.sets import *
 from MATERIALS.materials import *
 from JSONS.ImportTools import *
+from JSONS.ConvertTools import *
 from BCONDITIONS.conditions import *     
 from BCONDITIONS.casing import *     
 from MESH.mesh import *    
@@ -206,13 +207,11 @@ if __name__ == "__main__":
     for mat_name, mat_data in examples.items():
         CreateMaterial(name_of_model, mat_name, mat_data, sectionLength=1.)
 
+    # Setting the absolute zero and Stefan-Boltzmann constant for the model
     mdb.models[name_of_model].setValues(absoluteZero=0.0, stefanBoltzmann=5.670374e-8)
 
-    # plastic_list = data["SteelGrades"][casing_type]["MisesPlastic"]["PlasticTable"]
-    # plastic_table_formatted = tuple(tuple(item) for item in plastic_list)
-
+    # Setting the plasticity for the steel casing material, based on the plastic table from the json file
     plastic_table = tuple([tuple(item) for item in data["SteelGrades"][casing_type]["MisesPlastic"]["PlasticTable"]])
-    
     AddPlasticityToSteel(name_of_model, 'STEEL', plastic_table)
 
     CreateSetsPipe(name_of_model)
@@ -253,8 +252,9 @@ if __name__ == "__main__":
     
     CreateSteps(name_of_model)
 
-    # Calculation of axial stresses in the casing due to its own weight (initial stresses)    
+    # Calculation of axial stresses in the casing due to its own weight (initial stresses), considering the hydrostatic pressure of the cement and the mud in the annular space. 
     stress_top, stress_bottom = CasingStresses(data, name_phase, examples["STEEL"]["density"], top_depth, base_depth)
+    # stress_top, stress_bottom = CasingStressesNoCement(data, name_phase, examples["STEEL"]["density"], top_depth, base_depth)
     ApplyCasingInitialStresses(name_of_model, top_depth, base_depth, stress_top, stress_bottom)
 
     # Another part of creation of steps
@@ -294,8 +294,7 @@ if __name__ == "__main__":
     )
 
     # Another part of creation of steps
-    CreateStepsPartThree(name_of_model,name_step1)
-    
+    CreateStepsPartThree(name_of_model,name_step1)    
 
     CreateCreepStep(
         name_model=name_of_model, 
@@ -406,7 +405,6 @@ if __name__ == "__main__":
     CreateSetPointRock(model_name=name_of_model, r_coord=inner_radius_wellbore, z_coord=-abs(base_depth))    
     CreateSetPointCasing(model_name=name_of_model, r_coord=inner_radius_annular, z_coord=-abs(base_depth))
 
-
     # Creating a job and saving the model #################################################################
     job_name = 'WellClosureJob'
 
@@ -428,55 +426,95 @@ if __name__ == "__main__":
 
     # Output exporting 
 
-    # ExportRockdisplacementAllFrames(
-    #     odb_path=job_name + '.odb',
-    #     output_file='wall_displacement_all_frames.csv'
-    # )
+    ExportRockDisplacementAllFrames(
+        odb_path=job_name + '.odb',
+        output_file='rock_displacement_all_frames.csv'
+    )
 
-    # ExportRockStressAllFrames(
-    #     odb_path=job_name + '.odb',
-    #     output_file='rock_stress_all_frames.csv'
-    # )
+    ExportRockStressAllFrames(
+        odb_path=job_name + '.odb',
+        output_file='rock_stress_all_frames.csv'
+    )
 
-    # ExportCasingStressAllFrames(
-    #     odb_path=job_name + '.odb',
-    #     output_file='casing_stress_all_frames.csv'
-    # )
+    ExportCasingStressAllFrames(
+        odb_path=job_name + '.odb',
+        output_file='casing_stress_all_frames.csv'
+    )
 
-    # ExportCasingTemperatureAllFrames(
-    #     odb_path=job_name + '.odb',  
-    #     output_file='casing_temperature_all_frames.csv'
-    # )     
+    ExportCasingTemperatureAllFrames(
+        odb_path=job_name + '.odb',  
+        output_file='casing_temperature_all_frames.csv'
+    )     
 
-    # ExportRockTemperatureAllFrames(
-    #     odb_path=job_name + '.odb',
-    #     output_file='rock_temperature_all_frames.csv'
-    # )   
+    ExportRockTemperatureAllFrames(
+        odb_path=job_name + '.odb',
+        output_file='rock_temperature_all_frames.csv'
+    )   
+
+    # Converting to csv
+
+    convert_now = True  # Set to True to enable conversion of CSV files to JSON
+
+    if convert_now:
+
+        # Dicionário de configuração mapeando cada arquivo e suas respectivas chaves estruturais
+        configuration_tasks = [
+            {
+                "csv": "rock_displacement_all_frames.csv",
+                "json": "rock_displacement_all_frames.json",
+                "key_root": "wellbore_closure",
+                "key_data": "time_rock_displacements"
+            },
+            {
+                "csv": "rock_stress_all_frames.csv",
+                "json": "rock_stress_all_frames.json",
+                "key_root": "rock_stress",
+                "key_data": "time_rock_stresses"
+            },
+            {
+                "csv": "rock_temperature_all_frames.csv",
+                "json": "rock_temperature_all_frames.json",
+                "key_root": "rock_temperature",
+                "key_data": "time_rock_temperatures"
+            },
+            {
+                "csv": "casing_displacement_all_frames.csv",
+                "json": "casing_displacement_all_frames.json",
+                "key_root": "casing_displacement",
+                "key_data": "time_casing_displacements"
+            },
+            {
+                "csv": "casing_stress_all_frames.csv",
+                "json": "casing_stress_all_frames.json",
+                "key_root": "casing_stress",
+                "key_data": "time_casing_stresses"
+            },
+            {
+                "csv": "casing_temperature_all_frames.csv",
+                "json": "casing_temperature_all_frames.json",
+                "key_root": "casing_temperature",
+                "key_data": "time_casing_temperatures"
+            }
+        ]
+
+        print("Starting the processing of Abaqus files in batch...\n")
+        
+        # Sweep the list of configurations executing the funtion for each item
+        for task in configuration_tasks:
+            convert_csv_abaqus_to_json(
+                path_csv=task["csv"],
+                path_json=task["json"],
+                main_key=task["key_root"],
+                name_field_data=task["key_data"]
+            )
+            
+        print("\nAll the available files were processed!")
 
 
     # End of the script. ############################################
 
-
     # Falta:
     # enxugar as defs para os sets
-    # enxugar as defs para os steps
+    # enxugar as defs para os steps    
+    # Verificar como obter plots dos pontos mais profundos do poço
     
-    # Can be discussed if necessary to be plotted    
-    # ExportCasingTemperatureAllFrames(
-    #     odb_path=job_name + '.odb',  
-    #     output_file='casing_temperature_all_frames.csv'
-    # )
-    
-    # Can be useful in the plane strain codes
-    # ExportPipeStressAtFixedPoint(
-    #     odb_path=job_name + '.odb',
-    #     output_file='pipe_stress_at_fixed_point_bottom.csv'
-    # )
-
-    # Can be useful in the plane strain codes
-    # ExportDisplacementHistory(
-    #     odb_path=job_name + '.odb',
-    #     node_label=3,
-    #     instance_name='ROCK_INST',
-    #     output_file='displacement_no_3.csv'
-    # )

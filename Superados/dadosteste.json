@@ -1,0 +1,11 @@
+{
+  "nome_experimento": "Movimento Retilíneo",
+  "unidades": {
+    "tempo": "s",
+    "deslocamento": "m"
+  },
+  "dados": {
+    "tempo": [0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0],
+    "deslocamento": [0.0, 2.1, 4.3, 5.8, 8.2, 10.5, 11.9]
+  }
+}
