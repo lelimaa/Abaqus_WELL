@@ -1,0 +1,55 @@
+# -*- coding: mbcs -*-
+#
+# Abaqus/CAE Release 2024 replay file
+# Internal Version: 2023_09_21-09.55.25 RELr426 190762
+# Run by Leticia on Wed Jun 24 14:13:20 2026
+#
+
+# from driverUtils import executeOnCaeGraphicsStartup
+# executeOnCaeGraphicsStartup()
+#: Executing "onCaeGraphicsStartup()" in the site directory ...
+from abaqus import *
+from abaqusConstants import *
+session.Viewport(name='Viewport: 1', origin=(1.55859, 1.5463), width=229.425, 
+    height=153.393)
+session.viewports['Viewport: 1'].makeCurrent()
+from driverUtils import executeOnCaeStartup
+executeOnCaeStartup()
+execfile('Test_Main_PS.py', __main__.__dict__)
+#: Data keys: dict_keys(['AnalysisData', 'ThermalGradient', 'Tubulars', 'Lithology', 'InSituStresses', 'Rocks', 'Cements', 'SteelGrades', 'Phases', 'Events', 'Fluids'])
+#: 812c492a-c945-4184-be51-841c5fb86b15
+#: The bottom of the wellbore is at: -2600.0 meters
+#: Sets específicos do FLUID criados.
+#: Instâncias disponíveis no Assembly: ['FLUID']
+#: Warning: findAt could not find a geometric entity at (0.0233486659147798, -2599.97665133409, 0.0)
+#: Warning: findAt could not find a geometric entity at (0.0179605122421383, -2599.98203948776, 0.0)
+#: Warning: findAt could not find a geometric entity at (-0.0233486659147798, -2599.97665133409, 0.0)
+#: Warning: findAt could not find a geometric entity at (-0.0179605122421383, -2599.98203948776, 0.0)
+#: Set 'YSYM_BASE' criado com sucesso unindo todas as instâncias.
+#: Feature 'RP_FLUID' criada na parte 'FLUID' (Set ignorado).
+#: Annulus created and added to assembly.
+#: Sets específicos da ROCK criados.
+#: Instâncias disponíveis no Assembly: ['FLUID', 'ROCK']
+#: Warning: findAt could not find a geometric entity at (0.233486659147798, -2599.76651334085, 0.0)
+#: Warning: findAt could not find a geometric entity at (0.0233486659147798, -2599.97665133409, 0.0)
+#: Warning: findAt could not find a geometric entity at (-0.233486659147798, -2599.76651334085, 0.0)
+#: Warning: findAt could not find a geometric entity at (-0.0233486659147798, -2599.97665133409, 0.0)
+#: Set 'YSYM_BASE' criado com sucesso unindo todas as instâncias.
+#: Feature 'RP_ROCK' e Set 'Set_RP_ROCK_-2600_0' criados na parte 'ROCK'.
+#: Rock created and added to assembly.
+#: Sets específicos do PIPE criados.
+#: Instâncias disponíveis no Assembly: ['FLUID', 'ROCK', 'PIPE']
+#: Warning: findAt could not find a geometric entity at (0.0179605122421383, -2599.98203948776, 0.0)
+#: Warning: findAt could not find a geometric entity at (0.0165021186480767, -2599.98349788135, 0.0)
+#: Warning: findAt could not find a geometric entity at (-0.0179605122421383, -2599.98203948776, 0.0)
+#: Warning: findAt could not find a geometric entity at (-0.0165021186480767, -2599.98349788135, 0.0)
+#: Set 'YSYM_BASE' criado com sucesso unindo todas as instâncias.
+#: Instâncias disponíveis no Assembly: ['FLUID', 'ROCK', 'PIPE']
+#: Aviso: Nenhuma face encontrada para FLUID e PIPE. Set 'FASEI' ignorado nesta etapa.
+#: Feature 'RP_PIPE' criada na parte 'PIPE' (Set ignorado).
+#: Casing created and added to assembly.
+#: Testando a criação dos materiais a partir do json...
+#: Layer at depth -2600.0 meters: SANDSTONE
+#: Selected Fluid: drilling_14in (60 deg)
+print('RT script done')
+#: RT script done

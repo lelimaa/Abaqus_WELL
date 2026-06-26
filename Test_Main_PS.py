@@ -95,11 +95,12 @@ if __name__ == "__main__":
                     span="half"
                         )
     AnnulusPart.create_part("MyFirstModel", depth=l_depth)
+    AnnulusPart.PartitionFacePS("MyFirstModel")
     AnnulusPart.create_sets("MyFirstModel")
-    AnnulusPart.CreateSetsAssembly("MyFirstModel")
+    AnnulusPart.CreateSurfaces("MyFirstModel")
     AnnulusPart.add_to_assembly("MyFirstModel")
     # AnnulusPart.CreateSetsAssembly("MyFirstModel")
-    # AnnulusPart.CreateSurfacesAssembly("MyFirstModel")
+    AnnulusPart.add_reference_point("MyFirstModel", depth=l_depth)
     print("Annulus created and added to assembly.")
 
     RockPart = PlaneStrainPart("ROCK",
@@ -110,12 +111,12 @@ if __name__ == "__main__":
                     span="half"
                         )
     RockPart.create_part("MyFirstModel", depth=l_depth)
+    RockPart.PartitionFacePS("MyFirstModel")
     RockPart.create_sets("MyFirstModel")
-    RockPart.CreateSetsAssembly("MyFirstModel")
+    RockPart.CreateSurfaces("MyFirstModel")
     RockPart.add_to_assembly("MyFirstModel")
-    RockPart.add_reference_point("MyFirstModel", depth=l_depth)
     # RockPart.CreateSetsAssembly("MyFirstModel")
-    # RockPart.CreateSurfacesAssembly("MyFirstModel")
+    RockPart.add_reference_point("MyFirstModel", depth=l_depth)
     print("Rock created and added to assembly.")
         
     CasingPart = PlaneStrainPart("PIPE",
@@ -126,11 +127,14 @@ if __name__ == "__main__":
                     span="half"
                         )
     CasingPart.create_part("MyFirstModel", depth=l_depth)
+    CasingPart.PartitionFacePS("MyFirstModel")
     CasingPart.create_sets("MyFirstModel")
-    CasingPart.CreateSetsAssembly("MyFirstModel")
+    CasingPart.CreateSurfaces("MyFirstModel")
     CasingPart.add_to_assembly("MyFirstModel")
     # CasingPart.CreateSetsAssembly("MyFirstModel")
-    # CasingPart.CreateSurfacesAssembly("MyFirstModel")
+    # CasingPart.SetsAssemblyFASEI("MyFirstModel")
+    CasingPart.add_reference_point("MyFirstModel", depth=l_depth)
+    
     print("Casing created and added to assembly.")
     print("Testando a criação dos materiais a partir do json...")
 
@@ -229,12 +233,10 @@ if __name__ == "__main__":
                        sectionName=section_name["sectionName"],
                        isSolid=section_name["isSolid"])
     
-    # Defining sets for boundary conditions and interactions
-        # AnnulusSets = Sets.CreateSetsAssembly('MyFirstModel')
-        # RockSets = Sets.CreateSetsAssembly('MyFirstModel')
-        # PipeSets = Sets.CreateSetsAssembly('MyFirstModel')
-
-    # CreateSurfacesAssembly('MyFirstModel')
+    # CreateSetsAssembly("MyFirstModel")
+    # CreateSetsAssembly(RockPart, 'MyFirstModel')
+    # CreateSetsAssembly(CasingPart, 'MyFirstModel')
+    # # CreateSurfacesAssembly('MyFirstModel')
 
     # Steps creation and boundary conditions application
     # Steps creation and boundary conditions application

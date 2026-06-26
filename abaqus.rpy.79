@@ -2,7 +2,7 @@
 #
 # Abaqus/CAE Release 2024 replay file
 # Internal Version: 2023_09_21-09.55.25 RELr426 190762
-# Run by Leticia on Wed Jun 10 12:13:31 2026
+# Run by Leticia on Wed Jun 24 13:59:51 2026
 #
 
 # from driverUtils import executeOnCaeGraphicsStartup
@@ -19,15 +19,19 @@ execfile('Test_Main_PS.py', __main__.__dict__)
 #: Data keys: dict_keys(['AnalysisData', 'ThermalGradient', 'Tubulars', 'Lithology', 'InSituStresses', 'Rocks', 'Cements', 'SteelGrades', 'Phases', 'Events', 'Fluids'])
 #: 812c492a-c945-4184-be51-841c5fb86b15
 #: The bottom of the wellbore is at: -2600.0 meters
+#: Sets específicos do FLUID criados.
+#: Feature 'RP_FLUID' criada na parte 'FLUID' (Set ignorado).
 #: Annulus created and added to assembly.
+#: Sets específicos da ROCK criados.
+#: Feature 'RP_ROCK' e Set 'Set_RP_ROCK_-2600_0' criados na parte 'ROCK'.
 #: Rock created and added to assembly.
+#: Sets específicos do PIPE criados.
+#: Feature 'RP_PIPE' criada na parte 'PIPE' (Set ignorado).
 #: Casing created and added to assembly.
 #: Testando a criação dos materiais a partir do json...
-#: Layer at depth 2600.0 meters: SANDSTONE
+#: Layer at depth -2600.0 meters: SANDSTONE
 #: Selected Fluid: drilling_14in (60 deg)
-#* KeyError: 'FLUID_INST'
-#* File "Test_Main_PS.py", line 222, in <module>
-#*     CreateSetsAssembly('MyFirstModel')
-#* File "C:\Users\leticia\Documents\GitHub\Abaqus_WELL\GEOMETRY\sets.py", line 
-#* 328, in CreateSetsAssembly
-#*     inst_f = a.instances['FLUID_INST']
+#* TypeError: CreateSetsAssembly() missing 1 required positional argument: 
+#* 'modelName'
+#* File "Test_Main_PS.py", line 237, in <module>
+#*     CreateSetsAssembly("MyFirstModel")
