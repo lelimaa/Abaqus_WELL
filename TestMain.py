@@ -503,7 +503,6 @@ if __name__ == "__main__":
 
     # End of the script. ############################################
 
-
     # Falta:
     # enxugar as defs para os sets
     # enxugar as defs para os steps    
