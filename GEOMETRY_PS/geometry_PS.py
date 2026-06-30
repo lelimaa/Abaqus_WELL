@@ -36,6 +36,8 @@ class PlaneStrainPart:
             "Ri1": Ri1,
             "Ri2": Ri2
         }
+        
+        return self.geometry
 
     def create_part(self, modelName, depth):
         self.get_geometry(depth)

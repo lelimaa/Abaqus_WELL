@@ -1,159 +1,14 @@
 from abaqus import mdb
 from abaqusConstants import *
 import numpy as np
-from GEOMETRY_PS.geometry_PS import *
+from GEOMETRY_PS.geometry_PS import PlaneStrainPart
 
-# def Create_Sets(self, modelName):
-#     m = mdb.models[modelName]
-#     p = m.parts[self.name]
-#     f = p.faces
-#     tol = 0.001
-    
-#     # ---------------------------------------------------------------------
-#     # 1. SETS GERAIS (ALL e FASEI)
-#     # ---------------------------------------------------------------------
-#     all_faces = f[0:len(f)]
-#     p.Set(faces=all_faces, name='FASEI_' + self.name.upper())
-
-#     if self.name.upper() == 'FLUID':
-#         p.Set(faces=all_faces, name='FASEI_' + self.name.upper())
-#         p.Set(faces=all_faces, name='FASEI_ANNULAR')
-
-#     # ---------------------------------------------------------------------
-#     # 2. IDENTIFICAÇÃO DOS ARCOS (OD e ID) PARA A GEOMETRIA EM "U"
-#     # ---------------------------------------------------------------------
-#     if self.span == "half":
-#         # Ângulos apontando para baixo (225º e 315º)
-#         angles = (1.25*np.pi, 1.75*np.pi)
-#     elif self.span == "quarter":
-#         # Quarto de círculo inferior direito (270º a 360º)
-#         angles = (1.75*np.pi,)
-#     else:
-#         angles = (1.25*np.pi, 1.75*np.pi)
-        
-#     od_edges = p.edges[:0]
-#     id_edges = p.edges[:0]
-        
-#     for angle in angles:
-#         xy1 = (self.geometry["Ro1"]*np.cos(angle) + self.geometry["center1"][0],
-#                 self.geometry["Ro2"]*np.sin(angle) + self.geometry["center1"][1],
-#                 0.0)
-#         xy2 = (self.geometry["Ri1"]*np.cos(angle) + self.geometry["center2"][0],
-#                 self.geometry["Ri2"]*np.sin(angle) + self.geometry["center2"][1],
-#                 0.0)
-#         od_edges += p.edges.findAt((xy1,))
-#         id_edges += p.edges.findAt((xy2,))
-        
-#     p.Set(edges=od_edges, name='FASEI_' + self.name.upper() + '_OD')
-#     p.Set(edges=id_edges, name='FASEI_' + self.name.upper() + '_ID')
-        
-#     if self.name.upper() == 'FLUID':
-#         p.Set(faces=all_faces, name='FASEI_' + self.name.upper() + '_OD')
-#         p.Set(faces=all_faces, name='FASEI_' + self.name.upper() + '_ID')
-#         p.Set(faces=all_faces, name='FASEI_ANNULAR_OD')
-#         p.Set(faces=all_faces, name='FASEI_ANNULAR_ID')
-
-#     # ---------------------------------------------------------------------
-#     # 3. IDENTIFICAÇÃO DOS TOPOS HORIONTAIS (MESH_TT e YSYM_TOP)
-#     # ---------------------------------------------------------------------
-#     # O "topo" do U são as linhas planas na cota y = -depth
-#     y_top = self.geometry["center1"][1] 
-        
-#     top_edges = p.edges.getByBoundingBox(
-#         xMin=-1e20, yMin=y_top - tol, zMin=-tol,
-#         xMax=1e20,  yMax=y_top + tol, zMax=tol
-#     )
-#     if top_edges:
-#         p.Set(edges=top_edges, name='FASEI_' + self.name.upper() + '_TT')
-
-#     if self.name.upper() == 'FLUID':
-#         p.Set(edges=od_edges, name='FASEI_' + self.name.upper() + '_OD')
-#         p.Set(edges=id_edges, name='FASEI_' + self.name.upper() + '_ID')
-#         p.Set(edges=od_edges, name='FASEI_ANNULAR_OD')
-#         p.Set(edges=id_edges, name='FASEI_ANNULAR_ID')
-#         p.Set(faces=all_faces, name='FASEI_ANNULAR_TT')
-
-#     # ---------------------------------------------------------------------
-#     # 4. IDENTIFICAÇÃO DE ARESTAS VERTICAIS (Apenas no modelo Quarter)
-#     # ---------------------------------------------------------------------
-#     if self.span == "quarter":
-#         vertical_edges = p.edges[:0]
-#         for edge in p.edges:
-#             v1 = p.vertices[edge.getVertices()[0]]
-#             v2 = p.vertices[edge.getVertices()[1]]
-#             # Se X for igual, é uma linha perfeitamente vertical
-#             if abs(v1.pointOn[0][0] - v2.pointOn[0][0]) < tol:
-#                 vertical_edges += p.edges[edge.index:edge.index+1]
-            
-#         if vertical_edges:
-#             p.Set(edges=vertical_edges, name='FASEI_VERTICAL_' + self.name.upper())
-
-#     # ---------------------------------------------------------------------
-#     # 5. SETS CONTEXTUAIS POR TIPO DE PEÇA (ROCK, FLUID, PIPE)
-#     # ---------------------------------------------------------------------
-#     if self.name.upper() == 'ROCK':
-#         p.Set(edges=id_edges, name='FASEI_OPEN_WELL')
-#         p.Set(edges=id_edges, name='FASEI_WELL')
-#         p.Set(edges=od_edges, name='ROCK_BC')
-#         p.Set(edges=od_edges, name='YSYM_BASE_ROCK') # A base da rocha é a curva mais externa
-#         p.Set(faces=all_faces, name='ROCK_OUTPUT')
-#         print(f"Sets específicos da ROCHA criados.")
-
-#     elif self.name.upper() == 'FLUID':
-#         p.Set(edges=od_edges, name='FASEI_OPEN_WELL')
-#         print(f"Sets específicos do FLUIDO criados.")
-
-#     elif self.name.upper() == 'PIPE':
-#         p.Set(edges=id_edges, name='FASEI_COMPLETED_WELL')
-#         print(f"Sets específicos do PIPE criados.")
-
-#     # if self.name == 'FLUID':
-#     #     m = mdb.models[modelName]
-#     #     p = m.parts[self.name]
-#     #     f = p.faces
-#     #     e = p.edges
-
-#     #     # FASEI_ANNULAR
-#     #     all_faces = f
-#     #     p.Set(faces=all_faces, name='FASEI_ANNULAR')
-        
-#     #     ########## FASEI_ANNULAR_OD e FASEI_ANNULAR_ID ###########################
-#     #     if self.span == "half":
-#     #         angles = (0.25*np.pi, 0.75*np.pi)
-#     #     elif self.span == "quarter":
-#     #         angles = (0.25*np.pi,)
-#     #     else:
-#     #         angles = (0.25*np.pi, 0.75*np.pi, 1.25*np.pi, 1.75*np.pi)
-#     #     od_edges = p.edges[:0]
-#     #     id_edges = p.edges[:0]
-#     #     for angle in angles:
-#     #         xy1 = (self.geometry["Ro1"]*np.cos(angle) + self.geometry["center1"][0],
-#     #                self.geometry["Ro2"]*np.sin(angle) + self.geometry["center1"][1],
-#     #                0.0)
-#     #         xy2 = (self.geometry["Ri1"]*np.cos(angle) + self.geometry["center2"][0],
-#     #                self.geometry["Ri2"]*np.sin(angle) + self.geometry["center2"][1],
-#     #                0.0)
-#     #         od_edges += p.edges.findAt((xy1,))
-#     #         id_edges += p.edges.findAt((xy2,))
-#     #     p.Set(edges = od_edges,name='FASEI_ANNULAR_OD')
-#     #     p.Set(edges = id_edges,name='FASEI_ANNULAR_ID')
-
-#     #     ##### FASEI_ANNULAR_TT ##################
-#     #     tol = 0.001
-#     #     all_coords = [v.pointOn[0][1] for v in p.vertices]
-#     #     min_y_global = min(all_coords)
-#     #     base_edges = p.edges.getByBoundingBox(
-#     #         xMin = -1e20, yMin=min_y_global - tol, zMin=-tol,
-#     #         xMax = 1e20, yMax=min_y_global + tol, zMax=tol
-#     #     )
-#     #     p.Set(edges=base_edges, name='FASEI_ANNULAR_TT')
-
-def CreateSetsAssembly(self, modelName, span='half'):  
+def CreateSetsAssembly(modelName, span):  
     m = mdb.models[modelName]    
     a = m.rootAssembly
     tol =0.001
     print("Instâncias disponíveis no Assembly:", a.instances.keys())
-        
+
     # =========================================================
     # Set ALL    
     # =========================================================
@@ -173,7 +28,7 @@ def CreateSetsAssembly(self, modelName, span='half'):
     nome_fluid = 'FLUID'
     nome_pipe  = 'PIPE'  
     nome_rock  = 'ROCK'
-      
+
     inst_fluid = a.instances.get(nome_fluid)
     inst_pipe  = a.instances.get(nome_pipe)
     inst_rock  = a.instances.get(nome_rock)
@@ -197,9 +52,9 @@ def CreateSetsAssembly(self, modelName, span='half'):
     # =========================================================
     # FASEI_OPEN_WELL + FASEI_WELL
     # =========================================================
-    if self.span == "half":
+    if span == "half":
         angles = (0.25*np.pi, 0.75*np.pi)
-    elif self.span == "quarter":
+    elif span == "quarter":
         angles = (0.25*np.pi,)
     else:
         angles = (0.25*np.pi, 0.75*np.pi, 1.25*np.pi, 1.75*np.pi)
@@ -207,6 +62,16 @@ def CreateSetsAssembly(self, modelName, span='half'):
     od_edges = None # a.edges[:0]
     id_edges = None # a.edges[:0]
     
+    for geometry in PlaneStrainPart.get_geometry():
+        geometry = {"center1": center1,
+            "center2": center2,
+            "Ro1": Ro1,
+            "Ro2": Ro2,
+            "Ri1": Ri1,
+            "Ri2": Ri2
+        }
+
+
     for angle in angles:
         xy1 = (self.geometry["Ro1"]*np.cos(angle) + self.geometry["center1"][0],
                 self.geometry["Ro2"]*np.sin(angle) + self.geometry["center1"][1],

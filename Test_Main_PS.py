@@ -99,7 +99,6 @@ if __name__ == "__main__":
     AnnulusPart.create_sets("MyFirstModel")
     AnnulusPart.CreateSurfaces("MyFirstModel")
     AnnulusPart.add_to_assembly("MyFirstModel")
-    # AnnulusPart.CreateSetsAssembly("MyFirstModel")
     AnnulusPart.add_reference_point("MyFirstModel", depth=l_depth)
     print("Annulus created and added to assembly.")
 
@@ -115,7 +114,6 @@ if __name__ == "__main__":
     RockPart.create_sets("MyFirstModel")
     RockPart.CreateSurfaces("MyFirstModel")
     RockPart.add_to_assembly("MyFirstModel")
-    # RockPart.CreateSetsAssembly("MyFirstModel")
     RockPart.add_reference_point("MyFirstModel", depth=l_depth)
     print("Rock created and added to assembly.")
         
@@ -131,8 +129,6 @@ if __name__ == "__main__":
     CasingPart.create_sets("MyFirstModel")
     CasingPart.CreateSurfaces("MyFirstModel")
     CasingPart.add_to_assembly("MyFirstModel")
-    # CasingPart.CreateSetsAssembly("MyFirstModel")
-    # CasingPart.SetsAssemblyFASEI("MyFirstModel")
     CasingPart.add_reference_point("MyFirstModel", depth=l_depth)
     
     print("Casing created and added to assembly.")
@@ -233,7 +229,7 @@ if __name__ == "__main__":
                        sectionName=section_name["sectionName"],
                        isSolid=section_name["isSolid"])
     
-    # CreateSetsAssembly("MyFirstModel")
+    CreateSetsAssembly("MyFirstModel")
     # CreateSetsAssembly(RockPart, 'MyFirstModel')
     # CreateSetsAssembly(CasingPart, 'MyFirstModel')
     # # CreateSurfacesAssembly('MyFirstModel')
