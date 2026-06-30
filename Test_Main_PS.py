@@ -22,10 +22,11 @@ from GEOMETRY.assembly import *
 from GEOMETRY_PS.geometry_PS import *
 
 # Change default model name to avoid conflicts when running the script multiple times in the same Abaqus session
-mdb.models.changeKey(fromName='Model-1', toName='MyFirstModel')
+name_model = 'MyFirstModel'
+mdb.models.changeKey(fromName='Model-1', toName=name_model)
 
-if 'MyFirstModel' not in mdb.models:
-    mdb.Model(name='MyFirstModel')
+if name_model not in mdb.models:
+    mdb.Model(name=name_model)
 # mdb.Model(name='MyFirstModel')
 
 # Reading the json file and filling the input data for the analysis ####################
@@ -84,8 +85,9 @@ print(f"The bottom of the wellbore is at: {-l_depth} meters")
 ################### Script to create the geometry ##########################################
 
 if __name__ == "__main__":
-    if 'MyFirstModel' not in mdb.models:
-        mdb.Model(name='MyFirstModel')
+    name_model = 'MyFirstModel'
+    if name_model not in mdb.models:
+        mdb.Model(name=name_model)
     
     AnnulusPart = PlaneStrainPart("FLUID",
                     data={"center1": [0,-l_depth],
@@ -216,24 +218,24 @@ if __name__ == "__main__":
     }
 
     for mat_name, mat_data in examples.items():
-        CreateMaterial('MyFirstModel', mat_name, mat_data, sectionLength=1.)
+        CreateMaterial(name_model, mat_name, mat_data, sectionLength=1.)
 
-    mdb.models['MyFirstModel'].setValues(
+    mdb.models[name_model].setValues(
         absoluteZero=0.0, stefanBoltzmann=5.670374e-8)
 
     # AddplasticityToSteel('MyFirstModel', 'STEEL')
 
     for section_name in material_examples.values():
-        AssignSection('MyFirstModel',
+        AssignSection(name_model,
                        partName=section_name["partName"],
                        sectionName=section_name["sectionName"],
                        isSolid=section_name["isSolid"])
-    
-    CreateSetsAssembly("MyFirstModel")
-    # CreateSetsAssembly(RockPart, 'MyFirstModel')
-    # CreateSetsAssembly(CasingPart, 'MyFirstModel')
-    # # CreateSurfacesAssembly('MyFirstModel')
+    # dicionario_geometrias = {
+    #     "FLUID": AnnulusPart.geometry,
+    #     "ROCK": RockPart.geometry,
+    #     "PIPE": CasingPart.geometry
+    # }
 
-    # Steps creation and boundary conditions application
-    # Steps creation and boundary conditions application
-    # CreateSteps('MyFirstModel')
+    CreateSetsAssembly(name_model)
+    CreateFeaturesAssembly(name_model, depth=l_depth)
+    
