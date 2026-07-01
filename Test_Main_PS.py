@@ -4,8 +4,8 @@ from abaqus import *
 import json
 import sys
 
-# path_project = r'C:\Users\juani\Documents\Github\Abaqus_WELL_'
-path_project = r'C:\Users\leticia\Documents\GitHub\Abaqus_WELL'
+path_project = r'C:\Users\juani\Documents\Github\Abaqus_WELL'
+# path_project = r'C:\Users\leticia\Documents\GitHub\Abaqus_WELL'
 
 if path_project not in sys.path:
     sys.path.append(path_project)
@@ -31,7 +31,8 @@ if name_model not in mdb.models:
 
 # Reading the json file and filling the input data for the analysis ####################
 
-with open(r'C:\Users\leticia\Documents\GitHub\Abaqus_WELL\wellbore_closure_planestrain.json') as f:
+# with open(r'C:\Users\leticia\Documents\GitHub\Abaqus_WELL\wellbore_closure_planestrain.json') as f:
+with open(r'C:\Users\juani\Documents\Github\Abaqus_WELL\wellbore_closure_planestrain.json') as f:
     data = json.load(f)
     print(f"Data keys: {data.keys()}")
 # Data keys: dict_keys(['AnalysisData', 'ThermalGradient',
