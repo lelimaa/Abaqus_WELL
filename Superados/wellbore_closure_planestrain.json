@@ -1,0 +1,1011 @@
+{
+  "AnalysisData": {
+    "Name": "691340b2162e6b3c840657eb",
+    "Depth": 2600.0,
+    "Top": 0.0,
+    "Bottom": 0.0,
+    "CreepTime": 0.0,
+    "Coupling": "M",
+    "HoleDiameter": 0.0,
+    "Solver": "Abaqus",
+    "Domain": "planestrain",
+    "WellboreFluid": null,
+    "StandOff": 100,
+    "Phases": "812c492a-c945-4184-be51-841c5fb86b15",
+    "GeothermalGradient": "temp. drilling 14in - 60 degC"
+  },
+  "ThermalGradient": {
+    "seawater": [
+      {
+        "Depth": 2000.0,
+        "Temperature": 4.0
+      },
+      {
+        "Depth": 5000.0,
+        "Temperature": 60.0
+      }
+    ],
+    "temp. drilling phase 14": [
+      {
+        "Depth": 2000.0,
+        "Temperature": 15.0
+      },
+      {
+        "Depth": 4550.0,
+        "Temperature": 50.0
+      }
+    ],
+    "GEOTHERMAL_2": [
+      {
+        "Depth": 2000.0,
+        "Temperature": 4.0
+      },
+      {
+        "Depth": 2500.0,
+        "Temperature": 22.0
+      },
+      {
+        "Depth": 3600.0,
+        "Temperature": 58.0
+      },
+      {
+        "Depth": 5200.0,
+        "Temperature": 84.0
+      },
+      {
+        "Depth": 5500.0,
+        "Temperature": 100.0
+      }
+    ],
+    "temp. drilling phase 9 5/8": [
+      {
+        "Depth": 2000.0,
+        "Temperature": 15.0
+      },
+      {
+        "Depth": 4550.0,
+        "Temperature": 60.0
+      }
+    ],
+    "temp. drilling 14in - 60 degC": [
+      {
+        "Depth": 2000.0,
+        "Temperature": 15.0
+      },
+      {
+        "Depth": 4550.0,
+        "Temperature": 60.0
+      }
+    ],
+    "Geothermal_temperature": [
+      {
+        "Depth": 2000.0,
+        "Temperature": 4.0
+      },
+      {
+        "Depth": 2500.0,
+        "Temperature": 19.0
+      },
+      {
+        "Depth": 3600.0,
+        "Temperature": 52.0
+      },
+      {
+        "Depth": 4150.0,
+        "Temperature": 58.05
+      },
+      {
+        "Depth": 4250.0,
+        "Temperature": 59.15
+      },
+      {
+        "Depth": 4400.0,
+        "Temperature": 60.8
+      },
+      {
+        "Depth": 4500.0,
+        "Temperature": 61.9
+      },
+      {
+        "Depth": 5000.0,
+        "Temperature": 67.4
+      },
+      {
+        "Depth": 5200.0,
+        "Temperature": 69.6
+      },
+      {
+        "Depth": 5500.0,
+        "Temperature": 78.6
+      }
+    ],
+    "temp. drilling 20 in": [
+      {
+        "Depth": 2000.0,
+        "Temperature": 15.0
+      },
+      {
+        "Depth": 3200.0,
+        "Temperature": 40.0
+      }
+    ]
+  },
+  "Tubulars": {
+    "VAM_16in_#97_P110": {
+      "OD": 16.0,
+      "Thickness": 0.575,
+      "MinThickness": 87.5,
+      "Ovality": 0.6,
+      "Material": "P110"
+    },
+    "CSG_13_625": {
+      "OD": 13.625,
+      "Thickness": 0.625,
+      "MinThickness": 90.0,
+      "Ovality": 0.6,
+      "Material": "VM-95"
+    },
+    "22_0IN_251_0NW_X70": {
+      "OD": 22.0,
+      "Thickness": 1.125,
+      "MinThickness": 87.5,
+      "Ovality": 0.6,
+      "Material": "X70"
+    },
+    "VAM_13_375_#72_P110": {
+      "OD": 13.375,
+      "Thickness": 0.514,
+      "MinThickness": 87.5,
+      "Ovality": 0.6,
+      "Material": "P110"
+    },
+    "VAM_20_#169_K55": {
+      "OD": 20.0,
+      "Thickness": 0.812,
+      "MinThickness": 87.5,
+      "Ovality": 0.6,
+      "Material": "K55"
+    },
+    "VAM_20in_#106.5_K55": {
+      "OD": 20.0,
+      "Thickness": 0.5,
+      "MinThickness": 87.5,
+      "Ovality": 0.6,
+      "Material": "K55"
+    },
+    "VAM_26in_#207.00_K55": {
+      "OD": 26.0,
+      "Thickness": 0.75,
+      "MinThickness": 87.5,
+      "Ovality": 0.6,
+      "Material": "K55"
+    },
+    "10_75IN_85_3NW_VM110": {
+      "OD": 10.75,
+      "Thickness": 0.797,
+      "MinThickness": 87.5,
+      "Ovality": 0.6,
+      "Material": "VM110"
+    },
+    "VAM_9-5/8_#53.5_V110HCSS": {
+      "OD": 9.625,
+      "Thickness": 0.545,
+      "MinThickness": 87.5,
+      "Ovality": 0.6,
+      "Material": "VM110"
+    },
+    "LIN_09_875": {
+      "OD": 9.875,
+      "Thickness": 0.625,
+      "MinThickness": 90.0,
+      "Ovality": 0.6,
+      "Material": "VM-95"
+    },
+    "TEN_30_#161.33_X56": {
+      "OD": 30.0,
+      "Thickness": 0.5,
+      "MinThickness": 90.0,
+      "Ovality": 0.6,
+      "Material": "X56"
+    },
+    "VAM_14_#82.5_P110": {
+      "OD": 14.0,
+      "Thickness": 0.562,
+      "MinThickness": 87.5,
+      "Ovality": 0.6,
+      "Material": "P110"
+    }
+  },
+  "Lithology": [
+    {
+      "Rock": "SHALE",
+      "Top": 2000.0,
+      "Bottom": 2500.0
+    },
+    {
+      "Rock": "SANDSTONE",
+      "Top": 2500.0,
+      "Bottom": 3600.0
+    },
+    {
+      "Rock": "HALITE",
+      "Top": 3600.0,
+      "Bottom": 4150.0
+    },
+    {
+      "Rock": "CARNALLITE",
+      "Top": 4150.0,
+      "Bottom": 4250.0
+    },
+    {
+      "Rock": "HALITE_DM",
+      "Top": 4250.0,
+      "Bottom": 4400.0
+    },
+    {
+      "Rock": "TACHYHYDRITE",
+      "Top": 4400.0,
+      "Bottom": 4500.0
+    },
+    {
+      "Rock": "Halite_Bryan_Mound",
+      "Top": 4500.0,
+      "Bottom": 5000.0
+    },
+    {
+      "Rock": "ANHYDRITE",
+      "Top": 5000.0,
+      "Bottom": 5200.0
+    },
+    {
+      "Rock": "CARBONATE",
+      "Top": 5200.0,
+      "Bottom": 5500.0
+    }
+  ],
+  "InSituStresses": [
+    {
+      "Depth": 2000.0,
+      "Overburden": 8.5,
+      "ShMax": 8.5,
+      "ShMin": 8.5,
+      "PorePressure": 8.5
+    },
+    {
+      "Depth": 2500.0,
+      "Overburden": 10.63825419,
+      "ShMax": 10.63825419,
+      "ShMin": 10.63825419,
+      "PorePressure": 8.5
+    },
+    {
+      "Depth": 3599.99,
+      "Overburden": 13.25246646,
+      "ShMax": 13.25246646,
+      "ShMin": 13.25246646,
+      "PorePressure": 8.5
+    },
+    {
+      "Depth": 3600.0,
+      "Overburden": 13.25246646,
+      "ShMax": 13.25246646,
+      "ShMin": 13.25246646,
+      "PorePressure": 0.0
+    },
+    {
+      "Depth": 4150.0,
+      "Overburden": 13.89610181,
+      "ShMax": 13.89610181,
+      "ShMin": 13.89610181,
+      "PorePressure": 0.0
+    },
+    {
+      "Depth": 4250.0,
+      "Overburden": 13.88330527,
+      "ShMax": 13.88330527,
+      "ShMin": 13.88330527,
+      "PorePressure": 0.0
+    },
+    {
+      "Depth": 4400.0,
+      "Overburden": 14.02736263,
+      "ShMax": 14.02736263,
+      "ShMin": 14.02736263,
+      "PorePressure": 0.0
+    },
+    {
+      "Depth": 4500.0,
+      "Overburden": 14.11806541,
+      "ShMax": 14.11806541,
+      "ShMin": 14.11806541,
+      "PorePressure": 0.0
+    },
+    {
+      "Depth": 5000.0,
+      "Overburden": 14.51715764,
+      "ShMax": 14.51715764,
+      "ShMin": 14.51715764,
+      "PorePressure": 0.0
+    },
+    {
+      "Depth": 5200.0,
+      "Overburden": 14.89553309,
+      "ShMax": 14.89553309,
+      "ShMin": 14.89553309,
+      "PorePressure": 0.0
+    },
+    {
+      "Depth": 5200.01,
+      "Overburden": 14.89553309,
+      "ShMax": 14.89553309,
+      "ShMin": 14.89553309,
+      "PorePressure": 8.5
+    },
+    {
+      "Depth": 5500.0,
+      "Overburden": 15.3166152,
+      "ShMax": 15.3166152,
+      "ShMin": 15.3166152,
+      "PorePressure": 8.5
+    }
+  ],
+  "Rocks": {
+    "SHALE": {
+      "MohrCoulombParameters": {
+        "Cohesion": 20.0017,
+        "FrictionAngle": 28.0,
+        "DilatancyAngle": 7.0,
+        "UltimateTraction": 0.0
+      },
+      "Law": "MOHR_COULOMB",
+      "Elasticity": "ISOTROPIC",
+      "ElasticParameters": {
+        "Density": 2299.69,
+        "Young": 20.0017,
+        "Poisson": 0.29
+      },
+      "ThermalParameters": {
+        "Conductivity": 1.592,
+        "SpecificHeat": 0.209946,
+        "ThermalExpansion": 1E-05
+      }
+    },
+    "BRYAN_MOUND": {
+      "MultipleMechanismParameters": {
+        "A1": 2.516E+21,
+        "A2": 2.609E+11,
+        "b1": 182600.0,
+        "b2": 0.00091,
+        "q1": 25.0,
+        "q2": 10.0,
+        "K0": 133500.0,
+        "m": 3.0,
+        "c": 0.009198,
+        "s0": 20570000.0,
+        "N1": 5.5,
+        "N2": 5.0,
+        "q": 5335.0,
+        "R": 0.001987,
+        "alpha": -13.37,
+        "beta": -7.738,
+        "delta": 0.58
+      },
+      "Law": "MULTIPLE_MECHANISM_CREEP",
+      "Elasticity": "ISOTROPIC",
+      "ElasticParameters": {
+        "Density": 2170.0,
+        "Young": 31.0,
+        "Poisson": 0.25
+      },
+      "ThermalParameters": {
+        "Conductivity": 5.55,
+        "SpecificHeat": 0.209946,
+        "ThermalExpansion": 1E-05
+      }
+    },
+    "ANHYDRITE": {
+      "ElasticParameters": {
+        "Density": 2918.45,
+        "Young": 30.99884,
+        "Poisson": 0.36
+      },
+      "Law": "ELASTIC",
+      "Elasticity": "ISOTROPIC",
+      "ThermalParameters": {
+        "Conductivity": 6.006,
+        "SpecificHeat": 0.209946,
+        "ThermalExpansion": 1E-05
+      }
+    },
+    "HALITE": {
+      "DoublePowerParameters": {
+        "s0": 10.300006,
+        "a1": 0.0077864,
+        "a2": 0.0076093,
+        "b1": 6042.905,
+        "b2": 6042.905,
+        "c1": 2.94,
+        "c2": 8.15
+      },
+      "Law": "DOUBLE_POWER_CREEP",
+      "Elasticity": "ISOTROPIC",
+      "ElasticParameters": {
+        "Density": 2170.0,
+        "Young": 20.4,
+        "Poisson": 0.36
+      },
+      "ThermalParameters": {
+        "Conductivity": 5.55,
+        "SpecificHeat": 0.209946,
+        "ThermalExpansion": 1E-05
+      }
+    },
+    "CARNALLITE": {
+      "DoublePowerParameters": {
+        "s0": 5.9999995,
+        "a1": 0.13662,
+        "a2": 0.1219,
+        "b1": 6042.905,
+        "b2": 6042.905,
+        "c1": 2.8352,
+        "c2": 7.5
+      },
+      "Law": "DOUBLE_POWER_CREEP",
+      "Elasticity": "ISOTROPIC",
+      "ElasticParameters": {
+        "Density": 1600.0,
+        "Young": 4.020004,
+        "Poisson": 0.36
+      },
+      "ThermalParameters": {
+        "Conductivity": 0.75,
+        "SpecificHeat": 0.209946,
+        "ThermalExpansion": 1E-05
+      }
+    },
+    "CARBONATE": {
+      "MohrCoulombParameters": {
+        "Cohesion": 1.5995843,
+        "FrictionAngle": 29.7,
+        "DilatancyAngle": 7.5,
+        "UltimateTraction": 0.0
+      },
+      "Law": "MOHR_COULOMB",
+      "Elasticity": "ISOTROPIC",
+      "ElasticParameters": {
+        "Density": 2710.0,
+        "Young": 29.300041,
+        "Poisson": 0.2
+      },
+      "ThermalParameters": {
+        "Conductivity": 1.298,
+        "SpecificHeat": 0.209946,
+        "ThermalExpansion": 1E-05
+      }
+    },
+    "SANDSTONE": {
+      "MohrCoulombParameters": {
+        "Cohesion": 20.0017,
+        "FrictionAngle": 30.0,
+        "DilatancyAngle": 7.5,
+        "UltimateTraction": 0.0
+      },
+      "Law": "MOHR_COULOMB",
+      "Elasticity": "ISOTROPIC",
+      "ElasticParameters": {
+        "Density": 2300.0,
+        "Young": 24.062023,
+        "Poisson": 0.25
+      },
+      "ThermalParameters": {
+        "Conductivity": 1.869,
+        "SpecificHeat": 0.209946,
+        "ThermalExpansion": 1E-05
+      }
+    },
+    "TACHYHYDRITE": {
+      "DoublePowerParameters": {
+        "s0": 8.4,
+        "a1": 1.0446,
+        "a2": 1.0551,
+        "b1": 6042.905,
+        "b2": 6042.905,
+        "c1": 2.5,
+        "c2": 8.35
+      },
+      "Law": "DOUBLE_POWER_CREEP",
+      "Elasticity": "ISOTROPIC",
+      "ElasticParameters": {
+        "Density": 2062.3,
+        "Young": 4.92,
+        "Poisson": 0.33
+      },
+      "ThermalParameters": {
+        "Conductivity": 0.64,
+        "SpecificHeat": 0.209946,
+        "ThermalExpansion": 1E-05
+      }
+    },
+    "Halite_Bryan_Mound": {
+      "MultipleMechanismParameters": {
+        "A1": 2.516E+21,
+        "A2": 2.609E+11,
+        "b1": 182600.0,
+        "b2": 0.00091,
+        "q1": 25.0,
+        "q2": 10.0,
+        "K0": 133500.0,
+        "m": 3.0,
+        "c": 0.009198,
+        "s0": 20570000.0,
+        "N1": 5.5,
+        "N2": 5.0,
+        "q": 5335.0,
+        "R": 0.001987,
+        "alpha": -13.37,
+        "beta": -7.738,
+        "delta": 0.58
+      },
+      "Law": "MULTIPLE_MECHANISM_CREEP",
+      "Elasticity": "ISOTROPIC",
+      "ElasticParameters": {
+        "Density": 2170.0,
+        "Young": 31.0,
+        "Poisson": 0.25
+      },
+      "ThermalParameters": {
+        "Conductivity": 5.55,
+        "SpecificHeat": 0.209946,
+        "ThermalExpansion": 1E-05
+      }
+    },
+    "HALITE_DM": {
+      "DoubleMechanismParameters": {
+        "s0": 9.91,
+        "e0": 1.88E-06,
+        "n1": 3.36,
+        "n2": 7.55,
+        "t0": 86.0,
+        "R": 8.314,
+        "Q": 50160.0
+      },
+      "Law": "DOUBLE_MECHANISM_CREEP",
+      "Elasticity": "ISOTROPIC",
+      "ElasticParameters": {
+        "Density": 2170.0,
+        "Young": 20.4,
+        "Poisson": 0.36
+      },
+      "ThermalParameters": {
+        "Conductivity": 5.55,
+        "SpecificHeat": 0.21,
+        "ThermalExpansion": 1E-05
+      }
+    }
+  },
+  "Cements": {
+    "CLASS_G": {
+      "MohrCoulombParameters": {
+        "Cohesion": 8.852872,
+        "FrictionAngle": 1.7,
+        "DilatancyAngle": 0.4,
+        "UltimateTraction": 0.0
+      },
+      "Law": "MOHR_COULOMB",
+      "Elasticity": "ISOTROPIC",
+      "ElasticParameters": {
+        "Density": 1893.26,
+        "Young": 17.0,
+        "Poisson": 0.2
+      },
+      "ThermalParameters": {
+        "Conductivity": 0.6,
+        "SpecificHeat": 1500.0,
+        "ThermalExpansion": 0.0
+      }
+    },
+    "CEMENT_Type1": {
+      "MohrCoulombParameters": {
+        "Cohesion": 8.852872,
+        "FrictionAngle": 1.7,
+        "DilatancyAngle": 0.4,
+        "UltimateTraction": 0.0
+      },
+      "Law": "MOHR_COULOMB",
+      "Elasticity": "ISOTROPIC",
+      "ElasticParameters": {
+        "Density": 1437.9171,
+        "Young": 4.791858,
+        "Poisson": 0.138
+      },
+      "ThermalParameters": {
+        "Conductivity": 0.517,
+        "SpecificHeat": 2639.0,
+        "ThermalExpansion": 7.34
+      }
+    }
+  },
+  "SteelGrades": {
+    "P110": {
+      "VonMisesParameters": {
+        "sy": 758.4236,
+        "sUlt": 758.4236,
+        "epUlt": 0.3
+      },
+      "Law": "VON_MISES_PLASTIC",
+      "Elasticity": "ISOTROPIC",
+      "ElasticParameters": {
+        "Density": 7935.0,
+        "Young": 206.8428,
+        "Poisson": 0.3
+      },
+      "ThermalParameters": {
+        "Conductivity": 45.3452,
+        "SpecificHeat": 460.9,
+        "ThermalExpansion": 0.0001242
+      }
+    },
+    "X80": {
+      "VonMisesParameters": {
+        "sy": 551.5808,
+        "sUlt": 551.5808,
+        "epUlt": 0.3
+      },
+      "Law": "VON_MISES_PLASTIC",
+      "Elasticity": "ISOTROPIC",
+      "ElasticParameters": {
+        "Density": 7935.0,
+        "Young": 206.8428,
+        "Poisson": 0.3
+      },
+      "ThermalParameters": {
+        "Conductivity": 45.3452,
+        "SpecificHeat": 460.9,
+        "ThermalExpansion": 0.0001242
+      }
+    },
+    "C110HC": {
+      "VonMisesParameters": {
+        "sy": 758.4236,
+        "sUlt": 758.4236,
+        "epUlt": 0.3
+      },
+      "Law": "VON_MISES_PLASTIC",
+      "Elasticity": "ISOTROPIC",
+      "ElasticParameters": {
+        "Density": 7935.0,
+        "Young": 206.8428,
+        "Poisson": 0.3
+      },
+      "ThermalParameters": {
+        "Conductivity": 45.3452,
+        "SpecificHeat": 460.9,
+        "ThermalExpansion": 0.0001242
+      }
+    },
+    "X56": {
+      "VonMisesParameters": {
+        "sy": 386.10657,
+        "sUlt": 386.10657,
+        "epUlt": 0.3
+      },
+      "Law": "VON_MISES_PLASTIC",
+      "Elasticity": "ISOTROPIC",
+      "ElasticParameters": {
+        "Density": 7935.0,
+        "Young": 206.8428,
+        "Poisson": 0.3
+      },
+      "ThermalParameters": {
+        "Conductivity": 45.3452,
+        "SpecificHeat": 460.9,
+        "ThermalExpansion": 0.0001242
+      }
+    },
+    "L80": {
+      "VonMisesParameters": {
+        "sy": 551.5808,
+        "sUlt": 551.5808,
+        "epUlt": 0.3
+      },
+      "Law": "VON_MISES_PLASTIC",
+      "Elasticity": "ISOTROPIC",
+      "ElasticParameters": {
+        "Density": 7935.0,
+        "Young": 206.8428,
+        "Poisson": 0.3
+      },
+      "ThermalParameters": {
+        "Conductivity": 45.3452,
+        "SpecificHeat": 460.9,
+        "ThermalExpansion": 0.0001242
+      }
+    },
+    "SDSS125": {
+      "VonMisesParameters": {
+        "sy": 861.845,
+        "sUlt": 861.845,
+        "epUlt": 0.3
+      },
+      "Law": "VON_MISES_PLASTIC",
+      "Elasticity": "ISOTROPIC",
+      "ElasticParameters": {
+        "Density": 7935.0,
+        "Young": 206.8428,
+        "Poisson": 0.3
+      },
+      "ThermalParameters": {
+        "Conductivity": 45.3452,
+        "SpecificHeat": 460.9,
+        "ThermalExpansion": 0.0001242
+      }
+    },
+    "X70": {
+      "VonMisesParameters": {
+        "sy": 482.6332,
+        "sUlt": 482.6332,
+        "epUlt": 0.3
+      },
+      "Law": "VON_MISES_PLASTIC",
+      "Elasticity": "ISOTROPIC",
+      "ElasticParameters": {
+        "Density": 7935.0,
+        "Young": 206.8428,
+        "Poisson": 0.3
+      },
+      "ThermalParameters": {
+        "Conductivity": 45.3452,
+        "SpecificHeat": 460.9,
+        "ThermalExpansion": 0.0001242
+      }
+    },
+    "VM-95": {
+      "VonMisesParameters": {
+        "sy": 655002000.0,
+        "sUlt": 655002000.0,
+        "epUlt": 0.3
+      },
+      "Law": "VON_MISES_PLASTIC",
+      "Elasticity": "ISOTROPIC",
+      "ElasticParameters": {
+        "Density": 7935.0,
+        "Young": 206.8428,
+        "Poisson": 0.3
+      },
+      "ThermalParameters": {
+        "Conductivity": 45.3452,
+        "SpecificHeat": 460.9,
+        "ThermalExpansion": 0.0001242
+      }
+    },
+    "K55": {
+      "VonMisesParameters": {
+        "sy": 379.0,
+        "sUlt": 655.0,
+        "epUlt": 0.3
+      },
+      "Law": "VON_MISES_PLASTIC",
+      "Elasticity": "ISOTROPIC",
+      "ElasticParameters": {
+        "Density": 7935.0,
+        "Young": 206.8428,
+        "Poisson": 0.3
+      },
+      "ThermalParameters": {
+        "Conductivity": 45.3452,
+        "SpecificHeat": 460.9,
+        "ThermalExpansion": 0.0001242
+      }
+    },
+    "VM125": {
+      "VonMisesParameters": {
+        "sy": 861.845,
+        "sUlt": 861.845,
+        "epUlt": 0.3
+      },
+      "Law": "VON_MISES_PLASTIC",
+      "Elasticity": "ISOTROPIC",
+      "ElasticParameters": {
+        "Density": 7935.0,
+        "Young": 206.8428,
+        "Poisson": 0.3
+      },
+      "ThermalParameters": {
+        "Conductivity": 45.3452,
+        "SpecificHeat": 460.9,
+        "ThermalExpansion": 0.0001242
+      }
+    },
+    "C125HC": {
+      "VonMisesParameters": {
+        "sy": 861.845,
+        "sUlt": 861.845,
+        "epUlt": 0.3
+      },
+      "Law": "VON_MISES_PLASTIC",
+      "Elasticity": "ISOTROPIC",
+      "ElasticParameters": {
+        "Density": 7935.0,
+        "Young": 206.8428,
+        "Poisson": 0.3
+      },
+      "ThermalParameters": {
+        "Conductivity": 45.3452,
+        "SpecificHeat": 460.9,
+        "ThermalExpansion": 0.0001242
+      }
+    },
+    "VM110": {
+      "VonMisesParameters": {
+        "sy": 758.4236,
+        "sUlt": 758.4236,
+        "epUlt": 0.3
+      },
+      "Law": "VON_MISES_PLASTIC",
+      "Elasticity": "ISOTROPIC",
+      "ElasticParameters": {
+        "Density": 7935.0,
+        "Young": 206.8428,
+        "Poisson": 0.3
+      },
+      "ThermalParameters": {
+        "Conductivity": 45.3452,
+        "SpecificHeat": 460.9,
+        "ThermalExpansion": 0.0001242
+      }
+    },
+    "Q125HC": {
+      "VonMisesParameters": {
+        "sy": 861.845,
+        "sUlt": 861.845,
+        "epUlt": 0.3
+      },
+      "Law": "VON_MISES_PLASTIC",
+      "Elasticity": "ISOTROPIC",
+      "ElasticParameters": {
+        "Density": 7935.0,
+        "Young": 206.8428,
+        "Poisson": 0.3
+      },
+      "ThermalParameters": {
+        "Conductivity": 45.3452,
+        "SpecificHeat": 460.9,
+        "ThermalExpansion": 0.0001242
+      }
+    }
+  },
+  "Phases": {
+    "136fdd5d-6082-4c4f-8f77-7ed08da1932c": {
+      "Casing": [
+        {
+          "Tubular": "TEN_30_#161.33_X56",
+          "Top": 2000.0,
+          "Bottom": 2200.0
+        }
+      ],
+      "CementSheath": [
+        {
+          "Cement": "CLASS_G",
+          "Top": 2000.0,
+          "Bottom": 2200.0
+        }
+      ],
+      "HoleDiameter": 36.0,
+      "Standoff": 100.0,
+      "RateOfPenetration": 10.0,
+      "TripSpeed": 400.0,
+      "Fluid": "sea_water",
+      "Name": "conductor"
+    },
+    "812c492a-c945-4184-be51-841c5fb86b15": {
+      "Casing": [
+        {
+          "Tubular": "VAM_20_#169_K55",
+          "Top": 2000.0,
+          "Bottom": 3200.0
+        }
+      ],
+      "CementSheath": [
+        {
+          "Cement": "CLASS_G",
+          "Top": 2500.0,
+          "Bottom": 3200.0
+        }
+      ],
+      "HoleDiameter": 26.0,
+      "Standoff": 100.0,
+      "RateOfPenetration": 10.0,
+      "TripSpeed": 400.0,
+      "Fluid": "drilling 20 in",
+      "Name": "surface"
+    },
+    "3dda7930-6dbf-4d05-87f2-d2809a3e9fc6": {
+      "Casing": [
+        {
+          "Tubular": "VAM_9-5/8_#53.5_V110HCSS",
+          "Top": 4250.0,
+          "Bottom": 5250.0
+        }
+      ],
+      "CementSheath": [
+        {
+          "Cement": "CLASS_G",
+          "Top": 4750.0,
+          "Bottom": 5250.0
+        }
+      ],
+      "HoleDiameter": 12.25,
+      "Standoff": 67.0,
+      "RateOfPenetration": 10.0,
+      "TripSpeed": 400.0,
+      "Fluid": "drilling 9 5/8",
+      "Name": "inter. 9 5/8"
+    },
+    "9c6179ee-f0da-4e8d-aa9d-941090754187": {
+      "Casing": [
+        {
+          "Tubular": "VAM_14_#82.5_P110",
+          "Top": 2000.0,
+          "Bottom": 4550.0
+        }
+      ],
+      "CementSheath": [
+        {
+          "Cement": "CLASS_G",
+          "Top": 4000.0,
+          "Bottom": 4550.0
+        }
+      ],
+      "HoleDiameter": 17.5,
+      "Standoff": 67.0,
+      "RateOfPenetration": 10.0,
+      "TripSpeed": 400.0,
+      "Fluid": "derated_mud",
+      "Name": "intermed_14"
+    }
+  },
+  "Events": {},
+  "Fluids": {
+    "drilling phase 14": {
+      "Density": 10.5,
+      "ThermalGradient": "Geothermal_temperature",
+      "Data": []
+    },
+    "drilling_14in (9.5ppg)": {
+      "Density": 9.5,
+      "ThermalGradient": "temp. drilling phase 14",
+      "Data": []
+    },
+    "derated_drilling_14in": {
+      "Density": 9.5,
+      "ThermalGradient": "temp. drilling phase 14",
+      "Data": []
+    },
+    "drilling_14in (60 deg)": {
+      "Density": 10.5,
+      "ThermalGradient": "temp. drilling 14in - 60 degC",
+      "Compressibility": 1E-05,
+      "ThermalExpansion": 0.0001242
+    },
+    "derated_mud": {
+      "Density": 9.5,
+      "ThermalGradient": "Geothermal_temperature",
+      "Data": []
+    },
+    "sea_water": {
+      "Density": 8.5,
+      "ThermalGradient": "seawater",
+      "Data": []
+    },
+    "drilling 9 5/8": {
+      "Density": 11.0,
+      "ThermalGradient": "temp. drilling phase 9 5/8",
+      "Data": []
+    },
+    "drilling 20 in": {
+      "Density": 9.5,
+      "ThermalGradient": "temp. drilling 20 in",
+      "Data": []
+    }
+  }
+}

@@ -17,9 +17,11 @@ from GEOMETRY.geometries import *
 from JOBS.job import *
 from JSONS.ImportTools import *
 from MATERIALS.materials import *
-from GEOMETRY.sets_PS import *
+from GEOMETRY_PS.sets_PS import *
 from GEOMETRY.assembly import *
 from GEOMETRY_PS.geometry_PS import *
+from GEOMETRY_PS.interactions_PS import *
+from GEOMETRY_PS.steps_PS import *
 
 # Change default model name to avoid conflicts when running the script multiple times in the same Abaqus session
 name_model = 'MyFirstModel'
@@ -99,8 +101,9 @@ if __name__ == "__main__":
     AnnulusPart.create_part("MyFirstModel", depth=l_depth)
     AnnulusPart.PartitionFacePS("MyFirstModel")
     AnnulusPart.create_sets("MyFirstModel")
-    AnnulusPart.CreateSurfaces("MyFirstModel")
     AnnulusPart.add_to_assembly("MyFirstModel")
+    AnnulusPart.CreateSurfaces("MyFirstModel")
+    AnnulusPart.CreateSurfacesAssembly("MyFirstModel")
     AnnulusPart.add_reference_point("MyFirstModel", depth=l_depth)
     print("Annulus created and added to assembly.")
 
@@ -114,8 +117,8 @@ if __name__ == "__main__":
     RockPart.create_part("MyFirstModel", depth=l_depth)
     RockPart.PartitionFacePS("MyFirstModel")
     RockPart.create_sets("MyFirstModel")
-    RockPart.CreateSurfaces("MyFirstModel")
     RockPart.add_to_assembly("MyFirstModel")
+    RockPart.CreateSurfaces("MyFirstModel")
     RockPart.add_reference_point("MyFirstModel", depth=l_depth)
     print("Rock created and added to assembly.")
         
@@ -129,8 +132,8 @@ if __name__ == "__main__":
     CasingPart.create_part("MyFirstModel", depth=l_depth)
     CasingPart.PartitionFacePS("MyFirstModel")
     CasingPart.create_sets("MyFirstModel")
-    CasingPart.CreateSurfaces("MyFirstModel")
     CasingPart.add_to_assembly("MyFirstModel")
+    CasingPart.CreateSurfaces("MyFirstModel")
     CasingPart.add_reference_point("MyFirstModel", depth=l_depth)
     
     print("Casing created and added to assembly.")
@@ -238,4 +241,14 @@ if __name__ == "__main__":
 
     CreateSetsAssembly(name_model)
     CreateFeaturesAssembly(name_model, depth=l_depth)
+
+    CreateSteps(name_model, STEPS, ON)
+    for stepName in STEPS.values():
+        CreateBoundaryConditionSteps(name_model, STEPS, stepName)
+        CreateFieldHistoryOutput(name_model, STEPS, stepName)
+
+    CreatePredefinedFieldSteps(name_model, STEPS)
+    CreateLoads(name_model, STEPS)
+    # CreateInteraction(name_model)
+    CreateInteractionProperties(name_model)
     

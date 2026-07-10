@@ -158,10 +158,12 @@ def CreateSetsAssembly(modelName):
     else:
         print("Aviso: Não foi possível determinar a base (y_base). O Assembly está vazio ou as instâncias não possuem vértices.")
     
+    
 def CreateFeaturesAssembly(modelName, depth):
     m = mdb.models[modelName]    
     a = m.rootAssembly
 
+    # CRIA UM DATUM CSYS CARTESIANO NO ASSEMBLY
     a.DatumCsysByThreePoints(
     name='Datum csys-1',                # Nome do seu CSYS (facilita referenciar depois)
     coordSysType=CARTESIAN, 
@@ -169,20 +171,20 @@ def CreateFeaturesAssembly(modelName, depth):
     point1=(1.0, -depth, 0.0),       # Um ponto para definir a direção do eixo X
     point2=(0.0, -depth + 1.0, 0.0))
 
-    # 1. Cria o RP
+    # CRIA UM REFERENCE POINT (RP) NO ASSEMBLY:
     rp_feature = a.ReferencePoint(point=(0.0, -depth, 0.0))
     # 2. Define os novos nomes baseados no nome da parte
-    nome_feature = f'RP-1'
+    nome_feature = f'REFPT'
     
     # 3. Altera o nome do RP na aba 'Features' da árvore
-    a.features.changeKey(fromName=rp_feature.name, toName=nome_feature)
+    # a.features.changeKey(fromName=rp_feature.name, toName=nome_feature)
 
     # 4. Acessa o objeto real do RP usando o ID
     rp_object = a.referencePoints[rp_feature.id]
                     
     # 5. Cria o Set passando o objeto
     a.Set(name=nome_feature, referencePoints=(rp_object, ))
-
+    
     # insti_rock = 'ROCK'
     # if insti_rock in a.instances.keys():
     #     rp_set = f'{insti_rock}.Set_RP_{insti_rock}_-{depth}_0'
