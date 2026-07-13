@@ -71,11 +71,11 @@ def CreateBoundaryConditionSteps(modelName, STEPS, stepName):
             inst_rock = a.instances['ROCK']
             if 'FASEI_WELL' in inst_rock.sets.keys():
                 region_well = inst_rock.sets['FASEI_WELL']
-                m.XsymmBC(name='FIX_FASEI_WELL', createStepName=stepName, 
+                m.EncastreBC(name='FIX_FASEI_WELL', createStepName=stepName, 
                         region=region_well, localCsys=None)
             if 'ROCK_BC' in inst_rock.sets.keys():
                 region_rock = inst_rock.sets['ROCK_BC']
-                m.XsymmBC(name='XSYM_ROCK_BC', createStepName=stepName, 
+                m.EncastreBC(name='FIX_ROCK_BC', createStepName=stepName, 
                         region=region_rock, localCsys=None)
 
         if 'PIPE' in name_instances:
@@ -115,13 +115,13 @@ def CreateFieldHistoryOutput(modelName, STEPS, stepName):
     name_instances = a.instances.keys()
     
     ####### COMENTEI OS TIMEPOINT - para podermos saber o momento exato em que a rocha encostou no Casing
-    if 'timePoint' not in m.timePoints.keys():
-        m.TimePoint(name='timePoint', points=((1.0, ), (3600.0, ), 
-            (7200.0, ), (14400.0, ), (28800.0, ), (57600.0, ), (86400.0, ), (
-            172800.0, ), (345600.0, ), (691200.0, ), (1382400.0, ), (2764800.0, ), 
-            (5529600.0, ), (11059200.0, ), (22118400.0, ), (31536000.0, ), (
-            63072000.0, ), (126144000.0, ), (252288000.0, ), (504576000.0, ), (
-            946080000.0, )))
+    # if 'timePoint' not in m.timePoints.keys():
+    #     m.TimePoint(name='timePoint', points=((1.0, ), (3600.0, ), 
+    #         (7200.0, ), (14400.0, ), (28800.0, ), (57600.0, ), (86400.0, ), (
+    #         172800.0, ), (345600.0, ), (691200.0, ), (1382400.0, ), (2764800.0, ), 
+    #         (5529600.0, ), (11059200.0, ), (22118400.0, ), (31536000.0, ), (
+    #         63072000.0, ), (126144000.0, ), (252288000.0, ), (504576000.0, ), (
+    #         946080000.0, )))
     
     # ========================================================
     # FIELD OUTPUTS                                        ###
@@ -193,31 +193,45 @@ def CreatePredefinedFieldSteps(modelName, STEPS):
     # PREDEFINED FIELD em TEMPERATURE                      ###
     # ======================================================== 
     if STEPS['tempdefine'] in m.steps.keys():
-        if 'PIPE' in name_instances:
-            inst_pipe = a.instances['PIPE']
-            
-            set_pipe_temp = ['FASEI', 'FASEI_COMPLETED_WELL']
-            
-            for fase_name in set_pipe_temp:
-                if fase_name in inst_pipe.sets.keys():
-                    region = inst_pipe.sets[fase_name]
-                    m.Temperature(name=f'TEMP_{fase_name}', createStepName=STEPS['tempdefine'], 
-                        region=region, distributionType=UNIFORM, 
-                        crossSectionDistribution=CONSTANT_THROUGH_THICKNESS, magnitudes=(337.5, ))
+        temperature_value = 337.5  # Kelvin
+
+        # Mapeamento: Instância -> Lista de Sets que receberão a temperatura
+        alvos_temperatura = {
+            'PIPE': ['FASEI', 'FASEI_COMPLETED_WELL'],
+            'ROCK': ['FASEI_ROCK', 'ROCK_BC']}
+
+        for nome_instancia, lista_sets in alvos_temperatura.items():
+            if nome_instancia in name_instances:
+                instancia = a.instances[nome_instancia]
+
+                for fase_name in lista_sets:
+                    region = None
+                    origem = ""
+
+                    # 1. Busca primeiro no Assembly
+                    if fase_name in a.sets.keys():
+                        region = a.sets[fase_name]
+                        origem = "Assembly"
+                    # 2. Se não achar, busca na Instância
+                    elif fase_name in instancia.sets.keys():
+                        region = instancia.sets[fase_name]
+                        origem = f"Instância '{nome_instancia}'"
+
+                    # 3. Se encontrou em qualquer um dos dois, aplica a temperatura
+                    if region is not None:
+                        m.Temperature(
+                            name=f'NT_{fase_name}', 
+                            createStepName=STEPS['tempdefine'], 
+                            region=region, 
+                            distributionType=UNIFORM, 
+                            crossSectionDistribution=CONSTANT_THROUGH_THICKNESS, 
+                            magnitudes=(temperature_value, )
+                        )
+                        print(f"[OK] Temperatura aplicada no set '{fase_name}' (Origem: {origem}).")
+                    else:
+                        print(f"[AVISO] Set '{fase_name}' não foi encontrado nem no Assembly nem na instância '{nome_instancia}'.")
+               
                 
-        if 'ROCK' in name_instances:
-            inst_rock = a.instances['ROCK']
-            
-            set_rock_temp = ['FASEI_ROCK', 'FASEI_ROCK_BC']
-            
-            for fase_name in set_rock_temp:
-                if fase_name in inst_rock.sets.keys():
-                    region = inst_rock.sets[fase_name]
-                    m.Temperature(name=f'TEMP_{fase_name}', createStepName=STEPS['tempdefine'], 
-                        region=region, distributionType=UNIFORM, 
-                        crossSectionDistribution=CONSTANT_THROUGH_THICKNESS, magnitudes=(337.5, ))
-
-
 def CreateLoads(modelName, STEPS):
     m = mdb.models[modelName]
     a = m.rootAssembly
@@ -262,65 +276,7 @@ def CreateLoads(modelName, STEPS):
             if fase_name == 'FASEI_OPEN_WELL':
                 m.loads[f'P_{fase_name}'].deactivate(STEPS['rev'])
 
-def CreateInteraction(modelName, STEPS):
-    m = mdb.models[modelName]
-    a = m.rootAssembly
-    name_instances = a.instances.keys()
-    
-    # ========================================================
-    # INTERECTION: STEP GEOSTATIC                          ###
-    # ======================================================== 
-    if STEPS['init'] in m.steps.keys():
-        if 'PIPE' in name_instances:
-            inst_pipe = a.instances['PIPE']
-            fase_name = 'FASEI_PIPE'
-
-            if fase_name in inst_pipe.sets.keys():
-                region = inst_pipe.sets[fase_name]
-                m.Stress(name=f'S_{fase_name}', region=region, 
-                    distributionType=UNIFORM, sigma11=0.0, sigma22=0.0, 
-                    sigma33=-16570100.0, sigma12=0.0, sigma13=None, sigma23=None)
-                
-        if 'ROCK' in name_instances:
-            inst_rock = a.instances['ROCK']
-            fase_name = 'FASEI_ROCK'
-
-            if fase_name in inst_rock.sets.keys():
-                region = inst_rock.sets[fase_name]
-                m.Stress(name=f'S_{fase_name}', region=region, 
-                distributionType=UNIFORM, sigma11=-54536500.0, sigma22=-54536500.0, 
-                sigma33=-54536500.0, sigma12=0.0, sigma13=None, sigma23=None)
-                
-    # ========================================================
-    # INTERECTION: STEP REV_9_875                          ###
-    # ======================================================== 
-    if STEPS['tempdefine'] in m.steps.keys():
-        if 'PIPE' in name_instances:
-            inst_pipe = a.instances['PIPE']
-            
-            set_pipe_temp = ['FASEI', 'FASEI_COMPLETED_WELL']
-            
-            for fase_name in set_pipe_temp:
-                if fase_name in inst_pipe.sets.keys():
-                    region = inst_pipe.sets[fase_name]
-                    m.Temperature(name=f'TEMP_{fase_name}', createStepName=STEPS['tempdefine'], 
-                        region=region, distributionType=UNIFORM, 
-                        crossSectionDistribution=CONSTANT_THROUGH_THICKNESS, magnitudes=(337.5, ))
-                
-        if 'ROCK' in name_instances:
-            inst_rock = a.instances['ROCK']
-            
-            set_rock_temp = ['FASEI_ROCK', 'FASEI_ROCK_BC']
-            
-            for fase_name in set_rock_temp:
-                if fase_name in inst_rock.sets.keys():
-                    region = inst_rock.sets[fase_name]
-                    m.Temperature(name=f'TEMP_{fase_name}', createStepName=STEPS['tempdefine'], 
-                        region=region, distributionType=UNIFORM, 
-                        crossSectionDistribution=CONSTANT_THROUGH_THICKNESS, magnitudes=(337.5, ))
-
-
-def CreateInteractionProperties(modelName):  
+def CreateInteractionProperties(modelName):     
     m = mdb.models[modelName]    
     a = m.rootAssembly
     
@@ -332,3 +288,82 @@ def CreateInteractionProperties(modelName):
                 elasticSlipStiffness=None)
     m.interactionProperties['C_FASEI'].NormalBehavior(pressureOverclosure=HARD, 
                 allowSeparation=ON, constraintEnforcementMethod=DEFAULT)
+
+def CreateInteraction(modelName, STEPS):
+    m = mdb.models[modelName]
+    a = m.rootAssembly
+    name_instances = a.instances.keys()
+    c_fasei = m.interactionProperties['C_FASEI']
+
+    # ========================================================
+    # INTERECTION: STEP GEOSTATIC                          ###
+    # ======================================================== 
+    if STEPS['geo'] in m.steps.keys():
+        name_modchange = {
+            'PIPE': ['FASEI_PIPE'],
+            'FLUID': ['FASEI_FLUID']
+            }
+        for name_inst, fasei_names in name_modchange.items():
+            if name_inst in name_instances:
+                inst = a.instances[name_inst]
+
+                for f_name in fasei_names:
+                    region = None
+                    if f_name in a.sets.keys():
+                        region = a.sets[f_name]
+                    elif f_name in inst.sets.keys():
+                        region = inst.sets[f_name]
+                    
+                    if region is not None:
+                        m.ModelChange(name=f'MC_{f_name}', createStepName=STEPS['geo'], 
+                            region=region, activeInStep=False, 
+                            includeStrain=False)
+                        print(f"[OK] Model Change criado com sucesso e aplicado ao Set '{f_name}'.")
+                    else:
+                        print(f"[AVISO] Set '{f_name}' não foi encontrado nem no Assembly nem na instância '{name_inst}'.")
+    
+    # ========================================================
+    # INTERECTION: STEP REV_9_875                          ###
+    # ======================================================== 
+    if STEPS['rev'] in m.steps.keys():
+        region_master = None
+        region_slave = None
+        
+        # 1. Busca a superfície MASTER (Geralmente no PIPE ou Assembly)
+        if 'PIPE' in name_instances and 'FASEI_MASTER' in a.instances['PIPE'].surfaces.keys():
+            region_master = a.instances['PIPE'].surfaces['FASEI_MASTER']
+        elif 'FASEI_MASTER' in a.surfaces.keys():
+            region_master = a.surfaces['FASEI_MASTER']
+
+        # 2. Busca a superfície SLAVE (Geralmente na ROCK ou Assembly)
+        if 'ROCK' in name_instances and 'FASEI_SLAVE' in a.instances['ROCK'].sets.keys():
+            region_slave = a.instances['ROCK'].sets['FASEI_SLAVE']
+        elif 'FASEI_SLAVE' in a.sets.keys():
+            region_slave = a.sets['FASEI_SLAVE']
+
+        if region_master is not None and region_slave is not None:
+            m.SurfaceToSurfaceContactStd(name=c_fasei.name, 
+                createStepName=STEPS['rev'], main=region_master, secondary=region_slave, 
+                sliding=FINITE, thickness=ON, interactionProperty=c_fasei.name, 
+                adjustMethod=NONE, initialClearance=OMIT, datumAxis=None, 
+                clearanceRegion=None)
+                    
+            print(f"[OK] Interaction '{c_fasei.name}' criada com sucesso entre superfícies MASTER e SLAVE.")
+        else:
+            print("[ERRO] Superfícies 'FASEI_MASTER' ou 'FASEI_SLAVE' não foram encontradas no modelo.")
+                            
+        # ========================================================
+        # REATIVANDO MODEL CHANGE NO STEP REV (Opcional)       ###
+        # ========================================================
+        if 'PIPE' in name_instances:
+            sets_reativar = ['FASEI_PIPE']
+            for nome_set in sets_reativar:
+                nome_interacao = f'MC_{nome_set}'  # Sem o '+' aqui!
+                
+                if nome_interacao in m.interactions.keys():
+                    m.interactions[nome_interacao].setValuesInStep(
+                        stepName=STEPS['rev'], 
+                        activeInStep=True)
+                    print(f"[OK] Model Change '{nome_interacao}' reativado com sucesso no step REV.")
+                else:
+                    print(f"[AVISO] Interação '{nome_interacao}' não foi encontrada em m.interactions.")

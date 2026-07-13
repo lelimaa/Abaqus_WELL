@@ -20,7 +20,6 @@ from MATERIALS.materials import *
 from GEOMETRY_PS.sets_PS import *
 from GEOMETRY.assembly import *
 from GEOMETRY_PS.geometry_PS import *
-from GEOMETRY_PS.interactions_PS import *
 from GEOMETRY_PS.steps_PS import *
 
 # Change default model name to avoid conflicts when running the script multiple times in the same Abaqus session
@@ -249,6 +248,6 @@ if __name__ == "__main__":
 
     CreatePredefinedFieldSteps(name_model, STEPS)
     CreateLoads(name_model, STEPS)
-    # CreateInteraction(name_model)
     CreateInteractionProperties(name_model)
+    CreateInteraction(name_model, STEPS)
     
