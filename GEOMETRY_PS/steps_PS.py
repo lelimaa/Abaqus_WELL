@@ -245,37 +245,87 @@ def CreateLoads(modelName, STEPS):
         if 'ROCK' in name_instances:
             inst_rock = a.instances['ROCK']
             fase_name = 'FASEI_OPEN_WELL'
+            region_rock = None
 
-            if fase_name in inst_rock.surfaces.keys():
+            # Busca híbrida por superfícies (Assembly -> Instância ROCK)
+            if fase_name in a.surfaces.keys():
+                region_rock = a.surfaces[fase_name]
+            elif fase_name in inst_rock.surfaces.keys():
                 region_rock = inst_rock.surfaces[fase_name]
-                m.Pressure(name=f'P_{fase_name}', createStepName=STEPS['perf'], 
-                    region=region_rock, distributionType=UNIFORM, 
-                    field='', magnitude=36969400.0, amplitude=UNSET)
 
+            if region_rock is not None:
+                m.Pressure(
+                    name=f'P_{fase_name}', createStepName=STEPS['perf'], 
+                    region=region_rock, distributionType=UNIFORM, field='', 
+                    magnitude=36969400.0, amplitude=UNSET)
+                print(f"[OK] Carga 'P_{fase_name}' criada no step '{STEPS['perf']}'.")
+            else:
+                print(f"[AVISO] Superfície '{fase_name}' não encontrada para criar a carga.")
 
+    # ========================================================
+    # LOADS em PRESSURE (STEP REV)                         ###
+    # ======================================================== 
     if STEPS['rev'] in name_steps:
+        # 1. Carga no FLUIDO (Busca segura em todas as instâncias se não achar no Assembly)
+        fase_name_fluid = 'FASEI_FLUID_ALT'
+        region_fluid = None
+        surf = a.surfaces.keys()
+
+        if fase_name_fluid in surf:
+            region_fluid = a.surfaces[fase_name_fluid]
+        else:
+            # Se não estiver no rootAssembly, busca dentro de cada instância do Assembly
+            for inst_name, inst_obj in a.instances.items():
+                if fase_name_fluid in inst_obj.surfaces:
+                    region_fluid = inst_obj.surfaces[fase_name_fluid]
+                    print(f"[INFO] Superfície '{fase_name_fluid}' encontrada dentro da instância '{inst_name}'.")
+                    break
+        # Cria a carga caso a superfície tenha sido localizada em qualquer um dos níveis
+        if region_fluid is not None:
+            m.Pressure(
+                name=f'P_{fase_name_fluid}', createStepName=STEPS['rev'], 
+                region=region_fluid, distributionType=UNIFORM, 
+                field='', magnitude=36969400.0, amplitude=UNSET
+            )
+            print(f"[OK] Carga 'P_{fase_name_fluid}' criada no step '{STEPS['rev']}'.")
+        else:
+            print(f"[AVISO] Superfície '{fase_name_fluid}' não encontrada no modelo.")
+        
+        # 2. Carga no FLUIDO (Busca segura em todas as instâncias se não achar no Assembly)    
         if 'PIPE' in name_instances:
             inst_pipe = a.instances['PIPE']
             fase_name = 'FASEI_COMPLETED_WELL'
+            region_pipe = None
 
-            if fase_name in inst_pipe.surfaces.keys():
+            if fase_name in a.surfaces.keys():
+                region_pipe = a.surfaces[fase_name]
+            elif fase_name in inst_pipe.surfaces.keys():
                 region_pipe = inst_pipe.surfaces[fase_name]
-                m.Pressure(name=f'P_{fase_name}', createStepName=STEPS['rev'], 
-                    region=region_pipe, distributionType=UNIFORM, 
-                    field='', magnitude=36969400.0, amplitude=UNSET)
-        
-        fase_name_fluid = 'FASEI_FLUID_ALT'
-        if fase_name_fluid in a.surfaces.keys():
-            region_fluid = a.surfaces[fase_name_fluid]
-            m.Pressure(name=f'P_{fase_name_fluid}', createStepName=STEPS['rev'], 
-                region=region_fluid, distributionType=UNIFORM, 
-                field='', magnitude=36969400.0, amplitude=UNSET)
-        
-        if 'ROCK' in name_instances:
-            inst_rock = a.instances['ROCK']
-            if fase_name == 'FASEI_OPEN_WELL':
-                m.loads[f'P_{fase_name}'].deactivate(STEPS['rev'])
 
+            if region_pipe is not None:
+                m.Pressure(
+                    name=f'P_{fase_name}', createStepName=STEPS['rev'], 
+                    region=region_pipe, distributionType=UNIFORM, 
+                    field='', magnitude=36969400.0, amplitude=UNSET
+                )
+                print(f"[OK] Carga 'P_{fase_name}' criada no step '{STEPS['rev']}'.")
+            else:
+                print(f"[AVISO] Superfície '{fase_name}' não encontrada em PIPE/Assembly.")
+        
+            
+        # 3. Desativar a Carga na ROCHA
+        if 'ROCK' in name_instances:
+            set_desactive = ['FASEI_OPEN_WELL']
+            
+            for nome_set in set_desactive:                
+                nome_carga = f'P_{nome_set}'  # Corrigido: Montamos o nome 'P_...' antes de checar!
+                
+                if nome_carga in m.loads.keys():
+                    m.loads[nome_carga].deactivate(STEPS['rev'])
+                    print(f"[OK] Carga '{nome_carga}' desativada com sucesso no step '{STEPS['rev']}'.")
+                else:
+                    print(f"[AVISO] Tentativa de desativar '{nome_carga}', mas ela não existe em m.loads.")
+        
 def CreateInteractionProperties(modelName):     
     m = mdb.models[modelName]    
     a = m.rootAssembly

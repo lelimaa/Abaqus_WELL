@@ -381,8 +381,8 @@ class PlaneStrainPart:
         edges_fluido = od_edges + id_edges # Caso queira incluir as laterais, some + side_edges
         
         if len(edges_fluido) > 0:
-            a.Surface(side1Edges=edges_fluido, name='FASEI_FLUIDO_ALT')
-            print("Surface 'FASEI_FLUIDO_ALT' criada no Assembly com sucesso!")
+            a.Surface(side1Edges=edges_fluido, name='FASEI_FLUID_ALT')
+            print("Surface 'FASEI_FLUID_ALT' criada no Assembly com sucesso!")
         else:
             print("Aviso: Nenhuma aresta foi encontrada para criar a Surface.")
 
