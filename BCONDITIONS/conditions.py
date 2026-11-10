@@ -243,7 +243,9 @@ def CreateStepsPartOne(name_model):
 
     regionDef=m.rootAssembly.sets['ROCK_OUTPUT']
     m.FieldOutputRequest(name='ROCK_OUTPUT', 
-        createStepName='Geostatic', variables=('U', 'TEMP','NT', 'S', 'MISES'), region=regionDef, 
+        # createStepName='Geostatic', variables=('U', 'TEMP','NT', 'S', 'MISES'), region=regionDef, 
+        createStepName='Geostatic', variables=('U', 'TEMP','NT', 'S', 'PRESSONLY', 'LODE', 'TRIAX','PE', 'PEEQ', 'IE', 'LE', 'THE', 'ER'), region=regionDef, 
+        # createStepName='Geostatic', variables=('U', 'TEMP','NT', 'S'), region=regionDef, 
         sectionPoints=DEFAULT, rebar=EXCLUDE)
 
     if 'H-Output-1' in m.historyOutputRequests.keys():
@@ -294,19 +296,18 @@ def CreateStepsPartTwo(name_model):
     a = m.rootAssembly
 
     region = a.sets['FASEI']
-    # m.Temperature(name='NT_FASEI', createStepName='TempDefine', 
-    m.Temperature(name='NT_FASEI', createStepName='Initial', 
+    # m.Temperature(name='NT_FASEI', createStepName='Initial', 
+    m.Temperature(name='NT_FASEI', createStepName='TempDefine', 
         region=region, distributionType=FIELD, 
         crossSectionDistribution=CONSTANT_THROUGH_THICKNESS, 
         field='Geothermal', magnitudes=(277.15, ))
 
     region = a.sets['FASEI_COMPLETED_WELL']
     m.Temperature(name='NT_FASEI_ID', 
-        # createStepName='TempDefine', region=region, distributionType=FIELD, 
-        createStepName='Initial', region=region, distributionType=FIELD, 
+        # createStepName='Initial', region=region, distributionType=FIELD, 
+        createStepName='TempDefine', region=region, distributionType=FIELD, 
         crossSectionDistribution=CONSTANT_THROUGH_THICKNESS, 
-        field='Geothermal', magnitudes=(277.15, ))
-    
+        field='Geothermal', magnitudes=(277.15, ))    
 
     
 def ApplyExpressionFieldsGeothermal(name_model, filtered_layers, top_depth=2000.0, top_temp_C=4.0, bottom_depth=4000.0, bottom_temp_C=75.0):

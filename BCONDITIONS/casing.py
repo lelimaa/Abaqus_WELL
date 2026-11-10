@@ -2,10 +2,11 @@
 # from abaqusConstants import *
 import numpy as np
 
-def CasingStresses(data, name_phase, density_steel, z_top, z_bottom):
+def CasingStresses(data, name_phase, name_tubular, density_steel, z_top, z_bottom):
 
-    name_phase = "3dda7930-6dbf-4d05-87f2-d2809a3e9fc6"  # The phase from the given json file. It may disappear, because only one phase will be considered soon.
-    name_tubular = 'LIN_09_875' # The name of the casing in the json file. There refferred to as "Tubulars".
+
+    # name_phase = "3dda7930-6dbf-4d05-87f2-d2809a3e9fc6"  # The phase from the given json file. It may disappear, because only one phase will be considered soon.
+    # name_tubular = 'LIN_09_875' # The name of the casing in the json file. There refferred to as "Tubulars".
 
     density_fluid = 1000  # kg/m³ (density of water)
     density_cement = data["Phases"][name_phase]["CementSheath"][0]["Density"]  # kg/m³ (density of the cement, as given in the json file)
@@ -76,5 +77,31 @@ def CasingStressesNoCement(data, name_phase, density_steel, z_top, z_bottom):
 
     stress_bottom = stress_real_base + density_steel * gravity * (height_base_casing - z_bottom)
     stress_top = stress_real_base + density_steel * gravity * (height_base_casing - z_top)
+
+    return stress_top, stress_bottom
+
+def CasingStressesH(data, name_phase, density_steel):
+
+    # name_phase = "3dda7930-6dbf-4d05-87f2-d2809a3e9fc6"  # The phase from the given json file. It may disappear, because only one phase will be considered soon.
+    # name_tubular = 'LIN_09_875' # The name of the casing in the json file. There refferred to as "Tubulars".
+
+    density_fluid = 1000  # kg/m³ (density of water)
+    density_cement = data["Phases"][name_phase]["CementSheath"][0]["Density"]  # kg/m³ (density of the cement, as given in the json file)
+    gravity = 9.81  # m/s² (acceleration due to gravity)
+
+    height_water_above_casing = data["Phases"][name_phase]["Casing"][0]["Top"] 
+    length_casing = data["Phases"][name_phase]["Casing"][0]["Bottom"] - data["Phases"][name_phase]["Casing"][0]["Top"]
+    length_cement = data["Phases"][name_phase]["CementSheath"][0]["Bottom"] - data["Phases"][name_phase]["CementSheath"][0]["Top"]
+    
+    # height_base_casing = length_casing + height_water_above_casing
+    height_top_of_cement = height_water_above_casing + length_casing - length_cement
+
+    stress_top_cement = density_fluid * gravity * height_top_of_cement 
+    stress_base_cement = (stress_top_cement + density_cement * gravity * length_cement)
+
+    pressure_casing = -density_steel * gravity * length_casing  # Pressure at the casing due to the steel column
+
+    stress_bottom = -stress_base_cement
+    stress_top = -(stress_bottom + pressure_casing)
 
     return stress_top, stress_bottom
