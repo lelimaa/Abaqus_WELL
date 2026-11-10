@@ -52,8 +52,13 @@ with open(r'C:\Users\hidalgo\Documents\GitHub\Abaqus_WELL\wellClosure_axi.json')
 
 # Geometry Variables (read from json) ####################################################
 
-name_phase = '3dda7930-6dbf-4d05-87f2-d2809a3e9fc6'  # The phase from the given json file. It may disappear, because only one phase will be considered soon.
-name_tubular = 'LIN_09_875' # The name of the casing in the json file. There refferred to as "Tubulars".
+# name_phase = '3dda7930-6dbf-4d05-87f2-d2809a3e9fc6'  # The phase from the given json file. It may disappear, because only one phase will be considered soon.
+# name_tubular = 'LIN_09_875' # The name of the casing in the json file. There refferred to as "Tubulars".
+name_phase = list(data["Phases"].keys())[0]  # Get the first phase key from the json file. It is assumed that there is only one phase in the analysis.
+name_tubular = data["Phases"][name_phase]["Casing"][0]["Tubular"]  # Get the first tubular name from the phase in the json file. It is assumed that there is only one tubular in the analysis.
+
+# print(f"The phase considered in the analysis is: {name_phase}")
+# print(f"The tubular considered in the analysis is: {name_tubular}")
 
 outer_diamenter_pipe = data["Tubulars"][name_tubular]['OD'] # outer diameter of the pipe in inches, as given in the json file. It is converted to meters below.
 outer_diamenter_pipe = outer_diamenter_pipe * 0.0254  # Convert from inches to meters
@@ -72,8 +77,13 @@ top_depth = int(top_depth) # Convert to integer for easier handling, since the d
 base_depth = data["AnalysisData"]["Bottom"] # The bottom of the wellbore in meters, as given in json file. 
 base_depth = int(base_depth) # Convert to integer for easier handling, since the depth is usually given in whole numbers. It is already in meters, so no conversion needed.
 
-print(f"The top of the wellbore is at: {-top_depth} meters")
-print(f"The bottom of the wellbore is at: {-base_depth} meters")
+top_well_depth = data["Phases"][name_phase]["Casing"][0]["Top"] # The top of the wellbore in meters, as given in json file.
+base_well_depth = data["Phases"][name_phase]["Casing"][0]["Bottom"] # The bottom of the wellbore in meters, as given in json file.
+
+print(f"The top of the wellbore is at: {-top_well_depth} meters")
+print(f"The bottom of the wellbore is at: {-base_well_depth} meters")
+print(f"The top of the analysis is at: {-top_depth} meters")
+print(f"The bottom of the analysis is at: {-base_depth} meters")
 
 ########################################################################################
 
@@ -124,7 +134,9 @@ if __name__ == "__main__":
     examples = {}
 
     # casing_type = "VM110"
-    casing_type = "VM-95"
+    # casing_type = "VM-95"
+    casing_type = data["Tubulars"][name_tubular]["Material"]  # Get the casing type from the json file based on the tubular name.
+    # print(f"The casing type is: {casing_type}")
 
     examples["STEEL"] = {
         'behavior': data["SteelGrades"][casing_type]["Law"],
@@ -253,9 +265,11 @@ if __name__ == "__main__":
     CreateSteps(name_of_model)
 
     # Calculation of axial stresses in the casing due to its own weight (initial stresses), considering the hydrostatic pressure of the cement and the mud in the annular space. 
-    stress_top, stress_bottom = CasingStresses(data, name_phase, examples["STEEL"]["density"], top_depth, base_depth)
+    # stress_top, stress_bottom = CasingStresses(data, name_phase, examples["STEEL"]["density"], top_depth, base_depth)
+    # stress_top, stress_bottom = CasingStresses(data, name_phase, name_tubular, examples["STEEL"]["density"], top_well_depth, base_well_depth)
+    stress_top, stress_bottom = CasingStressesH(data, name_phase, name_tubular, examples["STEEL"]["density"])
     # stress_top, stress_bottom = CasingStressesNoCement(data, name_phase, examples["STEEL"]["density"], top_depth, base_depth)
-    ApplyCasingInitialStresses(name_of_model, top_depth, base_depth, stress_top, stress_bottom)
+    ApplyCasingInitialStresses(name_of_model, top_well_depth, base_well_depth, stress_top, stress_bottom)
 
     # Another part of creation of steps
     CreateStepsPartOne(name_of_model)
@@ -268,258 +282,265 @@ if __name__ == "__main__":
     # Application of geostatic stresses
     ApplyGeostaticStresses(name_of_model, filtered_layers, stresses_table)
 
+    ###### Beggining conditions of temperature #########################
+
+    geothermal_gradient_name = data["AnalysisData"]["GeothermalGradient"]
+
+    # print(f"The geothermal gradient considered in the analysis is: {geothermal_gradient_name}")
+
     CreateNormalizedGeothermalGrid(
         name_model=name_of_model,
-        top_depth=data["ThermalGradient"]["Geothermal_cold"][0]["Depth"], top_temp_C=data["ThermalGradient"]["Geothermal_cold"][0]["Temperature"],
-        bottom_depth=data["ThermalGradient"]["Geothermal_cold"][-1]["Depth"], bottom_temp_C=data["ThermalGradient"]["Geothermal_cold"][-1]["Temperature"],
+        top_depth=data["ThermalGradient"][geothermal_gradient_name][0]["Depth"], top_temp_C=data["ThermalGradient"][geothermal_gradient_name][0]["Temperature"],
+        bottom_depth=data["ThermalGradient"][geothermal_gradient_name][-1]["Depth"], bottom_temp_C=data["ThermalGradient"][geothermal_gradient_name][-1]["Temperature"],
         start_mesh_depth=top_depth,
         end_mesh_depth=base_depth 
     )
 
     # Another part of creation of steps
-    CreateStepsPartTwo(name_of_model)
+    # CreateStepsPartTwo(name_of_model)
+    CreateStepsPartTwo(name_of_model, top_temp_C=data["ThermalGradient"][geothermal_gradient_name][0]["Temperature"])
 
     ApplyExpressionFieldsGeothermal(
         name_model=name_of_model, filtered_layers=filtered_layers,
-        top_depth=data["ThermalGradient"]["Geothermal_cold"][0]["Depth"], top_temp_C=data["ThermalGradient"]["Geothermal_cold"][0]["Temperature"],
-        bottom_depth=data["ThermalGradient"]["Geothermal_cold"][-1]["Depth"], bottom_temp_C=data["ThermalGradient"]["Geothermal_cold"][-1]["Temperature"]
+        top_depth=data["ThermalGradient"][geothermal_gradient_name][0]["Depth"], top_temp_C=data["ThermalGradient"][geothermal_gradient_name][0]["Temperature"],
+        bottom_depth=data["ThermalGradient"][geothermal_gradient_name][-1]["Depth"], bottom_temp_C=data["ThermalGradient"][geothermal_gradient_name][-1]["Temperature"]
         )
 
-    CreateFluidExpressionFields(name_model=name_of_model, mud_weight_ppg=8.5)
+    # CreateFluidExpressionFields(name_model=name_of_model, mud_weight_ppg=8.5)
 
-    ApplyInitialTemperatures(
-        name_model=name_of_model, filtered_layers=filtered_layers,
-        top_depth=data["ThermalGradient"]["Geothermal_cold"][0]["Depth"], top_temp_C=data["ThermalGradient"]["Geothermal_cold"][0]["Temperature"],
-        base_depth=data["ThermalGradient"]["Geothermal_cold"][-1]["Depth"], base_temp_C=data["ThermalGradient"]["Geothermal_cold"][-1]["Temperature"] 
-    )
-
-    # Another part of creation of steps
-    CreateStepsPartThree(name_of_model,name_step1)    
-
-    CreateCreepStep(
-        name_model=name_of_model, 
-        step_name=name_step2,
-        previous_step=name_step1,
-        time_period_days=2.0 
-        # max_inc_days=None,
-        # cetol_value=0.01
-    )
-
-    # Another part of creation of steps
-    CreateStepsPartFour(
-        name_model=name_of_model,
-        name_step=name_step3,
-        name_step_prev=name_step2
-    )
-
-    CreateContactCondition(
-        name_model=name_of_model, 
-        contact_name='C_FASEI', 
-        step_name=name_step3,
-        main_surface_name='FASEI_MASTER', 
-        secondary_set_name='FASEI_SLAVE', 
-        friction_coeff=0.5, 
-        secondary_instance='ROCK_INST'
-    )
-
-    ConfigurePhaseRev(
-        name_model=name_of_model,
-        step_name=name_step3
-    )
-
-    CreateCreepStep(
-        name_model=name_of_model, 
-        step_name=name_step4,
-        previous_step=name_step3,
-        time_period_days=10950.0, 
-        max_inc_days=180.0
-        # cetol_value=0.01
-    )
-
-    ###############################################################################################
-
-    # Calling mesh
-
-    radius_search_pipe = (inner_radius_pipe+inner_radius_annular) / 2.0
-    radius_search_fluid = (inner_radius_annular + inner_radius_wellbore) / 2.0
-    radius_search_rock = (2 * inner_radius_wellbore + thickness_wellbore) / 2.0
-
-    CreateMeshSizeHorizontal(
-        name_model=name_of_model,
-        name_instance='FLUID_INST',
-        filtered_layers=filtered_layers,
-        radius_middle=radius_search_fluid,
-        elementSize=4e-3,
-        deviationFactor=0.1
-    )
-    CreateMeshSizeHorizontal(
-        name_model=name_of_model,
-        name_instance='PIPE_INST',
-        filtered_layers=filtered_layers,
-        radius_middle=radius_search_pipe,
-        elementSize=4e-3,
-        deviationFactor=0.1
-    )
-    CreateMeshBiasHorizontal(
-        name_model=name_of_model,
-        name_instance='ROCK_INST',
-        filtered_layers=filtered_layers,
-        radius_middle=radius_search_rock,
-        minSize=0.5e-3,
-        maxSize=3.0
-    )
-
-    # CreateMeshVerticalBySet(
-    #     name_model=name_of_model,
-    #     name_set='MESH_VERTICAL',
-    #     element_size=10
+    # ApplyInitialTemperatures(
+    #     name_model=name_of_model, filtered_layers=filtered_layers,
+    #     top_depth=data["ThermalGradient"]["Geothermal_cold"][0]["Depth"], top_temp_C=data["ThermalGradient"]["Geothermal_cold"][0]["Temperature"],
+    #     base_depth=data["ThermalGradient"]["Geothermal_cold"][-1]["Depth"], base_temp_C=data["ThermalGradient"]["Geothermal_cold"][-1]["Temperature"] 
     # )
 
-    CreateMeshVerticalWithBias(
-        name_model=name_of_model,
-        name_set='MESH_VERTICAL',
-         min_size=1,
-         max_size=10
-    )
+#     # Another part of creation of steps
+#     CreateStepsPartThree(name_of_model,name_step1)    
 
-    AttributeTypeElement(
-        name_model=name_of_model,
-        name_set='ALL'
-    )
+#     CreateCreepStep(
+#         name_model=name_of_model, 
+#         step_name=name_step2,
+#         previous_step=name_step1,
+#         time_period_days=2.0 
+#         # max_inc_days=None,
+#         # cetol_value=0.01
+#     )
 
-    GenerateMesh(
-        name_model=name_of_model,
-        name_instance='FLUID_INST'
-    )
-    GenerateMesh(
-        name_model=name_of_model,
-        name_instance='PIPE_INST'
-    )
-    GenerateMesh(
-        name_model=name_of_model,
-        name_instance='ROCK_INST'
-    )
+#     # Another part of creation of steps
+#     CreateStepsPartFour(
+#         name_model=name_of_model,
+#         name_step=name_step3,
+#         name_step_prev=name_step2
+#     )
 
-    # Creating a set for the target point in the bottom of the casing 
+#     CreateContactCondition(
+#         name_model=name_of_model, 
+#         contact_name='C_FASEI', 
+#         step_name=name_step3,
+#         main_surface_name='FASEI_MASTER', 
+#         secondary_set_name='FASEI_SLAVE', 
+#         friction_coeff=0.5, 
+#         secondary_instance='ROCK_INST'
+#     )
 
-    CreateSetPointRock(model_name=name_of_model, r_coord=inner_radius_wellbore, z_coord=-abs(base_depth))    
-    CreateSetPointCasing(model_name=name_of_model, r_coord=inner_radius_annular, z_coord=-abs(base_depth))
+#     ConfigurePhaseRev(
+#         name_model=name_of_model,
+#         step_name=name_step3
+#     )
 
-    # Creating a job and saving the model #################################################################
-    job_name = 'WellClosureJob'
+#     CreateCreepStep(
+#         name_model=name_of_model, 
+#         step_name=name_step4,
+#         previous_step=name_step3,
+#         time_period_days=10950.0, 
+#         max_inc_days=180.0
+#         # cetol_value=0.01
+#     )
 
-    CreateJob(
-        name_model=name_of_model,
-        name_job=job_name,
-        num_cpus=14,
-        num_gpus=1, 
-        run_now=False
-    )
+#     ###############################################################################################
 
-    run_now=False
+#     # Calling mesh
 
-    if run_now:
-        RunJob(job_name)
+#     radius_search_pipe = (inner_radius_pipe+inner_radius_annular) / 2.0
+#     radius_search_fluid = (inner_radius_annular + inner_radius_wellbore) / 2.0
+#     radius_search_rock = (2 * inner_radius_wellbore + thickness_wellbore) / 2.0
 
-    mdb.saveAs(pathName=r'C:\Users\hidalgo\Documents\GitHub\Abaqus_WELL_\WellClosureJob.cae')
-    print("Model saved as 'WellClosureJob.cae' in the project folder. You can open it with Abaqus/CAE to review the model and submit the job for analysis.")
+#     CreateMeshSizeHorizontal(
+#         name_model=name_of_model,
+#         name_instance='FLUID_INST',
+#         filtered_layers=filtered_layers,
+#         radius_middle=radius_search_fluid,
+#         elementSize=4e-3,
+#         deviationFactor=0.1
+#     )
+#     CreateMeshSizeHorizontal(
+#         name_model=name_of_model,
+#         name_instance='PIPE_INST',
+#         filtered_layers=filtered_layers,
+#         radius_middle=radius_search_pipe,
+#         elementSize=4e-3,
+#         deviationFactor=0.1
+#     )
+#     CreateMeshBiasHorizontal(
+#         name_model=name_of_model,
+#         name_instance='ROCK_INST',
+#         filtered_layers=filtered_layers,
+#         radius_middle=radius_search_rock,
+#         minSize=0.5e-3,
+#         maxSize=3.0
+#     )
 
-    # Output exporting 
+#     # CreateMeshVerticalBySet(
+#     #     name_model=name_of_model,
+#     #     name_set='MESH_VERTICAL',
+#     #     element_size=10
+#     # )
 
-    ExportRockDisplacementAllFrames(
-        odb_path=job_name + '.odb',
-        output_file='rock_displacement_all_frames.csv'
-    )
+#     CreateMeshVerticalWithBias(
+#         name_model=name_of_model,
+#         name_set='MESH_VERTICAL',
+#          min_size=1,
+#          max_size=10
+#     )
 
-    ExportRockStressAllFrames(
-        odb_path=job_name + '.odb',
-        output_file='rock_stress_all_frames.csv'
-    )
+#     AttributeTypeElement(
+#         name_model=name_of_model,
+#         name_set='ALL'
+#     )
 
-    ExportCasingDisplacementAllFrames(
-        odb_path=job_name + '.odb',
-        output_file='casing_displacement_all_frames.csv'
-    )
+#     GenerateMesh(
+#         name_model=name_of_model,
+#         name_instance='FLUID_INST'
+#     )
+#     GenerateMesh(
+#         name_model=name_of_model,
+#         name_instance='PIPE_INST'
+#     )
+#     GenerateMesh(
+#         name_model=name_of_model,
+#         name_instance='ROCK_INST'
+#     )
 
-    ExportCasingStressAllFrames(
-        odb_path=job_name + '.odb',
-        output_file='casing_stress_all_frames.csv'
-    )
+#     # Creating a set for the target point in the bottom of the casing 
 
-    ExportCasingTemperatureAllFrames(
-        odb_path=job_name + '.odb',  
-        output_file='casing_temperature_all_frames.csv'
-    )     
+#     CreateSetPointRock(model_name=name_of_model, r_coord=inner_radius_wellbore, z_coord=-abs(base_depth))    
+#     CreateSetPointCasing(model_name=name_of_model, r_coord=inner_radius_annular, z_coord=-abs(base_depth))
 
-    ExportRockTemperatureAllFrames(
-        odb_path=job_name + '.odb',
-        output_file='rock_temperature_all_frames.csv'
-    )   
+#     # Creating a job and saving the model #################################################################
+#     job_name = 'WellClosureJob'
 
-    # Converting to csv
+#     CreateJob(
+#         name_model=name_of_model,
+#         name_job=job_name,
+#         num_cpus=14,
+#         num_gpus=1, 
+#         run_now=False
+#     )
 
-    convert_now = True  # Set to True to enable conversion of CSV files to JSON
+#     run_now=False
 
-    if convert_now:
+#     if run_now:
+#         RunJob(job_name)
 
-        # Dicionário de configuração mapeando cada arquivo e suas respectivas chaves estruturais
-        configuration_tasks = [
-            {
-                "csv": "rock_displacement_all_frames.csv",
-                "json": "rock_displacement_all_frames.json",
-                "key_root": "wellbore_closure",
-                "key_data": "time_rock_displacements"
-            },
-            {
-                "csv": "rock_stress_all_frames.csv",
-                "json": "rock_stress_all_frames.json",
-                "key_root": "rock_stress",
-                "key_data": "time_rock_stresses"
-            },
-            {
-                "csv": "rock_temperature_all_frames.csv",
-                "json": "rock_temperature_all_frames.json",
-                "key_root": "rock_temperature",
-                "key_data": "time_rock_temperatures"
-            },
-            {
-                "csv": "casing_displacement_all_frames.csv",
-                "json": "casing_displacement_all_frames.json",
-                "key_root": "casing_displacement",
-                "key_data": "time_casing_displacements"
-            },
-            {
-                "csv": "casing_stress_all_frames.csv",
-                "json": "casing_stress_all_frames.json",
-                "key_root": "casing_stress",
-                "key_data": "time_casing_stresses"
-            },
-            {
-                "csv": "casing_temperature_all_frames.csv",
-                "json": "casing_temperature_all_frames.json",
-                "key_root": "casing_temperature",
-                "key_data": "time_casing_temperatures"
-            }
-        ]
+#     mdb.saveAs(pathName=r'C:\Users\hidalgo\Documents\GitHub\Abaqus_WELL_\WellClosureJob.cae')
+#     print("Model saved as 'WellClosureJob.cae' in the project folder. You can open it with Abaqus/CAE to review the model and submit the job for analysis.")
 
-        print("Starting the processing of Abaqus files in batch...\n")
+#     # Output exporting 
+
+#     ExportRockDisplacementAllFrames(
+#         odb_path=job_name + '.odb',
+#         output_file='rock_displacement_all_frames.csv'
+#     )
+
+#     ExportRockStressAllFrames(
+#         odb_path=job_name + '.odb',
+#         output_file='rock_stress_all_frames.csv'
+#     )
+
+#     ExportCasingDisplacementAllFrames(
+#         odb_path=job_name + '.odb',
+#         output_file='casing_displacement_all_frames.csv'
+#     )
+
+#     ExportCasingStressAllFrames(
+#         odb_path=job_name + '.odb',
+#         output_file='casing_stress_all_frames.csv'
+#     )
+
+#     ExportCasingTemperatureAllFrames(
+#         odb_path=job_name + '.odb',  
+#         output_file='casing_temperature_all_frames.csv'
+#     )     
+
+#     ExportRockTemperatureAllFrames(
+#         odb_path=job_name + '.odb',
+#         output_file='rock_temperature_all_frames.csv'
+#     )   
+
+#     # Converting to csv
+
+#     convert_now = True  # Set to True to enable conversion of CSV files to JSON
+
+#     if convert_now:
+
+#         # Dicionário de configuração mapeando cada arquivo e suas respectivas chaves estruturais
+#         configuration_tasks = [
+#             {
+#                 "csv": "rock_displacement_all_frames.csv",
+#                 "json": "rock_displacement_all_frames.json",
+#                 "key_root": "wellbore_closure",
+#                 "key_data": "time_rock_displacements"
+#             },
+#             {
+#                 "csv": "rock_stress_all_frames.csv",
+#                 "json": "rock_stress_all_frames.json",
+#                 "key_root": "rock_stress",
+#                 "key_data": "time_rock_stresses"
+#             },
+#             {
+#                 "csv": "rock_temperature_all_frames.csv",
+#                 "json": "rock_temperature_all_frames.json",
+#                 "key_root": "rock_temperature",
+#                 "key_data": "time_rock_temperatures"
+#             },
+#             {
+#                 "csv": "casing_displacement_all_frames.csv",
+#                 "json": "casing_displacement_all_frames.json",
+#                 "key_root": "casing_displacement",
+#                 "key_data": "time_casing_displacements"
+#             },
+#             {
+#                 "csv": "casing_stress_all_frames.csv",
+#                 "json": "casing_stress_all_frames.json",
+#                 "key_root": "casing_stress",
+#                 "key_data": "time_casing_stresses"
+#             },
+#             {
+#                 "csv": "casing_temperature_all_frames.csv",
+#                 "json": "casing_temperature_all_frames.json",
+#                 "key_root": "casing_temperature",
+#                 "key_data": "time_casing_temperatures"
+#             }
+#         ]
+
+#         print("Starting the processing of Abaqus files in batch...\n")
         
-        # Sweep the list of configurations executing the funtion for each item
-        for task in configuration_tasks:
-            convert_csv_abaqus_to_json(
-                path_csv=task["csv"],
-                path_json=task["json"],
-                main_key=task["key_root"],
-                name_field_data=task["key_data"]
-            )
+#         # Sweep the list of configurations executing the funtion for each item
+#         for task in configuration_tasks:
+#             convert_csv_abaqus_to_json(
+#                 path_csv=task["csv"],
+#                 path_json=task["json"],
+#                 main_key=task["key_root"],
+#                 name_field_data=task["key_data"]
+#             )
             
-        print("\nAll the available files were processed!")
+#         print("\nAll the available files were processed!")
 
 
-    # End of the script. ############################################
+#     # End of the script. ############################################
 
-    # Falta:
-    # enxugar as defs para os sets
-    # enxugar as defs para os steps    
-    # Verificar como obter plots dos pontos mais profundos do poço
+#     # Falta:
+#     # enxugar as defs para os sets
+#     # enxugar as defs para os steps    
+#     # Verificar como obter plots dos pontos mais profundos do poço
     

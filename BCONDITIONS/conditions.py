@@ -286,26 +286,28 @@ def CreateStepsPartOne(name_model):
     
     ##########################################################################################################
 
-def CreateStepsPartTwo(name_model):
+def CreateStepsPartTwo(name_model, top_temp_C=4.0):
     """
     Create the steps of the model. Corresponds to initial conditions with temperature.
     """
     m = mdb.models[name_model]
     a = m.rootAssembly
 
+    top_temp_K = top_temp_C + 273.15
+
     region = a.sets['FASEI']
-    # m.Temperature(name='NT_FASEI', createStepName='TempDefine', 
-    m.Temperature(name='NT_FASEI', createStepName='Initial', 
+    m.Temperature(name='NT_FASEI', createStepName='TempDefine', 
+    # m.Temperature(name='NT_FASEI', createStepName='Initial', 
         region=region, distributionType=FIELD, 
         crossSectionDistribution=CONSTANT_THROUGH_THICKNESS, 
-        field='Geothermal', magnitudes=(277.15, ))
+        field='Geothermal', magnitudes=(top_temp_K, ))
 
     region = a.sets['FASEI_COMPLETED_WELL']
     m.Temperature(name='NT_FASEI_ID', 
-        # createStepName='TempDefine', region=region, distributionType=FIELD, 
-        createStepName='Initial', region=region, distributionType=FIELD, 
+        createStepName='TempDefine', region=region, distributionType=FIELD, 
+        # createStepName='Initial', region=region, distributionType=FIELD, 
         crossSectionDistribution=CONSTANT_THROUGH_THICKNESS, 
-        field='Geothermal', magnitudes=(277.15, ))
+        field='Geothermal', magnitudes=(top_temp_K, ))
     
 
     

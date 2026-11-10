@@ -1,0 +1,273 @@
+{
+  "ThermalGradient": {
+    "Thermal_01": [
+      {
+        "Depth": 2000,
+        "Temperature": 4
+      },
+      {
+        "Depth": 4000,
+        "Temperature": 75
+      }
+    ]
+  },
+  "Tubular": {
+    "Name": "VAM_9-5-8_53-5_V110HCSS",
+    "Diameter": 9.625,
+    "Thickness": 0.545,
+    "SteelGrade": "VM110",
+    "Ovality": 0.6,
+    "MinWallThickness": 87.5
+  },
+  "Lithology": [
+    {
+      "Rock": "HALITE",
+      "Top": 2000,
+      "Bottom": 2700
+    },
+    {
+      "Rock": "CARNALLITE",
+      "Top": 2700,
+      "Bottom": 2900
+    },
+    {
+      "Rock": "TACHYHYDRITE",
+      "Top": 2900,
+      "Bottom": 3000
+    },
+    {
+      "Rock": "HALITE",
+      "Top": 3000,
+      "Bottom": 3800
+    }
+  ],
+  "InSituStresses": [
+    {
+      "Depth": 2000,
+      "Overburden": 8.5,
+      "PorePressure": 8.5,
+      "MaxHorizontalStress": 8.5,
+      "MinHorizontalStress": 8.5
+    },
+    {
+      "Depth": 2000.99,
+      "Overburden": 8.5,
+      "PorePressure": 0,
+      "MaxHorizontalStress": 8.5,
+      "MinHorizontalStress": 8.5
+    },
+    {
+      "Depth": 2700,
+      "Overburden": 11.06,
+      "PorePressure": 0,
+      "MaxHorizontalStress": 11.06,
+      "MinHorizontalStress": 11.06
+    },
+    {
+      "Depth": 2900,
+      "Overburden": 11.26,
+      "PorePressure": 0,
+      "MaxHorizontalStress": 11.26,
+      "MinHorizontalStress": 11.26
+    },
+    {
+      "Depth": 3000,
+      "Overburden": 11.34,
+      "PorePressure": 0,
+      "MaxHorizontalStress": 11.34,
+      "MinHorizontalStress": 11.34
+    },
+    {
+      "Depth": 3800,
+      "Overburden": 12.79,
+      "PorePressure": 0,
+      "MaxHorizontalStress": 12.79,
+      "MinHorizontalStress": 12.79
+    }
+  ],
+  "Fluids": {
+    "Fluid_01": {
+      "Name": "Fluid_01",
+      "ThermalGradient": "",
+      "Compressibility": 2.5,
+      "ThermalExpansion": 0.000214,
+      "Density": 8.5,
+      "Pressures": []
+    }
+  },
+  "Rocks": {
+    "HALITE": {
+      "DoublePowerParameters": {
+        "s0": 10.300006,
+        "a1": 0.0077864,
+        "a2": 0.0076093,
+        "b1": 6042.905,
+        "b2": 6042.905,
+        "c1": 2.94,
+        "c2": 8.15
+      },
+      "Law": "DOUBLE_POWER_CREEP",
+      "Elasticity": "ISOTROPIC",
+      "ElasticParameters": {
+        "Density": 2170,
+        "Young": 20.4,
+        "Poisson": 0.36
+      },
+      "ThermalParameters": {
+        "Conductivity": 5.55,
+        "SpecificHeat": 0.209946,
+        "ThermalExpansion": 1E-05
+      }
+    },
+    "CARNALLITE": {
+      "DoublePowerParameters": {
+        "s0": 5.9999995,
+        "a1": 0.13662,
+        "a2": 0.1219,
+        "b1": 6042.905,
+        "b2": 6042.905,
+        "c1": 2.8352,
+        "c2": 7.5
+      },
+      "Law": "DOUBLE_POWER_CREEP",
+      "Elasticity": "ISOTROPIC",
+      "ElasticParameters": {
+        "Density": 1600,
+        "Young": 4.020004,
+        "Poisson": 0.36
+      },
+      "ThermalParameters": {
+        "Conductivity": 0.75,
+        "SpecificHeat": 0.209946,
+        "ThermalExpansion": 1E-05
+      }
+    },
+    "TACHYHYDRITE": {
+      "DoublePowerParameters": {
+        "s0": 8.4,
+        "a1": 1.0446,
+        "a2": 1.0551,
+        "b1": 6042.905,
+        "b2": 6042.905,
+        "c1": 2.5,
+        "c2": 8.35
+      },
+      "Law": "DOUBLE_POWER_CREEP",
+      "Elasticity": "ISOTROPIC",
+      "ElasticParameters": {
+        "Density": 2062.3,
+        "Young": 4.92,
+        "Poisson": 0.33
+      },
+      "ThermalParameters": {
+        "Conductivity": 0.64,
+        "SpecificHeat": 0.209946,
+        "ThermalExpansion": 1E-05
+      }
+    }
+  },
+  "SteelGrades": {
+    "VM110": {
+      "VonMisesParameters": {
+        "sy": 758.4236,
+        "sUlt": 758.4236,
+        "epUlt": 0.3
+      },
+      "MisesPlastic": {
+        "PlasticTable": [
+          [
+            758423600,
+            0,
+            273.15
+          ],
+          [
+            758423600,
+            0.25,
+            273.15
+          ],
+          [
+            756375856.28,
+            0,
+            298.15
+          ],
+          [
+            756375856.28,
+            0.25,
+            298.15
+          ],
+          [
+            725659700.48,
+            0,
+            373.15
+          ],
+          [
+            725659700.48,
+            0.25,
+            373.15
+          ],
+          [
+            705182263.28,
+            0,
+            423.15
+          ],
+          [
+            705182263.28,
+            0.25,
+            423.15
+          ],
+          [
+            684704826.08,
+            0,
+            473.15
+          ],
+          [
+            684704826.08,
+            0.25,
+            473.15
+          ],
+          [
+            664227388.88,
+            0,
+            523.15
+          ],
+          [
+            664227388.88,
+            0.25,
+            523.15
+          ]
+        ]
+      },
+      "Law": "VON_MISES_PLASTIC",
+      "Elasticity": "ISOTROPIC",
+      "ElasticParameters": {
+        "Density": 7935,
+        "Young": 206.8428,
+        "Poisson": 0.3
+      },
+      "ThermalParameters": {
+        "Conductivity": 45.3452,
+        "SpecificHeat": 460.9,
+        "ThermalExpansion": 0.0001242
+      }
+    }
+  },
+  "Architecture": {
+    "HoleDiameter": 10.375,
+    "Standoff": 100,
+    "Fluid": "Fluid_01",
+    "Tubular": "VAM_9-5-8_53-5_V110HCSS",
+    "CasingTopDepth": 2000,
+    "CasingBottomDepth": 4000
+  },
+  "AnalysisData": {
+    "Name": "96",
+    "Depth": 0,
+    "Top": 2600,
+    "Bottom": 3200,
+    "Lifespan": 30,
+    "CementDensity": 1800,
+    "CementTopDepth": 3800,
+    "Domain": "axisymmetric",
+    "ThermalGradient": "Thermal_01"
+  }
+}
