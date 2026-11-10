@@ -357,7 +357,12 @@ def CreateFluidExpressionFields(name_model, mud_weight_ppg=8.5):
     factor_conversion = 119.826 * 9.81
     gradient_fluid = mud_weight_ppg * factor_conversion 
 
-    expression_clean = f'{gradient_fluid} * pow(-Y,1)'
+    top_depth = 2000.0
+
+    magnitude_val = gradient_fluid * top_depth
+
+    # expression_clean = f'{gradient_fluid} * pow(-Y,1)'
+    expression_clean = f"({gradient_fluid} * pow(-Y,1)) / {magnitude_val:.3f}"
 
     names_fields = [
         'P_FASEI_COMPLETED_WELL',
@@ -378,8 +383,10 @@ def CreateFluidExpressionFields(name_model, mud_weight_ppg=8.5):
         )
         print(f"ExpressionField '{name_field}' created with success!")
 
+    return magnitude_val
 
-def ApplyInitialTemperatures(name_model, filtered_layers, step_name='Initial', top_depth=2000.0, top_temp_C=4.0, base_depth=4000.0, base_temp_C=75.0):
+
+def ApplyInitialTemperatures(name_model, filtered_layers, step_name='TempDefine', top_depth=2000.0, top_temp_C=4.0, base_depth=4000.0, base_temp_C=75.0):
     """
     Create the condition of application of initial temperature.
     """ 
@@ -420,7 +427,7 @@ def ApplyInitialTemperatures(name_model, filtered_layers, step_name='Initial', t
     # print("\n>>> All the temperatures of the layers were started successfully!")
 
 
-def CreateStepsPartThree(name_model,name_step):
+def CreateStepsPartThree(name_model,name_step, magnitude_val):
     """
     Create a step of pressure in the model, corresponding to the stage of drilling.
     """ 
@@ -442,7 +449,7 @@ def CreateStepsPartThree(name_model,name_step):
         region=region,
         distributionType=FIELD,
         field='P_FASEI_OPEN_WELL',
-        magnitude=1.0,
+        magnitude=magnitude_val,
         amplitude=UNSET
     )
 
@@ -543,7 +550,7 @@ def CreateContactCondition(name_model, contact_name, step_name, main_surface_nam
 
     print(f"Interaction '{contact_name}' activated in Step '{step_name}'.")
 
-def ConfigurePhaseRev(name_model, step_name):
+def ConfigurePhaseRev(name_model, step_name, magnitude_val):
     """
     Create conditions of pressure in the phase of casing installation.
     """ 
@@ -558,7 +565,7 @@ def ConfigurePhaseRev(name_model, step_name):
             region=region_completed,
             distributionType=FIELD,
             field='P_FASEI_COMPLETED_WELL',
-            magnitude=1.0,
+            magnitude=magnitude_val,
             amplitude=UNSET
         )
         print("- Pressure P_FASEI_COMPLETED_WELL activated.")
@@ -571,7 +578,7 @@ def ConfigurePhaseRev(name_model, step_name):
             region=region_fluid,
             distributionType=FIELD,
             field='P_FASEI_FLUID',
-            magnitude=1.0,
+            magnitude=magnitude_val,
             amplitude=UNSET
         )
         print("- Pressure P_FASEI_FLUID activated.")

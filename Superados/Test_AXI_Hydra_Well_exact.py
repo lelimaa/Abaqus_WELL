@@ -718,6 +718,7 @@ mdb.models['Model-1'].interactionProperties['C_FASEI'].TangentialBehavior(
 mdb.models['Model-1'].interactionProperties['C_FASEI'].NormalBehavior(
     pressureOverclosure=HARD, allowSeparation=ON, 
     constraintEnforcementMethod=DEFAULT)
+
 a = mdb.models['Model-1'].rootAssembly
 region1=a.instances['Analise-1-1'].surfaces['FASEI_MASTER']
 a = mdb.models['Model-1'].rootAssembly
@@ -732,6 +733,8 @@ mdb.models['Model-1'].SurfaceToSurfaceContactStd(name='C_FASEI',
     sliding=FINITE, thickness=ON, interactionProperty='C_FASEI', 
     adjustMethod=NONE, initialClearance=OMIT, datumAxis=None, 
     clearanceRegion=None)
+
+
 a = mdb.models['Model-1'].rootAssembly
 region = a.instances['Analise-1-1'].surfaces['FASEI_COMPLETED_WELL']
 mdb.models['Model-1'].Pressure(name='P_FASEI_COMPLETED_WELL', 
@@ -747,6 +750,7 @@ mdb.models['Model-1'].loads['P_FASEI_OPEN_WELL'].deactivate('Rev_9_875')
 mdb.models['Model-1'].interactions['MC_FASEI_REV'].setValuesInStep(
     stepName='Rev_9_875', activeInStep=True)
 mdb.models['Model-1'].boundaryConditions['PIN_FASEI'].deactivate('Rev_9_875')
+
 mdb.models['Model-1'].ViscoStep(name='Rev_9_875_Creep', previous='Rev_9_875', 
     timePeriod=945907000.0, maxNumInc=1000000, initialInc=1.0, 
     minInc=1e-15, maxInc=15552000.0, cetol=0.01)

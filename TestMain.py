@@ -306,136 +306,138 @@ if __name__ == "__main__":
         bottom_depth=data["ThermalGradient"][geothermal_gradient_name][-1]["Depth"], bottom_temp_C=data["ThermalGradient"][geothermal_gradient_name][-1]["Temperature"]
         )
 
-    # CreateFluidExpressionFields(name_model=name_of_model, mud_weight_ppg=8.5)
+    magnitude_val = CreateFluidExpressionFields(name_model=name_of_model, mud_weight_ppg=8.5)
 
-    # ApplyInitialTemperatures(
-    #     name_model=name_of_model, filtered_layers=filtered_layers,
-    #     top_depth=data["ThermalGradient"]["Geothermal_cold"][0]["Depth"], top_temp_C=data["ThermalGradient"]["Geothermal_cold"][0]["Temperature"],
-    #     base_depth=data["ThermalGradient"]["Geothermal_cold"][-1]["Depth"], base_temp_C=data["ThermalGradient"]["Geothermal_cold"][-1]["Temperature"] 
+    ApplyInitialTemperatures(
+        name_model=name_of_model, filtered_layers=filtered_layers, step_name='TempDefine',
+        top_depth=data["ThermalGradient"][geothermal_gradient_name][0]["Depth"], top_temp_C=data["ThermalGradient"][geothermal_gradient_name][0]["Temperature"],
+        base_depth=data["ThermalGradient"][geothermal_gradient_name][-1]["Depth"], base_temp_C=data["ThermalGradient"][geothermal_gradient_name][-1]["Temperature"] 
+    )
+
+    # Another part of creation of steps
+    # CreateStepsPartThree(name_of_model,name_step1)    
+    CreateStepsPartThree(name_of_model,name_step1, magnitude_val)    
+
+    CreateCreepStep(
+        name_model=name_of_model, 
+        step_name=name_step2,
+        previous_step=name_step1,
+        time_period_days=2.0 
+        # max_inc_days=None,
+        # cetol_value=0.01
+    )
+
+    # Another part of creation of steps
+    CreateStepsPartFour(
+        name_model=name_of_model,
+        name_step=name_step3,
+        name_step_prev=name_step2
+    )
+
+    CreateContactCondition(
+        name_model=name_of_model, 
+        contact_name='C_FASEI', 
+        step_name=name_step3,
+        main_surface_name='FASEI_MASTER', 
+        secondary_set_name='FASEI_SLAVE', 
+        friction_coeff=0.5, 
+        secondary_instance='ROCK_INST'
+    )
+
+    ConfigurePhaseRev(
+        name_model=name_of_model,
+        step_name=name_step3,
+        magnitude_val=magnitude_val
+    )
+
+    CreateCreepStep(
+        name_model=name_of_model, 
+        step_name=name_step4,
+        previous_step=name_step3,
+        time_period_days=10950.0, 
+        max_inc_days=180.0
+        # cetol_value=0.01
+    )
+
+    ###############################################################################################
+
+    # Calling mesh
+
+    radius_search_pipe = (inner_radius_pipe+inner_radius_annular) / 2.0
+    radius_search_fluid = (inner_radius_annular + inner_radius_wellbore) / 2.0
+    radius_search_rock = (2 * inner_radius_wellbore + thickness_wellbore) / 2.0
+
+    CreateMeshSizeHorizontal(
+        name_model=name_of_model,
+        name_instance='FLUID_INST',
+        filtered_layers=filtered_layers,
+        radius_middle=radius_search_fluid,
+        elementSize=4e-3,
+        deviationFactor=0.1
+    )
+    CreateMeshSizeHorizontal(
+        name_model=name_of_model,
+        name_instance='PIPE_INST',
+        filtered_layers=filtered_layers,
+        radius_middle=radius_search_pipe,
+        elementSize=4e-3,
+        deviationFactor=0.1
+    )
+    CreateMeshBiasHorizontal(
+        name_model=name_of_model,
+        name_instance='ROCK_INST',
+        filtered_layers=filtered_layers,
+        radius_middle=radius_search_rock,
+        minSize=0.5e-3,
+        maxSize=3.0
+    )
+
+    # CreateMeshVerticalBySet(
+    #     name_model=name_of_model,
+    #     name_set='MESH_VERTICAL',
+    #     element_size=10
     # )
 
-#     # Another part of creation of steps
-#     CreateStepsPartThree(name_of_model,name_step1)    
+    CreateMeshVerticalWithBias(
+        name_model=name_of_model,
+        name_set='MESH_VERTICAL',
+         min_size=1,
+         max_size=10
+    )
 
-#     CreateCreepStep(
-#         name_model=name_of_model, 
-#         step_name=name_step2,
-#         previous_step=name_step1,
-#         time_period_days=2.0 
-#         # max_inc_days=None,
-#         # cetol_value=0.01
-#     )
+    AttributeTypeElement(
+        name_model=name_of_model,
+        name_set='ALL'
+    )
 
-#     # Another part of creation of steps
-#     CreateStepsPartFour(
-#         name_model=name_of_model,
-#         name_step=name_step3,
-#         name_step_prev=name_step2
-#     )
+    GenerateMesh(
+        name_model=name_of_model,
+        name_instance='FLUID_INST'
+    )
+    GenerateMesh(
+        name_model=name_of_model,
+        name_instance='PIPE_INST'
+    )
+    GenerateMesh(
+        name_model=name_of_model,
+        name_instance='ROCK_INST'
+    )
 
-#     CreateContactCondition(
-#         name_model=name_of_model, 
-#         contact_name='C_FASEI', 
-#         step_name=name_step3,
-#         main_surface_name='FASEI_MASTER', 
-#         secondary_set_name='FASEI_SLAVE', 
-#         friction_coeff=0.5, 
-#         secondary_instance='ROCK_INST'
-#     )
+    # Creating a set for the target point in the bottom of the casing 
 
-#     ConfigurePhaseRev(
-#         name_model=name_of_model,
-#         step_name=name_step3
-#     )
+    CreateSetPointRock(model_name=name_of_model, r_coord=inner_radius_wellbore, z_coord=-abs(base_depth))    
+    CreateSetPointCasing(model_name=name_of_model, r_coord=inner_radius_annular, z_coord=-abs(base_depth))
 
-#     CreateCreepStep(
-#         name_model=name_of_model, 
-#         step_name=name_step4,
-#         previous_step=name_step3,
-#         time_period_days=10950.0, 
-#         max_inc_days=180.0
-#         # cetol_value=0.01
-#     )
+    # Creating a job and saving the model #################################################################
+    job_name = 'WellClosureJob'
 
-#     ###############################################################################################
-
-#     # Calling mesh
-
-#     radius_search_pipe = (inner_radius_pipe+inner_radius_annular) / 2.0
-#     radius_search_fluid = (inner_radius_annular + inner_radius_wellbore) / 2.0
-#     radius_search_rock = (2 * inner_radius_wellbore + thickness_wellbore) / 2.0
-
-#     CreateMeshSizeHorizontal(
-#         name_model=name_of_model,
-#         name_instance='FLUID_INST',
-#         filtered_layers=filtered_layers,
-#         radius_middle=radius_search_fluid,
-#         elementSize=4e-3,
-#         deviationFactor=0.1
-#     )
-#     CreateMeshSizeHorizontal(
-#         name_model=name_of_model,
-#         name_instance='PIPE_INST',
-#         filtered_layers=filtered_layers,
-#         radius_middle=radius_search_pipe,
-#         elementSize=4e-3,
-#         deviationFactor=0.1
-#     )
-#     CreateMeshBiasHorizontal(
-#         name_model=name_of_model,
-#         name_instance='ROCK_INST',
-#         filtered_layers=filtered_layers,
-#         radius_middle=radius_search_rock,
-#         minSize=0.5e-3,
-#         maxSize=3.0
-#     )
-
-#     # CreateMeshVerticalBySet(
-#     #     name_model=name_of_model,
-#     #     name_set='MESH_VERTICAL',
-#     #     element_size=10
-#     # )
-
-#     CreateMeshVerticalWithBias(
-#         name_model=name_of_model,
-#         name_set='MESH_VERTICAL',
-#          min_size=1,
-#          max_size=10
-#     )
-
-#     AttributeTypeElement(
-#         name_model=name_of_model,
-#         name_set='ALL'
-#     )
-
-#     GenerateMesh(
-#         name_model=name_of_model,
-#         name_instance='FLUID_INST'
-#     )
-#     GenerateMesh(
-#         name_model=name_of_model,
-#         name_instance='PIPE_INST'
-#     )
-#     GenerateMesh(
-#         name_model=name_of_model,
-#         name_instance='ROCK_INST'
-#     )
-
-#     # Creating a set for the target point in the bottom of the casing 
-
-#     CreateSetPointRock(model_name=name_of_model, r_coord=inner_radius_wellbore, z_coord=-abs(base_depth))    
-#     CreateSetPointCasing(model_name=name_of_model, r_coord=inner_radius_annular, z_coord=-abs(base_depth))
-
-#     # Creating a job and saving the model #################################################################
-#     job_name = 'WellClosureJob'
-
-#     CreateJob(
-#         name_model=name_of_model,
-#         name_job=job_name,
-#         num_cpus=14,
-#         num_gpus=1, 
-#         run_now=False
-#     )
+    CreateJob(
+        name_model=name_of_model,
+        name_job=job_name,
+        num_cpus=14,
+        num_gpus=1, 
+        run_now=False
+    )
 
 #     run_now=False
 
