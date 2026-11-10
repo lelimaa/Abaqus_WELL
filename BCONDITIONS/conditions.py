@@ -378,7 +378,7 @@ def CreateFluidExpressionFields(name_model, mud_weight_ppg=8.5):
         print(f"ExpressionField '{name_field}' created with success!")
 
 
-def ApplyInitialTemperatures(name_model, filtered_layers, step_name='Initial', top_depth=2000.0, top_temp_C=4.0, base_depth=4000.0, base_temp_C=75.0):
+def ApplyInitialTemperatures(name_model, filtered_layers, step_name='TempDefine', top_depth=2000.0, top_temp_C=4.0, base_depth=4000.0, base_temp_C=75.0):
     """
     Create the condition of application of initial temperature.
     """ 

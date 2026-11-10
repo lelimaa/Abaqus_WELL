@@ -295,56 +295,56 @@ if __name__ == "__main__":
         bottom_depth=data["ThermalGradient"]["Geothermal_cold"][-1]["Depth"], bottom_temp_C=data["ThermalGradient"]["Geothermal_cold"][-1]["Temperature"]
         )
 
-    # CreateFluidExpressionFields(name_model=name_of_model, mud_weight_ppg=8.5)
+    CreateFluidExpressionFields(name_model=name_of_model, mud_weight_ppg=8.5)
 
-    # ApplyInitialTemperatures(
-    #     name_model=name_of_model, filtered_layers=filtered_layers,
-    #     top_depth=data["ThermalGradient"]["Geothermal_cold"][0]["Depth"], top_temp_C=data["ThermalGradient"]["Geothermal_cold"][0]["Temperature"],
-    #     base_depth=data["ThermalGradient"]["Geothermal_cold"][-1]["Depth"], base_temp_C=data["ThermalGradient"]["Geothermal_cold"][-1]["Temperature"] 
-    # )
+    ApplyInitialTemperatures(
+        name_model=name_of_model, filtered_layers=filtered_layers,
+        top_depth=data["ThermalGradient"]["Geothermal_cold"][0]["Depth"], top_temp_C=data["ThermalGradient"]["Geothermal_cold"][0]["Temperature"],
+        base_depth=data["ThermalGradient"]["Geothermal_cold"][-1]["Depth"], base_temp_C=data["ThermalGradient"]["Geothermal_cold"][-1]["Temperature"] 
+    )
 
-#     # Another part of creation of steps
-#     CreateStepsPartThree(name_of_model,name_step1)    
+    # Another part of creation of steps
+    CreateStepsPartThree(name_of_model,name_step1)    
 
-#     CreateCreepStep(
-#         name_model=name_of_model, 
-#         step_name=name_step2,
-#         previous_step=name_step1,
-#         time_period_days=2.0 
-#         # max_inc_days=None,
-#         # cetol_value=0.01
-#     )
+    CreateCreepStep(
+        name_model=name_of_model, 
+        step_name=name_step2,
+        previous_step=name_step1,
+        time_period_days=2.0 
+        # max_inc_days=None,
+        # cetol_value=0.01
+    )
 
-#     # Another part of creation of steps
-#     CreateStepsPartFour(
-#         name_model=name_of_model,
-#         name_step=name_step3,
-#         name_step_prev=name_step2
-#     )
+    # Another part of creation of steps
+    CreateStepsPartFour(
+        name_model=name_of_model,
+        name_step=name_step3,
+        name_step_prev=name_step2
+    )
 
-#     CreateContactCondition(
-#         name_model=name_of_model, 
-#         contact_name='C_FASEI', 
-#         step_name=name_step3,
-#         main_surface_name='FASEI_MASTER', 
-#         secondary_set_name='FASEI_SLAVE', 
-#         friction_coeff=0.5, 
-#         secondary_instance='ROCK_INST'
-#     )
+    CreateContactCondition(
+        name_model=name_of_model, 
+        contact_name='C_FASEI', 
+        step_name=name_step3,
+        main_surface_name='FASEI_MASTER', 
+        secondary_set_name='FASEI_SLAVE', 
+        friction_coeff=0.5, 
+        secondary_instance='ROCK_INST'
+    )
 
-#     ConfigurePhaseRev(
-#         name_model=name_of_model,
-#         step_name=name_step3
-#     )
+    ConfigurePhaseRev(
+        name_model=name_of_model,
+        step_name=name_step3
+    )
 
-#     CreateCreepStep(
-#         name_model=name_of_model, 
-#         step_name=name_step4,
-#         previous_step=name_step3,
-#         time_period_days=10950.0, 
-#         max_inc_days=180.0
-#         # cetol_value=0.01
-#     )
+    CreateCreepStep(
+        name_model=name_of_model, 
+        step_name=name_step4,
+        previous_step=name_step3,
+        time_period_days=10950.0, 
+        max_inc_days=180.0
+        # cetol_value=0.01
+    )
 
 #     ###############################################################################################
 
