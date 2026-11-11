@@ -105,8 +105,8 @@ def CasingStressesH(data, name_phase, name_tubular, density_steel):
 
     # stress_poisson_test = 17385604.3108 
     
-    stress_bottom = - stress_bottom 
-    stress_top = - stress_top 
+    stress_bottom = - stress_bottom + 17.258E6
+    stress_top = - stress_top + 17.2582E6
 
     # stress_bottom = - stress_bottom + stress_poisson_test - 0.8735e6
     # stress_top = - stress_top + stress_poisson_test - 0.58e6

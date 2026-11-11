@@ -2,15 +2,15 @@
   "AnalysisData": {
     "Name": "6973cbf82b7b30ef12f98ae6",
     "Depth": 0.0,
-    "Top": 3250.0,
-    "Bottom": 4000.0,
+    "Top": 2500.0,
+    "Bottom": 3500.0,
     "SimulationTime": 0.0,
     "Coupling": "M",
     "HoleDiameter": 0.0,
     "Solver": "Abaqus",
     "Domain": "axisymmetric",
     "WellboreFluid": null,
-    "GeothermalGradient": "Geothermal_cold"
+    "GeothermalGradient": "Geotermico"
   },
   "ThermalGradient": {
     "Geothermal_cold": [
@@ -63,6 +63,16 @@
       {
         "Depth": 5000.0,
         "Temperature": 60.0
+      }
+    ],
+    "Geotermico": [
+      {
+        "Depth": 2000.0,
+        "Temperature": 4.0
+      },
+      {
+        "Depth": 4000.0,
+        "Temperature": 75.0
       }
     ],
     "temp. drilling phase 9 5/8": [
@@ -174,6 +184,13 @@
       "Ovality": 0.6,
       "Material": "VM110"
     },
+    "VAM_9-7/8_#53.5_V110HCSS": {
+      "OD": 9.875,
+      "Thickness": 0.668,
+      "MinThickness": 87.5,
+      "Ovality": 0.0,
+      "Material": "VM110"
+    },
     "VAM_20_#169_K55": {
       "OD": 20.0,
       "Thickness": 0.812,
@@ -228,47 +245,17 @@
     {
       "Rock": "SHALE",
       "Top": 2000.0,
-      "Bottom": 2500.0
+      "Bottom": 2900.0
     },
     {
       "Rock": "SANDSTONE",
-      "Top": 2500.0,
-      "Bottom": 3600.0
+      "Top": 2900.0,
+      "Bottom": 3200.0
     },
     {
       "Rock": "HALITE",
-      "Top": 3600.0,
-      "Bottom": 4150.0
-    },
-    {
-      "Rock": "CARNALLITE",
-      "Top": 4150.0,
-      "Bottom": 4250.0
-    },
-    {
-      "Rock": "HALITE",
-      "Top": 4250.0,
-      "Bottom": 4400.0
-    },
-    {
-      "Rock": "TACHYHYDRITE",
-      "Top": 4400.0,
-      "Bottom": 4500.0
-    },
-    {
-      "Rock": "HALITE",
-      "Top": 4500.0,
-      "Bottom": 5000.0
-    },
-    {
-      "Rock": "ANHYDRITE",
-      "Top": 5000.0,
-      "Bottom": 5200.0
-    },
-    {
-      "Rock": "CARBONATE",
-      "Top": 5200.0,
-      "Bottom": 5500.0
+      "Top": 3200.0,
+      "Bottom": 4000.0
     }
   ],
   "InSituStresses": [
@@ -280,87 +267,38 @@
       "PorePressure": 8.5
     },
     {
-      "Depth": 2500.0,
-      "Overburden": 10.63825419,
-      "ShMax": 10.63825419,
-      "ShMin": 10.63825419,
-      "PorePressure": 8.5
-    },
-    {
-      "Depth": 3599.99,
-      "Overburden": 13.25246646,
-      "ShMax": 13.25246646,
-      "ShMin": 13.25246646,
-      "PorePressure": 8.5
-    },
-    {
-      "Depth": 3600.0,
-      "Overburden": 13.25246646,
-      "ShMax": 13.25246646,
-      "ShMin": 13.25246646,
+      "Depth": 2000.99,
+      "Overburden": 8.5,
+      "ShMax": 8.5,
+      "ShMin": 8.5,
       "PorePressure": 0.0
     },
     {
-      "Depth": 4150.0,
-      "Overburden": 13.89610181,
-      "ShMax": 13.89610181,
-      "ShMin": 13.89610181,
+      "Depth": 2900.0,
+      "Overburden": 11.9,
+      "ShMax": 11.9,
+      "ShMin": 11.9,
       "PorePressure": 0.0
     },
     {
-      "Depth": 4250.0,
-      "Overburden": 13.88330527,
-      "ShMax": 13.88330527,
-      "ShMin": 13.88330527,
+      "Depth": 3800.0,
+      "Overburden": 12.6,
+      "ShMax": 12.6,
+      "ShMin": 12.6,
       "PorePressure": 0.0
     },
     {
-      "Depth": 4400.0,
-      "Overburden": 14.02736263,
-      "ShMax": 14.02736263,
-      "ShMin": 14.02736263,
+      "Depth": 4000.0,
+      "Overburden": 13.7,
+      "ShMax": 13.7,
+      "ShMin": 13.7,
       "PorePressure": 0.0
-    },
-    {
-      "Depth": 4500.0,
-      "Overburden": 14.11806541,
-      "ShMax": 14.11806541,
-      "ShMin": 14.11806541,
-      "PorePressure": 0.0
-    },
-    {
-      "Depth": 5000.0,
-      "Overburden": 14.51715764,
-      "ShMax": 14.51715764,
-      "ShMin": 14.51715764,
-      "PorePressure": 0.0
-    },
-    {
-      "Depth": 5200.0,
-      "Overburden": 14.89553309,
-      "ShMax": 14.89553309,
-      "ShMin": 14.89553309,
-      "PorePressure": 0.0
-    },
-    {
-      "Depth": 5200.01,
-      "Overburden": 14.89553309,
-      "ShMax": 14.89553309,
-      "ShMin": 14.89553309,
-      "PorePressure": 8.5
-    },
-    {
-      "Depth": 5500.0,
-      "Overburden": 15.3166152,
-      "ShMax": 15.3166152,
-      "ShMin": 15.3166152,
-      "PorePressure": 8.5
     }
   ],
   "Rocks": {
     "SHALE": {
       "MohrCoulombParameters": {
-        "Cohesion": 20.0017,
+        "Cohesion": 20.00169876,
         "FrictionAngle": 28.0,
         "DilatancyAngle": 7.0,
         "UltimateTraction": 0.0
@@ -369,7 +307,7 @@
       "Elasticity": "ISOTROPIC",
       "ElasticParameters": {
         "Density": 2299.69,
-        "Young": 20.0017,
+        "Young": 20.001698760,
         "Poisson": 0.29
       },
       "ThermalParameters": {
@@ -392,7 +330,7 @@
       "Elasticity": "ISOTROPIC",
       "ElasticParameters": {
         "Density": 2170.0,
-        "Young": 20.4,
+        "Young": 20.4000090452,
         "Poisson": 0.36
       },
       "ThermalParameters": {
@@ -483,7 +421,7 @@
     },
     "SANDSTONE": {
       "MohrCoulombParameters": {
-        "Cohesion": 20.0017,
+        "Cohesion": 20.00169876,
         "FrictionAngle": 30.0,
         "DilatancyAngle": 7.5,
         "UltimateTraction": 0.0
@@ -492,7 +430,7 @@
       "Elasticity": "ISOTROPIC",
       "ElasticParameters": {
         "Density": 2300.0,
-        "Young": 24.062023,
+        "Young": 24.062022924,
         "Poisson": 0.25
       },
       "ThermalParameters": {
@@ -934,13 +872,13 @@
       "Law": "VON_MISES_PLASTIC",
       "Elasticity": "ISOTROPIC",
       "ElasticParameters": {
-        "Density": 7935.0,
+        "Density": 7950.0,
         "Young": 206.8428,
         "Poisson": 0.3
       },
       "ThermalParameters": {
         "Conductivity": 45.3452,
-        "SpecificHeat": 460.9,
+        "SpecificHeat": 342.2186813,
         "ThermalExpansion": 0.0001242
       },
       "MisesPlastic": {
@@ -1070,21 +1008,21 @@
     "3dda7930-6dbf-4d05-87f2-d2809a3e9fc6": {
       "Casing": [
         {
-          "Tubular": "LIN_09_875",
+          "Tubular": "VAM_9-7/8_#53.5_V110HCSS",
           "Top": 2000.0,
-          "Bottom": 5500.0
+          "Bottom": 4000.0
         }
       ],
       "CementSheath": [
         {
           "Cement": "CLASS_G",
           "Density": 1900.0,
-          "Top": 4750.0,
-          "Bottom": 5500.0
+          "Top": 4000.0,
+          "Bottom": 4000.0
         }
       ],
-      "HoleDiameter": 12.25,
-      "Standoff": 67.0,
+      "HoleDiameter": 10.375,
+      "Standoff": 100.0,
       "RateOfPenetration": 10.0,
       "TripSpeed": 400.0,
       "Fluid": "production_annulusA",

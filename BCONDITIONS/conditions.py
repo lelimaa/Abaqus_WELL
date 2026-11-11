@@ -113,7 +113,7 @@ def ApplyGeostaticStresses(name_model, filtered_layers, stresses_table):
             vCoord2=-z_bottom,
             lateralCoeff1=1.0,
             # lateralCoeff2=None
-            lateralCoeff2=1.0
+            # lateralCoeff2=1.0
         )
 
         name_material = layer['Rock']
@@ -243,7 +243,8 @@ def CreateStepsPartOne(name_model):
 
     regionDef=m.rootAssembly.sets['ROCK_OUTPUT']
     m.FieldOutputRequest(name='ROCK_OUTPUT', 
-        createStepName='Geostatic', variables=('U', 'TEMP','NT', 'S', 'MISES'), region=regionDef, 
+        # createStepName='Geostatic', variables=('U', 'TEMP','NT', 'S', 'MISES'), region=regionDef, 
+        createStepName='Geostatic', variables=('U', 'TEMP'), region=regionDef, 
         sectionPoints=DEFAULT, rebar=EXCLUDE)
 
     if 'H-Output-1' in m.historyOutputRequests.keys():
@@ -270,11 +271,15 @@ def CreateStepsPartOne(name_model):
         63072000.0, ), (126144000.0, ), (252288000.0, ), (504576000.0, ), (
         946080000.0, )))
     m.fieldOutputRequests['FASEI_REV'].setValuesInStep(
-        stepName='Transition')
-        # stepName='Transition', timePoint='timePoint')
+        # stepName='Transition')
+        stepName='Transition', timePoint='timePoint')
+
+    # m.fieldOutputRequests['FASEI_REV'].setValues(
+    #     timePoint='timePoint')
+        
     m.fieldOutputRequests['ROCK_OUTPUT'].setValuesInStep(
-        stepName='Transition')
-        # stepName='Transition', timePoint='timePoint')
+        # stepName='Transition')
+        stepName='Transition', timePoint='timePoint')
     
 
     m.StaticStep(name='TempDefine', previous='Transition', 

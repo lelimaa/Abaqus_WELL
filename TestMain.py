@@ -269,6 +269,7 @@ if __name__ == "__main__":
     # stress_top, stress_bottom = CasingStresses(data, name_phase, name_tubular, examples["STEEL"]["density"], top_well_depth, base_well_depth)
     stress_top, stress_bottom = CasingStressesH(data, name_phase, name_tubular, examples["STEEL"]["density"])
     # stress_top, stress_bottom = CasingStressesNoCement(data, name_phase, examples["STEEL"]["density"], top_depth, base_depth)
+    # ApplyCasingInitialStresses(name_of_model, top_well_depth, base_well_depth, stress_top, stress_bottom)
     ApplyCasingInitialStresses(name_of_model, top_well_depth, base_well_depth, stress_top, stress_bottom)
 
     # Another part of creation of steps

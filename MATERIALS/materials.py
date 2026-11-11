@@ -25,10 +25,11 @@ def ElasticMaterial(modelName, name, data, sectionLength=1.):
         # raw_value = data.get('specific_heat')
         # corrected_spec_heat = raw_value * 4184.0 
         # mat.SpecificHeat(table=((corrected_spec_heat,),))
-        mat.SpecificHeat(table=((data.get('specific_heat'),),))
+        mat.SpecificHeat(law=CONSTANTVOLUME,
+                         table=((data.get('specific_heat'),),))
 
-    if data.get('expansion') is not None:
-        mat.Expansion(table=((data.get('expansion'),),))
+    # if data.get('expansion') is not None:
+    #     mat.Expansion(table=((data.get('expansion'),),))
     subroutine = None
     return mat, sect, subroutine
 
