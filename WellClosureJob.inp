@@ -27913,8 +27913,8 @@ MISES, S, TEMP
 ** STEP: Drill_12_25_Creep
 ** 
 *Step, name=Drill_12_25_Creep, nlgeom=YES, inc=1000000
-*Visco, cetol=0.0001
-1e-06, 172800., 1e-15, 172800.
+*Visco, cetol=0.01
+1., 172800., 1e-15, 172800.
 ** 
 ** LOADS
 ** 
@@ -28780,8 +28780,8 @@ MISES, S, TEMP
 ** STEP: Cas_9_875_Creep
 ** 
 *Step, name=Cas_9_875_Creep, nlgeom=YES, inc=1000000
-*Visco, cetol=0.0001
-1e-06, 9.4608e+08, 1e-15, 1.5552e+07
+*Visco, cetol=0.01
+1., 9.4608e+08, 1e-15, 1.5552e+07
 ** 
 ** LOADS
 ** 

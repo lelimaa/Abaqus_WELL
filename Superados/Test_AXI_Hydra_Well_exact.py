@@ -621,6 +621,14 @@ mdb.models['Model-1'].MappedField(name='Geotermico', description='',
 #     0.0, 1.19213, 1.19213), (100.0, 1.19213, 1.19213)), '0':((
 #     1.79769313486232e+308, 0.0, 100.0), (0.0, 1.0, 1.0), (100.0, 1.0, 
 #     1.0))})
+
+# mdb.models['Model-1'].MappedField(name='Geotermico', description='', 
+#     regionType=POINT, partLevelData=False, localCsys=None, 
+#     pointDataFormat=GRID, fieldDataType=SCALAR, gridPointPlane=PLANE13, 
+#     gridPointData=gridPointData)
+
+
+
 a = mdb.models['Model-1'].rootAssembly
 region = a.instances['Analise-1-1'].sets['FASEI']
 mdb.models['Model-1'].Temperature(name='NT_FASEI', createStepName='TempDefine', 
