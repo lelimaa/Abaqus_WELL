@@ -310,9 +310,10 @@ if __name__ == "__main__":
         name_model=name_of_model, 
         step_name=name_step2,
         previous_step=name_step1,
-        time_period_days=2.0 
-        # max_inc_days=None,
-        # cetol_value=0.01
+        time_period_days=2.0, 
+        max_inc_days=None,
+        cetol_value=0.01,
+        initial_inc_sec=1.0
     )
 
     # Another part of creation of steps
@@ -342,8 +343,9 @@ if __name__ == "__main__":
         step_name=name_step4,
         previous_step=name_step3,
         time_period_days=10950.0, 
-        max_inc_days=180.0
-        # cetol_value=0.01
+        max_inc_days=180.0,
+        cetol_value=0.01,
+        initial_inc_sec=1.0
     )
 
 #     ###############################################################################################
