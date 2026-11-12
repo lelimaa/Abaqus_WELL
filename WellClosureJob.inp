@@ -21224,9 +21224,9 @@ CSTRESS,
 ** FIELD OUTPUT: ROCK_OUTPUT
 ** 
 *Node Output, nset=ROCK_OUTPUT
-U, 
+NT, U
 *Element Output, elset=ROCK_OUTPUT, directions=YES
-TEMP, 
+ER, IE, LE, LODE, MISES, PE, PEEQ, PRESSONLY, S, TEMP, THE, TRIAX
 *Output, history, frequency=0
 *End Step
 ** ----------------------------------------------------------------
@@ -21249,7 +21249,7 @@ TEMP,
 ** 
 ** FIELD OUTPUT: FASEI_REV
 ** 
-*Output, field, time points=timePoint
+*Output, field
 *Node Output, nset=PIPE_INST.FASEI_REV
 NT, U
 *Element Output, elset=PIPE_INST.FASEI_REV, directions=YES
@@ -21260,9 +21260,9 @@ CSTRESS,
 ** FIELD OUTPUT: ROCK_OUTPUT
 ** 
 *Node Output, nset=ROCK_OUTPUT
-U, 
+NT, U
 *Element Output, elset=ROCK_OUTPUT, directions=YES
-TEMP, 
+ER, IE, LE, LODE, MISES, PE, PEEQ, PRESSONLY, S, TEMP, THE, TRIAX
 *Output, history, frequency=0
 *End Step
 ** ----------------------------------------------------------------
@@ -32122,7 +32122,7 @@ ROCK_INST.218, 319.736
 ** 
 ** FIELD OUTPUT: FASEI_REV
 ** 
-*Output, field, time points=timePoint
+*Output, field
 *Node Output, nset=PIPE_INST.FASEI_REV
 NT, U
 *Element Output, elset=PIPE_INST.FASEI_REV, directions=YES
@@ -32133,9 +32133,9 @@ CSTRESS,
 ** FIELD OUTPUT: ROCK_OUTPUT
 ** 
 *Node Output, nset=ROCK_OUTPUT
-U, 
+NT, U
 *Element Output, elset=ROCK_OUTPUT, directions=YES
-TEMP, 
+ER, IE, LE, LODE, MISES, PE, PEEQ, PRESSONLY, S, TEMP, THE, TRIAX
 *Output, history, frequency=0
 *End Step
 ** ----------------------------------------------------------------
@@ -32432,7 +32432,7 @@ ROCK_INST.7875, P4, 2.49842e+07
 ** 
 ** FIELD OUTPUT: FASEI_REV
 ** 
-*Output, field, time points=timePoint
+*Output, field
 *Node Output, nset=PIPE_INST.FASEI_REV
 NT, U
 *Element Output, elset=PIPE_INST.FASEI_REV, directions=YES
@@ -32443,9 +32443,9 @@ CSTRESS,
 ** FIELD OUTPUT: ROCK_OUTPUT
 ** 
 *Node Output, nset=ROCK_OUTPUT
-U, 
+NT, U
 *Element Output, elset=ROCK_OUTPUT, directions=YES
-TEMP, 
+ER, IE, LE, LODE, MISES, PE, PEEQ, PRESSONLY, S, TEMP, THE, TRIAX
 *Output, history, frequency=0
 *End Step
 ** ----------------------------------------------------------------
@@ -32725,7 +32725,7 @@ ROCK_INST.7875, P4, 2.49842e+07
 ** 
 ** FIELD OUTPUT: FASEI_REV
 ** 
-*Output, field, time points=timePoint
+*Output, field
 *Node Output, nset=PIPE_INST.FASEI_REV
 NT, U
 *Element Output, elset=PIPE_INST.FASEI_REV, directions=YES
@@ -32736,9 +32736,9 @@ CSTRESS,
 ** FIELD OUTPUT: ROCK_OUTPUT
 ** 
 *Node Output, nset=ROCK_OUTPUT
-U, 
+NT, U
 *Element Output, elset=ROCK_OUTPUT, directions=YES
-TEMP, 
+ER, IE, LE, LODE, MISES, PE, PEEQ, PRESSONLY, S, TEMP, THE, TRIAX
 *Output, history, frequency=0
 *End Step
 ** ----------------------------------------------------------------
@@ -33555,7 +33555,7 @@ PIPE_INST.FASEI_REV,
 ** 
 ** FIELD OUTPUT: FASEI_REV
 ** 
-*Output, field, time points=timePoint
+*Output, field
 *Node Output, nset=PIPE_INST.FASEI_REV
 NT, U
 *Element Output, elset=PIPE_INST.FASEI_REV, directions=YES
@@ -33566,9 +33566,9 @@ CSTRESS,
 ** FIELD OUTPUT: ROCK_OUTPUT
 ** 
 *Node Output, nset=ROCK_OUTPUT
-U, 
+NT, U
 *Element Output, elset=ROCK_OUTPUT, directions=YES
-TEMP, 
+ER, IE, LE, LODE, MISES, PE, PEEQ, PRESSONLY, S, TEMP, THE, TRIAX
 *Output, history, frequency=0
 *End Step
 ** ----------------------------------------------------------------
@@ -34360,7 +34360,7 @@ ROCK_INST.7875, P4, 2.49842e+07
 ** 
 ** FIELD OUTPUT: FASEI_REV
 ** 
-*Output, field, time points=timePoint
+*Output, field
 *Node Output, nset=PIPE_INST.FASEI_REV
 NT, U
 *Element Output, elset=PIPE_INST.FASEI_REV, directions=YES
@@ -34371,8 +34371,8 @@ CSTRESS,
 ** FIELD OUTPUT: ROCK_OUTPUT
 ** 
 *Node Output, nset=ROCK_OUTPUT
-U, 
+NT, U
 *Element Output, elset=ROCK_OUTPUT, directions=YES
-TEMP, 
+ER, IE, LE, LODE, MISES, PE, PEEQ, PRESSONLY, S, TEMP, THE, TRIAX
 *Output, history, frequency=0
 *End Step

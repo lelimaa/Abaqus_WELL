@@ -243,8 +243,10 @@ def CreateStepsPartOne(name_model):
 
     regionDef=m.rootAssembly.sets['ROCK_OUTPUT']
     m.FieldOutputRequest(name='ROCK_OUTPUT', 
-        # createStepName='Geostatic', variables=('U', 'TEMP','NT', 'S', 'MISES'), region=regionDef, 
-        createStepName='Geostatic', variables=('U', 'TEMP'), region=regionDef, 
+        # createStepName='Geostatic', variables=('U', 'TEMP'), region=regionDef, 
+        createStepName='Geostatic', variables=('U', 'TEMP','NT', 'PRESSONLY', 'LODE', 
+                                               'TRIAX','PE', 'PEEQ', 'IE', 'LE', 'THE', 
+                                               'S', 'MISES', 'ER'), region=regionDef, 
         sectionPoints=DEFAULT, rebar=EXCLUDE)
 
     if 'H-Output-1' in m.historyOutputRequests.keys():
@@ -271,16 +273,13 @@ def CreateStepsPartOne(name_model):
         63072000.0, ), (126144000.0, ), (252288000.0, ), (504576000.0, ), (
         946080000.0, )))
     m.fieldOutputRequests['FASEI_REV'].setValuesInStep(
-        # stepName='Transition')
-        stepName='Transition', timePoint='timePoint')
-
-    # m.fieldOutputRequests['FASEI_REV'].setValues(
-    #     timePoint='timePoint')
+        stepName='Transition')
+        # stepName='Transition', timePoint='timePoint')
         
     m.fieldOutputRequests['ROCK_OUTPUT'].setValuesInStep(
-        # stepName='Transition')
-        stepName='Transition', timePoint='timePoint')
-    
+        stepName='Transition')
+        # stepName='Transition', timePoint='timePoint')    
+
 
     m.StaticStep(name='TempDefine', previous='Transition', 
         timePeriod=3.0, initialInc=1.0, minInc=3e-05, maxInc=3.0)
