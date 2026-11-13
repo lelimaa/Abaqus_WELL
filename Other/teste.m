@@ -10,7 +10,9 @@ clc
 % PATH = 'C:\Users\hidalgo\Documents\Gitlab\abaquswell';
 % PATH = 'C:\app\abaqus-workdir\40';
 % PATH = 'C:\Users\hidalgo\Documents\Gitlab\abaquswell';
-PATH = 'C:\Users\hidalgo\Desktop\Poseidon\analysis38';
+% PATH = 'C:\Users\hidalgo\Desktop\Poseidon\analysis38';
+PATH = 'C:\app\abaqus-workdir\98';
+
 
 cd(PATH)
 
@@ -110,7 +112,8 @@ clear; clc; close all;
 %% 1. Leitura do Arquivo CSV
 
 % PATH = 'C:\Users\hidalgo\Desktop\Poseidon\analysis38';
-PATH = 'C:\Users\hidalgo\Desktop\Poseidon\simulation4';
+% PATH = 'C:\Users\hidalgo\Desktop\Poseidon\simulation4';
+PATH = 'C:\app\abaqus-workdir\98';
 
 cd(PATH)
 
@@ -174,7 +177,7 @@ for i = 1:length(anos_alvo)
     eixo_u1_limpo = tbl_limpa.mean_U1;
     
     % Plota a curva limpa
-    plot(eixo_u1_limpo+9.525, eixo_z_limpo, ...
+    plot(eixo_u1_limpo+6.35, eixo_z_limpo, ...
         'Color', cores(i, :), ...
         'LineWidth', 1.8, ...
         'DisplayName', legendas{i});
@@ -188,7 +191,7 @@ xlabel('Annular gap [mm]', 'Interpreter', 'latex', 'FontSize', FontSize);
 ylabel('Depth [m]', 'Interpreter', 'latex', 'FontSize', FontSize);
 
 % ylim([2800 4000]); % Ajuste de profundidade como no gráfico de referência
-xlim([-0.5 10]);
+xlim([-0.5 6.5]);
 
 legend('Location', 'northwest', 'FontSize', FontSize - 2, 'Interpreter', 'latex');
 set(gca, 'FontSize', FontSize, 'Box', 'on', 'TickDir', 'in');
@@ -340,6 +343,8 @@ set(gca, 'FontSize', FontSize, 'Box', 'on', 'TickDir', 'in');
 % set(gca, 'FontSize', FontSize, 'Box', 'on', 'TickDir', 'out');
 
 %% Lendo deslocamento em um ponto (base da formação)
+
+instantes_tempo = unique(data.("Time (s)"));
 
 FontSize = 20;
 

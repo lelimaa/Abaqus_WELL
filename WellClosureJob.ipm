@@ -25,7 +25,7 @@
 <Warning><message type="string">THE REQUEST FOR MISES OUTPUT WILL BE REPLACED BY A REQUEST FOR S OUTPUT</message><phase type="symconst">BATCHPRE_PHASE</phase><jobName type="string">WellClosureJob</jobName></Warning>
 <Odb_File><file type="string">C:\Users\hidalgo\Documents\GitHub\Abaqus_WELL\WellClosureJob.odb</file><phase type="symconst">BATCHPRE_PHASE</phase><jobName type="string">WellClosureJob</jobName></Odb_File>
 <Completed><message type="string">Analysis phase complete</message><phase type="symconst">BATCHPRE_PHASE</phase><jobName type="string">WellClosureJob</jobName></Completed>
-<Started><phase type="symconst">STANDARD_PHASE</phase><jobName type="string">WellClosureJob</jobName><clientHost type="string">ARIES</clientHost><handle type="integer">42340</handle></Started>
+<Started><phase type="symconst">STANDARD_PHASE</phase><jobName type="string">WellClosureJob</jobName><clientHost type="string">ARIES</clientHost><handle type="integer">44160</handle></Started>
 <Step><stepId type="integer">1</stepId><phase type="symconst">STANDARD_PHASE</phase><jobName type="string">WellClosureJob</jobName></Step>
 <Odb_Frame><step type="integer">0</step><frame type="integer">0</frame><phase type="symconst">STANDARD_PHASE</phase><jobName type="string">WellClosureJob</jobName></Odb_Frame>
 <Warning><message type="string">THERE ARE 1025 UNCONNECTED REGIONS IN THE MODEL.</message><phase type="symconst">STANDARD_PHASE</phase><jobName type="string">WellClosureJob</jobName></Warning>
@@ -387,4 +387,4 @@
 <Status><step type="integer">7</step><increment type="integer">112</increment><attempts type="integer">1</attempts><severe type="integer">0</severe><equilibrium type="integer">2</equilibrium><iterations type="integer">2</iterations><totalTime type="float">946252808</totalTime><stepTime type="float">946080000</stepTime><timeIncrement type="float">8033338.78781605</timeIncrement><phase type="symconst">STANDARD_PHASE</phase><jobName type="string">WellClosureJob</jobName></Status>
 <End_Step><stepId type="integer">7</stepId><phase type="symconst">STANDARD_PHASE</phase><jobName type="string">WellClosureJob</jobName></End_Step>
 <Completed><message type="string">Analysis phase complete</message><phase type="symconst">STANDARD_PHASE</phase><jobName type="string">WellClosureJob</jobName></Completed>
-<JOB_COMPLETED><time type="string">Thu Nov 12 12:28:00 2026</time><jobName type="string">WellClosureJob</jobName></JOB_COMPLETED></msgwrapper>
+<JOB_COMPLETED><time type="string">Thu Nov 12 19:21:44 2026</time><jobName type="string">WellClosureJob</jobName></JOB_COMPLETED></msgwrapper>

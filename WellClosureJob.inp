@@ -21219,7 +21219,7 @@ NT, U
 *Element Output, elset=PIPE_INST.FASEI_REV, directions=YES
 E, MISES, PE, S, PEEQ
 *Contact Output, nset=PIPE_INST.FASEI_REV
-CSTRESS, 
+CDISP, CSTRESS
 ** 
 ** FIELD OUTPUT: ROCK_OUTPUT
 ** 
@@ -21255,7 +21255,7 @@ NT, U
 *Element Output, elset=PIPE_INST.FASEI_REV, directions=YES
 E, MISES, PE, S, PEEQ
 *Contact Output, nset=PIPE_INST.FASEI_REV
-CSTRESS, 
+CDISP, CSTRESS
 ** 
 ** FIELD OUTPUT: ROCK_OUTPUT
 ** 
@@ -32128,7 +32128,7 @@ NT, U
 *Element Output, elset=PIPE_INST.FASEI_REV, directions=YES
 E, MISES, PE, S, PEEQ
 *Contact Output, nset=PIPE_INST.FASEI_REV
-CSTRESS, 
+CDISP, CSTRESS
 ** 
 ** FIELD OUTPUT: ROCK_OUTPUT
 ** 
@@ -32144,7 +32144,7 @@ ER, IE, LE, LODE, MISES, PE, PEEQ, PRESSONLY, S, TEMP, THE, TRIAX
 ** 
 *Step, name=Drill_10_375, nlgeom=YES
 *Static
-1., 1., 1e-05, 1.
+1., 1., 1e-15, 1.
 ** 
 ** BOUNDARY CONDITIONS
 ** 
@@ -32438,7 +32438,7 @@ NT, U
 *Element Output, elset=PIPE_INST.FASEI_REV, directions=YES
 E, MISES, PE, S, PEEQ
 *Contact Output, nset=PIPE_INST.FASEI_REV
-CSTRESS, 
+CDISP, CSTRESS
 ** 
 ** FIELD OUTPUT: ROCK_OUTPUT
 ** 
@@ -32731,7 +32731,7 @@ NT, U
 *Element Output, elset=PIPE_INST.FASEI_REV, directions=YES
 E, MISES, PE, S, PEEQ
 *Contact Output, nset=PIPE_INST.FASEI_REV
-CSTRESS, 
+CDISP, CSTRESS
 ** 
 ** FIELD OUTPUT: ROCK_OUTPUT
 ** 
@@ -33561,7 +33561,7 @@ NT, U
 *Element Output, elset=PIPE_INST.FASEI_REV, directions=YES
 E, MISES, PE, S, PEEQ
 *Contact Output, nset=PIPE_INST.FASEI_REV
-CSTRESS, 
+CDISP, CSTRESS
 ** 
 ** FIELD OUTPUT: ROCK_OUTPUT
 ** 
@@ -34366,7 +34366,7 @@ NT, U
 *Element Output, elset=PIPE_INST.FASEI_REV, directions=YES
 E, MISES, PE, S, PEEQ
 *Contact Output, nset=PIPE_INST.FASEI_REV
-CSTRESS, 
+CDISP, CSTRESS
 ** 
 ** FIELD OUTPUT: ROCK_OUTPUT
 ** 

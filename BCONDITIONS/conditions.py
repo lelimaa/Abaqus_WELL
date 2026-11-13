@@ -236,7 +236,7 @@ def CreateStepsPartOne(name_model):
     regionDef=m.rootAssembly.instances['PIPE_INST'].sets['FASEI_REV']
     m.FieldOutputRequest(name='FASEI_REV', 
         createStepName='Geostatic', variables=('S', 'MISES', 'E', 'PE', 'U', 
-        'NT', 'CSTRESS'), region=regionDef, sectionPoints=DEFAULT, rebar=EXCLUDE)
+        'NT', 'CSTRESS', 'CDISP'), region=regionDef, sectionPoints=DEFAULT, rebar=EXCLUDE)
     
     if 'F-Output-1' in m.fieldOutputRequests.keys():
         del m.fieldOutputRequests['F-Output-1']
@@ -439,7 +439,7 @@ def CreateStepsPartThree(name_model,name_step, magnitude_val):
     m = mdb.models[name_model]
     a = m.rootAssembly
 
-    m.StaticStep(name=name_step, previous='TempDefine')
+    m.StaticStep(name=name_step, previous='TempDefine', minInc=1e-15)
     print(f">>> Step '{name_step}' created with success!")
 
     if 'FASEI_OPEN_WELL' in a.surfaces.keys():

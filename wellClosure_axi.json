@@ -4,7 +4,7 @@
     "Depth": 0.0,
     "Top": 2500.0,
     "Bottom": 3500.0,
-    "SimulationTime": 0.0,
+    "SimulationTime": 30.0,
     "Coupling": "M",
     "HoleDiameter": 0.0,
     "Solver": "Abaqus",
@@ -187,7 +187,7 @@
     "VAM_9-7/8_#53.5_V110HCSS": {
       "OD": 9.875,
       "Thickness": 0.668,
-      "MinThickness": 87.5,
+      "MinThickness": 100.0,
       "Ovality": 0.0,
       "Material": "VM110"
     },

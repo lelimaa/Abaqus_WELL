@@ -249,6 +249,9 @@ if __name__ == "__main__":
 
     # Steps creation and boundary conditions application  ##############################################
 
+    time_of_simulation = data["AnalysisData"]["SimulationTime"]  # Total simulation time in days, as given in the json file.
+    time_of_simulation_days = time_of_simulation * 365  # Total simulation time in days, as given in the json file.
+
     # Four main steps are required to be created, corresponding to drilling and casing stages
 
     diameter_wellbore_inch = diameter_wellbore / 0.0254
@@ -356,7 +359,8 @@ if __name__ == "__main__":
         name_model=name_of_model, 
         step_name=name_step4,
         previous_step=name_step3,
-        time_period_days=10950.0, 
+        # time_period_days=10950.0, 
+        time_period_days=time_of_simulation_days,  # Use the total simulation time in days from the json file.
         max_inc_days=180.0,
         cetol_value=0.01,
         initial_inc_sec=1.0
