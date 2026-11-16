@@ -21166,7 +21166,7 @@ YSYM_TOP, YSYMM
 ** 
 ** Name: S_FASEI_REV   Type: Geostatic stress
 *Initial Conditions, type=STRESS, GEOSTATIC
-PIPE_INST.FASEI_REV, 1.33997e+08, -2000., -2.1982e+07, -4000., 0., 0.
+PIPE_INST.FASEI_REV, 6.32386e+07, -2000., -9.27398e+07, -4000., 0., 0.
 ** Name: S_L1-I   Type: Geostatic stress
 *Initial Conditions, type=STRESS, GEOSTATIC
 ROCK_INST.L1-I, -3.14126e+07, -2500., -4.05663e+07, -2900., 1., 1.

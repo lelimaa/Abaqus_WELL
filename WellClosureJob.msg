@@ -1,6 +1,6 @@
 1
 
-   Abaqus 2024                                  Date 12-nov-2026   Time 19:18:06
+   Abaqus 2024                                  Date 16-Nov-2026   Time 15:02:22
    For use by PONTIFICIA UNIVERSIDADE CATOLICA DO RIO DE JANEIRO under license from Dassault Systemes or its subsidiary.
 
                                                                                  
@@ -79,20 +79,20 @@
  
      INITIAL ELEMENT LOAD BALANCE
             DOMAIN    1     THREAD    NUMBER OF ELEMENTS
-                              1            1112
-                              2            1491
-                              3            1240
-                              4            1304
-                              5            1400
-                              6            1304
-                              7            1320
-                              8            1120
-                              9            1136
-                             10            1168
-                             11            1112
-                             12            1448
-                             13            1360
-                             14            1112
+                              1            1152
+                              2            1184
+                              3            968
+                              4            1331
+                              5            1368
+                              6            1432
+                              7            1232
+                              8            1232
+                              9            1200
+                             10            1176
+                             11            1176
+                             12            1624
+                             13            1264
+                             14            1288
 
  ***WARNING: THERE ARE 1025 UNCONNECTED REGIONS IN THE MODEL.
 
@@ -104,7 +104,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.386e+08
-        SOLVER ELAPSED TIME:  163ms
+        SOLVER ELAPSED TIME:  126ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -126,7 +126,7 @@
  STEP TIME COMPLETED        1.00    ,  TOTAL TIME COMPLETED         1.00    
 1
 
-   Abaqus 2024                                  Date 12-nov-2026   Time 19:18:10
+   Abaqus 2024                                  Date 16-Nov-2026   Time 15:02:24
    For use by PONTIFICIA UNIVERSIDADE CATOLICA DO RIO DE JANEIRO under license from Dassault Systemes or its subsidiary.
 
                                                                                  
@@ -225,20 +225,20 @@
  
      INITIAL ELEMENT LOAD BALANCE
             DOMAIN    1     THREAD    NUMBER OF ELEMENTS
-                              1            1120
-                              2            1168
-                              3            1240
-                              4            1176
-                              5            1456
-                              6            1264
-                              7            1448
-                              8            1240
-                              9            1224
-                             10            1360
-                             11            1203
-                             12            1232
-                             13            1208
-                             14            1288
+                              1            1368
+                              2            1416
+                              3            1224
+                              4            1184
+                              5            963
+                              6            1248
+                              7            1056
+                              8            1512
+                              9            952
+                             10            1592
+                             11            1136
+                             12            1520
+                             13            1120
+                             14            1336
 
  ***WARNING: THERE ARE 1025 UNCONNECTED REGIONS IN THE MODEL.
 
@@ -250,7 +250,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.399e+08
-        SOLVER ELAPSED TIME:  125ms
+        SOLVER ELAPSED TIME:  104ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -279,7 +279,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.399e+08
-        SOLVER ELAPSED TIME:  152ms
+        SOLVER ELAPSED TIME:  120ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -301,7 +301,7 @@
  STEP TIME COMPLETED        2.00    ,  TOTAL TIME COMPLETED         3.00    
 1
 
-   Abaqus 2024                                  Date 12-nov-2026   Time 19:18:11
+   Abaqus 2024                                  Date 16-Nov-2026   Time 15:02:25
    For use by PONTIFICIA UNIVERSIDADE CATOLICA DO RIO DE JANEIRO under license from Dassault Systemes or its subsidiary.
 
                                                                                  
@@ -400,20 +400,20 @@
  
      INITIAL ELEMENT LOAD BALANCE
             DOMAIN    1     THREAD    NUMBER OF ELEMENTS
-                              1            1032
-                              2            1248
-                              3            1352
-                              4            1336
-                              5            1160
-                              6            1208
-                              7            1280
-                              8            1144
-                              9            1296
-                             10            1384
-                             11            1248
-                             12            1344
-                             13            1232
-                             14            1363
+                              1            1224
+                              2            1112
+                              3            1395
+                              4            1168
+                              5            1288
+                              6            1352
+                              7            1088
+                              8            976
+                              9            1168
+                             10            1288
+                             11            1232
+                             12            1400
+                             13            1584
+                             14            1352
 
  ***WARNING: THERE ARE 1025 UNCONNECTED REGIONS IN THE MODEL.
 
@@ -425,7 +425,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.399e+08
-        SOLVER ELAPSED TIME:  144ms
+        SOLVER ELAPSED TIME:  93ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -454,7 +454,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.399e+08
-        SOLVER ELAPSED TIME:  155ms
+        SOLVER ELAPSED TIME:  105ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -483,7 +483,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.399e+08
-        SOLVER ELAPSED TIME:  138ms
+        SOLVER ELAPSED TIME:  101ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -505,7 +505,7 @@
  STEP TIME COMPLETED        3.00    ,  TOTAL TIME COMPLETED         6.00    
 1
 
-   Abaqus 2024                                  Date 12-nov-2026   Time 19:18:13
+   Abaqus 2024                                  Date 16-Nov-2026   Time 15:02:27
    For use by PONTIFICIA UNIVERSIDADE CATOLICA DO RIO DE JANEIRO under license from Dassault Systemes or its subsidiary.
 
                                                                                  
@@ -605,19 +605,19 @@
      INITIAL ELEMENT LOAD BALANCE
             DOMAIN    1     THREAD    NUMBER OF ELEMENTS
                               1            1160
-                              2            1328
-                              3            1216
-                              4            1147
-                              5            1448
-                              6            1224
-                              7            1384
-                              8            1424
-                              9            1464
-                             10            1240
-                             11            1112
-                             12            1080
-                             13            1336
-                             14            1064
+                              2            944
+                              3            1656
+                              4            1048
+                              5            1424
+                              6            1216
+                              7            1392
+                              8            920
+                              9            1200
+                             10            1536
+                             11            1024
+                             12            1539
+                             13            1096
+                             14            1472
 
  ***WARNING: THERE ARE 1025 UNCONNECTED REGIONS IN THE MODEL.
 
@@ -629,7 +629,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.399e+08
-        SOLVER ELAPSED TIME:  150ms
+        SOLVER ELAPSED TIME:  112ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -652,7 +652,7 @@
  STEP TIME COMPLETED        1.00    ,  TOTAL TIME COMPLETED         7.00    
 1
 
-   Abaqus 2024                                  Date 12-nov-2026   Time 19:18:14
+   Abaqus 2024                                  Date 16-Nov-2026   Time 15:02:27
    For use by PONTIFICIA UNIVERSIDADE CATOLICA DO RIO DE JANEIRO under license from Dassault Systemes or its subsidiary.
 
                                                                                  
@@ -759,20 +759,20 @@
  
      INITIAL ELEMENT LOAD BALANCE
             DOMAIN    1     THREAD    NUMBER OF ELEMENTS
-                              1            1288
-                              2            1208
-                              3            1408
-                              4            912
-                              5            1696
-                              6            1563
-                              7            1176
-                              8            1080
-                              9            1560
-                             10            1128
-                             11            888
-                             12            1256
-                             13            1656
-                             14            808
+                              1            968
+                              2            1768
+                              3            1456
+                              4            752
+                              5            1560
+                              6            1851
+                              7            1208
+                              8            920
+                              9            776
+                             10            896
+                             11            1168
+                             12            1368
+                             13            1688
+                             14            1248
 
  ***WARNING: THERE ARE 1025 UNCONNECTED REGIONS IN THE MODEL.
 
@@ -784,7 +784,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.399e+08
-        SOLVER ELAPSED TIME:  139ms
+        SOLVER ELAPSED TIME:  100ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -816,7 +816,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.399e+08
-        SOLVER ELAPSED TIME:  125ms
+        SOLVER ELAPSED TIME:  110ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -848,7 +848,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.399e+08
-        SOLVER ELAPSED TIME:  141ms
+        SOLVER ELAPSED TIME:  89ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -880,7 +880,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.399e+08
-        SOLVER ELAPSED TIME:  133ms
+        SOLVER ELAPSED TIME:  101ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -912,7 +912,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.399e+08
-        SOLVER ELAPSED TIME:  138ms
+        SOLVER ELAPSED TIME:  118ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -944,7 +944,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.399e+08
-        SOLVER ELAPSED TIME:  145ms
+        SOLVER ELAPSED TIME:  107ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -976,7 +976,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.399e+08
-        SOLVER ELAPSED TIME:  155ms
+        SOLVER ELAPSED TIME:  100ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -1008,7 +1008,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.399e+08
-        SOLVER ELAPSED TIME:  124ms
+        SOLVER ELAPSED TIME:  126ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -1028,7 +1028,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.399e+08
-        SOLVER ELAPSED TIME:  151ms
+        SOLVER ELAPSED TIME:  101ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
 
@@ -1060,7 +1060,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.399e+08
-        SOLVER ELAPSED TIME:  119ms
+        SOLVER ELAPSED TIME:  117ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -1092,7 +1092,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.399e+08
-        SOLVER ELAPSED TIME:  125ms
+        SOLVER ELAPSED TIME:  100ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -1112,7 +1112,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.399e+08
-        SOLVER ELAPSED TIME:  128ms
+        SOLVER ELAPSED TIME:  92ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
 
@@ -1144,7 +1144,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.399e+08
-        SOLVER ELAPSED TIME:  134ms
+        SOLVER ELAPSED TIME:  97ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -1164,7 +1164,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.399e+08
-        SOLVER ELAPSED TIME:  152ms
+        SOLVER ELAPSED TIME:  108ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
 
@@ -1197,7 +1197,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.399e+08
-        SOLVER ELAPSED TIME:  119ms
+        SOLVER ELAPSED TIME:  104ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -1229,7 +1229,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.399e+08
-        SOLVER ELAPSED TIME:  152ms
+        SOLVER ELAPSED TIME:  105ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -1249,7 +1249,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.399e+08
-        SOLVER ELAPSED TIME:  128ms
+        SOLVER ELAPSED TIME:  103ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
 
@@ -1282,7 +1282,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.399e+08
-        SOLVER ELAPSED TIME:  127ms
+        SOLVER ELAPSED TIME:  96ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -1302,7 +1302,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.399e+08
-        SOLVER ELAPSED TIME:  144ms
+        SOLVER ELAPSED TIME:  103ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
 
@@ -1335,7 +1335,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.399e+08
-        SOLVER ELAPSED TIME:  134ms
+        SOLVER ELAPSED TIME:  104ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -1367,7 +1367,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.399e+08
-        SOLVER ELAPSED TIME:  128ms
+        SOLVER ELAPSED TIME:  99ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -1387,7 +1387,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.399e+08
-        SOLVER ELAPSED TIME:  134ms
+        SOLVER ELAPSED TIME:  102ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
 
@@ -1420,7 +1420,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.399e+08
-        SOLVER ELAPSED TIME:  151ms
+        SOLVER ELAPSED TIME:  97ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -1440,7 +1440,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.399e+08
-        SOLVER ELAPSED TIME:  127ms
+        SOLVER ELAPSED TIME:  102ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
 
@@ -1473,7 +1473,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.399e+08
-        SOLVER ELAPSED TIME:  133ms
+        SOLVER ELAPSED TIME:  90ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -1493,7 +1493,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.399e+08
-        SOLVER ELAPSED TIME:  125ms
+        SOLVER ELAPSED TIME:  117ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
 
@@ -1513,7 +1513,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.399e+08
-        SOLVER ELAPSED TIME:  141ms
+        SOLVER ELAPSED TIME:  104ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     3
 
@@ -1545,7 +1545,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.399e+08
-        SOLVER ELAPSED TIME:  130ms
+        SOLVER ELAPSED TIME:  108ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -1565,7 +1565,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.399e+08
-        SOLVER ELAPSED TIME:  124ms
+        SOLVER ELAPSED TIME:  118ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
 
@@ -1585,7 +1585,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.399e+08
-        SOLVER ELAPSED TIME:  128ms
+        SOLVER ELAPSED TIME:  103ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     3
 
@@ -1617,7 +1617,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.399e+08
-        SOLVER ELAPSED TIME:  124ms
+        SOLVER ELAPSED TIME:  94ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -1637,7 +1637,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.399e+08
-        SOLVER ELAPSED TIME:  141ms
+        SOLVER ELAPSED TIME:  108ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
 
@@ -1657,7 +1657,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.399e+08
-        SOLVER ELAPSED TIME:  142ms
+        SOLVER ELAPSED TIME:  110ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     3
 
@@ -1689,7 +1689,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.399e+08
-        SOLVER ELAPSED TIME:  96ms
+        SOLVER ELAPSED TIME:  110ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -1709,7 +1709,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.399e+08
-        SOLVER ELAPSED TIME:  105ms
+        SOLVER ELAPSED TIME:  102ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
 
@@ -1729,7 +1729,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.399e+08
-        SOLVER ELAPSED TIME:  88ms
+        SOLVER ELAPSED TIME:  95ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     3
 
@@ -1761,7 +1761,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.399e+08
-        SOLVER ELAPSED TIME:  90ms
+        SOLVER ELAPSED TIME:  94ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -1781,7 +1781,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.399e+08
-        SOLVER ELAPSED TIME:  85ms
+        SOLVER ELAPSED TIME:  93ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
 
@@ -1801,7 +1801,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.399e+08
-        SOLVER ELAPSED TIME:  95ms
+        SOLVER ELAPSED TIME:  114ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     3
 
@@ -1833,7 +1833,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.399e+08
-        SOLVER ELAPSED TIME:  108ms
+        SOLVER ELAPSED TIME:  99ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -1853,7 +1853,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.399e+08
-        SOLVER ELAPSED TIME:  98ms
+        SOLVER ELAPSED TIME:  101ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
 
@@ -1873,7 +1873,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.399e+08
-        SOLVER ELAPSED TIME:  108ms
+        SOLVER ELAPSED TIME:  107ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     3
 
@@ -1905,7 +1905,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.399e+08
-        SOLVER ELAPSED TIME:  149ms
+        SOLVER ELAPSED TIME:  107ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -1925,7 +1925,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.399e+08
-        SOLVER ELAPSED TIME:  146ms
+        SOLVER ELAPSED TIME:  116ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
 
@@ -1945,7 +1945,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.399e+08
-        SOLVER ELAPSED TIME:  122ms
+        SOLVER ELAPSED TIME:  112ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     3
 
@@ -1976,7 +1976,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.399e+08
-        SOLVER ELAPSED TIME:  132ms
+        SOLVER ELAPSED TIME:  104ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -2000,7 +2000,7 @@
  STEP TIME COMPLETED       1.728E+05,  TOTAL TIME COMPLETED        1.728E+05
 1
 
-   Abaqus 2024                                  Date 12-nov-2026   Time 19:18:34
+   Abaqus 2024                                  Date 16-Nov-2026   Time 15:02:41
    For use by PONTIFICIA UNIVERSIDADE CATOLICA DO RIO DE JANEIRO under license from Dassault Systemes or its subsidiary.
 
                                                                                  
@@ -5162,20 +5162,20 @@
  
      INITIAL ELEMENT LOAD BALANCE
             DOMAIN    1     THREAD    NUMBER OF ELEMENTS
-                              1            1192
-                              2            1328
-                              3            1320
-                              4            1352
-                              5            1339
-                              6            1240
-                              7            1320
-                              8            1264
-                              9            1120
-                             10            1336
-                             11            1256
-                             12            1120
-                             13            1376
-                             14            1064
+                              1            1168
+                              2            1320
+                              3            1328
+                              4            1256
+                              5            1171
+                              6            1224
+                              7            1408
+                              8            1240
+                              9            1400
+                             10            1248
+                             11            1176
+                             12            1112
+                             13            1424
+                             14            1152
 
  ***WARNING: THERE ARE 6 UNCONNECTED REGIONS IN THE MODEL.
 
@@ -5187,7 +5187,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.439e+08
-        SOLVER ELAPSED TIME:  148ms
+        SOLVER ELAPSED TIME:  108ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -5196,11 +5196,11 @@
  LARGEST SCALED RESIDUAL FORCE     -8.834E+03   AT NODE        202   DOF  1
    INSTANCE: PIPE_INST                                                                       
   CORRESPONDING RESIDUAL FORCE     -8.834E+03
- LARGEST INCREMENT OF DISP.         3.619E-03   AT NODE        274   DOF  2
+ LARGEST INCREMENT OF DISP.         3.616E-03   AT NODE        274   DOF  2
    INSTANCE: PIPE_INST                                                                       
- LARGEST CORRECTION TO DISP.        3.619E-03   AT NODE        274   DOF  2
+ LARGEST CORRECTION TO DISP.        3.616E-03   AT NODE        274   DOF  2
    INSTANCE: PIPE_INST                                                                       
- ESTIMATE OF DISP.    CORRECTION    1.214E-07
+ ESTIMATE OF DISP.    CORRECTION    1.213E-07
  FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND ESTIMATED CORRECTION
 
  ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
@@ -5210,7 +5210,7 @@
  STEP TIME COMPLETED        1.00    ,  TOTAL TIME COMPLETED        1.728E+05
 1
 
-   Abaqus 2024                                  Date 12-nov-2026   Time 19:18:38
+   Abaqus 2024                                  Date 16-Nov-2026   Time 15:02:44
    For use by PONTIFICIA UNIVERSIDADE CATOLICA DO RIO DE JANEIRO under license from Dassault Systemes or its subsidiary.
 
                                                                                  
@@ -5317,20 +5317,20 @@
  
      INITIAL ELEMENT LOAD BALANCE
             DOMAIN    1     THREAD    NUMBER OF ELEMENTS
-                              1            1064
-                              2            1296
-                              3            1224
-                              4            1256
-                              5            1136
-                              6            1832
-                              7            1288
-                              8            1272
-                              9            1288
+                              1            888
+                              2            1275
+                              3            1288
+                              4            1424
+                              5            1120
+                              6            1240
+                              7            1184
+                              8            1320
+                              9            1184
                              10            1160
-                             11            1216
-                             12            1272
-                             13            1184
-                             14            1139
+                             11            1200
+                             12            1320
+                             13            1592
+                             14            1432
 
  ***WARNING: THERE ARE 6 UNCONNECTED REGIONS IN THE MODEL.
 
@@ -5342,7 +5342,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.439e+08
-        SOLVER ELAPSED TIME:  136ms
+        SOLVER ELAPSED TIME:  93ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -5351,9 +5351,9 @@
  LARGEST SCALED RESIDUAL FORCE      1.104E-03   AT NODE         76   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      1.104E-03
- LARGEST INCREMENT OF DISP.        -4.103E-07   AT NODE        210   DOF  2
+ LARGEST INCREMENT OF DISP.        -4.101E-07   AT NODE        210   DOF  2
    INSTANCE: PIPE_INST                                                                       
- LARGEST CORRECTION TO DISP.       -4.103E-07   AT NODE        210   DOF  2
+ LARGEST CORRECTION TO DISP.       -4.101E-07   AT NODE        210   DOF  2
    INSTANCE: PIPE_INST                                                                       
           THE FORCE     EQUILIBRIUM RESPONSE WAS LINEAR IN THIS INCREMENT
 
@@ -5373,7 +5373,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.439e+08
-        SOLVER ELAPSED TIME:  126ms
+        SOLVER ELAPSED TIME:  103ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -5384,7 +5384,7 @@
   CORRESPONDING RESIDUAL FORCE      1.123E-03
  LARGEST INCREMENT OF DISP.        -1.846E-10   AT NODE          3   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.        4.103E-07   AT NODE        210   DOF  2
+ LARGEST CORRECTION TO DISP.        4.101E-07   AT NODE        210   DOF  2
    INSTANCE: PIPE_INST                                                                       
           THE FORCE     EQUILIBRIUM RESPONSE WAS LINEAR IN THIS INCREMENT
 
@@ -5404,7 +5404,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.439e+08
-        SOLVER ELAPSED TIME:  119ms
+        SOLVER ELAPSED TIME:  90ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -5415,7 +5415,7 @@
   CORRESPONDING RESIDUAL FORCE      1.125E-03
  LARGEST INCREMENT OF DISP.        -1.846E-10   AT NODE          3   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.       -8.880E-15   AT NODE        278   DOF  2
+ LARGEST CORRECTION TO DISP.       -2.870E-14   AT NODE        202   DOF  2
    INSTANCE: PIPE_INST                                                                       
           THE FORCE     EQUILIBRIUM RESPONSE WAS LINEAR IN THIS INCREMENT
 
@@ -5436,7 +5436,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.439e+08
-        SOLVER ELAPSED TIME:  141ms
+        SOLVER ELAPSED TIME:  120ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -5447,7 +5447,7 @@
   CORRESPONDING RESIDUAL FORCE      4.494E-03
  LARGEST INCREMENT OF DISP.        -3.693E-10   AT NODE          3   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.        1.292E-14   AT NODE        278   DOF  2
+ LARGEST CORRECTION TO DISP.        2.626E-14   AT NODE        202   DOF  2
    INSTANCE: PIPE_INST                                                                       
           THE FORCE     EQUILIBRIUM RESPONSE WAS LINEAR IN THIS INCREMENT
 
@@ -5468,7 +5468,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.439e+08
-        SOLVER ELAPSED TIME:  139ms
+        SOLVER ELAPSED TIME:  98ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -5500,7 +5500,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.439e+08
-        SOLVER ELAPSED TIME:  143ms
+        SOLVER ELAPSED TIME:  106ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -5532,7 +5532,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.439e+08
-        SOLVER ELAPSED TIME:  142ms
+        SOLVER ELAPSED TIME:  93ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -5564,7 +5564,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.439e+08
-        SOLVER ELAPSED TIME:  131ms
+        SOLVER ELAPSED TIME:  104ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -5596,7 +5596,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.439e+08
-        SOLVER ELAPSED TIME:  126ms
+        SOLVER ELAPSED TIME:  95ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -5628,7 +5628,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.439e+08
-        SOLVER ELAPSED TIME:  132ms
+        SOLVER ELAPSED TIME:  105ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -5660,7 +5660,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.439e+08
-        SOLVER ELAPSED TIME:  153ms
+        SOLVER ELAPSED TIME:  130ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -5692,7 +5692,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.439e+08
-        SOLVER ELAPSED TIME:  122ms
+        SOLVER ELAPSED TIME:  91ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -5724,7 +5724,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.439e+08
-        SOLVER ELAPSED TIME:  141ms
+        SOLVER ELAPSED TIME:  122ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -5756,7 +5756,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.439e+08
-        SOLVER ELAPSED TIME:  122ms
+        SOLVER ELAPSED TIME:  99ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -5788,7 +5788,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.439e+08
-        SOLVER ELAPSED TIME:  129ms
+        SOLVER ELAPSED TIME:  98ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -5808,7 +5808,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.439e+08
-        SOLVER ELAPSED TIME:  127ms
+        SOLVER ELAPSED TIME:  112ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
 
@@ -5840,7 +5840,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.439e+08
-        SOLVER ELAPSED TIME:  139ms
+        SOLVER ELAPSED TIME:  121ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -5872,7 +5872,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.439e+08
-        SOLVER ELAPSED TIME:  154ms
+        SOLVER ELAPSED TIME:  98ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -5892,7 +5892,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.439e+08
-        SOLVER ELAPSED TIME:  126ms
+        SOLVER ELAPSED TIME:  79ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
 
@@ -5925,7 +5925,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.439e+08
-        SOLVER ELAPSED TIME:  134ms
+        SOLVER ELAPSED TIME:  132ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -5945,7 +5945,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.439e+08
-        SOLVER ELAPSED TIME:  130ms
+        SOLVER ELAPSED TIME:  103ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
 
@@ -5978,7 +5978,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.439e+08
-        SOLVER ELAPSED TIME:  140ms
+        SOLVER ELAPSED TIME:  104ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -6010,7 +6010,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.439e+08
-        SOLVER ELAPSED TIME:  126ms
+        SOLVER ELAPSED TIME:  121ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -6030,7 +6030,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.439e+08
-        SOLVER ELAPSED TIME:  125ms
+        SOLVER ELAPSED TIME:  97ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
 
@@ -6063,7 +6063,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.439e+08
-        SOLVER ELAPSED TIME:  141ms
+        SOLVER ELAPSED TIME:  107ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -6083,7 +6083,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.439e+08
-        SOLVER ELAPSED TIME:  130ms
+        SOLVER ELAPSED TIME:  112ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
 
@@ -6116,7 +6116,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.439e+08
-        SOLVER ELAPSED TIME:  134ms
+        SOLVER ELAPSED TIME:  96ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -6148,7 +6148,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.439e+08
-        SOLVER ELAPSED TIME:  124ms
+        SOLVER ELAPSED TIME:  98ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -6168,7 +6168,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.439e+08
-        SOLVER ELAPSED TIME:  148ms
+        SOLVER ELAPSED TIME:  91ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
 
@@ -6201,7 +6201,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.439e+08
-        SOLVER ELAPSED TIME:  128ms
+        SOLVER ELAPSED TIME:  101ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -6221,7 +6221,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.439e+08
-        SOLVER ELAPSED TIME:  141ms
+        SOLVER ELAPSED TIME:  98ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
 
@@ -6254,7 +6254,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.439e+08
-        SOLVER ELAPSED TIME:  136ms
+        SOLVER ELAPSED TIME:  106ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -6286,7 +6286,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.439e+08
-        SOLVER ELAPSED TIME:  128ms
+        SOLVER ELAPSED TIME:  120ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -6306,7 +6306,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.439e+08
-        SOLVER ELAPSED TIME:  147ms
+        SOLVER ELAPSED TIME:  110ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
 
@@ -6326,7 +6326,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.439e+08
-        SOLVER ELAPSED TIME:  124ms
+        SOLVER ELAPSED TIME:  110ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     3
 
@@ -6359,7 +6359,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.439e+08
-        SOLVER ELAPSED TIME:  124ms
+        SOLVER ELAPSED TIME:  92ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -6379,7 +6379,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.439e+08
-        SOLVER ELAPSED TIME:  136ms
+        SOLVER ELAPSED TIME:  114ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
 
@@ -6412,7 +6412,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.439e+08
-        SOLVER ELAPSED TIME:  147ms
+        SOLVER ELAPSED TIME:  94ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -6432,7 +6432,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.439e+08
-        SOLVER ELAPSED TIME:  150ms
+        SOLVER ELAPSED TIME:  84ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
 
@@ -6452,7 +6452,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.439e+08
-        SOLVER ELAPSED TIME:  136ms
+        SOLVER ELAPSED TIME:  99ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     3
 
@@ -6484,7 +6484,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.439e+08
-        SOLVER ELAPSED TIME:  119ms
+        SOLVER ELAPSED TIME:  95ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -6504,7 +6504,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.439e+08
-        SOLVER ELAPSED TIME:  127ms
+        SOLVER ELAPSED TIME:  114ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
 
@@ -6524,7 +6524,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.439e+08
-        SOLVER ELAPSED TIME:  140ms
+        SOLVER ELAPSED TIME:  101ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     3
 
@@ -6556,7 +6556,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.439e+08
-        SOLVER ELAPSED TIME:  126ms
+        SOLVER ELAPSED TIME:  109ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -6576,7 +6576,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.439e+08
-        SOLVER ELAPSED TIME:  120ms
+        SOLVER ELAPSED TIME:  105ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
 
@@ -6596,7 +6596,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.439e+08
-        SOLVER ELAPSED TIME:  132ms
+        SOLVER ELAPSED TIME:  117ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     3
 
@@ -6628,7 +6628,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.439e+08
-        SOLVER ELAPSED TIME:  122ms
+        SOLVER ELAPSED TIME:  116ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -6648,7 +6648,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.439e+08
-        SOLVER ELAPSED TIME:  126ms
+        SOLVER ELAPSED TIME:  92ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
 
@@ -6700,7 +6700,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.439e+08
-        SOLVER ELAPSED TIME:  148ms
+        SOLVER ELAPSED TIME:  107ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -6720,7 +6720,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.439e+08
-        SOLVER ELAPSED TIME:  123ms
+        SOLVER ELAPSED TIME:  97ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
 
@@ -6740,7 +6740,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.439e+08
-        SOLVER ELAPSED TIME:  144ms
+        SOLVER ELAPSED TIME:  101ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     3
 
@@ -6772,7 +6772,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.439e+08
-        SOLVER ELAPSED TIME:  141ms
+        SOLVER ELAPSED TIME:  86ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -6803,7 +6803,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.439e+08
-        SOLVER ELAPSED TIME:  134ms
+        SOLVER ELAPSED TIME:  97ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -6823,7 +6823,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.439e+08
-        SOLVER ELAPSED TIME:  136ms
+        SOLVER ELAPSED TIME:  106ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
 
@@ -6855,7 +6855,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.439e+08
-        SOLVER ELAPSED TIME:  135ms
+        SOLVER ELAPSED TIME:  103ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -6887,7 +6887,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.439e+08
-        SOLVER ELAPSED TIME:  139ms
+        SOLVER ELAPSED TIME:  98ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -6919,7 +6919,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.439e+08
-        SOLVER ELAPSED TIME:  123ms
+        SOLVER ELAPSED TIME:  103ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -6939,7 +6939,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.439e+08
-        SOLVER ELAPSED TIME:  123ms
+        SOLVER ELAPSED TIME:  99ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
 
@@ -6971,7 +6971,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.439e+08
-        SOLVER ELAPSED TIME:  113ms
+        SOLVER ELAPSED TIME:  104ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -7003,7 +7003,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.439e+08
-        SOLVER ELAPSED TIME:  146ms
+        SOLVER ELAPSED TIME:  106ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -7034,7 +7034,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.439e+08
-        SOLVER ELAPSED TIME:  123ms
+        SOLVER ELAPSED TIME:  94ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -7065,7 +7065,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.439e+08
-        SOLVER ELAPSED TIME:  130ms
+        SOLVER ELAPSED TIME:  96ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -7085,7 +7085,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.439e+08
-        SOLVER ELAPSED TIME:  140ms
+        SOLVER ELAPSED TIME:  91ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
 
@@ -7117,7 +7117,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.439e+08
-        SOLVER ELAPSED TIME:  128ms
+        SOLVER ELAPSED TIME:  97ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -7148,7 +7148,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.439e+08
-        SOLVER ELAPSED TIME:  120ms
+        SOLVER ELAPSED TIME:  97ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -7179,7 +7179,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.439e+08
-        SOLVER ELAPSED TIME:  138ms
+        SOLVER ELAPSED TIME:  116ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -7210,7 +7210,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.439e+08
-        SOLVER ELAPSED TIME:  134ms
+        SOLVER ELAPSED TIME:  89ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -7241,7 +7241,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.439e+08
-        SOLVER ELAPSED TIME:  124ms
+        SOLVER ELAPSED TIME:  115ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -7272,7 +7272,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.439e+08
-        SOLVER ELAPSED TIME:  133ms
+        SOLVER ELAPSED TIME:  98ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -7303,7 +7303,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.439e+08
-        SOLVER ELAPSED TIME:  148ms
+        SOLVER ELAPSED TIME:  117ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -7334,7 +7334,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.439e+08
-        SOLVER ELAPSED TIME:  123ms
+        SOLVER ELAPSED TIME:  106ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -7365,7 +7365,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.439e+08
-        SOLVER ELAPSED TIME:  141ms
+        SOLVER ELAPSED TIME:  102ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -7396,7 +7396,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.439e+08
-        SOLVER ELAPSED TIME:  140ms
+        SOLVER ELAPSED TIME:  103ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -7427,7 +7427,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.439e+08
-        SOLVER ELAPSED TIME:  132ms
+        SOLVER ELAPSED TIME:  112ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -7458,7 +7458,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.439e+08
-        SOLVER ELAPSED TIME:  118ms
+        SOLVER ELAPSED TIME:  107ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -7489,7 +7489,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.439e+08
-        SOLVER ELAPSED TIME:  141ms
+        SOLVER ELAPSED TIME:  103ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -7520,7 +7520,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.439e+08
-        SOLVER ELAPSED TIME:  126ms
+        SOLVER ELAPSED TIME:  101ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -7551,7 +7551,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.439e+08
-        SOLVER ELAPSED TIME:  131ms
+        SOLVER ELAPSED TIME:  115ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -7582,7 +7582,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.439e+08
-        SOLVER ELAPSED TIME:  129ms
+        SOLVER ELAPSED TIME:  115ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -7613,7 +7613,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.439e+08
-        SOLVER ELAPSED TIME:  125ms
+        SOLVER ELAPSED TIME:  104ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -7644,7 +7644,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.439e+08
-        SOLVER ELAPSED TIME:  123ms
+        SOLVER ELAPSED TIME:  101ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -7675,7 +7675,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.439e+08
-        SOLVER ELAPSED TIME:  114ms
+        SOLVER ELAPSED TIME:  99ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -7706,7 +7706,7 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.439e+08
-        SOLVER ELAPSED TIME:  134ms
+        SOLVER ELAPSED TIME:  116ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -7737,16 +7737,16 @@
         NUMBER OF EQUATIONS:  18950
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.439e+08
-        SOLVER ELAPSED TIME:  157ms
+        SOLVER ELAPSED TIME:  90ms
 
                     2 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     2 POINTS CHANGED FROM OPEN TO CLOSED
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     1
 
-   MAX. PENETRATION ERROR 14.5716E-06  AT NODE ROCK_INST.3 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR 14.5721E-06  AT NODE ROCK_INST.3 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR 45.7593E+06  AT NODE ROCK_INST.3 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR 45.7608E+06  AT NODE ROCK_INST.3 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           PENETRATION ERROR TOO LARGE COMPARED TO DISPLACEMENT INCREMENT.
 
@@ -7765,16 +7765,16 @@
         NUMBER OF EQUATIONS:  18952
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.451e+08
-        SOLVER ELAPSED TIME:  142ms
+        SOLVER ELAPSED TIME:  91ms
 
                     2 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     2 POINTS CHANGED FROM SLIPPING TO STICKING
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     2
 
-   MAX. PENETRATION ERROR -440.675E-15   AT NODE ROCK_INST.113 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -440.481E-15   AT NODE ROCK_INST.113 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -1.38385     AT NODE ROCK_INST.113 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -1.38324     AT NODE ROCK_INST.113 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINT ERRORS ARE WITHIN THE TOLERANCES.
 
@@ -7784,7 +7784,7 @@
   CORRESPONDING RESIDUAL FORCE     -2.981E+03
  LARGEST INCREMENT OF DISP.        -1.482E-04   AT NODE        113   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.        1.326E-05   AT NODE          3   DOF  1
+ LARGEST CORRECTION TO DISP.        1.327E-05   AT NODE          3   DOF  1
    INSTANCE: ROCK_INST                                                                       
           DISP.    CORRECTION TOO LARGE COMPARED TO DISP.    INCREMENT
  
@@ -7793,13 +7793,13 @@
         NUMBER OF EQUATIONS:  18952
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.451e+08
-        SOLVER ELAPSED TIME:  148ms
+        SOLVER ELAPSED TIME:  104ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
-   MAX. PENETRATION ERROR -582.867E-18   AT NODE ROCK_INST.113 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -554.912E-18   AT NODE ROCK_INST.113 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -1.83038E-03 AT NODE ROCK_INST.113 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -1.74259E-03 AT NODE ROCK_INST.113 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
@@ -7813,7 +7813,7 @@
    INSTANCE: ROCK_INST                                                                       
           THE FORCE     EQUILIBRIUM RESPONSE WAS LINEAR IN THIS INCREMENT
 
- MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   9.348E-05
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   9.349E-05
 
  ITERATION SUMMARY FOR THE INCREMENT:   3 TOTAL ITERATIONS, OF WHICH
    2 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
@@ -7829,26 +7829,26 @@
         NUMBER OF EQUATIONS:  18952
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.451e+08
-        SOLVER ELAPSED TIME:  119ms
+        SOLVER ELAPSED TIME:  103ms
 
                     5 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     5 POINTS CHANGED FROM OPEN TO CLOSED
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     1
 
-   MAX. PENETRATION ERROR 205.225E-06   AT NODE ROCK_INST.112 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR 205.230E-06   AT NODE ROCK_INST.112 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR 644.469E+06   AT NODE ROCK_INST.112 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR 644.483E+06   AT NODE ROCK_INST.112 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           PENETRATION ERROR TOO LARGE COMPARED TO DISPLACEMENT INCREMENT.
 
- AVERAGE FORCE                      5.135E+08   TIME AVG. FORCE       5.170E+08
+ AVERAGE FORCE                      5.129E+08   TIME AVG. FORCE       5.170E+08
  LARGEST SCALED RESIDUAL FORCE      5.482E+06   AT NODE        113   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      5.482E+06
  LARGEST INCREMENT OF DISP.        -1.858E-04   AT NODE        112   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.        1.685E-04   AT NODE         85   DOF  2
+ LARGEST CORRECTION TO DISP.        1.684E-04   AT NODE         85   DOF  2
    INSTANCE: PIPE_INST                                                                       
           FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
  
@@ -7857,7 +7857,7 @@
         NUMBER OF EQUATIONS:  18957
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.486e+08
-        SOLVER ELAPSED TIME:  128ms
+        SOLVER ELAPSED TIME:  97ms
 
                     6 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM OPEN TO CLOSED
@@ -7865,19 +7865,19 @@
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     2
 
-   MAX. PENETRATION ERROR 18.0626E-06  AT NODE ROCK_INST.107 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR 18.0625E-06  AT NODE ROCK_INST.107 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR 56.7220E+06  AT NODE ROCK_INST.107 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR 56.7216E+06  AT NODE ROCK_INST.107 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINT ERRORS ARE WITHIN THE TOLERANCES.
 
- AVERAGE FORCE                      5.136E+08   TIME AVG. FORCE       5.170E+08
- LARGEST SCALED RESIDUAL FORCE     -5.019E+06   AT NODE        112   DOF  2
+ AVERAGE FORCE                      5.135E+08   TIME AVG. FORCE       5.170E+08
+ LARGEST SCALED RESIDUAL FORCE     -5.018E+06   AT NODE        112   DOF  2
    INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE     -5.019E+06
- LARGEST INCREMENT OF DISP.        -5.529E-03   AT NODE         80   DOF  2
+  CORRESPONDING RESIDUAL FORCE     -5.018E+06
+ LARGEST INCREMENT OF DISP.        -5.528E-03   AT NODE         80   DOF  2
    INSTANCE: PIPE_INST                                                                       
- LARGEST CORRECTION TO DISP.       -5.689E-03   AT NODE         81   DOF  2
+ LARGEST CORRECTION TO DISP.       -5.688E-03   AT NODE         81   DOF  2
    INSTANCE: PIPE_INST                                                                       
           FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
  
@@ -7886,26 +7886,26 @@
         NUMBER OF EQUATIONS:  18958
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.489e+08
-        SOLVER ELAPSED TIME:  137ms
+        SOLVER ELAPSED TIME:  95ms
 
                     1 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM SLIPPING TO STICKING
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     3
 
-   MAX. PENETRATION ERROR -45.3931E-09  AT NODE ROCK_INST.111 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -45.3748E-09  AT NODE ROCK_INST.111 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -142.548E+03   AT NODE ROCK_INST.111 OF CONTACT 
+   MAX. CONTACT FORCE ERROR -142.490E+03   AT NODE ROCK_INST.111 OF CONTACT 
    PAIR (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINT ERRORS ARE WITHIN THE TOLERANCES.
 
- AVERAGE FORCE                      5.148E+08   TIME AVG. FORCE       5.170E+08
- LARGEST SCALED RESIDUAL FORCE     -2.356E+06   AT NODE        113   DOF  2
+ AVERAGE FORCE                      5.147E+08   TIME AVG. FORCE       5.170E+08
+ LARGEST SCALED RESIDUAL FORCE     -2.355E+06   AT NODE        113   DOF  2
    INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE     -2.356E+06
- LARGEST INCREMENT OF DISP.        -4.421E-04   AT NODE         84   DOF  2
+  CORRESPONDING RESIDUAL FORCE     -2.355E+06
+ LARGEST INCREMENT OF DISP.        -4.419E-04   AT NODE         84   DOF  2
    INSTANCE: PIPE_INST                                                                       
- LARGEST CORRECTION TO DISP.        5.371E-03   AT NODE         80   DOF  2
+ LARGEST CORRECTION TO DISP.        5.370E-03   AT NODE         80   DOF  2
    INSTANCE: PIPE_INST                                                                       
           DISP.    CORRECTION TOO LARGE COMPARED TO DISP.    INCREMENT
  
@@ -7914,23 +7914,23 @@
         NUMBER OF EQUATIONS:  18958
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.489e+08
-        SOLVER ELAPSED TIME:  131ms
+        SOLVER ELAPSED TIME:  116ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
-   MAX. PENETRATION ERROR -2.08238E-09 AT NODE ROCK_INST.111 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -2.08064E-09 AT NODE ROCK_INST.111 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -6.53929E+03 AT NODE ROCK_INST.111 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -6.53382E+03 AT NODE ROCK_INST.111 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.153E+08   TIME AVG. FORCE       5.171E+08
- LARGEST SCALED RESIDUAL FORCE      2.015E+06   AT NODE        113   DOF  2
+ AVERAGE FORCE                      5.153E+08   TIME AVG. FORCE       5.170E+08
+ LARGEST SCALED RESIDUAL FORCE      2.014E+06   AT NODE        113   DOF  2
    INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE      2.015E+06
+  CORRESPONDING RESIDUAL FORCE      2.014E+06
  LARGEST INCREMENT OF DISP.        -1.468E-04   AT NODE        106   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.        4.943E-04   AT NODE         84   DOF  2
+ LARGEST CORRECTION TO DISP.        4.941E-04   AT NODE         84   DOF  2
    INSTANCE: PIPE_INST                                                                       
           DISP.    CORRECTION TOO LARGE COMPARED TO DISP.    INCREMENT
  
@@ -7939,23 +7939,23 @@
         NUMBER OF EQUATIONS:  18958
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.489e+08
-        SOLVER ELAPSED TIME:  146ms
+        SOLVER ELAPSED TIME:  104ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
 
-   MAX. PENETRATION ERROR -3.05289E-12 AT NODE ROCK_INST.109 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -3.04740E-12 AT NODE ROCK_INST.109 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -9.58699     AT NODE ROCK_INST.109 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -9.56974     AT NODE ROCK_INST.109 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
  AVERAGE FORCE                      5.157E+08   TIME AVG. FORCE       5.171E+08
- LARGEST SCALED RESIDUAL FORCE     -1.397E+06   AT NODE        113   DOF  2
+ LARGEST SCALED RESIDUAL FORCE     -1.395E+06   AT NODE        113   DOF  2
    INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE     -1.397E+06
+  CORRESPONDING RESIDUAL FORCE     -1.395E+06
  LARGEST INCREMENT OF DISP.        -1.468E-04   AT NODE        106   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.       -3.355E-05   AT NODE         82   DOF  2
+ LARGEST CORRECTION TO DISP.       -3.354E-05   AT NODE         82   DOF  2
    INSTANCE: PIPE_INST                                                                       
           DISP.    CORRECTION TOO LARGE COMPARED TO DISP.    INCREMENT
  
@@ -7964,25 +7964,25 @@
         NUMBER OF EQUATIONS:  18958
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.489e+08
-        SOLVER ELAPSED TIME:  130ms
+        SOLVER ELAPSED TIME:  99ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     3
 
-   MAX. PENETRATION ERROR 194.317E-15   AT NODE ROCK_INST.113 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR 193.234E-15   AT NODE ROCK_INST.113 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR 610.213E-03   AT NODE ROCK_INST.113 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR 606.814E-03   AT NODE ROCK_INST.113 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
  AVERAGE FORCE                      5.160E+08   TIME AVG. FORCE       5.171E+08
- LARGEST SCALED RESIDUAL FORCE      3.530E+05   AT NODE        113   DOF  2
+ LARGEST SCALED RESIDUAL FORCE      3.511E+05   AT NODE        113   DOF  2
    INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE      3.530E+05
+  CORRESPONDING RESIDUAL FORCE      3.511E+05
  LARGEST INCREMENT OF DISP.        -1.468E-04   AT NODE        106   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.       -4.478E-06   AT NODE        113   DOF  2
+ LARGEST CORRECTION TO DISP.       -4.467E-06   AT NODE        113   DOF  2
    INSTANCE: ROCK_INST                                                                       
- ESTIMATE OF DISP.    CORRECTION    1.132E-06
+ ESTIMATE OF DISP.    CORRECTION    1.124E-06
  FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND ESTIMATED CORRECTION
 
  MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   1.095E-03
@@ -8001,26 +8001,26 @@
         NUMBER OF EQUATIONS:  18958
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.489e+08
-        SOLVER ELAPSED TIME:  113ms
+        SOLVER ELAPSED TIME:  99ms
 
                     4 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     4 POINTS CHANGED FROM OPEN TO CLOSED
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     1
 
-   MAX. PENETRATION ERROR 208.730E-06   AT NODE ROCK_INST.106 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR 208.731E-06   AT NODE ROCK_INST.106 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR 655.473E+06   AT NODE ROCK_INST.106 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR 655.479E+06   AT NODE ROCK_INST.106 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           PENETRATION ERROR TOO LARGE COMPARED TO DISPLACEMENT INCREMENT.
 
- AVERAGE FORCE                      5.099E+08   TIME AVG. FORCE       5.169E+08
+ AVERAGE FORCE                      5.102E+08   TIME AVG. FORCE       5.170E+08
  LARGEST SCALED RESIDUAL FORCE      9.565E+06   AT NODE        108   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      9.565E+06
- LARGEST INCREMENT OF DISP.        -3.056E-04   AT NODE         81   DOF  2
+ LARGEST INCREMENT OF DISP.        -3.054E-04   AT NODE         81   DOF  2
    INSTANCE: PIPE_INST                                                                       
- LARGEST CORRECTION TO DISP.       -3.514E-04   AT NODE         81   DOF  2
+ LARGEST CORRECTION TO DISP.       -3.511E-04   AT NODE         81   DOF  2
    INSTANCE: PIPE_INST                                                                       
           FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
  
@@ -8029,7 +8029,7 @@
         NUMBER OF EQUATIONS:  18962
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.508e+08
-        SOLVER ELAPSED TIME:  125ms
+        SOLVER ELAPSED TIME:  107ms
 
                     5 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM OPEN TO CLOSED
@@ -8038,19 +8038,19 @@
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     2
 
-   MAX. PENETRATION ERROR 48.1071E-06  AT NODE ROCK_INST.103 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR 48.1079E-06  AT NODE ROCK_INST.103 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR 151.071E+06   AT NODE ROCK_INST.103 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR 151.073E+06   AT NODE ROCK_INST.103 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           PENETRATION ERROR TOO LARGE COMPARED TO DISPLACEMENT INCREMENT.
 
- AVERAGE FORCE                      5.133E+08   TIME AVG. FORCE       5.170E+08
+ AVERAGE FORCE                      5.126E+08   TIME AVG. FORCE       5.170E+08
  LARGEST SCALED RESIDUAL FORCE      3.197E+06   AT NODE        105   DOF  2
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      3.197E+06
  LARGEST INCREMENT OF DISP.         3.369E-03   AT NODE         77   DOF  2
    INSTANCE: PIPE_INST                                                                       
- LARGEST CORRECTION TO DISP.        3.572E-03   AT NODE         99   DOF  2
+ LARGEST CORRECTION TO DISP.        3.571E-03   AT NODE         99   DOF  2
    INSTANCE: PIPE_INST                                                                       
           FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
  
@@ -8059,26 +8059,26 @@
         NUMBER OF EQUATIONS:  18962
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.504e+08
-        SOLVER ELAPSED TIME:  137ms
+        SOLVER ELAPSED TIME:  103ms
 
                     1 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM SLIPPING TO STICKING
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     3
 
-   MAX. PENETRATION ERROR -34.9115E-09  AT NODE ROCK_INST.105 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -34.8977E-09  AT NODE ROCK_INST.105 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -109.633E+03   AT NODE ROCK_INST.105 OF CONTACT 
+   MAX. CONTACT FORCE ERROR -109.589E+03   AT NODE ROCK_INST.105 OF CONTACT 
    PAIR (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINT ERRORS ARE WITHIN THE TOLERANCES.
 
- AVERAGE FORCE                      5.144E+08   TIME AVG. FORCE       5.170E+08
+ AVERAGE FORCE                      5.141E+08   TIME AVG. FORCE       5.170E+08
  LARGEST SCALED RESIDUAL FORCE     -2.262E+06   AT NODE        106   DOF  2
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE     -2.262E+06
- LARGEST INCREMENT OF DISP.        -1.836E-03   AT NODE        714   DOF  2
+ LARGEST INCREMENT OF DISP.        -1.835E-03   AT NODE        714   DOF  2
    INSTANCE: PIPE_INST                                                                       
- LARGEST CORRECTION TO DISP.       -5.116E-03   AT NODE         76   DOF  2
+ LARGEST CORRECTION TO DISP.       -5.115E-03   AT NODE         76   DOF  2
    INSTANCE: PIPE_INST                                                                       
           DISP.    CORRECTION TOO LARGE COMPARED TO DISP.    INCREMENT
  
@@ -8087,23 +8087,23 @@
         NUMBER OF EQUATIONS:  18962
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.504e+08
-        SOLVER ELAPSED TIME:  139ms
+        SOLVER ELAPSED TIME:  105ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
-   MAX. PENETRATION ERROR -4.42305E-09 AT NODE ROCK_INST.103 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -4.42173E-09 AT NODE ROCK_INST.103 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -13.8897E+03  AT NODE ROCK_INST.103 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -13.8856E+03  AT NODE ROCK_INST.103 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.158E+08   TIME AVG. FORCE       5.170E+08
- LARGEST SCALED RESIDUAL FORCE     -2.328E+05   AT NODE        107   DOF  1
+ AVERAGE FORCE                      5.152E+08   TIME AVG. FORCE       5.170E+08
+ LARGEST SCALED RESIDUAL FORCE     -2.327E+05   AT NODE        107   DOF  1
    INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE     -2.328E+05
+  CORRESPONDING RESIDUAL FORCE     -2.327E+05
  LARGEST INCREMENT OF DISP.        -1.485E-04   AT NODE        102   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.        1.796E-03   AT NODE        714   DOF  2
+ LARGEST CORRECTION TO DISP.        1.795E-03   AT NODE        714   DOF  2
    INSTANCE: PIPE_INST                                                                       
           DISP.    CORRECTION TOO LARGE COMPARED TO DISP.    INCREMENT
  
@@ -8112,25 +8112,25 @@
         NUMBER OF EQUATIONS:  18962
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.504e+08
-        SOLVER ELAPSED TIME:  139ms
+        SOLVER ELAPSED TIME:  101ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
 
-   MAX. PENETRATION ERROR -16.1331E-12  AT NODE ROCK_INST.104 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -16.1205E-12  AT NODE ROCK_INST.104 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -50.6627      AT NODE ROCK_INST.104 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -50.6231      AT NODE ROCK_INST.104 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.158E+08   TIME AVG. FORCE       5.170E+08
+ AVERAGE FORCE                      5.153E+08   TIME AVG. FORCE       5.170E+08
  LARGEST SCALED RESIDUAL FORCE      -839.       AT NODE        107   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      -839.    
  LARGEST INCREMENT OF DISP.        -1.487E-04   AT NODE        102   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.        8.665E-05   AT NODE        101   DOF  2
+ LARGEST CORRECTION TO DISP.        8.660E-05   AT NODE        101   DOF  2
    INSTANCE: PIPE_INST                                                                       
- ESTIMATE OF DISP.    CORRECTION    3.125E-07
+ ESTIMATE OF DISP.    CORRECTION    3.121E-07
  FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND ESTIMATED CORRECTION
 
  MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   1.014E-03
@@ -8149,26 +8149,26 @@
         NUMBER OF EQUATIONS:  18962
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.504e+08
-        SOLVER ELAPSED TIME:  156ms
+        SOLVER ELAPSED TIME:  102ms
 
                     3 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     3 POINTS CHANGED FROM OPEN TO CLOSED
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     1
 
-   MAX. PENETRATION ERROR 220.655E-06   AT NODE ROCK_INST.102 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR 220.656E-06   AT NODE ROCK_INST.102 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR 692.923E+06   AT NODE ROCK_INST.102 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR 692.926E+06   AT NODE ROCK_INST.102 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           PENETRATION ERROR TOO LARGE COMPARED TO DISPLACEMENT INCREMENT.
 
- AVERAGE FORCE                      5.091E+08   TIME AVG. FORCE       5.169E+08
- LARGEST SCALED RESIDUAL FORCE      9.412E+06   AT NODE        104   DOF  1
+ AVERAGE FORCE                      5.089E+08   TIME AVG. FORCE       5.169E+08
+ LARGEST SCALED RESIDUAL FORCE      9.411E+06   AT NODE        104   DOF  1
    INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE      9.412E+06
+  CORRESPONDING RESIDUAL FORCE      9.411E+06
  LARGEST INCREMENT OF DISP.        -1.820E-04   AT NODE        102   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.       -1.784E-04   AT NODE         77   DOF  2
+ LARGEST CORRECTION TO DISP.       -1.783E-04   AT NODE         77   DOF  2
    INSTANCE: PIPE_INST                                                                       
           FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
  
@@ -8177,7 +8177,7 @@
         NUMBER OF EQUATIONS:  18965
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.519e+08
-        SOLVER ELAPSED TIME:  143ms
+        SOLVER ELAPSED TIME:  125ms
 
                     4 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM OPEN TO CLOSED
@@ -8185,19 +8185,19 @@
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     2
 
-   MAX. PENETRATION ERROR 29.0449E-06  AT NODE ROCK_INST.99 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR 29.0472E-06  AT NODE ROCK_INST.99 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR 91.2096E+06  AT NODE ROCK_INST.99 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR 91.2169E+06  AT NODE ROCK_INST.99 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           PENETRATION ERROR TOO LARGE COMPARED TO DISPLACEMENT INCREMENT.
 
- AVERAGE FORCE                      5.098E+08   TIME AVG. FORCE       5.169E+08
+ AVERAGE FORCE                      5.096E+08   TIME AVG. FORCE       5.169E+08
  LARGEST SCALED RESIDUAL FORCE      5.020E+06   AT NODE        101   DOF  2
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      5.020E+06
- LARGEST INCREMENT OF DISP.         5.263E-03   AT NODE         72   DOF  2
+ LARGEST INCREMENT OF DISP.         5.262E-03   AT NODE         72   DOF  2
    INSTANCE: PIPE_INST                                                                       
- LARGEST CORRECTION TO DISP.        5.330E-03   AT NODE         72   DOF  2
+ LARGEST CORRECTION TO DISP.        5.329E-03   AT NODE         72   DOF  2
    INSTANCE: PIPE_INST                                                                       
           FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
  
@@ -8206,7 +8206,7 @@
         NUMBER OF EQUATIONS:  18966
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.524e+08
-        SOLVER ELAPSED TIME:  118ms
+        SOLVER ELAPSED TIME:  103ms
 
                     4 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM SLIPPING TO STICKING
@@ -8214,19 +8214,19 @@
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     3
 
-   MAX. PENETRATION ERROR -56.9450E-09  AT NODE ROCK_INST.101 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -56.9191E-09  AT NODE ROCK_INST.101 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -178.824E+03   AT NODE ROCK_INST.101 OF CONTACT 
+   MAX. CONTACT FORCE ERROR -178.743E+03   AT NODE ROCK_INST.101 OF CONTACT 
    PAIR (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINT ERRORS ARE WITHIN THE TOLERANCES.
 
- AVERAGE FORCE                      5.141E+08   TIME AVG. FORCE       5.170E+08
+ AVERAGE FORCE                      5.137E+08   TIME AVG. FORCE       5.170E+08
  LARGEST SCALED RESIDUAL FORCE     -4.792E+06   AT NODE        102   DOF  2
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE     -4.792E+06
  LARGEST INCREMENT OF DISP.        -2.675E-03   AT NODE        703   DOF  2
    INSTANCE: PIPE_INST                                                                       
- LARGEST CORRECTION TO DISP.       -7.935E-03   AT NODE         72   DOF  2
+ LARGEST CORRECTION TO DISP.       -7.934E-03   AT NODE         72   DOF  2
    INSTANCE: PIPE_INST                                                                       
           FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
  
@@ -8235,7 +8235,7 @@
         NUMBER OF EQUATIONS:  18966
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.524e+08
-        SOLVER ELAPSED TIME:  129ms
+        SOLVER ELAPSED TIME:  110ms
 
                     4 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     3 POINTS CHANGED FROM SLIPPING TO STICKING
@@ -8243,19 +8243,19 @@
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     4
 
-   MAX. PENETRATION ERROR -58.9484E-09  AT NODE ROCK_INST.101 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -58.9272E-09  AT NODE ROCK_INST.101 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -185.116E+03   AT NODE ROCK_INST.101 OF CONTACT 
+   MAX. CONTACT FORCE ERROR -185.049E+03   AT NODE ROCK_INST.101 OF CONTACT 
    PAIR (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINT ERRORS ARE WITHIN THE TOLERANCES.
 
- AVERAGE FORCE                      5.103E+08   TIME AVG. FORCE       5.169E+08
+ AVERAGE FORCE                      5.101E+08   TIME AVG. FORCE       5.169E+08
  LARGEST SCALED RESIDUAL FORCE     -4.530E+06   AT NODE        102   DOF  2
    INSTANCE: PIPE_INST                                                                       
   CORRESPONDING RESIDUAL FORCE     -4.530E+06
- LARGEST INCREMENT OF DISP.         4.905E-03   AT NODE         73   DOF  2
+ LARGEST INCREMENT OF DISP.         4.904E-03   AT NODE         73   DOF  2
    INSTANCE: PIPE_INST                                                                       
- LARGEST CORRECTION TO DISP.        7.384E-03   AT NODE         73   DOF  2
+ LARGEST CORRECTION TO DISP.        7.383E-03   AT NODE         73   DOF  2
    INSTANCE: PIPE_INST                                                                       
           FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
  
@@ -8264,26 +8264,26 @@
         NUMBER OF EQUATIONS:  18966
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.524e+08
-        SOLVER ELAPSED TIME:  126ms
+        SOLVER ELAPSED TIME:  97ms
 
                     1 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM SLIPPING TO STICKING
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     5
 
-   MAX. PENETRATION ERROR -47.5500E-09  AT NODE ROCK_INST.102 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -47.5427E-09  AT NODE ROCK_INST.102 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -149.321E+03   AT NODE ROCK_INST.102 OF CONTACT 
+   MAX. CONTACT FORCE ERROR -149.298E+03   AT NODE ROCK_INST.102 OF CONTACT 
    PAIR (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINT ERRORS ARE WITHIN THE TOLERANCES.
 
- AVERAGE FORCE                      5.140E+08   TIME AVG. FORCE       5.170E+08
+ AVERAGE FORCE                      5.139E+08   TIME AVG. FORCE       5.170E+08
  LARGEST SCALED RESIDUAL FORCE     -3.865E+06   AT NODE        102   DOF  2
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE     -3.865E+06
  LARGEST INCREMENT OF DISP.        -1.444E-03   AT NODE         75   DOF  2
    INSTANCE: PIPE_INST                                                                       
- LARGEST CORRECTION TO DISP.       -5.961E-03   AT NODE        103   DOF  2
+ LARGEST CORRECTION TO DISP.       -5.960E-03   AT NODE        103   DOF  2
    INSTANCE: PIPE_INST                                                                       
           FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
  
@@ -8292,20 +8292,20 @@
         NUMBER OF EQUATIONS:  18966
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.524e+08
-        SOLVER ELAPSED TIME:  145ms
+        SOLVER ELAPSED TIME:  122ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
-   MAX. PENETRATION ERROR -9.76436E-09 AT NODE ROCK_INST.102 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -9.75942E-09 AT NODE ROCK_INST.102 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -30.6630E+03  AT NODE ROCK_INST.102 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -30.6475E+03  AT NODE ROCK_INST.102 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.157E+08   TIME AVG. FORCE       5.170E+08
- LARGEST SCALED RESIDUAL FORCE     -3.290E+05   AT NODE        103   DOF  1
+ AVERAGE FORCE                      5.154E+08   TIME AVG. FORCE       5.170E+08
+ LARGEST SCALED RESIDUAL FORCE     -3.289E+05   AT NODE        103   DOF  1
    INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE     -3.290E+05
+  CORRESPONDING RESIDUAL FORCE     -3.289E+05
  LARGEST INCREMENT OF DISP.        -1.380E-04   AT NODE         98   DOF  1
    INSTANCE: ROCK_INST                                                                       
  LARGEST CORRECTION TO DISP.        1.447E-03   AT NODE         75   DOF  2
@@ -8317,25 +8317,25 @@
         NUMBER OF EQUATIONS:  18966
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.524e+08
-        SOLVER ELAPSED TIME:  120ms
+        SOLVER ELAPSED TIME:  102ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
 
-   MAX. PENETRATION ERROR -11.4590E-12  AT NODE ROCK_INST.101 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -11.4476E-12  AT NODE ROCK_INST.101 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -35.9847      AT NODE ROCK_INST.101 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -35.9488      AT NODE ROCK_INST.101 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.157E+08   TIME AVG. FORCE       5.170E+08
- LARGEST SCALED RESIDUAL FORCE     -1.275E+03   AT NODE        102   DOF  1
+ AVERAGE FORCE                      5.154E+08   TIME AVG. FORCE       5.170E+08
+ LARGEST SCALED RESIDUAL FORCE     -1.274E+03   AT NODE        102   DOF  1
    INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE     -1.275E+03
+  CORRESPONDING RESIDUAL FORCE     -1.274E+03
  LARGEST INCREMENT OF DISP.        -1.381E-04   AT NODE         98   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.       -2.918E-05   AT NODE         74   DOF  2
+ LARGEST CORRECTION TO DISP.       -2.916E-05   AT NODE         74   DOF  2
    INSTANCE: PIPE_INST                                                                       
- ESTIMATE OF DISP.    CORRECTION   -1.131E-07
+ ESTIMATE OF DISP.    CORRECTION   -1.129E-07
  FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND ESTIMATED CORRECTION
 
  MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   1.014E-03
@@ -8354,7 +8354,7 @@
         NUMBER OF EQUATIONS:  18966
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.524e+08
-        SOLVER ELAPSED TIME:  146ms
+        SOLVER ELAPSED TIME:  112ms
 
                     2 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     2 POINTS CHANGED FROM OPEN TO CLOSED
@@ -8363,17 +8363,17 @@
 
    MAX. PENETRATION ERROR 179.752E-06   AT NODE ROCK_INST.98 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR 564.474E+06   AT NODE ROCK_INST.98 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR 564.475E+06   AT NODE ROCK_INST.98 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           PENETRATION ERROR TOO LARGE COMPARED TO DISPLACEMENT INCREMENT.
 
- AVERAGE FORCE                      5.088E+08   TIME AVG. FORCE       5.169E+08
+ AVERAGE FORCE                      5.085E+08   TIME AVG. FORCE       5.169E+08
  LARGEST SCALED RESIDUAL FORCE      1.338E+07   AT NODE        100   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      1.338E+07
- LARGEST INCREMENT OF DISP.        -2.621E-04   AT NODE         73   DOF  2
+ LARGEST INCREMENT OF DISP.        -2.619E-04   AT NODE         73   DOF  2
    INSTANCE: PIPE_INST                                                                       
- LARGEST CORRECTION TO DISP.       -3.000E-04   AT NODE         73   DOF  2
+ LARGEST CORRECTION TO DISP.       -2.998E-04   AT NODE         73   DOF  2
    INSTANCE: PIPE_INST                                                                       
           FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
  
@@ -8382,7 +8382,7 @@
         NUMBER OF EQUATIONS:  18968
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.543e+08
-        SOLVER ELAPSED TIME:  128ms
+        SOLVER ELAPSED TIME:  104ms
 
                     3 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM OPEN TO CLOSED
@@ -8391,19 +8391,19 @@
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     2
 
-   MAX. PENETRATION ERROR 81.1062E-06  AT NODE ROCK_INST.97 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR 81.1065E-06  AT NODE ROCK_INST.97 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR 254.698E+06   AT NODE ROCK_INST.97 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR 254.699E+06   AT NODE ROCK_INST.97 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           PENETRATION ERROR TOO LARGE COMPARED TO DISPLACEMENT INCREMENT.
 
- AVERAGE FORCE                      5.110E+08   TIME AVG. FORCE       5.169E+08
+ AVERAGE FORCE                      5.112E+08   TIME AVG. FORCE       5.169E+08
  LARGEST SCALED RESIDUAL FORCE      2.705E+06   AT NODE         98   DOF  2
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      2.705E+06
  LARGEST INCREMENT OF DISP.         1.067E-03   AT NODE         71   DOF  2
    INSTANCE: PIPE_INST                                                                       
- LARGEST CORRECTION TO DISP.        1.252E-03   AT NODE         71   DOF  2
+ LARGEST CORRECTION TO DISP.        1.251E-03   AT NODE         71   DOF  2
    INSTANCE: PIPE_INST                                                                       
           FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
  
@@ -8412,7 +8412,7 @@
         NUMBER OF EQUATIONS:  18968
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.537e+08
-        SOLVER ELAPSED TIME:  137ms
+        SOLVER ELAPSED TIME:  126ms
 
                     2 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM OPEN TO CLOSED
@@ -8420,13 +8420,13 @@
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     3
 
-   MAX. PENETRATION ERROR 1.03901E-06 AT NODE ROCK_INST.96 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR 1.03868E-06 AT NODE ROCK_INST.96 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR 3.26280E+06 AT NODE ROCK_INST.96 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR 3.26177E+06 AT NODE ROCK_INST.96 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINT ERRORS ARE WITHIN THE TOLERANCES.
 
- AVERAGE FORCE                      5.144E+08   TIME AVG. FORCE       5.170E+08
+ AVERAGE FORCE                      5.136E+08   TIME AVG. FORCE       5.170E+08
  LARGEST SCALED RESIDUAL FORCE     -2.622E+06   AT NODE         97   DOF  2
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE     -2.622E+06
@@ -8441,20 +8441,20 @@
         NUMBER OF EQUATIONS:  18969
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.547e+08
-        SOLVER ELAPSED TIME:  130ms
+        SOLVER ELAPSED TIME:  113ms
 
                     1 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM SLIPPING TO STICKING
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     4
 
-   MAX. PENETRATION ERROR -7.81370E-09 AT NODE ROCK_INST.97 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -7.81199E-09 AT NODE ROCK_INST.97 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -24.5374E+03  AT NODE ROCK_INST.97 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -24.5320E+03  AT NODE ROCK_INST.97 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINT ERRORS ARE WITHIN THE TOLERANCES.
 
- AVERAGE FORCE                      5.155E+08   TIME AVG. FORCE       5.170E+08
+ AVERAGE FORCE                      5.147E+08   TIME AVG. FORCE       5.170E+08
  LARGEST SCALED RESIDUAL FORCE     -2.082E+05   AT NODE         98   DOF  2
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE     -2.082E+05
@@ -8469,25 +8469,25 @@
         NUMBER OF EQUATIONS:  18969
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.547e+08
-        SOLVER ELAPSED TIME:  143ms
+        SOLVER ELAPSED TIME:  122ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
-   MAX. PENETRATION ERROR -44.5751E-12  AT NODE ROCK_INST.97 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -44.5365E-12  AT NODE ROCK_INST.97 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -139.979       AT NODE ROCK_INST.97 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -139.858       AT NODE ROCK_INST.97 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.155E+08   TIME AVG. FORCE       5.170E+08
- LARGEST SCALED RESIDUAL FORCE      2.330E+03   AT NODE         97   DOF  2
+ AVERAGE FORCE                      5.145E+08   TIME AVG. FORCE       5.170E+08
+ LARGEST SCALED RESIDUAL FORCE      2.329E+03   AT NODE         97   DOF  2
    INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE      2.330E+03
+  CORRESPONDING RESIDUAL FORCE      2.329E+03
  LARGEST INCREMENT OF DISP.        -1.415E-04   AT NODE         96   DOF  1
    INSTANCE: ROCK_INST                                                                       
  LARGEST CORRECTION TO DISP.        1.238E-04   AT NODE         70   DOF  2
    INSTANCE: PIPE_INST                                                                       
- ESTIMATE OF DISP.    CORRECTION   -1.385E-06
+ ESTIMATE OF DISP.    CORRECTION   -1.384E-06
  FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND ESTIMATED CORRECTION
 
  MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   8.904E-04
@@ -8506,7 +8506,7 @@
         NUMBER OF EQUATIONS:  18969
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.547e+08
-        SOLVER ELAPSED TIME:  141ms
+        SOLVER ELAPSED TIME:  97ms
 
                     1 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM OPEN TO CLOSED
@@ -8515,17 +8515,17 @@
 
    MAX. PENETRATION ERROR 147.936E-06   AT NODE ROCK_INST.95 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR 464.564E+06   AT NODE ROCK_INST.95 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR 464.563E+06   AT NODE ROCK_INST.95 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           PENETRATION ERROR TOO LARGE COMPARED TO DISPLACEMENT INCREMENT.
 
- AVERAGE FORCE                      5.088E+08   TIME AVG. FORCE       5.169E+08
+ AVERAGE FORCE                      5.086E+08   TIME AVG. FORCE       5.168E+08
  LARGEST SCALED RESIDUAL FORCE      1.664E+07   AT NODE         97   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      1.664E+07
- LARGEST INCREMENT OF DISP.        -3.701E-04   AT NODE         67   DOF  2
+ LARGEST INCREMENT OF DISP.        -3.698E-04   AT NODE         67   DOF  2
    INSTANCE: PIPE_INST                                                                       
- LARGEST CORRECTION TO DISP.       -4.148E-04   AT NODE         67   DOF  2
+ LARGEST CORRECTION TO DISP.       -4.144E-04   AT NODE         67   DOF  2
    INSTANCE: PIPE_INST                                                                       
           FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
  
@@ -8534,7 +8534,7 @@
         NUMBER OF EQUATIONS:  18970
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.552e+08
-        SOLVER ELAPSED TIME:  149ms
+        SOLVER ELAPSED TIME:  81ms
 
                     2 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM OPEN TO CLOSED
@@ -8542,13 +8542,13 @@
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     2
 
-   MAX. PENETRATION ERROR 37.7328E-06  AT NODE ROCK_INST.94 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR 37.7347E-06  AT NODE ROCK_INST.94 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR 118.492E+06   AT NODE ROCK_INST.94 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR 118.498E+06   AT NODE ROCK_INST.94 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           PENETRATION ERROR TOO LARGE COMPARED TO DISPLACEMENT INCREMENT.
 
- AVERAGE FORCE                      5.097E+08   TIME AVG. FORCE       5.169E+08
+ AVERAGE FORCE                      5.096E+08   TIME AVG. FORCE       5.169E+08
  LARGEST SCALED RESIDUAL FORCE      2.164E+06   AT NODE         95   DOF  2
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      2.164E+06
@@ -8563,26 +8563,26 @@
         NUMBER OF EQUATIONS:  18971
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.564e+08
-        SOLVER ELAPSED TIME:  131ms
+        SOLVER ELAPSED TIME:  108ms
 
                     1 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM SLIPPING TO STICKING
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     3
 
-   MAX. PENETRATION ERROR -8.96341E-09 AT NODE ROCK_INST.95 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -8.96294E-09 AT NODE ROCK_INST.95 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -28.1478E+03  AT NODE ROCK_INST.95 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -28.1463E+03  AT NODE ROCK_INST.95 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINT ERRORS ARE WITHIN THE TOLERANCES.
 
- AVERAGE FORCE                      5.149E+08   TIME AVG. FORCE       5.170E+08
+ AVERAGE FORCE                      5.147E+08   TIME AVG. FORCE       5.169E+08
  LARGEST SCALED RESIDUAL FORCE     -1.238E+06   AT NODE         95   DOF  2
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE     -1.238E+06
  LARGEST INCREMENT OF DISP.        -1.335E-03   AT NODE        110   DOF  2
    INSTANCE: PIPE_INST                                                                       
- LARGEST CORRECTION TO DISP.       -2.636E-03   AT NODE         65   DOF  2
+ LARGEST CORRECTION TO DISP.       -2.635E-03   AT NODE         65   DOF  2
    INSTANCE: PIPE_INST                                                                       
           DISP.    CORRECTION TOO LARGE COMPARED TO DISP.    INCREMENT
  
@@ -8591,20 +8591,20 @@
         NUMBER OF EQUATIONS:  18971
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.564e+08
-        SOLVER ELAPSED TIME:  142ms
+        SOLVER ELAPSED TIME:  87ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
-   MAX. PENETRATION ERROR -2.00127E-09 AT NODE ROCK_INST.94 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -2.00078E-09 AT NODE ROCK_INST.94 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -6.28460E+03 AT NODE ROCK_INST.94 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -6.28306E+03 AT NODE ROCK_INST.94 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.156E+08   TIME AVG. FORCE       5.170E+08
- LARGEST SCALED RESIDUAL FORCE     -8.104E+04   AT NODE         95   DOF  2
+ AVERAGE FORCE                      5.156E+08   TIME AVG. FORCE       5.169E+08
+ LARGEST SCALED RESIDUAL FORCE     -8.102E+04   AT NODE         95   DOF  2
    INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE     -8.104E+04
+  CORRESPONDING RESIDUAL FORCE     -8.102E+04
  LARGEST INCREMENT OF DISP.        -1.310E-04   AT NODE         93   DOF  1
    INSTANCE: ROCK_INST                                                                       
  LARGEST CORRECTION TO DISP.        1.282E-03   AT NODE        110   DOF  2
@@ -8616,25 +8616,25 @@
         NUMBER OF EQUATIONS:  18971
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.564e+08
-        SOLVER ELAPSED TIME:  129ms
+        SOLVER ELAPSED TIME:  88ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
 
-   MAX. PENETRATION ERROR -8.19389E-12 AT NODE ROCK_INST.94 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -8.18690E-12 AT NODE ROCK_INST.94 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -25.7313      AT NODE ROCK_INST.94 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -25.7093      AT NODE ROCK_INST.94 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.156E+08   TIME AVG. FORCE       5.170E+08
+ AVERAGE FORCE                      5.156E+08   TIME AVG. FORCE       5.169E+08
  LARGEST SCALED RESIDUAL FORCE      -321.       AT NODE         95   DOF  2
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      -321.    
  LARGEST INCREMENT OF DISP.        -1.311E-04   AT NODE         93   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.        8.751E-05   AT NODE        110   DOF  2
+ LARGEST CORRECTION TO DISP.        8.748E-05   AT NODE        110   DOF  2
    INSTANCE: PIPE_INST                                                                       
- ESTIMATE OF DISP.    CORRECTION    3.471E-07
+ ESTIMATE OF DISP.    CORRECTION    3.468E-07
  FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND ESTIMATED CORRECTION
 
  MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   9.098E-04
@@ -8653,26 +8653,26 @@
         NUMBER OF EQUATIONS:  18971
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.564e+08
-        SOLVER ELAPSED TIME:  135ms
+        SOLVER ELAPSED TIME:  98ms
 
                     1 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM OPEN TO CLOSED
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     1
 
-   MAX. PENETRATION ERROR 155.261E-06   AT NODE ROCK_INST.93 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR 155.260E-06   AT NODE ROCK_INST.93 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR 487.565E+06   AT NODE ROCK_INST.93 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR 487.564E+06   AT NODE ROCK_INST.93 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           PENETRATION ERROR TOO LARGE COMPARED TO DISPLACEMENT INCREMENT.
 
- AVERAGE FORCE                      5.087E+08   TIME AVG. FORCE       5.169E+08
+ AVERAGE FORCE                      5.086E+08   TIME AVG. FORCE       5.168E+08
  LARGEST SCALED RESIDUAL FORCE      1.412E+07   AT NODE         95   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      1.412E+07
  LARGEST INCREMENT OF DISP.        -1.674E-04   AT NODE         93   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.       -1.573E-04   AT NODE         68   DOF  2
+ LARGEST CORRECTION TO DISP.       -1.572E-04   AT NODE         68   DOF  2
    INSTANCE: PIPE_INST                                                                       
           FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
  
@@ -8681,7 +8681,7 @@
         NUMBER OF EQUATIONS:  18972
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.569e+08
-        SOLVER ELAPSED TIME:  139ms
+        SOLVER ELAPSED TIME:  108ms
 
                     2 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM OPEN TO CLOSED
@@ -8689,19 +8689,19 @@
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     2
 
-   MAX. PENETRATION ERROR 37.7281E-06  AT NODE ROCK_INST.92 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR 37.7302E-06  AT NODE ROCK_INST.92 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR 118.478E+06   AT NODE ROCK_INST.92 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR 118.484E+06   AT NODE ROCK_INST.92 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           PENETRATION ERROR TOO LARGE COMPARED TO DISPLACEMENT INCREMENT.
 
- AVERAGE FORCE                      5.093E+08   TIME AVG. FORCE       5.169E+08
+ AVERAGE FORCE                      5.089E+08   TIME AVG. FORCE       5.168E+08
  LARGEST SCALED RESIDUAL FORCE      3.081E+06   AT NODE         93   DOF  2
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      3.081E+06
  LARGEST INCREMENT OF DISP.         1.986E-03   AT NODE        684   DOF  2
    INSTANCE: PIPE_INST                                                                       
- LARGEST CORRECTION TO DISP.        2.051E-03   AT NODE         65   DOF  2
+ LARGEST CORRECTION TO DISP.        2.050E-03   AT NODE         65   DOF  2
    INSTANCE: PIPE_INST                                                                       
           FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
  
@@ -8710,26 +8710,26 @@
         NUMBER OF EQUATIONS:  18973
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.582e+08
-        SOLVER ELAPSED TIME:  143ms
+        SOLVER ELAPSED TIME:  90ms
 
                     1 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM SLIPPING TO STICKING
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     3
 
-   MAX. PENETRATION ERROR -15.3197E-09  AT NODE ROCK_INST.93 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -15.3165E-09  AT NODE ROCK_INST.93 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -48.1083E+03  AT NODE ROCK_INST.93 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -48.0983E+03  AT NODE ROCK_INST.93 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINT ERRORS ARE WITHIN THE TOLERANCES.
 
- AVERAGE FORCE                      5.146E+08   TIME AVG. FORCE       5.169E+08
- LARGEST SCALED RESIDUAL FORCE     -2.344E+06   AT NODE         93   DOF  2
+ AVERAGE FORCE                      5.145E+08   TIME AVG. FORCE       5.169E+08
+ LARGEST SCALED RESIDUAL FORCE     -2.343E+06   AT NODE         93   DOF  2
    INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE     -2.344E+06
+  CORRESPONDING RESIDUAL FORCE     -2.343E+06
  LARGEST INCREMENT OF DISP.        -1.863E-03   AT NODE        681   DOF  2
    INSTANCE: PIPE_INST                                                                       
- LARGEST CORRECTION TO DISP.       -3.818E-03   AT NODE        111   DOF  2
+ LARGEST CORRECTION TO DISP.       -3.817E-03   AT NODE        111   DOF  2
    INSTANCE: PIPE_INST                                                                       
           DISP.    CORRECTION TOO LARGE COMPARED TO DISP.    INCREMENT
  
@@ -8738,20 +8738,20 @@
         NUMBER OF EQUATIONS:  18973
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.582e+08
-        SOLVER ELAPSED TIME:  126ms
+        SOLVER ELAPSED TIME:  101ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
-   MAX. PENETRATION ERROR -2.71084E-09 AT NODE ROCK_INST.92 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -2.70989E-09 AT NODE ROCK_INST.92 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -8.51286E+03 AT NODE ROCK_INST.92 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -8.50986E+03 AT NODE ROCK_INST.92 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.155E+08   TIME AVG. FORCE       5.170E+08
- LARGEST SCALED RESIDUAL FORCE     -1.764E+05   AT NODE         93   DOF  2
+ AVERAGE FORCE                      5.154E+08   TIME AVG. FORCE       5.169E+08
+ LARGEST SCALED RESIDUAL FORCE     -1.763E+05   AT NODE         93   DOF  2
    INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE     -1.764E+05
+  CORRESPONDING RESIDUAL FORCE     -1.763E+05
  LARGEST INCREMENT OF DISP.        -1.274E-04   AT NODE         92   DOF  1
    INSTANCE: ROCK_INST                                                                       
  LARGEST CORRECTION TO DISP.        1.766E-03   AT NODE        112   DOF  2
@@ -8763,25 +8763,25 @@
         NUMBER OF EQUATIONS:  18973
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.582e+08
-        SOLVER ELAPSED TIME:  136ms
+        SOLVER ELAPSED TIME:  104ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
 
-   MAX. PENETRATION ERROR -13.1897E-12  AT NODE ROCK_INST.92 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -13.1754E-12  AT NODE ROCK_INST.92 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -41.4197      AT NODE ROCK_INST.92 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -41.3748      AT NODE ROCK_INST.92 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.156E+08   TIME AVG. FORCE       5.170E+08
- LARGEST SCALED RESIDUAL FORCE      -797.       AT NODE         93   DOF  2
+ AVERAGE FORCE                      5.154E+08   TIME AVG. FORCE       5.169E+08
+ LARGEST SCALED RESIDUAL FORCE      -796.       AT NODE         93   DOF  2
    INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE      -797.    
+  CORRESPONDING RESIDUAL FORCE      -796.    
  LARGEST INCREMENT OF DISP.        -1.274E-04   AT NODE         92   DOF  1
    INSTANCE: ROCK_INST                                                                       
  LARGEST CORRECTION TO DISP.        1.340E-04   AT NODE        112   DOF  2
    INSTANCE: PIPE_INST                                                                       
- ESTIMATE OF DISP.    CORRECTION    6.055E-07
+ ESTIMATE OF DISP.    CORRECTION    6.048E-07
  FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND ESTIMATED CORRECTION
 
  MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   7.857E-04
@@ -8800,26 +8800,26 @@
         NUMBER OF EQUATIONS:  18973
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.582e+08
-        SOLVER ELAPSED TIME:  127ms
+        SOLVER ELAPSED TIME:  104ms
 
                     1 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM OPEN TO CLOSED
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     1
 
-   MAX. PENETRATION ERROR 136.700E-06   AT NODE ROCK_INST.91 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR 136.699E-06   AT NODE ROCK_INST.91 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR 429.278E+06   AT NODE ROCK_INST.91 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR 429.277E+06   AT NODE ROCK_INST.91 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           PENETRATION ERROR TOO LARGE COMPARED TO DISPLACEMENT INCREMENT.
 
- AVERAGE FORCE                      5.087E+08   TIME AVG. FORCE       5.168E+08
+ AVERAGE FORCE                      5.086E+08   TIME AVG. FORCE       5.168E+08
  LARGEST SCALED RESIDUAL FORCE      1.483E+07   AT NODE         93   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      1.483E+07
  LARGEST INCREMENT OF DISP.        -1.630E-04   AT NODE         91   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.       -1.718E-04   AT NODE         66   DOF  2
+ LARGEST CORRECTION TO DISP.       -1.717E-04   AT NODE         66   DOF  2
    INSTANCE: PIPE_INST                                                                       
           FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
  
@@ -8828,7 +8828,7 @@
         NUMBER OF EQUATIONS:  18974
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.588e+08
-        SOLVER ELAPSED TIME:  129ms
+        SOLVER ELAPSED TIME:  99ms
 
                     2 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM OPEN TO CLOSED
@@ -8836,19 +8836,19 @@
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     2
 
-   MAX. PENETRATION ERROR 4.97765E-06 AT NODE ROCK_INST.90 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR 4.97964E-06 AT NODE ROCK_INST.90 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR 15.6313E+06  AT NODE ROCK_INST.90 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR 15.6376E+06  AT NODE ROCK_INST.90 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINT ERRORS ARE WITHIN THE TOLERANCES.
 
- AVERAGE FORCE                      5.092E+08   TIME AVG. FORCE       5.168E+08
+ AVERAGE FORCE                      5.089E+08   TIME AVG. FORCE       5.168E+08
  LARGEST SCALED RESIDUAL FORCE      2.851E+06   AT NODE         91   DOF  2
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      2.851E+06
- LARGEST INCREMENT OF DISP.         2.019E-03   AT NODE        113   DOF  2
+ LARGEST INCREMENT OF DISP.         2.018E-03   AT NODE        113   DOF  2
    INSTANCE: PIPE_INST                                                                       
- LARGEST CORRECTION TO DISP.        2.138E-03   AT NODE         63   DOF  2
+ LARGEST CORRECTION TO DISP.        2.137E-03   AT NODE         63   DOF  2
    INSTANCE: PIPE_INST                                                                       
           FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
  
@@ -8857,26 +8857,26 @@
         NUMBER OF EQUATIONS:  18975
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.486e+08
-        SOLVER ELAPSED TIME:  128ms
+        SOLVER ELAPSED TIME:  106ms
 
                     1 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM CLOSED TO OPEN
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     3
 
-   MAX. PENETRATION ERROR -9.05755E-09 AT NODE ROCK_INST.91 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -9.05620E-09 AT NODE ROCK_INST.91 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -257.551E+03   AT NODE ROCK_INST.90 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -257.534E+03   AT NODE ROCK_INST.90 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINT ERRORS ARE WITHIN THE TOLERANCES.
 
- AVERAGE FORCE                      5.149E+08   TIME AVG. FORCE       5.169E+08
- LARGEST SCALED RESIDUAL FORCE     -9.184E+05   AT NODE         91   DOF  2
+ AVERAGE FORCE                      5.141E+08   TIME AVG. FORCE       5.169E+08
+ LARGEST SCALED RESIDUAL FORCE     -9.182E+05   AT NODE         91   DOF  2
    INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE     -9.184E+05
- LARGEST INCREMENT OF DISP.        -3.557E-04   AT NODE        112   DOF  2
+  CORRESPONDING RESIDUAL FORCE     -9.182E+05
+ LARGEST INCREMENT OF DISP.        -3.556E-04   AT NODE        112   DOF  2
    INSTANCE: PIPE_INST                                                                       
- LARGEST CORRECTION TO DISP.       -2.244E-03   AT NODE         64   DOF  2
+ LARGEST CORRECTION TO DISP.       -2.243E-03   AT NODE         64   DOF  2
    INSTANCE: PIPE_INST                                                                       
           DISP.    CORRECTION TOO LARGE COMPARED TO DISP.    INCREMENT
  
@@ -8885,23 +8885,23 @@
         NUMBER OF EQUATIONS:  18974
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.484e+08
-        SOLVER ELAPSED TIME:  145ms
+        SOLVER ELAPSED TIME:  90ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
-   MAX. PENETRATION ERROR -343.202E-12   AT NODE ROCK_INST.91 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -343.082E-12   AT NODE ROCK_INST.91 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -1.07776E+03 AT NODE ROCK_INST.91 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -1.07738E+03 AT NODE ROCK_INST.91 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.134E+08   TIME AVG. FORCE       5.169E+08
- LARGEST SCALED RESIDUAL FORCE     -1.250E+04   AT NODE         92   DOF  1
+ AVERAGE FORCE                      5.133E+08   TIME AVG. FORCE       5.169E+08
+ LARGEST SCALED RESIDUAL FORCE     -1.249E+04   AT NODE         92   DOF  1
    INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE     -1.250E+04
+  CORRESPONDING RESIDUAL FORCE     -1.249E+04
  LARGEST INCREMENT OF DISP.        -1.416E-04   AT NODE         90   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.        3.922E-04   AT NODE         64   DOF  2
+ LARGEST CORRECTION TO DISP.        3.921E-04   AT NODE         64   DOF  2
    INSTANCE: PIPE_INST                                                                       
           DISP.    CORRECTION TOO LARGE COMPARED TO DISP.    INCREMENT
  
@@ -8910,17 +8910,17 @@
         NUMBER OF EQUATIONS:  18974
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.484e+08
-        SOLVER ELAPSED TIME:  130ms
+        SOLVER ELAPSED TIME:  97ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
 
-   MAX. PENETRATION ERROR -34.5279E-15  AT NODE ROCK_INST.91 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -34.5557E-15  AT NODE ROCK_INST.91 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -108.428E-03   AT NODE ROCK_INST.91 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -108.515E-03   AT NODE ROCK_INST.91 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.134E+08   TIME AVG. FORCE       5.169E+08
+ AVERAGE FORCE                      5.133E+08   TIME AVG. FORCE       5.169E+08
  LARGEST SCALED RESIDUAL FORCE      -10.4       AT NODE         91   DOF  2
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      -10.4    
@@ -8928,7 +8928,7 @@
    INSTANCE: ROCK_INST                                                                       
  LARGEST CORRECTION TO DISP.       -5.202E-06   AT NODE        679   DOF  2
    INSTANCE: PIPE_INST                                                                       
- ESTIMATE OF DISP.    CORRECTION   -4.339E-09
+ ESTIMATE OF DISP.    CORRECTION   -4.338E-09
  FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND ESTIMATED CORRECTION
 
  MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   7.383E-04
@@ -8947,20 +8947,20 @@
         NUMBER OF EQUATIONS:  18974
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.484e+08
-        SOLVER ELAPSED TIME:  119ms
+        SOLVER ELAPSED TIME:  99ms
 
                     1 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM OPEN TO CLOSED
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     1
 
-   MAX. PENETRATION ERROR 194.394E-06   AT NODE ROCK_INST.90 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR 194.393E-06   AT NODE ROCK_INST.90 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR 610.455E+06   AT NODE ROCK_INST.90 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR 610.453E+06   AT NODE ROCK_INST.90 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           PENETRATION ERROR TOO LARGE COMPARED TO DISPLACEMENT INCREMENT.
 
- AVERAGE FORCE                      5.091E+08   TIME AVG. FORCE       5.168E+08
+ AVERAGE FORCE                      5.087E+08   TIME AVG. FORCE       5.168E+08
  LARGEST SCALED RESIDUAL FORCE      7.495E+06   AT NODE         91   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      7.495E+06
@@ -8975,7 +8975,7 @@
         NUMBER OF EQUATIONS:  18975
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.486e+08
-        SOLVER ELAPSED TIME:  128ms
+        SOLVER ELAPSED TIME:  111ms
 
                     2 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM OPEN TO CLOSED
@@ -8983,19 +8983,19 @@
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     2
 
-   MAX. PENETRATION ERROR 23.5066E-06  AT NODE ROCK_INST.89 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR 23.5027E-06  AT NODE ROCK_INST.89 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR 73.8179E+06  AT NODE ROCK_INST.89 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR 73.8056E+06  AT NODE ROCK_INST.89 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINT ERRORS ARE WITHIN THE TOLERANCES.
 
- AVERAGE FORCE                      5.070E+08   TIME AVG. FORCE       5.168E+08
+ AVERAGE FORCE                      5.069E+08   TIME AVG. FORCE       5.167E+08
  LARGEST SCALED RESIDUAL FORCE     -2.382E+07   AT NODE         90   DOF  2
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE     -2.382E+07
- LARGEST INCREMENT OF DISP.        -7.262E-03   AT NODE        675   DOF  2
+ LARGEST INCREMENT OF DISP.        -7.260E-03   AT NODE        675   DOF  2
    INSTANCE: PIPE_INST                                                                       
- LARGEST CORRECTION TO DISP.       -7.257E-03   AT NODE        675   DOF  2
+ LARGEST CORRECTION TO DISP.       -7.256E-03   AT NODE        675   DOF  2
    INSTANCE: PIPE_INST                                                                       
           FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
  
@@ -9004,26 +9004,26 @@
         NUMBER OF EQUATIONS:  18976
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.534e+08
-        SOLVER ELAPSED TIME:  120ms
+        SOLVER ELAPSED TIME:  126ms
 
                     1 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM SLIPPING TO STICKING
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     3
 
-   MAX. PENETRATION ERROR -42.3967E-09  AT NODE ROCK_INST.90 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -42.3900E-09  AT NODE ROCK_INST.90 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -133.138E+03   AT NODE ROCK_INST.90 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -133.117E+03   AT NODE ROCK_INST.90 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINT ERRORS ARE WITHIN THE TOLERANCES.
 
- AVERAGE FORCE                      5.097E+08   TIME AVG. FORCE       5.168E+08
- LARGEST SCALED RESIDUAL FORCE     -2.637E+06   AT NODE         91   DOF  2
+ AVERAGE FORCE                      5.095E+08   TIME AVG. FORCE       5.168E+08
+ LARGEST SCALED RESIDUAL FORCE     -2.636E+06   AT NODE         91   DOF  2
    INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE     -2.637E+06
- LARGEST INCREMENT OF DISP.        -8.578E-04   AT NODE        113   DOF  2
+  CORRESPONDING RESIDUAL FORCE     -2.636E+06
+ LARGEST INCREMENT OF DISP.        -8.574E-04   AT NODE        113   DOF  2
    INSTANCE: PIPE_INST                                                                       
- LARGEST CORRECTION TO DISP.        7.368E-03   AT NODE         62   DOF  2
+ LARGEST CORRECTION TO DISP.        7.367E-03   AT NODE         62   DOF  2
    INSTANCE: PIPE_INST                                                                       
           FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
  
@@ -9032,23 +9032,23 @@
         NUMBER OF EQUATIONS:  18976
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.534e+08
-        SOLVER ELAPSED TIME:  141ms
+        SOLVER ELAPSED TIME:  107ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
-   MAX. PENETRATION ERROR -2.98192E-09 AT NODE ROCK_INST.90 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -2.98045E-09 AT NODE ROCK_INST.90 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -9.36411E+03 AT NODE ROCK_INST.90 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -9.35951E+03 AT NODE ROCK_INST.90 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.135E+08   TIME AVG. FORCE       5.169E+08
+ AVERAGE FORCE                      5.129E+08   TIME AVG. FORCE       5.168E+08
  LARGEST SCALED RESIDUAL FORCE     -2.581E+05   AT NODE        113   DOF  2
    INSTANCE: PIPE_INST                                                                       
   CORRESPONDING RESIDUAL FORCE     -2.581E+05
  LARGEST INCREMENT OF DISP.        -1.234E-04   AT NODE         88   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.        9.643E-04   AT NODE         63   DOF  2
+ LARGEST CORRECTION TO DISP.        9.640E-04   AT NODE         63   DOF  2
    INSTANCE: PIPE_INST                                                                       
           DISP.    CORRECTION TOO LARGE COMPARED TO DISP.    INCREMENT
  
@@ -9057,25 +9057,25 @@
         NUMBER OF EQUATIONS:  18976
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.534e+08
-        SOLVER ELAPSED TIME:  119ms
+        SOLVER ELAPSED TIME:  103ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
 
-   MAX. PENETRATION ERROR -16.9003E-12  AT NODE ROCK_INST.90 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -16.8979E-12  AT NODE ROCK_INST.90 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -53.0720      AT NODE ROCK_INST.90 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -53.0646      AT NODE ROCK_INST.90 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.145E+08   TIME AVG. FORCE       5.169E+08
- LARGEST SCALED RESIDUAL FORCE     -1.922E+03   AT NODE         90   DOF  2
+ AVERAGE FORCE                      5.133E+08   TIME AVG. FORCE       5.168E+08
+ LARGEST SCALED RESIDUAL FORCE     -1.919E+03   AT NODE         90   DOF  2
    INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE     -1.922E+03
+  CORRESPONDING RESIDUAL FORCE     -1.919E+03
  LARGEST INCREMENT OF DISP.        -1.233E-04   AT NODE         88   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.       -8.839E-05   AT NODE         63   DOF  2
+ LARGEST CORRECTION TO DISP.       -8.835E-05   AT NODE         63   DOF  2
    INSTANCE: PIPE_INST                                                                       
- ESTIMATE OF DISP.    CORRECTION   -6.580E-07
+ ESTIMATE OF DISP.    CORRECTION   -6.570E-07
  FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND ESTIMATED CORRECTION
 
  MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   8.303E-04
@@ -9094,7 +9094,7 @@
         NUMBER OF EQUATIONS:  18976
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.534e+08
-        SOLVER ELAPSED TIME:  141ms
+        SOLVER ELAPSED TIME:  107ms
 
                     1 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM OPEN TO CLOSED
@@ -9103,11 +9103,11 @@
 
    MAX. PENETRATION ERROR 128.968E-06   AT NODE ROCK_INST.88 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR 404.999E+06   AT NODE ROCK_INST.88 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR 404.997E+06   AT NODE ROCK_INST.88 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           PENETRATION ERROR TOO LARGE COMPARED TO DISPLACEMENT INCREMENT.
 
- AVERAGE FORCE                      5.093E+08   TIME AVG. FORCE       5.168E+08
+ AVERAGE FORCE                      5.090E+08   TIME AVG. FORCE       5.167E+08
  LARGEST SCALED RESIDUAL FORCE      1.216E+07   AT NODE         89   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      1.216E+07
@@ -9122,24 +9122,24 @@
         NUMBER OF EQUATIONS:  18977
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.537e+08
-        SOLVER ELAPSED TIME:  114ms
+        SOLVER ELAPSED TIME:  128ms
 
                     1 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM SLIPPING TO STICKING
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     2
 
-   MAX. PENETRATION ERROR -7.69515E-09 AT NODE ROCK_INST.88 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -7.69383E-09 AT NODE ROCK_INST.88 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -24.1651E+03  AT NODE ROCK_INST.88 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -24.1609E+03  AT NODE ROCK_INST.88 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINT ERRORS ARE WITHIN THE TOLERANCES.
 
- AVERAGE FORCE                      5.093E+08   TIME AVG. FORCE       5.168E+08
+ AVERAGE FORCE                      5.092E+08   TIME AVG. FORCE       5.167E+08
  LARGEST SCALED RESIDUAL FORCE      3.574E+06   AT NODE         88   DOF  2
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      3.574E+06
- LARGEST INCREMENT OF DISP.         2.640E-03   AT NODE        116   DOF  2
+ LARGEST INCREMENT OF DISP.         2.639E-03   AT NODE        116   DOF  2
    INSTANCE: PIPE_INST                                                                       
  LARGEST CORRECTION TO DISP.        2.717E-03   AT NODE        671   DOF  2
    INSTANCE: PIPE_INST                                                                       
@@ -9150,21 +9150,21 @@
         NUMBER OF EQUATIONS:  18977
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.537e+08
-        SOLVER ELAPSED TIME:  142ms
+        SOLVER ELAPSED TIME:  86ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
-   MAX. PENETRATION ERROR -14.5521E-09  AT NODE ROCK_INST.88 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -14.5491E-09  AT NODE ROCK_INST.88 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -45.6979E+03  AT NODE ROCK_INST.88 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -45.6885E+03  AT NODE ROCK_INST.88 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.140E+08   TIME AVG. FORCE       5.168E+08
- LARGEST SCALED RESIDUAL FORCE     -2.278E+06   AT NODE         88   DOF  2
+ AVERAGE FORCE                      5.138E+08   TIME AVG. FORCE       5.168E+08
+ LARGEST SCALED RESIDUAL FORCE     -2.277E+06   AT NODE         88   DOF  2
    INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE     -2.278E+06
- LARGEST INCREMENT OF DISP.        -1.105E-03   AT NODE        671   DOF  2
+  CORRESPONDING RESIDUAL FORCE     -2.277E+06
+ LARGEST INCREMENT OF DISP.        -1.104E-03   AT NODE        671   DOF  2
    INSTANCE: PIPE_INST                                                                       
  LARGEST CORRECTION TO DISP.       -3.744E-03   AT NODE        669   DOF  2
    INSTANCE: PIPE_INST                                                                       
@@ -9175,17 +9175,17 @@
         NUMBER OF EQUATIONS:  18977
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.537e+08
-        SOLVER ELAPSED TIME:  156ms
+        SOLVER ELAPSED TIME:  102ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
 
-   MAX. PENETRATION ERROR -1.17188E-09 AT NODE ROCK_INST.88 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -1.17141E-09 AT NODE ROCK_INST.88 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -3.68006E+03 AT NODE ROCK_INST.88 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -3.67858E+03 AT NODE ROCK_INST.88 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.117E+08   TIME AVG. FORCE       5.168E+08
+ AVERAGE FORCE                      5.115E+08   TIME AVG. FORCE       5.167E+08
  LARGEST SCALED RESIDUAL FORCE     -1.271E+05   AT NODE         88   DOF  2
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE     -1.271E+05
@@ -9200,25 +9200,25 @@
         NUMBER OF EQUATIONS:  18977
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.537e+08
-        SOLVER ELAPSED TIME:  138ms
+        SOLVER ELAPSED TIME:  93ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     3
 
-   MAX. PENETRATION ERROR -4.08135E-12 AT NODE ROCK_INST.88 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -4.07724E-12 AT NODE ROCK_INST.88 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -12.8167      AT NODE ROCK_INST.88 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -12.8038      AT NODE ROCK_INST.88 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.116E+08   TIME AVG. FORCE       5.168E+08
+ AVERAGE FORCE                      5.114E+08   TIME AVG. FORCE       5.167E+08
  LARGEST SCALED RESIDUAL FORCE      -320.       AT NODE         88   DOF  2
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      -320.    
  LARGEST INCREMENT OF DISP.        -1.347E-04   AT NODE         87   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.        6.342E-05   AT NODE        669   DOF  2
+ LARGEST CORRECTION TO DISP.        6.338E-05   AT NODE        669   DOF  2
    INSTANCE: PIPE_INST                                                                       
- ESTIMATE OF DISP.    CORRECTION    1.597E-07
+ ESTIMATE OF DISP.    CORRECTION    1.595E-07
  FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND ESTIMATED CORRECTION
 
  MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   6.484E-04
@@ -9237,20 +9237,20 @@
         NUMBER OF EQUATIONS:  18977
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.537e+08
-        SOLVER ELAPSED TIME:  140ms
+        SOLVER ELAPSED TIME:  105ms
 
                     1 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM OPEN TO CLOSED
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     1
 
-   MAX. PENETRATION ERROR 162.150E-06   AT NODE ROCK_INST.87 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR 162.149E-06   AT NODE ROCK_INST.87 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR 509.201E+06   AT NODE ROCK_INST.87 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR 509.198E+06   AT NODE ROCK_INST.87 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           PENETRATION ERROR TOO LARGE COMPARED TO DISPLACEMENT INCREMENT.
 
- AVERAGE FORCE                      5.089E+08   TIME AVG. FORCE       5.167E+08
+ AVERAGE FORCE                      5.087E+08   TIME AVG. FORCE       5.166E+08
  LARGEST SCALED RESIDUAL FORCE      8.645E+06   AT NODE         88   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      8.645E+06
@@ -9265,26 +9265,26 @@
         NUMBER OF EQUATIONS:  18978
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.540e+08
-        SOLVER ELAPSED TIME:  129ms
+        SOLVER ELAPSED TIME:  92ms
 
                     1 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM SLIPPING TO STICKING
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     2
 
-   MAX. PENETRATION ERROR -89.1721E-09  AT NODE ROCK_INST.87 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -89.1498E-09  AT NODE ROCK_INST.87 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -280.027E+03   AT NODE ROCK_INST.87 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -279.957E+03   AT NODE ROCK_INST.87 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINT ERRORS ARE WITHIN THE TOLERANCES.
 
- AVERAGE FORCE                      5.070E+08   TIME AVG. FORCE       5.167E+08
- LARGEST SCALED RESIDUAL FORCE     -3.405E+07   AT NODE         87   DOF  2
+ AVERAGE FORCE                      5.067E+08   TIME AVG. FORCE       5.166E+08
+ LARGEST SCALED RESIDUAL FORCE     -3.404E+07   AT NODE         87   DOF  2
    INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE     -3.405E+07
- LARGEST INCREMENT OF DISP.        -9.744E-03   AT NODE        666   DOF  2
+  CORRESPONDING RESIDUAL FORCE     -3.404E+07
+ LARGEST INCREMENT OF DISP.        -9.742E-03   AT NODE        666   DOF  2
    INSTANCE: PIPE_INST                                                                       
- LARGEST CORRECTION TO DISP.       -9.736E-03   AT NODE        666   DOF  2
+ LARGEST CORRECTION TO DISP.       -9.734E-03   AT NODE        666   DOF  2
    INSTANCE: PIPE_INST                                                                       
           FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
  
@@ -9293,16 +9293,16 @@
         NUMBER OF EQUATIONS:  18978
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.540e+08
-        SOLVER ELAPSED TIME:  132ms
+        SOLVER ELAPSED TIME:  101ms
 
                     1 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM STICKING TO SLIPPING
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     3
 
-   MAX. PENETRATION ERROR -52.7607E-09  AT NODE ROCK_INST.87 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -52.7495E-09  AT NODE ROCK_INST.87 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -165.684E+03   AT NODE ROCK_INST.87 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -165.649E+03   AT NODE ROCK_INST.87 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINT ERRORS ARE WITHIN THE TOLERANCES.
 
@@ -9312,7 +9312,7 @@
   CORRESPONDING RESIDUAL FORCE      4.301E+06
  LARGEST INCREMENT OF DISP.        -2.575E-03   AT NODE        667   DOF  2
    INSTANCE: PIPE_INST                                                                       
- LARGEST CORRECTION TO DISP.        7.169E-03   AT NODE        666   DOF  2
+ LARGEST CORRECTION TO DISP.        7.168E-03   AT NODE        666   DOF  2
    INSTANCE: PIPE_INST                                                                       
           FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
  
@@ -9321,7 +9321,7 @@
         NUMBER OF EQUATIONS:  18978
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.540e+08
-        SOLVER ELAPSED TIME:  149ms
+        SOLVER ELAPSED TIME:  99ms
 
                     2 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM OPEN TO CLOSED
@@ -9329,19 +9329,19 @@
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     4
 
-   MAX. PENETRATION ERROR 12.5967E-06  AT NODE ROCK_INST.86 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR 12.6002E-06  AT NODE ROCK_INST.86 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR 39.5575E+06  AT NODE ROCK_INST.86 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR 39.5685E+06  AT NODE ROCK_INST.86 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINT ERRORS ARE WITHIN THE TOLERANCES.
 
- AVERAGE FORCE                      5.083E+08   TIME AVG. FORCE       5.167E+08
+ AVERAGE FORCE                      5.082E+08   TIME AVG. FORCE       5.166E+08
  LARGEST SCALED RESIDUAL FORCE      6.107E+06   AT NODE         87   DOF  2
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      6.107E+06
- LARGEST INCREMENT OF DISP.         4.007E-03   AT NODE        666   DOF  2
+ LARGEST INCREMENT OF DISP.         4.006E-03   AT NODE        666   DOF  2
    INSTANCE: PIPE_INST                                                                       
- LARGEST CORRECTION TO DISP.        6.582E-03   AT NODE        666   DOF  2
+ LARGEST CORRECTION TO DISP.        6.581E-03   AT NODE        666   DOF  2
    INSTANCE: PIPE_INST                                                                       
           FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
  
@@ -9356,7 +9356,7 @@
         NUMBER OF EQUATIONS:  18977
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.537e+08
-        SOLVER ELAPSED TIME:  128ms
+        SOLVER ELAPSED TIME:  90ms
 
                     1 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM OPEN TO CLOSED
@@ -9365,11 +9365,11 @@
 
    MAX. PENETRATION ERROR 20.1880E-06  AT NODE ROCK_INST.87 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR 63.3962E+06  AT NODE ROCK_INST.87 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR 63.3964E+06  AT NODE ROCK_INST.87 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           PENETRATION ERROR TOO LARGE COMPARED TO DISPLACEMENT INCREMENT.
 
- AVERAGE FORCE                      5.100E+08   TIME AVG. FORCE       5.167E+08
+ AVERAGE FORCE                      5.099E+08   TIME AVG. FORCE       5.167E+08
  LARGEST SCALED RESIDUAL FORCE      1.469E+06   AT NODE         88   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      1.469E+06
@@ -9384,26 +9384,26 @@
         NUMBER OF EQUATIONS:  18978
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.540e+08
-        SOLVER ELAPSED TIME:  131ms
+        SOLVER ELAPSED TIME:  106ms
 
                     1 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM SLIPPING TO STICKING
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     2
 
-   MAX. PENETRATION ERROR -36.7256E-09  AT NODE ROCK_INST.87 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -36.6973E-09  AT NODE ROCK_INST.87 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -115.330E+03   AT NODE ROCK_INST.87 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -115.240E+03   AT NODE ROCK_INST.87 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINT ERRORS ARE WITHIN THE TOLERANCES.
 
- AVERAGE FORCE                      5.084E+08   TIME AVG. FORCE       5.167E+08
- LARGEST SCALED RESIDUAL FORCE     -1.542E+07   AT NODE         87   DOF  2
+ AVERAGE FORCE                      5.083E+08   TIME AVG. FORCE       5.166E+08
+ LARGEST SCALED RESIDUAL FORCE     -1.541E+07   AT NODE         87   DOF  2
    INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE     -1.542E+07
- LARGEST INCREMENT OF DISP.        -6.777E-03   AT NODE        666   DOF  2
+  CORRESPONDING RESIDUAL FORCE     -1.541E+07
+ LARGEST INCREMENT OF DISP.        -6.774E-03   AT NODE        666   DOF  2
    INSTANCE: PIPE_INST                                                                       
- LARGEST CORRECTION TO DISP.       -6.781E-03   AT NODE        666   DOF  2
+ LARGEST CORRECTION TO DISP.       -6.778E-03   AT NODE        666   DOF  2
    INSTANCE: PIPE_INST                                                                       
           FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
  
@@ -9412,26 +9412,26 @@
         NUMBER OF EQUATIONS:  18978
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.540e+08
-        SOLVER ELAPSED TIME:  110ms
+        SOLVER ELAPSED TIME:  107ms
 
                     1 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM STICKING TO SLIPPING
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     3
 
-   MAX. PENETRATION ERROR -14.2196E-09  AT NODE ROCK_INST.87 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -14.2108E-09  AT NODE ROCK_INST.87 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -44.6539E+03  AT NODE ROCK_INST.87 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -44.6262E+03  AT NODE ROCK_INST.87 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINT ERRORS ARE WITHIN THE TOLERANCES.
 
- AVERAGE FORCE                      5.099E+08   TIME AVG. FORCE       5.167E+08
- LARGEST SCALED RESIDUAL FORCE     -2.943E+06   AT NODE         87   DOF  2
+ AVERAGE FORCE                      5.092E+08   TIME AVG. FORCE       5.166E+08
+ LARGEST SCALED RESIDUAL FORCE     -2.942E+06   AT NODE         87   DOF  2
    INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE     -2.943E+06
- LARGEST INCREMENT OF DISP.        -2.686E-03   AT NODE        666   DOF  2
+  CORRESPONDING RESIDUAL FORCE     -2.942E+06
+ LARGEST INCREMENT OF DISP.        -2.684E-03   AT NODE        666   DOF  2
    INSTANCE: PIPE_INST                                                                       
- LARGEST CORRECTION TO DISP.        4.092E-03   AT NODE        666   DOF  2
+ LARGEST CORRECTION TO DISP.        4.090E-03   AT NODE        666   DOF  2
    INSTANCE: PIPE_INST                                                                       
           FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
  
@@ -9440,26 +9440,26 @@
         NUMBER OF EQUATIONS:  18978
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.540e+08
-        SOLVER ELAPSED TIME:  138ms
+        SOLVER ELAPSED TIME:  125ms
 
                     1 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM SLIPPING TO STICKING
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     4
 
-   MAX. PENETRATION ERROR -8.61961E-09 AT NODE ROCK_INST.87 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -8.61351E-09 AT NODE ROCK_INST.87 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -27.0682E+03  AT NODE ROCK_INST.87 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -27.0490E+03  AT NODE ROCK_INST.87 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINT ERRORS ARE WITHIN THE TOLERANCES.
 
- AVERAGE FORCE                      5.132E+08   TIME AVG. FORCE       5.167E+08
- LARGEST SCALED RESIDUAL FORCE     -4.153E+05   AT NODE         87   DOF  1
+ AVERAGE FORCE                      5.126E+08   TIME AVG. FORCE       5.167E+08
+ LARGEST SCALED RESIDUAL FORCE     -4.149E+05   AT NODE         87   DOF  1
    INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE     -4.153E+05
- LARGEST INCREMENT OF DISP.         5.586E-04   AT NODE        117   DOF  2
+  CORRESPONDING RESIDUAL FORCE     -4.149E+05
+ LARGEST INCREMENT OF DISP.         5.587E-04   AT NODE        117   DOF  2
    INSTANCE: PIPE_INST                                                                       
- LARGEST CORRECTION TO DISP.        3.244E-03   AT NODE        666   DOF  2
+ LARGEST CORRECTION TO DISP.        3.243E-03   AT NODE        666   DOF  2
    INSTANCE: PIPE_INST                                                                       
           DISP.    CORRECTION TOO LARGE COMPARED TO DISP.    INCREMENT
  
@@ -9468,23 +9468,23 @@
         NUMBER OF EQUATIONS:  18978
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.540e+08
-        SOLVER ELAPSED TIME:  126ms
+        SOLVER ELAPSED TIME:  100ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
-   MAX. PENETRATION ERROR -478.831E-12   AT NODE ROCK_INST.87 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -479.106E-12   AT NODE ROCK_INST.87 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -1.50367E+03 AT NODE ROCK_INST.87 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -1.50454E+03 AT NODE ROCK_INST.87 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.112E+08   TIME AVG. FORCE       5.167E+08
+ AVERAGE FORCE                      5.110E+08   TIME AVG. FORCE       5.167E+08
  LARGEST SCALED RESIDUAL FORCE     -1.716E+05   AT NODE         87   DOF  2
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE     -1.716E+05
  LARGEST INCREMENT OF DISP.        -1.731E-04   AT NODE         59   DOF  2
    INSTANCE: PIPE_INST                                                                       
- LARGEST CORRECTION TO DISP.       -7.317E-04   AT NODE        666   DOF  2
+ LARGEST CORRECTION TO DISP.       -7.318E-04   AT NODE        666   DOF  2
    INSTANCE: PIPE_INST                                                                       
           DISP.    CORRECTION TOO LARGE COMPARED TO DISP.    INCREMENT
  
@@ -9493,20 +9493,20 @@
         NUMBER OF EQUATIONS:  18978
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.540e+08
-        SOLVER ELAPSED TIME:  130ms
+        SOLVER ELAPSED TIME:  100ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
 
-   MAX. PENETRATION ERROR -27.7253E-12  AT NODE ROCK_INST.87 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -27.7353E-12  AT NODE ROCK_INST.87 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -87.0657      AT NODE ROCK_INST.87 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -87.0971      AT NODE ROCK_INST.87 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.114E+08   TIME AVG. FORCE       5.167E+08
- LARGEST SCALED RESIDUAL FORCE     -7.107E+03   AT NODE         87   DOF  2
+ AVERAGE FORCE                      5.112E+08   TIME AVG. FORCE       5.167E+08
+ LARGEST SCALED RESIDUAL FORCE     -7.109E+03   AT NODE         87   DOF  2
    INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE     -7.107E+03
+  CORRESPONDING RESIDUAL FORCE     -7.109E+03
  LARGEST INCREMENT OF DISP.        -3.011E-05   AT NODE         86   DOF  1
    INSTANCE: ROCK_INST                                                                       
  LARGEST CORRECTION TO DISP.        1.840E-04   AT NODE        666   DOF  2
@@ -9518,25 +9518,25 @@
         NUMBER OF EQUATIONS:  18978
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.540e+08
-        SOLVER ELAPSED TIME:  149ms
+        SOLVER ELAPSED TIME:  94ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     3
 
-   MAX. PENETRATION ERROR -53.5960E-15  AT NODE ROCK_INST.87 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -53.6234E-15  AT NODE ROCK_INST.87 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -168.308E-03   AT NODE ROCK_INST.87 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -168.394E-03   AT NODE ROCK_INST.87 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.114E+08   TIME AVG. FORCE       5.167E+08
+ AVERAGE FORCE                      5.112E+08   TIME AVG. FORCE       5.167E+08
  LARGEST SCALED RESIDUAL FORCE      -13.5       AT NODE         87   DOF  2
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      -13.5    
  LARGEST INCREMENT OF DISP.        -3.010E-05   AT NODE         86   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.        8.261E-06   AT NODE        666   DOF  2
+ LARGEST CORRECTION TO DISP.        8.262E-06   AT NODE        666   DOF  2
    INSTANCE: PIPE_INST                                                                       
- ESTIMATE OF DISP.    CORRECTION    1.567E-08
+ ESTIMATE OF DISP.    CORRECTION    1.568E-08
  FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND ESTIMATED CORRECTION
 
  MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   7.303E-05
@@ -9556,23 +9556,23 @@
         NUMBER OF EQUATIONS:  18978
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.540e+08
-        SOLVER ELAPSED TIME:  116ms
+        SOLVER ELAPSED TIME:  159ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
-   MAX. PENETRATION ERROR -36.2146E-12  AT NODE ROCK_INST.88 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -36.1910E-12  AT NODE ROCK_INST.88 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -113.725       AT NODE ROCK_INST.88 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -113.651       AT NODE ROCK_INST.88 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.114E+08   TIME AVG. FORCE       5.166E+08
+ AVERAGE FORCE                      5.111E+08   TIME AVG. FORCE       5.166E+08
  LARGEST SCALED RESIDUAL FORCE      4.534E+06   AT NODE         87   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      4.534E+06
  LARGEST INCREMENT OF DISP.        -5.622E-05   AT NODE         86   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.       -2.669E-05   AT NODE         56   DOF  2
+ LARGEST CORRECTION TO DISP.       -2.667E-05   AT NODE         56   DOF  2
    INSTANCE: PIPE_INST                                                                       
           FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
  
@@ -9581,23 +9581,23 @@
         NUMBER OF EQUATIONS:  18978
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.540e+08
-        SOLVER ELAPSED TIME:  141ms
+        SOLVER ELAPSED TIME:  131ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
 
-   MAX. PENETRATION ERROR -6.53838E-12 AT NODE ROCK_INST.88 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -6.53413E-12 AT NODE ROCK_INST.88 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -20.5325      AT NODE ROCK_INST.88 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -20.5191      AT NODE ROCK_INST.88 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.133E+08   TIME AVG. FORCE       5.167E+08
- LARGEST SCALED RESIDUAL FORCE     -5.180E+04   AT NODE         87   DOF  1
+ AVERAGE FORCE                      5.130E+08   TIME AVG. FORCE       5.166E+08
+ LARGEST SCALED RESIDUAL FORCE     -5.179E+04   AT NODE         87   DOF  1
    INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE     -5.180E+04
+  CORRESPONDING RESIDUAL FORCE     -5.179E+04
  LARGEST INCREMENT OF DISP.        -5.707E-05   AT NODE         86   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.        1.135E-05   AT NODE         61   DOF  2
+ LARGEST CORRECTION TO DISP.        1.134E-05   AT NODE         61   DOF  2
    INSTANCE: PIPE_INST                                                                       
           DISP.    CORRECTION TOO LARGE COMPARED TO DISP.    INCREMENT
  
@@ -9610,21 +9610,21 @@
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     3
 
-   MAX. PENETRATION ERROR -9.49319E-15 AT NODE ROCK_INST.87 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -9.46465E-15 AT NODE ROCK_INST.87 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -29.8115E-03  AT NODE ROCK_INST.87 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -29.7218E-03  AT NODE ROCK_INST.87 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.133E+08   TIME AVG. FORCE       5.167E+08
+ AVERAGE FORCE                      5.129E+08   TIME AVG. FORCE       5.166E+08
  LARGEST SCALED RESIDUAL FORCE       11.7       AT NODE         87   DOF  2
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE       11.7    
  LARGEST INCREMENT OF DISP.        -5.710E-05   AT NODE         86   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.        2.748E-06   AT NODE         60   DOF  2
+ LARGEST CORRECTION TO DISP.        2.745E-06   AT NODE         60   DOF  2
    INSTANCE: PIPE_INST                                                                       
- ESTIMATE OF DISP.    CORRECTION   -6.204E-10
+ ESTIMATE OF DISP.    CORRECTION   -6.192E-10
  FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND ESTIMATED CORRECTION
 
  MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   1.535E-04
@@ -9644,26 +9644,26 @@
         NUMBER OF EQUATIONS:  18978
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.540e+08
-        SOLVER ELAPSED TIME:  144ms
+        SOLVER ELAPSED TIME:  141ms
 
                     1 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM OPEN TO CLOSED
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     1
 
-   MAX. PENETRATION ERROR 41.1558E-06  AT NODE ROCK_INST.86 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR 41.1553E-06  AT NODE ROCK_INST.86 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR 129.241E+06   AT NODE ROCK_INST.86 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR 129.240E+06   AT NODE ROCK_INST.86 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           PENETRATION ERROR TOO LARGE COMPARED TO DISPLACEMENT INCREMENT.
 
- AVERAGE FORCE                      5.102E+08   TIME AVG. FORCE       5.166E+08
+ AVERAGE FORCE                      5.101E+08   TIME AVG. FORCE       5.165E+08
  LARGEST SCALED RESIDUAL FORCE      2.736E+06   AT NODE         87   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      2.736E+06
  LARGEST INCREMENT OF DISP.        -8.575E-05   AT NODE         86   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.       -1.598E-05   AT NODE        666   DOF  2
+ LARGEST CORRECTION TO DISP.       -1.597E-05   AT NODE        666   DOF  2
    INSTANCE: PIPE_INST                                                                       
           FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
  
@@ -9672,26 +9672,26 @@
         NUMBER OF EQUATIONS:  18979
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.543e+08
-        SOLVER ELAPSED TIME:  137ms
+        SOLVER ELAPSED TIME:  145ms
 
                     1 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM SLIPPING TO STICKING
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     2
 
-   MAX. PENETRATION ERROR -25.9997E-09  AT NODE ROCK_INST.86 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -25.9889E-09  AT NODE ROCK_INST.86 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -81.6467E+03  AT NODE ROCK_INST.86 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -81.6130E+03  AT NODE ROCK_INST.86 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINT ERRORS ARE WITHIN THE TOLERANCES.
 
- AVERAGE FORCE                      5.079E+08   TIME AVG. FORCE       5.166E+08
+ AVERAGE FORCE                      5.078E+08   TIME AVG. FORCE       5.165E+08
  LARGEST SCALED RESIDUAL FORCE     -1.174E+07   AT NODE         86   DOF  2
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE     -1.174E+07
- LARGEST INCREMENT OF DISP.        -5.744E-03   AT NODE        663   DOF  2
+ LARGEST INCREMENT OF DISP.        -5.742E-03   AT NODE        663   DOF  2
    INSTANCE: PIPE_INST                                                                       
- LARGEST CORRECTION TO DISP.       -5.747E-03   AT NODE        663   DOF  2
+ LARGEST CORRECTION TO DISP.       -5.745E-03   AT NODE        663   DOF  2
    INSTANCE: PIPE_INST                                                                       
           FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
  
@@ -9700,23 +9700,23 @@
         NUMBER OF EQUATIONS:  18979
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.543e+08
-        SOLVER ELAPSED TIME:  135ms
+        SOLVER ELAPSED TIME:  140ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
-   MAX. PENETRATION ERROR -12.4598E-09  AT NODE ROCK_INST.86 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -12.4560E-09  AT NODE ROCK_INST.86 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -39.1276E+03  AT NODE ROCK_INST.86 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -39.1155E+03  AT NODE ROCK_INST.86 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.104E+08   TIME AVG. FORCE       5.166E+08
- LARGEST SCALED RESIDUAL FORCE     -2.623E+06   AT NODE         86   DOF  2
+ AVERAGE FORCE                      5.096E+08   TIME AVG. FORCE       5.165E+08
+ LARGEST SCALED RESIDUAL FORCE     -2.622E+06   AT NODE         86   DOF  2
    INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE     -2.623E+06
- LARGEST INCREMENT OF DISP.        -1.880E-03   AT NODE        664   DOF  2
+  CORRESPONDING RESIDUAL FORCE     -2.622E+06
+ LARGEST INCREMENT OF DISP.        -1.879E-03   AT NODE        664   DOF  2
    INSTANCE: PIPE_INST                                                                       
- LARGEST CORRECTION TO DISP.        3.864E-03   AT NODE        663   DOF  2
+ LARGEST CORRECTION TO DISP.        3.863E-03   AT NODE        663   DOF  2
    INSTANCE: PIPE_INST                                                                       
           FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
  
@@ -9725,21 +9725,21 @@
         NUMBER OF EQUATIONS:  18979
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.543e+08
-        SOLVER ELAPSED TIME:  131ms
+        SOLVER ELAPSED TIME:  136ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
 
-   MAX. PENETRATION ERROR -2.00707E-09 AT NODE ROCK_INST.86 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -2.00599E-09 AT NODE ROCK_INST.86 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -6.30282E+03 AT NODE ROCK_INST.86 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -6.29940E+03 AT NODE ROCK_INST.86 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.120E+08   TIME AVG. FORCE       5.166E+08
- LARGEST SCALED RESIDUAL FORCE     -3.697E+05   AT NODE         86   DOF  2
+ AVERAGE FORCE                      5.116E+08   TIME AVG. FORCE       5.165E+08
+ LARGEST SCALED RESIDUAL FORCE     -3.695E+05   AT NODE         86   DOF  2
    INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE     -3.697E+05
- LARGEST INCREMENT OF DISP.        -2.909E-04   AT NODE         58   DOF  2
+  CORRESPONDING RESIDUAL FORCE     -3.695E+05
+ LARGEST INCREMENT OF DISP.        -2.907E-04   AT NODE         58   DOF  2
    INSTANCE: PIPE_INST                                                                       
  LARGEST CORRECTION TO DISP.        1.589E-03   AT NODE        663   DOF  2
    INSTANCE: PIPE_INST                                                                       
@@ -9750,23 +9750,23 @@
         NUMBER OF EQUATIONS:  18979
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.543e+08
-        SOLVER ELAPSED TIME:  145ms
+        SOLVER ELAPSED TIME:  151ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     3
 
-   MAX. PENETRATION ERROR -71.0668E-12  AT NODE ROCK_INST.86 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -70.9866E-12  AT NODE ROCK_INST.86 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -223.171       AT NODE ROCK_INST.86 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -222.919       AT NODE ROCK_INST.86 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.125E+08   TIME AVG. FORCE       5.166E+08
- LARGEST SCALED RESIDUAL FORCE     -1.343E+04   AT NODE         86   DOF  2
+ AVERAGE FORCE                      5.122E+08   TIME AVG. FORCE       5.166E+08
+ LARGEST SCALED RESIDUAL FORCE     -1.342E+04   AT NODE         86   DOF  2
    INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE     -1.343E+04
+  CORRESPONDING RESIDUAL FORCE     -1.342E+04
  LARGEST INCREMENT OF DISP.        -6.589E-05   AT NODE         85   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.        3.017E-04   AT NODE        663   DOF  2
+ LARGEST CORRECTION TO DISP.        3.015E-04   AT NODE        663   DOF  2
    INSTANCE: PIPE_INST                                                                       
           DISP.    CORRECTION TOO LARGE COMPARED TO DISP.    INCREMENT
  
@@ -9775,25 +9775,25 @@
         NUMBER OF EQUATIONS:  18979
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.543e+08
-        SOLVER ELAPSED TIME:  144ms
+        SOLVER ELAPSED TIME:  135ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     4
 
-   MAX. PENETRATION ERROR -109.079E-15   AT NODE ROCK_INST.86 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -108.774E-15   AT NODE ROCK_INST.86 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -342.542E-03   AT NODE ROCK_INST.86 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -341.582E-03   AT NODE ROCK_INST.86 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.125E+08   TIME AVG. FORCE       5.166E+08
- LARGEST SCALED RESIDUAL FORCE      -22.7       AT NODE         86   DOF  2
+ AVERAGE FORCE                      5.122E+08   TIME AVG. FORCE       5.166E+08
+ LARGEST SCALED RESIDUAL FORCE      -22.6       AT NODE         86   DOF  2
    INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE      -22.7    
+  CORRESPONDING RESIDUAL FORCE      -22.6    
  LARGEST INCREMENT OF DISP.        -6.587E-05   AT NODE         85   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.        1.187E-05   AT NODE        663   DOF  2
+ LARGEST CORRECTION TO DISP.        1.186E-05   AT NODE        663   DOF  2
    INSTANCE: PIPE_INST                                                                       
- ESTIMATE OF DISP.    CORRECTION    2.003E-08
+ ESTIMATE OF DISP.    CORRECTION    1.998E-08
  FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND ESTIMATED CORRECTION
 
  MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   1.599E-04
@@ -9820,19 +9820,19 @@
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     1
 
-   MAX. PENETRATION ERROR 39.1236E-06  AT NODE ROCK_INST.85 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR 39.1230E-06  AT NODE ROCK_INST.85 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR 122.860E+06   AT NODE ROCK_INST.85 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR 122.858E+06   AT NODE ROCK_INST.85 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           PENETRATION ERROR TOO LARGE COMPARED TO DISPLACEMENT INCREMENT.
 
- AVERAGE FORCE                      5.092E+08   TIME AVG. FORCE       5.165E+08
+ AVERAGE FORCE                      5.091E+08   TIME AVG. FORCE       5.165E+08
  LARGEST SCALED RESIDUAL FORCE      1.151E+07   AT NODE         86   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      1.151E+07
  LARGEST INCREMENT OF DISP.        -1.240E-04   AT NODE         85   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.       -6.246E-05   AT NODE         55   DOF  2
+ LARGEST CORRECTION TO DISP.       -6.242E-05   AT NODE         55   DOF  2
    INSTANCE: PIPE_INST                                                                       
           FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
  
@@ -9841,26 +9841,26 @@
         NUMBER OF EQUATIONS:  18980
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.548e+08
-        SOLVER ELAPSED TIME:  113ms
+        SOLVER ELAPSED TIME:  128ms
 
                     1 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM SLIPPING TO STICKING
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     2
 
-   MAX. PENETRATION ERROR 214.915E-12   AT NODE ROCK_INST.86 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR 214.863E-12   AT NODE ROCK_INST.86 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR 674.897       AT NODE ROCK_INST.86 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR 674.733       AT NODE ROCK_INST.86 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINT ERRORS ARE WITHIN THE TOLERANCES.
 
- AVERAGE FORCE                      5.122E+08   TIME AVG. FORCE       5.166E+08
+ AVERAGE FORCE                      5.120E+08   TIME AVG. FORCE       5.165E+08
  LARGEST SCALED RESIDUAL FORCE      4.794E+05   AT NODE         85   DOF  2
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      4.794E+05
- LARGEST INCREMENT OF DISP.         7.534E-04   AT NODE        119   DOF  2
+ LARGEST INCREMENT OF DISP.         7.533E-04   AT NODE        119   DOF  2
    INSTANCE: PIPE_INST                                                                       
- LARGEST CORRECTION TO DISP.        7.800E-04   AT NODE         57   DOF  2
+ LARGEST CORRECTION TO DISP.        7.799E-04   AT NODE         57   DOF  2
    INSTANCE: PIPE_INST                                                                       
           DISP.    CORRECTION TOO LARGE COMPARED TO DISP.    INCREMENT
  
@@ -9869,23 +9869,23 @@
         NUMBER OF EQUATIONS:  18980
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.548e+08
-        SOLVER ELAPSED TIME:  127ms
+        SOLVER ELAPSED TIME:  150ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
-   MAX. PENETRATION ERROR -608.215E-12   AT NODE ROCK_INST.85 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -608.126E-12   AT NODE ROCK_INST.85 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -1.90998E+03 AT NODE ROCK_INST.85 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -1.90970E+03 AT NODE ROCK_INST.85 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.109E+08   TIME AVG. FORCE       5.165E+08
+ AVERAGE FORCE                      5.106E+08   TIME AVG. FORCE       5.165E+08
  LARGEST SCALED RESIDUAL FORCE     -1.315E+05   AT NODE         85   DOF  2
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE     -1.315E+05
- LARGEST INCREMENT OF DISP.        -1.501E-04   AT NODE         57   DOF  2
+ LARGEST INCREMENT OF DISP.        -1.500E-04   AT NODE         57   DOF  2
    INSTANCE: PIPE_INST                                                                       
- LARGEST CORRECTION TO DISP.       -9.035E-04   AT NODE        660   DOF  2
+ LARGEST CORRECTION TO DISP.       -9.033E-04   AT NODE        660   DOF  2
    INSTANCE: PIPE_INST                                                                       
           DISP.    CORRECTION TOO LARGE COMPARED TO DISP.    INCREMENT
  
@@ -9894,23 +9894,23 @@
         NUMBER OF EQUATIONS:  18980
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.548e+08
-        SOLVER ELAPSED TIME:  126ms
+        SOLVER ELAPSED TIME:  139ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
 
-   MAX. PENETRATION ERROR -19.1106E-12  AT NODE ROCK_INST.85 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -19.1024E-12  AT NODE ROCK_INST.85 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -60.0129      AT NODE ROCK_INST.85 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -59.9871      AT NODE ROCK_INST.85 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.111E+08   TIME AVG. FORCE       5.165E+08
- LARGEST SCALED RESIDUAL FORCE     -3.368E+03   AT NODE         85   DOF  2
+ AVERAGE FORCE                      5.107E+08   TIME AVG. FORCE       5.165E+08
+ LARGEST SCALED RESIDUAL FORCE     -3.367E+03   AT NODE         85   DOF  2
    INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE     -3.368E+03
+  CORRESPONDING RESIDUAL FORCE     -3.367E+03
  LARGEST INCREMENT OF DISP.        -1.105E-04   AT NODE         85   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.        1.629E-04   AT NODE        660   DOF  2
+ LARGEST CORRECTION TO DISP.        1.628E-04   AT NODE        660   DOF  2
    INSTANCE: PIPE_INST                                                                       
           DISP.    CORRECTION TOO LARGE COMPARED TO DISP.    INCREMENT
  
@@ -9919,23 +9919,23 @@
         NUMBER OF EQUATIONS:  18980
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.548e+08
-        SOLVER ELAPSED TIME:  124ms
+        SOLVER ELAPSED TIME:  133ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     3
 
-   MAX. PENETRATION ERROR -13.3779E-15  AT NODE ROCK_INST.85 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -13.3782E-15  AT NODE ROCK_INST.85 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -42.0107E-03  AT NODE ROCK_INST.85 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -42.0115E-03  AT NODE ROCK_INST.85 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.111E+08   TIME AVG. FORCE       5.165E+08
- LARGEST SCALED RESIDUAL FORCE      -3.17       AT NODE         85   DOF  2
+ AVERAGE FORCE                      5.107E+08   TIME AVG. FORCE       5.165E+08
+ LARGEST SCALED RESIDUAL FORCE      -3.16       AT NODE         85   DOF  2
    INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE      -3.17    
+  CORRESPONDING RESIDUAL FORCE      -3.16    
  LARGEST INCREMENT OF DISP.        -1.105E-04   AT NODE         85   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.        4.336E-06   AT NODE        660   DOF  2
+ LARGEST CORRECTION TO DISP.        4.333E-06   AT NODE        660   DOF  2
    INSTANCE: PIPE_INST                                                                       
           THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
 
@@ -9956,26 +9956,26 @@
         NUMBER OF EQUATIONS:  18980
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.548e+08
-        SOLVER ELAPSED TIME:  134ms
+        SOLVER ELAPSED TIME:  129ms
 
                     1 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM OPEN TO CLOSED
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     1
 
-   MAX. PENETRATION ERROR 45.7461E-06  AT NODE ROCK_INST.84 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR 45.7450E-06  AT NODE ROCK_INST.84 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR 143.656E+06   AT NODE ROCK_INST.84 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR 143.653E+06   AT NODE ROCK_INST.84 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           PENETRATION ERROR TOO LARGE COMPARED TO DISPLACEMENT INCREMENT.
 
- AVERAGE FORCE                      5.095E+08   TIME AVG. FORCE       5.165E+08
+ AVERAGE FORCE                      5.094E+08   TIME AVG. FORCE       5.164E+08
  LARGEST SCALED RESIDUAL FORCE      1.807E+07   AT NODE         85   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      1.807E+07
  LARGEST INCREMENT OF DISP.        -1.432E-04   AT NODE         84   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.       -1.000E-04   AT NODE         54   DOF  2
+ LARGEST CORRECTION TO DISP.       -9.991E-05   AT NODE         54   DOF  2
    INSTANCE: PIPE_INST                                                                       
           FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
  
@@ -9984,26 +9984,26 @@
         NUMBER OF EQUATIONS:  18981
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.551e+08
-        SOLVER ELAPSED TIME:  134ms
+        SOLVER ELAPSED TIME:  145ms
 
                     1 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM SLIPPING TO STICKING
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     2
 
-   MAX. PENETRATION ERROR 260.677E-12   AT NODE ROCK_INST.85 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR 260.533E-12   AT NODE ROCK_INST.85 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR 818.603       AT NODE ROCK_INST.85 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR 818.151       AT NODE ROCK_INST.85 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINT ERRORS ARE WITHIN THE TOLERANCES.
 
- AVERAGE FORCE                      5.128E+08   TIME AVG. FORCE       5.165E+08
+ AVERAGE FORCE                      5.125E+08   TIME AVG. FORCE       5.164E+08
  LARGEST SCALED RESIDUAL FORCE      4.517E+05   AT NODE         84   DOF  2
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      4.517E+05
- LARGEST INCREMENT OF DISP.         7.222E-04   AT NODE        120   DOF  2
+ LARGEST INCREMENT OF DISP.         7.221E-04   AT NODE        120   DOF  2
    INSTANCE: PIPE_INST                                                                       
- LARGEST CORRECTION TO DISP.        7.924E-04   AT NODE         56   DOF  2
+ LARGEST CORRECTION TO DISP.        7.922E-04   AT NODE         56   DOF  2
    INSTANCE: PIPE_INST                                                                       
           DISP.    CORRECTION TOO LARGE COMPARED TO DISP.    INCREMENT
  
@@ -10012,23 +10012,23 @@
         NUMBER OF EQUATIONS:  18981
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.551e+08
-        SOLVER ELAPSED TIME:  136ms
+        SOLVER ELAPSED TIME:  127ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
-   MAX. PENETRATION ERROR -521.441E-12   AT NODE ROCK_INST.84 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -521.390E-12   AT NODE ROCK_INST.84 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -1.63748E+03 AT NODE ROCK_INST.84 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -1.63732E+03 AT NODE ROCK_INST.84 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.115E+08   TIME AVG. FORCE       5.165E+08
+ AVERAGE FORCE                      5.110E+08   TIME AVG. FORCE       5.164E+08
  LARGEST SCALED RESIDUAL FORCE     -1.234E+05   AT NODE         84   DOF  2
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE     -1.234E+05
  LARGEST INCREMENT OF DISP.        -1.475E-04   AT NODE         56   DOF  2
    INSTANCE: PIPE_INST                                                                       
- LARGEST CORRECTION TO DISP.       -8.697E-04   AT NODE        657   DOF  2
+ LARGEST CORRECTION TO DISP.       -8.696E-04   AT NODE        657   DOF  2
    INSTANCE: PIPE_INST                                                                       
           DISP.    CORRECTION TOO LARGE COMPARED TO DISP.    INCREMENT
  
@@ -10037,20 +10037,20 @@
         NUMBER OF EQUATIONS:  18981
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.551e+08
-        SOLVER ELAPSED TIME:  123ms
+        SOLVER ELAPSED TIME:  157ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
 
-   MAX. PENETRATION ERROR -16.6554E-12  AT NODE ROCK_INST.84 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -16.6497E-12  AT NODE ROCK_INST.84 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -52.3029      AT NODE ROCK_INST.84 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -52.2851      AT NODE ROCK_INST.84 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.116E+08   TIME AVG. FORCE       5.165E+08
- LARGEST SCALED RESIDUAL FORCE     -3.042E+03   AT NODE         84   DOF  2
+ AVERAGE FORCE                      5.111E+08   TIME AVG. FORCE       5.164E+08
+ LARGEST SCALED RESIDUAL FORCE     -3.041E+03   AT NODE         84   DOF  2
    INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE     -3.042E+03
+  CORRESPONDING RESIDUAL FORCE     -3.041E+03
  LARGEST INCREMENT OF DISP.        -1.306E-04   AT NODE         84   DOF  1
    INSTANCE: ROCK_INST                                                                       
  LARGEST CORRECTION TO DISP.        1.591E-04   AT NODE        657   DOF  2
@@ -10062,23 +10062,23 @@
         NUMBER OF EQUATIONS:  18981
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.551e+08
-        SOLVER ELAPSED TIME:  119ms
+        SOLVER ELAPSED TIME:  135ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     3
 
-   MAX. PENETRATION ERROR -10.7412E-15  AT NODE ROCK_INST.84 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -10.7139E-15  AT NODE ROCK_INST.84 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -33.7305E-03  AT NODE ROCK_INST.84 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -33.6448E-03  AT NODE ROCK_INST.84 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.116E+08   TIME AVG. FORCE       5.165E+08
+ AVERAGE FORCE                      5.111E+08   TIME AVG. FORCE       5.164E+08
  LARGEST SCALED RESIDUAL FORCE      -2.84       AT NODE         84   DOF  2
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      -2.84    
  LARGEST INCREMENT OF DISP.        -1.307E-04   AT NODE         84   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.        4.072E-06   AT NODE        657   DOF  2
+ LARGEST CORRECTION TO DISP.        4.070E-06   AT NODE        657   DOF  2
    INSTANCE: PIPE_INST                                                                       
           THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
 
@@ -10098,26 +10098,26 @@
         NUMBER OF EQUATIONS:  18981
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.551e+08
-        SOLVER ELAPSED TIME:  122ms
+        SOLVER ELAPSED TIME:  144ms
 
                     1 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM OPEN TO CLOSED
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     1
 
-   MAX. PENETRATION ERROR 31.8079E-06  AT NODE ROCK_INST.83 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR 31.8070E-06  AT NODE ROCK_INST.83 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR 99.8865E+06  AT NODE ROCK_INST.83 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR 99.8835E+06  AT NODE ROCK_INST.83 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           PENETRATION ERROR TOO LARGE COMPARED TO DISPLACEMENT INCREMENT.
 
- AVERAGE FORCE                      5.090E+08   TIME AVG. FORCE       5.164E+08
+ AVERAGE FORCE                      5.089E+08   TIME AVG. FORCE       5.163E+08
  LARGEST SCALED RESIDUAL FORCE      1.901E+07   AT NODE         84   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      1.901E+07
  LARGEST INCREMENT OF DISP.        -1.397E-04   AT NODE         83   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.       -9.353E-05   AT NODE         57   DOF  1
+ LARGEST CORRECTION TO DISP.       -9.352E-05   AT NODE         57   DOF  1
    INSTANCE: PIPE_INST                                                                       
           FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
  
@@ -10126,26 +10126,26 @@
         NUMBER OF EQUATIONS:  18982
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.557e+08
-        SOLVER ELAPSED TIME:  137ms
+        SOLVER ELAPSED TIME:  135ms
 
                     1 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM SLIPPING TO STICKING
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     2
 
-   MAX. PENETRATION ERROR 110.442E-12   AT NODE ROCK_INST.84 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR 110.348E-12   AT NODE ROCK_INST.84 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR 346.822       AT NODE ROCK_INST.84 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR 346.526       AT NODE ROCK_INST.84 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINT ERRORS ARE WITHIN THE TOLERANCES.
 
- AVERAGE FORCE                      5.108E+08   TIME AVG. FORCE       5.164E+08
+ AVERAGE FORCE                      5.103E+08   TIME AVG. FORCE       5.163E+08
  LARGEST SCALED RESIDUAL FORCE     -4.311E+05   AT NODE         84   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE     -4.311E+05
  LARGEST INCREMENT OF DISP.         2.639E-04   AT NODE         54   DOF  2
    INSTANCE: PIPE_INST                                                                       
- LARGEST CORRECTION TO DISP.        3.237E-04   AT NODE         55   DOF  2
+ LARGEST CORRECTION TO DISP.        3.236E-04   AT NODE         55   DOF  2
    INSTANCE: PIPE_INST                                                                       
           DISP.    CORRECTION TOO LARGE COMPARED TO DISP.    INCREMENT
  
@@ -10154,17 +10154,17 @@
         NUMBER OF EQUATIONS:  18982
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.557e+08
-        SOLVER ELAPSED TIME:  133ms
+        SOLVER ELAPSED TIME:  164ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
-   MAX. PENETRATION ERROR -48.7583E-12  AT NODE ROCK_INST.83 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -48.7627E-12  AT NODE ROCK_INST.83 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -153.116       AT NODE ROCK_INST.83 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -153.130       AT NODE ROCK_INST.83 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.106E+08   TIME AVG. FORCE       5.164E+08
+ AVERAGE FORCE                      5.102E+08   TIME AVG. FORCE       5.163E+08
  LARGEST SCALED RESIDUAL FORCE     -1.588E+04   AT NODE         83   DOF  2
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE     -1.588E+04
@@ -10179,23 +10179,23 @@
         NUMBER OF EQUATIONS:  18982
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.557e+08
-        SOLVER ELAPSED TIME:  119ms
+        SOLVER ELAPSED TIME:  144ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
 
-   MAX. PENETRATION ERROR -514.339E-15   AT NODE ROCK_INST.83 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -514.283E-15   AT NODE ROCK_INST.83 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -1.61518     AT NODE ROCK_INST.83 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -1.61500     AT NODE ROCK_INST.83 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.106E+08   TIME AVG. FORCE       5.164E+08
+ AVERAGE FORCE                      5.102E+08   TIME AVG. FORCE       5.163E+08
  LARGEST SCALED RESIDUAL FORCE      -113.       AT NODE         83   DOF  2
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      -113.    
  LARGEST INCREMENT OF DISP.        -1.376E-04   AT NODE         83   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.        2.939E-05   AT NODE        654   DOF  2
+ LARGEST CORRECTION TO DISP.        2.938E-05   AT NODE        654   DOF  2
    INSTANCE: PIPE_INST                                                                       
  ESTIMATE OF DISP.    CORRECTION    2.091E-07
  FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND ESTIMATED CORRECTION
@@ -10216,20 +10216,20 @@
         NUMBER OF EQUATIONS:  18982
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.557e+08
-        SOLVER ELAPSED TIME:  150ms
+        SOLVER ELAPSED TIME:  145ms
 
                     1 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM OPEN TO CLOSED
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     1
 
-   MAX. PENETRATION ERROR 3.86159E-06 AT NODE ROCK_INST.82 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR 3.86062E-06 AT NODE ROCK_INST.82 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR 12.1266E+06  AT NODE ROCK_INST.82 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR 12.1235E+06  AT NODE ROCK_INST.82 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           PENETRATION ERROR TOO LARGE COMPARED TO DISPLACEMENT INCREMENT.
 
- AVERAGE FORCE                      5.097E+08   TIME AVG. FORCE       5.163E+08
+ AVERAGE FORCE                      5.095E+08   TIME AVG. FORCE       5.162E+08
  LARGEST SCALED RESIDUAL FORCE      2.133E+07   AT NODE         83   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      2.133E+07
@@ -10244,26 +10244,26 @@
         NUMBER OF EQUATIONS:  18983
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.561e+08
-        SOLVER ELAPSED TIME:  123ms
+        SOLVER ELAPSED TIME:  140ms
 
                     1 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM CLOSED TO OPEN
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     2
 
-   MAX. PENETRATION ERROR -79.5027E-12  AT NODE ROCK_INST.84 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -79.4489E-12  AT NODE ROCK_INST.84 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -733.030E+03   AT NODE ROCK_INST.82 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -733.066E+03   AT NODE ROCK_INST.82 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINT ERRORS ARE WITHIN THE TOLERANCES.
 
- AVERAGE FORCE                      5.104E+08   TIME AVG. FORCE       5.163E+08
+ AVERAGE FORCE                      5.099E+08   TIME AVG. FORCE       5.162E+08
  LARGEST SCALED RESIDUAL FORCE      6.656E+05   AT NODE         82   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      6.656E+05
- LARGEST INCREMENT OF DISP.        -9.663E-04   AT NODE        653   DOF  2
+ LARGEST INCREMENT OF DISP.        -9.661E-04   AT NODE        653   DOF  2
    INSTANCE: PIPE_INST                                                                       
- LARGEST CORRECTION TO DISP.       -9.249E-04   AT NODE        122   DOF  2
+ LARGEST CORRECTION TO DISP.       -9.248E-04   AT NODE        122   DOF  2
    INSTANCE: PIPE_INST                                                                       
           DISP.    CORRECTION TOO LARGE COMPARED TO DISP.    INCREMENT
  
@@ -10272,23 +10272,23 @@
         NUMBER OF EQUATIONS:  18982
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.557e+08
-        SOLVER ELAPSED TIME:  117ms
+        SOLVER ELAPSED TIME:  132ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
-   MAX. PENETRATION ERROR 67.3868E-12  AT NODE ROCK_INST.83 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR 67.3220E-12  AT NODE ROCK_INST.83 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR 211.615       AT NODE ROCK_INST.83 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR 211.411       AT NODE ROCK_INST.83 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.112E+08   TIME AVG. FORCE       5.163E+08
+ AVERAGE FORCE                      5.107E+08   TIME AVG. FORCE       5.163E+08
  LARGEST SCALED RESIDUAL FORCE     -1.390E+04   AT NODE         82   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE     -1.390E+04
  LARGEST INCREMENT OF DISP.        -1.399E-04   AT NODE         82   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.        9.788E-04   AT NODE        651   DOF  2
+ LARGEST CORRECTION TO DISP.        9.786E-04   AT NODE        651   DOF  2
    INSTANCE: PIPE_INST                                                                       
           DISP.    CORRECTION TOO LARGE COMPARED TO DISP.    INCREMENT
  
@@ -10297,7 +10297,7 @@
         NUMBER OF EQUATIONS:  18982
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.557e+08
-        SOLVER ELAPSED TIME:  120ms
+        SOLVER ELAPSED TIME:  137ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
 
@@ -10307,15 +10307,15 @@
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.112E+08   TIME AVG. FORCE       5.163E+08
+ AVERAGE FORCE                      5.107E+08   TIME AVG. FORCE       5.163E+08
  LARGEST SCALED RESIDUAL FORCE       8.65       AT NODE         82   DOF  2
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE       8.65    
  LARGEST INCREMENT OF DISP.        -1.401E-04   AT NODE         82   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.       -3.822E-06   AT NODE        654   DOF  2
+ LARGEST CORRECTION TO DISP.       -3.819E-06   AT NODE        654   DOF  2
    INSTANCE: PIPE_INST                                                                       
- ESTIMATE OF DISP.    CORRECTION    2.379E-09
+ ESTIMATE OF DISP.    CORRECTION    2.377E-09
  FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND ESTIMATED CORRECTION
 
  MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   6.210E-04
@@ -10334,26 +10334,26 @@
         NUMBER OF EQUATIONS:  18982
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.557e+08
-        SOLVER ELAPSED TIME:  129ms
+        SOLVER ELAPSED TIME:  126ms
 
                     1 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM OPEN TO CLOSED
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     1
 
-   MAX. PENETRATION ERROR 142.645E-06   AT NODE ROCK_INST.82 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR 142.644E-06   AT NODE ROCK_INST.82 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR 447.949E+06   AT NODE ROCK_INST.82 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR 447.945E+06   AT NODE ROCK_INST.82 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           PENETRATION ERROR TOO LARGE COMPARED TO DISPLACEMENT INCREMENT.
 
- AVERAGE FORCE                      5.097E+08   TIME AVG. FORCE       5.163E+08
- LARGEST SCALED RESIDUAL FORCE      4.301E+06   AT NODE         83   DOF  1
+ AVERAGE FORCE                      5.095E+08   TIME AVG. FORCE       5.162E+08
+ LARGEST SCALED RESIDUAL FORCE      4.302E+06   AT NODE         83   DOF  1
    INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE      4.301E+06
+  CORRESPONDING RESIDUAL FORCE      4.302E+06
  LARGEST INCREMENT OF DISP.        -1.402E-04   AT NODE         82   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.        1.713E-05   AT NODE         57   DOF  2
+ LARGEST CORRECTION TO DISP.        1.712E-05   AT NODE         57   DOF  2
    INSTANCE: PIPE_INST                                                                       
           FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
  
@@ -10370,19 +10370,19 @@
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     2
 
-   MAX. PENETRATION ERROR -377.467E-09   AT NODE ROCK_INST.82 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -377.301E-09   AT NODE ROCK_INST.82 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -1.18536E+06 AT NODE ROCK_INST.82 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -1.18484E+06 AT NODE ROCK_INST.82 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINT ERRORS ARE WITHIN THE TOLERANCES.
 
- AVERAGE FORCE                      5.057E+08   TIME AVG. FORCE       5.162E+08
+ AVERAGE FORCE                      5.055E+08   TIME AVG. FORCE       5.161E+08
  LARGEST SCALED RESIDUAL FORCE     -1.607E+08   AT NODE         82   DOF  2
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE     -1.607E+08
- LARGEST INCREMENT OF DISP.        -2.655E-02   AT NODE        651   DOF  2
+ LARGEST INCREMENT OF DISP.        -2.654E-02   AT NODE        651   DOF  2
    INSTANCE: PIPE_INST                                                                       
- LARGEST CORRECTION TO DISP.       -2.654E-02   AT NODE        651   DOF  2
+ LARGEST CORRECTION TO DISP.       -2.653E-02   AT NODE        651   DOF  2
    INSTANCE: PIPE_INST                                                                       
           FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
  
@@ -10391,7 +10391,7 @@
         NUMBER OF EQUATIONS:  18983
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.561e+08
-        SOLVER ELAPSED TIME:  137ms
+        SOLVER ELAPSED TIME:  127ms
 
                     2 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM SLIPPING TO STICKING
@@ -10399,19 +10399,19 @@
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     3
 
-   MAX. PENETRATION ERROR -313.837E-09   AT NODE ROCK_INST.82 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -313.652E-09   AT NODE ROCK_INST.82 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -985.542E+03   AT NODE ROCK_INST.82 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -984.960E+03   AT NODE ROCK_INST.82 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINT ERRORS ARE WITHIN THE TOLERANCES.
 
- AVERAGE FORCE                      5.060E+08   TIME AVG. FORCE       5.162E+08
- LARGEST SCALED RESIDUAL FORCE      7.345E+07   AT NODE         83   DOF  2
+ AVERAGE FORCE                      5.057E+08   TIME AVG. FORCE       5.161E+08
+ LARGEST SCALED RESIDUAL FORCE      7.343E+07   AT NODE         83   DOF  2
    INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE      7.345E+07
+  CORRESPONDING RESIDUAL FORCE      7.343E+07
  LARGEST INCREMENT OF DISP.         1.188E-02   AT NODE         56   DOF  2
    INSTANCE: PIPE_INST                                                                       
- LARGEST CORRECTION TO DISP.        2.721E-02   AT NODE         55   DOF  2
+ LARGEST CORRECTION TO DISP.        2.720E-02   AT NODE         55   DOF  2
    INSTANCE: PIPE_INST                                                                       
           FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
  
@@ -10420,7 +10420,7 @@
         NUMBER OF EQUATIONS:  18983
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.561e+08
-        SOLVER ELAPSED TIME:  135ms
+        SOLVER ELAPSED TIME:  138ms
  
 
  ***WARNING: THE SYSTEM MATRIX HAS 1 NEGATIVE EIGENVALUES.
@@ -10435,19 +10435,19 @@
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     4
 
-   MAX. PENETRATION ERROR 282.170E-06   AT NODE ROCK_INST.79 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR 285.493E-06   AT NODE ROCK_INST.79 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR 886.100E+06   AT NODE ROCK_INST.79 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR 896.532E+06   AT NODE ROCK_INST.79 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE ESTIMATED CONTACT FORCE ERROR IS OUTSIDE OF CONVERGENCE TOLERANCES.
 
- AVERAGE FORCE                      5.061E+08   TIME AVG. FORCE       5.162E+08
- LARGEST SCALED RESIDUAL FORCE     -1.435E+10   AT NODE        120   DOF  1
+ AVERAGE FORCE                      4.869E+08   TIME AVG. FORCE       5.159E+08
+ LARGEST SCALED RESIDUAL FORCE     -1.429E+10   AT NODE        120   DOF  1
    INSTANCE: PIPE_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE     -1.435E+10
- LARGEST INCREMENT OF DISP.         0.566       AT NODE        651   DOF  2
+  CORRESPONDING RESIDUAL FORCE     -1.429E+10
+ LARGEST INCREMENT OF DISP.         0.569       AT NODE        651   DOF  2
    INSTANCE: PIPE_INST                                                                       
- LARGEST CORRECTION TO DISP.        0.565       AT NODE        651   DOF  2
+ LARGEST CORRECTION TO DISP.        0.568       AT NODE        651   DOF  2
    INSTANCE: PIPE_INST                                                                       
           FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
  
@@ -10462,26 +10462,26 @@
         NUMBER OF EQUATIONS:  18982
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.557e+08
-        SOLVER ELAPSED TIME:  115ms
+        SOLVER ELAPSED TIME:  125ms
 
                     1 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM OPEN TO CLOSED
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     1
 
-   MAX. PENETRATION ERROR 19.8215E-06  AT NODE ROCK_INST.82 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR 19.8211E-06  AT NODE ROCK_INST.82 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR 62.2456E+06  AT NODE ROCK_INST.82 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR 62.2442E+06  AT NODE ROCK_INST.82 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           PENETRATION ERROR TOO LARGE COMPARED TO DISPLACEMENT INCREMENT.
 
- AVERAGE FORCE                      5.106E+08   TIME AVG. FORCE       5.163E+08
+ AVERAGE FORCE                      5.102E+08   TIME AVG. FORCE       5.162E+08
  LARGEST SCALED RESIDUAL FORCE      6.121E+05   AT NODE         83   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      6.121E+05
  LARGEST INCREMENT OF DISP.        -3.504E-05   AT NODE         82   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.        3.427E-06   AT NODE         57   DOF  2
+ LARGEST CORRECTION TO DISP.        3.425E-06   AT NODE         57   DOF  2
    INSTANCE: PIPE_INST                                                                       
           DISP.    CORRECTION TOO LARGE COMPARED TO DISP.    INCREMENT
  
@@ -10490,7 +10490,7 @@
         NUMBER OF EQUATIONS:  18983
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.561e+08
-        SOLVER ELAPSED TIME:  108ms
+        SOLVER ELAPSED TIME:  130ms
  
 
  ***WARNING: THE SYSTEM MATRIX HAS 1 NEGATIVE EIGENVALUES.
@@ -10501,19 +10501,19 @@
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     2
 
-   MAX. PENETRATION ERROR 15.4127E-09  AT NODE ROCK_INST.83 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR 15.4289E-09  AT NODE ROCK_INST.83 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -12.3036E+06  AT NODE ROCK_INST.82 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -12.3112E+06  AT NODE ROCK_INST.82 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINT ERRORS ARE WITHIN THE TOLERANCES.
 
- AVERAGE FORCE                      5.071E+08   TIME AVG. FORCE       5.162E+08
+ AVERAGE FORCE                      5.069E+08   TIME AVG. FORCE       5.161E+08
  LARGEST SCALED RESIDUAL FORCE     -1.039E+07   AT NODE        121   DOF  1
    INSTANCE: PIPE_INST                                                                       
   CORRESPONDING RESIDUAL FORCE     -1.039E+07
- LARGEST INCREMENT OF DISP.         1.613E-02   AT NODE        651   DOF  2
+ LARGEST INCREMENT OF DISP.         1.614E-02   AT NODE        651   DOF  2
    INSTANCE: PIPE_INST                                                                       
- LARGEST CORRECTION TO DISP.        1.613E-02   AT NODE        651   DOF  2
+ LARGEST CORRECTION TO DISP.        1.614E-02   AT NODE        651   DOF  2
    INSTANCE: PIPE_INST                                                                       
           FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
  
@@ -10522,26 +10522,26 @@
         NUMBER OF EQUATIONS:  18982
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.557e+08
-        SOLVER ELAPSED TIME:  126ms
+        SOLVER ELAPSED TIME:  147ms
 
                     1 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM STICKING TO SLIPPING
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     3
 
-   MAX. PENETRATION ERROR -69.5332E-09  AT NODE ROCK_INST.83 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -72.1347E-09  AT NODE ROCK_INST.83 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -218.355E+03   AT NODE ROCK_INST.83 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -226.525E+03   AT NODE ROCK_INST.83 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINT ERRORS ARE WITHIN THE TOLERANCES.
 
- AVERAGE FORCE                      5.065E+08   TIME AVG. FORCE       5.162E+08
- LARGEST SCALED RESIDUAL FORCE     -2.414E+07   AT NODE         83   DOF  2
+ AVERAGE FORCE                      5.062E+08   TIME AVG. FORCE       5.161E+08
+ LARGEST SCALED RESIDUAL FORCE     -2.428E+07   AT NODE         83   DOF  2
    INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE     -2.414E+07
- LARGEST INCREMENT OF DISP.        -2.067E-02   AT NODE        654   DOF  2
+  CORRESPONDING RESIDUAL FORCE     -2.428E+07
+ LARGEST INCREMENT OF DISP.        -2.084E-02   AT NODE        654   DOF  2
    INSTANCE: PIPE_INST                                                                       
- LARGEST CORRECTION TO DISP.       -3.641E-02   AT NODE        122   DOF  2
+ LARGEST CORRECTION TO DISP.       -3.658E-02   AT NODE        122   DOF  2
    INSTANCE: PIPE_INST                                                                       
           FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
  
@@ -10550,7 +10550,7 @@
         NUMBER OF EQUATIONS:  18982
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.557e+08
-        SOLVER ELAPSED TIME:  146ms
+        SOLVER ELAPSED TIME:  135ms
 
                     2 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM OPEN TO CLOSED
@@ -10558,19 +10558,19 @@
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     4
 
-   MAX. PENETRATION ERROR 19.4950E-06  AT NODE ROCK_INST.82 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR 19.5506E-06  AT NODE ROCK_INST.82 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR 61.2200E+06  AT NODE ROCK_INST.82 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR 61.3948E+06  AT NODE ROCK_INST.82 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINT ERRORS ARE WITHIN THE TOLERANCES.
 
- AVERAGE FORCE                      5.070E+08   TIME AVG. FORCE       5.162E+08
- LARGEST SCALED RESIDUAL FORCE      1.482E+07   AT NODE         83   DOF  2
+ AVERAGE FORCE                      5.069E+08   TIME AVG. FORCE       5.161E+08
+ LARGEST SCALED RESIDUAL FORCE      1.506E+07   AT NODE         83   DOF  2
    INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE      1.482E+07
- LARGEST INCREMENT OF DISP.         5.875E-03   AT NODE        654   DOF  2
+  CORRESPONDING RESIDUAL FORCE      1.506E+07
+ LARGEST INCREMENT OF DISP.         5.917E-03   AT NODE        654   DOF  2
    INSTANCE: PIPE_INST                                                                       
- LARGEST CORRECTION TO DISP.        2.655E-02   AT NODE        654   DOF  2
+ LARGEST CORRECTION TO DISP.        2.676E-02   AT NODE        654   DOF  2
    INSTANCE: PIPE_INST                                                                       
           FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
  
@@ -10585,17 +10585,17 @@
         NUMBER OF EQUATIONS:  18982
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.557e+08
-        SOLVER ELAPSED TIME:  146ms
+        SOLVER ELAPSED TIME:  145ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
-   MAX. PENETRATION ERROR -67.0020E-15  AT NODE ROCK_INST.84 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -66.9468E-15  AT NODE ROCK_INST.84 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -210.406E-03   AT NODE ROCK_INST.84 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -210.233E-03   AT NODE ROCK_INST.84 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.111E+08   TIME AVG. FORCE       5.163E+08
+ AVERAGE FORCE                      5.106E+08   TIME AVG. FORCE       5.162E+08
  LARGEST SCALED RESIDUAL FORCE      5.982E+04   AT NODE         83   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      5.982E+04
@@ -10610,17 +10610,17 @@
         NUMBER OF EQUATIONS:  18982
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.557e+08
-        SOLVER ELAPSED TIME:  163ms
+        SOLVER ELAPSED TIME:  147ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
 
-   MAX. PENETRATION ERROR -472.152E-18   AT NODE ROCK_INST.84 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -416.334E-18   AT NODE ROCK_INST.84 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -1.48270E-03 AT NODE ROCK_INST.84 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -1.30741E-03 AT NODE ROCK_INST.84 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.111E+08   TIME AVG. FORCE       5.163E+08
+ AVERAGE FORCE                      5.106E+08   TIME AVG. FORCE       5.162E+08
  LARGEST SCALED RESIDUAL FORCE      -9.23       AT NODE         83   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      -9.23    
@@ -10648,26 +10648,26 @@
         NUMBER OF EQUATIONS:  18982
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.557e+08
-        SOLVER ELAPSED TIME:  124ms
+        SOLVER ELAPSED TIME:  136ms
 
                     1 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM OPEN TO CLOSED
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     1
 
-   MAX. PENETRATION ERROR 4.31150E-06 AT NODE ROCK_INST.82 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR 4.31119E-06 AT NODE ROCK_INST.82 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR 13.5394E+06  AT NODE ROCK_INST.82 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR 13.5384E+06  AT NODE ROCK_INST.82 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           PENETRATION ERROR TOO LARGE COMPARED TO DISPLACEMENT INCREMENT.
 
- AVERAGE FORCE                      5.108E+08   TIME AVG. FORCE       5.162E+08
+ AVERAGE FORCE                      5.104E+08   TIME AVG. FORCE       5.161E+08
  LARGEST SCALED RESIDUAL FORCE      1.049E+05   AT NODE         83   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      1.049E+05
  LARGEST INCREMENT OF DISP.        -1.317E-05   AT NODE         82   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.        8.601E-08   AT NODE         57   DOF  2
+ LARGEST CORRECTION TO DISP.        8.596E-08   AT NODE         57   DOF  2
    INSTANCE: PIPE_INST                                                                       
           THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
  
@@ -10687,13 +10687,13 @@
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     2
 
-   MAX. PENETRATION ERROR 146.352E-12   AT NODE ROCK_INST.83 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR 146.389E-12   AT NODE ROCK_INST.83 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -1.15328E+06 AT NODE ROCK_INST.82 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -1.15352E+06 AT NODE ROCK_INST.82 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINT ERRORS ARE WITHIN THE TOLERANCES.
 
- AVERAGE FORCE                      5.110E+08   TIME AVG. FORCE       5.162E+08
+ AVERAGE FORCE                      5.107E+08   TIME AVG. FORCE       5.161E+08
  LARGEST SCALED RESIDUAL FORCE      1.110E+06   AT NODE         82   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      1.110E+06
@@ -10708,23 +10708,23 @@
         NUMBER OF EQUATIONS:  18982
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.557e+08
-        SOLVER ELAPSED TIME:  126ms
+        SOLVER ELAPSED TIME:  129ms
 
                     1 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM OPEN TO CLOSED
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     3
 
-   MAX. PENETRATION ERROR 4.05459E-06 AT NODE ROCK_INST.82 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR 4.05422E-06 AT NODE ROCK_INST.82 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR 12.7326E+06  AT NODE ROCK_INST.82 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR 12.7315E+06  AT NODE ROCK_INST.82 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           PENETRATION ERROR TOO LARGE COMPARED TO DISPLACEMENT INCREMENT.
 
- AVERAGE FORCE                      5.108E+08   TIME AVG. FORCE       5.162E+08
- LARGEST SCALED RESIDUAL FORCE      5.382E+04   AT NODE        120   DOF  2
+ AVERAGE FORCE                      5.104E+08   TIME AVG. FORCE       5.161E+08
+ LARGEST SCALED RESIDUAL FORCE      5.383E+04   AT NODE        120   DOF  2
    INSTANCE: PIPE_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE      5.382E+04
+  CORRESPONDING RESIDUAL FORCE      5.383E+04
  LARGEST INCREMENT OF DISP.        -1.775E-05   AT NODE         54   DOF  2
    INSTANCE: PIPE_INST                                                                       
  LARGEST CORRECTION TO DISP.       -1.542E-03   AT NODE        651   DOF  2
@@ -10736,24 +10736,24 @@
         NUMBER OF EQUATIONS:  18983
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.561e+08
-        SOLVER ELAPSED TIME:  145ms
+        SOLVER ELAPSED TIME:  148ms
 
                     1 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM SLIPPING TO STICKING
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     4
 
-   MAX. PENETRATION ERROR -59.9947E-12  AT NODE ROCK_INST.82 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -59.9839E-12  AT NODE ROCK_INST.82 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -188.401       AT NODE ROCK_INST.82 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -188.367       AT NODE ROCK_INST.82 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINT ERRORS ARE WITHIN THE TOLERANCES.
 
- AVERAGE FORCE                      5.110E+08   TIME AVG. FORCE       5.162E+08
+ AVERAGE FORCE                      5.106E+08   TIME AVG. FORCE       5.161E+08
  LARGEST SCALED RESIDUAL FORCE      1.250E+05   AT NODE         82   DOF  2
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      1.250E+05
- LARGEST INCREMENT OF DISP.         2.953E-04   AT NODE        122   DOF  2
+ LARGEST INCREMENT OF DISP.         2.952E-04   AT NODE        122   DOF  2
    INSTANCE: PIPE_INST                                                                       
  LARGEST CORRECTION TO DISP.        3.130E-04   AT NODE        122   DOF  2
    INSTANCE: PIPE_INST                                                                       
@@ -10764,23 +10764,23 @@
         NUMBER OF EQUATIONS:  18983
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.561e+08
-        SOLVER ELAPSED TIME:  140ms
+        SOLVER ELAPSED TIME:  155ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
-   MAX. PENETRATION ERROR -56.9683E-12  AT NODE ROCK_INST.82 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -56.9564E-12  AT NODE ROCK_INST.82 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -178.898       AT NODE ROCK_INST.82 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -178.860       AT NODE ROCK_INST.82 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.110E+08   TIME AVG. FORCE       5.162E+08
- LARGEST SCALED RESIDUAL FORCE     -3.802E+04   AT NODE         82   DOF  2
+ AVERAGE FORCE                      5.106E+08   TIME AVG. FORCE       5.161E+08
+ LARGEST SCALED RESIDUAL FORCE     -3.801E+04   AT NODE         82   DOF  2
    INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE     -3.802E+04
- LARGEST INCREMENT OF DISP.        -6.037E-05   AT NODE         54   DOF  2
+  CORRESPONDING RESIDUAL FORCE     -3.801E+04
+ LARGEST INCREMENT OF DISP.        -6.035E-05   AT NODE         54   DOF  2
    INSTANCE: PIPE_INST                                                                       
- LARGEST CORRECTION TO DISP.       -3.557E-04   AT NODE        651   DOF  2
+ LARGEST CORRECTION TO DISP.       -3.556E-04   AT NODE        651   DOF  2
    INSTANCE: PIPE_INST                                                                       
           DISP.    CORRECTION TOO LARGE COMPARED TO DISP.    INCREMENT
  
@@ -10789,23 +10789,23 @@
         NUMBER OF EQUATIONS:  18983
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.561e+08
-        SOLVER ELAPSED TIME:  132ms
+        SOLVER ELAPSED TIME:  142ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
 
-   MAX. PENETRATION ERROR -2.01281E-12 AT NODE ROCK_INST.82 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -2.01170E-12 AT NODE ROCK_INST.82 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -6.32082     AT NODE ROCK_INST.82 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -6.31733     AT NODE ROCK_INST.82 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.110E+08   TIME AVG. FORCE       5.162E+08
- LARGEST SCALED RESIDUAL FORCE     -1.318E+03   AT NODE         82   DOF  2
+ AVERAGE FORCE                      5.105E+08   TIME AVG. FORCE       5.161E+08
+ LARGEST SCALED RESIDUAL FORCE     -1.317E+03   AT NODE         82   DOF  2
    INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE     -1.318E+03
+  CORRESPONDING RESIDUAL FORCE     -1.317E+03
  LARGEST INCREMENT OF DISP.        -1.094E-05   AT NODE         82   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.        6.696E-05   AT NODE        651   DOF  2
+ LARGEST CORRECTION TO DISP.        6.693E-05   AT NODE        651   DOF  2
    INSTANCE: PIPE_INST                                                                       
           DISP.    CORRECTION TOO LARGE COMPARED TO DISP.    INCREMENT
  
@@ -10814,23 +10814,23 @@
         NUMBER OF EQUATIONS:  18983
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.561e+08
-        SOLVER ELAPSED TIME:  139ms
+        SOLVER ELAPSED TIME:  147ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     3
 
-   MAX. PENETRATION ERROR -2.80331E-15 AT NODE ROCK_INST.82 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -2.77556E-15 AT NODE ROCK_INST.82 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -8.80324E-03 AT NODE ROCK_INST.82 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -8.71608E-03 AT NODE ROCK_INST.82 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.110E+08   TIME AVG. FORCE       5.162E+08
+ AVERAGE FORCE                      5.105E+08   TIME AVG. FORCE       5.161E+08
  LARGEST SCALED RESIDUAL FORCE      -1.86       AT NODE         82   DOF  2
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      -1.86    
  LARGEST INCREMENT OF DISP.        -1.095E-05   AT NODE         82   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.        2.492E-06   AT NODE        651   DOF  2
+ LARGEST CORRECTION TO DISP.        2.490E-06   AT NODE        651   DOF  2
    INSTANCE: PIPE_INST                                                                       
           THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
 
@@ -10851,21 +10851,21 @@
         NUMBER OF EQUATIONS:  18983
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.561e+08
-        SOLVER ELAPSED TIME:  142ms
+        SOLVER ELAPSED TIME:  156ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
-   MAX. PENETRATION ERROR -4.65988E-12 AT NODE ROCK_INST.83 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -4.65700E-12 AT NODE ROCK_INST.83 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -14.6334      AT NODE ROCK_INST.83 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -14.6244      AT NODE ROCK_INST.83 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.124E+08   TIME AVG. FORCE       5.162E+08
+ AVERAGE FORCE                      5.120E+08   TIME AVG. FORCE       5.161E+08
  LARGEST SCALED RESIDUAL FORCE      1.717E+06   AT NODE         82   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      1.717E+06
- LARGEST INCREMENT OF DISP.         1.928E-05   AT NODE         52   DOF  2
+ LARGEST INCREMENT OF DISP.         1.926E-05   AT NODE         52   DOF  2
    INSTANCE: PIPE_INST                                                                       
  LARGEST CORRECTION TO DISP.       -1.100E-05   AT NODE         56   DOF  2
    INSTANCE: PIPE_INST                                                                       
@@ -10876,23 +10876,23 @@
         NUMBER OF EQUATIONS:  18983
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.561e+08
-        SOLVER ELAPSED TIME:  139ms
+        SOLVER ELAPSED TIME:  143ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
 
-   MAX. PENETRATION ERROR -365.957E-15   AT NODE ROCK_INST.83 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -365.707E-15   AT NODE ROCK_INST.83 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -1.14921     AT NODE ROCK_INST.83 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -1.14843     AT NODE ROCK_INST.83 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.120E+08   TIME AVG. FORCE       5.162E+08
+ AVERAGE FORCE                      5.115E+08   TIME AVG. FORCE       5.161E+08
  LARGEST SCALED RESIDUAL FORCE     -7.574E+03   AT NODE         82   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE     -7.574E+03
  LARGEST INCREMENT OF DISP.        -1.879E-05   AT NODE         81   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.        3.591E-06   AT NODE         56   DOF  2
+ LARGEST CORRECTION TO DISP.        3.589E-06   AT NODE         56   DOF  2
    INSTANCE: PIPE_INST                                                                       
           DISP.    CORRECTION TOO LARGE COMPARED TO DISP.    INCREMENT
  
@@ -10901,23 +10901,23 @@
         NUMBER OF EQUATIONS:  18983
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.561e+08
-        SOLVER ELAPSED TIME:  114ms
+        SOLVER ELAPSED TIME:  137ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     3
 
-   MAX. PENETRATION ERROR 55.5112E-18  AT NODE ROCK_INST.102 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -55.5112E-18  AT NODE ROCK_INST.82 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR 174.322E-06   AT NODE ROCK_INST.102 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -174.322E-06   AT NODE ROCK_INST.82 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.120E+08   TIME AVG. FORCE       5.162E+08
+ AVERAGE FORCE                      5.115E+08   TIME AVG. FORCE       5.161E+08
  LARGEST SCALED RESIDUAL FORCE     -0.187       AT NODE         82   DOF  2
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE     -0.187    
  LARGEST INCREMENT OF DISP.        -1.879E-05   AT NODE         81   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.       -4.062E-07   AT NODE        652   DOF  2
+ LARGEST CORRECTION TO DISP.       -4.064E-07   AT NODE        652   DOF  2
    INSTANCE: PIPE_INST                                                                       
           THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
 
@@ -10938,23 +10938,23 @@
         NUMBER OF EQUATIONS:  18983
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.561e+08
-        SOLVER ELAPSED TIME:  143ms
+        SOLVER ELAPSED TIME:  138ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
-   MAX. PENETRATION ERROR -147.271E-15   AT NODE ROCK_INST.82 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -147.132E-15   AT NODE ROCK_INST.82 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -462.475E-03   AT NODE ROCK_INST.82 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -462.040E-03   AT NODE ROCK_INST.82 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.154E+08   TIME AVG. FORCE       5.161E+08
+ AVERAGE FORCE                      5.141E+08   TIME AVG. FORCE       5.160E+08
  LARGEST SCALED RESIDUAL FORCE      1.632E+06   AT NODE         82   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      1.632E+06
  LARGEST INCREMENT OF DISP.        -2.824E-05   AT NODE         81   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.       -1.670E-05   AT NODE        651   DOF  2
+ LARGEST CORRECTION TO DISP.       -1.669E-05   AT NODE        651   DOF  2
    INSTANCE: PIPE_INST                                                                       
           DISP.    CORRECTION TOO LARGE COMPARED TO DISP.    INCREMENT
  
@@ -10963,21 +10963,21 @@
         NUMBER OF EQUATIONS:  18983
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.561e+08
-        SOLVER ELAPSED TIME:  136ms
+        SOLVER ELAPSED TIME:  143ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
 
-   MAX. PENETRATION ERROR -288.713E-15   AT NODE ROCK_INST.83 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -288.575E-15   AT NODE ROCK_INST.83 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -906.647E-03   AT NODE ROCK_INST.83 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -906.211E-03   AT NODE ROCK_INST.83 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.154E+08   TIME AVG. FORCE       5.161E+08
- LARGEST SCALED RESIDUAL FORCE     -7.468E+03   AT NODE         82   DOF  1
+ AVERAGE FORCE                      5.146E+08   TIME AVG. FORCE       5.160E+08
+ LARGEST SCALED RESIDUAL FORCE     -7.467E+03   AT NODE         82   DOF  1
    INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE     -7.468E+03
- LARGEST INCREMENT OF DISP.        -2.850E-05   AT NODE         81   DOF  1
+  CORRESPONDING RESIDUAL FORCE     -7.467E+03
+ LARGEST INCREMENT OF DISP.        -2.851E-05   AT NODE         81   DOF  1
    INSTANCE: ROCK_INST                                                                       
  LARGEST CORRECTION TO DISP.        2.698E-06   AT NODE         55   DOF  1
    INSTANCE: PIPE_INST                                                                       
@@ -10988,23 +10988,23 @@
         NUMBER OF EQUATIONS:  18983
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.561e+08
-        SOLVER ELAPSED TIME:  126ms
+        SOLVER ELAPSED TIME:  132ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     3
 
-   MAX. PENETRATION ERROR -55.5112E-18  AT NODE ROCK_INST.84 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -55.5112E-18  AT NODE ROCK_INST.108 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -174.322E-06   AT NODE ROCK_INST.84 OF CONTACT PAIR 
-   (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
+   MAX. CONTACT FORCE ERROR -174.322E-06   AT NODE ROCK_INST.108 OF CONTACT 
+   PAIR (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.154E+08   TIME AVG. FORCE       5.161E+08
- LARGEST SCALED RESIDUAL FORCE      0.294       AT NODE         81   DOF  1
+ AVERAGE FORCE                      5.146E+08   TIME AVG. FORCE       5.160E+08
+ LARGEST SCALED RESIDUAL FORCE      0.295       AT NODE         81   DOF  1
    INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE      0.294    
+  CORRESPONDING RESIDUAL FORCE      0.295    
  LARGEST INCREMENT OF DISP.        -2.851E-05   AT NODE         81   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.        9.538E-08   AT NODE        120   DOF  2
+ LARGEST CORRECTION TO DISP.        9.533E-08   AT NODE        120   DOF  2
    INSTANCE: PIPE_INST                                                                       
           THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
 
@@ -11025,23 +11025,23 @@
         NUMBER OF EQUATIONS:  18983
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.561e+08
-        SOLVER ELAPSED TIME:  132ms
+        SOLVER ELAPSED TIME:  141ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
-   MAX. PENETRATION ERROR -24.3416E-15  AT NODE ROCK_INST.83 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -24.2861E-15  AT NODE ROCK_INST.83 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -76.4401E-03  AT NODE ROCK_INST.83 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -76.2657E-03  AT NODE ROCK_INST.83 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.116E+08   TIME AVG. FORCE       5.161E+08
+ AVERAGE FORCE                      5.106E+08   TIME AVG. FORCE       5.160E+08
  LARGEST SCALED RESIDUAL FORCE      1.586E+06   AT NODE         82   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      1.586E+06
  LARGEST INCREMENT OF DISP.        -4.279E-05   AT NODE         81   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.       -4.775E-06   AT NODE        651   DOF  2
+ LARGEST CORRECTION TO DISP.       -4.772E-06   AT NODE        651   DOF  2
    INSTANCE: PIPE_INST                                                                       
           DISP.    CORRECTION TOO LARGE COMPARED TO DISP.    INCREMENT
  
@@ -11050,17 +11050,17 @@
         NUMBER OF EQUATIONS:  18983
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.561e+08
-        SOLVER ELAPSED TIME:  142ms
+        SOLVER ELAPSED TIME:  141ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
 
-   MAX. PENETRATION ERROR -305.950E-15   AT NODE ROCK_INST.83 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -305.783E-15   AT NODE ROCK_INST.83 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -960.774E-03   AT NODE ROCK_INST.83 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -960.250E-03   AT NODE ROCK_INST.83 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.122E+08   TIME AVG. FORCE       5.161E+08
+ AVERAGE FORCE                      5.110E+08   TIME AVG. FORCE       5.160E+08
  LARGEST SCALED RESIDUAL FORCE     -7.915E+03   AT NODE         82   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE     -7.915E+03
@@ -11075,23 +11075,23 @@
         NUMBER OF EQUATIONS:  18983
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.561e+08
-        SOLVER ELAPSED TIME:  127ms
+        SOLVER ELAPSED TIME:  154ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     3
 
-   MAX. PENETRATION ERROR -55.5112E-18  AT NODE ROCK_INST.97 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -27.9624E-18  AT NODE ROCK_INST.85 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -174.322E-06   AT NODE ROCK_INST.97 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -87.8102E-06  AT NODE ROCK_INST.85 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.122E+08   TIME AVG. FORCE       5.161E+08
+ AVERAGE FORCE                      5.110E+08   TIME AVG. FORCE       5.160E+08
  LARGEST SCALED RESIDUAL FORCE      0.133       AT NODE         81   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      0.133    
  LARGEST INCREMENT OF DISP.        -4.317E-05   AT NODE         81   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.        9.480E-08   AT NODE        120   DOF  2
+ LARGEST CORRECTION TO DISP.        9.474E-08   AT NODE        120   DOF  2
    INSTANCE: PIPE_INST                                                                       
           THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
 
@@ -11112,23 +11112,23 @@
         NUMBER OF EQUATIONS:  18983
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.561e+08
-        SOLVER ELAPSED TIME:  136ms
+        SOLVER ELAPSED TIME:  139ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
-   MAX. PENETRATION ERROR -13.6280E-15  AT NODE ROCK_INST.83 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -13.6281E-15  AT NODE ROCK_INST.83 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -42.7960E-03  AT NODE ROCK_INST.83 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -42.7964E-03  AT NODE ROCK_INST.83 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.102E+08   TIME AVG. FORCE       5.160E+08
+ AVERAGE FORCE                      5.097E+08   TIME AVG. FORCE       5.159E+08
  LARGEST SCALED RESIDUAL FORCE      1.574E+06   AT NODE         82   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      1.574E+06
  LARGEST INCREMENT OF DISP.        -6.478E-05   AT NODE         81   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.        3.131E-06   AT NODE         56   DOF  2
+ LARGEST CORRECTION TO DISP.        3.129E-06   AT NODE         56   DOF  2
    INSTANCE: PIPE_INST                                                                       
           DISP.    CORRECTION TOO LARGE COMPARED TO DISP.    INCREMENT
  
@@ -11137,21 +11137,21 @@
         NUMBER OF EQUATIONS:  18983
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.561e+08
-        SOLVER ELAPSED TIME:  157ms
+        SOLVER ELAPSED TIME:  130ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
 
-   MAX. PENETRATION ERROR -311.334E-15   AT NODE ROCK_INST.83 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -311.112E-15   AT NODE ROCK_INST.83 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -977.682E-03   AT NODE ROCK_INST.83 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -976.986E-03   AT NODE ROCK_INST.83 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.105E+08   TIME AVG. FORCE       5.160E+08
+ AVERAGE FORCE                      5.099E+08   TIME AVG. FORCE       5.159E+08
  LARGEST SCALED RESIDUAL FORCE     -8.711E+03   AT NODE         82   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE     -8.711E+03
- LARGEST INCREMENT OF DISP.        -6.534E-05   AT NODE         81   DOF  1
+ LARGEST INCREMENT OF DISP.        -6.535E-05   AT NODE         81   DOF  1
    INSTANCE: ROCK_INST                                                                       
  LARGEST CORRECTION TO DISP.        4.243E-06   AT NODE         55   DOF  1
    INSTANCE: PIPE_INST                                                                       
@@ -11162,23 +11162,23 @@
         NUMBER OF EQUATIONS:  18983
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.561e+08
-        SOLVER ELAPSED TIME:  126ms
+        SOLVER ELAPSED TIME:  146ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     3
 
-   MAX. PENETRATION ERROR 55.5112E-18  AT NODE ROCK_INST.111 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR 55.5112E-18  AT NODE ROCK_INST.101 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR 174.322E-06   AT NODE ROCK_INST.111 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR 174.322E-06   AT NODE ROCK_INST.101 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.105E+08   TIME AVG. FORCE       5.160E+08
+ AVERAGE FORCE                      5.099E+08   TIME AVG. FORCE       5.159E+08
  LARGEST SCALED RESIDUAL FORCE      -2.81       AT NODE       1941   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      -2.81    
  LARGEST INCREMENT OF DISP.        -6.535E-05   AT NODE         81   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.        9.071E-08   AT NODE        120   DOF  2
+ LARGEST CORRECTION TO DISP.        9.066E-08   AT NODE        120   DOF  2
    INSTANCE: PIPE_INST                                                                       
           THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
 
@@ -11199,26 +11199,26 @@
         NUMBER OF EQUATIONS:  18983
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.561e+08
-        SOLVER ELAPSED TIME:  137ms
+        SOLVER ELAPSED TIME:  142ms
 
                     1 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM OPEN TO CLOSED
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     1
 
-   MAX. PENETRATION ERROR 94.6587E-06  AT NODE ROCK_INST.81 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR 94.6577E-06  AT NODE ROCK_INST.81 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR 297.257E+06   AT NODE ROCK_INST.81 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR 297.254E+06   AT NODE ROCK_INST.81 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           PENETRATION ERROR TOO LARGE COMPARED TO DISPLACEMENT INCREMENT.
 
- AVERAGE FORCE                      5.094E+08   TIME AVG. FORCE       5.160E+08
+ AVERAGE FORCE                      5.092E+08   TIME AVG. FORCE       5.158E+08
  LARGEST SCALED RESIDUAL FORCE      1.566E+06   AT NODE         82   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      1.566E+06
  LARGEST INCREMENT OF DISP.        -9.805E-05   AT NODE         81   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.        2.321E-06   AT NODE         56   DOF  2
+ LARGEST CORRECTION TO DISP.        2.320E-06   AT NODE         56   DOF  2
    INSTANCE: PIPE_INST                                                                       
           DISP.    CORRECTION TOO LARGE COMPARED TO DISP.    INCREMENT
  
@@ -11227,7 +11227,7 @@
         NUMBER OF EQUATIONS:  18984
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.563e+08
-        SOLVER ELAPSED TIME:  135ms
+        SOLVER ELAPSED TIME:  145ms
 
                     2 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM SLIPPING TO STICKING
@@ -11235,19 +11235,19 @@
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     2
 
-   MAX. PENETRATION ERROR -1.31614E-06 AT NODE ROCK_INST.81 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -1.31486E-06 AT NODE ROCK_INST.81 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -4.13308E+06 AT NODE ROCK_INST.81 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -4.12905E+06 AT NODE ROCK_INST.81 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINT ERRORS ARE WITHIN THE TOLERANCES.
 
- AVERAGE FORCE                      5.052E+08   TIME AVG. FORCE       5.159E+08
- LARGEST SCALED RESIDUAL FORCE     -5.550E+08   AT NODE         81   DOF  2
+ AVERAGE FORCE                      5.048E+08   TIME AVG. FORCE       5.158E+08
+ LARGEST SCALED RESIDUAL FORCE     -5.545E+08   AT NODE         81   DOF  2
    INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE     -5.550E+08
- LARGEST INCREMENT OF DISP.        -5.238E-02   AT NODE        648   DOF  2
+  CORRESPONDING RESIDUAL FORCE     -5.545E+08
+ LARGEST INCREMENT OF DISP.        -5.235E-02   AT NODE        648   DOF  2
    INSTANCE: PIPE_INST                                                                       
- LARGEST CORRECTION TO DISP.       -5.237E-02   AT NODE        648   DOF  2
+ LARGEST CORRECTION TO DISP.       -5.234E-02   AT NODE        648   DOF  2
    INSTANCE: PIPE_INST                                                                       
           FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
  
@@ -11256,7 +11256,7 @@
         NUMBER OF EQUATIONS:  18984
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.563e+08
-        SOLVER ELAPSED TIME:  127ms
+        SOLVER ELAPSED TIME:  125ms
 
                     2 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM SLIPPING TO STICKING
@@ -11264,19 +11264,19 @@
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     3
 
-   MAX. PENETRATION ERROR -1.17914E-06 AT NODE ROCK_INST.81 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -1.19760E-06 AT NODE ROCK_INST.81 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -3.70287E+06 AT NODE ROCK_INST.81 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -3.76083E+06 AT NODE ROCK_INST.81 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINT ERRORS ARE WITHIN THE TOLERANCES.
 
- AVERAGE FORCE                      5.069E+08   TIME AVG. FORCE       5.159E+08
- LARGEST SCALED RESIDUAL FORCE      3.354E+08   AT NODE        121   DOF  1
+ AVERAGE FORCE                      5.062E+08   TIME AVG. FORCE       5.158E+08
+ LARGEST SCALED RESIDUAL FORCE      2.714E+08   AT NODE        121   DOF  1
    INSTANCE: PIPE_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE      3.354E+08
- LARGEST INCREMENT OF DISP.        -1.351E-02   AT NODE         53   DOF  2
+  CORRESPONDING RESIDUAL FORCE      2.714E+08
+ LARGEST INCREMENT OF DISP.         1.220E-02   AT NODE        121   DOF  2
    INSTANCE: PIPE_INST                                                                       
- LARGEST CORRECTION TO DISP.        4.172E-02   AT NODE         54   DOF  2
+ LARGEST CORRECTION TO DISP.        4.347E-02   AT NODE         54   DOF  2
    INSTANCE: PIPE_INST                                                                       
           FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
  
@@ -11285,7 +11285,7 @@
         NUMBER OF EQUATIONS:  18984
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.563e+08
-        SOLVER ELAPSED TIME:  143ms
+        SOLVER ELAPSED TIME:  132ms
 
                     2 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM SLIPPING TO STICKING
@@ -11293,19 +11293,19 @@
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     4
 
-   MAX. PENETRATION ERROR -42.5205E-09  AT NODE ROCK_INST.81 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -53.8976E-09  AT NODE ROCK_INST.81 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -133.527E+03   AT NODE ROCK_INST.81 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -169.255E+03   AT NODE ROCK_INST.81 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINT ERRORS ARE WITHIN THE TOLERANCES.
 
- AVERAGE FORCE                      5.103E+08   TIME AVG. FORCE       5.160E+08
- LARGEST SCALED RESIDUAL FORCE      1.072E+07   AT NODE         81   DOF  2
+ AVERAGE FORCE                      5.090E+08   TIME AVG. FORCE       5.158E+08
+ LARGEST SCALED RESIDUAL FORCE      1.224E+07   AT NODE         81   DOF  2
    INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE      1.072E+07
- LARGEST INCREMENT OF DISP.         1.049E-02   AT NODE        123   DOF  2
+  CORRESPONDING RESIDUAL FORCE      1.224E+07
+ LARGEST INCREMENT OF DISP.         1.172E-02   AT NODE        123   DOF  2
    INSTANCE: PIPE_INST                                                                       
- LARGEST CORRECTION TO DISP.        2.401E-02   AT NODE         53   DOF  2
+ LARGEST CORRECTION TO DISP.        2.357E-02   AT NODE         53   DOF  2
    INSTANCE: PIPE_INST                                                                       
           FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
  
@@ -11314,26 +11314,26 @@
         NUMBER OF EQUATIONS:  18984
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.563e+08
-        SOLVER ELAPSED TIME:  118ms
+        SOLVER ELAPSED TIME:  139ms
 
                     1 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM CLOSED TO OPEN
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     5
 
-   MAX. PENETRATION ERROR -32.3823E-09  AT NODE ROCK_INST.82 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -26.9356E-09  AT NODE ROCK_INST.82 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -4.04463E+06 AT NODE ROCK_INST.81 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -3.77165E+06 AT NODE ROCK_INST.81 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINT ERRORS ARE WITHIN THE TOLERANCES.
 
- AVERAGE FORCE                      5.067E+08   TIME AVG. FORCE       5.159E+08
+ AVERAGE FORCE                      5.069E+08   TIME AVG. FORCE       5.158E+08
  LARGEST SCALED RESIDUAL FORCE     -5.486E+06   AT NODE        122   DOF  2
    INSTANCE: PIPE_INST                                                                       
   CORRESPONDING RESIDUAL FORCE     -5.486E+06
- LARGEST INCREMENT OF DISP.         1.799E-02   AT NODE        648   DOF  2
+ LARGEST INCREMENT OF DISP.         1.980E-02   AT NODE        123   DOF  2
    INSTANCE: PIPE_INST                                                                       
- LARGEST CORRECTION TO DISP.        7.500E-03   AT NODE        648   DOF  2
+ LARGEST CORRECTION TO DISP.        8.071E-03   AT NODE        648   DOF  2
    INSTANCE: PIPE_INST                                                                       
           FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
  
@@ -11342,31 +11342,31 @@
         NUMBER OF EQUATIONS:  18983
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.561e+08
-        SOLVER ELAPSED TIME:  134ms
+        SOLVER ELAPSED TIME:  143ms
  
 
  ***WARNING: THE SYSTEM MATRIX HAS 1 NEGATIVE EIGENVALUES.
              EXPLANATIONS ARE SUGGESTED AFTER THE FIRST OCCURRENCE OF THIS MESSAGE.
 
-                    4 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
-                    2 POINTS CHANGED FROM OPEN TO CLOSED
+                    7 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
+                    5 POINTS CHANGED FROM OPEN TO CLOSED
                     2 POINTS CHANGED FROM CLOSED TO OPEN
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     6
 
-   MAX. PENETRATION ERROR 387.092E-06   AT NODE ROCK_INST.81 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR 680.200E-06   AT NODE ROCK_INST.79 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR 1.21558E+09 AT NODE ROCK_INST.81 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR 2.13603E+09 AT NODE ROCK_INST.79 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE ESTIMATED CONTACT FORCE ERROR IS OUTSIDE OF CONVERGENCE TOLERANCES.
 
- AVERAGE FORCE                      5.037E+08   TIME AVG. FORCE       5.159E+08
- LARGEST SCALED RESIDUAL FORCE     -2.466E+09   AT NODE        121   DOF  1
+ AVERAGE FORCE                      5.025E+08   TIME AVG. FORCE       5.157E+08
+ LARGEST SCALED RESIDUAL FORCE     -4.415E+09   AT NODE        121   DOF  1
    INSTANCE: PIPE_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE     -2.466E+09
- LARGEST INCREMENT OF DISP.         0.128       AT NODE        651   DOF  2
+  CORRESPONDING RESIDUAL FORCE     -4.415E+09
+ LARGEST INCREMENT OF DISP.         0.207       AT NODE        651   DOF  2
    INSTANCE: PIPE_INST                                                                       
- LARGEST CORRECTION TO DISP.        0.118       AT NODE         55   DOF  2
+ LARGEST CORRECTION TO DISP.        0.189       AT NODE         55   DOF  2
    INSTANCE: PIPE_INST                                                                       
           FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
  
@@ -11381,26 +11381,26 @@
         NUMBER OF EQUATIONS:  18983
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.561e+08
-        SOLVER ELAPSED TIME:  133ms
+        SOLVER ELAPSED TIME:  139ms
 
                     1 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM OPEN TO CLOSED
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     1
 
-   MAX. PENETRATION ERROR 11.2161E-06  AT NODE ROCK_INST.81 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR 11.2157E-06  AT NODE ROCK_INST.81 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR 35.2220E+06  AT NODE ROCK_INST.81 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR 35.2206E+06  AT NODE ROCK_INST.81 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           PENETRATION ERROR TOO LARGE COMPARED TO DISPLACEMENT INCREMENT.
 
- AVERAGE FORCE                      5.101E+08   TIME AVG. FORCE       5.160E+08
+ AVERAGE FORCE                      5.097E+08   TIME AVG. FORCE       5.158E+08
  LARGEST SCALED RESIDUAL FORCE      1.809E+05   AT NODE         82   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      1.809E+05
  LARGEST INCREMENT OF DISP.        -2.451E-05   AT NODE         81   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.        3.660E-07   AT NODE         56   DOF  2
+ LARGEST CORRECTION TO DISP.        3.658E-07   AT NODE         56   DOF  2
    INSTANCE: PIPE_INST                                                                       
           DISP.    CORRECTION TOO LARGE COMPARED TO DISP.    INCREMENT
  
@@ -11409,26 +11409,26 @@
         NUMBER OF EQUATIONS:  18984
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.563e+08
-        SOLVER ELAPSED TIME:  138ms
+        SOLVER ELAPSED TIME:  127ms
 
                     1 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM CLOSED TO OPEN
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     2
 
-   MAX. PENETRATION ERROR 1.04511E-09 AT NODE ROCK_INST.82 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR 1.04551E-09 AT NODE ROCK_INST.82 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -3.44945E+06 AT NODE ROCK_INST.81 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -3.45040E+06 AT NODE ROCK_INST.81 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINT ERRORS ARE WITHIN THE TOLERANCES.
 
- AVERAGE FORCE                      5.106E+08   TIME AVG. FORCE       5.160E+08
- LARGEST SCALED RESIDUAL FORCE      3.097E+06   AT NODE         81   DOF  1
+ AVERAGE FORCE                      5.107E+08   TIME AVG. FORCE       5.158E+08
+ LARGEST SCALED RESIDUAL FORCE      3.098E+06   AT NODE         81   DOF  1
    INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE      3.097E+06
- LARGEST INCREMENT OF DISP.         4.711E-03   AT NODE        648   DOF  2
+  CORRESPONDING RESIDUAL FORCE      3.098E+06
+ LARGEST INCREMENT OF DISP.         4.712E-03   AT NODE        648   DOF  2
    INSTANCE: PIPE_INST                                                                       
- LARGEST CORRECTION TO DISP.        4.712E-03   AT NODE        648   DOF  2
+ LARGEST CORRECTION TO DISP.        4.713E-03   AT NODE        648   DOF  2
    INSTANCE: PIPE_INST                                                                       
           FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
  
@@ -11437,26 +11437,26 @@
         NUMBER OF EQUATIONS:  18983
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.561e+08
-        SOLVER ELAPSED TIME:  139ms
+        SOLVER ELAPSED TIME:  138ms
 
                     1 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM OPEN TO CLOSED
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     3
 
-   MAX. PENETRATION ERROR 9.53512E-06 AT NODE ROCK_INST.81 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR 9.53386E-06 AT NODE ROCK_INST.81 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR 29.9431E+06  AT NODE ROCK_INST.81 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR 29.9392E+06  AT NODE ROCK_INST.81 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           PENETRATION ERROR TOO LARGE COMPARED TO DISPLACEMENT INCREMENT.
 
- AVERAGE FORCE                      5.102E+08   TIME AVG. FORCE       5.160E+08
- LARGEST SCALED RESIDUAL FORCE      4.211E+05   AT NODE        121   DOF  2
+ AVERAGE FORCE                      5.097E+08   TIME AVG. FORCE       5.158E+08
+ LARGEST SCALED RESIDUAL FORCE      4.213E+05   AT NODE        121   DOF  2
    INSTANCE: PIPE_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE      4.211E+05
+  CORRESPONDING RESIDUAL FORCE      4.213E+05
  LARGEST INCREMENT OF DISP.        -1.140E-04   AT NODE         54   DOF  2
    INSTANCE: PIPE_INST                                                                       
- LARGEST CORRECTION TO DISP.       -4.824E-03   AT NODE        648   DOF  2
+ LARGEST CORRECTION TO DISP.       -4.825E-03   AT NODE        648   DOF  2
    INSTANCE: PIPE_INST                                                                       
           DISP.    CORRECTION TOO LARGE COMPARED TO DISP.    INCREMENT
  
@@ -11465,26 +11465,26 @@
         NUMBER OF EQUATIONS:  18984
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.563e+08
-        SOLVER ELAPSED TIME:  134ms
+        SOLVER ELAPSED TIME:  145ms
 
                     1 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM SLIPPING TO STICKING
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     4
 
-   MAX. PENETRATION ERROR -411.592E-12   AT NODE ROCK_INST.81 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -411.560E-12   AT NODE ROCK_INST.81 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -1.29252E+03 AT NODE ROCK_INST.81 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -1.29242E+03 AT NODE ROCK_INST.81 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINT ERRORS ARE WITHIN THE TOLERANCES.
 
- AVERAGE FORCE                      5.103E+08   TIME AVG. FORCE       5.160E+08
+ AVERAGE FORCE                      5.098E+08   TIME AVG. FORCE       5.158E+08
  LARGEST SCALED RESIDUAL FORCE      3.884E+05   AT NODE         81   DOF  2
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      3.884E+05
- LARGEST INCREMENT OF DISP.         7.759E-04   AT NODE        123   DOF  2
+ LARGEST INCREMENT OF DISP.         7.757E-04   AT NODE        123   DOF  2
    INSTANCE: PIPE_INST                                                                       
- LARGEST CORRECTION TO DISP.        8.886E-04   AT NODE        123   DOF  2
+ LARGEST CORRECTION TO DISP.        8.885E-04   AT NODE        123   DOF  2
    INSTANCE: PIPE_INST                                                                       
           DISP.    CORRECTION TOO LARGE COMPARED TO DISP.    INCREMENT
  
@@ -11493,23 +11493,23 @@
         NUMBER OF EQUATIONS:  18984
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.563e+08
-        SOLVER ELAPSED TIME:  135ms
+        SOLVER ELAPSED TIME:  152ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
-   MAX. PENETRATION ERROR -683.848E-12   AT NODE ROCK_INST.81 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -683.647E-12   AT NODE ROCK_INST.81 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -2.14749E+03 AT NODE ROCK_INST.81 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -2.14686E+03 AT NODE ROCK_INST.81 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.104E+08   TIME AVG. FORCE       5.160E+08
- LARGEST SCALED RESIDUAL FORCE     -4.484E+05   AT NODE         81   DOF  2
+ AVERAGE FORCE                      5.098E+08   TIME AVG. FORCE       5.158E+08
+ LARGEST SCALED RESIDUAL FORCE     -4.482E+05   AT NODE         81   DOF  2
    INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE     -4.484E+05
- LARGEST INCREMENT OF DISP.        -4.978E-04   AT NODE        649   DOF  2
+  CORRESPONDING RESIDUAL FORCE     -4.482E+05
+ LARGEST INCREMENT OF DISP.        -4.976E-04   AT NODE        649   DOF  2
    INSTANCE: PIPE_INST                                                                       
- LARGEST CORRECTION TO DISP.       -1.274E-03   AT NODE        648   DOF  2
+ LARGEST CORRECTION TO DISP.       -1.273E-03   AT NODE        648   DOF  2
    INSTANCE: PIPE_INST                                                                       
           DISP.    CORRECTION TOO LARGE COMPARED TO DISP.    INCREMENT
  
@@ -11518,23 +11518,23 @@
         NUMBER OF EQUATIONS:  18984
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.563e+08
-        SOLVER ELAPSED TIME:  129ms
+        SOLVER ELAPSED TIME:  139ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
 
-   MAX. PENETRATION ERROR -82.9257E-12  AT NODE ROCK_INST.81 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -82.8821E-12  AT NODE ROCK_INST.81 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -260.412       AT NODE ROCK_INST.81 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -260.275       AT NODE ROCK_INST.81 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.105E+08   TIME AVG. FORCE       5.160E+08
- LARGEST SCALED RESIDUAL FORCE     -5.337E+04   AT NODE         81   DOF  2
+ AVERAGE FORCE                      5.100E+08   TIME AVG. FORCE       5.158E+08
+ LARGEST SCALED RESIDUAL FORCE     -5.333E+04   AT NODE         81   DOF  2
    INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE     -5.337E+04
- LARGEST INCREMENT OF DISP.        -5.470E-05   AT NODE         53   DOF  2
+  CORRESPONDING RESIDUAL FORCE     -5.333E+04
+ LARGEST INCREMENT OF DISP.        -5.466E-05   AT NODE         53   DOF  2
    INSTANCE: PIPE_INST                                                                       
- LARGEST CORRECTION TO DISP.        4.431E-04   AT NODE        648   DOF  2
+ LARGEST CORRECTION TO DISP.        4.430E-04   AT NODE        648   DOF  2
    INSTANCE: PIPE_INST                                                                       
           DISP.    CORRECTION TOO LARGE COMPARED TO DISP.    INCREMENT
  
@@ -11543,23 +11543,23 @@
         NUMBER OF EQUATIONS:  18984
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.563e+08
-        SOLVER ELAPSED TIME:  137ms
+        SOLVER ELAPSED TIME:  132ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     3
 
-   MAX. PENETRATION ERROR -2.01425E-12 AT NODE ROCK_INST.81 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -2.01195E-12 AT NODE ROCK_INST.81 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -6.32535     AT NODE ROCK_INST.81 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -6.31811     AT NODE ROCK_INST.81 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.106E+08   TIME AVG. FORCE       5.160E+08
- LARGEST SCALED RESIDUAL FORCE     -1.297E+03   AT NODE         81   DOF  2
+ AVERAGE FORCE                      5.100E+08   TIME AVG. FORCE       5.158E+08
+ LARGEST SCALED RESIDUAL FORCE     -1.295E+03   AT NODE         81   DOF  2
    INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE     -1.297E+03
+  CORRESPONDING RESIDUAL FORCE     -1.295E+03
  LARGEST INCREMENT OF DISP.        -1.849E-05   AT NODE         80   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.        6.913E-05   AT NODE        648   DOF  2
+ LARGEST CORRECTION TO DISP.        6.908E-05   AT NODE        648   DOF  2
    INSTANCE: PIPE_INST                                                                       
           DISP.    CORRECTION TOO LARGE COMPARED TO DISP.    INCREMENT
  
@@ -11568,23 +11568,23 @@
         NUMBER OF EQUATIONS:  18984
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.563e+08
-        SOLVER ELAPSED TIME:  141ms
+        SOLVER ELAPSED TIME:  125ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     4
 
-   MAX. PENETRATION ERROR -1.27676E-15 AT NODE ROCK_INST.81 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -1.30451E-15 AT NODE ROCK_INST.81 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -4.00940E-03 AT NODE ROCK_INST.81 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -4.09656E-03 AT NODE ROCK_INST.81 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.106E+08   TIME AVG. FORCE       5.160E+08
- LARGEST SCALED RESIDUAL FORCE     -0.893       AT NODE         81   DOF  2
+ AVERAGE FORCE                      5.100E+08   TIME AVG. FORCE       5.158E+08
+ LARGEST SCALED RESIDUAL FORCE     -0.891       AT NODE         81   DOF  2
    INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE     -0.893    
+  CORRESPONDING RESIDUAL FORCE     -0.891    
  LARGEST INCREMENT OF DISP.        -1.848E-05   AT NODE         80   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.        1.762E-06   AT NODE        648   DOF  2
+ LARGEST CORRECTION TO DISP.        1.760E-06   AT NODE        648   DOF  2
    INSTANCE: PIPE_INST                                                                       
           THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
 
@@ -11605,23 +11605,23 @@
         NUMBER OF EQUATIONS:  18984
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.563e+08
-        SOLVER ELAPSED TIME:  144ms
+        SOLVER ELAPSED TIME:  142ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
-   MAX. PENETRATION ERROR 8.98176E-12 AT NODE ROCK_INST.81 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR 8.97363E-12 AT NODE ROCK_INST.81 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR 28.2054      AT NODE ROCK_INST.81 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR 28.1799      AT NODE ROCK_INST.81 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.150E+08   TIME AVG. FORCE       5.160E+08
+ AVERAGE FORCE                      5.137E+08   TIME AVG. FORCE       5.158E+08
  LARGEST SCALED RESIDUAL FORCE      3.706E+06   AT NODE         81   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      3.706E+06
  LARGEST INCREMENT OF DISP.        -3.445E-05   AT NODE         80   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.       -2.605E-05   AT NODE         50   DOF  2
+ LARGEST CORRECTION TO DISP.       -2.603E-05   AT NODE         50   DOF  2
    INSTANCE: PIPE_INST                                                                       
           FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
  
@@ -11630,23 +11630,23 @@
         NUMBER OF EQUATIONS:  18984
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.563e+08
-        SOLVER ELAPSED TIME:  126ms
+        SOLVER ELAPSED TIME:  140ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
 
-   MAX. PENETRATION ERROR -1.50460E-12 AT NODE ROCK_INST.82 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -1.50374E-12 AT NODE ROCK_INST.82 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -4.72490     AT NODE ROCK_INST.82 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -4.72220     AT NODE ROCK_INST.82 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.125E+08   TIME AVG. FORCE       5.159E+08
+ AVERAGE FORCE                      5.116E+08   TIME AVG. FORCE       5.158E+08
  LARGEST SCALED RESIDUAL FORCE     -3.170E+04   AT NODE         81   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE     -3.170E+04
  LARGEST INCREMENT OF DISP.        -3.490E-05   AT NODE         80   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.        8.497E-06   AT NODE         50   DOF  2
+ LARGEST CORRECTION TO DISP.        8.490E-06   AT NODE         50   DOF  2
    INSTANCE: PIPE_INST                                                                       
           DISP.    CORRECTION TOO LARGE COMPARED TO DISP.    INCREMENT
  
@@ -11655,23 +11655,23 @@
         NUMBER OF EQUATIONS:  18984
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.563e+08
-        SOLVER ELAPSED TIME:  127ms
+        SOLVER ELAPSED TIME:  123ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     3
 
-   MAX. PENETRATION ERROR -2.85882E-15 AT NODE ROCK_INST.81 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -2.88658E-15 AT NODE ROCK_INST.81 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -8.97757E-03 AT NODE ROCK_INST.81 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -9.06473E-03 AT NODE ROCK_INST.81 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.125E+08   TIME AVG. FORCE       5.159E+08
+ AVERAGE FORCE                      5.116E+08   TIME AVG. FORCE       5.158E+08
  LARGEST SCALED RESIDUAL FORCE      -3.37       AT NODE         81   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      -3.37    
  LARGEST INCREMENT OF DISP.        -3.491E-05   AT NODE         80   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.        2.146E-06   AT NODE        123   DOF  2
+ LARGEST CORRECTION TO DISP.        2.144E-06   AT NODE        123   DOF  2
    INSTANCE: PIPE_INST                                                                       
           THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
 
@@ -11692,17 +11692,17 @@
         NUMBER OF EQUATIONS:  18984
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.563e+08
-        SOLVER ELAPSED TIME:  125ms
+        SOLVER ELAPSED TIME:  141ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
-   MAX. PENETRATION ERROR -100.142E-15   AT NODE ROCK_INST.81 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -100.059E-15   AT NODE ROCK_INST.81 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -314.476E-03   AT NODE ROCK_INST.81 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -314.215E-03   AT NODE ROCK_INST.81 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.121E+08   TIME AVG. FORCE       5.159E+08
+ AVERAGE FORCE                      5.112E+08   TIME AVG. FORCE       5.157E+08
  LARGEST SCALED RESIDUAL FORCE      2.814E+06   AT NODE         81   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      2.814E+06
@@ -11717,23 +11717,23 @@
         NUMBER OF EQUATIONS:  18984
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.563e+08
-        SOLVER ELAPSED TIME:  117ms
+        SOLVER ELAPSED TIME:  132ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
 
-   MAX. PENETRATION ERROR -750.011E-15   AT NODE ROCK_INST.82 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -749.567E-15   AT NODE ROCK_INST.82 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -2.35526     AT NODE ROCK_INST.82 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -2.35386     AT NODE ROCK_INST.82 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.132E+08   TIME AVG. FORCE       5.159E+08
+ AVERAGE FORCE                      5.125E+08   TIME AVG. FORCE       5.157E+08
  LARGEST SCALED RESIDUAL FORCE     -2.180E+04   AT NODE         81   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE     -2.180E+04
  LARGEST INCREMENT OF DISP.        -5.303E-05   AT NODE         80   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.        5.776E-06   AT NODE         54   DOF  1
+ LARGEST CORRECTION TO DISP.        5.775E-06   AT NODE         54   DOF  1
    INSTANCE: PIPE_INST                                                                       
           DISP.    CORRECTION TOO LARGE COMPARED TO DISP.    INCREMENT
  
@@ -11742,23 +11742,23 @@
         NUMBER OF EQUATIONS:  18984
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.563e+08
-        SOLVER ELAPSED TIME:  125ms
+        SOLVER ELAPSED TIME:  143ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     3
 
-   MAX. PENETRATION ERROR 139.242E-18   AT NODE ROCK_INST.82 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR 83.2667E-18  AT NODE ROCK_INST.82 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR 437.262E-06   AT NODE ROCK_INST.82 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR 261.483E-06   AT NODE ROCK_INST.82 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.132E+08   TIME AVG. FORCE       5.159E+08
- LARGEST SCALED RESIDUAL FORCE      0.724       AT NODE         80   DOF  1
+ AVERAGE FORCE                      5.125E+08   TIME AVG. FORCE       5.157E+08
+ LARGEST SCALED RESIDUAL FORCE      0.723       AT NODE         80   DOF  1
    INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE      0.724    
+  CORRESPONDING RESIDUAL FORCE      0.723    
  LARGEST INCREMENT OF DISP.        -5.304E-05   AT NODE         80   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.        2.058E-07   AT NODE        121   DOF  2
+ LARGEST CORRECTION TO DISP.        2.057E-07   AT NODE        121   DOF  2
    INSTANCE: PIPE_INST                                                                       
           THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
 
@@ -11779,7 +11779,7 @@
         NUMBER OF EQUATIONS:  18984
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.563e+08
-        SOLVER ELAPSED TIME:  141ms
+        SOLVER ELAPSED TIME:  135ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -11789,13 +11789,13 @@
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.106E+08   TIME AVG. FORCE       5.158E+08
+ AVERAGE FORCE                      5.101E+08   TIME AVG. FORCE       5.157E+08
  LARGEST SCALED RESIDUAL FORCE      2.385E+06   AT NODE         81   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      2.385E+06
  LARGEST INCREMENT OF DISP.        -7.959E-05   AT NODE         80   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.        4.375E-06   AT NODE         55   DOF  2
+ LARGEST CORRECTION TO DISP.        4.373E-06   AT NODE         55   DOF  2
    INSTANCE: PIPE_INST                                                                       
           DISP.    CORRECTION TOO LARGE COMPARED TO DISP.    INCREMENT
  
@@ -11804,17 +11804,17 @@
         NUMBER OF EQUATIONS:  18984
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.563e+08
-        SOLVER ELAPSED TIME:  114ms
+        SOLVER ELAPSED TIME:  135ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
 
-   MAX. PENETRATION ERROR -603.795E-15   AT NODE ROCK_INST.82 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -603.406E-15   AT NODE ROCK_INST.82 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -1.89610     AT NODE ROCK_INST.82 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -1.89488     AT NODE ROCK_INST.82 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.110E+08   TIME AVG. FORCE       5.158E+08
+ AVERAGE FORCE                      5.104E+08   TIME AVG. FORCE       5.157E+08
  LARGEST SCALED RESIDUAL FORCE     -1.807E+04   AT NODE         81   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE     -1.807E+04
@@ -11829,23 +11829,23 @@
         NUMBER OF EQUATIONS:  18984
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.563e+08
-        SOLVER ELAPSED TIME:  135ms
+        SOLVER ELAPSED TIME:  127ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     3
 
-   MAX. PENETRATION ERROR 83.2667E-18  AT NODE ROCK_INST.82 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR 82.9974E-18  AT NODE ROCK_INST.82 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR 261.483E-06   AT NODE ROCK_INST.82 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR 260.637E-06   AT NODE ROCK_INST.82 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.110E+08   TIME AVG. FORCE       5.158E+08
+ AVERAGE FORCE                      5.104E+08   TIME AVG. FORCE       5.157E+08
  LARGEST SCALED RESIDUAL FORCE      -1.54       AT NODE       1913   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      -1.54    
  LARGEST INCREMENT OF DISP.        -8.047E-05   AT NODE         80   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.        1.540E-07   AT NODE        121   DOF  2
+ LARGEST CORRECTION TO DISP.        1.539E-07   AT NODE        121   DOF  2
    INSTANCE: PIPE_INST                                                                       
           THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
 
@@ -11866,26 +11866,26 @@
         NUMBER OF EQUATIONS:  18984
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.563e+08
-        SOLVER ELAPSED TIME:  147ms
+        SOLVER ELAPSED TIME:  134ms
 
                     1 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM OPEN TO CLOSED
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     1
 
-   MAX. PENETRATION ERROR 123.175E-06   AT NODE ROCK_INST.80 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR 123.174E-06   AT NODE ROCK_INST.80 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR 386.807E+06   AT NODE ROCK_INST.80 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR 386.803E+06   AT NODE ROCK_INST.80 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           PENETRATION ERROR TOO LARGE COMPARED TO DISPLACEMENT INCREMENT.
 
- AVERAGE FORCE                      5.099E+08   TIME AVG. FORCE       5.158E+08
+ AVERAGE FORCE                      5.096E+08   TIME AVG. FORCE       5.156E+08
  LARGEST SCALED RESIDUAL FORCE      2.127E+06   AT NODE         81   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      2.127E+06
  LARGEST INCREMENT OF DISP.        -1.207E-04   AT NODE         80   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.        2.801E-06   AT NODE         55   DOF  2
+ LARGEST CORRECTION TO DISP.        2.800E-06   AT NODE         55   DOF  2
    INSTANCE: PIPE_INST                                                                       
           DISP.    CORRECTION TOO LARGE COMPARED TO DISP.    INCREMENT
  
@@ -11894,7 +11894,7 @@
         NUMBER OF EQUATIONS:  18985
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.603e+08
-        SOLVER ELAPSED TIME:  126ms
+        SOLVER ELAPSED TIME:  127ms
 
                     2 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM SLIPPING TO STICKING
@@ -11902,19 +11902,19 @@
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     2
 
-   MAX. PENETRATION ERROR -1.43861E-06 AT NODE ROCK_INST.80 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -1.43743E-06 AT NODE ROCK_INST.80 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -4.51766E+06 AT NODE ROCK_INST.80 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -4.51395E+06 AT NODE ROCK_INST.80 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINT ERRORS ARE WITHIN THE TOLERANCES.
 
- AVERAGE FORCE                      5.048E+08   TIME AVG. FORCE       5.157E+08
- LARGEST SCALED RESIDUAL FORCE     -6.342E+08   AT NODE         80   DOF  2
-   INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE     -6.342E+08
- LARGEST INCREMENT OF DISP.        -5.746E-02   AT NODE        645   DOF  2
+ AVERAGE FORCE                      5.046E+08   TIME AVG. FORCE       5.156E+08
+ LARGEST SCALED RESIDUAL FORCE      6.349E+08   AT NODE        122   DOF  1
    INSTANCE: PIPE_INST                                                                       
- LARGEST CORRECTION TO DISP.       -5.745E-02   AT NODE        645   DOF  2
+  CORRESPONDING RESIDUAL FORCE      6.349E+08
+ LARGEST INCREMENT OF DISP.        -5.743E-02   AT NODE        645   DOF  2
+   INSTANCE: PIPE_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -5.742E-02   AT NODE        645   DOF  2
    INSTANCE: PIPE_INST                                                                       
           FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
  
@@ -11923,7 +11923,7 @@
         NUMBER OF EQUATIONS:  18985
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.603e+08
-        SOLVER ELAPSED TIME:  124ms
+        SOLVER ELAPSED TIME:  128ms
 
                     2 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM SLIPPING TO STICKING
@@ -11931,19 +11931,19 @@
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     3
 
-   MAX. PENETRATION ERROR -1.43825E-06 AT NODE ROCK_INST.80 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -1.45966E-06 AT NODE ROCK_INST.80 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -4.51653E+06 AT NODE ROCK_INST.80 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -4.58376E+06 AT NODE ROCK_INST.80 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINT ERRORS ARE WITHIN THE TOLERANCES.
 
- AVERAGE FORCE                      5.063E+08   TIME AVG. FORCE       5.157E+08
- LARGEST SCALED RESIDUAL FORCE      3.650E+08   AT NODE        122   DOF  1
+ AVERAGE FORCE                      5.058E+08   TIME AVG. FORCE       5.156E+08
+ LARGEST SCALED RESIDUAL FORCE      2.982E+08   AT NODE        122   DOF  1
    INSTANCE: PIPE_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE      3.650E+08
- LARGEST INCREMENT OF DISP.         1.412E-02   AT NODE        122   DOF  2
+  CORRESPONDING RESIDUAL FORCE      2.982E+08
+ LARGEST INCREMENT OF DISP.         1.574E-02   AT NODE        122   DOF  2
    INSTANCE: PIPE_INST                                                                       
- LARGEST CORRECTION TO DISP.        4.891E-02   AT NODE         53   DOF  2
+ LARGEST CORRECTION TO DISP.        5.078E-02   AT NODE         53   DOF  2
    INSTANCE: PIPE_INST                                                                       
           FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
  
@@ -11952,7 +11952,7 @@
         NUMBER OF EQUATIONS:  18985
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.603e+08
-        SOLVER ELAPSED TIME:  135ms
+        SOLVER ELAPSED TIME:  134ms
 
                     2 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM SLIPPING TO STICKING
@@ -11960,19 +11960,19 @@
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     4
 
-   MAX. PENETRATION ERROR -48.5761E-09  AT NODE ROCK_INST.81 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -56.5290E-09  AT NODE ROCK_INST.81 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -152.544E+03   AT NODE ROCK_INST.81 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -177.518E+03   AT NODE ROCK_INST.81 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINT ERRORS ARE WITHIN THE TOLERANCES.
 
- AVERAGE FORCE                      5.105E+08   TIME AVG. FORCE       5.158E+08
- LARGEST SCALED RESIDUAL FORCE      1.887E+07   AT NODE         80   DOF  2
+ AVERAGE FORCE                      5.086E+08   TIME AVG. FORCE       5.156E+08
+ LARGEST SCALED RESIDUAL FORCE      2.050E+07   AT NODE         80   DOF  2
    INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE      1.887E+07
- LARGEST INCREMENT OF DISP.         1.419E-02   AT NODE        124   DOF  2
+  CORRESPONDING RESIDUAL FORCE      2.050E+07
+ LARGEST INCREMENT OF DISP.         1.553E-02   AT NODE        124   DOF  2
    INSTANCE: PIPE_INST                                                                       
- LARGEST CORRECTION TO DISP.        2.687E-02   AT NODE         52   DOF  2
+ LARGEST CORRECTION TO DISP.        2.645E-02   AT NODE         52   DOF  2
    INSTANCE: PIPE_INST                                                                       
           FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
  
@@ -11981,26 +11981,26 @@
         NUMBER OF EQUATIONS:  18985
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.603e+08
-        SOLVER ELAPSED TIME:  123ms
+        SOLVER ELAPSED TIME:  138ms
 
                     1 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM CLOSED TO OPEN
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     5
 
-   MAX. PENETRATION ERROR -51.9249E-09  AT NODE ROCK_INST.81 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -48.1995E-09  AT NODE ROCK_INST.81 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -3.76343E+06 AT NODE ROCK_INST.80 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -3.51718E+06 AT NODE ROCK_INST.80 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINT ERRORS ARE WITHIN THE TOLERANCES.
 
- AVERAGE FORCE                      5.071E+08   TIME AVG. FORCE       5.157E+08
- LARGEST SCALED RESIDUAL FORCE     -6.392E+06   AT NODE        123   DOF  2
+ AVERAGE FORCE                      5.071E+08   TIME AVG. FORCE       5.156E+08
+ LARGEST SCALED RESIDUAL FORCE     -6.380E+06   AT NODE        123   DOF  2
    INSTANCE: PIPE_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE     -6.392E+06
- LARGEST INCREMENT OF DISP.         2.206E-02   AT NODE        124   DOF  2
+  CORRESPONDING RESIDUAL FORCE     -6.380E+06
+ LARGEST INCREMENT OF DISP.         2.371E-02   AT NODE        124   DOF  2
    INSTANCE: PIPE_INST                                                                       
- LARGEST CORRECTION TO DISP.        7.873E-03   AT NODE        645   DOF  2
+ LARGEST CORRECTION TO DISP.        8.179E-03   AT NODE        645   DOF  2
    INSTANCE: PIPE_INST                                                                       
           FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
  
@@ -12009,27 +12009,27 @@
         NUMBER OF EQUATIONS:  18984
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.563e+08
-        SOLVER ELAPSED TIME:  115ms
+        SOLVER ELAPSED TIME:  153ms
 
-                    4 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
-                    2 POINTS CHANGED FROM OPEN TO CLOSED
+                    7 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
+                    5 POINTS CHANGED FROM OPEN TO CLOSED
                     2 POINTS CHANGED FROM CLOSED TO OPEN
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     6
 
-   MAX. PENETRATION ERROR 413.172E-06   AT NODE ROCK_INST.80 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR 596.114E-06   AT NODE ROCK_INST.78 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR 1.29748E+09 AT NODE ROCK_INST.80 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR 1.87198E+09 AT NODE ROCK_INST.78 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE ESTIMATED CONTACT FORCE ERROR IS OUTSIDE OF CONVERGENCE TOLERANCES.
 
- AVERAGE FORCE                      5.037E+08   TIME AVG. FORCE       5.157E+08
- LARGEST SCALED RESIDUAL FORCE     -2.531E+09   AT NODE        122   DOF  1
+ AVERAGE FORCE                      5.029E+08   TIME AVG. FORCE       5.155E+08
+ LARGEST SCALED RESIDUAL FORCE     -3.841E+09   AT NODE        122   DOF  1
    INSTANCE: PIPE_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE     -2.531E+09
- LARGEST INCREMENT OF DISP.         0.132       AT NODE        648   DOF  2
+  CORRESPONDING RESIDUAL FORCE     -3.841E+09
+ LARGEST INCREMENT OF DISP.         0.189       AT NODE        648   DOF  2
    INSTANCE: PIPE_INST                                                                       
- LARGEST CORRECTION TO DISP.        0.121       AT NODE         54   DOF  2
+ LARGEST CORRECTION TO DISP.        0.173       AT NODE         54   DOF  2
    INSTANCE: PIPE_INST                                                                       
           FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
  
@@ -12044,26 +12044,26 @@
         NUMBER OF EQUATIONS:  18984
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.563e+08
-        SOLVER ELAPSED TIME:  130ms
+        SOLVER ELAPSED TIME:  126ms
 
                     1 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM OPEN TO CLOSED
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     1
 
-   MAX. PENETRATION ERROR 20.5113E-06  AT NODE ROCK_INST.80 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR 20.5106E-06  AT NODE ROCK_INST.80 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR 64.4115E+06  AT NODE ROCK_INST.80 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR 64.4096E+06  AT NODE ROCK_INST.80 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           PENETRATION ERROR TOO LARGE COMPARED TO DISPLACEMENT INCREMENT.
 
- AVERAGE FORCE                      5.106E+08   TIME AVG. FORCE       5.158E+08
+ AVERAGE FORCE                      5.101E+08   TIME AVG. FORCE       5.156E+08
  LARGEST SCALED RESIDUAL FORCE      2.600E+05   AT NODE         81   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      2.600E+05
  LARGEST INCREMENT OF DISP.        -3.018E-05   AT NODE         80   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.        4.458E-07   AT NODE         55   DOF  2
+ LARGEST CORRECTION TO DISP.        4.456E-07   AT NODE         55   DOF  2
    INSTANCE: PIPE_INST                                                                       
           DISP.    CORRECTION TOO LARGE COMPARED TO DISP.    INCREMENT
  
@@ -12072,26 +12072,26 @@
         NUMBER OF EQUATIONS:  18985
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.603e+08
-        SOLVER ELAPSED TIME:  145ms
+        SOLVER ELAPSED TIME:  136ms
 
                     1 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM CLOSED TO OPEN
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     2
 
-   MAX. PENETRATION ERROR 2.92992E-09 AT NODE ROCK_INST.81 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR 2.93109E-09 AT NODE ROCK_INST.81 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -6.16654E+06 AT NODE ROCK_INST.80 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -6.16826E+06 AT NODE ROCK_INST.80 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINT ERRORS ARE WITHIN THE TOLERANCES.
 
- AVERAGE FORCE                      5.084E+08   TIME AVG. FORCE       5.158E+08
- LARGEST SCALED RESIDUAL FORCE     -5.350E+06   AT NODE        123   DOF  1
+ AVERAGE FORCE                      5.082E+08   TIME AVG. FORCE       5.156E+08
+ LARGEST SCALED RESIDUAL FORCE     -5.352E+06   AT NODE        123   DOF  1
    INSTANCE: PIPE_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE     -5.350E+06
- LARGEST INCREMENT OF DISP.         8.831E-03   AT NODE        645   DOF  2
+  CORRESPONDING RESIDUAL FORCE     -5.352E+06
+ LARGEST INCREMENT OF DISP.         8.832E-03   AT NODE        645   DOF  2
    INSTANCE: PIPE_INST                                                                       
- LARGEST CORRECTION TO DISP.        8.832E-03   AT NODE        645   DOF  2
+ LARGEST CORRECTION TO DISP.        8.833E-03   AT NODE        645   DOF  2
    INSTANCE: PIPE_INST                                                                       
           FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
  
@@ -12100,26 +12100,26 @@
         NUMBER OF EQUATIONS:  18984
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.563e+08
-        SOLVER ELAPSED TIME:  128ms
+        SOLVER ELAPSED TIME:  127ms
 
                     1 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM OPEN TO CLOSED
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     3
 
-   MAX. PENETRATION ERROR 15.7532E-06  AT NODE ROCK_INST.80 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR 15.7501E-06  AT NODE ROCK_INST.80 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR 49.4697E+06  AT NODE ROCK_INST.80 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR 49.4600E+06  AT NODE ROCK_INST.80 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           PENETRATION ERROR TOO LARGE COMPARED TO DISPLACEMENT INCREMENT.
 
- AVERAGE FORCE                      5.105E+08   TIME AVG. FORCE       5.158E+08
- LARGEST SCALED RESIDUAL FORCE      1.403E+06   AT NODE        122   DOF  2
+ AVERAGE FORCE                      5.100E+08   TIME AVG. FORCE       5.156E+08
+ LARGEST SCALED RESIDUAL FORCE      1.404E+06   AT NODE        122   DOF  2
    INSTANCE: PIPE_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE      1.403E+06
- LARGEST INCREMENT OF DISP.        -3.448E-04   AT NODE        650   DOF  2
+  CORRESPONDING RESIDUAL FORCE      1.404E+06
+ LARGEST INCREMENT OF DISP.        -3.449E-04   AT NODE        650   DOF  2
    INSTANCE: PIPE_INST                                                                       
- LARGEST CORRECTION TO DISP.       -9.170E-03   AT NODE        645   DOF  2
+ LARGEST CORRECTION TO DISP.       -9.171E-03   AT NODE        645   DOF  2
    INSTANCE: PIPE_INST                                                                       
           DISP.    CORRECTION TOO LARGE COMPARED TO DISP.    INCREMENT
  
@@ -12128,20 +12128,20 @@
         NUMBER OF EQUATIONS:  18985
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.603e+08
-        SOLVER ELAPSED TIME:  137ms
+        SOLVER ELAPSED TIME:  153ms
 
                     1 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM SLIPPING TO STICKING
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     4
 
-   MAX. PENETRATION ERROR -1.48763E-09 AT NODE ROCK_INST.80 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -1.48760E-09 AT NODE ROCK_INST.80 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -4.67159E+03 AT NODE ROCK_INST.80 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -4.67151E+03 AT NODE ROCK_INST.80 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINT ERRORS ARE WITHIN THE TOLERANCES.
 
- AVERAGE FORCE                      5.116E+08   TIME AVG. FORCE       5.158E+08
+ AVERAGE FORCE                      5.111E+08   TIME AVG. FORCE       5.156E+08
  LARGEST SCALED RESIDUAL FORCE      9.069E+05   AT NODE         80   DOF  2
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      9.069E+05
@@ -12156,26 +12156,26 @@
         NUMBER OF EQUATIONS:  18985
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.603e+08
-        SOLVER ELAPSED TIME:  146ms
+        SOLVER ELAPSED TIME:  148ms
 
                     1 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM STICKING TO SLIPPING
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     5
 
-   MAX. PENETRATION ERROR -6.07237E-09 AT NODE ROCK_INST.80 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -6.06901E-09 AT NODE ROCK_INST.80 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -19.0691E+03  AT NODE ROCK_INST.80 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -19.0585E+03  AT NODE ROCK_INST.80 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINT ERRORS ARE WITHIN THE TOLERANCES.
 
- AVERAGE FORCE                      5.105E+08   TIME AVG. FORCE       5.158E+08
- LARGEST SCALED RESIDUAL FORCE     -3.493E+06   AT NODE         80   DOF  2
+ AVERAGE FORCE                      5.097E+08   TIME AVG. FORCE       5.156E+08
+ LARGEST SCALED RESIDUAL FORCE     -3.492E+06   AT NODE         80   DOF  2
    INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE     -3.493E+06
- LARGEST INCREMENT OF DISP.        -2.490E-03   AT NODE        645   DOF  2
+  CORRESPONDING RESIDUAL FORCE     -3.492E+06
+ LARGEST INCREMENT OF DISP.        -2.489E-03   AT NODE        645   DOF  2
    INSTANCE: PIPE_INST                                                                       
- LARGEST CORRECTION TO DISP.       -3.987E-03   AT NODE        645   DOF  2
+ LARGEST CORRECTION TO DISP.       -3.986E-03   AT NODE        645   DOF  2
    INSTANCE: PIPE_INST                                                                       
           FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
  
@@ -12184,26 +12184,26 @@
         NUMBER OF EQUATIONS:  18985
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.603e+08
-        SOLVER ELAPSED TIME:  124ms
+        SOLVER ELAPSED TIME:  114ms
 
                     1 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM SLIPPING TO STICKING
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     6
 
-   MAX. PENETRATION ERROR -5.58753E-09 AT NODE ROCK_INST.80 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -5.58460E-09 AT NODE ROCK_INST.80 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -17.5465E+03  AT NODE ROCK_INST.80 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -17.5373E+03  AT NODE ROCK_INST.80 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINT ERRORS ARE WITHIN THE TOLERANCES.
 
- AVERAGE FORCE                      5.115E+08   TIME AVG. FORCE       5.158E+08
- LARGEST SCALED RESIDUAL FORCE     -7.007E+05   AT NODE        123   DOF  2
+ AVERAGE FORCE                      5.110E+08   TIME AVG. FORCE       5.156E+08
+ LARGEST SCALED RESIDUAL FORCE     -7.008E+05   AT NODE        123   DOF  2
    INSTANCE: PIPE_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE     -7.007E+05
+  CORRESPONDING RESIDUAL FORCE     -7.008E+05
  LARGEST INCREMENT OF DISP.         1.327E-03   AT NODE        124   DOF  2
    INSTANCE: PIPE_INST                                                                       
- LARGEST CORRECTION TO DISP.        3.818E-03   AT NODE        645   DOF  2
+ LARGEST CORRECTION TO DISP.        3.816E-03   AT NODE        645   DOF  2
    INSTANCE: PIPE_INST                                                                       
           DISP.    CORRECTION TOO LARGE COMPARED TO DISP.    INCREMENT
  
@@ -12212,26 +12212,26 @@
         NUMBER OF EQUATIONS:  18985
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.603e+08
-        SOLVER ELAPSED TIME:  129ms
+        SOLVER ELAPSED TIME:  148ms
 
                     1 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM STICKING TO SLIPPING
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     7
 
-   MAX. PENETRATION ERROR -4.44779E-09 AT NODE ROCK_INST.80 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -4.44640E-09 AT NODE ROCK_INST.80 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -13.9674E+03  AT NODE ROCK_INST.80 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -13.9630E+03  AT NODE ROCK_INST.80 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINT ERRORS ARE WITHIN THE TOLERANCES.
 
- AVERAGE FORCE                      5.105E+08   TIME AVG. FORCE       5.158E+08
- LARGEST SCALED RESIDUAL FORCE     -3.120E+06   AT NODE         80   DOF  2
+ AVERAGE FORCE                      5.098E+08   TIME AVG. FORCE       5.156E+08
+ LARGEST SCALED RESIDUAL FORCE     -3.119E+06   AT NODE         80   DOF  2
    INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE     -3.120E+06
+  CORRESPONDING RESIDUAL FORCE     -3.119E+06
  LARGEST INCREMENT OF DISP.        -2.080E-03   AT NODE        645   DOF  2
    INSTANCE: PIPE_INST                                                                       
- LARGEST CORRECTION TO DISP.       -3.408E-03   AT NODE        645   DOF  2
+ LARGEST CORRECTION TO DISP.       -3.407E-03   AT NODE        645   DOF  2
    INSTANCE: PIPE_INST                                                                       
           FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
  
@@ -12240,26 +12240,26 @@
         NUMBER OF EQUATIONS:  18985
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.603e+08
-        SOLVER ELAPSED TIME:  150ms
+        SOLVER ELAPSED TIME:  153ms
 
                     1 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM SLIPPING TO STICKING
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     8
 
-   MAX. PENETRATION ERROR -4.54031E-09 AT NODE ROCK_INST.80 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -4.53879E-09 AT NODE ROCK_INST.80 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -14.2579E+03  AT NODE ROCK_INST.80 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -14.2532E+03  AT NODE ROCK_INST.80 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINT ERRORS ARE WITHIN THE TOLERANCES.
 
- AVERAGE FORCE                      5.115E+08   TIME AVG. FORCE       5.158E+08
- LARGEST SCALED RESIDUAL FORCE      7.236E+05   AT NODE         80   DOF  2
+ AVERAGE FORCE                      5.111E+08   TIME AVG. FORCE       5.156E+08
+ LARGEST SCALED RESIDUAL FORCE      7.237E+05   AT NODE         80   DOF  2
    INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE      7.236E+05
- LARGEST INCREMENT OF DISP.         1.360E-03   AT NODE        124   DOF  2
+  CORRESPONDING RESIDUAL FORCE      7.237E+05
+ LARGEST INCREMENT OF DISP.         1.359E-03   AT NODE        124   DOF  2
    INSTANCE: PIPE_INST                                                                       
- LARGEST CORRECTION TO DISP.        3.440E-03   AT NODE        645   DOF  2
+ LARGEST CORRECTION TO DISP.        3.439E-03   AT NODE        645   DOF  2
    INSTANCE: PIPE_INST                                                                       
           DISP.    CORRECTION TOO LARGE COMPARED TO DISP.    INCREMENT
  
@@ -12268,26 +12268,26 @@
         NUMBER OF EQUATIONS:  18985
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.603e+08
-        SOLVER ELAPSED TIME:  131ms
+        SOLVER ELAPSED TIME:  138ms
 
                     1 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM STICKING TO SLIPPING
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     9
 
-   MAX. PENETRATION ERROR -4.72531E-09 AT NODE ROCK_INST.80 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -4.72338E-09 AT NODE ROCK_INST.80 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -14.8389E+03  AT NODE ROCK_INST.80 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -14.8328E+03  AT NODE ROCK_INST.80 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINT ERRORS ARE WITHIN THE TOLERANCES.
 
- AVERAGE FORCE                      5.105E+08   TIME AVG. FORCE       5.158E+08
- LARGEST SCALED RESIDUAL FORCE     -3.186E+06   AT NODE         80   DOF  2
+ AVERAGE FORCE                      5.098E+08   TIME AVG. FORCE       5.156E+08
+ LARGEST SCALED RESIDUAL FORCE     -3.185E+06   AT NODE         80   DOF  2
    INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE     -3.186E+06
- LARGEST INCREMENT OF DISP.        -2.154E-03   AT NODE        645   DOF  2
+  CORRESPONDING RESIDUAL FORCE     -3.185E+06
+ LARGEST INCREMENT OF DISP.        -2.153E-03   AT NODE        645   DOF  2
    INSTANCE: PIPE_INST                                                                       
- LARGEST CORRECTION TO DISP.       -3.513E-03   AT NODE        645   DOF  2
+ LARGEST CORRECTION TO DISP.       -3.512E-03   AT NODE        645   DOF  2
    INSTANCE: PIPE_INST                                                                       
           FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
  
@@ -12302,23 +12302,23 @@
         NUMBER OF EQUATIONS:  18984
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.563e+08
-        SOLVER ELAPSED TIME:  144ms
+        SOLVER ELAPSED TIME:  141ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
-   MAX. PENETRATION ERROR -17.7081E-15  AT NODE ROCK_INST.82 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -17.7361E-15  AT NODE ROCK_INST.82 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -55.6086E-03  AT NODE ROCK_INST.82 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -55.6966E-03  AT NODE ROCK_INST.82 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.108E+08   TIME AVG. FORCE       5.158E+08
+ AVERAGE FORCE                      5.103E+08   TIME AVG. FORCE       5.156E+08
  LARGEST SCALED RESIDUAL FORCE      2.227E+04   AT NODE         81   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      2.227E+04
- LARGEST INCREMENT OF DISP.        -7.544E-06   AT NODE         80   DOF  1
+ LARGEST INCREMENT OF DISP.        -7.545E-06   AT NODE         80   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.       -7.544E-06   AT NODE         80   DOF  1
+ LARGEST CORRECTION TO DISP.       -7.545E-06   AT NODE         80   DOF  1
    INSTANCE: ROCK_INST                                                                       
  ESTIMATE OF DISP.    CORRECTION    3.560E-08
  FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND ESTIMATED CORRECTION
@@ -12340,20 +12340,20 @@
         NUMBER OF EQUATIONS:  18984
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.563e+08
-        SOLVER ELAPSED TIME:  145ms
+        SOLVER ELAPSED TIME:  159ms
 
                     1 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM OPEN TO CLOSED
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     1
 
-   MAX. PENETRATION ERROR 11.8841E-06  AT NODE ROCK_INST.80 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR 11.8835E-06  AT NODE ROCK_INST.80 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR 37.3196E+06  AT NODE ROCK_INST.80 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR 37.3179E+06  AT NODE ROCK_INST.80 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           PENETRATION ERROR TOO LARGE COMPARED TO DISPLACEMENT INCREMENT.
 
- AVERAGE FORCE                      5.107E+08   TIME AVG. FORCE       5.157E+08
+ AVERAGE FORCE                      5.102E+08   TIME AVG. FORCE       5.156E+08
  LARGEST SCALED RESIDUAL FORCE      7.677E+04   AT NODE         81   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      7.677E+04
@@ -12368,7 +12368,7 @@
         NUMBER OF EQUATIONS:  18985
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.603e+08
-        SOLVER ELAPSED TIME:  140ms
+        SOLVER ELAPSED TIME:  132ms
  
 
  ***WARNING: THE SYSTEM MATRIX HAS 1 NEGATIVE EIGENVALUES.
@@ -12379,16 +12379,16 @@
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     2
 
-   MAX. PENETRATION ERROR 536.887E-12   AT NODE ROCK_INST.81 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR 536.997E-12   AT NODE ROCK_INST.81 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -2.60503E+06 AT NODE ROCK_INST.80 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -2.60551E+06 AT NODE ROCK_INST.80 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINT ERRORS ARE WITHIN THE TOLERANCES.
 
- AVERAGE FORCE                      5.131E+08   TIME AVG. FORCE       5.158E+08
- LARGEST SCALED RESIDUAL FORCE      2.411E+06   AT NODE         80   DOF  1
+ AVERAGE FORCE                      5.127E+08   TIME AVG. FORCE       5.156E+08
+ LARGEST SCALED RESIDUAL FORCE      2.412E+06   AT NODE         80   DOF  1
    INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE      2.411E+06
+  CORRESPONDING RESIDUAL FORCE      2.412E+06
  LARGEST INCREMENT OF DISP.         3.738E-03   AT NODE        645   DOF  2
    INSTANCE: PIPE_INST                                                                       
  LARGEST CORRECTION TO DISP.        3.739E-03   AT NODE        645   DOF  2
@@ -12400,24 +12400,24 @@
         NUMBER OF EQUATIONS:  18984
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.563e+08
-        SOLVER ELAPSED TIME:  115ms
+        SOLVER ELAPSED TIME:  150ms
 
                     1 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM OPEN TO CLOSED
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     3
 
-   MAX. PENETRATION ERROR 11.2393E-06  AT NODE ROCK_INST.80 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR 11.2385E-06  AT NODE ROCK_INST.80 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR 35.2947E+06  AT NODE ROCK_INST.80 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR 35.2924E+06  AT NODE ROCK_INST.80 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           PENETRATION ERROR TOO LARGE COMPARED TO DISPLACEMENT INCREMENT.
 
- AVERAGE FORCE                      5.107E+08   TIME AVG. FORCE       5.157E+08
- LARGEST SCALED RESIDUAL FORCE      2.083E+05   AT NODE        122   DOF  2
+ AVERAGE FORCE                      5.102E+08   TIME AVG. FORCE       5.156E+08
+ LARGEST SCALED RESIDUAL FORCE      2.084E+05   AT NODE        122   DOF  2
    INSTANCE: PIPE_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE      2.083E+05
- LARGEST INCREMENT OF DISP.        -5.290E-05   AT NODE         53   DOF  2
+  CORRESPONDING RESIDUAL FORCE      2.084E+05
+ LARGEST INCREMENT OF DISP.        -5.291E-05   AT NODE         53   DOF  2
    INSTANCE: PIPE_INST                                                                       
  LARGEST CORRECTION TO DISP.       -3.791E-03   AT NODE        645   DOF  2
    INSTANCE: PIPE_INST                                                                       
@@ -12428,26 +12428,26 @@
         NUMBER OF EQUATIONS:  18985
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.603e+08
-        SOLVER ELAPSED TIME:  115ms
+        SOLVER ELAPSED TIME:  134ms
 
                     1 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM SLIPPING TO STICKING
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     4
 
-   MAX. PENETRATION ERROR -476.504E-12   AT NODE ROCK_INST.80 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -476.442E-12   AT NODE ROCK_INST.80 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -1.49636E+03 AT NODE ROCK_INST.80 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -1.49617E+03 AT NODE ROCK_INST.80 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINT ERRORS ARE WITHIN THE TOLERANCES.
 
- AVERAGE FORCE                      5.109E+08   TIME AVG. FORCE       5.157E+08
+ AVERAGE FORCE                      5.104E+08   TIME AVG. FORCE       5.156E+08
  LARGEST SCALED RESIDUAL FORCE      4.687E+05   AT NODE         80   DOF  2
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      4.687E+05
- LARGEST INCREMENT OF DISP.         9.297E-04   AT NODE        124   DOF  2
+ LARGEST INCREMENT OF DISP.         9.296E-04   AT NODE        124   DOF  2
    INSTANCE: PIPE_INST                                                                       
- LARGEST CORRECTION TO DISP.        9.821E-04   AT NODE        124   DOF  2
+ LARGEST CORRECTION TO DISP.        9.820E-04   AT NODE        124   DOF  2
    INSTANCE: PIPE_INST                                                                       
           DISP.    CORRECTION TOO LARGE COMPARED TO DISP.    INCREMENT
  
@@ -12456,23 +12456,23 @@
         NUMBER OF EQUATIONS:  18985
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.603e+08
-        SOLVER ELAPSED TIME:  146ms
+        SOLVER ELAPSED TIME:  134ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
-   MAX. PENETRATION ERROR -1.45935E-09 AT NODE ROCK_INST.80 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -1.45871E-09 AT NODE ROCK_INST.80 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -4.58281E+03 AT NODE ROCK_INST.80 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -4.58077E+03 AT NODE ROCK_INST.80 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.107E+08   TIME AVG. FORCE       5.157E+08
+ AVERAGE FORCE                      5.101E+08   TIME AVG. FORCE       5.156E+08
  LARGEST SCALED RESIDUAL FORCE     -1.231E+06   AT NODE         80   DOF  2
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE     -1.231E+06
  LARGEST INCREMENT OF DISP.        -1.065E-03   AT NODE        646   DOF  2
    INSTANCE: PIPE_INST                                                                       
- LARGEST CORRECTION TO DISP.       -1.995E-03   AT NODE        645   DOF  2
+ LARGEST CORRECTION TO DISP.       -1.994E-03   AT NODE        645   DOF  2
    INSTANCE: PIPE_INST                                                                       
           DISP.    CORRECTION TOO LARGE COMPARED TO DISP.    INCREMENT
  
@@ -12481,23 +12481,23 @@
         NUMBER OF EQUATIONS:  18985
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.603e+08
-        SOLVER ELAPSED TIME:  141ms
+        SOLVER ELAPSED TIME:  137ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
 
-   MAX. PENETRATION ERROR -258.534E-12   AT NODE ROCK_INST.80 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -258.376E-12   AT NODE ROCK_INST.80 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -811.875       AT NODE ROCK_INST.80 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -811.377       AT NODE ROCK_INST.80 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.110E+08   TIME AVG. FORCE       5.157E+08
- LARGEST SCALED RESIDUAL FORCE     -2.151E+05   AT NODE         80   DOF  2
+ AVERAGE FORCE                      5.105E+08   TIME AVG. FORCE       5.156E+08
+ LARGEST SCALED RESIDUAL FORCE     -2.150E+05   AT NODE         80   DOF  2
    INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE     -2.151E+05
- LARGEST INCREMENT OF DISP.        -2.266E-04   AT NODE         52   DOF  2
+  CORRESPONDING RESIDUAL FORCE     -2.150E+05
+ LARGEST INCREMENT OF DISP.        -2.265E-04   AT NODE         52   DOF  2
    INSTANCE: PIPE_INST                                                                       
- LARGEST CORRECTION TO DISP.        8.385E-04   AT NODE        645   DOF  2
+ LARGEST CORRECTION TO DISP.        8.381E-04   AT NODE        645   DOF  2
    INSTANCE: PIPE_INST                                                                       
           DISP.    CORRECTION TOO LARGE COMPARED TO DISP.    INCREMENT
  
@@ -12506,23 +12506,23 @@
         NUMBER OF EQUATIONS:  18985
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.603e+08
-        SOLVER ELAPSED TIME:  119ms
+        SOLVER ELAPSED TIME:  134ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     3
 
-   MAX. PENETRATION ERROR -18.6434E-12  AT NODE ROCK_INST.80 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -18.6221E-12  AT NODE ROCK_INST.80 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -58.5458      AT NODE ROCK_INST.80 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -58.4790      AT NODE ROCK_INST.80 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.111E+08   TIME AVG. FORCE       5.157E+08
- LARGEST SCALED RESIDUAL FORCE     -1.556E+04   AT NODE         80   DOF  2
+ AVERAGE FORCE                      5.106E+08   TIME AVG. FORCE       5.156E+08
+ LARGEST SCALED RESIDUAL FORCE     -1.554E+04   AT NODE         80   DOF  2
    INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE     -1.556E+04
+  CORRESPONDING RESIDUAL FORCE     -1.554E+04
  LARGEST INCREMENT OF DISP.        -1.274E-05   AT NODE         79   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.        2.256E-04   AT NODE        645   DOF  2
+ LARGEST CORRECTION TO DISP.        2.254E-04   AT NODE        645   DOF  2
    INSTANCE: PIPE_INST                                                                       
           DISP.    CORRECTION TOO LARGE COMPARED TO DISP.    INCREMENT
  
@@ -12531,25 +12531,25 @@
         NUMBER OF EQUATIONS:  18985
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.603e+08
-        SOLVER ELAPSED TIME:  122ms
+        SOLVER ELAPSED TIME:  132ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     4
 
-   MAX. PENETRATION ERROR -133.060E-15   AT NODE ROCK_INST.80 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -132.755E-15   AT NODE ROCK_INST.80 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -417.850E-03   AT NODE ROCK_INST.80 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -416.890E-03   AT NODE ROCK_INST.80 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.111E+08   TIME AVG. FORCE       5.157E+08
+ AVERAGE FORCE                      5.105E+08   TIME AVG. FORCE       5.156E+08
  LARGEST SCALED RESIDUAL FORCE      -111.       AT NODE         80   DOF  2
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      -111.    
- LARGEST INCREMENT OF DISP.         1.807E-05   AT NODE         50   DOF  2
+ LARGEST INCREMENT OF DISP.         1.806E-05   AT NODE         50   DOF  2
    INSTANCE: PIPE_INST                                                                       
- LARGEST CORRECTION TO DISP.        1.905E-05   AT NODE        645   DOF  2
+ LARGEST CORRECTION TO DISP.        1.903E-05   AT NODE        645   DOF  2
    INSTANCE: PIPE_INST                                                                       
- ESTIMATE OF DISP.    CORRECTION    1.362E-07
+ ESTIMATE OF DISP.    CORRECTION    1.359E-07
  FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND ESTIMATED CORRECTION
 
  MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   2.069E-05
@@ -12569,23 +12569,23 @@
         NUMBER OF EQUATIONS:  18985
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.603e+08
-        SOLVER ELAPSED TIME:  118ms
+        SOLVER ELAPSED TIME:  145ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
-   MAX. PENETRATION ERROR 2.48457E-12 AT NODE ROCK_INST.80 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR 2.48301E-12 AT NODE ROCK_INST.80 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR 7.80229     AT NODE ROCK_INST.80 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR 7.79741     AT NODE ROCK_INST.80 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.127E+08   TIME AVG. FORCE       5.157E+08
+ AVERAGE FORCE                      5.121E+08   TIME AVG. FORCE       5.155E+08
  LARGEST SCALED RESIDUAL FORCE      1.826E+06   AT NODE         80   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      1.826E+06
  LARGEST INCREMENT OF DISP.        -2.119E-05   AT NODE         79   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.       -2.386E-05   AT NODE         51   DOF  2
+ LARGEST CORRECTION TO DISP.       -2.385E-05   AT NODE         51   DOF  2
    INSTANCE: PIPE_INST                                                                       
           DISP.    CORRECTION TOO LARGE COMPARED TO DISP.    INCREMENT
  
@@ -12594,23 +12594,23 @@
         NUMBER OF EQUATIONS:  18985
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.603e+08
-        SOLVER ELAPSED TIME:  134ms
+        SOLVER ELAPSED TIME:  151ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
 
-   MAX. PENETRATION ERROR 261.762E-15   AT NODE ROCK_INST.80 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR 261.569E-15   AT NODE ROCK_INST.80 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR 822.013E-03   AT NODE ROCK_INST.80 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR 821.404E-03   AT NODE ROCK_INST.80 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.122E+08   TIME AVG. FORCE       5.157E+08
+ AVERAGE FORCE                      5.116E+08   TIME AVG. FORCE       5.155E+08
  LARGEST SCALED RESIDUAL FORCE     -8.046E+03   AT NODE         80   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE     -8.046E+03
  LARGEST INCREMENT OF DISP.        -2.138E-05   AT NODE         79   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.        3.780E-06   AT NODE         49   DOF  2
+ LARGEST CORRECTION TO DISP.        3.778E-06   AT NODE         49   DOF  2
    INSTANCE: PIPE_INST                                                                       
           DISP.    CORRECTION TOO LARGE COMPARED TO DISP.    INCREMENT
  
@@ -12619,7 +12619,7 @@
         NUMBER OF EQUATIONS:  18985
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.603e+08
-        SOLVER ELAPSED TIME:  136ms
+        SOLVER ELAPSED TIME:  117ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     3
 
@@ -12629,13 +12629,13 @@
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.122E+08   TIME AVG. FORCE       5.157E+08
+ AVERAGE FORCE                      5.116E+08   TIME AVG. FORCE       5.155E+08
  LARGEST SCALED RESIDUAL FORCE      0.212       AT NODE       1853   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      0.212    
  LARGEST INCREMENT OF DISP.        -2.139E-05   AT NODE         79   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.        4.926E-07   AT NODE        124   DOF  2
+ LARGEST CORRECTION TO DISP.        4.923E-07   AT NODE        124   DOF  2
    INSTANCE: PIPE_INST                                                                       
           THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
 
@@ -12656,23 +12656,23 @@
         NUMBER OF EQUATIONS:  18985
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.603e+08
-        SOLVER ELAPSED TIME:  149ms
+        SOLVER ELAPSED TIME:  135ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
-   MAX. PENETRATION ERROR -32.7516E-15  AT NODE ROCK_INST.80 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -32.6961E-15  AT NODE ROCK_INST.80 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -102.850E-03   AT NODE ROCK_INST.80 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -102.675E-03   AT NODE ROCK_INST.80 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.149E+08   TIME AVG. FORCE       5.157E+08
+ AVERAGE FORCE                      5.136E+08   TIME AVG. FORCE       5.155E+08
  LARGEST SCALED RESIDUAL FORCE      1.775E+06   AT NODE         80   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      1.775E+06
  LARGEST INCREMENT OF DISP.        -3.211E-05   AT NODE         79   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.       -8.486E-06   AT NODE        645   DOF  2
+ LARGEST CORRECTION TO DISP.       -8.481E-06   AT NODE        645   DOF  2
    INSTANCE: PIPE_INST                                                                       
           DISP.    CORRECTION TOO LARGE COMPARED TO DISP.    INCREMENT
  
@@ -12681,23 +12681,23 @@
         NUMBER OF EQUATIONS:  18985
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.603e+08
-        SOLVER ELAPSED TIME:  136ms
+        SOLVER ELAPSED TIME:  138ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
 
-   MAX. PENETRATION ERROR -238.087E-15   AT NODE ROCK_INST.81 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -237.976E-15   AT NODE ROCK_INST.81 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -747.664E-03   AT NODE ROCK_INST.81 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -747.317E-03   AT NODE ROCK_INST.81 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.154E+08   TIME AVG. FORCE       5.157E+08
- LARGEST SCALED RESIDUAL FORCE     -8.697E+03   AT NODE         80   DOF  1
+ AVERAGE FORCE                      5.147E+08   TIME AVG. FORCE       5.155E+08
+ LARGEST SCALED RESIDUAL FORCE     -8.696E+03   AT NODE         80   DOF  1
    INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE     -8.697E+03
+  CORRESPONDING RESIDUAL FORCE     -8.696E+03
  LARGEST INCREMENT OF DISP.        -3.240E-05   AT NODE         79   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.        2.998E-06   AT NODE         53   DOF  1
+ LARGEST CORRECTION TO DISP.        2.997E-06   AT NODE         53   DOF  1
    INSTANCE: PIPE_INST                                                                       
           DISP.    CORRECTION TOO LARGE COMPARED TO DISP.    INCREMENT
  
@@ -12706,23 +12706,23 @@
         NUMBER OF EQUATIONS:  18985
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.603e+08
-        SOLVER ELAPSED TIME:  132ms
+        SOLVER ELAPSED TIME:  134ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     3
 
-   MAX. PENETRATION ERROR 27.9467E-18  AT NODE ROCK_INST.83 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -27.8377E-18  AT NODE ROCK_INST.91 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR 87.7612E-06  AT NODE ROCK_INST.83 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -87.4188E-06  AT NODE ROCK_INST.91 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.154E+08   TIME AVG. FORCE       5.157E+08
+ AVERAGE FORCE                      5.147E+08   TIME AVG. FORCE       5.155E+08
  LARGEST SCALED RESIDUAL FORCE      0.290       AT NODE         79   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      0.290    
  LARGEST INCREMENT OF DISP.        -3.241E-05   AT NODE         79   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.        7.324E-08   AT NODE        122   DOF  2
+ LARGEST CORRECTION TO DISP.        7.320E-08   AT NODE        122   DOF  2
    INSTANCE: PIPE_INST                                                                       
           THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
 
@@ -12743,23 +12743,23 @@
         NUMBER OF EQUATIONS:  18985
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.603e+08
-        SOLVER ELAPSED TIME:  137ms
+        SOLVER ELAPSED TIME:  136ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
-   MAX. PENETRATION ERROR -10.6578E-15  AT NODE ROCK_INST.81 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -10.6301E-15  AT NODE ROCK_INST.81 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -33.4687E-03  AT NODE ROCK_INST.81 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -33.3816E-03  AT NODE ROCK_INST.81 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.114E+08   TIME AVG. FORCE       5.156E+08
+ AVERAGE FORCE                      5.104E+08   TIME AVG. FORCE       5.155E+08
  LARGEST SCALED RESIDUAL FORCE      1.762E+06   AT NODE         80   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      1.762E+06
  LARGEST INCREMENT OF DISP.        -4.863E-05   AT NODE         79   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.        3.020E-06   AT NODE         54   DOF  2
+ LARGEST CORRECTION TO DISP.        3.019E-06   AT NODE         54   DOF  2
    INSTANCE: PIPE_INST                                                                       
           DISP.    CORRECTION TOO LARGE COMPARED TO DISP.    INCREMENT
  
@@ -12768,23 +12768,23 @@
         NUMBER OF EQUATIONS:  18985
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.603e+08
-        SOLVER ELAPSED TIME:  144ms
+        SOLVER ELAPSED TIME:  146ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
 
-   MAX. PENETRATION ERROR -268.424E-15   AT NODE ROCK_INST.81 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -268.313E-15   AT NODE ROCK_INST.81 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -842.932E-03   AT NODE ROCK_INST.81 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -842.584E-03   AT NODE ROCK_INST.81 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.119E+08   TIME AVG. FORCE       5.156E+08
+ AVERAGE FORCE                      5.108E+08   TIME AVG. FORCE       5.155E+08
  LARGEST SCALED RESIDUAL FORCE     -9.440E+03   AT NODE         80   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE     -9.440E+03
  LARGEST INCREMENT OF DISP.        -4.907E-05   AT NODE         79   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.        3.804E-06   AT NODE         53   DOF  1
+ LARGEST CORRECTION TO DISP.        3.803E-06   AT NODE         53   DOF  1
    INSTANCE: PIPE_INST                                                                       
           DISP.    CORRECTION TOO LARGE COMPARED TO DISP.    INCREMENT
  
@@ -12793,23 +12793,23 @@
         NUMBER OF EQUATIONS:  18985
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.603e+08
-        SOLVER ELAPSED TIME:  111ms
+        SOLVER ELAPSED TIME:  150ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     3
 
-   MAX. PENETRATION ERROR -55.5112E-18  AT NODE ROCK_INST.112 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -55.8056E-18  AT NODE ROCK_INST.82 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -174.322E-06   AT NODE ROCK_INST.112 OF CONTACT 
-   PAIR (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
+   MAX. CONTACT FORCE ERROR -175.246E-06   AT NODE ROCK_INST.82 OF CONTACT PAIR 
+   (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.119E+08   TIME AVG. FORCE       5.156E+08
+ AVERAGE FORCE                      5.108E+08   TIME AVG. FORCE       5.155E+08
  LARGEST SCALED RESIDUAL FORCE      -1.01       AT NODE       1889   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      -1.01    
  LARGEST INCREMENT OF DISP.        -4.907E-05   AT NODE         79   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.        7.664E-08   AT NODE        122   DOF  2
+ LARGEST CORRECTION TO DISP.        7.660E-08   AT NODE        122   DOF  2
    INSTANCE: PIPE_INST                                                                       
           THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
 
@@ -12830,23 +12830,23 @@
         NUMBER OF EQUATIONS:  18985
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.603e+08
-        SOLVER ELAPSED TIME:  126ms
+        SOLVER ELAPSED TIME:  117ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
-   MAX. PENETRATION ERROR -6.46705E-15 AT NODE ROCK_INST.81 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -6.41137E-15 AT NODE ROCK_INST.81 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -20.3085E-03  AT NODE ROCK_INST.81 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -20.1336E-03  AT NODE ROCK_INST.81 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.102E+08   TIME AVG. FORCE       5.156E+08
+ AVERAGE FORCE                      5.097E+08   TIME AVG. FORCE       5.154E+08
  LARGEST SCALED RESIDUAL FORCE      1.773E+06   AT NODE         80   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      1.773E+06
  LARGEST INCREMENT OF DISP.        -7.363E-05   AT NODE         79   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.        2.462E-06   AT NODE         54   DOF  2
+ LARGEST CORRECTION TO DISP.        2.461E-06   AT NODE         54   DOF  2
    INSTANCE: PIPE_INST                                                                       
           DISP.    CORRECTION TOO LARGE COMPARED TO DISP.    INCREMENT
  
@@ -12855,23 +12855,23 @@
         NUMBER OF EQUATIONS:  18985
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.603e+08
-        SOLVER ELAPSED TIME:  142ms
+        SOLVER ELAPSED TIME:  134ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
 
-   MAX. PENETRATION ERROR -285.272E-15   AT NODE ROCK_INST.81 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -285.133E-15   AT NODE ROCK_INST.81 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -895.838E-03   AT NODE ROCK_INST.81 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -895.403E-03   AT NODE ROCK_INST.81 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.105E+08   TIME AVG. FORCE       5.156E+08
- LARGEST SCALED RESIDUAL FORCE     -1.062E+04   AT NODE         80   DOF  1
+ AVERAGE FORCE                      5.098E+08   TIME AVG. FORCE       5.154E+08
+ LARGEST SCALED RESIDUAL FORCE     -1.061E+04   AT NODE         80   DOF  1
    INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE     -1.062E+04
+  CORRESPONDING RESIDUAL FORCE     -1.061E+04
  LARGEST INCREMENT OF DISP.        -7.430E-05   AT NODE         79   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.        4.704E-06   AT NODE         53   DOF  1
+ LARGEST CORRECTION TO DISP.        4.703E-06   AT NODE         53   DOF  1
    INSTANCE: PIPE_INST                                                                       
           DISP.    CORRECTION TOO LARGE COMPARED TO DISP.    INCREMENT
  
@@ -12880,23 +12880,23 @@
         NUMBER OF EQUATIONS:  18985
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.603e+08
-        SOLVER ELAPSED TIME:  146ms
+        SOLVER ELAPSED TIME:  130ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     3
 
-   MAX. PENETRATION ERROR 55.5908E-18  AT NODE ROCK_INST.107 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR 55.4550E-18  AT NODE ROCK_INST.85 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR 174.572E-06   AT NODE ROCK_INST.107 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR 174.145E-06   AT NODE ROCK_INST.85 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.105E+08   TIME AVG. FORCE       5.156E+08
+ AVERAGE FORCE                      5.098E+08   TIME AVG. FORCE       5.154E+08
  LARGEST SCALED RESIDUAL FORCE     -0.487       AT NODE       1880   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE     -0.487    
  LARGEST INCREMENT OF DISP.        -7.431E-05   AT NODE         79   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.        7.641E-08   AT NODE        122   DOF  2
+ LARGEST CORRECTION TO DISP.        7.637E-08   AT NODE        122   DOF  2
    INSTANCE: PIPE_INST                                                                       
           THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
 
@@ -12917,26 +12917,26 @@
         NUMBER OF EQUATIONS:  18985
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.603e+08
-        SOLVER ELAPSED TIME:  141ms
+        SOLVER ELAPSED TIME:  131ms
 
                     1 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM OPEN TO CLOSED
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     1
 
-   MAX. PENETRATION ERROR 111.173E-06   AT NODE ROCK_INST.79 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR 111.172E-06   AT NODE ROCK_INST.79 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR 349.117E+06   AT NODE ROCK_INST.79 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR 349.113E+06   AT NODE ROCK_INST.79 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           PENETRATION ERROR TOO LARGE COMPARED TO DISPLACEMENT INCREMENT.
 
- AVERAGE FORCE                      5.095E+08   TIME AVG. FORCE       5.155E+08
+ AVERAGE FORCE                      5.092E+08   TIME AVG. FORCE       5.153E+08
  LARGEST SCALED RESIDUAL FORCE      1.762E+06   AT NODE         80   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      1.762E+06
  LARGEST INCREMENT OF DISP.        -1.115E-04   AT NODE         79   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.        1.872E-06   AT NODE         54   DOF  2
+ LARGEST CORRECTION TO DISP.        1.871E-06   AT NODE         54   DOF  2
    INSTANCE: PIPE_INST                                                                       
           DISP.    CORRECTION TOO LARGE COMPARED TO DISP.    INCREMENT
  
@@ -12945,7 +12945,7 @@
         NUMBER OF EQUATIONS:  18986
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.611e+08
-        SOLVER ELAPSED TIME:  141ms
+        SOLVER ELAPSED TIME:  147ms
 
                     3 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM OPEN TO CLOSED
@@ -12954,16 +12954,16 @@
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     2
 
-   MAX. PENETRATION ERROR 106.375E-06   AT NODE ROCK_INST.77 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR 106.155E-06   AT NODE ROCK_INST.77 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR 334.050E+06   AT NODE ROCK_INST.77 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR 333.359E+06   AT NODE ROCK_INST.77 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINT ERRORS ARE WITHIN THE TOLERANCES.
 
- AVERAGE FORCE                      5.043E+08   TIME AVG. FORCE       5.155E+08
- LARGEST SCALED RESIDUAL FORCE     -2.192E+09   AT NODE         79   DOF  2
+ AVERAGE FORCE                      5.040E+08   TIME AVG. FORCE       5.153E+08
+ LARGEST SCALED RESIDUAL FORCE     -2.189E+09   AT NODE         79   DOF  2
    INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE     -2.192E+09
+  CORRESPONDING RESIDUAL FORCE     -2.189E+09
  LARGEST INCREMENT OF DISP.        -0.111       AT NODE        642   DOF  2
    INSTANCE: PIPE_INST                                                                       
  LARGEST CORRECTION TO DISP.       -0.111       AT NODE        642   DOF  2
@@ -12975,51 +12975,71 @@
         NUMBER OF EQUATIONS:  18987
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.622e+08
-        SOLVER ELAPSED TIME:  142ms
+        SOLVER ELAPSED TIME:  132ms
  
 
  ***WARNING: THE SYSTEM MATRIX HAS 1 NEGATIVE EIGENVALUES.
              EXPLANATIONS ARE SUGGESTED AFTER THE FIRST OCCURRENCE OF THIS MESSAGE.
 
-                    6 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
-                    2 POINTS CHANGED FROM OPEN TO CLOSED
+                    5 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
+                    1 POINTS CHANGED FROM OPEN TO CLOSED
                     1 POINTS CHANGED FROM CLOSED TO OPEN
                     1 POINTS CHANGED FROM SLIPPING TO STICKING
                     2 POINTS CHANGED FROM STICKING TO SLIPPING
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     3
 
-   MAX. PENETRATION ERROR 530.838E-06   AT NODE ROCK_INST.78 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR 521.393E-06   AT NODE ROCK_INST.78 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR 1.66699E+09 AT NODE ROCK_INST.78 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR 1.63733E+09 AT NODE ROCK_INST.78 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE ESTIMATED CONTACT FORCE ERROR IS OUTSIDE OF CONVERGENCE TOLERANCES.
 
- AVERAGE FORCE                      5.085E+08   TIME AVG. FORCE       5.155E+08
- LARGEST SCALED RESIDUAL FORCE      3.131E+09   AT NODE        125   DOF  1
+ AVERAGE FORCE                      5.074E+08   TIME AVG. FORCE       5.153E+08
+ LARGEST SCALED RESIDUAL FORCE      3.236E+09   AT NODE        125   DOF  1
    INSTANCE: PIPE_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE      3.131E+09
- LARGEST INCREMENT OF DISP.        -0.159       AT NODE        127   DOF  2
+  CORRESPONDING RESIDUAL FORCE      3.236E+09
+ LARGEST INCREMENT OF DISP.        -0.155       AT NODE        127   DOF  2
    INSTANCE: PIPE_INST                                                                       
- LARGEST CORRECTION TO DISP.        0.128       AT NODE         52   DOF  2
+ LARGEST CORRECTION TO DISP.        0.130       AT NODE         52   DOF  2
    INSTANCE: PIPE_INST                                                                       
           FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
  
 	UNSYMMETRIC DIRECT SPARSE SOLVER RUNNING ON
  	1 HOST x 1 MPI RANK PER HOST x (14 THREADS PER RANK + 1 GPU PER RANK)
-        NUMBER OF EQUATIONS:  18988
+        NUMBER OF EQUATIONS:  18987
         NUMBER OF RHS:        1
-        NUMBER OF FLOPS:      1.618e+08
-        SOLVER ELAPSED TIME:  149ms
+        NUMBER OF FLOPS:      1.616e+08
+        SOLVER ELAPSED TIME:  144ms
  
 
  ***WARNING: THE SYSTEM MATRIX HAS 2 NEGATIVE EIGENVALUES.
              EXPLANATIONS ARE SUGGESTED AFTER THE FIRST OCCURRENCE OF THIS MESSAGE.
 
- ***WARNING: Creep properties are unrealistic at one or more integration points 
-             in 2 elements. Creep strain rate and/or strain energy rate density 
-             cannot be calculated. The elements have been identified in element 
-             set WarnElemCreepPropStep7Inc95.
+                   25 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
+                   20 POINTS CHANGED FROM OPEN TO CLOSED
+                    5 POINTS CHANGED FROM CLOSED TO OPEN
+
+               CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     4
+
+   MAX. PENETRATION ERROR 3.16003E-03 AT NODE ROCK_INST.76 OF CONTACT PAIR 
+   (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
+   MAX. CONTACT FORCE ERROR 9.92344E+09 AT NODE ROCK_INST.76 OF CONTACT PAIR 
+   (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
+          THE ESTIMATED CONTACT FORCE ERROR IS OUTSIDE OF CONVERGENCE TOLERANCES.
+
+ AVERAGE FORCE                      4.854E+08   TIME AVG. FORCE       5.151E+08
+ LARGEST SCALED RESIDUAL FORCE      4.612E+09   AT NODE        125   DOF  1
+   INSTANCE: PIPE_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE      4.612E+09
+ LARGEST INCREMENT OF DISP.         0.659       AT NODE        127   DOF  2
+   INSTANCE: PIPE_INST                                                                       
+ LARGEST CORRECTION TO DISP.        0.814       AT NODE        127   DOF  2
+   INSTANCE: PIPE_INST                                                                       
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+ 
+
+ ***NOTE: THE SOLUTION APPEARS TO BE DIVERGING. CONVERGENCE IS JUDGED UNLIKELY.
 
 
   INCREMENT    95 STARTS. ATTEMPT NUMBER  2, TIME INCREMENT  3.325E+06
@@ -13029,26 +13049,26 @@
         NUMBER OF EQUATIONS:  18985
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.603e+08
-        SOLVER ELAPSED TIME:  135ms
+        SOLVER ELAPSED TIME:  144ms
 
                     1 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM OPEN TO CLOSED
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     1
 
-   MAX. PENETRATION ERROR 17.0037E-06  AT NODE ROCK_INST.79 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR 17.0031E-06  AT NODE ROCK_INST.79 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR 53.3968E+06  AT NODE ROCK_INST.79 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR 53.3947E+06  AT NODE ROCK_INST.79 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           PENETRATION ERROR TOO LARGE COMPARED TO DISPLACEMENT INCREMENT.
 
- AVERAGE FORCE                      5.102E+08   TIME AVG. FORCE       5.155E+08
+ AVERAGE FORCE                      5.096E+08   TIME AVG. FORCE       5.153E+08
  LARGEST SCALED RESIDUAL FORCE      2.063E+05   AT NODE         80   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      2.063E+05
  LARGEST INCREMENT OF DISP.        -2.787E-05   AT NODE         79   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.        2.921E-07   AT NODE         54   DOF  2
+ LARGEST CORRECTION TO DISP.        2.919E-07   AT NODE         54   DOF  2
    INSTANCE: PIPE_INST                                                                       
           DISP.    CORRECTION TOO LARGE COMPARED TO DISP.    INCREMENT
  
@@ -13057,7 +13077,7 @@
         NUMBER OF EQUATIONS:  18986
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.611e+08
-        SOLVER ELAPSED TIME:  128ms
+        SOLVER ELAPSED TIME:  143ms
  
 
  ***WARNING: THE SYSTEM MATRIX HAS 1 NEGATIVE EIGENVALUES.
@@ -13068,19 +13088,19 @@
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     2
 
-   MAX. PENETRATION ERROR 1.21099E-09 AT NODE ROCK_INST.80 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR 1.21133E-09 AT NODE ROCK_INST.80 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -4.19338E+06 AT NODE ROCK_INST.79 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -4.19430E+06 AT NODE ROCK_INST.79 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINT ERRORS ARE WITHIN THE TOLERANCES.
 
- AVERAGE FORCE                      5.092E+08   TIME AVG. FORCE       5.155E+08
- LARGEST SCALED RESIDUAL FORCE      3.743E+06   AT NODE         79   DOF  1
+ AVERAGE FORCE                      5.089E+08   TIME AVG. FORCE       5.153E+08
+ LARGEST SCALED RESIDUAL FORCE      3.744E+06   AT NODE         79   DOF  1
    INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE      3.743E+06
- LARGEST INCREMENT OF DISP.         6.315E-03   AT NODE        642   DOF  2
+  CORRESPONDING RESIDUAL FORCE      3.744E+06
+ LARGEST INCREMENT OF DISP.         6.316E-03   AT NODE        642   DOF  2
    INSTANCE: PIPE_INST                                                                       
- LARGEST CORRECTION TO DISP.        6.316E-03   AT NODE        642   DOF  2
+ LARGEST CORRECTION TO DISP.        6.317E-03   AT NODE        642   DOF  2
    INSTANCE: PIPE_INST                                                                       
           FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
  
@@ -13089,23 +13109,23 @@
         NUMBER OF EQUATIONS:  18985
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.603e+08
-        SOLVER ELAPSED TIME:  134ms
+        SOLVER ELAPSED TIME:  148ms
 
                     1 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM OPEN TO CLOSED
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     3
 
-   MAX. PENETRATION ERROR 15.0451E-06  AT NODE ROCK_INST.79 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR 15.0437E-06  AT NODE ROCK_INST.79 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR 47.2462E+06  AT NODE ROCK_INST.79 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR 47.2418E+06  AT NODE ROCK_INST.79 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           PENETRATION ERROR TOO LARGE COMPARED TO DISPLACEMENT INCREMENT.
 
- AVERAGE FORCE                      5.102E+08   TIME AVG. FORCE       5.155E+08
- LARGEST SCALED RESIDUAL FORCE      4.902E+05   AT NODE        123   DOF  2
+ AVERAGE FORCE                      5.096E+08   TIME AVG. FORCE       5.153E+08
+ LARGEST SCALED RESIDUAL FORCE      4.904E+05   AT NODE        123   DOF  2
    INSTANCE: PIPE_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE      4.902E+05
+  CORRESPONDING RESIDUAL FORCE      4.904E+05
  LARGEST INCREMENT OF DISP.        -1.140E-04   AT NODE         52   DOF  2
    INSTANCE: PIPE_INST                                                                       
  LARGEST CORRECTION TO DISP.       -6.428E-03   AT NODE        642   DOF  2
@@ -13117,20 +13137,20 @@
         NUMBER OF EQUATIONS:  18986
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.611e+08
-        SOLVER ELAPSED TIME:  145ms
+        SOLVER ELAPSED TIME:  133ms
 
                     1 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM SLIPPING TO STICKING
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     4
 
-   MAX. PENETRATION ERROR -916.102E-12   AT NODE ROCK_INST.79 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -916.006E-12   AT NODE ROCK_INST.79 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -2.87684E+03 AT NODE ROCK_INST.79 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -2.87654E+03 AT NODE ROCK_INST.79 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINT ERRORS ARE WITHIN THE TOLERANCES.
 
- AVERAGE FORCE                      5.105E+08   TIME AVG. FORCE       5.155E+08
+ AVERAGE FORCE                      5.099E+08   TIME AVG. FORCE       5.154E+08
  LARGEST SCALED RESIDUAL FORCE      7.413E+05   AT NODE         79   DOF  2
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      7.413E+05
@@ -13145,26 +13165,26 @@
         NUMBER OF EQUATIONS:  18986
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.611e+08
-        SOLVER ELAPSED TIME:  122ms
+        SOLVER ELAPSED TIME:  152ms
 
                     1 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM STICKING TO SLIPPING
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     5
 
-   MAX. PENETRATION ERROR -4.67390E-09 AT NODE ROCK_INST.79 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -4.67105E-09 AT NODE ROCK_INST.79 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -14.6775E+03  AT NODE ROCK_INST.79 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -14.6685E+03  AT NODE ROCK_INST.79 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINT ERRORS ARE WITHIN THE TOLERANCES.
 
- AVERAGE FORCE                      5.102E+08   TIME AVG. FORCE       5.155E+08
- LARGEST SCALED RESIDUAL FORCE     -3.234E+06   AT NODE         79   DOF  2
+ AVERAGE FORCE                      5.091E+08   TIME AVG. FORCE       5.153E+08
+ LARGEST SCALED RESIDUAL FORCE     -3.233E+06   AT NODE         79   DOF  2
    INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE     -3.234E+06
- LARGEST INCREMENT OF DISP.        -2.361E-03   AT NODE        642   DOF  2
+  CORRESPONDING RESIDUAL FORCE     -3.233E+06
+ LARGEST INCREMENT OF DISP.        -2.360E-03   AT NODE        642   DOF  2
    INSTANCE: PIPE_INST                                                                       
- LARGEST CORRECTION TO DISP.       -3.704E-03   AT NODE        642   DOF  2
+ LARGEST CORRECTION TO DISP.       -3.702E-03   AT NODE        642   DOF  2
    INSTANCE: PIPE_INST                                                                       
           FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
  
@@ -13173,26 +13193,26 @@
         NUMBER OF EQUATIONS:  18986
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.611e+08
-        SOLVER ELAPSED TIME:  139ms
+        SOLVER ELAPSED TIME:  143ms
 
                     1 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM SLIPPING TO STICKING
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     6
 
-   MAX. PENETRATION ERROR -4.35381E-09 AT NODE ROCK_INST.79 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -4.35126E-09 AT NODE ROCK_INST.79 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -13.6723E+03  AT NODE ROCK_INST.79 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -13.6643E+03  AT NODE ROCK_INST.79 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINT ERRORS ARE WITHIN THE TOLERANCES.
 
- AVERAGE FORCE                      5.105E+08   TIME AVG. FORCE       5.155E+08
+ AVERAGE FORCE                      5.099E+08   TIME AVG. FORCE       5.154E+08
  LARGEST SCALED RESIDUAL FORCE     -5.820E+05   AT NODE        124   DOF  2
    INSTANCE: PIPE_INST                                                                       
   CORRESPONDING RESIDUAL FORCE     -5.820E+05
  LARGEST INCREMENT OF DISP.         1.210E-03   AT NODE        125   DOF  2
    INSTANCE: PIPE_INST                                                                       
- LARGEST CORRECTION TO DISP.        3.571E-03   AT NODE        642   DOF  2
+ LARGEST CORRECTION TO DISP.        3.569E-03   AT NODE        642   DOF  2
    INSTANCE: PIPE_INST                                                                       
           DISP.    CORRECTION TOO LARGE COMPARED TO DISP.    INCREMENT
  
@@ -13201,26 +13221,26 @@
         NUMBER OF EQUATIONS:  18986
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.611e+08
-        SOLVER ELAPSED TIME:  137ms
+        SOLVER ELAPSED TIME:  134ms
 
                     1 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM STICKING TO SLIPPING
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     7
 
-   MAX. PENETRATION ERROR -3.50482E-09 AT NODE ROCK_INST.79 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -3.50352E-09 AT NODE ROCK_INST.79 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -11.0062E+03  AT NODE ROCK_INST.79 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -11.0021E+03  AT NODE ROCK_INST.79 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINT ERRORS ARE WITHIN THE TOLERANCES.
 
- AVERAGE FORCE                      5.102E+08   TIME AVG. FORCE       5.155E+08
+ AVERAGE FORCE                      5.092E+08   TIME AVG. FORCE       5.153E+08
  LARGEST SCALED RESIDUAL FORCE     -2.905E+06   AT NODE         79   DOF  2
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE     -2.905E+06
  LARGEST INCREMENT OF DISP.        -1.996E-03   AT NODE        642   DOF  2
    INSTANCE: PIPE_INST                                                                       
- LARGEST CORRECTION TO DISP.       -3.206E-03   AT NODE        642   DOF  2
+ LARGEST CORRECTION TO DISP.       -3.205E-03   AT NODE        642   DOF  2
    INSTANCE: PIPE_INST                                                                       
           FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
  
@@ -13229,26 +13249,26 @@
         NUMBER OF EQUATIONS:  18986
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.611e+08
-        SOLVER ELAPSED TIME:  140ms
+        SOLVER ELAPSED TIME:  147ms
 
                     1 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM SLIPPING TO STICKING
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     8
 
-   MAX. PENETRATION ERROR -3.56498E-09 AT NODE ROCK_INST.79 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -3.56358E-09 AT NODE ROCK_INST.79 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -11.1951E+03  AT NODE ROCK_INST.79 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -11.1907E+03  AT NODE ROCK_INST.79 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINT ERRORS ARE WITHIN THE TOLERANCES.
 
- AVERAGE FORCE                      5.105E+08   TIME AVG. FORCE       5.155E+08
+ AVERAGE FORCE                      5.099E+08   TIME AVG. FORCE       5.154E+08
  LARGEST SCALED RESIDUAL FORCE      6.014E+05   AT NODE         79   DOF  2
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      6.014E+05
  LARGEST INCREMENT OF DISP.         1.234E-03   AT NODE        125   DOF  2
    INSTANCE: PIPE_INST                                                                       
- LARGEST CORRECTION TO DISP.        3.231E-03   AT NODE        642   DOF  2
+ LARGEST CORRECTION TO DISP.        3.230E-03   AT NODE        642   DOF  2
    INSTANCE: PIPE_INST                                                                       
           DISP.    CORRECTION TOO LARGE COMPARED TO DISP.    INCREMENT
  
@@ -13257,26 +13277,26 @@
         NUMBER OF EQUATIONS:  18986
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.611e+08
-        SOLVER ELAPSED TIME:  133ms
+        SOLVER ELAPSED TIME:  142ms
 
                     1 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM STICKING TO SLIPPING
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     9
 
-   MAX. PENETRATION ERROR -3.69740E-09 AT NODE ROCK_INST.79 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -3.69569E-09 AT NODE ROCK_INST.79 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -11.6109E+03  AT NODE ROCK_INST.79 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -11.6056E+03  AT NODE ROCK_INST.79 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINT ERRORS ARE WITHIN THE TOLERANCES.
 
- AVERAGE FORCE                      5.102E+08   TIME AVG. FORCE       5.155E+08
+ AVERAGE FORCE                      5.092E+08   TIME AVG. FORCE       5.153E+08
  LARGEST SCALED RESIDUAL FORCE     -2.961E+06   AT NODE         79   DOF  2
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE     -2.961E+06
- LARGEST INCREMENT OF DISP.        -2.059E-03   AT NODE        642   DOF  2
+ LARGEST INCREMENT OF DISP.        -2.058E-03   AT NODE        642   DOF  2
    INSTANCE: PIPE_INST                                                                       
- LARGEST CORRECTION TO DISP.       -3.293E-03   AT NODE        642   DOF  2
+ LARGEST CORRECTION TO DISP.       -3.292E-03   AT NODE        642   DOF  2
    INSTANCE: PIPE_INST                                                                       
           FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
  
@@ -13291,17 +13311,17 @@
         NUMBER OF EQUATIONS:  18985
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.603e+08
-        SOLVER ELAPSED TIME:  145ms
+        SOLVER ELAPSED TIME:  151ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
-   MAX. PENETRATION ERROR -11.3243E-15  AT NODE ROCK_INST.81 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -11.2968E-15  AT NODE ROCK_INST.81 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -35.5616E-03  AT NODE ROCK_INST.81 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -35.4752E-03  AT NODE ROCK_INST.81 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.104E+08   TIME AVG. FORCE       5.155E+08
+ AVERAGE FORCE                      5.098E+08   TIME AVG. FORCE       5.153E+08
  LARGEST SCALED RESIDUAL FORCE      1.713E+04   AT NODE         80   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      1.713E+04
@@ -13329,20 +13349,20 @@
         NUMBER OF EQUATIONS:  18985
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.603e+08
-        SOLVER ELAPSED TIME:  141ms
+        SOLVER ELAPSED TIME:  157ms
 
                     1 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM OPEN TO CLOSED
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     1
 
-   MAX. PENETRATION ERROR 9.10192E-06 AT NODE ROCK_INST.79 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR 9.10130E-06 AT NODE ROCK_INST.79 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR 28.5828E+06  AT NODE ROCK_INST.79 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR 28.5808E+06  AT NODE ROCK_INST.79 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           PENETRATION ERROR TOO LARGE COMPARED TO DISPLACEMENT INCREMENT.
 
- AVERAGE FORCE                      5.102E+08   TIME AVG. FORCE       5.155E+08
+ AVERAGE FORCE                      5.097E+08   TIME AVG. FORCE       5.153E+08
  LARGEST SCALED RESIDUAL FORCE      6.036E+04   AT NODE         80   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      6.036E+04
@@ -13357,26 +13377,26 @@
         NUMBER OF EQUATIONS:  18986
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.611e+08
-        SOLVER ELAPSED TIME:  139ms
+        SOLVER ELAPSED TIME:  149ms
 
                     1 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM SLIPPING TO STICKING
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     2
 
-   MAX. PENETRATION ERROR -3.70010E-12 AT NODE ROCK_INST.79 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -3.69663E-12 AT NODE ROCK_INST.79 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -11.6194      AT NODE ROCK_INST.79 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -11.6085      AT NODE ROCK_INST.79 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINT ERRORS ARE WITHIN THE TOLERANCES.
 
- AVERAGE FORCE                      5.105E+08   TIME AVG. FORCE       5.155E+08
+ AVERAGE FORCE                      5.099E+08   TIME AVG. FORCE       5.153E+08
  LARGEST SCALED RESIDUAL FORCE     -4.464E+04   AT NODE         79   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE     -4.464E+04
- LARGEST INCREMENT OF DISP.         3.344E-05   AT NODE        125   DOF  2
+ LARGEST INCREMENT OF DISP.         3.341E-05   AT NODE        125   DOF  2
    INSTANCE: PIPE_INST                                                                       
- LARGEST CORRECTION TO DISP.        3.399E-05   AT NODE        125   DOF  2
+ LARGEST CORRECTION TO DISP.        3.396E-05   AT NODE        125   DOF  2
    INSTANCE: PIPE_INST                                                                       
           DISP.    CORRECTION TOO LARGE COMPARED TO DISP.    INCREMENT
  
@@ -13385,25 +13405,25 @@
         NUMBER OF EQUATIONS:  18986
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.611e+08
-        SOLVER ELAPSED TIME:  147ms
+        SOLVER ELAPSED TIME:  127ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
-   MAX. PENETRATION ERROR -82.8504E-15  AT NODE ROCK_INST.79 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -82.7114E-15  AT NODE ROCK_INST.79 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -260.175E-03   AT NODE ROCK_INST.79 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -259.739E-03   AT NODE ROCK_INST.79 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.105E+08   TIME AVG. FORCE       5.155E+08
+ AVERAGE FORCE                      5.099E+08   TIME AVG. FORCE       5.153E+08
  LARGEST SCALED RESIDUAL FORCE      -158.       AT NODE         79   DOF  2
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      -158.    
- LARGEST INCREMENT OF DISP.         1.586E-05   AT NODE        125   DOF  2
+ LARGEST INCREMENT OF DISP.         1.584E-05   AT NODE        125   DOF  2
    INSTANCE: PIPE_INST                                                                       
- LARGEST CORRECTION TO DISP.       -1.758E-05   AT NODE        642   DOF  2
+ LARGEST CORRECTION TO DISP.       -1.757E-05   AT NODE        642   DOF  2
    INSTANCE: PIPE_INST                                                                       
- ESTIMATE OF DISP.    CORRECTION   -6.218E-08
+ ESTIMATE OF DISP.    CORRECTION   -6.205E-08
  FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND ESTIMATED CORRECTION
 
  MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   1.524E-05
@@ -13423,23 +13443,23 @@
         NUMBER OF EQUATIONS:  18986
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.611e+08
-        SOLVER ELAPSED TIME:  140ms
+        SOLVER ELAPSED TIME:  137ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
-   MAX. PENETRATION ERROR 5.52644E-12 AT NODE ROCK_INST.79 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR 5.52269E-12 AT NODE ROCK_INST.79 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR 17.3547      AT NODE ROCK_INST.79 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR 17.3429      AT NODE ROCK_INST.79 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.121E+08   TIME AVG. FORCE       5.154E+08
+ AVERAGE FORCE                      5.112E+08   TIME AVG. FORCE       5.152E+08
  LARGEST SCALED RESIDUAL FORCE      2.815E+06   AT NODE         79   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      2.815E+06
  LARGEST INCREMENT OF DISP.        -2.596E-05   AT NODE         78   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.       -3.324E-05   AT NODE         50   DOF  2
+ LARGEST CORRECTION TO DISP.       -3.322E-05   AT NODE         50   DOF  2
    INSTANCE: PIPE_INST                                                                       
           FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
  
@@ -13448,23 +13468,23 @@
         NUMBER OF EQUATIONS:  18986
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.611e+08
-        SOLVER ELAPSED TIME:  130ms
+        SOLVER ELAPSED TIME:  150ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
 
-   MAX. PENETRATION ERROR 821.954E-15   AT NODE ROCK_INST.79 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR 821.343E-15   AT NODE ROCK_INST.79 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR 2.58118     AT NODE ROCK_INST.79 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR 2.57926     AT NODE ROCK_INST.79 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.115E+08   TIME AVG. FORCE       5.154E+08
+ AVERAGE FORCE                      5.107E+08   TIME AVG. FORCE       5.152E+08
  LARGEST SCALED RESIDUAL FORCE     -1.741E+04   AT NODE         79   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE     -1.741E+04
  LARGEST INCREMENT OF DISP.        -2.623E-05   AT NODE         78   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.        8.222E-06   AT NODE         48   DOF  2
+ LARGEST CORRECTION TO DISP.        8.218E-06   AT NODE         48   DOF  2
    INSTANCE: PIPE_INST                                                                       
           DISP.    CORRECTION TOO LARGE COMPARED TO DISP.    INCREMENT
  
@@ -13473,23 +13493,23 @@
         NUMBER OF EQUATIONS:  18986
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.611e+08
-        SOLVER ELAPSED TIME:  119ms
+        SOLVER ELAPSED TIME:  134ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     3
 
-   MAX. PENETRATION ERROR -1.16573E-15 AT NODE ROCK_INST.79 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -1.13798E-15 AT NODE ROCK_INST.79 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -3.66076E-03 AT NODE ROCK_INST.79 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -3.57359E-03 AT NODE ROCK_INST.79 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.115E+08   TIME AVG. FORCE       5.154E+08
+ AVERAGE FORCE                      5.107E+08   TIME AVG. FORCE       5.152E+08
  LARGEST SCALED RESIDUAL FORCE     -0.712       AT NODE        124   DOF  2
    INSTANCE: PIPE_INST                                                                       
   CORRESPONDING RESIDUAL FORCE     -0.712    
  LARGEST INCREMENT OF DISP.        -2.624E-05   AT NODE         78   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.        1.616E-06   AT NODE        125   DOF  2
+ LARGEST CORRECTION TO DISP.        1.615E-06   AT NODE        125   DOF  2
    INSTANCE: PIPE_INST                                                                       
           THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
 
@@ -13510,23 +13530,23 @@
         NUMBER OF EQUATIONS:  18986
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.611e+08
-        SOLVER ELAPSED TIME:  140ms
+        SOLVER ELAPSED TIME:  133ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
-   MAX. PENETRATION ERROR -53.4017E-15  AT NODE ROCK_INST.79 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -53.3185E-15  AT NODE ROCK_INST.79 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -167.697E-03   AT NODE ROCK_INST.79 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -167.436E-03   AT NODE ROCK_INST.79 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.146E+08   TIME AVG. FORCE       5.154E+08
+ AVERAGE FORCE                      5.129E+08   TIME AVG. FORCE       5.152E+08
  LARGEST SCALED RESIDUAL FORCE      2.446E+06   AT NODE         79   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      2.446E+06
  LARGEST INCREMENT OF DISP.        -3.939E-05   AT NODE         78   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.       -1.153E-05   AT NODE        642   DOF  2
+ LARGEST CORRECTION TO DISP.       -1.152E-05   AT NODE        642   DOF  2
    INSTANCE: PIPE_INST                                                                       
           DISP.    CORRECTION TOO LARGE COMPARED TO DISP.    INCREMENT
  
@@ -13535,17 +13555,17 @@
         NUMBER OF EQUATIONS:  18986
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.611e+08
-        SOLVER ELAPSED TIME:  124ms
+        SOLVER ELAPSED TIME:  146ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
 
-   MAX. PENETRATION ERROR -366.540E-15   AT NODE ROCK_INST.80 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -366.319E-15   AT NODE ROCK_INST.80 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -1.15105     AT NODE ROCK_INST.80 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -1.15035     AT NODE ROCK_INST.80 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.152E+08   TIME AVG. FORCE       5.154E+08
+ AVERAGE FORCE                      5.139E+08   TIME AVG. FORCE       5.152E+08
  LARGEST SCALED RESIDUAL FORCE     -1.540E+04   AT NODE         79   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE     -1.540E+04
@@ -13560,17 +13580,17 @@
         NUMBER OF EQUATIONS:  18986
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.611e+08
-        SOLVER ELAPSED TIME:  139ms
+        SOLVER ELAPSED TIME:  143ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     3
 
-   MAX. PENETRATION ERROR 55.5112E-18  AT NODE ROCK_INST.99 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR 55.5112E-18  AT NODE ROCK_INST.80 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR 174.322E-06   AT NODE ROCK_INST.99 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR 174.322E-06   AT NODE ROCK_INST.80 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.152E+08   TIME AVG. FORCE       5.154E+08
+ AVERAGE FORCE                      5.139E+08   TIME AVG. FORCE       5.152E+08
  LARGEST SCALED RESIDUAL FORCE      0.586       AT NODE         78   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      0.586    
@@ -13597,7 +13617,7 @@
         NUMBER OF EQUATIONS:  18986
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.611e+08
-        SOLVER ELAPSED TIME:  158ms
+        SOLVER ELAPSED TIME:  135ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -13607,13 +13627,13 @@
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.115E+08   TIME AVG. FORCE       5.154E+08
+ AVERAGE FORCE                      5.107E+08   TIME AVG. FORCE       5.152E+08
  LARGEST SCALED RESIDUAL FORCE      2.255E+06   AT NODE         79   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      2.255E+06
  LARGEST INCREMENT OF DISP.        -5.972E-05   AT NODE         78   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.        3.499E-06   AT NODE         53   DOF  2
+ LARGEST CORRECTION TO DISP.        3.497E-06   AT NODE         53   DOF  2
    INSTANCE: PIPE_INST                                                                       
           DISP.    CORRECTION TOO LARGE COMPARED TO DISP.    INCREMENT
  
@@ -13622,17 +13642,17 @@
         NUMBER OF EQUATIONS:  18986
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.611e+08
-        SOLVER ELAPSED TIME:  146ms
+        SOLVER ELAPSED TIME:  139ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
 
-   MAX. PENETRATION ERROR -358.297E-15   AT NODE ROCK_INST.80 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -358.075E-15   AT NODE ROCK_INST.80 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -1.12516     AT NODE ROCK_INST.80 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -1.12446     AT NODE ROCK_INST.80 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.120E+08   TIME AVG. FORCE       5.154E+08
+ AVERAGE FORCE                      5.112E+08   TIME AVG. FORCE       5.152E+08
  LARGEST SCALED RESIDUAL FORCE     -1.473E+04   AT NODE         79   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE     -1.473E+04
@@ -13647,23 +13667,23 @@
         NUMBER OF EQUATIONS:  18986
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.611e+08
-        SOLVER ELAPSED TIME:  141ms
+        SOLVER ELAPSED TIME:  144ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     3
 
-   MAX. PENETRATION ERROR 55.5112E-18  AT NODE ROCK_INST.80 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -55.5112E-18  AT NODE ROCK_INST.100 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR 174.322E-06   AT NODE ROCK_INST.80 OF CONTACT PAIR 
-   (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
+   MAX. CONTACT FORCE ERROR -174.322E-06   AT NODE ROCK_INST.100 OF CONTACT 
+   PAIR (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.120E+08   TIME AVG. FORCE       5.154E+08
+ AVERAGE FORCE                      5.112E+08   TIME AVG. FORCE       5.152E+08
  LARGEST SCALED RESIDUAL FORCE      -1.58       AT NODE       1856   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      -1.58    
  LARGEST INCREMENT OF DISP.        -6.033E-05   AT NODE         78   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.        1.028E-07   AT NODE        123   DOF  2
+ LARGEST CORRECTION TO DISP.        1.027E-07   AT NODE        123   DOF  2
    INSTANCE: PIPE_INST                                                                       
           THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
 
@@ -13684,54 +13704,26 @@
         NUMBER OF EQUATIONS:  18986
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.611e+08
-        SOLVER ELAPSED TIME:  144ms
+        SOLVER ELAPSED TIME:  137ms
 
                     1 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM OPEN TO CLOSED
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     1
 
-   MAX. PENETRATION ERROR 13.9901E-06  AT NODE ROCK_INST.78 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR 13.9891E-06  AT NODE ROCK_INST.78 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR 43.9330E+06  AT NODE ROCK_INST.78 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR 43.9301E+06  AT NODE ROCK_INST.78 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           PENETRATION ERROR TOO LARGE COMPARED TO DISPLACEMENT INCREMENT.
 
- AVERAGE FORCE                      5.105E+08   TIME AVG. FORCE       5.154E+08
+ AVERAGE FORCE                      5.099E+08   TIME AVG. FORCE       5.151E+08
  LARGEST SCALED RESIDUAL FORCE      2.149E+06   AT NODE         79   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      2.149E+06
  LARGEST INCREMENT OF DISP.        -9.051E-05   AT NODE         78   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.        2.569E-06   AT NODE         53   DOF  2
-   INSTANCE: PIPE_INST                                                                       
-          DISP.    CORRECTION TOO LARGE COMPARED TO DISP.    INCREMENT
- 
-	UNSYMMETRIC DIRECT SPARSE SOLVER RUNNING ON
- 	1 HOST x 1 MPI RANK PER HOST x (14 THREADS PER RANK + 1 GPU PER RANK)
-        NUMBER OF EQUATIONS:  18987
-        NUMBER OF RHS:        1
-        NUMBER OF FLOPS:      1.616e+08
-        SOLVER ELAPSED TIME:  139ms
-
-                    1 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
-                    1 POINTS CHANGED FROM SLIPPING TO STICKING
-
-               CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     2
-
-   MAX. PENETRATION ERROR -195.701E-12   AT NODE ROCK_INST.78 OF CONTACT PAIR 
-   (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -614.561       AT NODE ROCK_INST.78 OF CONTACT PAIR 
-   (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-          THE CONTACT CONSTRAINT ERRORS ARE WITHIN THE TOLERANCES.
-
- AVERAGE FORCE                      5.107E+08   TIME AVG. FORCE       5.154E+08
- LARGEST SCALED RESIDUAL FORCE      3.254E+05   AT NODE         78   DOF  2
-   INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE      3.254E+05
- LARGEST INCREMENT OF DISP.         7.509E-04   AT NODE        126   DOF  2
-   INSTANCE: PIPE_INST                                                                       
- LARGEST CORRECTION TO DISP.        7.562E-04   AT NODE        639   DOF  2
+ LARGEST CORRECTION TO DISP.        2.567E-06   AT NODE         53   DOF  2
    INSTANCE: PIPE_INST                                                                       
           DISP.    CORRECTION TOO LARGE COMPARED TO DISP.    INCREMENT
  
@@ -13742,21 +13734,24 @@
         NUMBER OF FLOPS:      1.616e+08
         SOLVER ELAPSED TIME:  145ms
 
-               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+                    1 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
+                    1 POINTS CHANGED FROM SLIPPING TO STICKING
 
-   MAX. PENETRATION ERROR -372.714E-12   AT NODE ROCK_INST.78 OF CONTACT PAIR 
-   (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -1.17043E+03 AT NODE ROCK_INST.78 OF CONTACT PAIR 
-   (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-          THE CONTACT CONSTRAINTS HAVE CONVERGED.
+               CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     2
 
- AVERAGE FORCE                      5.109E+08   TIME AVG. FORCE       5.154E+08
- LARGEST SCALED RESIDUAL FORCE     -2.035E+05   AT NODE         78   DOF  2
+   MAX. PENETRATION ERROR -195.652E-12   AT NODE ROCK_INST.78 OF CONTACT PAIR 
+   (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
+   MAX. CONTACT FORCE ERROR -614.407       AT NODE ROCK_INST.78 OF CONTACT PAIR 
+   (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
+          THE CONTACT CONSTRAINT ERRORS ARE WITHIN THE TOLERANCES.
+
+ AVERAGE FORCE                      5.101E+08   TIME AVG. FORCE       5.151E+08
+ LARGEST SCALED RESIDUAL FORCE      3.254E+05   AT NODE         78   DOF  2
    INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE     -2.035E+05
- LARGEST INCREMENT OF DISP.        -3.086E-04   AT NODE         50   DOF  2
+  CORRESPONDING RESIDUAL FORCE      3.254E+05
+ LARGEST INCREMENT OF DISP.         7.508E-04   AT NODE        126   DOF  2
    INSTANCE: PIPE_INST                                                                       
- LARGEST CORRECTION TO DISP.       -1.060E-03   AT NODE        639   DOF  2
+ LARGEST CORRECTION TO DISP.        7.560E-04   AT NODE        639   DOF  2
    INSTANCE: PIPE_INST                                                                       
           DISP.    CORRECTION TOO LARGE COMPARED TO DISP.    INCREMENT
  
@@ -13765,23 +13760,48 @@
         NUMBER OF EQUATIONS:  18987
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.616e+08
-        SOLVER ELAPSED TIME:  133ms
+        SOLVER ELAPSED TIME:  144ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+   MAX. PENETRATION ERROR -372.584E-12   AT NODE ROCK_INST.78 OF CONTACT PAIR 
+   (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
+   MAX. CONTACT FORCE ERROR -1.17003E+03 AT NODE ROCK_INST.78 OF CONTACT PAIR 
+   (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
+          THE CONTACT CONSTRAINTS HAVE CONVERGED.
+
+ AVERAGE FORCE                      5.103E+08   TIME AVG. FORCE       5.151E+08
+ LARGEST SCALED RESIDUAL FORCE     -2.034E+05   AT NODE         78   DOF  2
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -2.034E+05
+ LARGEST INCREMENT OF DISP.        -3.084E-04   AT NODE         50   DOF  2
+   INSTANCE: PIPE_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -1.059E-03   AT NODE        639   DOF  2
+   INSTANCE: PIPE_INST                                                                       
+          DISP.    CORRECTION TOO LARGE COMPARED TO DISP.    INCREMENT
+ 
+	UNSYMMETRIC DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x (14 THREADS PER RANK + 1 GPU PER RANK)
+        NUMBER OF EQUATIONS:  18987
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      1.616e+08
+        SOLVER ELAPSED TIME:  136ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
 
-   MAX. PENETRATION ERROR -28.4993E-12  AT NODE ROCK_INST.78 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -28.4799E-12  AT NODE ROCK_INST.78 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -89.4962      AT NODE ROCK_INST.78 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -89.4356      AT NODE ROCK_INST.78 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.109E+08   TIME AVG. FORCE       5.154E+08
- LARGEST SCALED RESIDUAL FORCE     -1.509E+04   AT NODE         78   DOF  2
+ AVERAGE FORCE                      5.103E+08   TIME AVG. FORCE       5.151E+08
+ LARGEST SCALED RESIDUAL FORCE     -1.508E+04   AT NODE         78   DOF  2
    INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE     -1.509E+04
+  CORRESPONDING RESIDUAL FORCE     -1.508E+04
  LARGEST INCREMENT OF DISP.        -8.380E-05   AT NODE         78   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.        2.928E-04   AT NODE        639   DOF  2
+ LARGEST CORRECTION TO DISP.        2.927E-04   AT NODE        639   DOF  2
    INSTANCE: PIPE_INST                                                                       
           DISP.    CORRECTION TOO LARGE COMPARED TO DISP.    INCREMENT
  
@@ -13790,25 +13810,25 @@
         NUMBER OF EQUATIONS:  18987
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.616e+08
-        SOLVER ELAPSED TIME:  130ms
+        SOLVER ELAPSED TIME:  134ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     3
 
-   MAX. PENETRATION ERROR -213.412E-15   AT NODE ROCK_INST.78 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -213.107E-15   AT NODE ROCK_INST.78 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -670.179E-03   AT NODE ROCK_INST.78 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -669.221E-03   AT NODE ROCK_INST.78 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.109E+08   TIME AVG. FORCE       5.154E+08
+ AVERAGE FORCE                      5.103E+08   TIME AVG. FORCE       5.151E+08
  LARGEST SCALED RESIDUAL FORCE      -115.       AT NODE         78   DOF  2
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      -115.    
  LARGEST INCREMENT OF DISP.        -8.392E-05   AT NODE         78   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.        2.536E-05   AT NODE        639   DOF  2
+ LARGEST CORRECTION TO DISP.        2.534E-05   AT NODE        639   DOF  2
    INSTANCE: PIPE_INST                                                                       
- ESTIMATE OF DISP.    CORRECTION    1.941E-07
+ ESTIMATE OF DISP.    CORRECTION    1.938E-07
  FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND ESTIMATED CORRECTION
 
  MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   5.500E-05
@@ -13828,23 +13848,23 @@
         NUMBER OF EQUATIONS:  18987
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.616e+08
-        SOLVER ELAPSED TIME:  148ms
+        SOLVER ELAPSED TIME:  124ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
-   MAX. PENETRATION ERROR -135.623E-12   AT NODE ROCK_INST.79 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -135.539E-12   AT NODE ROCK_INST.79 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -425.897       AT NODE ROCK_INST.79 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -425.633       AT NODE ROCK_INST.79 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.100E+08   TIME AVG. FORCE       5.153E+08
+ AVERAGE FORCE                      5.093E+08   TIME AVG. FORCE       5.151E+08
  LARGEST SCALED RESIDUAL FORCE      2.307E+07   AT NODE         78   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      2.307E+07
  LARGEST INCREMENT OF DISP.        -1.174E-04   AT NODE         77   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.       -8.115E-05   AT NODE         51   DOF  1
+ LARGEST CORRECTION TO DISP.       -8.114E-05   AT NODE         51   DOF  1
    INSTANCE: PIPE_INST                                                                       
           FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
  
@@ -13853,17 +13873,17 @@
         NUMBER OF EQUATIONS:  18987
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.616e+08
-        SOLVER ELAPSED TIME:  148ms
+        SOLVER ELAPSED TIME:  122ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
 
-   MAX. PENETRATION ERROR -32.2786E-12  AT NODE ROCK_INST.79 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -32.2592E-12  AT NODE ROCK_INST.79 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -101.365       AT NODE ROCK_INST.79 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -101.304       AT NODE ROCK_INST.79 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.128E+08   TIME AVG. FORCE       5.153E+08
+ AVERAGE FORCE                      5.114E+08   TIME AVG. FORCE       5.151E+08
  LARGEST SCALED RESIDUAL FORCE     -5.224E+05   AT NODE         78   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE     -5.224E+05
@@ -13878,17 +13898,17 @@
         NUMBER OF EQUATIONS:  18987
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.616e+08
-        SOLVER ELAPSED TIME:  136ms
+        SOLVER ELAPSED TIME:  122ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     3
 
-   MAX. PENETRATION ERROR 111.772E-15   AT NODE ROCK_INST.79 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR 111.578E-15   AT NODE ROCK_INST.79 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR 350.998E-03   AT NODE ROCK_INST.79 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR 350.388E-03   AT NODE ROCK_INST.79 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.127E+08   TIME AVG. FORCE       5.153E+08
+ AVERAGE FORCE                      5.113E+08   TIME AVG. FORCE       5.151E+08
  LARGEST SCALED RESIDUAL FORCE      -431.       AT NODE         78   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      -431.    
@@ -13896,10 +13916,10 @@
    INSTANCE: ROCK_INST                                                                       
  LARGEST CORRECTION TO DISP.        1.012E-05   AT NODE        124   DOF  2
    INSTANCE: PIPE_INST                                                                       
- ESTIMATE OF DISP.    CORRECTION    8.347E-09
+ ESTIMATE OF DISP.    CORRECTION    8.340E-09
  FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND ESTIMATED CORRECTION
 
- MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   4.826E-04
+ MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   4.827E-04
 
  ITERATION SUMMARY FOR THE INCREMENT:   3 TOTAL ITERATIONS, OF WHICH
    0 ARE SEVERE DISCONTINUITY ITERATIONS AND  3 ARE EQUILIBRIUM ITERATIONS.
@@ -13915,26 +13935,26 @@
         NUMBER OF EQUATIONS:  18987
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.616e+08
-        SOLVER ELAPSED TIME:  139ms
+        SOLVER ELAPSED TIME:  148ms
 
                     1 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM OPEN TO CLOSED
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     1
 
-   MAX. PENETRATION ERROR 30.2515E-06  AT NODE ROCK_INST.77 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR 30.2504E-06  AT NODE ROCK_INST.77 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR 94.9987E+06  AT NODE ROCK_INST.77 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR 94.9952E+06  AT NODE ROCK_INST.77 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           PENETRATION ERROR TOO LARGE COMPARED TO DISPLACEMENT INCREMENT.
 
- AVERAGE FORCE                      5.099E+08   TIME AVG. FORCE       5.153E+08
+ AVERAGE FORCE                      5.093E+08   TIME AVG. FORCE       5.150E+08
  LARGEST SCALED RESIDUAL FORCE      5.286E+06   AT NODE         78   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      5.286E+06
  LARGEST INCREMENT OF DISP.        -1.206E-04   AT NODE         77   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.       -1.515E-05   AT NODE        639   DOF  2
+ LARGEST CORRECTION TO DISP.       -1.514E-05   AT NODE        639   DOF  2
    INSTANCE: PIPE_INST                                                                       
           FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
  
@@ -13943,23 +13963,23 @@
         NUMBER OF EQUATIONS:  18988
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.624e+08
-        SOLVER ELAPSED TIME:  140ms
+        SOLVER ELAPSED TIME:  128ms
 
                     1 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM SLIPPING TO STICKING
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     2
 
-   MAX. PENETRATION ERROR -802.314E-12   AT NODE ROCK_INST.77 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -802.169E-12   AT NODE ROCK_INST.77 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -2.51951E+03 AT NODE ROCK_INST.77 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -2.51905E+03 AT NODE ROCK_INST.77 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINT ERRORS ARE WITHIN THE TOLERANCES.
 
- AVERAGE FORCE                      5.108E+08   TIME AVG. FORCE       5.153E+08
- LARGEST SCALED RESIDUAL FORCE      8.886E+05   AT NODE         77   DOF  2
+ AVERAGE FORCE                      5.101E+08   TIME AVG. FORCE       5.151E+08
+ LARGEST SCALED RESIDUAL FORCE      8.885E+05   AT NODE         77   DOF  2
    INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE      8.886E+05
+  CORRESPONDING RESIDUAL FORCE      8.885E+05
  LARGEST INCREMENT OF DISP.         1.619E-03   AT NODE        127   DOF  2
    INSTANCE: PIPE_INST                                                                       
  LARGEST CORRECTION TO DISP.        1.628E-03   AT NODE        636   DOF  2
@@ -13971,23 +13991,23 @@
         NUMBER OF EQUATIONS:  18988
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.624e+08
-        SOLVER ELAPSED TIME:  115ms
+        SOLVER ELAPSED TIME:  147ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
-   MAX. PENETRATION ERROR -2.62834E-09 AT NODE ROCK_INST.77 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -2.62734E-09 AT NODE ROCK_INST.77 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -8.25377E+03 AT NODE ROCK_INST.77 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -8.25062E+03 AT NODE ROCK_INST.77 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.104E+08   TIME AVG. FORCE       5.153E+08
- LARGEST SCALED RESIDUAL FORCE     -1.389E+06   AT NODE         77   DOF  2
+ AVERAGE FORCE                      5.095E+08   TIME AVG. FORCE       5.150E+08
+ LARGEST SCALED RESIDUAL FORCE     -1.388E+06   AT NODE         77   DOF  2
    INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE     -1.389E+06
+  CORRESPONDING RESIDUAL FORCE     -1.388E+06
  LARGEST INCREMENT OF DISP.        -1.334E-03   AT NODE        637   DOF  2
    INSTANCE: PIPE_INST                                                                       
- LARGEST CORRECTION TO DISP.       -2.953E-03   AT NODE        636   DOF  2
+ LARGEST CORRECTION TO DISP.       -2.952E-03   AT NODE        636   DOF  2
    INSTANCE: PIPE_INST                                                                       
           DISP.    CORRECTION TOO LARGE COMPARED TO DISP.    INCREMENT
  
@@ -13996,23 +14016,23 @@
         NUMBER OF EQUATIONS:  18988
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.624e+08
-        SOLVER ELAPSED TIME:  123ms
+        SOLVER ELAPSED TIME:  137ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
 
-   MAX. PENETRATION ERROR -380.955E-12   AT NODE ROCK_INST.77 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -380.732E-12   AT NODE ROCK_INST.77 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -1.19631E+03 AT NODE ROCK_INST.77 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -1.19561E+03 AT NODE ROCK_INST.77 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.108E+08   TIME AVG. FORCE       5.153E+08
- LARGEST SCALED RESIDUAL FORCE     -1.937E+05   AT NODE         77   DOF  2
+ AVERAGE FORCE                      5.100E+08   TIME AVG. FORCE       5.151E+08
+ LARGEST SCALED RESIDUAL FORCE     -1.935E+05   AT NODE         77   DOF  2
    INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE     -1.937E+05
- LARGEST INCREMENT OF DISP.        -2.117E-04   AT NODE         49   DOF  2
+  CORRESPONDING RESIDUAL FORCE     -1.935E+05
+ LARGEST INCREMENT OF DISP.        -2.115E-04   AT NODE         49   DOF  2
    INSTANCE: PIPE_INST                                                                       
- LARGEST CORRECTION TO DISP.        1.123E-03   AT NODE        636   DOF  2
+ LARGEST CORRECTION TO DISP.        1.122E-03   AT NODE        636   DOF  2
    INSTANCE: PIPE_INST                                                                       
           DISP.    CORRECTION TOO LARGE COMPARED TO DISP.    INCREMENT
  
@@ -14021,23 +14041,23 @@
         NUMBER OF EQUATIONS:  18988
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.624e+08
-        SOLVER ELAPSED TIME:  150ms
+        SOLVER ELAPSED TIME:  138ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     3
 
-   MAX. PENETRATION ERROR -14.0469E-12  AT NODE ROCK_INST.77 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -14.0305E-12  AT NODE ROCK_INST.77 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -44.1115      AT NODE ROCK_INST.77 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -44.0600      AT NODE ROCK_INST.77 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.108E+08   TIME AVG. FORCE       5.153E+08
- LARGEST SCALED RESIDUAL FORCE     -7.130E+03   AT NODE         77   DOF  2
+ AVERAGE FORCE                      5.100E+08   TIME AVG. FORCE       5.151E+08
+ LARGEST SCALED RESIDUAL FORCE     -7.121E+03   AT NODE         77   DOF  2
    INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE     -7.130E+03
+  CORRESPONDING RESIDUAL FORCE     -7.121E+03
  LARGEST INCREMENT OF DISP.        -1.055E-04   AT NODE         77   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.        2.161E-04   AT NODE        636   DOF  2
+ LARGEST CORRECTION TO DISP.        2.159E-04   AT NODE        636   DOF  2
    INSTANCE: PIPE_INST                                                                       
           DISP.    CORRECTION TOO LARGE COMPARED TO DISP.    INCREMENT
  
@@ -14046,25 +14066,25 @@
         NUMBER OF EQUATIONS:  18988
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.624e+08
-        SOLVER ELAPSED TIME:  154ms
+        SOLVER ELAPSED TIME:  152ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     4
 
-   MAX. PENETRATION ERROR -22.0379E-15  AT NODE ROCK_INST.77 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -22.0377E-15  AT NODE ROCK_INST.77 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -69.2057E-03  AT NODE ROCK_INST.77 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -69.2051E-03  AT NODE ROCK_INST.77 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.108E+08   TIME AVG. FORCE       5.153E+08
+ AVERAGE FORCE                      5.100E+08   TIME AVG. FORCE       5.151E+08
  LARGEST SCALED RESIDUAL FORCE      -12.3       AT NODE         77   DOF  2
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      -12.3    
  LARGEST INCREMENT OF DISP.        -1.055E-04   AT NODE         77   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.        8.558E-06   AT NODE        636   DOF  2
+ LARGEST CORRECTION TO DISP.        8.546E-06   AT NODE        636   DOF  2
    INSTANCE: PIPE_INST                                                                       
- ESTIMATE OF DISP.    CORRECTION    1.475E-08
+ ESTIMATE OF DISP.    CORRECTION    1.471E-08
  FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND ESTIMATED CORRECTION
 
  MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   1.359E-04
@@ -14083,17 +14103,17 @@
         NUMBER OF EQUATIONS:  18988
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.624e+08
-        SOLVER ELAPSED TIME:  148ms
+        SOLVER ELAPSED TIME:  142ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
-   MAX. PENETRATION ERROR -92.2540E-12  AT NODE ROCK_INST.78 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -92.2002E-12  AT NODE ROCK_INST.78 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -289.705       AT NODE ROCK_INST.78 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -289.536       AT NODE ROCK_INST.78 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.106E+08   TIME AVG. FORCE       5.152E+08
+ AVERAGE FORCE                      5.099E+08   TIME AVG. FORCE       5.150E+08
  LARGEST SCALED RESIDUAL FORCE      2.202E+07   AT NODE         77   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      2.202E+07
@@ -14108,17 +14128,17 @@
         NUMBER OF EQUATIONS:  18988
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.624e+08
-        SOLVER ELAPSED TIME:  136ms
+        SOLVER ELAPSED TIME:  133ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
 
-   MAX. PENETRATION ERROR -21.8166E-12  AT NODE ROCK_INST.78 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -21.8041E-12  AT NODE ROCK_INST.78 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -68.5108      AT NODE ROCK_INST.78 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -68.4715      AT NODE ROCK_INST.78 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.129E+08   TIME AVG. FORCE       5.153E+08
+ AVERAGE FORCE                      5.121E+08   TIME AVG. FORCE       5.150E+08
  LARGEST SCALED RESIDUAL FORCE     -4.688E+05   AT NODE         77   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE     -4.688E+05
@@ -14133,25 +14153,25 @@
         NUMBER OF EQUATIONS:  18988
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.624e+08
-        SOLVER ELAPSED TIME:  143ms
+        SOLVER ELAPSED TIME:  136ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     3
 
-   MAX. PENETRATION ERROR -186.434E-15   AT NODE ROCK_INST.77 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -186.045E-15   AT NODE ROCK_INST.77 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -585.459E-03   AT NODE ROCK_INST.77 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -584.237E-03   AT NODE ROCK_INST.77 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.128E+08   TIME AVG. FORCE       5.153E+08
- LARGEST SCALED RESIDUAL FORCE       659.       AT NODE         77   DOF  2
+ AVERAGE FORCE                      5.120E+08   TIME AVG. FORCE       5.150E+08
+ LARGEST SCALED RESIDUAL FORCE       658.       AT NODE         77   DOF  2
    INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE       659.    
+  CORRESPONDING RESIDUAL FORCE       658.    
  LARGEST INCREMENT OF DISP.        -1.173E-04   AT NODE         76   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.        1.679E-05   AT NODE        127   DOF  2
+ LARGEST CORRECTION TO DISP.        1.677E-05   AT NODE        127   DOF  2
    INSTANCE: PIPE_INST                                                                       
- ESTIMATE OF DISP.    CORRECTION   -2.360E-08
+ ESTIMATE OF DISP.    CORRECTION   -2.354E-08
  FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND ESTIMATED CORRECTION
 
  MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   4.323E-04
@@ -14170,26 +14190,26 @@
         NUMBER OF EQUATIONS:  18988
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.624e+08
-        SOLVER ELAPSED TIME:  146ms
+        SOLVER ELAPSED TIME:  143ms
 
                     1 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM OPEN TO CLOSED
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     1
 
-   MAX. PENETRATION ERROR 18.7963E-06  AT NODE ROCK_INST.76 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR 18.7951E-06  AT NODE ROCK_INST.76 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR 59.0260E+06  AT NODE ROCK_INST.76 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR 59.0223E+06  AT NODE ROCK_INST.76 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           PENETRATION ERROR TOO LARGE COMPARED TO DISPLACEMENT INCREMENT.
 
- AVERAGE FORCE                      5.104E+08   TIME AVG. FORCE       5.152E+08
+ AVERAGE FORCE                      5.097E+08   TIME AVG. FORCE       5.150E+08
  LARGEST SCALED RESIDUAL FORCE      5.272E+06   AT NODE         77   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      5.272E+06
  LARGEST INCREMENT OF DISP.        -1.174E-04   AT NODE         76   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.       -9.686E-06   AT NODE        636   DOF  2
+ LARGEST CORRECTION TO DISP.       -9.682E-06   AT NODE        636   DOF  2
    INSTANCE: PIPE_INST                                                                       
           FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
  
@@ -14198,26 +14218,26 @@
         NUMBER OF EQUATIONS:  18989
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.630e+08
-        SOLVER ELAPSED TIME:  149ms
+        SOLVER ELAPSED TIME:  142ms
 
                     1 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM SLIPPING TO STICKING
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     2
 
-   MAX. PENETRATION ERROR -260.871E-12   AT NODE ROCK_INST.76 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -260.800E-12   AT NODE ROCK_INST.76 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -819.213       AT NODE ROCK_INST.76 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -818.989       AT NODE ROCK_INST.76 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINT ERRORS ARE WITHIN THE TOLERANCES.
 
- AVERAGE FORCE                      5.109E+08   TIME AVG. FORCE       5.152E+08
- LARGEST SCALED RESIDUAL FORCE      3.915E+05   AT NODE         76   DOF  2
+ AVERAGE FORCE                      5.102E+08   TIME AVG. FORCE       5.150E+08
+ LARGEST SCALED RESIDUAL FORCE      3.914E+05   AT NODE         76   DOF  2
    INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE      3.915E+05
- LARGEST INCREMENT OF DISP.         9.354E-04   AT NODE        128   DOF  2
+  CORRESPONDING RESIDUAL FORCE      3.914E+05
+ LARGEST INCREMENT OF DISP.         9.352E-04   AT NODE        128   DOF  2
    INSTANCE: PIPE_INST                                                                       
- LARGEST CORRECTION TO DISP.        9.454E-04   AT NODE        633   DOF  2
+ LARGEST CORRECTION TO DISP.        9.452E-04   AT NODE        633   DOF  2
    INSTANCE: PIPE_INST                                                                       
           DISP.    CORRECTION TOO LARGE COMPARED TO DISP.    INCREMENT
  
@@ -14226,21 +14246,21 @@
         NUMBER OF EQUATIONS:  18989
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.630e+08
-        SOLVER ELAPSED TIME:  150ms
+        SOLVER ELAPSED TIME:  139ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
-   MAX. PENETRATION ERROR -577.911E-12   AT NODE ROCK_INST.76 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -577.687E-12   AT NODE ROCK_INST.76 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -1.81482E+03 AT NODE ROCK_INST.76 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -1.81411E+03 AT NODE ROCK_INST.76 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.110E+08   TIME AVG. FORCE       5.152E+08
- LARGEST SCALED RESIDUAL FORCE     -3.197E+05   AT NODE         76   DOF  2
+ AVERAGE FORCE                      5.103E+08   TIME AVG. FORCE       5.150E+08
+ LARGEST SCALED RESIDUAL FORCE     -3.195E+05   AT NODE         76   DOF  2
    INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE     -3.197E+05
- LARGEST INCREMENT OF DISP.        -4.807E-04   AT NODE         48   DOF  2
+  CORRESPONDING RESIDUAL FORCE     -3.195E+05
+ LARGEST INCREMENT OF DISP.        -4.805E-04   AT NODE         48   DOF  2
    INSTANCE: PIPE_INST                                                                       
  LARGEST CORRECTION TO DISP.       -1.416E-03   AT NODE        633   DOF  2
    INSTANCE: PIPE_INST                                                                       
@@ -14251,23 +14271,23 @@
         NUMBER OF EQUATIONS:  18989
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.630e+08
-        SOLVER ELAPSED TIME:  143ms
+        SOLVER ELAPSED TIME:  137ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
 
-   MAX. PENETRATION ERROR -55.5390E-12  AT NODE ROCK_INST.76 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -55.5004E-12  AT NODE ROCK_INST.76 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -174.409       AT NODE ROCK_INST.76 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -174.288       AT NODE ROCK_INST.76 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.110E+08   TIME AVG. FORCE       5.152E+08
- LARGEST SCALED RESIDUAL FORCE     -2.956E+04   AT NODE         76   DOF  2
+ AVERAGE FORCE                      5.103E+08   TIME AVG. FORCE       5.150E+08
+ LARGEST SCALED RESIDUAL FORCE     -2.954E+04   AT NODE         76   DOF  2
    INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE     -2.956E+04
+  CORRESPONDING RESIDUAL FORCE     -2.954E+04
  LARGEST INCREMENT OF DISP.        -1.098E-04   AT NODE         76   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.        4.388E-04   AT NODE        633   DOF  2
+ LARGEST CORRECTION TO DISP.        4.386E-04   AT NODE        633   DOF  2
    INSTANCE: PIPE_INST                                                                       
           DISP.    CORRECTION TOO LARGE COMPARED TO DISP.    INCREMENT
  
@@ -14276,25 +14296,25 @@
         NUMBER OF EQUATIONS:  18989
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.630e+08
-        SOLVER ELAPSED TIME:  155ms
+        SOLVER ELAPSED TIME:  146ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     3
 
-   MAX. PENETRATION ERROR -706.740E-15   AT NODE ROCK_INST.76 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -705.686E-15   AT NODE ROCK_INST.76 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -2.21938     AT NODE ROCK_INST.76 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -2.21606     AT NODE ROCK_INST.76 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.111E+08   TIME AVG. FORCE       5.152E+08
- LARGEST SCALED RESIDUAL FORCE      -382.       AT NODE         76   DOF  2
+ AVERAGE FORCE                      5.103E+08   TIME AVG. FORCE       5.150E+08
+ LARGEST SCALED RESIDUAL FORCE      -381.       AT NODE         76   DOF  2
    INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE      -382.    
+  CORRESPONDING RESIDUAL FORCE      -381.    
  LARGEST INCREMENT OF DISP.        -1.100E-04   AT NODE         76   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.        4.954E-05   AT NODE        633   DOF  2
+ LARGEST CORRECTION TO DISP.        4.950E-05   AT NODE        633   DOF  2
    INSTANCE: PIPE_INST                                                                       
- ESTIMATE OF DISP.    CORRECTION    6.394E-07
+ ESTIMATE OF DISP.    CORRECTION    6.384E-07
  FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND ESTIMATED CORRECTION
 
  MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   9.749E-05
@@ -14313,23 +14333,23 @@
         NUMBER OF EQUATIONS:  18989
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.630e+08
-        SOLVER ELAPSED TIME:  117ms
+        SOLVER ELAPSED TIME:  147ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
-   MAX. PENETRATION ERROR -97.0638E-12  AT NODE ROCK_INST.77 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -97.0038E-12  AT NODE ROCK_INST.77 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -304.809       AT NODE ROCK_INST.77 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -304.621       AT NODE ROCK_INST.77 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.105E+08   TIME AVG. FORCE       5.152E+08
- LARGEST SCALED RESIDUAL FORCE      2.407E+07   AT NODE         76   DOF  1
+ AVERAGE FORCE                      5.096E+08   TIME AVG. FORCE       5.149E+08
+ LARGEST SCALED RESIDUAL FORCE      2.408E+07   AT NODE         76   DOF  1
    INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE      2.407E+07
+  CORRESPONDING RESIDUAL FORCE      2.408E+07
  LARGEST INCREMENT OF DISP.        -1.108E-04   AT NODE         75   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.       -7.583E-05   AT NODE         49   DOF  1
+ LARGEST CORRECTION TO DISP.       -7.582E-05   AT NODE         49   DOF  1
    INSTANCE: PIPE_INST                                                                       
           FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
  
@@ -14338,17 +14358,17 @@
         NUMBER OF EQUATIONS:  18989
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.630e+08
-        SOLVER ELAPSED TIME:  148ms
+        SOLVER ELAPSED TIME:  135ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
 
-   MAX. PENETRATION ERROR -22.2103E-12  AT NODE ROCK_INST.77 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -22.1970E-12  AT NODE ROCK_INST.77 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -69.7470      AT NODE ROCK_INST.77 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -69.7051      AT NODE ROCK_INST.77 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.139E+08   TIME AVG. FORCE       5.152E+08
+ AVERAGE FORCE                      5.129E+08   TIME AVG. FORCE       5.150E+08
  LARGEST SCALED RESIDUAL FORCE     -5.228E+05   AT NODE         76   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE     -5.228E+05
@@ -14363,7 +14383,7 @@
         NUMBER OF EQUATIONS:  18989
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.630e+08
-        SOLVER ELAPSED TIME:  134ms
+        SOLVER ELAPSED TIME:  146ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     3
 
@@ -14373,15 +14393,15 @@
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.137E+08   TIME AVG. FORCE       5.152E+08
- LARGEST SCALED RESIDUAL FORCE      -364.       AT NODE         76   DOF  2
+ AVERAGE FORCE                      5.125E+08   TIME AVG. FORCE       5.150E+08
+ LARGEST SCALED RESIDUAL FORCE      -365.       AT NODE         76   DOF  2
    INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE      -364.    
+  CORRESPONDING RESIDUAL FORCE      -365.    
  LARGEST INCREMENT OF DISP.        -1.138E-04   AT NODE         75   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.       -9.510E-06   AT NODE        634   DOF  2
+ LARGEST CORRECTION TO DISP.       -9.533E-06   AT NODE        634   DOF  2
    INSTANCE: PIPE_INST                                                                       
- ESTIMATE OF DISP.    CORRECTION   -6.621E-09
+ ESTIMATE OF DISP.    CORRECTION   -6.657E-09
  FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND ESTIMATED CORRECTION
 
  MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   4.534E-04
@@ -14400,17 +14420,17 @@
         NUMBER OF EQUATIONS:  18989
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.630e+08
-        SOLVER ELAPSED TIME:  137ms
+        SOLVER ELAPSED TIME:  149ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
-   MAX. PENETRATION ERROR -77.5768E-15  AT NODE ROCK_INST.77 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -77.4659E-15  AT NODE ROCK_INST.77 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -243.615E-03   AT NODE ROCK_INST.77 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -243.266E-03   AT NODE ROCK_INST.77 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.104E+08   TIME AVG. FORCE       5.152E+08
+ AVERAGE FORCE                      5.096E+08   TIME AVG. FORCE       5.149E+08
  LARGEST SCALED RESIDUAL FORCE      5.649E+06   AT NODE         76   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      5.649E+06
@@ -14425,17 +14445,17 @@
         NUMBER OF EQUATIONS:  18989
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.630e+08
-        SOLVER ELAPSED TIME:  127ms
+        SOLVER ELAPSED TIME:  151ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
 
-   MAX. PENETRATION ERROR -938.833E-15   AT NODE ROCK_INST.77 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -938.361E-15   AT NODE ROCK_INST.77 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -2.94822     AT NODE ROCK_INST.77 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -2.94673     AT NODE ROCK_INST.77 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.109E+08   TIME AVG. FORCE       5.152E+08
+ AVERAGE FORCE                      5.100E+08   TIME AVG. FORCE       5.149E+08
  LARGEST SCALED RESIDUAL FORCE     -6.306E+04   AT NODE         76   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE     -6.306E+04
@@ -14450,23 +14470,23 @@
         NUMBER OF EQUATIONS:  18989
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.630e+08
-        SOLVER ELAPSED TIME:  150ms
+        SOLVER ELAPSED TIME:  131ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     3
 
-   MAX. PENETRATION ERROR 444.089E-18   AT NODE ROCK_INST.77 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR 471.845E-18   AT NODE ROCK_INST.77 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR 1.39457E-03 AT NODE ROCK_INST.77 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR 1.48173E-03 AT NODE ROCK_INST.77 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.109E+08   TIME AVG. FORCE       5.152E+08
+ AVERAGE FORCE                      5.100E+08   TIME AVG. FORCE       5.149E+08
  LARGEST SCALED RESIDUAL FORCE      -6.49       AT NODE       1765   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      -6.49    
  LARGEST INCREMENT OF DISP.        -1.156E-04   AT NODE         75   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.        3.115E-07   AT NODE        126   DOF  2
+ LARGEST CORRECTION TO DISP.        3.114E-07   AT NODE        126   DOF  2
    INSTANCE: PIPE_INST                                                                       
           THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
 
@@ -14486,26 +14506,26 @@
         NUMBER OF EQUATIONS:  18989
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.630e+08
-        SOLVER ELAPSED TIME:  136ms
+        SOLVER ELAPSED TIME:  137ms
 
                     1 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM OPEN TO CLOSED
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     1
 
-   MAX. PENETRATION ERROR 116.609E-06   AT NODE ROCK_INST.75 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR 116.607E-06   AT NODE ROCK_INST.75 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR 366.186E+06   AT NODE ROCK_INST.75 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR 366.182E+06   AT NODE ROCK_INST.75 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           PENETRATION ERROR TOO LARGE COMPARED TO DISPLACEMENT INCREMENT.
 
- AVERAGE FORCE                      5.100E+08   TIME AVG. FORCE       5.151E+08
+ AVERAGE FORCE                      5.093E+08   TIME AVG. FORCE       5.149E+08
  LARGEST SCALED RESIDUAL FORCE      2.334E+06   AT NODE         76   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      2.334E+06
  LARGEST INCREMENT OF DISP.        -1.156E-04   AT NODE         75   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.        1.811E-06   AT NODE         50   DOF  2
+ LARGEST CORRECTION TO DISP.        1.810E-06   AT NODE         50   DOF  2
    INSTANCE: PIPE_INST                                                                       
           DISP.    CORRECTION TOO LARGE COMPARED TO DISP.    INCREMENT
  
@@ -14514,26 +14534,26 @@
         NUMBER OF EQUATIONS:  18990
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.529e+08
-        SOLVER ELAPSED TIME:  152ms
+        SOLVER ELAPSED TIME:  130ms
 
                     1 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM SLIPPING TO STICKING
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     2
 
-   MAX. PENETRATION ERROR -29.1991E-09  AT NODE ROCK_INST.75 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -29.1961E-09  AT NODE ROCK_INST.75 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -91.6939E+03  AT NODE ROCK_INST.75 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -91.6844E+03  AT NODE ROCK_INST.75 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINT ERRORS ARE WITHIN THE TOLERANCES.
 
- AVERAGE FORCE                      5.087E+08   TIME AVG. FORCE       5.151E+08
+ AVERAGE FORCE                      5.079E+08   TIME AVG. FORCE       5.148E+08
  LARGEST SCALED RESIDUAL FORCE      1.392E+07   AT NODE         75   DOF  2
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      1.392E+07
- LARGEST INCREMENT OF DISP.         8.713E-03   AT NODE        129   DOF  2
+ LARGEST INCREMENT OF DISP.         8.712E-03   AT NODE        129   DOF  2
    INSTANCE: PIPE_INST                                                                       
- LARGEST CORRECTION TO DISP.        8.719E-03   AT NODE        129   DOF  2
+ LARGEST CORRECTION TO DISP.        8.718E-03   AT NODE        129   DOF  2
    INSTANCE: PIPE_INST                                                                       
           FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
  
@@ -14542,7 +14562,7 @@
         NUMBER OF EQUATIONS:  18990
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.529e+08
-        SOLVER ELAPSED TIME:  116ms
+        SOLVER ELAPSED TIME:  144ms
  
 
  ***WARNING: THE SYSTEM MATRIX HAS 1 NEGATIVE EIGENVALUES.
@@ -14554,17 +14574,17 @@
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     3
 
-   MAX. PENETRATION ERROR 171.882E-06   AT NODE ROCK_INST.73 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR 170.954E-06   AT NODE ROCK_INST.73 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR 539.760E+06   AT NODE ROCK_INST.73 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR 536.847E+06   AT NODE ROCK_INST.73 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE ESTIMATED CONTACT FORCE ERROR IS OUTSIDE OF CONVERGENCE TOLERANCES.
 
- AVERAGE FORCE                      5.039E+08   TIME AVG. FORCE       5.151E+08
- LARGEST SCALED RESIDUAL FORCE      2.721E+09   AT NODE        128   DOF  1
+ AVERAGE FORCE                      5.043E+08   TIME AVG. FORCE       5.148E+08
+ LARGEST SCALED RESIDUAL FORCE      2.805E+09   AT NODE        128   DOF  1
    INSTANCE: PIPE_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE      2.721E+09
- LARGEST INCREMENT OF DISP.        -0.153       AT NODE        630   DOF  2
+  CORRESPONDING RESIDUAL FORCE      2.805E+09
+ LARGEST INCREMENT OF DISP.        -0.152       AT NODE        630   DOF  2
    INSTANCE: PIPE_INST                                                                       
  LARGEST CORRECTION TO DISP.       -0.161       AT NODE        630   DOF  2
    INSTANCE: PIPE_INST                                                                       
@@ -14575,7 +14595,7 @@
         NUMBER OF EQUATIONS:  18991
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.547e+08
-        SOLVER ELAPSED TIME:  147ms
+        SOLVER ELAPSED TIME:  141ms
 
                     5 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     2 POINTS CHANGED FROM OPEN TO CLOSED
@@ -14584,19 +14604,19 @@
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     4
 
-   MAX. PENETRATION ERROR 661.276E-06   AT NODE ROCK_INST.74 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR 645.988E-06   AT NODE ROCK_INST.74 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR 2.07661E+09 AT NODE ROCK_INST.74 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR 2.02860E+09 AT NODE ROCK_INST.74 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE ESTIMATED CONTACT FORCE ERROR IS OUTSIDE OF CONVERGENCE TOLERANCES.
 
- AVERAGE FORCE                      5.031E+08   TIME AVG. FORCE       5.151E+08
- LARGEST SCALED RESIDUAL FORCE      3.871E+09   AT NODE        129   DOF  1
+ AVERAGE FORCE                      5.034E+08   TIME AVG. FORCE       5.148E+08
+ LARGEST SCALED RESIDUAL FORCE      3.943E+09   AT NODE        129   DOF  1
    INSTANCE: PIPE_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE      3.871E+09
- LARGEST INCREMENT OF DISP.        -0.141       AT NODE        131   DOF  2
+  CORRESPONDING RESIDUAL FORCE      3.943E+09
+ LARGEST INCREMENT OF DISP.        -0.136       AT NODE        131   DOF  2
    INSTANCE: PIPE_INST                                                                       
- LARGEST CORRECTION TO DISP.        0.208       AT NODE         48   DOF  2
+ LARGEST CORRECTION TO DISP.        0.209       AT NODE         48   DOF  2
    INSTANCE: PIPE_INST                                                                       
           FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
  
@@ -14611,26 +14631,26 @@
         NUMBER OF EQUATIONS:  18989
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.528e+08
-        SOLVER ELAPSED TIME:  143ms
+        SOLVER ELAPSED TIME:  147ms
 
                     1 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM OPEN TO CLOSED
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     1
 
-   MAX. PENETRATION ERROR 19.6390E-06  AT NODE ROCK_INST.75 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR 19.6383E-06  AT NODE ROCK_INST.75 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR 61.6722E+06  AT NODE ROCK_INST.75 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR 61.6700E+06  AT NODE ROCK_INST.75 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           PENETRATION ERROR TOO LARGE COMPARED TO DISPLACEMENT INCREMENT.
 
- AVERAGE FORCE                      5.106E+08   TIME AVG. FORCE       5.151E+08
+ AVERAGE FORCE                      5.097E+08   TIME AVG. FORCE       5.149E+08
  LARGEST SCALED RESIDUAL FORCE      2.774E+05   AT NODE         76   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      2.774E+05
  LARGEST INCREMENT OF DISP.        -2.890E-05   AT NODE         75   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.        3.214E-07   AT NODE         50   DOF  2
+ LARGEST CORRECTION TO DISP.        3.213E-07   AT NODE         50   DOF  2
    INSTANCE: PIPE_INST                                                                       
           DISP.    CORRECTION TOO LARGE COMPARED TO DISP.    INCREMENT
  
@@ -14639,20 +14659,20 @@
         NUMBER OF EQUATIONS:  18990
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.529e+08
-        SOLVER ELAPSED TIME:  124ms
+        SOLVER ELAPSED TIME:  129ms
 
                     1 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM SLIPPING TO STICKING
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     2
 
-   MAX. PENETRATION ERROR -1.37680E-09 AT NODE ROCK_INST.75 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -1.37664E-09 AT NODE ROCK_INST.75 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -4.32356E+03 AT NODE ROCK_INST.75 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -4.32305E+03 AT NODE ROCK_INST.75 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINT ERRORS ARE WITHIN THE TOLERANCES.
 
- AVERAGE FORCE                      5.112E+08   TIME AVG. FORCE       5.151E+08
+ AVERAGE FORCE                      5.103E+08   TIME AVG. FORCE       5.149E+08
  LARGEST SCALED RESIDUAL FORCE      1.054E+06   AT NODE         75   DOF  2
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      1.054E+06
@@ -14667,7 +14687,7 @@
         NUMBER OF EQUATIONS:  18990
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.529e+08
-        SOLVER ELAPSED TIME:  161ms
+        SOLVER ELAPSED TIME:  133ms
  
 
  ***WARNING: THE SYSTEM MATRIX HAS 1 NEGATIVE EIGENVALUES.
@@ -14678,19 +14698,19 @@
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     3
 
-   MAX. PENETRATION ERROR -136.781E-09   AT NODE ROCK_INST.75 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -136.345E-09   AT NODE ROCK_INST.75 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -429.533E+03   AT NODE ROCK_INST.75 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -428.164E+03   AT NODE ROCK_INST.75 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINT ERRORS ARE WITHIN THE TOLERANCES.
 
- AVERAGE FORCE                      5.077E+08   TIME AVG. FORCE       5.151E+08
- LARGEST SCALED RESIDUAL FORCE     -1.978E+07   AT NODE         75   DOF  2
+ AVERAGE FORCE                      5.071E+08   TIME AVG. FORCE       5.148E+08
+ LARGEST SCALED RESIDUAL FORCE     -1.975E+07   AT NODE         75   DOF  2
    INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE     -1.978E+07
- LARGEST INCREMENT OF DISP.        -2.016E-02   AT NODE        630   DOF  2
+  CORRESPONDING RESIDUAL FORCE     -1.975E+07
+ LARGEST INCREMENT OF DISP.        -2.013E-02   AT NODE        630   DOF  2
    INSTANCE: PIPE_INST                                                                       
- LARGEST CORRECTION TO DISP.       -2.206E-02   AT NODE        630   DOF  2
+ LARGEST CORRECTION TO DISP.       -2.202E-02   AT NODE        630   DOF  2
    INSTANCE: PIPE_INST                                                                       
           FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
  
@@ -14699,26 +14719,26 @@
         NUMBER OF EQUATIONS:  18990
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.529e+08
-        SOLVER ELAPSED TIME:  139ms
+        SOLVER ELAPSED TIME:  149ms
 
                     1 SEVERE DISCONTINUITIES OCCURRED DURING THIS ITERATION.
                     1 POINTS CHANGED FROM SLIPPING TO STICKING
 
                CONVERGENCE CHECKS FOR SEVERE DISCONTINUITY ITERATION     4
 
-   MAX. PENETRATION ERROR -109.650E-09   AT NODE ROCK_INST.75 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -109.280E-09   AT NODE ROCK_INST.75 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -344.334E+03   AT NODE ROCK_INST.75 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -343.173E+03   AT NODE ROCK_INST.75 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINT ERRORS ARE WITHIN THE TOLERANCES.
 
- AVERAGE FORCE                      5.104E+08   TIME AVG. FORCE       5.151E+08
- LARGEST SCALED RESIDUAL FORCE     -5.400E+06   AT NODE         75   DOF  1
+ AVERAGE FORCE                      5.095E+08   TIME AVG. FORCE       5.149E+08
+ LARGEST SCALED RESIDUAL FORCE     -5.421E+06   AT NODE         75   DOF  1
    INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE     -5.400E+06
- LARGEST INCREMENT OF DISP.        -4.614E-04   AT NODE         47   DOF  2
+  CORRESPONDING RESIDUAL FORCE     -5.421E+06
+ LARGEST INCREMENT OF DISP.        -4.588E-04   AT NODE         47   DOF  2
    INSTANCE: PIPE_INST                                                                       
- LARGEST CORRECTION TO DISP.        1.970E-02   AT NODE        630   DOF  2
+ LARGEST CORRECTION TO DISP.        1.967E-02   AT NODE        630   DOF  2
    INSTANCE: PIPE_INST                                                                       
           FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
  
@@ -14727,48 +14747,23 @@
         NUMBER OF EQUATIONS:  18990
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.529e+08
-        SOLVER ELAPSED TIME:  114ms
+        SOLVER ELAPSED TIME:  143ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
-   MAX. PENETRATION ERROR -592.864E-12   AT NODE ROCK_INST.75 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -588.141E-12   AT NODE ROCK_INST.75 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -1.86177E+03 AT NODE ROCK_INST.75 OF CONTACT PAIR 
-   (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-          THE CONTACT CONSTRAINTS HAVE CONVERGED.
-
- AVERAGE FORCE                      5.110E+08   TIME AVG. FORCE       5.151E+08
- LARGEST SCALED RESIDUAL FORCE      7.599E+05   AT NODE         75   DOF  2
-   INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE      7.599E+05
- LARGEST INCREMENT OF DISP.         9.328E-04   AT NODE        129   DOF  2
-   INSTANCE: PIPE_INST                                                                       
- LARGEST CORRECTION TO DISP.        1.394E-03   AT NODE        129   DOF  2
-   INSTANCE: PIPE_INST                                                                       
-          DISP.    CORRECTION TOO LARGE COMPARED TO DISP.    INCREMENT
- 
-	UNSYMMETRIC DIRECT SPARSE SOLVER RUNNING ON
- 	1 HOST x 1 MPI RANK PER HOST x (14 THREADS PER RANK + 1 GPU PER RANK)
-        NUMBER OF EQUATIONS:  18990
-        NUMBER OF RHS:        1
-        NUMBER OF FLOPS:      1.529e+08
-        SOLVER ELAPSED TIME:  135ms
-
-               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
-
-   MAX. PENETRATION ERROR -476.946E-12   AT NODE ROCK_INST.75 OF CONTACT PAIR 
-   (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -1.49775E+03 AT NODE ROCK_INST.75 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -1.84694E+03 AT NODE ROCK_INST.75 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.111E+08   TIME AVG. FORCE       5.151E+08
- LARGEST SCALED RESIDUAL FORCE     -5.006E+05   AT NODE         75   DOF  2
+ AVERAGE FORCE                      5.101E+08   TIME AVG. FORCE       5.149E+08
+ LARGEST SCALED RESIDUAL FORCE      7.575E+05   AT NODE         75   DOF  2
    INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE     -5.006E+05
- LARGEST INCREMENT OF DISP.        -3.936E-04   AT NODE        632   DOF  2
+  CORRESPONDING RESIDUAL FORCE      7.575E+05
+ LARGEST INCREMENT OF DISP.         9.291E-04   AT NODE        129   DOF  2
    INSTANCE: PIPE_INST                                                                       
- LARGEST CORRECTION TO DISP.       -1.326E-03   AT NODE        630   DOF  2
+ LARGEST CORRECTION TO DISP.        1.388E-03   AT NODE        129   DOF  2
    INSTANCE: PIPE_INST                                                                       
           DISP.    CORRECTION TOO LARGE COMPARED TO DISP.    INCREMENT
  
@@ -14779,21 +14774,21 @@
         NUMBER OF FLOPS:      1.529e+08
         SOLVER ELAPSED TIME:  147ms
 
-               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     3
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
 
-   MAX. PENETRATION ERROR -39.5579E-12  AT NODE ROCK_INST.75 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -470.773E-12   AT NODE ROCK_INST.75 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -124.224       AT NODE ROCK_INST.75 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -1.47837E+03 AT NODE ROCK_INST.75 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.112E+08   TIME AVG. FORCE       5.151E+08
- LARGEST SCALED RESIDUAL FORCE     -3.946E+04   AT NODE         75   DOF  2
+ AVERAGE FORCE                      5.101E+08   TIME AVG. FORCE       5.149E+08
+ LARGEST SCALED RESIDUAL FORCE     -4.941E+05   AT NODE         75   DOF  2
    INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE     -3.946E+04
- LARGEST INCREMENT OF DISP.        -2.328E-05   AT NODE         74   DOF  1
-   INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.        3.773E-04   AT NODE        630   DOF  2
+  CORRESPONDING RESIDUAL FORCE     -4.941E+05
+ LARGEST INCREMENT OF DISP.        -3.887E-04   AT NODE        632   DOF  2
+   INSTANCE: PIPE_INST                                                                       
+ LARGEST CORRECTION TO DISP.       -1.318E-03   AT NODE        630   DOF  2
    INSTANCE: PIPE_INST                                                                       
           DISP.    CORRECTION TOO LARGE COMPARED TO DISP.    INCREMENT
  
@@ -14802,23 +14797,48 @@
         NUMBER OF EQUATIONS:  18990
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.529e+08
-        SOLVER ELAPSED TIME:  144ms
+        SOLVER ELAPSED TIME:  162ms
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     3
+
+   MAX. PENETRATION ERROR -38.7011E-12  AT NODE ROCK_INST.75 OF CONTACT PAIR 
+   (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
+   MAX. CONTACT FORCE ERROR -121.533       AT NODE ROCK_INST.75 OF CONTACT PAIR 
+   (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
+          THE CONTACT CONSTRAINTS HAVE CONVERGED.
+
+ AVERAGE FORCE                      5.102E+08   TIME AVG. FORCE       5.149E+08
+ LARGEST SCALED RESIDUAL FORCE     -3.860E+04   AT NODE         75   DOF  2
+   INSTANCE: ROCK_INST                                                                       
+  CORRESPONDING RESIDUAL FORCE     -3.860E+04
+ LARGEST INCREMENT OF DISP.        -2.327E-05   AT NODE         74   DOF  1
+   INSTANCE: ROCK_INST                                                                       
+ LARGEST CORRECTION TO DISP.        3.731E-04   AT NODE        630   DOF  2
+   INSTANCE: PIPE_INST                                                                       
+          DISP.    CORRECTION TOO LARGE COMPARED TO DISP.    INCREMENT
+ 
+	UNSYMMETRIC DIRECT SPARSE SOLVER RUNNING ON
+ 	1 HOST x 1 MPI RANK PER HOST x (14 THREADS PER RANK + 1 GPU PER RANK)
+        NUMBER OF EQUATIONS:  18990
+        NUMBER OF RHS:        1
+        NUMBER OF FLOPS:      1.529e+08
+        SOLVER ELAPSED TIME:  142ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     4
 
-   MAX. PENETRATION ERROR -344.919E-15   AT NODE ROCK_INST.75 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -330.319E-15   AT NODE ROCK_INST.75 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -1.08315     AT NODE ROCK_INST.75 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -1.03730     AT NODE ROCK_INST.75 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.112E+08   TIME AVG. FORCE       5.151E+08
- LARGEST SCALED RESIDUAL FORCE      -344.       AT NODE         75   DOF  2
+ AVERAGE FORCE                      5.102E+08   TIME AVG. FORCE       5.149E+08
+ LARGEST SCALED RESIDUAL FORCE      -329.       AT NODE         75   DOF  2
    INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE      -344.    
+  CORRESPONDING RESIDUAL FORCE      -329.    
  LARGEST INCREMENT OF DISP.        -2.321E-05   AT NODE         74   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.        3.521E-05   AT NODE        630   DOF  2
+ LARGEST CORRECTION TO DISP.        3.445E-05   AT NODE        630   DOF  2
    INSTANCE: PIPE_INST                                                                       
           DISP.    CORRECTION TOO LARGE COMPARED TO DISP.    INCREMENT
  
@@ -14827,23 +14847,23 @@
         NUMBER OF EQUATIONS:  18990
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.529e+08
-        SOLVER ELAPSED TIME:  135ms
+        SOLVER ELAPSED TIME:  139ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     5
 
-   MAX. PENETRATION ERROR -55.5112E-18  AT NODE ROCK_INST.112 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -56.1953E-18  AT NODE ROCK_INST.76 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -174.322E-06   AT NODE ROCK_INST.112 OF CONTACT 
-   PAIR (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
+   MAX. CONTACT FORCE ERROR -176.470E-06   AT NODE ROCK_INST.76 OF CONTACT PAIR 
+   (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.112E+08   TIME AVG. FORCE       5.151E+08
- LARGEST SCALED RESIDUAL FORCE      4.166E-02   AT NODE         75   DOF  1
+ AVERAGE FORCE                      5.102E+08   TIME AVG. FORCE       5.149E+08
+ LARGEST SCALED RESIDUAL FORCE      3.995E-02   AT NODE         75   DOF  1
    INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE      4.166E-02
+  CORRESPONDING RESIDUAL FORCE      3.995E-02
  LARGEST INCREMENT OF DISP.        -2.321E-05   AT NODE         74   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.        3.111E-07   AT NODE        630   DOF  2
+ LARGEST CORRECTION TO DISP.        2.979E-07   AT NODE        630   DOF  2
    INSTANCE: PIPE_INST                                                                       
           THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
 
@@ -14863,23 +14883,23 @@
         NUMBER OF EQUATIONS:  18990
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.529e+08
-        SOLVER ELAPSED TIME:  135ms
+        SOLVER ELAPSED TIME:  129ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
-   MAX. PENETRATION ERROR 4.03846E-12 AT NODE ROCK_INST.75 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR 4.03574E-12 AT NODE ROCK_INST.75 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR 12.6820      AT NODE ROCK_INST.75 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR 12.6734      AT NODE ROCK_INST.75 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.129E+08   TIME AVG. FORCE       5.151E+08
+ AVERAGE FORCE                      5.118E+08   TIME AVG. FORCE       5.148E+08
  LARGEST SCALED RESIDUAL FORCE      2.868E+06   AT NODE         75   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      2.868E+06
  LARGEST INCREMENT OF DISP.        -2.707E-05   AT NODE         74   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.       -2.337E-05   AT NODE         46   DOF  2
+ LARGEST CORRECTION TO DISP.       -2.336E-05   AT NODE         46   DOF  2
    INSTANCE: PIPE_INST                                                                       
           FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
  
@@ -14888,23 +14908,23 @@
         NUMBER OF EQUATIONS:  18990
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.529e+08
-        SOLVER ELAPSED TIME:  127ms
+        SOLVER ELAPSED TIME:  138ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
 
-   MAX. PENETRATION ERROR 491.135E-15   AT NODE ROCK_INST.75 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR 490.858E-15   AT NODE ROCK_INST.75 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR 1.54231     AT NODE ROCK_INST.75 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR 1.54144     AT NODE ROCK_INST.75 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.123E+08   TIME AVG. FORCE       5.151E+08
+ AVERAGE FORCE                      5.111E+08   TIME AVG. FORCE       5.148E+08
  LARGEST SCALED RESIDUAL FORCE     -1.547E+04   AT NODE         75   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE     -1.547E+04
  LARGEST INCREMENT OF DISP.        -2.730E-05   AT NODE         74   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.        5.683E-06   AT NODE         44   DOF  2
+ LARGEST CORRECTION TO DISP.        5.680E-06   AT NODE         44   DOF  2
    INSTANCE: PIPE_INST                                                                       
           DISP.    CORRECTION TOO LARGE COMPARED TO DISP.    INCREMENT
  
@@ -14913,23 +14933,23 @@
         NUMBER OF EQUATIONS:  18990
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.529e+08
-        SOLVER ELAPSED TIME:  146ms
+        SOLVER ELAPSED TIME:  165ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     3
 
-   MAX. PENETRATION ERROR -360.822E-18   AT NODE ROCK_INST.75 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -388.901E-18   AT NODE ROCK_INST.75 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -1.13309E-03 AT NODE ROCK_INST.75 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -1.22127E-03 AT NODE ROCK_INST.75 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.123E+08   TIME AVG. FORCE       5.151E+08
+ AVERAGE FORCE                      5.111E+08   TIME AVG. FORCE       5.148E+08
  LARGEST SCALED RESIDUAL FORCE      0.485       AT NODE         75   DOF  2
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      0.485    
  LARGEST INCREMENT OF DISP.        -2.730E-05   AT NODE         74   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.        8.694E-07   AT NODE        129   DOF  2
+ LARGEST CORRECTION TO DISP.        8.688E-07   AT NODE        129   DOF  2
    INSTANCE: PIPE_INST                                                                       
           THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
 
@@ -14949,7 +14969,7 @@
         NUMBER OF EQUATIONS:  18990
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.529e+08
-        SOLVER ELAPSED TIME:  143ms
+        SOLVER ELAPSED TIME:  132ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -14959,13 +14979,13 @@
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.153E+08   TIME AVG. FORCE       5.151E+08
+ AVERAGE FORCE                      5.137E+08   TIME AVG. FORCE       5.148E+08
  LARGEST SCALED RESIDUAL FORCE      1.434E+06   AT NODE         75   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      1.434E+06
  LARGEST INCREMENT OF DISP.        -2.731E-05   AT NODE         74   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.       -2.791E-06   AT NODE        630   DOF  2
+ LARGEST CORRECTION TO DISP.       -2.790E-06   AT NODE        630   DOF  2
    INSTANCE: PIPE_INST                                                                       
           DISP.    CORRECTION TOO LARGE COMPARED TO DISP.    INCREMENT
  
@@ -14974,7 +14994,7 @@
         NUMBER OF EQUATIONS:  18990
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.529e+08
-        SOLVER ELAPSED TIME:  136ms
+        SOLVER ELAPSED TIME:  139ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
 
@@ -14984,10 +15004,10 @@
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.151E+08   TIME AVG. FORCE       5.151E+08
- LARGEST SCALED RESIDUAL FORCE     -4.573E+03   AT NODE         75   DOF  1
+ AVERAGE FORCE                      5.136E+08   TIME AVG. FORCE       5.148E+08
+ LARGEST SCALED RESIDUAL FORCE     -4.572E+03   AT NODE         75   DOF  1
    INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE     -4.573E+03
+  CORRESPONDING RESIDUAL FORCE     -4.572E+03
  LARGEST INCREMENT OF DISP.        -2.749E-05   AT NODE         74   DOF  1
    INSTANCE: ROCK_INST                                                                       
  LARGEST CORRECTION TO DISP.        1.898E-06   AT NODE         48   DOF  1
@@ -14999,23 +15019,23 @@
         NUMBER OF EQUATIONS:  18990
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.529e+08
-        SOLVER ELAPSED TIME:  118ms
+        SOLVER ELAPSED TIME:  147ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     3
 
-   MAX. PENETRATION ERROR -55.5112E-18  AT NODE ROCK_INST.105 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR 55.5112E-18  AT NODE ROCK_INST.85 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -174.322E-06   AT NODE ROCK_INST.105 OF CONTACT 
-   PAIR (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
+   MAX. CONTACT FORCE ERROR 174.322E-06   AT NODE ROCK_INST.85 OF CONTACT PAIR 
+   (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.151E+08   TIME AVG. FORCE       5.151E+08
- LARGEST SCALED RESIDUAL FORCE      7.758E-02   AT NODE         74   DOF  1
+ AVERAGE FORCE                      5.136E+08   TIME AVG. FORCE       5.148E+08
+ LARGEST SCALED RESIDUAL FORCE      7.774E-02   AT NODE         74   DOF  1
    INSTANCE: ROCK_INST                                                                       
-  CORRESPONDING RESIDUAL FORCE      7.758E-02
+  CORRESPONDING RESIDUAL FORCE      7.774E-02
  LARGEST INCREMENT OF DISP.        -2.749E-05   AT NODE         74   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.        2.285E-08   AT NODE        127   DOF  2
+ LARGEST CORRECTION TO DISP.        2.283E-08   AT NODE        127   DOF  2
    INSTANCE: PIPE_INST                                                                       
           THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
 
@@ -15036,7 +15056,7 @@
         NUMBER OF EQUATIONS:  18990
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.529e+08
-        SOLVER ELAPSED TIME:  142ms
+        SOLVER ELAPSED TIME:  150ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -15046,7 +15066,7 @@
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.129E+08   TIME AVG. FORCE       5.151E+08
+ AVERAGE FORCE                      5.120E+08   TIME AVG. FORCE       5.148E+08
  LARGEST SCALED RESIDUAL FORCE      1.594E+06   AT NODE         75   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      1.594E+06
@@ -15061,17 +15081,17 @@
         NUMBER OF EQUATIONS:  18990
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.529e+08
-        SOLVER ELAPSED TIME:  125ms
+        SOLVER ELAPSED TIME:  160ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
 
-   MAX. PENETRATION ERROR -84.8491E-15  AT NODE ROCK_INST.76 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -84.8488E-15  AT NODE ROCK_INST.76 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -266.452E-03   AT NODE ROCK_INST.76 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -266.451E-03   AT NODE ROCK_INST.76 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.134E+08   TIME AVG. FORCE       5.151E+08
+ AVERAGE FORCE                      5.125E+08   TIME AVG. FORCE       5.148E+08
  LARGEST SCALED RESIDUAL FORCE     -6.147E+03   AT NODE         75   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE     -6.147E+03
@@ -15086,23 +15106,23 @@
         NUMBER OF EQUATIONS:  18990
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.529e+08
-        SOLVER ELAPSED TIME:  155ms
+        SOLVER ELAPSED TIME:  138ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     3
 
-   MAX. PENETRATION ERROR 55.6588E-18  AT NODE ROCK_INST.78 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -55.5112E-18  AT NODE ROCK_INST.75 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR 174.785E-06   AT NODE ROCK_INST.78 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -174.322E-06   AT NODE ROCK_INST.75 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.134E+08   TIME AVG. FORCE       5.151E+08
+ AVERAGE FORCE                      5.125E+08   TIME AVG. FORCE       5.148E+08
  LARGEST SCALED RESIDUAL FORCE     -0.400       AT NODE       1735   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE     -0.400    
  LARGEST INCREMENT OF DISP.        -4.154E-05   AT NODE         74   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.        3.039E-08   AT NODE        127   DOF  2
+ LARGEST CORRECTION TO DISP.        3.037E-08   AT NODE        127   DOF  2
    INSTANCE: PIPE_INST                                                                       
           THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
 
@@ -15123,7 +15143,7 @@
         NUMBER OF EQUATIONS:  18990
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.529e+08
-        SOLVER ELAPSED TIME:  133ms
+        SOLVER ELAPSED TIME:  131ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
@@ -15133,13 +15153,13 @@
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.116E+08   TIME AVG. FORCE       5.151E+08
+ AVERAGE FORCE                      5.108E+08   TIME AVG. FORCE       5.148E+08
  LARGEST SCALED RESIDUAL FORCE      1.737E+06   AT NODE         75   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      1.737E+06
  LARGEST INCREMENT OF DISP.        -6.232E-05   AT NODE         74   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.        1.359E-06   AT NODE         49   DOF  2
+ LARGEST CORRECTION TO DISP.        1.358E-06   AT NODE         49   DOF  2
    INSTANCE: PIPE_INST                                                                       
           DISP.    CORRECTION TOO LARGE COMPARED TO DISP.    INCREMENT
  
@@ -15148,23 +15168,23 @@
         NUMBER OF EQUATIONS:  18990
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.529e+08
-        SOLVER ELAPSED TIME:  141ms
+        SOLVER ELAPSED TIME:  148ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
 
-   MAX. PENETRATION ERROR -108.552E-15   AT NODE ROCK_INST.76 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -108.497E-15   AT NODE ROCK_INST.76 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -340.886E-03   AT NODE ROCK_INST.76 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -340.712E-03   AT NODE ROCK_INST.76 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.119E+08   TIME AVG. FORCE       5.151E+08
+ AVERAGE FORCE                      5.110E+08   TIME AVG. FORCE       5.148E+08
  LARGEST SCALED RESIDUAL FORCE     -8.025E+03   AT NODE         75   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE     -8.025E+03
  LARGEST INCREMENT OF DISP.        -6.281E-05   AT NODE         74   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.        3.434E-06   AT NODE         48   DOF  1
+ LARGEST CORRECTION TO DISP.        3.433E-06   AT NODE         48   DOF  1
    INSTANCE: PIPE_INST                                                                       
           DISP.    CORRECTION TOO LARGE COMPARED TO DISP.    INCREMENT
  
@@ -15173,23 +15193,23 @@
         NUMBER OF EQUATIONS:  18990
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.529e+08
-        SOLVER ELAPSED TIME:  122ms
+        SOLVER ELAPSED TIME:  154ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     3
 
-   MAX. PENETRATION ERROR 27.9051E-18  AT NODE ROCK_INST.106 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR 55.5112E-18  AT NODE ROCK_INST.113 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR 87.6303E-06  AT NODE ROCK_INST.106 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR 174.322E-06   AT NODE ROCK_INST.113 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.119E+08   TIME AVG. FORCE       5.151E+08
+ AVERAGE FORCE                      5.110E+08   TIME AVG. FORCE       5.148E+08
  LARGEST SCALED RESIDUAL FORCE     -0.250       AT NODE       1730   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE     -0.250    
  LARGEST INCREMENT OF DISP.        -6.282E-05   AT NODE         74   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.        3.660E-08   AT NODE        127   DOF  2
+ LARGEST CORRECTION TO DISP.        3.658E-08   AT NODE        127   DOF  2
    INSTANCE: PIPE_INST                                                                       
           THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
 
@@ -15209,23 +15229,23 @@
         NUMBER OF EQUATIONS:  18990
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.529e+08
-        SOLVER ELAPSED TIME:  125ms
+        SOLVER ELAPSED TIME:  130ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
 
-   MAX. PENETRATION ERROR -194.289E-18   AT NODE ROCK_INST.76 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -222.176E-18   AT NODE ROCK_INST.76 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -610.126E-06   AT NODE ROCK_INST.76 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -697.698E-06   AT NODE ROCK_INST.76 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.112E+08   TIME AVG. FORCE       5.150E+08
+ AVERAGE FORCE                      5.104E+08   TIME AVG. FORCE       5.147E+08
  LARGEST SCALED RESIDUAL FORCE      8.845E+05   AT NODE         75   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE      8.845E+05
  LARGEST INCREMENT OF DISP.        -5.769E-05   AT NODE         74   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.        5.847E-07   AT NODE         49   DOF  2
+ LARGEST CORRECTION TO DISP.        5.844E-07   AT NODE         49   DOF  2
    INSTANCE: PIPE_INST                                                                       
           DISP.    CORRECTION TOO LARGE COMPARED TO DISP.    INCREMENT
  
@@ -15234,25 +15254,25 @@
         NUMBER OF EQUATIONS:  18990
         NUMBER OF RHS:        1
         NUMBER OF FLOPS:      1.529e+08
-        SOLVER ELAPSED TIME:  109ms
+        SOLVER ELAPSED TIME:  130ms
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
 
-   MAX. PENETRATION ERROR -27.0618E-15  AT NODE ROCK_INST.76 OF CONTACT PAIR 
+   MAX. PENETRATION ERROR -27.0617E-15  AT NODE ROCK_INST.76 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
-   MAX. CONTACT FORCE ERROR -84.9823E-03  AT NODE ROCK_INST.76 OF CONTACT PAIR 
+   MAX. CONTACT FORCE ERROR -84.9818E-03  AT NODE ROCK_INST.76 OF CONTACT PAIR 
    (ASSEMBLY_ROCK_INST_FASEI_SLAVE_CNS_,ASSEMBLY_FASEI_MASTER)
           THE CONTACT CONSTRAINTS HAVE CONVERGED.
 
- AVERAGE FORCE                      5.113E+08   TIME AVG. FORCE       5.150E+08
+ AVERAGE FORCE                      5.105E+08   TIME AVG. FORCE       5.147E+08
  LARGEST SCALED RESIDUAL FORCE     -2.366E+03   AT NODE         75   DOF  1
    INSTANCE: ROCK_INST                                                                       
   CORRESPONDING RESIDUAL FORCE     -2.366E+03
  LARGEST INCREMENT OF DISP.        -5.802E-05   AT NODE         74   DOF  1
    INSTANCE: ROCK_INST                                                                       
- LARGEST CORRECTION TO DISP.        1.893E-06   AT NODE         48   DOF  1
+ LARGEST CORRECTION TO DISP.        1.892E-06   AT NODE         48   DOF  1
    INSTANCE: PIPE_INST                                                                       
- ESTIMATE OF DISP.    CORRECTION    9.774E-08
+ ESTIMATE OF DISP.    CORRECTION    9.772E-08
  FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND ESTIMATED CORRECTION
 
  MAXIMUM DIFFERENCE IN CREEP STRAIN INCREMENT IS   1.346E-05
@@ -15279,7 +15299,7 @@
                        0  ADDITIONAL RESIDUAL EVALUATIONS FOR LINE SEARCHES
                        0  ADDITIONAL OPERATOR EVALUATIONS FOR LINE SEARCHES
                       24  WARNING MESSAGES DURING USER INPUT PROCESSING
-                    1039  WARNING MESSAGES DURING ANALYSIS
+                    1038  WARNING MESSAGES DURING ANALYSIS
                        0  ANALYSIS WARNINGS ARE NUMERICAL PROBLEM MESSAGES
                       10  ANALYSIS WARNINGS ARE NEGATIVE EIGENVALUE MESSAGES
                        0  ERROR MESSAGES
@@ -15287,8 +15307,8 @@
 
 
      JOB TIME SUMMARY
-       USER TIME (SEC)      =     6.55E+02
-       SYSTEM TIME (SEC)    =      30.    
-       TOTAL CPU TIME (SEC) =     6.84E+02
-       WALLCLOCK TIME (SEC) =          214
+       USER TIME (SEC)      =     5.60E+02
+       SYSTEM TIME (SEC)    =      39.    
+       TOTAL CPU TIME (SEC) =     6.00E+02
+       WALLCLOCK TIME (SEC) =          174
        MEMORY PEAK (GB)     =            0

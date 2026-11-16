@@ -367,18 +367,18 @@ clear all
 % close all
 clc
 
-% PATH = 'C:\Users\hidalgo\Documents\GitHub\Abaqus_WELL';
+PATH = 'C:\Users\hidalgo\Documents\GitHub\Abaqus_WELL';
 % PATH = 'C:\Users\juani\Documents\Github\Abaqus_WELL';
 % PATH = 'C:\Users\hidalgo\Documents\Gitlab\abaquswell';
 % cd(PATH)
 % 
 % filename = 'casing_stress_all_frames';
 
-PATH = 'C:\Users\hidalgo\Desktop\Poseidon\J6CorrectedTubular';
+% PATH = 'C:\Users\hidalgo\Desktop\Poseidon\J6CorrectedTubular';
 
 cd(PATH)
 
-filename = 'casing_stress_all_frames.csv'; % <-- Substitua pelo nome do seu arquivo
+filename = 'casing_stress_all_frames_id.csv'; % <-- Substitua pelo nome do seu arquivo
 
 data = readtable(filename, 'VariableNamingRule', 'preserve');
 
@@ -435,16 +435,17 @@ hold on
 grid on
 
 % frames_interesse = [1, 86];
-frames_interesse = [1, 86, 106,151, round(num_frames/2), num_frames];
+% frames_interesse = [1, 86, 106,151, round(num_frames/2), num_frames];
+frames_interesse = [1, 35, 45,51, 71, 113];
 
 cores = lines(length(frames_interesse));
 % legendas = {'Initial', '2 Years'};
-legendas = {'Initial', '2 Years','7 Years','10 Years', '12 Years', '30 Years'};
+legendas = {'Initial', '2 Years','7 Years','10 Years', '20 Years', '30 Years'};
 
 for i = 1:length(frames_interesse)
     idx = frames_interesse(i);
 
-    plot(matriz_U1(:, idx)/1e6-40, abs(eixo_z), 'Color', cores(i,:), 'LineWidth',2);
+    plot(matriz_U1(:, idx)/1e6-0*40, abs(eixo_z), 'Color', cores(i,:), 'LineWidth',2);
 end
 
 set(gca, 'YDir', 'reverse')

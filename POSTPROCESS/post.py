@@ -170,7 +170,7 @@ def ExportCasingStressAllFrames(odb_path, output_file):
     a = odb.rootAssembly
 
     instance_name = 'PIPE_INST'
-    set_name = 'FASEI_REV_OD'
+    set_name = 'FASEI_REV_ID'
 
     try:
         inst = a.instances[instance_name]
